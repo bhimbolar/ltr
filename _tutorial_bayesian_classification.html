@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Learning To Rank Library: Tutorial page 6 - Bayesian Classification</title>
+<title>Learning To Rank Library: Bayesian Classification</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,28 +93,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Tutorial page 6 - Bayesian Classification </div>  </div>
+<div class="title">Bayesian Classification </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#TutorialDensityEstimation">Density Estimation</a><ul><li class="level2"><a href="#DensityEstimatorsList">List of all density estimation learners</a></li>
+<ul><ul><li class="level2"><a href="#DensityEstimatorsList">List of all density estimation learners</a></li>
 </ul>
-</li>
 <li class="level1"><a href="#TutorialBayesianClassificator">Bayesian Classification</a></li>
 </ul>
 </div>
-<div class="textblock"><p>Bayesian classifiers are simple classification algorithms, that use the idea of probability density.</p>
-<p>Such algorithms try to find a probability of every class using training dataset. And then choose the class with the highest probability for classifiable object.</p>
-<p>To learn more visit <a href="http://en.wikipedia.org/wiki/Bayesian_inference">http://en.wikipedia.org/wiki/Bayesian_inference</a></p>
-<h2><a class="anchor" id="TutorialDensityEstimation"></a>
-Density Estimation</h2>
-<p>You can estimate probability density of some particular <a class="el" href="classltr_1_1_data_set.html">DataSet</a> with LTR.</p>
-<p>First of all choose the estimation algorithm (Naive Bayes, QDA or Fisher LDA).</p>
-<p>After this, declare required probability density learner (<a class="el" href="classltr_1_1_normal_naive_bayes_density_learner.html" title="Probability density learner that uses Normal Naive Bayesian approach to generate probability density ...">NormalNaiveBayesDensityLearner</a>, <a class="el" href="classltr_1_1_quadratic_discriminant_density_learner.html" title="Probability density learner that uses Quadratic Discriminant approach to generate probability density...">QuadraticDiscriminantDensityLearner</a> respectively or <a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html" title="Probability density learner that uses Fisher discriminant to generate probability density estimator...">FisherDiscriminantDensityLearner</a>).</p>
-<p>Then learn declared estimation learner on some dataset using ::learn() method and create a <a class="el" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">BaseProbabilityDensityEstimator</a> object using ::make() method.</p>
-<p>Now you can use generated <a class="el" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">BaseProbabilityDensityEstimator</a> for probability density estimation</p>
-<h3><a class="anchor" id="DensityEstimatorsList"></a>
-List of all density estimation learners</h3>
+<div class="textblock"><p>Bayesian classifiers are simple classification algorithms, that assign the label of max posteriori probability. To learn more visit <a href="http://en.wikipedia.org/wiki/Bayesian_inference">http://en.wikipedia.org/wiki/Bayesian_inference</a>.</p>
+<p>The main formula of Bayesian classification is \( a(x) = agrmax_yP_yp_y(x) \), where \(P_y\) denotes prior of class \(y\) and \(p_y(x)\) denotes probability density of class \(y\).</p>
+<p>Bayesian classification algorithm is determined by the method of estimation of \(P_y\) and \(p_y(x)\). Priors are usually estimated by relative frequencies and there is a lot of ways to estimate density. One can see different algorithms for density estimation below.</p>
 <table class="doxtable">
 <tr>
 <th>Density estimation learner </th><th>Description</th></tr>
@@ -128,9 +118,6 @@ List of all density estimation learners</h3>
 <h2><a class="anchor" id="TutorialBayesianClassificator"></a>
 Bayesian Classification</h2>
 <p>LTR allows to use different algorithms of unparameterized Bayesian classification such as Naive Bayes, Quadratic Discriminant and Fisher Discriminant.</p>
-<p>To implement Bayesian Classification was used common approach: there is a class <a class="el" href="classltr_1_1_bayesian_learner.html">BayesianLearner</a> that recieves <a class="el" href="classltr_1_1_data_set.html">DataSet</a> and generates <a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a>. <a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> can be used to score new objects.</p>
-<p>Known, that the main idea of Bayesian Classification is the estimation of the probability density and after this choosing the class depending on probabilities for every classifiable object.</p>
-<p>The main field of <a class="el" href="classltr_1_1_bayesian_learner.html">BayesianLearner</a> is estimator_. It keeps the pointer to probability density estimator and use it to classify objects.</p>
 <p>To use Bayesian <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a> you need to: </p>
 <ul>
 <li>choose estimation algorithm </li>
@@ -198,7 +185,7 @@ Bayesian Classification</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

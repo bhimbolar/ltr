@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -135,7 +135,6 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac768a445ee16a28ec96c5f63b5d5ea37"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#ac768a445ee16a28ec96c5f63b5d5ea37">toString</a> () const </td></tr>
 <tr class="memitem:a3d1959f8244fe425eb195af62a81070c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">BayesianScorer</a> ()</td></tr>
 <tr class="memitem:ad40a6792755c9937ae473b241f3f2777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#ad40a6792755c9937ae473b241f3f2777">BayesianScorer</a> (const <a class="el" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a> &amp;prior_probability, <a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a> estimator)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
@@ -143,6 +142,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af637086a95b8ed3e37e429b49f19d749"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#af637086a95b8ed3e37e429b49f19d749">scoreImpl</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object) const </td></tr>
 <tr class="memitem:a191bd6478508c6af10894dbeac65d237"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a191bd6478508c6af10894dbeac65d237">generateCppCodeImpl</a> (const string &amp;function_name) const </td></tr>
 <tr class="memitem:af51169a6c1aae58f7488308b82ded332"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#af51169a6c1aae58f7488308b82ded332">getDefaultAlias</a> () const </td></tr>
+<tr class="memitem:a94a3d4ee35ab62749739f3546cbf9fcc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a94a3d4ee35ab62749739f3546cbf9fcc">toStringImpl</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa4fec48d0c1fca0cf7aeb4b4790ced98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">prior_probability_</a></td></tr>
@@ -278,21 +278,21 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac768a445ee16a28ec96c5f63b5d5ea37"></a>
+<a class="anchor" id="a94a3d4ee35ab62749739f3546cbf9fcc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classltr_1_1_bayesian_scorer.html#ac768a445ee16a28ec96c5f63b5d5ea37">ltr::BayesianScorer::toString</a> </td>
+          <td class="memname">string <a class="el" href="classltr_1_1_bayesian_scorer.html#a94a3d4ee35ab62749739f3546cbf9fcc">ltr::BayesianScorer::toStringImpl</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td> const<code> [inline, private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
+<p>Reimplemented from <a class="el" href="classltr_1_1_scorer.html#aa48452aaa1e7a0c9e86fb9f036b52c0e">ltr::Scorer</a>.</p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

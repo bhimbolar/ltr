@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -125,7 +125,7 @@ Inheritance diagram for ltr::FeatureSampler:</div>
 <div class="dyncontent">
 <div class="center"><img src="classltr_1_1_feature_sampler__inherit__graph.png" border="0" usemap="#ltr_1_1_feature_sampler_inherit__map" alt="Inheritance graph"/></div>
 <map name="ltr_1_1_feature_sampler_inherit__map" id="ltr_1_1_feature_sampler_inherit__map">
-<area shape="rect" href="classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="48,80,187,107"/><area shape="rect" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="5,5,112,32"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="136,5,216,32"/></map>
+<area shape="rect" href="classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="107,80,245,107"/><area shape="rect" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="5,5,112,32"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="136,5,216,32"/><area shape="rect" href="classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="240,5,331,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classltr_1_1_feature_sampler-members.html">List of all members.</a></p>
@@ -143,6 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af6d01578e456012e22d620b813306851"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler.html#af6d01578e456012e22d620b813306851">generateCppCode</a> (const string &amp;function_name) const </td></tr>
 <tr class="memitem:aac7cde6064cef0138e610f472cbf8166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler.html#aac7cde6064cef0138e610f472cbf8166">GET</a> (Indices, indices)</td></tr>
 <tr class="memitem:a449a093d38aaf5b7aa1338e93633cd7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler.html#a449a093d38aaf5b7aa1338e93633cd7d">set_indices</a> (const Indices &amp;indices)</td></tr>
+<tr class="memitem:aa94505f8faf180aac36aa274362251c3"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler.html#aa94505f8faf180aac36aa274362251c3">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a12b683ffc49e8478e4c9a7c344b0dece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler.html#a12b683ffc49e8478e4c9a7c344b0dece">applyImpl</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;input, <a class="el" href="classltr_1_1_object.html">Object</a> *output) const </td></tr>
@@ -363,6 +364,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa94505f8faf180aac36aa274362251c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classltr_1_1_feature_sampler.html#aa94505f8faf180aac36aa274362251c3">ltr::FeatureSampler::toString</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a6be54ccabbfee13b9f1f6caadbe4cd19"></a>
 <div class="memitem">
@@ -385,7 +404,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

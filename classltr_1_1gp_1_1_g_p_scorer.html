@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -141,7 +141,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af4e6a058a5ca040fb7e3677f916a7a02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#af4e6a058a5ca040fb7e3677f916a7a02">GPScorer</a> ()</td></tr>
 <tr class="memitem:a3e39a8cc17a1eaafba6f070265aa70a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a3e39a8cc17a1eaafba6f070265aa70a3">GPScorer</a> (const Puppy::Tree &amp;best_tree, const Puppy::Context &amp;context, int feature_count, const FeatureConverterArray &amp;<a class="el" href="classltr_1_1_scorer.html#a0517f127f1af9d812d8d11964e1fe690">feature_converters</a>=FeatureConverterArray())</td></tr>
-<tr class="memitem:a281b8a74d32a40b78f7791ee5b2ef138"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a281b8a74d32a40b78f7791ee5b2ef138">toString</a> () const </td></tr>
 <tr class="memitem:aaa403753df80c67d96d2b7a00ad60785"><td class="memTemplParams" colspan="2">template&lt;typename TElement &gt; </td></tr>
 <tr class="memitem:aaa403753df80c67d96d2b7a00ad60785"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#aaa403753df80c67d96d2b7a00ad60785">markDataSet</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
@@ -152,6 +151,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aeb723138916328fa469ae2bdf87ff285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#aeb723138916328fa469ae2bdf87ff285">setContextToObject</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object) const </td></tr>
 <tr class="memitem:addb777dca33c7de60578b00d3e16aba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#addb777dca33c7de60578b00d3e16aba5">writeTreeAsStringOfCppCalls</a> (std::ostream &amp;output, int node_index) const </td></tr>
 <tr class="memitem:a26cc7eda8ea1e1c3eb439dadbb702a41"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classltr_1_1_serializable.html">Serializable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41">puppyPrimitiveHandleToPSerializable</a> (const Puppy::PrimitiveHandle puppy_primitive) const </td></tr>
+<tr class="memitem:ad536776a426bc390bf6c4332a7788ed5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#ad536776a426bc390bf6c4332a7788ed5">toStringImpl</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:abadf0936536f1506b04aba76b214ca43"><td class="memItemLeft" align="right" valign="top">Puppy::Tree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a></td></tr>
@@ -378,21 +378,21 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a281b8a74d32a40b78f7791ee5b2ef138"></a>
+<a class="anchor" id="ad536776a426bc390bf6c4332a7788ed5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a281b8a74d32a40b78f7791ee5b2ef138">ltr::gp::GPScorer::toString</a> </td>
+          <td class="memname">string <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#ad536776a426bc390bf6c4332a7788ed5">ltr::gp::GPScorer::toStringImpl</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td> const<code> [inline, private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
+<p>Reimplemented from <a class="el" href="classltr_1_1_scorer.html#aa48452aaa1e7a0c9e86fb9f036b52c0e">ltr::Scorer</a>.</p>
 
 </div>
 </div>
@@ -490,7 +490,7 @@ template&lt;typename TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

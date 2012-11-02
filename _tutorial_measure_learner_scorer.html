@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Learning To Rank Library: Tutorial page 5 - Learners, Scorers, Measures</title>
+<title>Learning To Rank Library: Measures, Learners, Scorers</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Tutorial page 5 - Learners, Scorers, Measures </div>  </div>
+<div class="title">Measures, Learners, Scorers </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
@@ -108,13 +108,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Introduction</h2>
 <p>The key concept of LTR is <a class="el" href="classltr_1_1_scorer.html">Scorer</a>. <a class="el" href="classltr_1_1_scorer.html">Scorer</a> is a functor which computes score of an object:</p>
 <div align="center">
-<img src="dot_inline_dotgraph_1.png" alt="dot_inline_dotgraph_1.png" border="0" usemap="#dot_inline_dotgraph_1.map"/>
-<map name="dot_inline_dotgraph_1.map" id="dot_inline_dotgraph_1.map"><area shape="poly" href="classltr_1_1_object.html" title="Object" alt="" coords="136,49 133,41 126,34 113,29 98,26 81,25 63,26 48,29 36,34 28,41 25,49 28,56 36,63 48,68 63,71 81,73 98,71 113,68 126,63 133,56"/><area shape="rect" href="classltr_1_1_scorer.html" title="Scorer" alt="" coords="249,25,329,73"/></map>
+<img src="dot_inline_dotgraph_3.png" alt="dot_inline_dotgraph_3.png" border="0" usemap="#dot_inline_dotgraph_3.map"/>
+<map name="dot_inline_dotgraph_3.map" id="dot_inline_dotgraph_3.map"><area shape="poly" href="classltr_1_1_object.html" title="Object" alt="" coords="136,49 133,41 126,34 113,29 98,26 81,25 63,26 48,29 36,34 28,41 25,49 28,56 36,63 48,68 63,71 81,73 98,71 113,68 126,63 133,56"/><area shape="rect" href="classltr_1_1_scorer.html" title="Scorer" alt="" coords="249,25,329,73"/></map>
 </div>
 <p><a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a> learn a train data to make the <a class="el" href="classltr_1_1_scorer.html">Scorer</a> which aproximates the actual labels of the objects in the train data:</p>
 <div align="center">
-<img src="dot_inline_dotgraph_2.png" alt="dot_inline_dotgraph_2.png" border="0" usemap="#dot_inline_dotgraph_2.map"/>
-<map name="dot_inline_dotgraph_2.map" id="dot_inline_dotgraph_2.map"><area shape="rect" href="classltr_1_1_data_set.html" title="DataSet" alt="" coords="26,25,122,73"/><area shape="rect" href="classltr_1_1_learner.html" title="Learner" alt="" coords="233,25,326,73"/><area shape="rect" href="classltr_1_1_scorer.html" title="Scorer" alt="" coords="438,25,518,73"/></map>
+<img src="dot_inline_dotgraph_4.png" alt="dot_inline_dotgraph_4.png" border="0" usemap="#dot_inline_dotgraph_4.map"/>
+<map name="dot_inline_dotgraph_4.map" id="dot_inline_dotgraph_4.map"><area shape="rect" href="classltr_1_1_data_set.html" title="DataSet" alt="" coords="26,25,122,73"/><area shape="rect" href="classltr_1_1_learner.html" title="Learner" alt="" coords="233,25,326,73"/><area shape="rect" href="classltr_1_1_scorer.html" title="Scorer" alt="" coords="438,25,518,73"/></map>
 </div>
 <p>One should use a <a class="el" href="classltr_1_1_measure.html">Measure</a> to check the quality of aproximation.</p>
 <p>LTR was originally designed to solve learning to rank problem. But actualy it can be used to solve a various problems of machine learning. The difference is in the type of train data, usage of the result scorer and the target metric:</p>
@@ -138,8 +138,8 @@ Learner</h2>
 <li><a class="el" href="classltr_1_1_learner.html#a597e9bfbc0e1bb388eeac58dc160685d">make </a>, <a class="el" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific </a> - return the pointer to a new scorer, see the example below to understand the difference</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer </a> - set the initial approximation of a scorer</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">reset </a> - reset a current state of the learner</li>
-<li><a class="el" href="classltr_1_1_learner.html#a8cf0efc622783ac8fb66b67f97d59b33">addDataPreprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Tutorial page 3 - Data preprocessors</a></li>
-<li><a class="el" href="classltr_1_1_learner.html#ada687edfa5a3369eb7a425cca82277ed">addFeatureConverterLearner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Tutorial page 4 - Feature converters</a></li>
+<li><a class="el" href="classltr_1_1_learner.html#a8cf0efc622783ac8fb66b67f97d59b33">addDataPreprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Data preprocessors</a></li>
+<li><a class="el" href="classltr_1_1_learner.html#ada687edfa5a3369eb7a425cca82277ed">addFeatureConverterLearner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Feature converters</a></li>
 </ul>
 <h2><a class="anchor" id="Scorer"></a>
 Scorer</h2>
@@ -161,11 +161,11 @@ Scorer</h2>
 <tr>
 <td><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">gp::GPLearner</a> </td><td><a href="http://en.wikipedia.org/wiki/Genetic_programming">http://en.wikipedia.org/wiki/Genetic_programming</a> </td><td><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">gp::GPScorer</a> </td></tr>
 <tr>
-<td><a class="el" href="classltr_1_1composition_1_1_composition_learner.html" title="Learner, wich uses other learner (weak learner), produces with it different scorers and tie them into...">composition::CompositionLearner</a> </td><td><a class="el" href="_tutorial_composition.html">Tutorial page 7 - Composition of algorithms</a> </td><td><a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">composition::CompositionScorer</a> </td></tr>
+<td><a class="el" href="classltr_1_1composition_1_1_composition_learner.html" title="Learner, wich uses other learner (weak learner), produces with it different scorers and tie them into...">composition::CompositionLearner</a> </td><td><a class="el" href="_tutorial_composition.html">Composition of algorithms</a> </td><td><a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">composition::CompositionScorer</a> </td></tr>
 <tr>
-<td><a class="el" href="classltr_1_1_bayesian_learner.html">BayesianLearner</a> </td><td><a class="el" href="_tutorial_bayesian_classification.html">Tutorial page 6 - Bayesian Classification</a> </td><td><a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> </td></tr>
+<td><a class="el" href="classltr_1_1_bayesian_learner.html">BayesianLearner</a> </td><td><a class="el" href="_tutorial_bayesian_classification.html">Bayesian Classification</a> </td><td><a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> </td></tr>
 <tr>
-<td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html" title="DecisionTreeLearner Builds decision tree for given data.">decision_tree::DecisionTreeLearner</a> </td><td><a class="el" href="_tutorial_decision_tree.html">Tutorial page 8 - Decision Trees</a> </td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html">decision_tree::DecisionTreeScorer</a> </td></tr>
+<td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html" title="DecisionTreeLearner Builds decision tree for given data.">decision_tree::DecisionTreeLearner</a> </td><td><a class="el" href="_tutorial_decision_tree.html">Decision Trees</a> </td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html">decision_tree::DecisionTreeScorer</a> </td></tr>
 </table>
 <h2><a class="anchor" id="Measure"></a>
 Measure</h2>
@@ -239,7 +239,7 @@ Example</h2>
   learner.<a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn</a>(data);
 
   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::Scorer::Ptr</a> scorer = learner.<a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">make</a>();           <span class="comment">// make scorer</span>
-  cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">toString</a>() &lt;&lt; endl;                 <span class="comment">// human-readable representation of scorer</span>
+  cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#a8969d43c152f33bf2d4b0f335c996af2">toString</a>() &lt;&lt; endl;                 <span class="comment">// human-readable representation of scorer</span>
   cout &lt;&lt; endl;
   cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#afb5985591e1c30774cb4487ba4288965">generateCppCode</a>(<span class="stringliteral">&quot;score&quot;</span>) &lt;&lt; endl;   <span class="comment">// serialize scorer to cpp code</span>
 
@@ -266,7 +266,7 @@ Example</h2>
 [20.00, 30.00]{60.00, 0.00}
 [300.00, 400.00]{710.00, 0.00}
 
-Linear scorer with coefficients: [10.00, 1.00, 1.00]
+Linear scorer with coefficients: [10.00, 1.00, 1.00], has no feature converters
 
 <span class="keywordtype">double</span> score(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; features) {
   <span class="keywordtype">double</span> output = 9.9999999999925002;
@@ -290,7 +290,7 @@ f(x, y) = 10 + 1 * x + 1 * y
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

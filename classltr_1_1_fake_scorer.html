@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -135,12 +135,12 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66857412071e4629c8ad5f5d7d6192e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#a66857412071e4629c8ad5f5d7d6192e0">FakeScorer</a> (double scoreValue=0.0, const FeatureConverterArray &amp;<a class="el" href="classltr_1_1_scorer.html#a0517f127f1af9d812d8d11964e1fe690">feature_converters</a>=FeatureConverterArray())</td></tr>
-<tr class="memitem:a168222a8e4dbff471a01f42be5ada41c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#a168222a8e4dbff471a01f42be5ada41c">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a6c1e8fc43080361f5b38cbafb2355f6e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#a6c1e8fc43080361f5b38cbafb2355f6e">scoreImpl</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;obj) const </td></tr>
 <tr class="memitem:afe60b2d1393c3a3d81a7fd238276e5d1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">generateCppCodeImpl</a> (const string &amp;function_name) const </td></tr>
 <tr class="memitem:accae086e274be012f83714e37043dcc6"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#accae086e274be012f83714e37043dcc6">getDefaultAlias</a> () const </td></tr>
+<tr class="memitem:a7420db4d4d1aedf9d11c1ae215ee7164"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#a7420db4d4d1aedf9d11c1ae215ee7164">toStringImpl</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4d4d2c00b2def340f27db4ed30ece0f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a></td></tr>
@@ -248,21 +248,21 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a168222a8e4dbff471a01f42be5ada41c"></a>
+<a class="anchor" id="a7420db4d4d1aedf9d11c1ae215ee7164"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classltr_1_1_fake_scorer.html#a168222a8e4dbff471a01f42be5ada41c">ltr::FakeScorer::toString</a> </td>
+          <td class="memname">string <a class="el" href="classltr_1_1_fake_scorer.html#a7420db4d4d1aedf9d11c1ae215ee7164">ltr::FakeScorer::toStringImpl</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td> const<code> [inline, private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
+<p>Reimplemented from <a class="el" href="classltr_1_1_scorer.html#aa48452aaa1e7a0c9e86fb9f036b52c0e">ltr::Scorer</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

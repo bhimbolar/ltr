@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -124,7 +124,7 @@ Inheritance diagram for ltr::RemoveNominalConverter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classltr_1_1_remove_nominal_converter__inherit__graph.png" border="0" usemap="#ltr_1_1_remove_nominal_converter_inherit__map" alt="Inheritance graph"/></div>
 <map name="ltr_1_1_remove_nominal_converter_inherit__map" id="ltr_1_1_remove_nominal_converter_inherit__map">
-<area shape="rect" href="classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="48,80,187,107"/><area shape="rect" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="5,5,112,32"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="136,5,216,32"/></map>
+<area shape="rect" href="classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="107,80,245,107"/><area shape="rect" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="5,5,112,32"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="136,5,216,32"/><area shape="rect" href="classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="240,5,331,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classltr_1_1_remove_nominal_converter-members.html">List of all members.</a></p>
@@ -140,6 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aea2883214d01778b78a2afe3100b1968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_remove_nominal_converter.html#aea2883214d01778b78a2afe3100b1968">RemoveNominalConverter</a> (const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;<a class="el" href="crossvalidation__unittest_8cc.html#aa840e4a188067b160006315daedd6e90">feature_info</a>=<a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>())</td></tr>
 <tr class="memitem:ab826f8877991492ccbac5e03be7c7314"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_remove_nominal_converter.html#ab826f8877991492ccbac5e03be7c7314">generateCppCode</a> (const std::string &amp;function_name) const </td></tr>
 <tr class="memitem:ac9d16ac27574fb77abef1bfa7641c45b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_remove_nominal_converter.html#ac9d16ac27574fb77abef1bfa7641c45b">convertFeatureInfo</a> () const </td></tr>
+<tr class="memitem:a419e95088b7848a5f945006c735846ff"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_remove_nominal_converter.html#a419e95088b7848a5f945006c735846ff">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a12bc7f3df43aaf19e964a43ca874dccc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_remove_nominal_converter.html#a12bc7f3df43aaf19e964a43ca874dccc">applyImpl</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;input, <a class="el" href="classltr_1_1_object.html">Object</a> *output) const </td></tr>
@@ -291,6 +292,24 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a419e95088b7848a5f945006c735846ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classltr_1_1_remove_nominal_converter.html#a419e95088b7848a5f945006c735846ff">ltr::RemoveNominalConverter::toString</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>ltr/feature_converters/<a class="el" href="remove__nominal__converter_8h_source.html">remove_nominal_converter.h</a></li>
 <li>ltr/feature_converters/<a class="el" href="remove__nominal__converter_8cc.html">remove_nominal_converter.cc</a></li>
@@ -299,7 +318,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

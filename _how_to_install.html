@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -97,10 +97,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#InstallingLTR">Installing LTR</a><ul><li class="level2"><a href="#InstallingBoost">Installing Boost</a></li>
-<li class="level2"><a href="#InstallingCMake">Installing CMake</a></li>
-<li class="level2"><a href="#ConfiguringLTR">Configuring LTR</a></li>
-<li class="level2"><a href="#BuildingLTR">Building LTR</a></li>
+<ul><li class="level1"><a href="#InstallingLTR">Installing LTR</a></li>
+<li class="level1"><a href="#WindowsInstall">Installation on Windows</a><ul><li class="level2"><a href="#WInstallingBoost">Installing Boost</a></li>
+<li class="level2"><a href="#WInstallingCMake">Installing CMake</a></li>
+<li class="level2"><a href="#WConfiguringLTR">Configuring LTR</a></li>
+<li class="level2"><a href="#WBuildingLTR">Building LTR</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#LinuxInstall">Installation on Linux</a><ul><li class="level2"><a href="#LInstallingBoostCmake">Installing Boost and Cmake</a></li>
+<li class="level2"><a href="#LConfiguringLTR">Configuring LTR</a></li>
+<li class="level2"><a href="#LBuildingLTR">Building LTR</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#LinkingtoLTR">Linking to LTR</a></li>
@@ -109,61 +115,88 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><h2><a class="anchor" id="InstallingLTR"></a>
 Installing LTR</h2>
 <p>Assuming you already have downloaded LTR to you computer, LTR's root directory is supposed to contain CMakeLists.txt file and the following folders: cmake, contrib, data, doc, ltr and ltr_client.</p>
-<h3><a class="anchor" id="InstallingBoost"></a>
+<h2><a class="anchor" id="WindowsInstall"></a>
+Installation on Windows</h2>
+<h3><a class="anchor" id="WInstallingBoost"></a>
 Installing Boost</h3>
-<p>The simplest way to install boost under Windows is to use an installer from <a href="http://www.boostpro.com/download">http://www.boostpro.com/download</a>. Unix users can read the official tutorial from <a href="http://www.boost.org/doc/libs/1_51_0/more/getting_started/unix-variants.html">http://www.boost.org/doc/libs/1_51_0/more/getting_started/unix-variants.html</a>.</p>
+<p>The simplest way to install boost under Windows is to use an installer from <a href="http://www.boostpro.com/download">http://www.boostpro.com/download</a>.</p>
 <p>Now LTR uses only <em>multithreaded</em> and <em>multithreaded debug</em> versions of boost, but it is recommended to install DLL variants too.</p>
-<h3><a class="anchor" id="InstallingCMake"></a>
+<h3><a class="anchor" id="WInstallingCMake"></a>
 Installing CMake</h3>
 <p>Install CMake from <a href="www.cmake.org/cmake/resources/software.html">www.cmake.org/cmake/resources/software.html</a> and add CMake to the system PATH.</p>
-<h3><a class="anchor" id="ConfiguringLTR"></a>
+<h3><a class="anchor" id="WConfiguringLTR"></a>
 Configuring LTR</h3>
-<p>Create a directory for building, the default name of which is &lt;LTR_root&gt;/build. Further shell commands will be written as if you've chosen the default &lt;LTR_root&gt;/build directory for building. From the chosen directory run the following shell command:</p>
+<p>Create a directory for building, the recommended name of which is &lt;LTR_root&gt;/build. Further shell commands will be written as if you've chosen the &lt;LTR_root&gt;/build directory for building. From the chosen directory run the following shell command:</p>
 <div class="fragment"><pre class="fragment">cmake ../
-</pre></div><p>Here ../ is a relative path to &lt;LTR_root&gt;. This command will configure LTR and generate makefiles or project files, depending on your system and IDE installed. You can specify what to generate manually, as here:</p>
+</pre></div><p>Here ../ is a relative path to &lt;LTR_root&gt;. This command will configure LTR and generate makefiles or project files, depending on IDE installed. You can specify what to generate manually, as here:</p>
 <div class="fragment"><pre class="fragment">cmake ../ -G <span class="stringliteral">&quot;Visual Studio 9 2008&quot;</span>
 </pre></div><p>For the list of all supported generators, simply write</p>
 <div class="fragment"><pre class="fragment">cmake
-</pre></div><p>If you are an LTR's developer, it might be useful to have a shell-script file like the following (example for windows): </p>
+</pre></div><p>If you are an LTR's developer, it might be useful to have a shell-script file like the following: </p>
 <div class="fragment"><pre class="fragment">del CMakeCache.txt
 cmake ../ -G <span class="stringliteral">&quot;Visual Studio 9 2008&quot;</span>
 pause
-</pre></div><h3><a class="anchor" id="BuildingLTR"></a>
+</pre></div><h3><a class="anchor" id="WBuildingLTR"></a>
 Building LTR</h3>
 <p>As you already have created your favorite IDE's project, compiling will now be simple. (For example, in Visual Studio one just has to build an ALL_BUILD project.)</p>
 <p>After building you can run unittests from &lt;LTR_root&gt;/build. In Visual Studio it can be done, by setting ltr_test as a startup project and pressing Ctrl+F5.</p>
-<p>It is important that after successful build you should build an INSTALL project, or (depending on your system and IDE) run</p>
+<p>It is important that after successful build you should build an INSTALL project, or (depending on your IDE) run</p>
+<div class="fragment"><pre class="fragment">make install
+</pre></div><p>This will create an &lt;LTR_root&gt;/lib directory with 3 static libraries in there: ltr, logog and puppy (with "_d" suffix if the debug build has been used). If you want to use LTR in your project, you have to link to these libraries.</p>
+<h2><a class="anchor" id="LinuxInstall"></a>
+Installation on Linux</h2>
+<h3><a class="anchor" id="LInstallingBoostCmake"></a>
+Installing Boost and Cmake</h3>
+<p>One can install boost and cmake with one command as follows</p>
+<div class="fragment"><pre class="fragment">sudo apt-<span class="keyword">get</span> install libboost-all-dev cmake
+</pre></div><h3><a class="anchor" id="LConfiguringLTR"></a>
+Configuring LTR</h3>
+<p>Create a directory for building, the recommended name of which is &lt;LTR_root&gt;/build. Further shell commands will be written as if you've chosen the &lt;LTR_root&gt;/build directory for building. From the chosen directory run the following shell command:</p>
+<div class="fragment"><pre class="fragment">cmake ../
+</pre></div><p>Here ../ is a relative path to &lt;LTR_root&gt;. This command will configure LTR and generate makefiles or project files, depending on IDE installed. You can specify what to generate manually, as here:</p>
+<div class="fragment"><pre class="fragment">cmake ../ -G <span class="stringliteral">&quot;Eclipse CDT4 - Unix Makefiles&quot;</span>
+</pre></div><p>For the list of all supported generators, simply write</p>
+<div class="fragment"><pre class="fragment">cmake
+</pre></div><p>If you are an LTR's developer, it might be useful to have a shell-script file like the following: </p>
+<div class="fragment"><pre class="fragment">rm CMakeCache.txt
+cmake ../ -G <span class="stringliteral">&quot;Eclipse CDT4 - Unix Makefiles&quot;</span>
+</pre></div><h3><a class="anchor" id="LBuildingLTR"></a>
+Building LTR</h3>
+<p>As you already have created your favorite IDE's project, compiling will now be simple. After building you can run unittests from &lt;LTR_root&gt;/build.</p>
+<p>It is important that after successful build you should build an INSTALL project, or (depending on your IDE) run</p>
 <div class="fragment"><pre class="fragment">make install
 </pre></div><p>This will create an &lt;LTR_root&gt;/lib directory with 3 static libraries in there: ltr, logog and puppy (with "_d" suffix if the debug build has been used). If you want to use LTR in your project, you have to link to these libraries.</p>
 <h2><a class="anchor" id="LinkingtoLTR"></a>
 Linking to LTR</h2>
 <p>Lets start from a rather simple test project, that uses LTR. Here is an example of the test project's CMakeLists.txt:</p>
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 PROJECT(LTRTestProject CXX C)
-<a name="l00002"></a>00002 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-<a name="l00003"></a>00003 
-<a name="l00004"></a>00004 <a class="code" href="parameterized_8h.html#a3ca0bbeba42e6c0a557d976571d5d1e0">SET</a>(Test_Source_Path ${CMAKE_CURRENT_SOURCE_DIR})
-<a name="l00005"></a>00005 <a class="code" href="parameterized_8h.html#a3ca0bbeba42e6c0a557d976571d5d1e0">SET</a>(LTR_Source_Path ${Test_Source_Path}/..)
-<a name="l00006"></a>00006 
-<a name="l00007"></a>00007 INCLUDE(${LTR_Source_Path}/cmake/setup_ltr.cmake)
-<a name="l00008"></a>00008 SetUpLTR(${LTR_Source_Path})
-<a name="l00009"></a>00009 
-<a name="l00010"></a>00010 INCLUDE_DIRECTORIES(${Test_Source_Path})
-<a name="l00011"></a>00011 <a class="code" href="parameterized_8h.html#a3ca0bbeba42e6c0a557d976571d5d1e0">SET</a>(Test_SOURCES ${Test_Source_Path}/file1.cpp
-<a name="l00012"></a>00012                  ${Test_Source_Path}/file2.cpp)
-<a name="l00013"></a>00013 
-<a name="l00014"></a>00014 ADD_EXECUTABLE(test_executable ${Test_SOURCES})
-<a name="l00015"></a>00015 TARGET_LINK_LIBRARIES(test_executable ${LTR_libs})
-</pre></div><p>Here the Test_Source_Path variable is the path to the sources of the test project. Usually it equals to the CMAKE_CURRENT_SOURCE_DIR variable, i.e., the path to the current CMakeLists.txt file.</p>
-<p>Then the LTR_Source_Path is specified as a relative path from the Test_Source_Path. Absolute path can also be used:</p>
-<div class="fragment"><pre class="fragment"><a class="code" href="parameterized_8h.html#a3ca0bbeba42e6c0a557d976571d5d1e0">SET</a>(LTR_Source_Path <span class="stringliteral">&quot;C:/Data/Ltr1&quot;</span>)
-</pre></div><p>Strings no. 7-8 include a cmake file, which specifies a SetUpLTR macro and run it with LTR_Source_Path parameter. This will set all the necessary variables for using LTR (and also Boost).</p>
-<p>Strings no. 10-12 specify a directory for header files of the test project and list test's source files.</p>
-<p>Finally, the ADD_EXECUTABLE command creates an executable project called test_executable from sources listed in the Test_SOURCES variable. Then, the TARGET_LINK_LIBRARIES command makes test_executable project use LTR by invoking LTR_libs variable, defined in SetUpLTR macro call. </p>
-</div></div><!-- contents -->
+<div class="fragment"><pre class="fragment">PROJECT(LTRTestProject CXX C)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+# Test_Source_Path variable - the path to the sources of the test project. Usually it equals to the
+# CMAKE_CURRENT_SOURCE_DIR variable, i.e., the path to the current CMakeLists.txt file.
+SET(Test_Source_Path ${CMAKE_CURRENT_SOURCE_DIR})
+# LTR_Source_Path - path to the LTR
+SET(LTR_Source_Path "C:/Data/Ltr1")
+
+INCLUDE(${LTR_Source_Path}/cmake/setup_ltr.cmake)
+# This macro sets up all the necessary variables for using LTR (and also Boost)
+SetUpLTR(${LTR_Source_Path})
+
+# The directory for header files of the test project
+INCLUDE_DIRECTORIES(${Test_Source_Path})
+# Test_SOURCES variable - a list of test sources
+SET(Test_SOURCES ${Test_Source_Path}/file1.cpp
+                 ${Test_Source_Path}/file2.cpp)
+
+# Creates an executable project called test_executable from Test_SOURCES files
+ADD_EXECUTABLE(test_executable ${Test_SOURCES})
+# Makes test_executable project use LTR by invoking LTR_libs variable, defined in SetUpLTR macro call
+TARGET_LINK_LIBRARIES(test_executable ${LTR_libs})
+</pre></div> </div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

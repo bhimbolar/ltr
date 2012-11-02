@@ -1,17 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" href="$splitter_8h.html" title="ltr/crossvalidation/splitter.h" alt="" coords="1123,155,1299,181"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="987,229,1112,256"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="144,453,256,480"/>
-<area shape="rect" href="$splitter__unittest_8h.html" title="ltr/crossvalidation/splitter_unittest.h" alt="" coords="161,155,385,181"/>
-<area shape="rect" href="$tk__fold__simple__splitter_8h.html" title="ltr/crossvalidation/tk_fold_simple_splitter.h" alt="" coords="1829,80,2093,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="424,528,568,555"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="245,528,400,555"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1116,379,1305,405"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1537,304,1681,331"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="533,379,669,405"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="693,379,832,405"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="908,304,1049,331"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="639,304,833,331"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="787,453,1088,480"/>
-<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="2357,155,2592,181"/>
+<area shape="rect" href="$splitter_8h.html" title="ltr/crossvalidation/splitter.h" alt="" coords="1011,155,1187,181"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="800,229,925,256"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="456,453,568,480"/>
+<area shape="rect" href="$splitter__unittest_8h.html" title="ltr/crossvalidation/splitter_unittest.h" alt="" coords="289,155,513,181"/>
+<area shape="rect" href="$tk__fold__simple__splitter_8h.html" title="ltr/crossvalidation/tk_fold_simple_splitter.h" alt="" coords="1812,80,2076,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="804,528,948,555"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="625,528,780,555"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1157,379,1347,405"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1476,304,1620,331"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="896,379,1032,405"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="683,379,821,405"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="549,304,691,331"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="765,304,960,331"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1099,453,1400,480"/>
+<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="2308,155,2543,181"/>
 </map>

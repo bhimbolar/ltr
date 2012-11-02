@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -118,41 +118,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="keyword">using</span> <a class="code" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">ltr::BaseProbabilityDensityEstimator</a>;
 <a name="l00015"></a>00015 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="keyword">namespace </span>ltr {
+<a name="l00017"></a>00017 <span class="keyword">using</span> boost::lexical_cast;
 <a name="l00018"></a>00018 
-<a name="l00019"></a><a class="code" href="classltr_1_1_bayesian_scorer.html">00019</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html">Scorer</a> {
-<a name="l00020"></a>00020  <span class="keyword">public</span>:
-<a name="l00021"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">00021</a>   <span class="keyword">typedef</span> map&lt;double, double&gt; <a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a>;
-<a name="l00022"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">00022</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;BayesianScorer&gt;</a> <a class="code" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">Ptr</a>;
-<a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#ac768a445ee16a28ec96c5f63b5d5ea37">00024</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#ac768a445ee16a28ec96c5f63b5d5ea37">toString</a>()<span class="keyword"> const </span>{
-<a name="l00025"></a>00025     <span class="keywordflow">return</span> <span class="stringliteral">&quot;Bayesian Scorer&quot;</span>;
-<a name="l00026"></a>00026   };
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">00028</a>   <a class="code" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">BayesianScorer</a>() {
-<a name="l00029"></a>00029   }
-<a name="l00030"></a>00030 
-<a name="l00031"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#ad40a6792755c9937ae473b241f3f2777">00031</a>   <a class="code" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">BayesianScorer</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a>&amp; prior_probability,
-<a name="l00032"></a>00032                  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseProbabilityDensityEstimator::Ptr</a> estimator) :
-<a name="l00033"></a>00033     <a class="code" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">prior_probability_</a>(prior_probability),
-<a name="l00034"></a>00034     <a class="code" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">estimator_</a>(estimator) {
-<a name="l00035"></a>00035   }
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037  <span class="keyword">private</span>:
-<a name="l00038"></a>00038   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#af637086a95b8ed3e37e429b49f19d749">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
-<a name="l00039"></a>00039   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#a191bd6478508c6af10894dbeac65d237">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00040"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#af51169a6c1aae58f7488308b82ded332">00040</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#af51169a6c1aae58f7488308b82ded332">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;BayesianScorer&quot;</span>;}
-<a name="l00041"></a>00041 
-<a name="l00042"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">00042</a>   <a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a> <a class="code" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">prior_probability_</a>;
-<a name="l00043"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">00043</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseProbabilityDensityEstimator::Ptr</a> <a class="code" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">estimator_</a>;
-<a name="l00044"></a>00044 };
-<a name="l00045"></a>00045 };
-<a name="l00046"></a>00046 <span class="preprocessor">#endif  // LTR_SCORERS_BAYESIAN_SCORER_H_</span>
+<a name="l00019"></a>00019 <span class="keyword">namespace </span>ltr {
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="classltr_1_1_bayesian_scorer.html">00021</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html">Scorer</a> {
+<a name="l00022"></a>00022  <span class="keyword">public</span>:
+<a name="l00023"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">00023</a>   <span class="keyword">typedef</span> map&lt;double, double&gt; <a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a>;
+<a name="l00024"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">00024</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;BayesianScorer&gt;</a> <a class="code" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">Ptr</a>;
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">00026</a>   <a class="code" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">BayesianScorer</a>() {
+<a name="l00027"></a>00027   }
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#ad40a6792755c9937ae473b241f3f2777">00029</a>   <a class="code" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">BayesianScorer</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a>&amp; prior_probability,
+<a name="l00030"></a>00030                  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseProbabilityDensityEstimator::Ptr</a> estimator) :
+<a name="l00031"></a>00031     <a class="code" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">prior_probability_</a>(prior_probability),
+<a name="l00032"></a>00032     <a class="code" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">estimator_</a>(estimator) {
+<a name="l00033"></a>00033   }
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035  <span class="keyword">private</span>:
+<a name="l00036"></a>00036   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#af637086a95b8ed3e37e429b49f19d749">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
+<a name="l00037"></a>00037   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#a191bd6478508c6af10894dbeac65d237">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00038"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#af51169a6c1aae58f7488308b82ded332">00038</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#af51169a6c1aae58f7488308b82ded332">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;BayesianScorer&quot;</span>;}
+<a name="l00039"></a>00039 
+<a name="l00040"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">00040</a>   <a class="code" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a> <a class="code" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">prior_probability_</a>;
+<a name="l00041"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">00041</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseProbabilityDensityEstimator::Ptr</a> <a class="code" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">estimator_</a>;
+<a name="l00042"></a>00042 
+<a name="l00043"></a><a class="code" href="classltr_1_1_bayesian_scorer.html#a94a3d4ee35ab62749739f3546cbf9fcc">00043</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_bayesian_scorer.html#a94a3d4ee35ab62749739f3546cbf9fcc">toStringImpl</a>()<span class="keyword"> const </span>{
+<a name="l00044"></a>00044     <span class="keywordflow">return</span> <span class="stringliteral">&quot;Bayesian Scorer&quot;</span>;
+<a name="l00045"></a>00045   };
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 <span class="preprocessor">#endif  // LTR_SCORERS_BAYESIAN_SCORER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:53 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

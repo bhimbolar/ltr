@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Learning To Rank Library: Tutorial page 4 - Feature converters</title>
+<title>Learning To Rank Library: Feature converters</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -54,8 +54,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="index.html"><span>About</span></a></li>
+      <li><a href="_doc_contents.html"><span>Documentation</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,106 +93,55 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="headertitle">
-<div class="title">Tutorial page 4 - Feature converters </div>  </div>
+<div class="title">Feature converters </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#TutorialFeatureConverter">FeatureConverter</a><ul><li class="level2"><a href="#TutorialFakeFeatureConverter">FakeFeatureConverter</a></li>
-<li class="level2"><a href="#TutorialFeatureSampler">FeatureSampler</a></li>
-<li class="level2"><a href="#TutorialPerFeatureLinearConverter">PerFeatureLinearConverter</a></li>
-<li class="level2"><a href="#TutorialNanToZeroConverter">NanToZeroConverter</a></li>
-<li class="level2"><a href="#TutorialNanToAverageConverter">NanToAverageConverter</a></li>
-<li class="level2"><a href="#TutorialNominalToBoolConverter">NominalToBoolConverter</a></li>
-<li class="level2"><a href="#TutorialRemoveNominalConverter">RemoveNominalConverter</a></li>
-</ul>
-</li>
-<li class="level1"><a href="#TutorialFeatureConverterLearner">FeatureConverterLearner</a><ul><li class="level2"><a href="#TutorialFakeFeatureConverterLearner">FakeFeatureConverterLearner</a></li>
-<li class="level2"><a href="#TutorialFeatureNormalizerLearner">FeatureNormalizerLearner</a></li>
-<li class="level2"><a href="#TutorialFeatureSamplerLearner">FeatureSamplerLearner</a></li>
-<li class="level2"><a href="#TutorialFeatureRandomSamplerLearner">FeatureRandomSamplerLearner</a></li>
-<li class="level2"><a href="#TutorialNanToZeroConverterLearner">NanToZeroConverterLearner</a></li>
-<li class="level2"><a href="#TutorialNanToAverageConverterLearner">NanToAverageConverterLearner</a></li>
-<li class="level2"><a href="#TutorialNominalToBoolConverterLearner">NominalToBoolConverterLearner</a></li>
-<li class="level2"><a href="#TutorialRemoveNominalConverterLearner">RemoveNominalConverterLearner</a></li>
+<ul><li class="level1"><a href="#TutorialFeatureConverter">FeatureConverter</a></li>
+<li class="level1"><a href="#FeatureConverterList">List of all FeatureConverters</a><ul><li class="level2"><a href="#TutorialFeatureSamplerLearner">FeatureSamplerLearner</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="textblock"><h2><a class="anchor" id="TutorialFeatureConverter"></a>
 FeatureConverter</h2>
-<p>A base class for feature converters.</p>
-<p>Preprocesses <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, e.g. sample or linear transform features. Can be applied to each <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a> in <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. But before doing this <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a> should be trained by some <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a>. This can be usefull for better training of <a class="el" href="classltr_1_1_scorer.html">Scorer</a>.</p>
-<p>Feature converters which were used during training of <a class="el" href="classltr_1_1_scorer.html">Scorer</a> will be added in the result <a class="el" href="classltr_1_1_scorer.html">Scorer</a> and consequently must be <a class="el" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ...">Serializable</a>.</p>
-<dl class="section note"><dt>Note:</dt><dd>In most cases you don't need to create <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a> directly, normally it is the result of some <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> work.</dd></dl>
-<p>You can convert your data features in this way:</p>
+<p>This is a base class for all possible kinds of features preprocessing (normalization, PCA, missing values handling, etc.). Converter applies object-wisely, it gets original object and produces converted object.</p>
+<div align="center">
+<img src="dot_inline_dotgraph_1.png" alt="dot_inline_dotgraph_1.png" border="0" usemap="#dot_inline_dotgraph_1.map"/>
+<map name="dot_inline_dotgraph_1.map" id="dot_inline_dotgraph_1.map"><area shape="poly" href="classltr_1_1_object.html" title="Object" alt="" coords="136,49 133,41 126,34 113,29 98,26 81,25 63,26 48,29 36,34 28,41 25,49 28,56 36,63 48,68 63,71 81,73 98,71 113,68 126,63 133,56"/><area shape="rect" href="classltr_1_1_feature_converter.html" title="FeatureConverter" alt="" coords="250,25,434,73"/><area shape="poly" href="classltr_1_1_object.html" title="ConvertedObject" alt="" coords="731,49 725,41 707,34 680,29 646,26 609,25 571,26 537,29 510,34 492,41 486,49 492,56 510,63 537,68 571,71 609,73 646,71 680,68 707,63 725,56"/></map>
+</div>
+<p>In general, algorithm of features preprocessing should learn on train data, so every <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a> has its own <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a>. In most cases you don't need to create <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a> directly, it is just the result of <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> work.</p>
+<div align="center">
+<img src="dot_inline_dotgraph_2.png" alt="dot_inline_dotgraph_2.png" border="0" usemap="#dot_inline_dotgraph_2.map"/>
+<map name="dot_inline_dotgraph_2.map" id="dot_inline_dotgraph_2.map"><area shape="rect" href="classltr_1_1_data_set.html" title="DataSet" alt="" coords="26,25,122,73"/><area shape="rect" href="classltr_1_1_feature_converter_learner.html" title="Learner" alt="" coords="233,25,326,73"/><area shape="rect" href="classltr_1_1_feature_converter.html" title="FeatureConverter" alt="" coords="439,25,623,73"/></map>
+</div>
+<p>One can use FeatureConverters via <a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply() </a> method:</p>
 <ul>
-<li>FeatureConverter::apply(const Object&amp; input, Object* output) <dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input</td><td><a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a> to be converted </td></tr>
-    <tr><td class="paramname">output</td><td>converted <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a></td></tr>
-  </table>
-  </dd>
-</dl>
-</li>
-<li>FeatureConverter::apply(const DataSet&lt;TElement&gt;&amp; input, DataSet&lt;TElement&gt;* output) <dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">input</td><td><a class="el" href="classltr_1_1_data_set.html">DataSet</a> to be converted </td></tr>
-    <tr><td class="paramname">output</td><td>converted <a class="el" href="classltr_1_1_data_set.html">DataSet</a></td></tr>
-  </table>
-  </dd>
-</dl>
-</li>
+<li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const Object &amp;input, Object *output) </a> - convert one object </li>
+<li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const DataSet&lt;TElement&gt; &amp;input, DataSet&lt;TElement&gt; *output) </a> - convert whole dataset</li>
 </ul>
-<h3><a class="anchor" id="TutorialFakeFeatureConverter"></a>
-FakeFeatureConverter</h3>
-<p>Does nothing with input object</p>
-<h3><a class="anchor" id="TutorialFeatureSampler"></a>
-FeatureSampler</h3>
-<p>Samples features with specified indices.</p>
-<h3><a class="anchor" id="TutorialPerFeatureLinearConverter"></a>
-PerFeatureLinearConverter</h3>
-<p>Perform linear transformation of each feature. </p>
-<div class="fragment"><pre class="fragment">features[i] -&gt; factors[i] * features[i] + shifts[i]
-</pre></div><h3><a class="anchor" id="TutorialNanToZeroConverter"></a>
-NanToZeroConverter</h3>
-<p>Converts NaN features to zero values.</p>
-<h3><a class="anchor" id="TutorialNanToAverageConverter"></a>
-NanToAverageConverter</h3>
-<p>Converts NaN features to average values of all non NaN features from other Objects. If some feature is NaN in all Objects this feature will be removed.</p>
-<h3><a class="anchor" id="TutorialNominalToBoolConverter"></a>
-NominalToBoolConverter</h3>
-<p>Converts nominal features to boolean, and move they to the end of features list.</p>
-<p>Nominal feature with k values will be converted to k boolean features.</p>
-<h3><a class="anchor" id="TutorialRemoveNominalConverter"></a>
-RemoveNominalConverter</h3>
-<p>Remove all nominal features.</p>
-<h2><a class="anchor" id="TutorialFeatureConverterLearner"></a>
-FeatureConverterLearner</h2>
-<p>A base class for feature converter learners.</p>
-<p>Learns input dataset and produces a <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a>. Sometimes before training a <a class="el" href="classltr_1_1_scorer.html">Scorer</a> it's usefull to make some preprocessing of object features, e.g. normalize, filter out non significant features, etc. In order to do this one need to add <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> into the <a class="el" href="classltr_1_1_base_learner.html">BaseLearner</a>.</p>
-<p>If you want to make your own <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> it's more convinient to inherit from <a class="el" href="classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners.">BaseFeatureConverterLearner</a>.</p>
-<p>You can get your <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a> in this way:</p>
-<ul>
-<li><a class="el" href="classltr_1_1_feature_converter_learner.html#acde2eff4e3e410e32f753247aa99ba4a" title="Learns input dataset.">FeatureConverterLearner::learn</a>(const DataSet&lt;TElement&gt;&amp; data_set, bool check_parameters = true) <dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data_set</td><td>dataset to study </td></tr>
-    <tr><td class="paramname">check_parameters</td><td>whether perform <a class="el" href="classltr_1_1_parameterized.html#a1179ecf33cb6277323b390bffeca1244">Parameterized::checkParameters()</a> before launch</td></tr>
-  </table>
-  </dd>
-</dl>
-</li>
-<li><a class="el" href="classltr_1_1_feature_converter_learner.html#a0211512ff69ab37206e2c774135c115f">FeatureConverterLearner::make()</a></li>
-</ul>
-<p>To add your own <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> you should:</p>
-<p><b>1)</b> Add your feature converter class inherited from <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a>. Your class must have <a class="el" href="classltr_1_1_feature_converter.html#ab09d9fb6c21d9b4bec42229c8fbf0bac">FeatureConverter::convertFeatureInfo()</a> and <a class="el" href="classltr_1_1_feature_converter.html#a4ab2a75a95d8b30e148344f59c29ddd2">FeatureConverter::applyImpl()</a> methods;<br/>
- <b>2)</b> Add your feature converter learner class inherited from <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> with type of elements and your feature converter class as parameters. Your class must have FeatureConverterLearner::learnImpl() private method;</p>
-<p>See <a class="el" href="classltr_1_1_nan_to_average_converter_learner.html">NanToAverageConverterLearner</a> as example.</p>
-<h3><a class="anchor" id="TutorialFakeFeatureConverterLearner"></a>
-FakeFeatureConverterLearner</h3>
-<p>Produces <a class="el" href="classltr_1_1_fake_feature_converter.html">FakeFeatureConverter</a>.</p>
-<h3><a class="anchor" id="TutorialFeatureNormalizerLearner"></a>
-FeatureNormalizerLearner</h3>
-<p>Independently normalize each feature component to the specified range.</p>
+<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via via <a class="el" href="classltr_1_1_learner.html#ada687edfa5a3369eb7a425cca82277ed">addFeatureConverterLearner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
+<p>After learning on converted data <a class="el" href="classltr_1_1_scorer.html">Scorer</a> can be applied only to objects which features are preprocessed the same way. For this reason FeatureConverters used in <a class="el" href="classltr_1_1_scorer.html">Scorer</a> should be also serialized in C++ code during <a class="el" href="classltr_1_1_scorer.html">Scorer</a> serialization.</p>
+<h2><a class="anchor" id="FeatureConverterList"></a>
+List of all FeatureConverters</h2>
+<table class="doxtable">
+<tr>
+<th>FeatureConverter </th><th>Description</th></tr>
+<tr>
+<td><a class="el" href="classltr_1_1_fake_feature_converter.html">FakeFeatureConverter</a> </td><td>Does nothing with input object </td></tr>
+<tr>
+<td><a class="el" href="classltr_1_1_feature_sampler.html" title="Samples features with specified indices.">FeatureSampler</a> </td><td>Samples features with specified indices </td></tr>
+<tr>
+<td><a class="el" href="classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature.">PerFeatureLinearConverter</a> </td><td>Performs linear transformation of each feature </td></tr>
+<tr>
+<td>NanToZeroConverter </td><td>Converts NaN features to zero values </td></tr>
+<tr>
+<td>NanToAverageConverter </td><td>Converts NaN features to average values of all non NaN features from other Objects </td></tr>
+<tr>
+<td><a class="el" href="classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean.">NominalToBoolConverter</a> </td><td>Converts nominal features to boolean, and move they to the end of features list </td></tr>
+<tr>
+<td><a class="el" href="classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features.">RemoveNominalConverter</a> </td><td>Removes all nominal features </td></tr>
+</table>
 <table  class="example">
 <tr>
 <td>Example: learn converter and convert features. </td></tr>
@@ -327,26 +276,11 @@ After:
 
 </pre></div>  </td></tr>
 </table>
-<h3><a class="anchor" id="TutorialFeatureRandomSamplerLearner"></a>
-FeatureRandomSamplerLearner</h3>
-<p>Produces <a class="el" href="classltr_1_1_feature_sampler.html" title="Samples features with specified indices.">FeatureSampler</a> with random indices</p>
-<h3><a class="anchor" id="TutorialNanToZeroConverterLearner"></a>
-NanToZeroConverterLearner</h3>
-<p>Produces NanToZeroConverter.</p>
-<h3><a class="anchor" id="TutorialNanToAverageConverterLearner"></a>
-NanToAverageConverterLearner</h3>
-<p>Produces NanToAverageConverter.</p>
-<h3><a class="anchor" id="TutorialNominalToBoolConverterLearner"></a>
-NominalToBoolConverterLearner</h3>
-<p>Produces <a class="el" href="classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean.">NominalToBoolConverter</a>.</p>
-<h3><a class="anchor" id="TutorialRemoveNominalConverterLearner"></a>
-RemoveNominalConverterLearner</h3>
-<p>Produces <a class="el" href="classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features.">RemoveNominalConverter</a>. </p>
 </div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 30 2012 12:19:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 2 2012 15:26:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
