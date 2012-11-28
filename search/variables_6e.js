@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['name',['name',['../structltr_1_1_parameters_container_1_1_name_value.html#a3a88c91d3dcacac92849824d627b01f9',1,'ltr::ParametersContainer::NameValue']]],
+  ['name',['name',['../structltr_1_1_parameters_container_1_1_name_value.html#a3a88c91d3dcacac92849824d627b01f9',1,'ltr::ParametersContainer::NameValue::name()'],['../struct_data_info.html#a22a091fa0d51d2e09afb25c7d7de436e',1,'DataInfo::name()'],['../struct_train_launch_info.html#a3147e1837745a2fe8f48b1a64e105f18',1,'TrainLaunchInfo::name()']]],
+  ['name_5fcreators_5f',['name_creators_',['../class_factory.html#a0f677e278f374d35a789c7f2a8642a13',1,'Factory']]],
+  ['name_5fstorage',['name_storage',['../registration_8h.html#a40f74be00c63c4b72d18afcf409f2a2c',1,'registration.h']]],
   ['name_5fvalue_5fhash_5f',['name_value_hash_',['../classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17',1,'ltr::ParametersContainer']]],
   ['neighbor_5fid',['neighbor_id',['../structltr_1_1_distance_to_neighbor.html#a5d3581ace1f31d882bb075849fce12e5',1,'ltr::DistanceToNeighbor']]],
   ['neighbor_5fweighter_5f',['neighbor_weighter_',['../classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe',1,'ltr::NNLearner::neighbor_weighter_()'],['../classltr_1_1_n_n_scorer.html#a71b6a1957dbdca6d099a58a1118724a4',1,'ltr::NNScorer::neighbor_weighter_()']]],

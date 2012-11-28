@@ -1,7 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$gp__learner_8h.html" title="ltr/learners/gp_learner/gp_learner.h" alt="" coords="316,80,537,107"/>
-<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="547,155,824,181"/>
-<area shape="rect" href="$default__selection__strategy_8cc.html" title="ltr/learners/gp_learner/strategies/default_selection_strategy.cc" alt="" coords="685,80,1064,107"/>
-<area shape="rect" href="$gp__learner_8cc.html" title="ltr/learners/gp_learner/gp_learner.cc" alt="" coords="5,155,232,181"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="256,155,523,181"/>
+<area shape="rect" href="$gp__learner_8h.html" title="ltr/learners/gp_learner/gp_learner.h" alt="" coords="309,80,531,107"/>
+<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="5,155,283,181"/>
+<area shape="rect" href="$default__selection__strategy_8cc.html" title="ltr/learners/gp_learner/strategies/default_selection_strategy.cc" alt="" coords="555,80,933,107"/>
+<area shape="rect" href="$gp__learner_8cc.html" title="ltr/learners/gp_learner/gp_learner.cc" alt="" coords="307,155,533,181"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="557,155,824,181"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="848,155,997,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="852,229,993,256"/>
 </map>

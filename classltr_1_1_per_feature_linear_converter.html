@@ -141,10 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a79821fa27be2a0ccb806725dd94dd460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a79821fa27be2a0ccb806725dd94dd460">PerFeatureLinearConverter</a> (const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;input_feature_info=<a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>())</td></tr>
 <tr class="memitem:a7d30c566b50b7ef5ebae8c110dbc231d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a7d30c566b50b7ef5ebae8c110dbc231d">convertFeatureInfo</a> () const </td></tr>
 <tr class="memitem:a195bb8b68958e0d8c27a905b52aef44c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a195bb8b68958e0d8c27a905b52aef44c">resize</a> (const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;input_feature_info)</td></tr>
-<tr class="memitem:a5a651a0e1ab875874097d422c00b775f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a5a651a0e1ab875874097d422c00b775f">factor</a> (int feature_index) const </td></tr>
-<tr class="memitem:a161619db6ad463cbe42aa5e157af7000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a161619db6ad463cbe42aa5e157af7000">set_factor</a> (int feature_index, double coefficient)</td></tr>
-<tr class="memitem:a843c9d5b3c6a7850756464808c7978eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a843c9d5b3c6a7850756464808c7978eb">shift</a> (int feature_index) const </td></tr>
-<tr class="memitem:a6accf765d42190a8c03bda322c37bca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a6accf765d42190a8c03bda322c37bca4">set_shift</a> (int feature_index, double <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a843c9d5b3c6a7850756464808c7978eb">shift</a>)</td></tr>
+<tr class="memitem:a74accbe5c8f6b8fe82e6d7aaa75654f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a74accbe5c8f6b8fe82e6d7aaa75654f1">GET_SET_VECTOR</a> (double, factor)</td></tr>
+<tr class="memitem:a160057e63fc17111e746148dcc7c19cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a160057e63fc17111e746148dcc7c19cf">GET_SET_VECTOR</a> (double, shift)</td></tr>
 <tr class="memitem:ab947b197acf0b5a39c3abeb8179600d3"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#ab947b197acf0b5a39c3abeb8179600d3">generateCppCode</a> (const string &amp;function_name) const </td></tr>
 <tr class="memitem:a4bc6bb9c70b8488fc00e44daaaf2d81e"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a4bc6bb9c70b8488fc00e44daaaf2d81e">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
@@ -153,8 +151,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a2c2ec85eb916167f6fc80f4414fc5c17"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a2c2ec85eb916167f6fc80f4414fc5c17">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6aab129337de7aca522f03c6e014115a"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a6aab129337de7aca522f03c6e014115a">factors_</a></td></tr>
-<tr class="memitem:ae0d9ed09fb64da968bf51271aaa12cac"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#ae0d9ed09fb64da968bf51271aaa12cac">shifts_</a></td></tr>
+<tr class="memitem:abe59d0fd529472f29bda38d7e8edf8d0"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0">factor_</a></td></tr>
+<tr class="memitem:aea6dabf17474fff3f7f61b62e128f28c"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c">shift_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Perform linear transformation of each feature. </p>
@@ -266,24 +264,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a651a0e1ab875874097d422c00b775f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a5a651a0e1ab875874097d422c00b775f">ltr::PerFeatureLinearConverter::factor</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>feature_index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>get component of factors vector </p>
-
-</div>
-</div>
 <a class="anchor" id="ab947b197acf0b5a39c3abeb8179600d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -307,6 +287,60 @@ Private Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classltr_1_1_serializable.html#a8895d0f4cacfe92ce6e908d510a1b67d">ltr::Serializable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74accbe5c8f6b8fe82e6d7aaa75654f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a74accbe5c8f6b8fe82e6d7aaa75654f1">ltr::PerFeatureLinearConverter::GET_SET_VECTOR</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">factor&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a160057e63fc17111e746148dcc7c19cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_per_feature_linear_converter.html#a74accbe5c8f6b8fe82e6d7aaa75654f1">ltr::PerFeatureLinearConverter::GET_SET_VECTOR</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shift&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -346,80 +380,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a161619db6ad463cbe42aa5e157af7000"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a161619db6ad463cbe42aa5e157af7000">ltr::PerFeatureLinearConverter::set_factor</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>feature_index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>coefficient</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>set component of factors vector </p>
-
-</div>
-</div>
-<a class="anchor" id="a6accf765d42190a8c03bda322c37bca4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a6accf765d42190a8c03bda322c37bca4">ltr::PerFeatureLinearConverter::set_shift</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>feature_index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>shift</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>set component of shifts vector </p>
-
-</div>
-</div>
-<a class="anchor" id="a843c9d5b3c6a7850756464808c7978eb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a843c9d5b3c6a7850756464808c7978eb">ltr::PerFeatureLinearConverter::shift</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>feature_index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>get component of shifts vector </p>
-
-</div>
-</div>
 <a class="anchor" id="a4bc6bb9c70b8488fc00e44daaaf2d81e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -439,12 +399,12 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a6aab129337de7aca522f03c6e014115a"></a>
+<a class="anchor" id="abe59d0fd529472f29bda38d7e8edf8d0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a6aab129337de7aca522f03c6e014115a">ltr::PerFeatureLinearConverter::factors_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0">ltr::PerFeatureLinearConverter::factor_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -452,12 +412,12 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae0d9ed09fb64da968bf51271aaa12cac"></a>
+<a class="anchor" id="aea6dabf17474fff3f7f61b62e128f28c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_per_feature_linear_converter.html#ae0d9ed09fb64da968bf51271aaa12cac">ltr::PerFeatureLinearConverter::shifts_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c">ltr::PerFeatureLinearConverter::shift_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -473,7 +433,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

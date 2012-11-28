@@ -114,7 +114,7 @@ Basics</h2>
 
 <span class="comment">// ...</span>
 
-<a class="code" href="crossvalidation__unittest_8cc.html#a88bef9ae63fb022cebf19ba637c1210c">TEST</a>(TestSetName, TestName) {
+<a class="code" href="crossvalidator__unittest_8cc.html#a542013d21cfa6d196a63b37f16b97d67">TEST</a>(TestSetName, TestName) {
 
 <span class="comment">// ... your code here ...</span>
 
@@ -125,7 +125,7 @@ Assertions</h2>
 <p>Now lets put some code to be tested inside TEST macro and use some assertions, provided by gtest.</p>
 <div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;gtest/gtest.h&gt;</span>
 
-<a class="code" href="crossvalidation__unittest_8cc.html#a88bef9ae63fb022cebf19ba637c1210c">TEST</a>(ObviousTests, ComparisonTest) {
+<a class="code" href="crossvalidator__unittest_8cc.html#a542013d21cfa6d196a63b37f16b97d67">TEST</a>(ObviousTests, ComparisonTest) {
   <span class="keywordtype">int</span> a = 1;
   <span class="keywordtype">int</span> b = -2;
   EXPECT_TRUE(a &gt; 0);
@@ -133,13 +133,13 @@ Assertions</h2>
   EXPECT_GT(a, b); <span class="comment">// checks if a &gt; b</span>
 }
 <span class="comment">// there could be more than one TEST macro in one file</span>
-<a class="code" href="crossvalidation__unittest_8cc.html#a88bef9ae63fb022cebf19ba637c1210c">TEST</a>(ObviousTests, SumTest) {
+<a class="code" href="crossvalidator__unittest_8cc.html#a542013d21cfa6d196a63b37f16b97d67">TEST</a>(ObviousTests, SumTest) {
   <span class="keywordtype">int</span> a = 1;
   <span class="keywordtype">int</span> b = -2;
   EXPECT_EQ(-1, a + b); <span class="comment">// checks if parameters are equal</span>
 }
 
-<a class="code" href="crossvalidation__unittest_8cc.html#a88bef9ae63fb022cebf19ba637c1210c">TEST</a>(ObviousTests, DivisionThrowTest) {
+<a class="code" href="crossvalidator__unittest_8cc.html#a542013d21cfa6d196a63b37f16b97d67">TEST</a>(ObviousTests, DivisionThrowTest) {
   <span class="keywordtype">int</span> a = 1;
   <span class="keywordtype">int</span> b = -2;
   EXPECT_NO_THROW(a / b); <span class="comment">// checks if while processing the command in brackets no exceptions were thrown</span>
@@ -182,7 +182,7 @@ Running unittests</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

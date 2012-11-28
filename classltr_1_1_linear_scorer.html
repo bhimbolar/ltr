@@ -136,9 +136,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a4ebe64622188990196ed1741e63824"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">LinearScorer</a> ()</td></tr>
 <tr class="memitem:a8d6aa05494811a624157d6b909ceaf36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#a8d6aa05494811a624157d6b909ceaf36">LinearScorer</a> (const vector&lt; double &gt; &amp;weights)</td></tr>
-<tr class="memitem:af562a22ef23847d0cc71b1575b3480a5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#af562a22ef23847d0cc71b1575b3480a5">weight</a> (int index) const </td></tr>
-<tr class="memitem:a12d788f30fc0dd0ece2c7ad56c853640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#a12d788f30fc0dd0ece2c7ad56c853640">set_weight</a> (int index, double <a class="el" href="classltr_1_1_linear_scorer.html#af562a22ef23847d0cc71b1575b3480a5">weight</a>)</td></tr>
-<tr class="memitem:a7051609b2f2d140dfb07b6a907732450"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#a7051609b2f2d140dfb07b6a907732450">weights_count</a> () const </td></tr>
+<tr class="memitem:a3e161d2c2cd4de563e21791b1eeaa285"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#a3e161d2c2cd4de563e21791b1eeaa285">GET_SET_VECTOR</a> (double, weight)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ac3389371efd0d0ffa38d4df8661c8fde"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#ac3389371efd0d0ffa38d4df8661c8fde">scoreImpl</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;obj) const </td></tr>
@@ -147,7 +145,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aedbbd81634c7049f76585e7bb0d84723"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#aedbbd81634c7049f76585e7bb0d84723">toStringImpl</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1df6f6b67a882132ea0e5a00eaa75d38"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#a1df6f6b67a882132ea0e5a00eaa75d38">weights_</a></td></tr>
+<tr class="memitem:abfbc27d35986c4a86f089da9ca40ab21"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">weight_</a></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a3bee2cb6087d7113fef872613acb84d8"></a>
@@ -219,6 +217,33 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3e161d2c2cd4de563e21791b1eeaa285"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_linear_scorer.html#a3e161d2c2cd4de563e21791b1eeaa285">ltr::LinearScorer::GET_SET_VECTOR</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">weight&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a1b40ecd38225b6d08524d30b164ecf4a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -256,33 +281,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a12d788f30fc0dd0ece2c7ad56c853640"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_linear_scorer.html#a12d788f30fc0dd0ece2c7ad56c853640">ltr::LinearScorer::set_weight</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>weight</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="aedbbd81634c7049f76585e7bb0d84723"></a>
 <div class="memitem">
 <div class="memproto">
@@ -301,46 +299,13 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af562a22ef23847d0cc71b1575b3480a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classltr_1_1_linear_scorer.html#af562a22ef23847d0cc71b1575b3480a5">ltr::LinearScorer::weight</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7051609b2f2d140dfb07b6a907732450"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classltr_1_1_linear_scorer.html#a7051609b2f2d140dfb07b6a907732450">ltr::LinearScorer::weights_count</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a1df6f6b67a882132ea0e5a00eaa75d38"></a>
+<a class="anchor" id="abfbc27d35986c4a86f089da9ca40ab21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_linear_scorer.html#a1df6f6b67a882132ea0e5a00eaa75d38">ltr::LinearScorer::weights_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">ltr::LinearScorer::weight_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -356,7 +321,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:29 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

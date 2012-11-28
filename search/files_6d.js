@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
+  ['macros_5funittest_2ecc',['macros_unittest.cc',['../macros__unittest_8cc.html',1,'']]],
   ['main_5fpage_2edox',['main_page.dox',['../main__page_8dox.html',1,'']]],
   ['manhattan_5fmetric_2ecc',['manhattan_metric.cc',['../manhattan__metric_8cc.html',1,'']]],
   ['manhattan_5fmetric_2eh',['manhattan_metric.h',['../manhattan__metric_8h.html',1,'']]],

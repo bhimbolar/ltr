@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" href="$average__predictions__aggregator_8h.html" title="ltr/predictions_aggregators/average_predictions_aggregator.h" alt="" coords="401,80,772,107"/>
-<area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="328,155,648,181"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="535,304,836,331"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1571,379,1715,405"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="1067,304,1237,331"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="343,229,532,256"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1080,379,1224,405"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="245,379,400,405"/>
+<area shape="rect" href="$average__predictions__aggregator_8h.html" title="ltr/predictions_aggregators/average_predictions_aggregator.h" alt="" coords="1131,80,1501,107"/>
+<area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="875,155,1195,181"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="884,304,1185,331"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="248,379,392,405"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="440,304,611,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="940,229,1129,256"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="563,379,707,405"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1416,379,1571,405"/>
 </map>

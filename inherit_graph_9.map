@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$class_linear_composition_test.html" title="LinearCompositionTest" alt="" coords="5,5,157,32"/>
+<area shape="rect" href="$class_factory_1_1_abstract_creator.html" title="Factory::AbstractCreator" alt="" coords="7,5,169,32"/>
+<area shape="rect" href="$class_factory_1_1_creator.html" title="Factory::Creator\&lt; Base, Derived \&gt;" alt="" coords="220,5,439,32"/>
 </map>

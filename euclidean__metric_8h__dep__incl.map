@@ -1,7 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$nearest__neighbor__learner__unittest_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner_unittest.cc" alt="" coords="5,80,453,107"/>
-<area shape="rect" href="$euclidean__metric_8cc.html" title="ltr/metrics/euclidean_metric.cc" alt="" coords="477,80,677,107"/>
-<area shape="rect" href="$metrics__unittest_8cc.html" title="ltr/metrics/metrics_unittest.cc" alt="" coords="701,80,896,107"/>
-<area shape="rect" href="$nearest__neighbor__scorer__unittest_8cc.html" title="ltr/scorers/nearest_neighbor_scorer_unittest.cc" alt="" coords="920,80,1213,107"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1237,80,1504,107"/>
+<area shape="rect" href="$nearest__neighbor__learner_8h.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.h" alt="" coords="753,80,1145,107"/>
+<area shape="rect" href="$nearest__neighbor__learner__unittest_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner_unittest.cc" alt="" coords="5,155,453,181"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="949,155,1216,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1244,229,1385,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1240,155,1389,181"/>
+<area shape="rect" href="$euclidean__metric_8cc.html" title="ltr/metrics/euclidean_metric.cc" alt="" coords="1448,80,1648,107"/>
+<area shape="rect" href="$metrics__unittest_8cc.html" title="ltr/metrics/metrics_unittest.cc" alt="" coords="1672,80,1867,107"/>
+<area shape="rect" href="$nearest__neighbor__scorer__unittest_8cc.html" title="ltr/scorers/nearest_neighbor_scorer_unittest.cc" alt="" coords="1891,80,2184,107"/>
+<area shape="rect" href="$nearest__neighbor__learner_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.cc" alt="" coords="477,155,875,181"/>
 </map>

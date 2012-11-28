@@ -134,9 +134,9 @@ DataPreprocessor</h2>
   object2 &lt;&lt; 2.213 &lt;&lt; -1.234 &lt;&lt; 0.323;
   object3 &lt;&lt; -2.123 &lt;&lt; 0.207 &lt;&lt; -6.085;
 
-  IndicesPtr indices(<span class="keyword">new</span> Indices());
-  indices-&gt;push_back(0);
-  indices-&gt;push_back(2);
+  Indices indices;
+  indices.push_back(0);
+  indices.push_back(2);
 
   DataSet&lt;Object&gt; data, preprocessed_data;
   data.add(object1);
@@ -163,7 +163,7 @@ After:
 
 </pre></div> </td></tr>
 </table>
-<p>The main usage of DataPreprocessors is to preprocess data before learning. In order to do this just use method <a class="el" href="classltr_1_1_learner.html#a8cf0efc622783ac8fb66b67f97d59b33">Learner::addDataPreprocessor</a>.</p>
+<p>The main usage of DataPreprocessors is to preprocess data before learning. In order to do this just use method Learner::addDataPreprocessor.</p>
 <p>For example,</p>
 <div class="fragment"><pre class="fragment">LinearLearner linear_learner;
 linear_learner.addDataPreprocessor(<span class="keyword">new</span> DataRandomSampler());
@@ -189,7 +189,7 @@ List of all DataPrepocessors</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

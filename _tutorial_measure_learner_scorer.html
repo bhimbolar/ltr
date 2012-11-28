@@ -138,8 +138,8 @@ Learner</h2>
 <li><a class="el" href="classltr_1_1_learner.html#a597e9bfbc0e1bb388eeac58dc160685d">make </a>, <a class="el" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific </a> - return the pointer to a new scorer, see the example below to understand the difference</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer </a> - set the initial approximation of a scorer</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">reset </a> - reset a current state of the learner</li>
-<li><a class="el" href="classltr_1_1_learner.html#a8cf0efc622783ac8fb66b67f97d59b33">addDataPreprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Data preprocessors</a></li>
-<li><a class="el" href="classltr_1_1_learner.html#ada687edfa5a3369eb7a425cca82277ed">addFeatureConverterLearner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Feature converters</a></li>
+<li><a class="el" href="">addDataPreprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Data preprocessors</a></li>
+<li><a class="el" href="">addFeatureConverterLearner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Feature converters</a></li>
 </ul>
 <h2><a class="anchor" id="Scorer"></a>
 Scorer</h2>
@@ -219,8 +219,6 @@ Example</h2>
 <span class="keyword">using</span> std::endl;
 
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
-  ltr::Log log(<span class="stringliteral">&quot;log.txt&quot;</span>);
-
   <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a> object1, object2, object3;
   object1 &lt;&lt; 1 &lt;&lt; 2;
   object1.<a class="code" href="classltr_1_1_object.html#a746a0201fab8e68d80721ce1ca9d3148">set_actual_label</a>(10 + (1 + 2));
@@ -290,7 +288,7 @@ f(x, y) = 10 + 1 * x + 1 * y
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

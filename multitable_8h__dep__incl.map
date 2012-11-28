@@ -1,5 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="33,80,249,107"/>
-<area shape="rect" href="$multitable__unittest_8cc.html" title="ltr/utility/multitable_unittest.cc" alt="" coords="273,80,468,107"/>
+<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="207,80,423,107"/>
+<area shape="rect" href="$multitable__unittest_8cc.html" title="ltr/utility/multitable_unittest.cc" alt="" coords="447,80,641,107"/>
 <area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="5,155,277,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="300,229,441,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="352,155,501,181"/>
 </map>

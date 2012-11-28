@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="5,80,165,107"/>
+<area shape="rect" href="$ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="189,80,323,107"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="228,229,369,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="224,155,373,181"/>
+<area shape="rect" href="$train__launch__info_8cc.html" title="ltr_client/utility/train_launch_info.cc" alt="" coords="448,80,672,107"/>
+</map>

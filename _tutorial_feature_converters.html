@@ -120,7 +120,7 @@ FeatureConverter</h2>
 <li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const Object &amp;input, Object *output) </a> - convert one object </li>
 <li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const DataSet&lt;TElement&gt; &amp;input, DataSet&lt;TElement&gt; *output) </a> - convert whole dataset</li>
 </ul>
-<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via via <a class="el" href="classltr_1_1_learner.html#ada687edfa5a3369eb7a425cca82277ed">addFeatureConverterLearner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
+<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via via <a class="el" href="">addFeatureConverterLearner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
 <p>After learning on converted data <a class="el" href="classltr_1_1_scorer.html">Scorer</a> can be applied only to objects which features are preprocessed the same way. For this reason FeatureConverters used in <a class="el" href="classltr_1_1_scorer.html">Scorer</a> should be also serialized in C++ code during <a class="el" href="classltr_1_1_scorer.html">Scorer</a> serialization.</p>
 <h2><a class="anchor" id="FeatureConverterList"></a>
 List of all FeatureConverters</h2>
@@ -280,7 +280,7 @@ After:
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00071"></a>00071 
 <a name="l00072"></a>00072 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
 <a name="l00073"></a><a class="code" href="classltr_1_1_data_random_sampler.html#a2cdd62a094fee4d5f18a2ce5a30e4455">00073</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_random_sampler.html#a2cdd62a094fee4d5f18a2ce5a30e4455">DataRandomSampler&lt;TElement&gt;::set_seed</a>(<span class="keywordtype">int</span> seed) {
-<a name="l00074"></a>00074   <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(seed &gt;= 0);  <span class="comment">//NOLINT</span>
+<a name="l00074"></a>00074   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(seed &gt;= 0);  <span class="comment">//NOLINT</span>
 <a name="l00075"></a>00075   seed_ = seed;
 <a name="l00076"></a>00076   randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a4095051b4e9702c2524271e6c9147619">setSeed</a>(seed_);
 <a name="l00077"></a>00077 }
@@ -194,11 +194,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00100"></a>00100 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
 <a name="l00101"></a><a class="code" href="classltr_1_1_data_random_sampler.html#afe0fe08ca6c5948e9dc6cf9e61e28c2f">00101</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_random_sampler.html#afe0fe08ca6c5948e9dc6cf9e61e28c2f">DataRandomSampler&lt;TElement&gt;::checkParameters</a>()<span class="keyword"> const </span>{
 <a name="l00102"></a>00102   <span class="keywordflow">if</span> (with_replacement_) {
-<a name="l00103"></a>00103     <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(sampling_fraction_ &gt; 0.);
+<a name="l00103"></a>00103     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(sampling_fraction_ &gt; 0.);
 <a name="l00104"></a>00104   } <span class="keywordflow">else</span> {
-<a name="l00105"></a>00105     <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(sampling_fraction_ &gt; 0. &amp;&amp; sampling_fraction_ &lt;= 1.);
+<a name="l00105"></a>00105     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(sampling_fraction_ &gt; 0. &amp;&amp; sampling_fraction_ &lt;= 1.);
 <a name="l00106"></a>00106   }
-<a name="l00107"></a>00107   <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(seed_ &gt;= 0); <span class="comment">//NOLINT</span>
+<a name="l00107"></a>00107   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(seed_ &gt;= 0); <span class="comment">//NOLINT</span>
 <a name="l00108"></a>00108 }
 <a name="l00109"></a>00109 
 <a name="l00110"></a>00110 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
@@ -245,7 +245,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:26 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

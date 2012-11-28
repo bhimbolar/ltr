@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['datainfo',['DataInfo',['../struct_data_info.html',1,'']]],
   ['datapreprocessor',['DataPreprocessor',['../classltr_1_1_data_preprocessor.html',1,'ltr']]],
   ['datapreprocessorstest',['DataPreprocessorsTest',['../class_data_preprocessors_test.html',1,'']]],
   ['datarandomsampler',['DataRandomSampler',['../classltr_1_1_data_random_sampler.html',1,'ltr']]],

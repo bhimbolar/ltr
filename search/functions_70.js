@@ -1,6 +1,8 @@
 var searchData=
 [
   ['parameterscontainer',['ParametersContainer',['../classltr_1_1_parameters_container.html#a737ad96138f6516cde39082e838be130',1,'ltr::ParametersContainer::ParametersContainer()'],['../classltr_1_1_parameters_container.html#a2187f9092e3a456f8849565e7f4900b3',1,'ltr::ParametersContainer::ParametersContainer(const ParametersContainer &amp;other)']]],
+  ['parametrizedinfo',['ParametrizedInfo',['../class_parametrized_info.html#aa386f125b4cac9b2b73e259f186521fe',1,'ParametrizedInfo::ParametrizedInfo()'],['../class_parametrized_info.html#ab57c79910280967254e12ece69ec08f3',1,'ParametrizedInfo::ParametrizedInfo(const string &amp;category, const string &amp;alias, const string &amp;type, const string &amp;approach, ltr::ParametersContainer parameters)'],['../class_parametrized_info.html#ae965098f0dba2200f76af7ec50f5ffab',1,'ParametrizedInfo::ParametrizedInfo(const ParametrizedInfo &amp;other)']]],
+  ['parseconfig',['parseConfig',['../class_config_parser.html#a416cb2a202f688a20558c0bb61233623',1,'ConfigParser']]],
   ['parsenextobject',['parseNextObject',['../classltr_1_1io__utility_1_1_parser.html#aaeb17a4b13015a4446c0d0319f9c46dd',1,'ltr::io_utility::Parser']]],
   ['parserawobject',['parseRawObject',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9e507e2519b83bd2c3807619f90b39c7',1,'ltr::io_utility::ARFFParser::parseRawObject()'],['../classltr_1_1io__utility_1_1_s_v_m_parser.html#a8735d71a4aea5ff8717fcfbebd9999e4',1,'ltr::io_utility::SVMParser::parseRawObject()'],['../classltr_1_1io__utility_1_1_yandex_parser.html#a86255e33806df7870af6e423b7dfb220',1,'ltr::io_utility::YandexParser::parseRawObject()'],['../classltr_1_1io__utility_1_1_parser.html#a8fdeb3124882063b467fb8668378478a',1,'ltr::io_utility::Parser::parseRawObject()']]],
   ['perfeaturelinearconverter',['PerFeatureLinearConverter',['../classltr_1_1_per_feature_linear_converter.html#a237968867a32e3e1ed30a57cb073875e',1,'ltr::PerFeatureLinearConverter::PerFeatureLinearConverter(const ParametersContainer &amp;parameters)'],['../classltr_1_1_per_feature_linear_converter.html#a79821fa27be2a0ccb806725dd94dd460',1,'ltr::PerFeatureLinearConverter::PerFeatureLinearConverter(const FeatureInfo &amp;input_feature_info=FeatureInfo())']]],
@@ -12,6 +14,6 @@ var searchData=
   ['printmultiarray',['printMultiArray',['../multi__vector__print_8h.html#a5a1c67441c4d289d586f86a6cef0d327',1,'multi_vector_print.h']]],
   ['printmultiarrayinner',['printMultiArrayInner',['../multi__vector__print_8h.html#a28a89a3d612b8d12fc130312e57bcceb',1,'multi_vector_print.h']]],
   ['printmultitableinner',['printMultiTableInner',['../classltr_1_1utility_1_1_multi_table.html#a2ff807acff617633182e7f3cd83cc8a2',1,'ltr::utility::MultiTable']]],
-  ['printresults',['printResults',['../classltr_1_1cv_1_1_cross_validator.html#a6588a4e568aa1c5c73f1bf72d87f96b1',1,'ltr::cv::CrossValidator']]],
-  ['puppyprimitivehandletopserializable',['puppyPrimitiveHandleToPSerializable',['../classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41',1,'ltr::gp::GPScorer']]]
+  ['puppyprimitivehandletopserializable',['puppyPrimitiveHandleToPSerializable',['../classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41',1,'ltr::gp::GPScorer']]],
+  ['pure_5ffunction',['pure_function',['../class_abstract_test_class.html#af59542f7a0704abe73869d57d003e069',1,'AbstractTestClass::pure_function()'],['../class_concrete_test_class.html#a7f9b23f93123de2620b2a99876bc56a8',1,'ConcreteTestClass::pure_function()']]]
 ];

@@ -1,0 +1,35 @@
+<map id="G" name="G">
+<area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="4480,304,4800,331"/>
+<area shape="rect" href="$average__predictions__aggregator_8h.html" title="ltr/predictions_aggregators/average_predictions_aggregator.h" alt="" coords="3880,229,4251,256"/>
+<area shape="rect" href="$vote__predictions__aggregator_8h.html" title="ltr/predictions_aggregators/vote_predictions_aggregator.h" alt="" coords="4731,229,5080,256"/>
+<area shape="rect" href="$splitter_8h.html" title="ltr/crossvalidation/splitter.h" alt="" coords="2032,304,2208,331"/>
+<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="3063,155,3279,181"/>
+<area shape="rect" href="$learner_8h.html" title="ltr/learners/learner.h" alt="" coords="2751,229,2887,256"/>
+<area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="1360,304,1517,331"/>
+<area shape="rect" href="$k__fold__simple__splitter_8h.html" title="ltr/crossvalidation/k_fold_simple_splitter.h" alt="" coords="771,229,1032,256"/>
+<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="5317,304,5475,331"/>
+<area shape="rect" href="$best__feature__learner_8h.html" title="ltr/learners/best_feature_learner/best_feature_learner.h" alt="" coords="1461,155,1797,181"/>
+<area shape="rect" href="$linear__learner_8h.html" title="ltr/learners/linear_learner/linear_learner.h" alt="" coords="5103,155,5359,181"/>
+<area shape="rect" href="$nearest__neighbor__learner_8h.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.h" alt="" coords="4203,155,4595,181"/>
+<area shape="rect" href="$metric_8h.html" title="ltr/metrics/metric.h" alt="" coords="2640,304,2771,331"/>
+<area shape="rect" href="$euclidean__metric_8h.html" title="ltr/metrics/euclidean_metric.h" alt="" coords="2133,229,2325,256"/>
+<area shape="rect" href="$neighbor__weighter_8h.html" title="ltr/utility/neighbor_weighter.h" alt="" coords="3195,304,3381,331"/>
+<area shape="rect" href="$dcg_8h.html" title="ltr/measures/dcg.h" alt="" coords="511,229,639,256"/>
+<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="507,155,643,181"/>
+<area shape="rect" href="$abs__error_8h.html" title="ltr/measures/abs_error.h" alt="" coords="1744,229,1907,256"/>
+<area shape="rect" href="$ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="4171,304,4304,331"/>
+<area shape="rect" href="$configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="4677,379,4829,405"/>
+<area shape="rect" href="$factory_8h.html" title="ltr_client/factory.h" alt="" coords="3507,304,3629,331"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="2792,80,2941,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="3064,528,3208,555"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="3408,379,3579,405"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="3144,379,3333,405"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2264,528,2408,555"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="3275,453,3576,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="3385,528,3540,555"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="2264,453,2389,480"/>
+<area shape="rect" href="$multitable_8h.html" title="ltr/utility/multitable.h" alt="" coords="4160,379,4299,405"/>
+<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="3651,453,3781,480"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1563,379,1701,405"/>
+<area shape="rect" href="$parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="5309,379,5504,405"/>
+</map>

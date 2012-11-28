@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00009"></a>00009 
-<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="parameterized_8h.html">ltr/interfaces/parameterized.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
 <a name="l00011"></a>00011 
 <a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/shared_ptr.h</a>&quot;</span>
 <a name="l00013"></a>00013 
@@ -124,9 +124,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a>00029 <span class="keyword">typedef</span> map&lt;int, string&gt; NominalFeatureValues;
 <a name="l00033"></a><a class="code" href="structltr_1_1_one_feature_info.html">00033</a> <span class="keyword">struct </span><a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> {
 <a name="l00034"></a><a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">00034</a>   <a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">OneFeatureInfo</a>(FeatureType type = NUMERIC,
-<a name="l00035"></a>00035                  NominalFeatureValues values = NominalFeatureValues())
+<a name="l00035"></a>00035                  NominalFeatureValues <a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a> = NominalFeatureValues())
 <a name="l00036"></a>00036   : <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>(type),
-<a name="l00037"></a>00037     <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>(values) {}
+<a name="l00037"></a>00037     <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>(<a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a>) {}
 <a name="l00041"></a><a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">00041</a>   FeatureType <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>;
 <a name="l00045"></a><a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">00045</a>   NominalFeatureValues <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>;
 <a name="l00046"></a>00046 };
@@ -147,23 +147,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00074"></a>00074     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.push_back(info);
 <a name="l00075"></a>00075   }
 <a name="l00078"></a><a class="code" href="classltr_1_1_feature_info.html#afdc6a83e695554a7cd79be901bc875e0">00078</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">addFeature</a>(FeatureType type = NUMERIC,
-<a name="l00079"></a>00079                   NominalFeatureValues values = NominalFeatureValues()) {
-<a name="l00080"></a>00080     <a class="code" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">addFeature</a>(<a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type, values));
+<a name="l00079"></a>00079                   NominalFeatureValues <a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a> = NominalFeatureValues()) {
+<a name="l00080"></a>00080     <a class="code" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">addFeature</a>(<a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type, <a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a>));
 <a name="l00081"></a>00081   }
 <a name="l00084"></a><a class="code" href="classltr_1_1_feature_info.html#a566d68f92e542ffa489c2fa0b7aeb151">00084</a>   NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#a566d68f92e542ffa489c2fa0b7aeb151">getFeatureValues</a>(<span class="keywordtype">int</span> feature_index) {
-<a name="l00085"></a>00085     <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00085"></a>00085     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
 <a name="l00086"></a>00086     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
 <a name="l00087"></a>00087   }
 <a name="l00090"></a><a class="code" href="classltr_1_1_feature_info.html#a6f391ab9603b03c762178fa4608ea62c">00090</a>   <span class="keyword">const</span> NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#a6f391ab9603b03c762178fa4608ea62c">getFeatureValues</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
-<a name="l00091"></a>00091     <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00091"></a>00091     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
 <a name="l00092"></a>00092     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
 <a name="l00093"></a>00093   }
 <a name="l00096"></a><a class="code" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">00096</a>   FeatureType <a class="code" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">getFeatureType</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
-<a name="l00097"></a>00097     <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00097"></a>00097     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
 <a name="l00098"></a>00098     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_;
 <a name="l00099"></a>00099   }
 <a name="l00102"></a><a class="code" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">00102</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">setFeatureType</a>(<span class="keywordtype">int</span> feature_index, FeatureType type) {
-<a name="l00103"></a>00103     <a class="code" href="parameterized_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00103"></a>00103     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
 <a name="l00104"></a>00104     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ = type;
 <a name="l00105"></a>00105   }
 <a name="l00106"></a>00106 
@@ -190,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:26 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

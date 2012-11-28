@@ -165,8 +165,6 @@ Decision tree learner</h2>
 <tr>
 <td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &quot;logog/logog.h&quot;</span>
-
 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
 
@@ -188,8 +186,6 @@ Decision tree learner</h2>
 <span class="keyword">using</span> <a class="code" href="classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html">ltr::decision_tree::SameLabelStopSplittingCriteria</a>;
 
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
-  ltr::Log log(<span class="stringliteral">&quot;decision_tree_log.txt&quot;</span>);
-
   DataSet&lt;Object&gt; data;
 
   Object point1, point2;
@@ -212,7 +208,7 @@ Decision tree learner</h2>
 
   DecisionTreeLearner decision_tree_learner(
     <span class="keyword">new</span> ID3Splitter, <span class="keyword">new</span> MostCommonLabelLeafGenerator);
-  decision_tree_learner.addStopSplittingCriteria(
+  decision_tree_learner.add_stop_splitting_criteria(
     <span class="keyword">new</span> SameLabelStopSplittingCriteria);
 
   decision_tree_learner.learn(data);
@@ -239,7 +235,7 @@ Second test point label = 2
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

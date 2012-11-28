@@ -3,6 +3,8 @@ var searchData=
   ['pairwise_5fmeasures_5funittest_2ecc',['pairwise_measures_unittest.cc',['../pairwise__measures__unittest_8cc.html',1,'']]],
   ['parameterized_2ecc',['parameterized.cc',['../parameterized_8cc.html',1,'']]],
   ['parameterized_2eh',['parameterized.h',['../parameterized_8h.html',1,'']]],
+  ['parameterized_5finfo_2ecc',['parameterized_info.cc',['../parameterized__info_8cc.html',1,'']]],
+  ['parameterized_5finfo_2eh',['parameterized_info.h',['../parameterized__info_8h.html',1,'']]],
   ['parameterized_5funittest_2ecc',['parameterized_unittest.cc',['../parameterized__unittest_8cc.html',1,'']]],
   ['parameters_5fcontainer_2ecc',['parameters_container.cc',['../parameters__container_8cc.html',1,'']]],
   ['parameters_5fcontainer_2eh',['parameters_container.h',['../parameters__container_8h.html',1,'']]],

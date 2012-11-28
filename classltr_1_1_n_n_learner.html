@@ -137,9 +137,8 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classltr_1_1_n_n_learner.html">NNLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#adf1b277ccabe21f8f45a7b56405cb1d4">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a614f683522eb784231a1ba10d30f312f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#a614f683522eb784231a1ba10d30f312f">NNLearner</a> ()</td></tr>
 <tr class="memitem:a5b384693ae842cf557bd7931db41e9b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#a5b384693ae842cf557bd7931db41e9b2">NNLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:aabc2ce52a156a57d6416b50f1474db81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#aabc2ce52a156a57d6416b50f1474db81">NNLearner</a> (<a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">BaseMetric::Ptr</a> metric, NeighborWeighter::Ptr neighbor_weighter, <a class="el" href="classltr_1_1_predictions_aggregator.html#af8d97497d4797ed3608314a21dce0bf0">PredictionsAggregator::Ptr</a> predictions_aggregator, int number_of_neighbors_to_process)</td></tr>
+<tr class="memitem:a4ed872d7d00323506714757ae21348f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#a4ed872d7d00323506714757ae21348f3">NNLearner</a> (<a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">BaseMetric::Ptr</a> metric=new <a class="el" href="classltr_1_1_euclidean_metric.html">EuclideanMetric</a>(), NeighborWeighter::Ptr neighbor_weighter=new <a class="el" href="classltr_1_1utility_1_1_inverse_linear_distance.html">InverseLinearDistance</a>(), <a class="el" href="classltr_1_1_predictions_aggregator.html#af8d97497d4797ed3608314a21dce0bf0">PredictionsAggregator::Ptr</a> predictions_aggregator=new <a class="el" href="classltr_1_1_vote_predictions_aggregator.html">VotePredictionsAggregator</a>(), int number_of_neighbors_to_process=3)</td></tr>
 <tr class="memitem:adacb6910817da6061923033ab4e4ce5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#adacb6910817da6061923033ab4e4ce5c">GET_SET</a> (typename <a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">BaseMetric::Ptr</a>, metric)</td></tr>
 <tr class="memitem:a1018d523cfe33a1156716369b6cb1005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#a1018d523cfe33a1156716369b6cb1005">GET_SET</a> (NeighborWeighter::Ptr, neighbor_weighter)</td></tr>
 <tr class="memitem:a19ead999f9fb300f97d785e75d27324f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_n_n_learner.html#a19ead999f9fb300f97d785e75d27324f">GET_SET</a> (<a class="el" href="classltr_1_1_predictions_aggregator.html#af8d97497d4797ed3608314a21dce0bf0">PredictionsAggregator::Ptr</a>, predictions_aggregator)</td></tr>
@@ -185,24 +184,6 @@ template&lt;class TElement &gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a614f683522eb784231a1ba10d30f312f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_n_n_learner.html">ltr::NNLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_n_n_learner.html">NNLearner</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a5b384693ae842cf557bd7931db41e9b2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -222,7 +203,7 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aabc2ce52a156a57d6416b50f1474db81"></a>
+<a class="anchor" id="a4ed872d7d00323506714757ae21348f3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -232,25 +213,25 @@ template&lt;class TElement &gt; </div>
           <td class="memname"><a class="el" href="classltr_1_1_n_n_learner.html">ltr::NNLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_n_n_learner.html">NNLearner</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">BaseMetric::Ptr</a>&#160;</td>
-          <td class="paramname"><em>metric</em>, </td>
+          <td class="paramname"><em>metric</em> = <code>new&#160;<a class="el" href="classltr_1_1_euclidean_metric.html">EuclideanMetric</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">NeighborWeighter::Ptr&#160;</td>
-          <td class="paramname"><em>neighbor_weighter</em>, </td>
+          <td class="paramname"><em>neighbor_weighter</em> = <code>new&#160;<a class="el" href="classltr_1_1utility_1_1_inverse_linear_distance.html">InverseLinearDistance</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classltr_1_1_predictions_aggregator.html#af8d97497d4797ed3608314a21dce0bf0">PredictionsAggregator::Ptr</a>&#160;</td>
-          <td class="paramname"><em>predictions_aggregator</em>, </td>
+          <td class="paramname"><em>predictions_aggregator</em> = <code>new&#160;<a class="el" href="classltr_1_1_vote_predictions_aggregator.html">VotePredictionsAggregator</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>number_of_neighbors_to_process</em>&#160;</td>
+          <td class="paramname"><em>number_of_neighbors_to_process</em> = <code>3</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -506,7 +487,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:29 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

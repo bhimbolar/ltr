@@ -119,10 +119,10 @@ Cross-validation</h2>
 </ul>
 <p><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> contains following methods:</p>
 <ul>
-<li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a710846550484c2bc7cb7dd218c91f224">CrossValidator::addDataSet(const DataSet&lt;ObjectType&gt;&amp; data_set)</a> - adds data_set to the crossvalidator<ul>
-<li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a1f65e214777c8200a334464b00800411">CrossValidator::addLearner(const typename Learner&lt;ObjectType&gt;::Ptr&amp; learner)</a> - adds learner_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
-<li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a69333322ac0f2758640877affac8ef4b">CrossValidator::addSplitter(const typename Splitter&lt;ObjectType&gt;::Ptr&amp; splitter)</a> - adds splitter_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
-<li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab29e020602e1821129db134c5adffd52">CrossValidator::addMeasure(const typename Measure&lt;ObjectType&gt;::Ptr&amp; measure)</a> - adds measure_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
+<li>CrossValidator::addDataSet(const DataSet&lt;ObjectType&gt;&amp; data_set) - adds data_set to the crossvalidator<ul>
+<li>CrossValidator::addLearner(const typename Learner&lt;ObjectType&gt;::Ptr&amp; learner) - adds learner_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
+<li>CrossValidator::addSplitter(const typename Splitter&lt;ObjectType&gt;::Ptr&amp; splitter) - adds splitter_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
+<li>CrossValidator::addMeasure(const typename Measure&lt;ObjectType&gt;::Ptr&amp; measure) - adds measure_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
 <li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad2fc565d04a966b64e1df951d13b399b">CrossValidator::launch()</a> - launches crossvalidation process</li>
 <li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab1244df631964a9c18098fb2d661b964">CrossValidator::toString()</a> - converts crossvalidator to the printable string and forms set of tables</li>
 <li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a9bbedd2d9e9be53896f6e44aaf7b42e9">CrossValidator::reset()</a> - resets all the information in CrossVlidator</li>
@@ -153,96 +153,58 @@ Cross-validation</h2>
 <td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
 <span class="preprocessor">#include &lt;vector&gt;</span>
 
-<span class="preprocessor">#include &quot;boost/filesystem/path.hpp&quot;</span>
-
-<span class="preprocessor">#include &quot;fstream&quot;</span>
-
 <span class="preprocessor">#include &quot;<a class="code" href="leave__one__out__splitter_8h.html">ltr/crossvalidation/leave_one_out_splitter.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="validation__result_8h.html">ltr/crossvalidation/validation_result.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="feature__info_8h.html">ltr/data/feature_info.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="best__feature__learner_8h.html">ltr/learners/best_feature_learner/best_feature_learner.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="abs__error_8h.html">ltr/measures/abs_error.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="measure_8h.html">ltr/measures/measure.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="fake__scorer_8h.html">ltr/scorers/fake_scorer.h</a>&quot;</span>
-
-<span class="preprocessor">#include &lt;iostream&gt;</span>
-<span class="preprocessor">#include &lt;algorithm&gt;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="object__list_8h.html">ltr/data/object_list.h</a>&quot;</span>
+<span class="preprocessor">#include &quot;<a class="code" href="crossvalidator_8h.html">ltr/crossvalidation/crossvalidator.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="io__utility_8h.html">ltr/data/utility/io_utility.h</a>&quot;</span>
+<span class="preprocessor">#include &quot;<a class="code" href="nan__to__zero__learner_8h.html">ltr/feature_converters/nan_to_zero_learner.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="dcg_8h.html">ltr/measures/dcg.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="ndcg_8h.html">ltr/measures/ndcg.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="best__feature__learner_8h.html">ltr/learners/best_feature_learner/best_feature_learner.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="linear__learner_8h.html">ltr/learners/linear_learner/linear_learner.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="nearest__neighbor__learner_8h.html">ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="gp__learner_8h.html">ltr/learners/gp_learner/gp_learner.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="nan__to__zero__learner_8h.html">ltr/feature_converters/nan_to_zero_learner.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="leave__one__out__splitter_8h.html">ltr/crossvalidation/leave_one_out_splitter.h</a>&quot;</span>
-<span class="preprocessor">#include &quot;<a class="code" href="crossvalidator_8h.html">ltr/crossvalidation/crossvalidator.h</a>&quot;</span>
 
 <span class="keyword">using</span> std::cout;
 <span class="keyword">using</span> std::vector;
 <span class="keyword">using</span> std::endl;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_object_list.html">ltr::ObjectList</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html">ltr::DataSet</a>;
-<span class="keyword">using</span> ltr::io_utility::loadDataSet;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_measure.html">ltr::Measure</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_base_d_c_g.html">ltr::DCG</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_base_n_d_c_g.html">ltr::NDCG</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">ltr::FeatureConverter</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_nan_to_zero_converter_learner.html">ltr::NanToZeroConverterLearner</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1cv_1_1_leave_one_out_splitter.html">ltr::cv::LeaveOneOutSplitter</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>;
-<span class="keyword">using</span> ltr::Log;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_linear_learner.html">ltr::LinearLearner</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach.">ltr::NNLearner</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">ltr::gp::GPLearner</a>;
 
-<span class="keyword">using</span> std::fstream;
+<span class="keyword">using namespace </span>ltr;
+<span class="keyword">using namespace </span>ltr::cv;
+<span class="keyword">using namespace </span>ltr::gp;
+<span class="keyword">using namespace </span>ltr::io_utility;
 
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
-  Log log(<span class="stringliteral">&quot;log.txt&quot;</span>);
-  DataSet&lt;ObjectList&gt; test_data = loadDataSet&lt;ObjectList&gt;(
+  <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;ObjectList&gt;</a> test_data = loadDataSet&lt;ObjectList&gt;(
           <span class="stringliteral">&quot;data/imat2009/imat2009_test_small.txt&quot;</span>, <span class="stringliteral">&quot;Yandex&quot;</span>);
-  DataSet&lt;ObjectList&gt; train_data = loadDataSet&lt;ObjectList&gt;(
+  <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;ObjectList&gt;</a> train_data = loadDataSet&lt;ObjectList&gt;(
           <span class="stringliteral">&quot;data/imat2009/imat2009_learning_small.txt&quot;</span>, <span class="stringliteral">&quot;Yandex&quot;</span>);
 
-  NanToZeroConverterLearner&lt;ObjectList&gt; converter;
-  converter.learn(train_data);
-  <a class="code" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">FeatureConverter::Ptr</a> remove_nan = converter.make();
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_one(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_d_c_g.html">DCG</a>());
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_two(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_n_d_c_g.html">NDCG</a>());
 
-  remove_nan-&gt;apply(train_data, &amp;train_data);
-  remove_nan-&gt;apply(test_data, &amp;test_data);
-
-  Measure&lt;ObjectList&gt;::Ptr measure_one(<span class="keyword">new</span> DCG());
-  Measure&lt;ObjectList&gt;::Ptr measure_two(<span class="keyword">new</span> NDCG());
-  BestFeatureLearner&lt;ObjectList&gt;::Ptr learner_one =
-      <span class="keyword">new</span> BestFeatureLearner&lt;ObjectList&gt;(measure_one);
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BestFeatureLearner&lt;ObjectList&gt;::Ptr</a> learner_one =
+      <span class="keyword">new</span> <a class="code" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner&lt;ObjectList&gt;</a>(measure_one);
   learner_one-&gt;learn(train_data);
-
-  GPLearner&lt;ObjectList&gt;::Ptr learner_two =
-      <span class="keyword">new</span> GPLearner&lt;ObjectList&gt;(measure_one);
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GPLearner&lt;ObjectList&gt;::Ptr</a> learner_two =
+      <span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">GPLearner&lt;ObjectList&gt;</a>(measure_one);
   learner_two-&gt;learn(train_data);
 
-  LeaveOneOutSplitter&lt;ObjectList&gt;::Ptr splitter=
-      <span class="keyword">new</span> LeaveOneOutSplitter&lt;ObjectList&gt;();
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">LeaveOneOutSplitter&lt;ObjectList&gt;::Ptr</a> splitter=
+      <span class="keyword">new</span> <a class="code" href="classltr_1_1cv_1_1_leave_one_out_splitter.html">LeaveOneOutSplitter&lt;ObjectList&gt;</a>();
 
-  CrossValidator&lt;ObjectList&gt; cross_validator;
-  cross_validator.addDataSet(train_data);
-  cross_validator.addLearner(learner_one);
-  cross_validator.addLearner(learner_two);
-  cross_validator.addMeasure(measure_one);
-  cross_validator.addMeasure(measure_two);
-  cross_validator.addSplitter(splitter);
+  <a class="code" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator&lt;ObjectList&gt;</a> cross_validator;
+  cross_validator.add_data_set(train_data);
+  cross_validator.add_learner(learner_one);
+  cross_validator.add_learner(learner_two);
+  cross_validator.add_measure(measure_one);
+  cross_validator.add_measure(measure_two);
+  cross_validator.add_splitter(splitter);
   cross_validator.launch();
-  cout &lt;&lt; cross_validator.toString();
+  cout &lt;&lt; cross_validator.<a class="code" href="classltr_1_1cv_1_1_leave_one_out_splitter.html#a211504ac359e35b1f4057a933b345eee">toString</a>();
 
   <span class="keywordflow">return</span> 0;
 }
 </pre></div></td><td><div class="fragment"><pre class="fragment">
-DataSet:DataSet
+DataSet:data/imat2009/imat2009_learning_small.txt
 Splitter:LeaveOneOutSplitter
 Table ROW: Measure COLUMN: Learner
         BestFeatureLeaner       GPLeaner        
@@ -254,7 +216,7 @@ NDCG    1       0.75
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

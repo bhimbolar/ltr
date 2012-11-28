@@ -1,7 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="5,80,283,107"/>
-<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="357,80,493,107"/>
-<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="195,155,395,181"/>
-<area shape="rect" href="$listwise__measures__unittest_8cc.html" title="ltr/measures/listwise_measures_unittest.cc" alt="" coords="419,155,691,181"/>
-<area shape="rect" href="$dcg_8cc.html" title="ltr/measures/dcg.cc" alt="" coords="568,80,704,107"/>
+<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="68,80,345,107"/>
+<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="471,80,607,107"/>
+<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="5,155,205,181"/>
+<area shape="rect" href="$listwise__measures__unittest_8cc.html" title="ltr/measures/listwise_measures_unittest.cc" alt="" coords="229,155,501,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="580,229,721,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="576,155,725,181"/>
+<area shape="rect" href="$dcg_8cc.html" title="ltr/measures/dcg.cc" alt="" coords="800,80,936,107"/>
 </map>

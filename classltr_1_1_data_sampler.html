@@ -137,12 +137,12 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classltr_1_1_data_sampler.html">DataSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a8b33035cb9c8d19473aa93469f2f7cfa">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6cd18471d1657ae1d419a077f93484b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a6cd18471d1657ae1d419a077f93484b8">DataSampler</a> (IndicesPtr indices=IndicesPtr(new Indices))</td></tr>
+<tr class="memitem:a233a962c1d7adab18eb6228059496ef2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a233a962c1d7adab18eb6228059496ef2">DataSampler</a> (Indices indices=Indices())</td></tr>
 <tr class="memitem:a2412b91997882555e858cad972fe91a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a2412b91997882555e858cad972fe91a4">DataSampler</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:a86ac085c47d092d31cc0730a83c511ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a86ac085c47d092d31cc0730a83c511ae">setDefaultParameters</a> ()</td></tr>
 <tr class="memitem:aadddc0f08143b4676acb7d115d9d49ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#aadddc0f08143b4676acb7d115d9d49ee">checkParameters</a> () const </td></tr>
 <tr class="memitem:a0f58136558e0276c54effbb3ad8813a2"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a0f58136558e0276c54effbb3ad8813a2">toString</a> () const </td></tr>
-<tr class="memitem:aac13fe86625fa7b55f4fca848683983f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#aac13fe86625fa7b55f4fca848683983f">GET_SET</a> (IndicesPtr, indices)</td></tr>
+<tr class="memitem:ae71118adf19a3810a45d75c823dd7fe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#ae71118adf19a3810a45d75c823dd7fe9">GET_SET_VECTOR</a> (int, indices)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a38786bc9a3524daaa8a4c4150a519e1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a38786bc9a3524daaa8a4c4150a519e1a">applyImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;input, <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; *output) const </td></tr>
@@ -150,7 +150,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ab70f168ff47a0faf36b5d4bd2367c611"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#ab70f168ff47a0faf36b5d4bd2367c611">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7e769677f30c058055b5130470ce05eb"><td class="memItemLeft" align="right" valign="top">IndicesPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a7e769677f30c058055b5130470ce05eb">indices_</a></td></tr>
+<tr class="memitem:a083a5f6d9f809da5e56b16e7de78563a"><td class="memItemLeft" align="right" valign="top">Indices&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_sampler.html#a083a5f6d9f809da5e56b16e7de78563a">indices_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class TElement&gt;<br/>
@@ -176,7 +176,7 @@ template&lt;class TElement &gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6cd18471d1657ae1d419a077f93484b8"></a>
+<a class="anchor" id="a233a962c1d7adab18eb6228059496ef2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -185,8 +185,8 @@ template&lt;typename TElement &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1_data_sampler.html">ltr::DataSampler</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_sampler.html">DataSampler</a> </td>
           <td>(</td>
-          <td class="paramtype">IndicesPtr&#160;</td>
-          <td class="paramname"><em>indices</em> = <code>IndicesPtr(new&#160;Indices)</code></td><td>)</td>
+          <td class="paramtype">Indices&#160;</td>
+          <td class="paramname"><em>indices</em> = <code>Indices()</code></td><td>)</td>
           <td><code> [explicit]</code></td>
         </tr>
       </table>
@@ -273,16 +273,16 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aac13fe86625fa7b55f4fca848683983f"></a>
+<a class="anchor" id="ae71118adf19a3810a45d75c823dd7fe9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_data_sampler.html">ltr::DataSampler</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_sampler.html#aac13fe86625fa7b55f4fca848683983f">GET_SET</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_data_sampler.html">ltr::DataSampler</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_sampler.html#ae71118adf19a3810a45d75c823dd7fe9">GET_SET_VECTOR</a> </td>
           <td>(</td>
-          <td class="paramtype">IndicesPtr&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -386,14 +386,14 @@ template&lt;typename TElement &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a7e769677f30c058055b5130470ce05eb"></a>
+<a class="anchor" id="a083a5f6d9f809da5e56b16e7de78563a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">IndicesPtr <a class="el" href="classltr_1_1_data_sampler.html">ltr::DataSampler</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_sampler.html#a7e769677f30c058055b5130470ce05eb">indices_</a><code> [private]</code></td>
+          <td class="memname">Indices <a class="el" href="classltr_1_1_data_sampler.html">ltr::DataSampler</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_sampler.html#a083a5f6d9f809da5e56b16e7de78563a">indices_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -408,7 +408,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

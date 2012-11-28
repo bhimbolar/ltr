@@ -1,6 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" href="$bayesian__learner_8h.html" title="ltr/learners/bayesian_learner/bayesian_learner.h" alt="" coords="220,80,516,107"/>
+<area shape="rect" href="$bayesian__learner_8h.html" title="ltr/learners/bayesian_learner/bayesian_learner.h" alt="" coords="332,80,628,107"/>
 <area shape="rect" href="$bayesian__learner__unittest_8cc.html" title="ltr/learners/bayesian_learner/bayesian_learner_unittest.cc" alt="" coords="5,155,360,181"/>
-<area shape="rect" href="$bayesian__scorer_8cc.html" title="ltr/scorers/bayesian_scorer.cc" alt="" coords="540,80,735,107"/>
+<area shape="rect" href="$bayesian__scorer_8cc.html" title="ltr/scorers/bayesian_scorer.cc" alt="" coords="652,80,847,107"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="384,155,651,181"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="675,155,824,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="679,229,820,256"/>
 </map>

@@ -141,7 +141,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a97e28ff19bcba52cad78aab208195e76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97e28ff19bcba52cad78aab208195e76">CompositionLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:a36b2dba5962a07d90638f40b00a3d250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a36b2dba5962a07d90638f40b00a3d250">CompositionLearner</a> (int number_of_iterations=10, typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> data_set_weights_updater=new <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a>&lt; TElement &gt;, typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> composition_scorer_weights_updater=(new <a class="el" href="classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html">FakeCompositionScorerWeightsUpdater</a>&lt; TElement &gt;()))</td></tr>
-<tr class="memitem:adecdab1f60d39110fe17e78a5d9ad79d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#adecdab1f60d39110fe17e78a5d9ad79d">setDefaultScorer</a> ()</td></tr>
+<tr class="memitem:a335a2d91426d082d1a5f0c4663a13259"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a335a2d91426d082d1a5f0c4663a13259">setDefaultScorer</a> ()</td></tr>
 <tr class="memitem:a85b83efeb7d0b53af75c71d3600a2a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a85b83efeb7d0b53af75c71d3600a2a45">setDefaultParameters</a> ()</td></tr>
 <tr class="memitem:a818e7700f7bf7f0da778f37805de8582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a818e7700f7bf7f0da778f37805de8582">checkParameters</a> () const </td></tr>
 <tr class="memitem:a7374dba8e2bb6da5e9b51b25986e6f21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a7374dba8e2bb6da5e9b51b25986e6f21">set_composition_scorer_weights_updater</a> (typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> composition_scorer_weights_updater)</td></tr>
@@ -452,22 +452,24 @@ template&lt;class TElement&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adecdab1f60d39110fe17e78a5d9ad79d"></a>
+<a class="anchor" id="a335a2d91426d082d1a5f0c4663a13259"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#adecdab1f60d39110fe17e78a5d9ad79d">setDefaultScorer</a> </td>
+          <td class="memname">virtual void <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a335a2d91426d082d1a5f0c4663a13259">setDefaultScorer</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Set default scorer </p>
+
+<p>Reimplemented from <a class="el" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">ltr::BaseLearner&lt; TElement, CompositionScorer &gt;</a>.</p>
 
 </div>
 </div>
@@ -560,7 +562,7 @@ template&lt;class TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:29 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

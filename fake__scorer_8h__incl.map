@@ -1,18 +1,20 @@
 <map id="G" name="G">
-<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="2073,80,2204,107"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1872,453,2016,480"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1179,453,1291,480"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="881,528,1036,555"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1607,528,1751,555"/>
-<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1215,155,1468,181"/>
-<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="2277,304,2496,331"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1139,229,1264,256"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1339,304,1480,331"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="509,379,699,405"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="944,304,1139,331"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="2043,379,2213,405"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="840,379,976,405"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1000,379,1139,405"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="347,453,648,480"/>
-<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="2339,379,2485,405"/>
+<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="705,80,836,107"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="821,453,965,480"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1669,453,1781,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1955,528,2109,555"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="325,528,469,555"/>
+<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1468,155,1721,181"/>
+<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="441,304,660,331"/>
+<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="1859,229,2035,256"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1709,229,1835,256"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1568,379,1709,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1885,304,2080,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1253,229,1443,256"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="392,379,563,405"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1885,379,2021,405"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="2045,379,2184,405"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="2211,453,2336,480"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1141,453,1443,480"/>
+<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="587,379,733,405"/>
 </map>

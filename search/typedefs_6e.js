@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ndcg',['NDCG',['../namespaceltr.html#a279d129b20c61938a8a543273ccce383',1,'ltr']]],
-  ['nominalfeaturevalues',['NominalFeatureValues',['../namespaceltr.html#ad4361e47357b5aa688310bd03f573ce5',1,'ltr']]]
+  ['namecreatorhash',['NameCreatorHash',['../class_factory.html#a59b16b1574183b7b823a192562e61aa1',1,'Factory']]]
 ];

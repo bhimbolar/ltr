@@ -175,8 +175,6 @@ RSM</h3>
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>;
 
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
-  ltr::Log LOG; <span class="comment">// is needed for a correct logging in learners</span>
-  logog::GetDefaultFilter().Level(LOGOG_LEVEL_ERROR); <span class="comment">// display only errors</span>
   srand(14);
 
   DataSet&lt;Object&gt; dataset(3); <span class="comment">// dataset with 3 features</span>
@@ -194,7 +192,7 @@ RSM</h3>
 
   FeatureRandomSamplerLearner&lt;Object&gt;::Ptr rsm(<span class="keyword">new</span> FeatureRandomSamplerLearner&lt;Object&gt;);
   BestFeatureLearner&lt;Object&gt;::Ptr best_feature_learner(<span class="keyword">new</span> BestFeatureLearner&lt;Object&gt;(abs_error));
-  best_feature_learner-&gt;addFeatureConverterLearner(rsm);
+  best_feature_learner-&gt;add_feature_converter_learner(rsm);
 
   linear_composition_learner.set_weak_learner(best_feature_learner);
 
@@ -203,7 +201,29 @@ RSM</h3>
 
   std::cout &lt;&lt; *linear_composition_scorer;
 }
-</pre></div> </td><td><div class="fragment"><pre class="fragment"></pre></div> </td></tr>
+</pre></div> </td><td><div class="fragment"><pre class="fragment">CompositionScorer, including:
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [0] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [0] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [0] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [0] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [1] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [0] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [2] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [2] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [2] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [1] [1]
+, has no feature converters
+</pre></div> </td></tr>
 </table>
 <h3><a class="anchor" id="TutorialCompositionAdaBoost"></a>
 Classic AdaBoost</h3>
@@ -245,7 +265,7 @@ std::cout &lt;&lt; *ada_scorer;
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

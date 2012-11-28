@@ -17,6 +17,9 @@ var searchData=
   ['linear_5fscorer_5funittest_2ecc',['linear_scorer_unittest.cc',['../linear__scorer__unittest_8cc.html',1,'']]],
   ['list_5fto_5fall_5fpairs_5fconverter_5funittest_2ecc',['list_to_all_pairs_converter_unittest.cc',['../list__to__all__pairs__converter__unittest_8cc.html',1,'']]],
   ['listwise_5fmeasures_5funittest_2ecc',['listwise_measures_unittest.cc',['../listwise__measures__unittest_8cc.html',1,'']]],
+  ['logging_2edox',['logging.dox',['../logging_8dox.html',1,'']]],
+  ['ltr_5fclient_2ecc',['ltr_client.cc',['../ltr__client_8cc.html',1,'']]],
+  ['ltr_5fclient_2eh',['ltr_client.h',['../ltr__client_8h.html',1,'']]],
   ['ltr_5fclient_5fdeveloper_5ftutorial_2edox',['ltr_client_developer_tutorial.dox',['../ltr__client__developer__tutorial_8dox.html',1,'']]],
   ['ltr_5fclient_5ftutorial_2edox',['ltr_client_tutorial.dox',['../ltr__client__tutorial_8dox.html',1,'']]]
 ];

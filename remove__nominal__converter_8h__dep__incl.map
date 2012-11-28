@@ -1,6 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" href="$remove__nominal__learner_8h.html" title="ltr/feature_converters/remove_nominal_learner.h" alt="" coords="39,80,335,107"/>
-<area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="359,80,676,107"/>
-<area shape="rect" href="$remove__nominal__converter_8cc.html" title="ltr/feature_converters/remove_nominal_converter.cc" alt="" coords="700,80,1015,107"/>
+<area shape="rect" href="$remove__nominal__learner_8h.html" title="ltr/feature_converters/remove_nominal_learner.h" alt="" coords="133,80,429,107"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="392,155,541,181"/>
+<area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="504,80,821,107"/>
+<area shape="rect" href="$remove__nominal__converter_8cc.html" title="ltr/feature_converters/remove_nominal_converter.cc" alt="" coords="845,80,1160,107"/>
 <area shape="rect" href="$feature__converters__learner__unittest_8cc.html" title="ltr/feature_converters/feature_converters_learner_unittest.cc" alt="" coords="5,155,368,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="396,229,537,256"/>
 </map>

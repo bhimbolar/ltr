@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$classbrief.html" title="brief" alt="" coords="5,5,51,32"/>
+<area shape="rect" href="$class_abstract_test_class.html" title="AbstractTestClass" alt="" coords="5,5,133,32"/>
+<area shape="rect" href="$class_concrete_test_class.html" title="ConcreteTestClass" alt="" coords="181,5,312,32"/>
 </map>

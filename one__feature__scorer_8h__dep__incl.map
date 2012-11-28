@@ -1,13 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" href="$best__feature__learner_8h.html" title="ltr/learners/best_feature_learner/best_feature_learner.h" alt="" coords="743,80,1079,107"/>
-<area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="1103,80,1279,107"/>
-<area shape="rect" href="$composition__scorer__unittest_8cc.html" title="ltr/scorers/composition_scorers/composition_scorer_unittest.cc" alt="" coords="1303,80,1689,107"/>
-<area shape="rect" href="$linear__composition__scorer__unittest_8cc.html" title="ltr/scorers/linear_composition_scorer_unittest.cc" alt="" coords="1713,80,2015,107"/>
-<area shape="rect" href="$one__feature__scorer_8cc.html" title="ltr/scorers/one_feature_scorer.cc" alt="" coords="2039,80,2249,107"/>
-<area shape="rect" href="$one__feature__scorer__unittest_8cc.html" title="ltr/scorers/one_feature_scorer_unittest.cc" alt="" coords="2273,80,2535,107"/>
-<area shape="rect" href="$crossvalidation__unittest_8cc.html" title="ltr/crossvalidation/crossvalidation_unittest.cc" alt="" coords="5,155,283,181"/>
-<area shape="rect" href="$composition__learner__unittest_8cc.html" title="ltr/learners/composition_learner/composition_learner_unittest.cc" alt="" coords="307,155,696,181"/>
-<area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="720,155,1101,181"/>
-<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="1125,155,1325,181"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1349,155,1616,181"/>
+<area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="684,80,860,107"/>
+<area shape="rect" href="$best__feature__learner_8h.html" title="ltr/learners/best_feature_learner/best_feature_learner.h" alt="" coords="884,80,1220,107"/>
+<area shape="rect" href="$composition__scorer__unittest_8cc.html" title="ltr/scorers/composition_scorers/composition_scorer_unittest.cc" alt="" coords="1244,80,1631,107"/>
+<area shape="rect" href="$linear__composition__scorer__unittest_8cc.html" title="ltr/scorers/linear_composition_scorer_unittest.cc" alt="" coords="1655,80,1956,107"/>
+<area shape="rect" href="$one__feature__scorer_8cc.html" title="ltr/scorers/one_feature_scorer.cc" alt="" coords="1980,80,2191,107"/>
+<area shape="rect" href="$one__feature__scorer__unittest_8cc.html" title="ltr/scorers/one_feature_scorer_unittest.cc" alt="" coords="2215,80,2476,107"/>
+<area shape="rect" href="$composition__learner__unittest_8cc.html" title="ltr/learners/composition_learner/composition_learner_unittest.cc" alt="" coords="5,155,395,181"/>
+<area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="419,155,800,181"/>
+<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="824,155,1024,181"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1048,155,1315,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1337,229,1479,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1389,155,1539,181"/>
 </map>

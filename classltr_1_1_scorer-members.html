@@ -111,15 +111,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 This is the complete list of members for <a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a0b6b24f719e2bd3b31b70234c12574bb">addFeatureConverter</a>(FeatureConverter::Ptr p_feature_converter)</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_aliaser.html#aed83636a00a3f2a239e3c798f06c6b70">alias</a>() const </td><td><a class="el" href="classltr_1_1_aliaser.html">ltr::Aliaser</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#ae13d9b31c6e72177b8c77c3e861dc298">BasePtr</a> typedef</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a0517f127f1af9d812d8d11964e1fe690">feature_converters</a>() const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a3cb03c1bd72675b7079c897fde4a26bb">feature_converters_</a></td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">feature_converter_</a></td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#afb5985591e1c30774cb4487ba4288965">generateCppCode</a>(const string &amp;function_name) const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">SerializableFunctor&lt; double &gt;::generateCppCode</a>() const </td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a6c14f5d0ac144cfb6569a6fa6e7b2eac">generateCppCodeImpl</a>(const string &amp;function_name) const =0</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [private, pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a2307b9593c7dcf5984dc6b26c0de9a06">generateLocalClassName</a>(size_t index) const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a63134654dd5f53f29068c190ca9dbd2a">GET_SET_VECTOR_OF_PTR</a>(FeatureConverter, feature_converter)</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#acb7ccda5e232cd9605c5f0e7d4e53838">getDefaultSerializableObjectName</a>() const </td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#a29d6f52ea16a24699a475580731697b6">getId</a>() const </td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_functor.html#a4b3ce2ce024276ad4153ded1b6e645c2">operator()</a>(const Object &amp;obj) const</td><td><a class="el" href="classltr_1_1_functor.html">ltr::Functor&lt; double &gt;</a></td><td><code> [inline]</code></td></tr>
@@ -128,11 +127,10 @@ This is the complete list of members for <a class="el" href="classltr_1_1_scorer
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Ptr</a> typedef</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(const Object &amp;object) const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a88297dede592d7ea9715dd77c13c5c8b">scoreImpl</a>(const Object &amp;obj) const =0</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [private, pure virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a9de79f7b23598b6404f4322d0c68e924">Scorer</a>(const FeatureConverterArray &amp;feature_converters=FeatureConverterArray())</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a2a344b1a0e9033bf83aa1fbbdc2a6831">Scorer</a>(const FeatureConverterArray &amp;feature_converter=FeatureConverterArray())</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#ae3bb06e3b389de121ede80172eb37b29">Serializable</a>()</td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#aa18e214bf605b5c7fbf64b5fcf0e769e">Serializable</a>(const Serializable &amp;)</td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_aliaser.html#a23b86856eda31414479bc737fd816c02">set_alias</a>(const string &amp;alias)</td><td><a class="el" href="classltr_1_1_aliaser.html">ltr::Aliaser</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#ac48251ec9a62bf4e994a7eae5b6fe31b">set_feature_converters</a>(const FeatureConverterArray &amp;feature_converters)</td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#a8969d43c152f33bf2d4b0f335c996af2">toString</a>() const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#aa48452aaa1e7a0c9e86fb9f036b52c0e">toStringImpl</a>() const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [private, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_scorer.html#ae5e5abf6e74b3c208cdf1632a912adab">value</a>(const Object &amp;object) const </td><td><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a></td><td><code> [inline, virtual]</code></td></tr>
@@ -146,7 +144,7 @@ This is the complete list of members for <a class="el" href="classltr_1_1_scorer
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:29 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

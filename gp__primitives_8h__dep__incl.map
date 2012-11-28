@@ -1,10 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$gp__scorer_8h.html" title="ltr/scorers/gp_scorer.h" alt="" coords="495,80,647,107"/>
-<area shape="rect" href="$gp__learner_8h.html" title="ltr/learners/gp_learner/gp_learner.h" alt="" coords="143,155,364,181"/>
-<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="711,229,988,256"/>
-<area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="388,155,564,181"/>
-<area shape="rect" href="$gp__scorer_8cc.html" title="ltr/scorers/gp_scorer.cc" alt="" coords="588,155,745,181"/>
-<area shape="rect" href="$gp__scorer__unittest_8cc.html" title="ltr/scorers/gp_scorer_unittest.cc" alt="" coords="769,155,977,181"/>
+<area shape="rect" href="$gp__scorer_8h.html" title="ltr/scorers/gp_scorer.h" alt="" coords="631,80,783,107"/>
+<area shape="rect" href="$gp__learner_8h.html" title="ltr/learners/gp_learner/gp_learner.h" alt="" coords="279,155,500,181"/>
+<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="865,229,1143,256"/>
+<area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="524,155,700,181"/>
+<area shape="rect" href="$gp__scorer_8cc.html" title="ltr/scorers/gp_scorer.cc" alt="" coords="724,155,881,181"/>
+<area shape="rect" href="$gp__scorer__unittest_8cc.html" title="ltr/scorers/gp_scorer_unittest.cc" alt="" coords="905,155,1113,181"/>
 <area shape="rect" href="$gp__learner_8cc.html" title="ltr/learners/gp_learner/gp_learner.cc" alt="" coords="5,229,232,256"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="256,229,523,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="547,229,696,256"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="551,304,692,331"/>
 </map>

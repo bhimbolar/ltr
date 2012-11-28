@@ -7,7 +7,10 @@ var searchData=
   ['last_5frandom',['last_random',['../io__utility__unittest_8cc.html#af03e255aa78c8a41fcedef2472b99e32',1,'io_utility_unittest.cc']]],
   ['leaf_5fgenerator_5f',['leaf_generator_',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a22aaa8e135d3b13bfc6230639e278d32',1,'ltr::decision_tree::DecisionTreeLearner']]],
   ['learn_5fdata',['learn_data',['../class_g_p_learner_test.html#aa065be23fb968a67ccc91bdf477894da',1,'GPLearnerTest::learn_data()'],['../class_learners_test.html#a9c80c1a4dc2d96c7ed576756842c6ce3',1,'LearnersTest::learn_data()']]],
-  ['learners_5f',['learners_',['../classltr_1_1cv_1_1_cross_validator.html#a283c41f9d805bdb7c3f651780598ac86',1,'ltr::cv::CrossValidator']]],
+  ['learner',['learner',['../struct_train_launch_info.html#a6b723431be47811b6da7ba80fd468081',1,'TrainLaunchInfo']]],
+  ['learner_5f',['learner_',['../classltr_1_1cv_1_1_cross_validator.html#a4014f8ad689ef7f1c387d367358005e6',1,'ltr::cv::CrossValidator']]],
+  ['learner_5fexecutor',['learner_executor',['../class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6',1,'OnCrossvalidationTag']]],
+  ['learners',['learners',['../struct_crossvalidation_launch_info.html#aa4c4992b6281d00b52dbb30b4dc478fb',1,'CrossvalidationLaunchInfo']]],
   ['left_5ffeature_5fvalue_5fbound_5f',['left_feature_value_bound_',['../classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf',1,'ltr::decision_tree::ThresholdCondition']]],
   ['linear_5fbiases_5f',['linear_biases_',['../classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572',1,'ltr::FisherDiscriminant']]],
   ['linear_5ffactors_5f',['linear_factors_',['../classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703',1,'ltr::FisherDiscriminant']]]

@@ -1,11 +1,13 @@
 <map id="G" name="G">
 <area shape="rect" href="$neighbor__weighter__unittest_8cc.html" title="ltr/data/neighbor_weighter_unittest.cc" alt="" coords="5,80,243,107"/>
-<area shape="rect" href="$nearest__neighbor__scorer_8h.html" title="ltr/scorers/nearest_neighbor_scorer.h" alt="" coords="788,80,1023,107"/>
+<area shape="rect" href="$nearest__neighbor__scorer_8h.html" title="ltr/scorers/nearest_neighbor_scorer.h" alt="" coords="759,80,993,107"/>
 <area shape="rect" href="$nearest__neighbor__learner_8h.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.h" alt="" coords="368,155,760,181"/>
-<area shape="rect" href="$nearest__neighbor__learner__unittest_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner_unittest.cc" alt="" coords="56,229,504,256"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="949,229,1216,256"/>
+<area shape="rect" href="$nearest__neighbor__learner__unittest_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner_unittest.cc" alt="" coords="892,229,1340,256"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="129,229,396,256"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1368,304,1509,331"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1364,229,1513,256"/>
 <area shape="rect" href="$nearest__neighbor__scorer__unittest_8cc.html" title="ltr/scorers/nearest_neighbor_scorer_unittest.cc" alt="" coords="1101,155,1395,181"/>
-<area shape="rect" href="$neighbor__weighter_8cc.html" title="ltr/utility/neighbor_weighter.cc" alt="" coords="1469,80,1661,107"/>
-<area shape="rect" href="$nearest__neighbor__scorer_8cc.html" title="ltr/scorers/nearest_neighbor_scorer.cc" alt="" coords="784,155,1027,181"/>
-<area shape="rect" href="$nearest__neighbor__learner_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.cc" alt="" coords="528,229,925,256"/>
+<area shape="rect" href="$neighbor__weighter_8cc.html" title="ltr/utility/neighbor_weighter.cc" alt="" coords="1588,80,1780,107"/>
+<area shape="rect" href="$nearest__neighbor__scorer_8cc.html" title="ltr/scorers/nearest_neighbor_scorer.cc" alt="" coords="835,155,1077,181"/>
+<area shape="rect" href="$nearest__neighbor__learner_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.cc" alt="" coords="471,229,868,256"/>
 </map>

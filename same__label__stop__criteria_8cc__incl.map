@@ -1,16 +1,15 @@
 <map id="G" name="G">
-<area shape="rect" href="$same__label__stop__criteria_8h.html" title="ltr/learners/decision_tree/split_criteria/same_label_stop_criteria.h" alt="" coords="304,80,699,107"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="723,80,861,107"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="832,229,957,256"/>
+<area shape="rect" href="$same__label__stop__criteria_8h.html" title="ltr/learners/decision_tree/split_criteria/same_label_stop_criteria.h" alt="" coords="349,80,744,107"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="768,80,907,107"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="915,229,1040,256"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="248,528,392,555"/>
-<area shape="rect" href="$stop__splitting__criteria_8h.html" title="ltr/learners/decision_tree/split_criteria/stop_splitting_criteria.h" alt="" coords="313,155,689,181"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="669,453,781,480"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="781,379,917,405"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="517,379,656,405"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1059,304,1200,331"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="731,304,925,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1935,453,2079,480"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="777,528,932,555"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1120,379,1309,405"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1261,453,1563,480"/>
+<area shape="rect" href="$stop__splitting__criteria_8h.html" title="ltr/learners/decision_tree/split_criteria/stop_splitting_criteria.h" alt="" coords="359,155,735,181"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="869,453,981,480"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1087,379,1223,405"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="924,379,1063,405"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="456,379,597,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="813,304,1008,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1293,304,1437,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="928,528,1083,555"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="619,453,744,480"/>
 </map>

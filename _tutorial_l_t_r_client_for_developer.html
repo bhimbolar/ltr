@@ -130,56 +130,56 @@ How to register new class</h2>
 <td>REGISTER_EVERY_WISE </td><td>Registers class with every approach </td></tr>
 </table>
 <p>Here is an example of registration of some classes: </p>
-<div class="fragment"><pre class="fragment">REGISTER(Aggregator, VoteAggregator);
-REGISTER_EVERY_WISE(Splitter, KFoldSimpleSplitter);
-REGISTER_POINTWISE(Learner, LinearLearner);
+<div class="fragment"><pre class="fragment"><a class="code" href="registration_8h.html#a3aeeb140959bdab2b55a64f1b29f6586">REGISTER</a>(Aggregator, VoteAggregator);
+<a class="code" href="registration_8h.html#aab808f45af4e8e77e55fdbd3baaadc91">REGISTER_EVERY_WISE</a>(Splitter, KFoldSimpleSplitter);
+<a class="code" href="registration_8h.html#ad2dd648fcda882a00f56d26b113c0365">REGISTER_POINTWISE</a>(Learner, LinearLearner);
 </pre></div><h2><a class="anchor" id="HowItWorks"></a>
 How LTR Client works</h2>
-<p>The main class of client is LtrClient.</p>
-<p>It parses config with the help of ConfigParser.</p>
-<p>If LtrClient doesn't find any errors in the config, it creates all objects that were requested in config and starts to process the experiment.</p>
+<p>The main class of client is <a class="el" href="class_ltr_client.html">LtrClient</a>.</p>
+<p>It parses config with the help of <a class="el" href="class_config_parser.html">ConfigParser</a>.</p>
+<p>If <a class="el" href="class_ltr_client.html">LtrClient</a> doesn't find any errors in the config, it creates all objects that were requested in config and starts to process the experiment.</p>
 <h3><a class="anchor" id="Factory"></a>
 Factory</h3>
-<p>First of all there is a Factory object. In the beggining of work it registers all classes according to register.h file.</p>
+<p>First of all there is a <a class="el" href="class_factory.html">Factory</a> object. In the beggining of work it registers all classes according to register.h file.</p>
 <p>Registration of new class creates a pointer to the Creator with recieved template parameters (Base class and derived class) and adds this pointer to the hashtable.</p>
 <p>Creator is simple class that has only one method - Creator::create.</p>
-<p>When LtrClient needs to create some object declared in the config, it calls Creator::create method.</p>
+<p>When <a class="el" href="class_ltr_client.html">LtrClient</a> needs to create some object declared in the config, it calls Creator::create method.</p>
 <p>This method returns requested object casted to boost::any.</p>
 <h3><a class="anchor" id="ConfigParser"></a>
 Config Parser</h3>
-<p>LtrClient contains ConfigParser object. This object parses recieved XML config file. The parsing occurs with the help of TinyXML library.</p>
-<p>During the config processing, ConfigParser calls different parsers depending on detected tags.</p>
+<p><a class="el" href="class_ltr_client.html">LtrClient</a> contains <a class="el" href="class_config_parser.html">ConfigParser</a> object. This object parses recieved XML config file. The parsing occurs with the help of TinyXML library.</p>
+<p>During the config processing, <a class="el" href="class_config_parser.html">ConfigParser</a> calls different parsers depending on detected tags.</p>
 <table class="doxtable">
 <tr>
 <th>Parser </th><th>Description</th></tr>
 <tr>
-<td>TOnDataTag </td><td>handles dataset tag (data) </td></tr>
+<td><a class="el" href="class_t_on_data_tag.html">TOnDataTag</a> </td><td>handles dataset tag (data) </td></tr>
 <tr>
-<td>TOnParameterTag </td><td>parses the parameters of any parameterized tag </td></tr>
+<td><a class="el" href="class_t_on_parameter_tag.html">TOnParameterTag</a> </td><td>parses the parameters of any parameterized tag </td></tr>
 <tr>
-<td>OnGeneralParameterized </td><td>handles the general xml token </td></tr>
+<td><a class="el" href="class_on_general_parameterized.html">OnGeneralParameterized</a> </td><td>handles the general xml token </td></tr>
 <tr>
-<td>OnCVLearnerTag </td><td>handles crossvalidation tag </td></tr>
+<td><a class="el" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a> </td><td>handles crossvalidation tag </td></tr>
 <tr>
-<td>OnCVMeasureTag </td><td>handles measure inside the crossvalidator XML instance </td></tr>
+<td><a class="el" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a> </td><td>handles measure inside the crossvalidator XML instance </td></tr>
 <tr>
-<td>OnCVDataTag </td><td>handles dataset tag (data) inside the crossvalidator XML instance </td></tr>
+<td><a class="el" href="class_on_c_v_data_tag.html">OnCVDataTag</a> </td><td>handles dataset tag (data) inside the crossvalidator XML instance </td></tr>
 <tr>
-<td>OnCrossvalidationTag </td><td>handles crossvalidation tag </td></tr>
+<td><a class="el" href="class_on_crossvalidation_tag.html">OnCrossvalidationTag</a> </td><td>handles crossvalidation tag </td></tr>
 <tr>
-<td>OnPredictTag </td><td>handles predict tag </td></tr>
+<td><a class="el" href="class_on_predict_tag.html">OnPredictTag</a> </td><td>handles predict tag </td></tr>
 <tr>
-<td>OnCppGenTag </td><td>handles cpp tag </td></tr>
+<td><a class="el" href="class_on_cpp_gen_tag.html">OnCppGenTag</a> </td><td>handles cpp tag </td></tr>
 <tr>
-<td>OnTrainTag </td><td>handles train tag </td></tr>
+<td><a class="el" href="class_on_train_tag.html">OnTrainTag</a> </td><td>handles train tag </td></tr>
 <tr>
-<td>OnLaunchTag </td><td>handles launch tag </td></tr>
+<td><a class="el" href="class_on_launch_tag.html">OnLaunchTag</a> </td><td>handles launch tag </td></tr>
 </table>
 </div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

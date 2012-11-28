@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Learning To Rank Library: ltr::cv::CrossValidator&lt; ObjectType, ScorerType &gt; Class Template Reference</title>
+<title>Learning To Rank Library: ltr::cv::CrossValidator&lt; ObjectType &gt; Class Template Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -112,31 +112,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">ltr::cv::CrossValidator&lt; ObjectType, ScorerType &gt; Class Template Reference</div>  </div>
+<div class="title">ltr::cv::CrossValidator&lt; ObjectType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="crossvalidation__result_8h_source.html">crossvalidation_result.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="crossvalidator_8h_source.html">crossvalidator.h</a>&gt;</code></p>
 
 <p><a href="classltr_1_1cv_1_1_cross_validator-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a600545ef667defb4036a83484186da6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a600545ef667defb4036a83484186da6e">CrossValidator</a> ()</td></tr>
-<tr class="memitem:a22f7bcf9b0bf6540cb5b001f392b499c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22f7bcf9b0bf6540cb5b001f392b499c">addDataSet</a> (const typename <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; ObjectType &gt;::Ptr &amp;dataSet)</td></tr>
-<tr class="memitem:ab29e020602e1821129db134c5adffd52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab29e020602e1821129db134c5adffd52">addMeasure</a> (const typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; ObjectType &gt;::Ptr &amp;measure)</td></tr>
-<tr class="memitem:a1f65e214777c8200a334464b00800411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a1f65e214777c8200a334464b00800411">addLearner</a> (const typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; ObjectType &gt;::Ptr &amp;learner)</td></tr>
-<tr class="memitem:a69333322ac0f2758640877affac8ef4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a69333322ac0f2758640877affac8ef4b">addSplitter</a> (const typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">Splitter</a>&lt; ObjectType &gt;::Ptr &amp;splitter)</td></tr>
+<tr class="memitem:ad689e0cb6d02890311ecfdba42727639"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad689e0cb6d02890311ecfdba42727639">GET_SET_VECTOR</a> (typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; ObjectType &gt;, data_set)</td></tr>
+<tr class="memitem:a22821b56ad053c966e1a44e77496ab97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22821b56ad053c966e1a44e77496ab97">GET_SET_VECTOR_OF_PTR</a> (typename <a class="el" href="classltr_1_1_measure.html">ltr::Measure</a>&lt; ObjectType &gt;, measure)</td></tr>
+<tr class="memitem:afe8b89eaba7273385a23ce54a44310da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#afe8b89eaba7273385a23ce54a44310da">GET_SET_VECTOR_OF_PTR</a> (typename <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; ObjectType &gt;, learner)</td></tr>
+<tr class="memitem:a5fe96539661d097e4a07a2a9885d0c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a5fe96539661d097e4a07a2a9885d0c92">GET_SET_VECTOR_OF_PTR</a> (typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">ltr::cv::Splitter</a>&lt; ObjectType &gt;, splitter)</td></tr>
 <tr class="memitem:ad2fc565d04a966b64e1df951d13b399b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad2fc565d04a966b64e1df951d13b399b">launch</a> ()</td></tr>
-<tr class="memitem:af82cf6f06ca49f8c7992b7e3790de333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#af82cf6f06ca49f8c7992b7e3790de333">clearResults</a> ()</td></tr>
-<tr class="memitem:a957907c16dd244d00bb60dde1c75b600"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a957907c16dd244d00bb60dde1c75b600">clearCrossValidator</a> ()</td></tr>
-<tr class="memitem:a6588a4e568aa1c5c73f1bf72d87f96b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a6588a4e568aa1c5c73f1bf72d87f96b1">printResults</a> ()</td></tr>
-<tr class="memitem:a7d114dce9c271a6330c99cc8ebf0214d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7d114dce9c271a6330c99cc8ebf0214d">CrossValidator</a> ()</td></tr>
-<tr class="memitem:a710846550484c2bc7cb7dd218c91f224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a710846550484c2bc7cb7dd218c91f224">addDataSet</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; ObjectType &gt; &amp;data_set)</td></tr>
-<tr class="memitem:a99c0b61374f8bdce6e7591ddb3861470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a99c0b61374f8bdce6e7591ddb3861470">addMeasure</a> (const typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; ObjectType &gt;::Ptr &amp;measure)</td></tr>
-<tr class="memitem:a9771d09acb5fa6cb9dac72b5d75777f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a9771d09acb5fa6cb9dac72b5d75777f0">addLearner</a> (const typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; ObjectType &gt;::Ptr &amp;learner)</td></tr>
-<tr class="memitem:a4e4af5ccabe487b975de3a25714026d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a4e4af5ccabe487b975de3a25714026d8">addSplitter</a> (const typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">Splitter</a>&lt; ObjectType &gt;::Ptr &amp;splitter)</td></tr>
-<tr class="memitem:aa7737f768cf033bd71c833dc04a613cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#aa7737f768cf033bd71c833dc04a613cf">launch</a> ()</td></tr>
 <tr class="memitem:a9bbedd2d9e9be53896f6e44aaf7b42e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a9bbedd2d9e9be53896f6e44aaf7b42e9">reset</a> ()</td></tr>
 <tr class="memitem:ab1244df631964a9c18098fb2d661b964"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab1244df631964a9c18098fb2d661b964">toString</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
@@ -144,24 +135,20 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:afa5ed334d115b89249e97f827e14ea67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#afa5ed334d115b89249e97f827e14ea67">setCrossValidationResultLabels</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5b9dbf5d6ee4417626152efd61dd941c"><td class="memItemLeft" align="right" valign="top">vector&lt; vector&lt; vector&lt; vector<br class="typebreak"/>
-&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a5b9dbf5d6ee4417626152efd61dd941c">crossValidationResults_</a></td></tr>
-<tr class="memitem:abd3de79e8088be3842f57243289bfb14"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a><br class="typebreak"/>
-&lt; ObjectType &gt;::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#abd3de79e8088be3842f57243289bfb14">dataSets_</a></td></tr>
-<tr class="memitem:a7216af339908d70497adc6b35ebaa6d0"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_measure.html">ltr::Measure</a><br class="typebreak"/>
-&lt; ObjectType &gt;::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7216af339908d70497adc6b35ebaa6d0">measures_</a></td></tr>
-<tr class="memitem:a283c41f9d805bdb7c3f651780598ac86"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a><br class="typebreak"/>
-&lt; ObjectType &gt;::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a283c41f9d805bdb7c3f651780598ac86">learners_</a></td></tr>
-<tr class="memitem:a7721d8ed6b6dda62b41b60a67b059e3e"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <br class="typebreak"/>
+<tr class="memitem:ac0b65553c96cf9e5917a4526f45b8775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt; double, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ac0b65553c96cf9e5917a4526f45b8775">cross_validation_results_</a></td></tr>
+<tr class="memitem:a73543f55d5d4fd787770dd7e5240ff3d"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a><br class="typebreak"/>
+&lt; ObjectType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a73543f55d5d4fd787770dd7e5240ff3d">data_set_</a></td></tr>
+<tr class="memitem:a26aeeaeee6aa5dfe68845a1d84560758"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_measure.html">ltr::Measure</a><br class="typebreak"/>
+&lt; ObjectType &gt;::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a26aeeaeee6aa5dfe68845a1d84560758">measure_</a></td></tr>
+<tr class="memitem:a4014f8ad689ef7f1c387d367358005e6"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a><br class="typebreak"/>
+&lt; ObjectType &gt;::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a4014f8ad689ef7f1c387d367358005e6">learner_</a></td></tr>
+<tr class="memitem:a48580310e51d887b7e4e8212aa2de4ec"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <br class="typebreak"/>
 <a class="el" href="classltr_1_1cv_1_1_splitter.html">ltr::cv::Splitter</a>&lt; ObjectType &gt;<br class="typebreak"/>
-::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7721d8ed6b6dda62b41b60a67b059e3e">splitters_</a></td></tr>
-<tr class="memitem:a7c58f56ce0ec6a4c471a90664660b546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt; double, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7c58f56ce0ec6a4c471a90664660b546">cross_validation_results_</a></td></tr>
-<tr class="memitem:a6c2544a77afa5544c67a6789a4fd74a6"><td class="memItemLeft" align="right" valign="top">vector&lt; typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a><br class="typebreak"/>
-&lt; ObjectType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a6c2544a77afa5544c67a6789a4fd74a6">data_sets_</a></td></tr>
+::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a48580310e51d887b7e4e8212aa2de4ec">splitter_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ObjectType, typename ScorerType&gt;<br/>
-class ltr::cv::CrossValidator&lt; ObjectType, ScorerType &gt;</h3>
+<div class="textblock"><h3>template&lt;typename ObjectType&gt;<br/>
+class ltr::cv::CrossValidator&lt; ObjectType &gt;</h3>
 
 <p>Performs crossvalidation and forms a printable set of tables called multitable.</p>
 <p>Info about cross-validation can be found here: <a href="http://en.wikipedia.org/wiki/Cross-validation_(statistics)">http://en.wikipedia.org/wiki/Cross-validation_(statistics)</a></p>
@@ -179,24 +166,6 @@ template&lt;typename ObjectType &gt; </div>
           <td class="memname"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7d114dce9c271a6330c99cc8ebf0214d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -207,238 +176,119 @@ template&lt;typename ObjectType , typename ScorerType &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a710846550484c2bc7cb7dd218c91f224"></a>
+<a class="anchor" id="ad689e0cb6d02890311ecfdba42727639"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22f7bcf9b0bf6540cb5b001f392b499c">addDataSet</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad689e0cb6d02890311ecfdba42727639">GET_SET_VECTOR</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; ObjectType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>data_set</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; ObjectType &gt;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Adds a dataset to the <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> instance </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data_set</td><td>- data set to be inserted into crossvalidator </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a22f7bcf9b0bf6540cb5b001f392b499c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22f7bcf9b0bf6540cb5b001f392b499c">addDataSet</a> </td>
-          <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>dataSet</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9771d09acb5fa6cb9dac72b5d75777f0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a1f65e214777c8200a334464b00800411">addLearner</a> </td>
-          <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>learner</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">data_set&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a learner to the <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> instance </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">learner</td><td>- data set to be inserted into crossvalidator </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
-<a class="anchor" id="a1f65e214777c8200a334464b00800411"></a>
+<a class="anchor" id="a22821b56ad053c966e1a44e77496ab97"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a1f65e214777c8200a334464b00800411">addLearner</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22821b56ad053c966e1a44e77496ab97">GET_SET_VECTOR_OF_PTR</a> </td>
           <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>learner</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">ltr::Measure</a>&lt; ObjectType &gt;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a99c0b61374f8bdce6e7591ddb3861470"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab29e020602e1821129db134c5adffd52">addMeasure</a> </td>
-          <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>measure</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">measure&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a measure to the <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> instance </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">measure</td><td>- measure to be inserted into crossvalidator </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
-<a class="anchor" id="ab29e020602e1821129db134c5adffd52"></a>
+<a class="anchor" id="afe8b89eaba7273385a23ce54a44310da"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab29e020602e1821129db134c5adffd52">addMeasure</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22821b56ad053c966e1a44e77496ab97">GET_SET_VECTOR_OF_PTR</a> </td>
           <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>measure</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; ObjectType &gt;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4e4af5ccabe487b975de3a25714026d8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a69333322ac0f2758640877affac8ef4b">addSplitter</a> </td>
-          <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">Splitter</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>splitter</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">learner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds a splitter to the <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a> instance </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">splitter</td><td>- data set to be inserted into crossvalidator </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
-<a class="anchor" id="a69333322ac0f2758640877affac8ef4b"></a>
+<a class="anchor" id="a5fe96539661d097e4a07a2a9885d0c92"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a69333322ac0f2758640877affac8ef4b">addSplitter</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a22821b56ad053c966e1a44e77496ab97">GET_SET_VECTOR_OF_PTR</a> </td>
           <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">Splitter</a>&lt; ObjectType &gt;::Ptr &amp;&#160;</td>
-          <td class="paramname"><em>splitter</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">ltr::cv::Splitter</a>&lt; ObjectType &gt;&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a957907c16dd244d00bb60dde1c75b600"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a957907c16dd244d00bb60dde1c75b600">clearCrossValidator</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af82cf6f06ca49f8c7992b7e3790de333"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#af82cf6f06ca49f8c7992b7e3790de333">clearResults</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa7737f768cf033bd71c833dc04a613cf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad2fc565d04a966b64e1df951d13b399b">launch</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">splitter&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Launches crossvalidation. </p>
 
 </div>
 </div>
@@ -452,29 +302,12 @@ template&lt;typename ObjectType &gt; </div>
           <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad2fc565d04a966b64e1df951d13b399b">launch</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6588a4e568aa1c5c73f1bf72d87f96b1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a6588a4e568aa1c5c73f1bf72d87f96b1">printResults</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Launches crossvalidation. </p>
 
 </div>
 </div>
@@ -537,14 +370,14 @@ template&lt;typename ObjectType &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a7c58f56ce0ec6a4c471a90664660b546"></a>
+<a class="anchor" id="ac0b65553c96cf9e5917a4526f45b8775"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
+template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;double, 4&gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7c58f56ce0ec6a4c471a90664660b546">cross_validation_results_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;double, 4&gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ac0b65553c96cf9e5917a4526f45b8775">cross_validation_results_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -552,14 +385,14 @@ template&lt;typename ObjectType , typename ScorerType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5b9dbf5d6ee4417626152efd61dd941c"></a>
+<a class="anchor" id="a73543f55d5d4fd787770dd7e5240ff3d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
+template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;vector&lt;vector&lt;vector&lt;double&gt; &gt; &gt; &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a5b9dbf5d6ee4417626152efd61dd941c">crossValidationResults_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt;ObjectType&gt; &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a73543f55d5d4fd787770dd7e5240ff3d">data_set_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -567,14 +400,14 @@ template&lt;typename ObjectType , typename ScorerType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6c2544a77afa5544c67a6789a4fd74a6"></a>
+<a class="anchor" id="a4014f8ad689ef7f1c387d367358005e6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
+template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt;ObjectType&gt; &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a6c2544a77afa5544c67a6789a4fd74a6">data_sets_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;typename <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt;ObjectType&gt;::Ptr&gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a4014f8ad689ef7f1c387d367358005e6">learner_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -582,14 +415,14 @@ template&lt;typename ObjectType , typename ScorerType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abd3de79e8088be3842f57243289bfb14"></a>
+<a class="anchor" id="a26aeeaeee6aa5dfe68845a1d84560758"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
+template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;typename <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt;ObjectType&gt;::Ptr &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#abd3de79e8088be3842f57243289bfb14">dataSets_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;typename <a class="el" href="classltr_1_1_measure.html">ltr::Measure</a>&lt;ObjectType&gt;::Ptr&gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a26aeeaeee6aa5dfe68845a1d84560758">measure_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -597,14 +430,14 @@ template&lt;typename ObjectType , typename ScorerType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a283c41f9d805bdb7c3f651780598ac86"></a>
+<a class="anchor" id="a48580310e51d887b7e4e8212aa2de4ec"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
+template&lt;typename ObjectType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; typename <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; ObjectType &gt;::Ptr &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a283c41f9d805bdb7c3f651780598ac86">learners_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">ltr::cv::Splitter</a>&lt;ObjectType&gt;::Ptr&gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a48580310e51d887b7e4e8212aa2de4ec">splitter_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -612,45 +445,14 @@ template&lt;typename ObjectType , typename ScorerType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7216af339908d70497adc6b35ebaa6d0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; typename <a class="el" href="classltr_1_1_measure.html">ltr::Measure</a>&lt; ObjectType &gt;::Ptr &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7216af339908d70497adc6b35ebaa6d0">measures_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7721d8ed6b6dda62b41b60a67b059e3e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ObjectType , typename ScorerType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt; typename <a class="el" href="classltr_1_1cv_1_1_splitter.html">ltr::cv::Splitter</a>&lt; ObjectType &gt;::Ptr &gt; <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">ltr::cv::CrossValidator</a>&lt; ObjectType, ScorerType &gt;::<a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a7721d8ed6b6dda62b41b60a67b059e3e">splitters_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>ltr/crossvalidation/<a class="el" href="crossvalidation__result_8h_source.html">crossvalidation_result.h</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>ltr/crossvalidation/<a class="el" href="crossvalidator_8h_source.html">crossvalidator.h</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 6 2012 15:32:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 28 2012 14:59:29 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

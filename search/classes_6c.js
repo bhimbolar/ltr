@@ -16,5 +16,6 @@ var searchData=
   ['linearscorer',['LinearScorer',['../classltr_1_1_linear_scorer.html',1,'ltr']]],
   ['listtoallpairsconverter',['ListToAllPairsConverter',['../classltr_1_1utility_1_1_list_to_all_pairs_converter.html',1,'ltr::utility']]],
   ['listtopairconvertionstrategy',['ListToPairConvertionStrategy',['../classltr_1_1utility_1_1_list_to_pair_convertion_strategy.html',1,'ltr::utility']]],
-  ['listwisemeasurestest',['ListwiseMeasuresTest',['../class_listwise_measures_test.html',1,'']]]
+  ['listwisemeasurestest',['ListwiseMeasuresTest',['../class_listwise_measures_test.html',1,'']]],
+  ['ltrclient',['LtrClient',['../class_ltr_client.html',1,'']]]
 ];

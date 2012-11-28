@@ -1,13 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$crossvalidation_8h.html" title="ltr/crossvalidation/crossvalidation.h" alt="" coords="5,80,227,107"/>
-<area shape="rect" href="$crossvalidation__result_8h.html" title="ltr/crossvalidation/crossvalidation_result.h" alt="" coords="251,80,509,107"/>
-<area shape="rect" href="$leave__one__out__splitter_8h.html" title="ltr/crossvalidation/leave_one_out_splitter.h" alt="" coords="533,80,797,107"/>
-<area shape="rect" href="$leave__one__out__splitter__unittest_8cc.html" title="ltr/crossvalidation/leave_one_out_splitter_unittest.cc" alt="" coords="512,155,832,181"/>
-<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="872,80,1088,107"/>
-<area shape="rect" href="$k__fold__simple__splitter_8h.html" title="ltr/crossvalidation/k_fold_simple_splitter.h" alt="" coords="1112,80,1373,107"/>
-<area shape="rect" href="$k__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/k_fold_simple_splitter_unittest.cc" alt="" coords="1189,155,1507,181"/>
-<area shape="rect" href="$tk__fold__simple__splitter_8h.html" title="ltr/crossvalidation/tk_fold_simple_splitter.h" alt="" coords="1448,80,1712,107"/>
-<area shape="rect" href="$tk__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/tk_fold_simple_splitter_unittest.cc" alt="" coords="1581,155,1904,181"/>
-<area shape="rect" href="$crossvalidation__unittest_8cc.html" title="ltr/crossvalidation/crossvalidation_unittest.cc" alt="" coords="91,155,368,181"/>
-<area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="868,155,1140,181"/>
+<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="80,80,296,107"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="108,229,249,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="731,155,880,181"/>
+<area shape="rect" href="$k__fold__simple__splitter_8h.html" title="ltr/crossvalidation/k_fold_simple_splitter.h" alt="" coords="337,80,599,107"/>
+<area shape="rect" href="$k__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/k_fold_simple_splitter_unittest.cc" alt="" coords="389,155,707,181"/>
+<area shape="rect" href="$leave__one__out__splitter_8h.html" title="ltr/crossvalidation/leave_one_out_splitter.h" alt="" coords="724,80,988,107"/>
+<area shape="rect" href="$leave__one__out__splitter__unittest_8cc.html" title="ltr/crossvalidation/leave_one_out_splitter_unittest.cc" alt="" coords="904,155,1224,181"/>
+<area shape="rect" href="$tk__fold__simple__splitter_8h.html" title="ltr/crossvalidation/tk_fold_simple_splitter.h" alt="" coords="1063,80,1327,107"/>
+<area shape="rect" href="$tk__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/tk_fold_simple_splitter_unittest.cc" alt="" coords="1248,155,1571,181"/>
+<area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="43,155,315,181"/>
 </map>
