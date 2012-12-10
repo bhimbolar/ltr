@@ -2,5 +2,5 @@
 <area shape="rect" href="$eigen__converters_8h.html" title="ltr/utility/eigen_converters.h" alt="" coords="49,80,228,107"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="425,155,537,181"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="227,229,381,256"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="608,229,752,256"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="608,229,787,256"/>
 </map>

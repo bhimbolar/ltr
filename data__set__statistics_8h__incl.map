@@ -7,8 +7,8 @@
 <area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1111,304,1252,331"/>
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="833,229,1028,256"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="43,379,187,405"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="515,453,669,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="795,453,939,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="497,453,652,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="777,453,956,480"/>
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1005,379,1131,405"/>
 <area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1415,155,1553,181"/>
 </map>

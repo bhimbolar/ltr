@@ -3,7 +3,7 @@
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="616,304,752,331"/>
 <area shape="rect" href="$data__set__converters_8h.html" title="ltr/data/utility/data_set_converters.h" alt="" coords="408,80,635,107"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="523,453,677,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1371,453,1515,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1353,453,1532,480"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="621,155,747,181"/>
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="927,229,1121,256"/>
 <area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="900,304,1039,331"/>

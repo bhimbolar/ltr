@@ -1,7 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" href="$factory_8h.html" title="ltr_client/factory.h" alt="" coords="423,80,545,107"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="324,155,513,181"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="175,229,476,256"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="831,304,975,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="457,304,612,331"/>
+<area shape="rect" href="$factory_8h.html" title="ltr_client/factory.h" alt="" coords="436,80,559,107"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="337,155,527,181"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="188,229,489,256"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="868,304,1047,331"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="511,304,649,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="332,304,487,331"/>
 </map>

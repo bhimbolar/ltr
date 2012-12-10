@@ -3,8 +3,8 @@
 <area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1280,229,1419,256"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="765,80,891,107"/>
 <area shape="rect" href="$two__class__predicted__label__converter_8h.html" title="ltr/utility/two_class_predicted_label_converter.h" alt="" coords="43,304,336,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1160,379,1315,405"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1491,379,1635,405"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1139,379,1293,405"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1469,379,1648,405"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="911,229,1047,256"/>
 <area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="695,229,836,256"/>
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="960,155,1155,181"/>

@@ -10,10 +10,10 @@ var searchData=
   ['pfound',['PFound',['../classltr_1_1_p_found.html#aa5b6303fae8b089c864f3976edc87c33',1,'ltr::PFound::PFound(const ParametersContainer &amp;parameters)'],['../classltr_1_1_p_found.html#ab5eabedd9a87dab98b08e85868b3bcaa',1,'ltr::PFound::PFound(double p_break=0.15, double max_label=5.0, int number_of_objects_to_consider=0)']]],
   ['predict',['predict',['../classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c',1,'ltr::Scorer::predict(const DataSet&lt; TElement &gt; &amp;elements) const '],['../classltr_1_1_scorer.html#af4d65b8f11ef506ebec36207f64d34d5',1,'ltr::Scorer::predict(const TElement &amp;element) const ']]],
   ['predicted_5flabel',['predicted_label',['../classltr_1_1_object.html#aee9e5793f44f5f6de8fa347544cbbc4b',1,'ltr::Object']]],
-  ['print2dtable',['print2DTable',['../classltr_1_1utility_1_1_multi_table.html#a8c2b90843d934288bdf73b159f1cc29c',1,'ltr::utility::MultiTable']]],
+  ['print2dtable',['print2DTable',['../classltr_1_1utility_1_1_multi_table.html#aa035b20a4f52250e2dbb84aa374ec67f',1,'ltr::utility::MultiTable']]],
   ['printmultiarray',['printMultiArray',['../multi__vector__print_8h.html#a5a1c67441c4d289d586f86a6cef0d327',1,'multi_vector_print.h']]],
   ['printmultiarrayinner',['printMultiArrayInner',['../multi__vector__print_8h.html#a28a89a3d612b8d12fc130312e57bcceb',1,'multi_vector_print.h']]],
-  ['printmultitableinner',['printMultiTableInner',['../classltr_1_1utility_1_1_multi_table.html#a2ff807acff617633182e7f3cd83cc8a2',1,'ltr::utility::MultiTable']]],
+  ['printmultitableinner',['printMultiTableInner',['../classltr_1_1utility_1_1_multi_table.html#a45caf91308472caf83f315c1934c1fcd',1,'ltr::utility::MultiTable']]],
   ['puppyprimitivehandletopserializable',['puppyPrimitiveHandleToPSerializable',['../classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41',1,'ltr::gp::GPScorer']]],
   ['pure_5ffunction',['pure_function',['../class_abstract_test_class.html#af59542f7a0704abe73869d57d003e069',1,'AbstractTestClass::pure_function()'],['../class_concrete_test_class.html#a7f9b23f93123de2620b2a99876bc56a8',1,'ConcreteTestClass::pure_function()']]]
 ];

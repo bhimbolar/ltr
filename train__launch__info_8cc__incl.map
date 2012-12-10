@@ -1,11 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="1760,155,1976,181"/>
-<area shape="rect" href="$configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="1143,80,1295,107"/>
-<area shape="rect" href="$container__utility_8h.html" title="ltr/utility/container_utility.h" alt="" coords="2000,155,2171,181"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="728,229,1029,256"/>
-<area shape="rect" href="$crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="1357,155,1635,181"/>
-<area shape="rect" href="$data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="1437,229,1608,256"/>
-<area shape="rect" href="$parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="1104,155,1333,181"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="280,304,424,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="500,304,655,331"/>
+<area shape="rect" href="$train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="5,155,221,181"/>
+<area shape="rect" href="$configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="729,80,881,107"/>
+<area shape="rect" href="$container__utility_8h.html" title="ltr/utility/container_utility.h" alt="" coords="1451,155,1621,181"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="952,229,1253,256"/>
+<area shape="rect" href="$crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="347,155,624,181"/>
+<area shape="rect" href="$data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="296,229,467,256"/>
+<area shape="rect" href="$parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="893,155,1123,181"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="907,304,1045,331"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="704,304,883,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1171,304,1325,331"/>
 </map>

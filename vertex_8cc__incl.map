@@ -1,11 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$vertex_8h.html" title="ltr/learners/decision_tree/vertex/vertex.h" alt="" coords="665,80,916,107"/>
-<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="776,155,995,181"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1288,379,1432,405"/>
-<area shape="rect" href="$condition_8h.html" title="ltr/learners/decision_tree/condition/condition.h" alt="" coords="963,229,1248,256"/>
-<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="741,229,888,256"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="929,304,1100,331"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="391,304,503,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="245,379,400,405"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="923,379,1067,405"/>
+<area shape="rect" href="$vertex_8h.html" title="ltr/learners/decision_tree/vertex/vertex.h" alt="" coords="1032,80,1283,107"/>
+<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="969,155,1188,181"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1171,379,1349,405"/>
+<area shape="rect" href="$condition_8h.html" title="ltr/learners/decision_tree/condition/condition.h" alt="" coords="633,229,919,256"/>
+<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="993,229,1140,256"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="315,304,485,331"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="960,379,1147,405"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="752,304,864,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="731,379,885,405"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="195,379,339,405"/>
 </map>

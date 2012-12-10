@@ -25,7 +25,7 @@
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1464,463,1659,489"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2139,463,2283,489"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1755,687,1909,713"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="2659,687,2803,713"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2641,687,2820,713"/>
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="912,612,1037,639"/>
 <area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="1869,313,2027,340"/>
 <area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2813,463,3003,489"/>

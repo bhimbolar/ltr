@@ -1,18 +1,20 @@
 <map id="G" name="G">
-<area shape="rect" href="$nominal__to__bool__converter_8h.html" title="ltr/feature_converters/nominal_to_bool_converter.h" alt="" coords="1707,80,2016,107"/>
-<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1189,155,1443,181"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="507,229,683,256"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="757,229,883,256"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="699,453,811,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1051,528,1195,555"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1059,379,1200,405"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="587,304,781,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2227,528,2371,555"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1475,304,1664,331"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="1895,453,2065,480"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="432,379,568,405"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="693,379,832,405"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="600,528,755,555"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="347,453,472,480"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1421,453,1723,480"/>
+<area shape="rect" href="$nominal__to__bool__converter_8h.html" title="ltr/feature_converters/nominal_to_bool_converter.h" alt="" coords="1456,80,1765,107"/>
+<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="761,155,1015,181"/>
+<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="144,229,320,256"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="725,229,851,256"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="547,453,659,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1181,528,1360,555"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="137,379,279,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="741,304,936,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1384,528,1528,555"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1611,304,1800,331"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="2025,453,2196,480"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="905,379,1041,405"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="741,379,880,405"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="800,528,955,555"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="245,453,371,480"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1596,453,1897,480"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1909,528,2048,555"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2371,528,2557,555"/>
 </map>

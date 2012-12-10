@@ -1,10 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="776,80,995,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1288,304,1432,331"/>
-<area shape="rect" href="$condition_8h.html" title="ltr/learners/decision_tree/condition/condition.h" alt="" coords="963,155,1248,181"/>
-<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="741,155,888,181"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="929,229,1100,256"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="391,229,503,256"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="245,304,400,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="923,304,1067,331"/>
+<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="969,80,1188,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1171,304,1349,331"/>
+<area shape="rect" href="$condition_8h.html" title="ltr/learners/decision_tree/condition/condition.h" alt="" coords="633,155,919,181"/>
+<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="993,155,1140,181"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="315,229,485,256"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="960,304,1147,331"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="752,229,864,256"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="731,304,885,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="195,304,339,331"/>
 </map>

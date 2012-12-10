@@ -1,8 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="300,229,444,256"/>
-<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="744,80,891,107"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="1183,155,1353,181"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="667,155,779,181"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="588,229,743,256"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1196,229,1340,256"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="737,229,916,256"/>
+<area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="643,80,789,107"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="864,155,1035,181"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="1137,229,1324,256"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="199,155,311,181"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="239,229,393,256"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="569,229,713,256"/>
 </map>

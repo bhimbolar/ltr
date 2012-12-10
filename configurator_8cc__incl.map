@@ -1,13 +1,15 @@
 <map id="G" name="G">
-<area shape="rect" href="$configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="1065,80,1217,107"/>
-<area shape="rect" href="$parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="893,155,1123,181"/>
-<area shape="rect" href="$container__utility_8h.html" title="ltr/utility/container_utility.h" alt="" coords="33,229,204,256"/>
-<area shape="rect" href="$common__utility_8h.html" title="ltr_client/utility/common_utility.h" alt="" coords="1241,80,1449,107"/>
-<area shape="rect" href="$tag__handlers_8h.html" title="ltr_client/utility/tag_handlers.h" alt="" coords="1807,80,2001,107"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="720,229,1021,256"/>
-<area shape="rect" href="$crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="1248,229,1525,256"/>
-<area shape="rect" href="$data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="1197,155,1368,181"/>
-<area shape="rect" href="$train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="1600,229,1816,256"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="625,304,769,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="793,304,948,331"/>
+<area shape="rect" href="$configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="1309,80,1461,107"/>
+<area shape="rect" href="$parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="1119,155,1348,181"/>
+<area shape="rect" href="$container__utility_8h.html" title="ltr/utility/container_utility.h" alt="" coords="377,229,548,256"/>
+<area shape="rect" href="$common__utility_8h.html" title="ltr_client/utility/common_utility.h" alt="" coords="2053,80,2261,107"/>
+<area shape="rect" href="$tag__handlers_8h.html" title="ltr_client/utility/tag_handlers.h" alt="" coords="688,229,883,256"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="939,229,1240,256"/>
+<area shape="rect" href="$crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="1852,229,2129,256"/>
+<area shape="rect" href="$data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="1903,155,2073,181"/>
+<area shape="rect" href="$train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="1511,229,1727,256"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="653,304,792,331"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="816,304,995,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1019,304,1173,331"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="341,304,528,331"/>
 </map>

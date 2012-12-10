@@ -16,6 +16,8 @@ var searchData=
   ['mls_5ftutorial_2edox',['mls_tutorial.dox',['../mls__tutorial_8dox.html',1,'']]],
   ['most_5fcommon_5flabel_5fleaf_5fgenerator_2ecc',['most_common_label_leaf_generator.cc',['../most__common__label__leaf__generator_8cc.html',1,'']]],
   ['most_5fcommon_5flabel_5fleaf_5fgenerator_2eh',['most_common_label_leaf_generator.h',['../most__common__label__leaf__generator_8h.html',1,'']]],
+  ['multi_5farray_2eh',['multi_array.h',['../multi__array_8h.html',1,'']]],
+  ['multi_5farray_5funittest_2ecc',['multi_array_unittest.cc',['../multi__array__unittest_8cc.html',1,'']]],
   ['multi_5fvector_5fprint_2eh',['multi_vector_print.h',['../multi__vector__print_8h.html',1,'']]],
   ['multitable_2eh',['multitable.h',['../multitable_8h.html',1,'']]],
   ['multitable_5funittest_2ecc',['multitable_unittest.cc',['../multitable__unittest_8cc.html',1,'']]],

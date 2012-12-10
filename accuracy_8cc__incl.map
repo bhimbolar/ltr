@@ -1,17 +1,19 @@
 <map id="G" name="G">
-<area shape="rect" href="$accuracy_8h.html" title="ltr/measures/accuracy.h" alt="" coords="1431,80,1591,107"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="597,453,709,480"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="885,379,1024,405"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="2072,229,2211,256"/>
-<area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="1432,155,1589,181"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="669,528,824,555"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="899,528,1043,555"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1048,379,1184,405"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1020,229,1145,256"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1380,304,1524,331"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1649,229,1839,256"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1568,453,1869,480"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="213,379,355,405"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="751,304,945,331"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="347,453,472,480"/>
+<area shape="rect" href="$accuracy_8h.html" title="ltr/measures/accuracy.h" alt="" coords="1240,80,1400,107"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="560,453,672,480"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="723,379,861,405"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="2077,229,2216,256"/>
+<area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="1241,155,1399,181"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2077,528,2264,555"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1024,528,1179,555"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="345,528,524,555"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="936,379,1072,405"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="891,229,1016,256"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1248,304,1392,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1517,229,1707,256"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1457,453,1759,480"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="93,379,235,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="519,304,713,331"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="309,453,435,480"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1405,528,1544,555"/>
 </map>

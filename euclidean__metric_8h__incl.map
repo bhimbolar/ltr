@@ -1,10 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$metric_8h.html" title="ltr/metrics/metric.h" alt="" coords="889,80,1020,107"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1333,229,1445,256"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="277,304,421,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="496,304,640,331"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="925,155,1115,181"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="844,229,1145,256"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="387,229,557,256"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1520,304,1675,331"/>
+<area shape="rect" href="$metric_8h.html" title="ltr/metrics/metric.h" alt="" coords="984,80,1115,107"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1535,229,1647,256"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1152,304,1331,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="363,304,507,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="888,155,1077,181"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="745,229,1047,256"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="349,229,520,256"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1456,304,1611,331"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="632,304,771,331"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="5,304,192,331"/>
 </map>

@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['bad_5fany_5fcast',['bad_any_cast',['../classltr_1_1utility_1_1bad__any__cast.html',1,'ltr::utility']]],
+  ['bad_5flexical_5fcast',['bad_lexical_cast',['../classltr_1_1utility_1_1bad__lexical__cast.html',1,'ltr::utility']]],
   ['bad_5fline',['bad_line',['../classltr_1_1io__utility_1_1_parser_1_1bad__line.html',1,'ltr::io_utility::Parser']]],
   ['basedcg',['BaseDCG',['../classltr_1_1_base_d_c_g.html',1,'ltr']]],
   ['basefeatureconverterlearner',['BaseFeatureConverterLearner',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],

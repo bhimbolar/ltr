@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="723,80,848,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="1211,379,1355,405"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1193,379,1372,405"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="880,304,992,331"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="725,229,861,256"/>
 <area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1004,229,1143,256"/>

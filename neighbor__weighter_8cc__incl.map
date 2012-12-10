@@ -1,9 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$neighbor__weighter_8h.html" title="ltr/utility/neighbor_weighter.h" alt="" coords="455,80,641,107"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="661,229,963,256"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="625,304,769,331"/>
+<area shape="rect" href="$neighbor__weighter_8h.html" title="ltr/utility/neighbor_weighter.h" alt="" coords="663,80,849,107"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="737,229,1039,256"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1400,304,1579,331"/>
 <area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="292,229,463,256"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="585,155,775,181"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1276,304,1431,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="305,304,449,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="793,155,983,181"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1176,304,1315,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="997,304,1152,331"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="491,304,677,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="24,304,168,331"/>
 </map>

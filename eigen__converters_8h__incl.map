@@ -1,5 +1,5 @@
 <map id="G" name="G">
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="425,80,537,107"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="227,155,381,181"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/shared_ptr.h" alt="" coords="608,155,752,181"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="608,155,787,181"/>
 </map>

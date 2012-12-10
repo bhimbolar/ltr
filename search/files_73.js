@@ -12,7 +12,6 @@ var searchData=
   ['serializable_5ffunctor_2eh',['serializable_functor.h',['../serializable__functor_8h.html',1,'']]],
   ['serialization_2edox',['serialization.dox',['../serialization_8dox.html',1,'']]],
   ['serialization_5funittest_2ecc',['serialization_unittest.cc',['../serialization__unittest_8cc.html',1,'']]],
-  ['shared_5fptr_2ecc',['shared_ptr.cc',['../shared__ptr_8cc.html',1,'']]],
   ['shared_5fptr_2eh',['shared_ptr.h',['../shared__ptr_8h.html',1,'']]],
   ['splitter_2eh',['splitter.h',['../splitter_8h.html',1,'']]],
   ['splitter_5funittest_2eh',['splitter_unittest.h',['../splitter__unittest_8h.html',1,'']]],
