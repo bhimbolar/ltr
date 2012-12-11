@@ -42,6 +42,7 @@ var searchData=
   ['_7escorer',['~Scorer',['../classltr_1_1_scorer.html#a80d2af3991cb44f54ed25b6866aad7f3',1,'ltr::Scorer']]],
   ['_7eserializable',['~Serializable',['../classltr_1_1_serializable.html#a349045b3809e5f938aed014292f822d5',1,'ltr::Serializable']]],
   ['_7eserializablefunctor',['~SerializableFunctor',['../classltr_1_1_serializable_functor.html#a2bb293fedefc98125a07f2e5a788d81a',1,'ltr::SerializableFunctor']]],
+  ['_7eshared_5fptr',['~shared_ptr',['../classltr_1_1utility_1_1shared__ptr.html#a64180087011aefd944b7675561b568c4',1,'ltr::utility::shared_ptr']]],
   ['_7esplitter',['~Splitter',['../classltr_1_1cv_1_1_splitter.html#aeff260fc135ec8d9f098470155ab23be',1,'ltr::cv::Splitter']]],
   ['_7estopsplittingcriteria',['~StopSplittingCriteria',['../classltr_1_1decision__tree_1_1_stop_splitting_criteria.html#a43a27fb1bd879925a0110c25181f31de',1,'ltr::decision_tree::StopSplittingCriteria']]],
   ['_7esubtract',['~Subtract',['../classltr_1_1gp_1_1_subtract.html#abb7ec7098489b42e3cead34242bbd1a1',1,'ltr::gp::Subtract']]],

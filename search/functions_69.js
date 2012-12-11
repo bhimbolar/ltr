@@ -2,6 +2,7 @@ var searchData=
 [
   ['id3splitter',['ID3Splitter',['../classltr_1_1decision__tree_1_1_i_d3_splitter.html#a707a579ff2414c85d2536bbfc5a2671c',1,'ltr::decision_tree::ID3Splitter']]],
   ['ifthenfunc',['IfThenFunc',['../classltr_1_1gp_1_1_if_then_func.html#ae6a6ded8c02a48755804e94db43d77da',1,'ltr::gp::IfThenFunc']]],
+  ['incref',['incref',['../classltr_1_1utility_1_1shared__ptr.html#a8315bcb0af11569a19dd686242c41197',1,'ltr::utility::shared_ptr']]],
   ['init',['init',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a60fbef26f2a8b254fccaa570fcef9682',1,'ltr::io_utility::ARFFParser::init()'],['../classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#a205157916fe53e6b78eaf9e27d8282af',1,'ltr::io_utility::ARFFParser::NextFeatureParser::init()'],['../classltr_1_1io__utility_1_1_s_v_m_parser.html#a024872f3695f11de5d526f75e6fef579',1,'ltr::io_utility::SVMParser::init()'],['../classltr_1_1io__utility_1_1_yandex_parser.html#ab562cc45757f9d0b42d6f70130f0f9ee',1,'ltr::io_utility::YandexParser::init()'],['../classltr_1_1io__utility_1_1_parser.html#ad86a5c48ad68516e05aa2400e9c8df88',1,'ltr::io_utility::Parser::init()']]],
   ['initcontext',['initContext',['../classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7',1,'ltr::gp::GPLearner']]],
   ['initfrom',['initFrom',['../class_ltr_client.html#a44c7fbd7e36a2317c7509b2403e7da12',1,'LtrClient']]],

@@ -126,8 +126,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a><a class="code" href="classltr_1_1_sum_predictions_aggregator.html#ab4017bcb2bd3cce36f88f359ccb0d4f0">00025</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_sum_predictions_aggregator.html#ab4017bcb2bd3cce36f88f359ccb0d4f0">SumPredictionsAggregator</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
 <a name="l00026"></a>00026   }
 <a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="classltr_1_1_sum_predictions_aggregator.html#a8a911f40dd616ded4b907acc525aca03">00028</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_sum_predictions_aggregator.html#a8a911f40dd616ded4b907acc525aca03">aggregate</a>(<span class="keyword">const</span> vector&lt;double&gt;&amp; labels,
-<a name="l00029"></a>00029                    <span class="keyword">const</span> vector&lt;double&gt;&amp; weights) {
+<a name="l00028"></a><a class="code" href="classltr_1_1_sum_predictions_aggregator.html#ac316b6fd8c647be16851f454847fc9af">00028</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_sum_predictions_aggregator.html#ac316b6fd8c647be16851f454847fc9af">aggregate</a>(<span class="keyword">const</span> vector&lt;double&gt;&amp; labels,
+<a name="l00029"></a>00029                    <span class="keyword">const</span> vector&lt;double&gt;&amp; weights)<span class="keyword"> const </span>{
 <a name="l00030"></a>00030     <span class="keywordtype">double</span> result = 0;
 <a name="l00031"></a>00031     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> label_index = 0; label_index &lt; (int)labels.size(); ++label_index) {
 <a name="l00032"></a>00032       result += labels[label_index] * weights[label_index];
@@ -158,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 10 2012 15:36:00 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 11 2012 13:14:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

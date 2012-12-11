@@ -99,15 +99,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">ltr/utility/boost/shared_ptr.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br/>
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
-<code>#include &lt;boost/smart_ptr/detail/operator_bool.hpp&gt;</code><br/>
+<code>#include &lt;cassert&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for shared_ptr.h:</div>
 <div class="dyncontent">
@@ -121,62 +119,12 @@ Include dependency graph for shared_ptr.h:</div>
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; T &gt;</a></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a819a1546746d601b32590e2a9c410d36"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a819a1546746d601b32590e2a9c410d36"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::operator==</b> (shared_ptr&lt; T &gt; const &amp;a, shared_ptr&lt; U &gt; const &amp;b)</td></tr>
-<tr class="memitem:aa11b90d48392d2c6c6469d5bbace70f3"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:aa11b90d48392d2c6c6469d5bbace70f3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::operator!=</b> (shared_ptr&lt; T &gt; const &amp;a, shared_ptr&lt; U &gt; const &amp;b)</td></tr>
-<tr class="memitem:a5f1eee0025701c7af7186e266e868264"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a5f1eee0025701c7af7186e266e868264"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::operator&lt;</b> (shared_ptr&lt; T &gt; const &amp;a, shared_ptr&lt; U &gt; const &amp;b)</td></tr>
-<tr class="memitem:a5d69bd132e96426fd43629b1fd995393"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a5d69bd132e96426fd43629b1fd995393"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::swap</b> (shared_ptr&lt; T &gt; &amp;a, shared_ptr&lt; T &gt; &amp;b)</td></tr>
-<tr class="memitem:a5437a09a7e9bb46715091700d1e79574"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a5437a09a7e9bb46715091700d1e79574"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::static_pointer_cast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:a13428fa08de563f0b3c05c6379fc2b17"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a13428fa08de563f0b3c05c6379fc2b17"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::const_pointer_cast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:a40b4cbb40bb3435e4e4cd6251ccdfb64"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a40b4cbb40bb3435e4e4cd6251ccdfb64"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::dynamic_pointer_cast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:a0fbf734c2d9869cd7354275c4d47586e"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a0fbf734c2d9869cd7354275c4d47586e"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::shared_static_cast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:ab147a50c0cff985a57aa23ae20add4a7"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:ab147a50c0cff985a57aa23ae20add4a7"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::shared_dynamic_cast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:aff5674dd73221a88fcd8a204e88e4716"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:aff5674dd73221a88fcd8a204e88e4716"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::shared_polymorphic_cast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:a53f4a41f4366553d5bec738bc0e4c743"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
-<tr class="memitem:a53f4a41f4366553d5bec738bc0e4c743"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::shared_polymorphic_downcast</b> (shared_ptr&lt; U &gt; const &amp;r)</td></tr>
-<tr class="memitem:af9ce5a4d029a69723c36b49df292350e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af9ce5a4d029a69723c36b49df292350e"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::get_pointer</b> (shared_ptr&lt; T &gt; const &amp;p)</td></tr>
-<tr class="memitem:a5d3d344d8b02e5e96aeba9335781c3b0"><td class="memTemplParams" colspan="2">template&lt;class E , class T , class Y &gt; </td></tr>
-<tr class="memitem:a5d3d344d8b02e5e96aeba9335781c3b0"><td class="memTemplItemLeft" align="right" valign="top">std::basic_ostream&lt; E, T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::operator&lt;&lt;</b> (std::basic_ostream&lt; E, T &gt; &amp;os, shared_ptr&lt; Y &gt; const &amp;p)</td></tr>
-<tr class="memitem:a88367596542c61dfcd24c280736644d2"><td class="memTemplParams" colspan="2">template&lt;class D , class T &gt; </td></tr>
-<tr class="memitem:a88367596542c61dfcd24c280736644d2"><td class="memTemplItemLeft" align="right" valign="top">D *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::get_deleter</b> (shared_ptr&lt; T &gt; const &amp;p)</td></tr>
-<tr class="memitem:ac996d8289248b9fb67904cd3a0a28af2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac996d8289248b9fb67904cd3a0a28af2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_is_lock_free</b> (shared_ptr&lt; T &gt; const *)</td></tr>
-<tr class="memitem:aa830294ef77afc83d7113d54840a429f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa830294ef77afc83d7113d54840a429f"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_load</b> (shared_ptr&lt; T &gt; const *p)</td></tr>
-<tr class="memitem:ac671ffb0d56ff59ddd0c1b306954054c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ac671ffb0d56ff59ddd0c1b306954054c"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_load_explicit</b> (shared_ptr&lt; T &gt; const *p, memory_order)</td></tr>
-<tr class="memitem:a524e6b2ae90b7d6aa50e0b2050e0262c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a524e6b2ae90b7d6aa50e0b2050e0262c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_store</b> (shared_ptr&lt; T &gt; *p, shared_ptr&lt; T &gt; r)</td></tr>
-<tr class="memitem:a2726025b98793a72a2d749735691c161"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a2726025b98793a72a2d749735691c161"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_store_explicit</b> (shared_ptr&lt; T &gt; *p, shared_ptr&lt; T &gt; r, memory_order)</td></tr>
-<tr class="memitem:afea420c4e9dfaca0e29523c99819f783"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afea420c4e9dfaca0e29523c99819f783"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_exchange</b> (shared_ptr&lt; T &gt; *p, shared_ptr&lt; T &gt; r)</td></tr>
-<tr class="memitem:a3d7587dc4933b09236c6ee09a5efaaae"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3d7587dc4933b09236c6ee09a5efaaae"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_exchange_explicit</b> (shared_ptr&lt; T &gt; *p, shared_ptr&lt; T &gt; r, memory_order)</td></tr>
-<tr class="memitem:a4e4a6461f4dffd09620ec9f7bcfdea86"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a4e4a6461f4dffd09620ec9f7bcfdea86"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_compare_exchange</b> (shared_ptr&lt; T &gt; *p, shared_ptr&lt; T &gt; *v, shared_ptr&lt; T &gt; w)</td></tr>
-<tr class="memitem:a97b4929715dd8658ce4e7cf4b0e3d214"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a97b4929715dd8658ce4e7cf4b0e3d214"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::atomic_compare_exchange_explicit</b> (shared_ptr&lt; T &gt; *p, shared_ptr&lt; T &gt; *v, shared_ptr&lt; T &gt; w, memory_order, memory_order)</td></tr>
-<tr class="memitem:a4beefda8fb7a258ddfcf5d8f9b0bad0f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a4beefda8fb7a258ddfcf5d8f9b0bad0f"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ltr::utility::hash_value</b> (shared_ptr&lt; T &gt; const &amp;p)</td></tr>
 </table>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 10 2012 15:36:01 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 11 2012 13:14:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -144,8 +144,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00043"></a>00043     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
 <a name="l00044"></a>00044   }
 <a name="l00045"></a>00045 
-<a name="l00046"></a><a class="code" href="classltr_1_1_order_statistic_predictions_aggregator.html#afa2fa784e29b13f6bf41e19638882f3c">00046</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_order_statistic_predictions_aggregator.html#afa2fa784e29b13f6bf41e19638882f3c">aggregate</a>(<span class="keyword">const</span> vector&lt;double&gt;&amp; labels,
-<a name="l00047"></a>00047                    <span class="keyword">const</span> vector&lt;double&gt;&amp; weights) {
+<a name="l00046"></a><a class="code" href="classltr_1_1_order_statistic_predictions_aggregator.html#af470eeb3d188feff6006d3cbae916f21">00046</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_order_statistic_predictions_aggregator.html#af470eeb3d188feff6006d3cbae916f21">aggregate</a>(<span class="keyword">const</span> vector&lt;double&gt;&amp; labels,
+<a name="l00047"></a>00047                    <span class="keyword">const</span> vector&lt;double&gt;&amp; weights)<span class="keyword"> const </span>{
 <a name="l00048"></a>00048     <span class="comment">// if weights[i] &lt; 0 then take it 0</span>
 <a name="l00049"></a>00049     <span class="keywordtype">double</span> sum_weight = 0.0;
 <a name="l00050"></a>00050     vector&lt;pair&lt;double, double&gt; &gt; weighted_labels(labels.size());
@@ -226,7 +226,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 10 2012 15:36:00 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 11 2012 13:14:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

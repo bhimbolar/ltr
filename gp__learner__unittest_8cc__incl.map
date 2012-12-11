@@ -4,7 +4,7 @@
 <area shape="rect" href="$path_8h.html" title="ltr/utility/boost/path.h" alt="" coords="173,229,317,256"/>
 <area shape="rect" href="$dcg_8h.html" title="ltr/measures/dcg.h" alt="" coords="1616,229,1744,256"/>
 <area shape="rect" href="$true__point_8h.html" title="ltr/measures/true_point.h" alt="" coords="1347,229,1512,256"/>
-<area shape="rect" href="$nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="869,229,1168,256"/>
+<area shape="rect" href="$nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="949,229,1248,256"/>
 <area shape="rect" href="$gp__learner_8h.html" title="ltr/learners/gp_learner/gp_learner.h" alt="" coords="4063,80,4284,107"/>
 <area shape="rect" href="$gp__primitives_8h.html" title="ltr/learners/gp_learner/gp_primitives.h" alt="" coords="4211,229,4445,256"/>
 <area shape="rect" href="$population__handler_8h.html" title="ltr/learners/gp_learner/strategies/population_handler.h" alt="" coords="5161,304,5492,331"/>
@@ -19,7 +19,7 @@
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="2024,379,2149,405"/>
 <area shape="rect" href="$parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="493,304,688,331"/>
 <area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2925,453,3112,480"/>
-<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="3199,229,3329,256"/>
+<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="3200,229,3331,256"/>
 <area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="899,379,1037,405"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1725,453,1861,480"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2544,453,2688,480"/>
@@ -29,8 +29,8 @@
 <area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="3237,453,3539,480"/>
 <area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="2108,304,2265,331"/>
 <area shape="rect" href="$measure__utility_8h.html" title="ltr/measures/utils/measure_utility.h" alt="" coords="1568,304,1792,331"/>
-<area shape="rect" href="$learner_8h.html" title="ltr/learners/learner.h" alt="" coords="3380,155,3516,181"/>
+<area shape="rect" href="$learner_8h.html" title="ltr/learners/learner.h" alt="" coords="3365,155,3501,181"/>
 <area shape="rect" href="$gp__scorer_8h.html" title="ltr/scorers/gp_scorer.h" alt="" coords="3984,155,4136,181"/>
-<area shape="rect" href="$reciprocal__rank_8h.html" title="ltr/measures/reciprocal_rank.h" alt="" coords="1983,229,2177,256"/>
+<area shape="rect" href="$reciprocal__rank_8h.html" title="ltr/measures/reciprocal_rank.h" alt="" coords="1993,229,2188,256"/>
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="5567,304,5692,331"/>
 </map>

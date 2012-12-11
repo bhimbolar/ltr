@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="695,155,820,181"/>
-<area shape="rect" href="$data__set__label__statistics_8h.html" title="ltr/data/utility/data_set_label_statistics.h" alt="" coords="1205,80,1461,107"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="667,379,779,405"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="460,304,596,331"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="620,304,759,331"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1111,304,1252,331"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="833,229,1028,256"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="676,155,801,181"/>
+<area shape="rect" href="$data__set__label__statistics_8h.html" title="ltr/data/utility/data_set_label_statistics.h" alt="" coords="1256,80,1512,107"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="616,379,728,405"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="604,304,740,331"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="441,304,580,331"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1123,304,1264,331"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="815,229,1009,256"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="43,379,187,405"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="497,453,652,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="777,453,956,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="499,453,653,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="829,453,1008,480"/>
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1005,379,1131,405"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1415,155,1553,181"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1509,155,1648,181"/>
 </map>
