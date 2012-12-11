@@ -154,10 +154,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9c649593d532c69a4634b8dae6550ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#ae9c649593d532c69a4634b8dae6550ca">Contains</a> (const string &amp;name) const </td></tr>
 <tr class="memitem:a7bff3f01d7982293b9e6dc56094b0f76"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a7bff3f01d7982293b9e6dc56094b0f76"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a7bff3f01d7982293b9e6dc56094b0f76">TypeCoincides</a> (const string &amp;name) const </td></tr>
-<tr class="memitem:abfe73d3aee9cf0bbb2e9ea7c7fbb01f7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:abfe73d3aee9cf0bbb2e9ea7c7fbb01f7"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#abfe73d3aee9cf0bbb2e9ea7c7fbb01f7">Get</a> (const string &amp;name) const   throw (std::logic_error, std::bad_cast)</td></tr>
-<tr class="memitem:ade3f63589e2976a389e2ede825272ab7"><td class="memTemplParams" colspan="2">template&lt;class StoredType , class DesiredType &gt; </td></tr>
-<tr class="memitem:ade3f63589e2976a389e2ede825272ab7"><td class="memTemplItemLeft" align="right" valign="top">DesiredType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#ade3f63589e2976a389e2ede825272ab7">Get</a> (const string &amp;name) const   throw (std::logic_error, std::bad_cast)</td></tr>
+<tr class="memitem:af139d2fa19cbfa50f304add4991ff7bd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af139d2fa19cbfa50f304add4991ff7bd"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;default_value=<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()) const   throw (std::logic_error, std::bad_cast)</td></tr>
+<tr class="memitem:a1b6e9bc457217679ddbc2951a8d3344e"><td class="memTemplParams" colspan="2">template&lt;class StoredType , class DesiredType &gt; </td></tr>
+<tr class="memitem:a1b6e9bc457217679ddbc2951a8d3344e"><td class="memTemplItemLeft" align="right" valign="top">DesiredType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a1b6e9bc457217679ddbc2951a8d3344e">Get</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;default_value=<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()) const   throw (std::logic_error, std::bad_cast)</td></tr>
 <tr class="memitem:a212f4cd40b985af6f9856b65a7e9dd0d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a212f4cd40b985af6f9856b65a7e9dd0d"><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a212f4cd40b985af6f9856b65a7e9dd0d">GetRef</a> (const string &amp;name) const   throw (std::logic_error, std::bad_cast)</td></tr>
 <tr class="memitem:ab921a364a7dde6a74b5d1e2d5b9aba35"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -380,18 +380,28 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abfe73d3aee9cf0bbb2e9ea7c7fbb01f7"></a>
+<a class="anchor" id="af139d2fa19cbfa50f304add4991ff7bd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classltr_1_1_parameters_container.html#abfe73d3aee9cf0bbb2e9ea7c7fbb01f7">ltr::ParametersContainer::Get</a> </td>
+          <td class="memname">T <a class="el" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">ltr::ParametersContainer::Get</a> </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code><a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -400,18 +410,28 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ade3f63589e2976a389e2ede825272ab7"></a>
+<a class="anchor" id="a1b6e9bc457217679ddbc2951a8d3344e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class StoredType , class DesiredType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">DesiredType <a class="el" href="classltr_1_1_parameters_container.html#abfe73d3aee9cf0bbb2e9ea7c7fbb01f7">ltr::ParametersContainer::Get</a> </td>
+          <td class="memname">DesiredType <a class="el" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">ltr::ParametersContainer::Get</a> </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code><a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -633,7 +653,7 @@ template&lt;class T &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 11 2012 17:39:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 11 2012 18:08:57 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

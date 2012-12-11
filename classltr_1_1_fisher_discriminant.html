@@ -132,7 +132,7 @@ Inheritance diagram for ltr::FisherDiscriminant:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a05c996039bca11aa656ea280a9c648"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">FisherDiscriminant</a> ()</td></tr>
 <tr class="memitem:a725e9656d4ccd2065202fd39f512b3e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant.html#a725e9656d4ccd2065202fd39f512b3e1">FisherDiscriminant</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:a29f8a99ededfa90b00102afd03d2dcb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant.html#a29f8a99ededfa90b00102afd03d2dcb7">FisherDiscriminant</a> (const map&lt; Label, VectorXd &gt; &amp;linear_factors, const map&lt; Label, double &gt; &amp;linear_biases)</td></tr>
+<tr class="memitem:aeec9feaaaf19d7a5747e8da90c7a8633"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant.html#aeec9feaaaf19d7a5747e8da90c7a8633">FisherDiscriminant</a> (const LabelToLinearFactor &amp;linear_factors, const LabelToLinearBias &amp;linear_biases)</td></tr>
 <tr class="memitem:a7ecc039242acf8fe8f69b252b8418ed2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant.html#a7ecc039242acf8fe8f69b252b8418ed2">estimate</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, const double label) const </td></tr>
 <tr class="memitem:a3f4c9173907193888fb1deb15334b015"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant.html#a3f4c9173907193888fb1deb15334b015">generateCppCode</a> (const string &amp;function_name) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -176,20 +176,20 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a29f8a99ededfa90b00102afd03d2dcb7"></a>
+<a class="anchor" id="aeec9feaaaf19d7a5747e8da90c7a8633"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">ltr::FisherDiscriminant::FisherDiscriminant</a> </td>
           <td>(</td>
-          <td class="paramtype">const map&lt; Label, VectorXd &gt; &amp;&#160;</td>
+          <td class="paramtype">const LabelToLinearFactor &amp;&#160;</td>
           <td class="paramname"><em>linear_factors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const map&lt; Label, double &gt; &amp;&#160;</td>
+          <td class="paramtype">const LabelToLinearBias &amp;&#160;</td>
           <td class="paramname"><em>linear_biases</em>&#160;</td>
         </tr>
         <tr>
@@ -294,7 +294,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 11 2012 17:39:49 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 11 2012 18:08:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
