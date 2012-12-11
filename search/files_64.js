@@ -42,5 +42,6 @@ var searchData=
   ['default_5fselection_5fstrategy_2eh',['default_selection_strategy.h',['../default__selection__strategy_8h.html',1,'']]],
   ['density_5festimators_5flearners_5funittests_2ecc',['density_estimators_learners_unittests.cc',['../density__estimators__learners__unittests_8cc.html',1,'']]],
   ['density_5festimators_5fscorers_5funittests_2ecc',['density_estimators_scorers_unittests.cc',['../density__estimators__scorers__unittests_8cc.html',1,'']]],
+  ['differentiable_5ffunction_2eh',['differentiable_function.h',['../differentiable__function_8h.html',1,'']]],
   ['doc_5fcontents_2edox',['doc_contents.dox',['../doc__contents_8dox.html',1,'']]]
 ];

@@ -11,5 +11,7 @@ var searchData=
   ['gp_5fprimitives_2eh',['gp_primitives.h',['../gp__primitives_8h.html',1,'']]],
   ['gp_5fscorer_2ecc',['gp_scorer.cc',['../gp__scorer_8cc.html',1,'']]],
   ['gp_5fscorer_2eh',['gp_scorer.h',['../gp__scorer_8h.html',1,'']]],
-  ['gp_5fscorer_5funittest_2ecc',['gp_scorer_unittest.cc',['../gp__scorer__unittest_8cc.html',1,'']]]
+  ['gp_5fscorer_5funittest_2ecc',['gp_scorer_unittest.cc',['../gp__scorer__unittest_8cc.html',1,'']]],
+  ['gradient_5fdescent_5fsolver_2ecc',['gradient_descent_solver.cc',['../gradient__descent__solver_8cc.html',1,'']]],
+  ['gradient_5fdescent_5fsolver_2eh',['gradient_descent_solver.h',['../gradient__descent__solver_8h.html',1,'']]]
 ];

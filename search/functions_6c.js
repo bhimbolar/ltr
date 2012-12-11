@@ -11,6 +11,7 @@ var searchData=
   ['leaveoneoutsplitter',['LeaveOneOutSplitter',['../classltr_1_1cv_1_1_leave_one_out_splitter.html#a3ec37f035bee7d59592646a1de5ee90d',1,'ltr::cv::LeaveOneOutSplitter::LeaveOneOutSplitter()'],['../classltr_1_1cv_1_1_leave_one_out_splitter.html#a0228dc9d6427cbba7f17149d965a84ce',1,'ltr::cv::LeaveOneOutSplitter::LeaveOneOutSplitter(const ParametersContainer &amp;parameters)']]],
   ['lightsubset',['lightSubset',['../classltr_1_1_data_set.html#aa8ebcb36995ad8f83d2e08463ac4ee77',1,'ltr::DataSet']]],
   ['linearcompositiontest',['LinearCompositionTest',['../class_linear_composition_test.html#ad97d674615137372c0267174ea877c7a',1,'LinearCompositionTest']]],
+  ['linearinequalityset',['LinearInequalitySet',['../classoptimization_1_1_linear_inequality_set.html#a8f5a877759e167b58b195da97111be95',1,'optimization::LinearInequalitySet']]],
   ['linearlearner',['LinearLearner',['../classltr_1_1_linear_learner.html#a8e7f5ac33a5284b2c032cb3586b6db78',1,'ltr::LinearLearner::LinearLearner(const ParametersContainer &amp;parameters)'],['../classltr_1_1_linear_learner.html#a03d205e82c35a541c5575c367a6b2ed4',1,'ltr::LinearLearner::LinearLearner()']]],
   ['linearscorer',['LinearScorer',['../classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824',1,'ltr::LinearScorer::LinearScorer()'],['../classltr_1_1_linear_scorer.html#a8d6aa05494811a624157d6b909ceaf36',1,'ltr::LinearScorer::LinearScorer(const vector&lt; double &gt; &amp;weights)']]],
   ['ltrclient',['LtrClient',['../class_ltr_client.html#a47df9d29023c6f3a04096a66d93169b6',1,'LtrClient']]]

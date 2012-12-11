@@ -25,5 +25,7 @@ var searchData=
   ['fisher_5fdiscriminant_2ecc',['fisher_discriminant.cc',['../fisher__discriminant_8cc.html',1,'']]],
   ['fisher_5fdiscriminant_2eh',['fisher_discriminant.h',['../fisher__discriminant_8h.html',1,'']]],
   ['fisher_5fdiscriminant_5fdensity_5flearner_2eh',['fisher_discriminant_density_learner.h',['../fisher__discriminant__density__learner_8h.html',1,'']]],
+  ['function_2ecc',['function.cc',['../function_8cc.html',1,'']]],
+  ['function_2eh',['function.h',['../function_8h.html',1,'']]],
   ['functor_2eh',['functor.h',['../functor_8h.html',1,'']]]
 ];

@@ -12,6 +12,7 @@ var searchData=
   ['lessactual',['LessActual',['../classltr_1_1_less_actual.html',1,'ltr']]],
   ['lesspredicted',['LessPredicted',['../classltr_1_1_less_predicted.html',1,'ltr']]],
   ['linearcompositiontest',['LinearCompositionTest',['../class_linear_composition_test.html',1,'']]],
+  ['linearinequalityset',['LinearInequalitySet',['../classoptimization_1_1_linear_inequality_set.html',1,'optimization']]],
   ['linearlearner',['LinearLearner',['../classltr_1_1_linear_learner.html',1,'ltr']]],
   ['linearscorer',['LinearScorer',['../classltr_1_1_linear_scorer.html',1,'ltr']]],
   ['listtoallpairsconverter',['ListToAllPairsConverter',['../classltr_1_1utility_1_1_list_to_all_pairs_converter.html',1,'ltr::utility']]],

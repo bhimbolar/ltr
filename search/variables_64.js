@@ -13,6 +13,7 @@ var searchData=
   ['datas',['datas',['../struct_crossvalidation_launch_info.html#af33e32ac5471711f836ec9effac51026',1,'CrossvalidationLaunchInfo']]],
   ['density_5flearner_5f',['density_learner_',['../classltr_1_1_bayesian_learner.html#a296506b7764ccf8d6c200a7f3683d904',1,'ltr::BayesianLearner']]],
   ['dependency_5fspecs_5f',['dependency_specs_',['../class_parametrized_info.html#af5fa490ccf87b1c2f2d3b19321453a07',1,'ParametrizedInfo']]],
+  ['dimension_5f',['dimension_',['../classoptimization_1_1_function.html#a3df1df649bdbc1399ed2d0c7c7ded0b5',1,'optimization::Function::dimension_()'],['../classoptimization_1_1_set.html#a8b5443e11a2398ed79fd40b26cdece08',1,'optimization::Set::dimension_()']]],
   ['dimensions_5f',['dimensions_',['../classltr_1_1utility_1_1_multi_array.html#af9a7bea48ec3f633e2e22c0fd19cbc36',1,'ltr::utility::MultiArray']]],
   ['distance',['distance',['../structltr_1_1_distance_to_neighbor.html#afed47c193fbc5773b00c971d9840b806',1,'ltr::DistanceToNeighbor']]],
   ['distribution_5fprobability_5f',['distribution_probability_',['../classltr_1_1gp_1_1_crossover_adjacent_trees_strategy.html#a65fe3d0103d4bb2a25616c9634153a37',1,'ltr::gp::CrossoverAdjacentTreesStrategy::distribution_probability_()'],['../classltr_1_1gp_1_1_default_crossover_strategy.html#ae23b5fa966c3f07d20ab501dfa672967',1,'ltr::gp::DefaultCrossoverStrategy::distribution_probability_()'],['../classltr_1_1gp_1_1_default_mutation_swap_strategy.html#aed45ad5bedf846b9bbc112dcd26440d7',1,'ltr::gp::DefaultMutationSwapStrategy::distribution_probability_()']]],

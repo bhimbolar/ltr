@@ -8,14 +8,14 @@
 <area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer_weights_updater.html" title="ltr::composition::CompositionScorerWeightsUpdater\&lt; TElement \&gt;" alt="" coords="240,1933,640,1960"/>
 <area shape="rect" href="$classltr_1_1composition_1_1_data_set_weights_updater.html" title="ltr::composition::DataSetWeightsUpdater\&lt; TElement \&gt;" alt="" coords="272,1781,608,1808"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; TElement \&gt;" alt="" coords="351,1604,529,1631"/>
-<area shape="rect" href="$classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors." alt="" coords="328,565,552,592"/>
-<area shape="rect" href="$classltr_1_1_data_set.html" title="ltr::DataSet\&lt; TElement \&gt;" alt="" coords="357,515,523,541"/>
+<area shape="rect" href="$classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors." alt="" coords="328,540,552,567"/>
+<area shape="rect" href="$classltr_1_1_data_set.html" title="ltr::DataSet\&lt; TElement \&gt;" alt="" coords="357,489,523,516"/>
 <area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="371,1452,509,1479"/>
-<area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="311,616,569,643"/>
+<area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="311,591,569,617"/>
 <area shape="rect" href="$classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer." alt="" coords="359,2263,521,2289"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="356,819,524,845"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="356,793,524,820"/>
 <area shape="rect" href="$classltr_1_1_scorer.html" title="ltr::Scorer" alt="" coords="895,1224,972,1251"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="364,1173,516,1200"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="364,1135,516,1161"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; Object, CompositionScorer \&gt;" alt="" coords="787,2085,1080,2112"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; Object, DecisionTreeScorer \&gt;" alt="" coords="785,2136,1081,2163"/>
 <area shape="rect" href="$classltr_1_1composition_1_1_composition_learner.html" title="ltr::composition::CompositionLearner\&lt; Object \&gt;" alt="" coords="1320,1984,1616,2011"/>
@@ -75,18 +75,17 @@
 <area shape="rect" href="$classltr_1_1_linear_learner.html" title="ltr::LinearLearner\&lt; TElement \&gt;" alt="" coords="1369,2389,1567,2416"/>
 <area shape="rect" href="$classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach." alt="" coords="1379,2440,1557,2467"/>
 <area shape="rect" href="$classltr_1_1_best_feature_learner.html" title="ltr::BestFeatureLearner\&lt; TElement \&gt;" alt="" coords="1352,2491,1584,2517"/>
-<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="847,819,1020,845"/>
-<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision" alt="" coords="864,869,1003,896"/>
-<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; TDCGFormula \&gt;" alt="" coords="832,920,1035,947"/>
-<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; TDCGFormula \&gt;" alt="" coords="827,971,1040,997"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy" alt="" coords="829,1021,1037,1048"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin" alt="" coords="837,1072,1029,1099"/>
-<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR" alt="" coords="893,515,973,541"/>
-<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="816,565,1051,592"/>
-<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound" alt="" coords="891,616,976,643"/>
-<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank" alt="" coords="868,667,999,693"/>
-<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError" alt="" coords="876,717,991,744"/>
-<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint" alt="" coords="885,768,981,795"/>
+<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="847,616,1020,643"/>
+<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision" alt="" coords="864,667,1003,693"/>
+<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; TDCGFormula \&gt;" alt="" coords="832,717,1035,744"/>
+<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; TDCGFormula \&gt;" alt="" coords="827,768,1040,795"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy" alt="" coords="829,819,1037,845"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin" alt="" coords="837,869,1029,896"/>
+<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR" alt="" coords="893,920,973,947"/>
+<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="816,971,1051,997"/>
+<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound" alt="" coords="891,1021,976,1048"/>
+<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank" alt="" coords="868,515,999,541"/>
+<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError" alt="" coords="876,565,991,592"/>
 <area shape="rect" href="$classltr_1_1_bayesian_scorer.html" title="ltr::BayesianScorer" alt="" coords="1403,1173,1533,1200"/>
 <area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer.html" title="ltr::composition::CompositionScorer" alt="" coords="1355,1680,1581,1707"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree_scorer.html" title="ltr::decision_tree::DecisionTreeScorer" alt="" coords="1349,1224,1587,1251"/>
@@ -95,8 +94,9 @@
 <area shape="rect" href="$classltr_1_1_linear_scorer.html" title="ltr::LinearScorer" alt="" coords="1412,1376,1524,1403"/>
 <area shape="rect" href="$classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator..." alt="" coords="1420,1072,1516,1099"/>
 <area shape="rect" href="$classltr_1_1_one_feature_scorer.html" title="ltr::OneFeatureScorer" alt="" coords="1395,1123,1541,1149"/>
-<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError" alt="" coords="888,1123,979,1149"/>
-<area shape="rect" href="$classltr_1_1_a_u_c.html" title="ltr::AUC" alt="" coords="900,1173,967,1200"/>
+<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError" alt="" coords="888,1072,979,1099"/>
+<area shape="rect" href="$classltr_1_1_a_u_c.html" title="ltr::AUC" alt="" coords="900,1123,967,1149"/>
+<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint" alt="" coords="885,1173,981,1200"/>
 <area shape="rect" href="$classltr_1_1gp_1_1_base_g_p_operation.html" title="ltr::gp::BaseGPOperation" alt="" coords="5,3681,173,3708"/>
 <area shape="rect" href="$classltr_1_1gp_1_1_add.html" title="The Puppy::Primitive implements addition functor, it is used to build Puppy::trees from..." alt="" coords="397,3757,483,3784"/>
 <area shape="rect" href="$classltr_1_1gp_1_1_divide.html" title="The Puppy::Primitive implements division functor, it is used to build Puppy::trees from..." alt="" coords="392,3555,488,3581"/>
@@ -140,12 +140,12 @@
 <area shape="rect" href="$classltr_1_1utility_1_1_inverse_linear_distance.html" title="ltr::utility::InverseLinearDistance" alt="" coords="831,3453,1036,3480"/>
 <area shape="rect" href="$classltr_1_1utility_1_1_inverse_order.html" title="ltr::utility::InverseOrder" alt="" coords="857,3504,1009,3531"/>
 <area shape="rect" href="$classltr_1_1utility_1_1_inverse_power_distance.html" title="ltr::utility::InversePowerDistance" alt="" coords="831,3403,1036,3429"/>
-<area shape="rect" href="$classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="44,565,135,592"/>
-<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="401,363,479,389"/>
-<area shape="rect" href="$classltr_1_1_object_list.html" title="ltr::ObjectList" alt="" coords="391,413,489,440"/>
-<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="389,464,491,491"/>
-<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="359,261,521,288"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="348,312,532,339"/>
+<area shape="rect" href="$classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="44,540,135,567"/>
+<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="401,337,479,364"/>
+<area shape="rect" href="$classltr_1_1_object_list.html" title="ltr::ObjectList" alt="" coords="391,388,489,415"/>
+<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="389,439,491,465"/>
+<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="359,236,521,263"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="348,287,532,313"/>
 <area shape="rect" href="$classltr_1_1_reporter.html" title="ltr::Reporter" alt="" coords="45,2187,133,2213"/>
 <area shape="rect" href="$classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="36,3504,143,3531"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_condition.html" title="ltr::decision_tree::Condition" alt="" coords="351,3504,529,3531"/>

@@ -11,6 +11,8 @@ var searchData=
   ['lexical_5fcast_5funittest_2ecc',['lexical_cast_unittest.cc',['../lexical__cast__unittest_8cc.html',1,'']]],
   ['linear_5fcomposition_5fscorer_5funittest_2ecc',['linear_composition_scorer_unittest.cc',['../linear__composition__scorer__unittest_8cc.html',1,'']]],
   ['linear_5fcomposition_5funittest_2ecc',['linear_composition_unittest.cc',['../linear__composition__unittest_8cc.html',1,'']]],
+  ['linear_5finequality_5fset_2ecc',['linear_inequality_set.cc',['../linear__inequality__set_8cc.html',1,'']]],
+  ['linear_5finequality_5fset_2eh',['linear_inequality_set.h',['../linear__inequality__set_8h.html',1,'']]],
   ['linear_5flearner_2ecc',['linear_learner.cc',['../linear__learner_8cc.html',1,'']]],
   ['linear_5flearner_2eh',['linear_learner.h',['../linear__learner_8h.html',1,'']]],
   ['linear_5flearner_5funittest_2ecc',['linear_learner_unittest.cc',['../linear__learner__unittest_8cc.html',1,'']]],

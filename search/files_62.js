@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['ball_5fset_2ecc',['ball_set.cc',['../ball__set_8cc.html',1,'']]],
+  ['ball_5fset_2eh',['ball_set.h',['../ball__set_8h.html',1,'']]],
   ['base_5fprobability_5fdensity_5festimator_2eh',['base_probability_density_estimator.h',['../base__probability__density__estimator_8h.html',1,'']]],
   ['base_5fprobability_5fdensity_5flearner_2eh',['base_probability_density_learner.h',['../base__probability__density__learner_8h.html',1,'']]],
   ['base_5fsplitter_2ecc',['base_splitter.cc',['../base__splitter_8cc.html',1,'']]],

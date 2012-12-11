@@ -21,6 +21,7 @@ var searchData=
   ['defaultmutationstandartstrategy',['DefaultMutationStandartStrategy',['../classltr_1_1gp_1_1_default_mutation_standart_strategy.html',1,'ltr::gp']]],
   ['defaultmutationswapstrategy',['DefaultMutationSwapStrategy',['../classltr_1_1gp_1_1_default_mutation_swap_strategy.html',1,'ltr::gp']]],
   ['defaultselectionstrategy',['DefaultSelectionStrategy',['../classltr_1_1gp_1_1_default_selection_strategy.html',1,'ltr::gp']]],
+  ['differentiablefunction',['DifferentiableFunction',['../classoptimization_1_1_differentiable_function.html',1,'optimization']]],
   ['dimensionmetainfo',['DimensionMetaInfo',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html',1,'ltr::utility::MultiTable']]],
   ['dimensionsize',['DimensionSize',['../structltr_1_1utility_1_1_dimension_size.html',1,'ltr::utility']]],
   ['distancetoneighbor',['DistanceToNeighbor',['../structltr_1_1_distance_to_neighbor.html',1,'ltr']]],

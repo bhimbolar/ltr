@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" href="$ball__set_8h.html" title="ltr/optimization/sets/ball_set.h" alt="" coords="13,80,208,107"/>
+<area shape="rect" href="$linear__inequality__set_8h.html" title="ltr/optimization/sets/linear_inequality_set.h" alt="" coords="233,80,500,107"/>
+<area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="524,80,700,107"/>
+<area shape="rect" href="$sphere__set_8h.html" title="ltr/optimization/sets/sphere_set.h" alt="" coords="724,80,937,107"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="976,80,1173,107"/>
+<area shape="rect" href="$ball__set_8cc.html" title="ltr/optimization/sets/ball_set.cc" alt="" coords="5,155,208,181"/>
+<area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="232,155,507,181"/>
+<area shape="rect" href="$sphere__set_8cc.html" title="ltr/optimization/sets/sphere_set.cc" alt="" coords="712,155,933,181"/>
+<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="957,155,1208,181"/>
+<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="760,229,1064,256"/>
+<area shape="rect" href="$simulated__annealing__solver_8h.html" title="ltr/optimization/solvers/simulated_annealing_solver.h" alt="" coords="1092,229,1415,256"/>
+<area shape="rect" href="$gradient__descent__solver_8cc.html" title="ltr/optimization/solvers/gradient_descent_solver.cc" alt="" coords="755,304,1067,331"/>
+<area shape="rect" href="$simulated__annealing__solver_8cc.html" title="ltr/optimization/solvers/simulated_annealing_solver.cc" alt="" coords="1091,304,1421,331"/>
+</map>

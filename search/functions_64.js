@@ -19,7 +19,10 @@ var searchData=
   ['defaultselectionstrategy',['DefaultSelectionStrategy',['../classltr_1_1gp_1_1_default_selection_strategy.html#a0b0c1018e5dd69e77f2513302c05e031',1,'ltr::gp::DefaultSelectionStrategy::DefaultSelectionStrategy(int number_of_participants=2)'],['../classltr_1_1gp_1_1_default_selection_strategy.html#a1a4b9d370a42e82079c8dfc9bb807ca1',1,'ltr::gp::DefaultSelectionStrategy::DefaultSelectionStrategy(const ParametersContainer &amp;parameters)']]],
   ['deleteallfromunorderedmap',['DeleteAllFromUnorderedMap',['../common__utility_8h.html#ac9d9e386aafe0f84d86839a521f68675',1,'common_utility.h']]],
   ['dependency_5fspecs',['dependency_specs',['../class_parametrized_info.html#a5c6358149da702f6711c196b11f1fbe3',1,'ParametrizedInfo']]],
+  ['differentiablefunction',['DifferentiableFunction',['../classoptimization_1_1_differentiable_function.html#a5db8154663f0fb05305b39e7d181823e',1,'optimization::DifferentiableFunction']]],
+  ['dimension',['dimension',['../classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88',1,'optimization::Function::dimension()'],['../classoptimization_1_1_set.html#aab4afd2441a83263f799672350db8f22',1,'optimization::Set::dimension()']]],
   ['dimensions_5fcount',['dimensions_count',['../classltr_1_1utility_1_1_multi_array.html#a648e28abef5cd411a3d8f8ba509ecbb9',1,'ltr::utility::MultiArray::dimensions_count()'],['../classltr_1_1utility_1_1_multi_array_3_01_t_00_011_01_4.html#a31c57d0c0e46c15a07ec8af8372a41c3',1,'ltr::utility::MultiArray&lt; T, 1 &gt;::dimensions_count()']]],
   ['distance',['distance',['../classltr_1_1_euclidean_metric.html#aef1868bbd4ecc6b7acb0f99743d9190b',1,'ltr::EuclideanMetric::distance()'],['../classltr_1_1_manhattan_metric.html#a7b017140a044b9527fbd3870212dcf52',1,'ltr::ManhattanMetric::distance()'],['../classltr_1_1_base_metric.html#a354a6dec54b3b4a798d88cdb91037c13',1,'ltr::BaseMetric::distance()'],['../tester_8cc.html#ad5ee61e39011a1bb01b5dd9297c6c46a',1,'distance():&#160;tester.cc']]],
-  ['divide',['Divide',['../classltr_1_1gp_1_1_divide.html#a64b5e999de07bb22e97b1e3f8d03d279',1,'ltr::gp::Divide']]]
+  ['divide',['Divide',['../classltr_1_1gp_1_1_divide.html#a64b5e999de07bb22e97b1e3f8d03d279',1,'ltr::gp::Divide']]],
+  ['doublerand',['doubleRand',['../classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf',1,'ltr::utility::Randomizer']]]
 ];
