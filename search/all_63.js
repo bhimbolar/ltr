@@ -39,7 +39,7 @@ var searchData=
   ['condition_2eh',['condition.h',['../condition_8h.html',1,'']]],
   ['conditions_5f',['conditions_',['../classltr_1_1decision__tree_1_1_vertex.html#a76262f0fe077477f13e92562cc83ba63',1,'ltr::decision_tree::Vertex']]],
   ['config_2eh',['config.h',['../config_8h.html',1,'']]],
-  ['configparser',['ConfigParser',['../class_config_parser.html',1,'ConfigParser'],['../class_parametrized_info.html#a26bfbd623d9dac71aeaaa26ac67820b6',1,'ParametrizedInfo::ConfigParser()'],['../class_config_parser.html#adbda5b88fefbabf0986325056bcb0af5',1,'ConfigParser::ConfigParser()']]],
+  ['configparser',['ConfigParser',['../class_config_parser.html',1,'ConfigParser'],['../class_parameterized_info.html#a26bfbd623d9dac71aeaaa26ac67820b6',1,'ParameterizedInfo::ConfigParser()'],['../class_config_parser.html#adbda5b88fefbabf0986325056bcb0af5',1,'ConfigParser::ConfigParser()']]],
   ['configurator_2ecc',['configurator.cc',['../configurator_8cc.html',1,'']]],
   ['configurator_2eh',['configurator.h',['../configurator_8h.html',1,'']]],
   ['configurator_5f',['configurator_',['../class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4',1,'LtrClient']]],

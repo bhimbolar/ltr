@@ -12,7 +12,7 @@ var searchData=
   ['data_5fsize',['data_size',['../data__preprocessors__unittest_8cc.html#a7f4afa39e0393603d22e25aab5eb8b45',1,'data_size():&#160;data_preprocessors_unittest.cc'],['../composition__learner__unittest_8cc.html#a7f4afa39e0393603d22e25aab5eb8b45',1,'data_size():&#160;composition_learner_unittest.cc'],['../linear__composition__unittest_8cc.html#a7f4afa39e0393603d22e25aab5eb8b45',1,'data_size():&#160;linear_composition_unittest.cc']]],
   ['datas',['datas',['../struct_crossvalidation_launch_info.html#af33e32ac5471711f836ec9effac51026',1,'CrossvalidationLaunchInfo']]],
   ['density_5flearner_5f',['density_learner_',['../classltr_1_1_bayesian_learner.html#a296506b7764ccf8d6c200a7f3683d904',1,'ltr::BayesianLearner']]],
-  ['dependency_5fspecs_5f',['dependency_specs_',['../class_parametrized_info.html#af5fa490ccf87b1c2f2d3b19321453a07',1,'ParametrizedInfo']]],
+  ['dependency_5fspecs_5f',['dependency_specs_',['../class_parameterized_info.html#a423f0b3dec896cf46bb9d4c532972be3',1,'ParameterizedInfo']]],
   ['dimension_5f',['dimension_',['../classoptimization_1_1_function.html#a3df1df649bdbc1399ed2d0c7c7ded0b5',1,'optimization::Function::dimension_()'],['../classoptimization_1_1_set.html#a8b5443e11a2398ed79fd40b26cdece08',1,'optimization::Set::dimension_()']]],
   ['dimensions_5f',['dimensions_',['../classltr_1_1utility_1_1_multi_array.html#af9a7bea48ec3f633e2e22c0fd19cbc36',1,'ltr::utility::MultiArray']]],
   ['distance',['distance',['../structltr_1_1_distance_to_neighbor.html#afed47c193fbc5773b00c971d9840b806',1,'ltr::DistanceToNeighbor']]],

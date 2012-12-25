@@ -124,9 +124,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a>00029 <span class="keyword">typedef</span> map&lt;int, string&gt; NominalFeatureValues;
 <a name="l00033"></a><a class="code" href="structltr_1_1_one_feature_info.html">00033</a> <span class="keyword">struct </span><a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> {
 <a name="l00034"></a><a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">00034</a>   <a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">OneFeatureInfo</a>(FeatureType type = NUMERIC,
-<a name="l00035"></a>00035                  NominalFeatureValues <a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a> = NominalFeatureValues())
+<a name="l00035"></a>00035                  NominalFeatureValues <a class="code" href="ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12">values</a> = NominalFeatureValues())
 <a name="l00036"></a>00036   : <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>(type),
-<a name="l00037"></a>00037     <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>(<a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a>) {}
+<a name="l00037"></a>00037     <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>(<a class="code" href="ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12">values</a>) {}
 <a name="l00041"></a><a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">00041</a>   FeatureType <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>;
 <a name="l00045"></a><a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">00045</a>   NominalFeatureValues <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>;
 <a name="l00046"></a>00046 };
@@ -147,8 +147,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00074"></a>00074     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.push_back(info);
 <a name="l00075"></a>00075   }
 <a name="l00078"></a><a class="code" href="classltr_1_1_feature_info.html#afdc6a83e695554a7cd79be901bc875e0">00078</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">addFeature</a>(FeatureType type = NUMERIC,
-<a name="l00079"></a>00079                   NominalFeatureValues <a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a> = NominalFeatureValues()) {
-<a name="l00080"></a>00080     <a class="code" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">addFeature</a>(<a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type, <a class="code" href="ltr__client_8cc.html#a21f2b20ace568733d1d3f15cfeb70136">values</a>));
+<a name="l00079"></a>00079                   NominalFeatureValues <a class="code" href="ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12">values</a> = NominalFeatureValues()) {
+<a name="l00080"></a>00080     <a class="code" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">addFeature</a>(<a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type, <a class="code" href="ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12">values</a>));
 <a name="l00081"></a>00081   }
 <a name="l00084"></a><a class="code" href="classltr_1_1_feature_info.html#a566d68f92e542ffa489c2fa0b7aeb151">00084</a>   NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#a566d68f92e542ffa489c2fa0b7aeb151">getFeatureValues</a>(<span class="keywordtype">int</span> feature_index) {
 <a name="l00085"></a>00085     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
@@ -190,7 +190,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 25 2012 10:50:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 25 2012 14:11:31 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

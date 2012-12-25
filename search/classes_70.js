@@ -2,8 +2,8 @@ var searchData=
 [
   ['pairwisemeasurestest',['PairwiseMeasuresTest',['../class_pairwise_measures_test.html',1,'']]],
   ['parameterized',['Parameterized',['../classltr_1_1_parameterized.html',1,'ltr']]],
+  ['parameterizedinfo',['ParameterizedInfo',['../class_parameterized_info.html',1,'']]],
   ['parameterscontainer',['ParametersContainer',['../classltr_1_1_parameters_container.html',1,'ltr']]],
-  ['parametrizedinfo',['ParametrizedInfo',['../class_parametrized_info.html',1,'']]],
   ['parser',['Parser',['../classltr_1_1io__utility_1_1_parser.html',1,'ltr::io_utility']]],
   ['perfeaturelinearconverter',['PerFeatureLinearConverter',['../classltr_1_1_per_feature_linear_converter.html',1,'ltr']]],
   ['perobjectaccessor',['PerObjectAccessor',['../classltr_1_1_per_object_accessor.html',1,'ltr']]],

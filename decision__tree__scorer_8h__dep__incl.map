@@ -1,8 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="141,80,317,107"/>
-<area shape="rect" href="$decision__tree__learner_8h.html" title="ltr/learners/decision_tree/decision_tree_learner.h" alt="" coords="341,80,643,107"/>
-<area shape="rect" href="$decision__tree__scorer_8cc.html" title="ltr/scorers/decision_tree_scorer.cc" alt="" coords="667,80,888,107"/>
+<area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="297,80,473,107"/>
+<area shape="rect" href="$decision__tree__learner_8h.html" title="ltr/learners/decision_tree/decision_tree_learner.h" alt="" coords="497,80,799,107"/>
+<area shape="rect" href="$decision__tree__scorer_8cc.html" title="ltr/scorers/decision_tree_scorer.cc" alt="" coords="823,80,1044,107"/>
 <area shape="rect" href="$decision__tree__learner_8cc.html" title="ltr/learners/decision_tree/decision_tree_learner.cc" alt="" coords="5,155,312,181"/>
 <area shape="rect" href="$decision__tree__unittest_8cc.html" title="ltr/learners/decision_tree/decision_tree_unittest.cc" alt="" coords="336,155,648,181"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="672,155,939,181"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="963,155,1112,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="967,229,1108,256"/>
 </map>

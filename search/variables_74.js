@@ -5,7 +5,7 @@ var searchData=
   ['table_5fcontents_5f',['table_contents_',['../classltr_1_1utility_1_1_multi_table.html#a5d91923e234475efccdbb6ef2b3d814f',1,'ltr::utility::MultiTable']]],
   ['table_5fmeta_5finfo_5f',['table_meta_info_',['../classltr_1_1utility_1_1_multi_table.html#a97d9bcfae0194d0eec6eab7abe53ecfc',1,'ltr::utility::MultiTable']]],
   ['tag_5fhandlers_5f',['tag_handlers_',['../class_config_parser.html#a5c522ba5cdc87fcb89447a75bdf3f85f',1,'ConfigParser']]],
-  ['tag_5fname_5f',['tag_name_',['../class_parametrized_info.html#a7e963ad86de6cdca5e39d81ef81f7fc1',1,'ParametrizedInfo']]],
+  ['tag_5fname_5f',['tag_name_',['../class_parameterized_info.html#aeb1b67f1e650aaffa94c71b4becbb654',1,'ParameterizedInfo']]],
   ['target',['target',['../classltr_1_1utility_1_1bad__lexical__cast.html#a7acfbef647ffc29aa4d643704ae0dfcd',1,'ltr::utility::bad_lexical_cast']]],
   ['test_5fdata',['test_data',['../class_learners_test.html#af1e7443155c39a80846660f9538332fd',1,'LearnersTest::test_data()'],['../classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2',1,'serialization_test::Generator::test_data()'],['../class_serialization_test.html#a5cc31d2817e4e23445486d112841ed2f',1,'SerializationTest::test_data()']]],
   ['test_5flabels',['test_labels',['../class_serialization_test.html#a57e463758ecad6e3a6b64659deb1a7f3',1,'SerializationTest']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['p_5fbreak_5f',['p_break_',['../classltr_1_1_p_found.html#a35e893197bc7ced796340b2d21723ff8',1,'ltr::PFound']]],
-  ['parameters_5f',['parameters_',['../class_parametrized_info.html#ad03872c5298a4638a676a888ebb94f53',1,'ParametrizedInfo']]],
+  ['parameters_5f',['parameters_',['../class_parameterized_info.html#affa1429f07b4e35f22c3c5f1fa25194d',1,'ParameterizedInfo']]],
   ['parameters_5fexecutor',['parameters_executor',['../class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb',1,'OnGeneralParameterized']]],
   ['parsenextfeature',['parseNextFeature',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa3852d7c2bfaecc2fe3b42a2d78d0242',1,'ltr::io_utility::ARFFParser']]],
   ['parser_5f',['parser_',['../classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#ab0d379d10a3bc1061e525a89745f6c3d',1,'ltr::io_utility::ARFFParser::NextFeatureParser']]],
