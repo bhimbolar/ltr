@@ -1,20 +1,21 @@
 <map id="G" name="G">
 <area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="231,80,532,107"/>
-<area shape="rect" href="$function_8cc.html" title="ltr/optimization/functions/function.cc" alt="" coords="660,80,889,107"/>
-<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="964,80,1132,107"/>
-<area shape="rect" href="$linear__inequality__set_8h.html" title="ltr/optimization/sets/linear_inequality_set.h" alt="" coords="423,155,689,181"/>
-<area shape="rect" href="$simulated__annealing__solver_8h.html" title="ltr/optimization/solvers/simulated_annealing_solver.h" alt="" coords="1361,304,1684,331"/>
-<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="1256,80,1467,107"/>
+<area shape="rect" href="$function_8cc.html" title="ltr/optimization/functions/function.cc" alt="" coords="704,80,933,107"/>
+<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="1008,80,1176,107"/>
+<area shape="rect" href="$linear__inequality__set_8h.html" title="ltr/optimization/sets/linear_inequality_set.h" alt="" coords="495,155,761,181"/>
+<area shape="rect" href="$simulated__annealing__solver_8h.html" title="ltr/optimization/solvers/simulated_annealing_solver.h" alt="" coords="1491,304,1813,331"/>
+<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="1317,80,1528,107"/>
 <area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="5,155,344,181"/>
-<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="628,304,932,331"/>
-<area shape="rect" href="$gradient__descent__solver_8cc.html" title="ltr/optimization/solvers/gradient_descent_solver.cc" alt="" coords="624,379,936,405"/>
-<area shape="rect" href="$ball__set_8h.html" title="ltr/optimization/sets/ball_set.h" alt="" coords="951,155,1145,181"/>
-<area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="1169,155,1345,181"/>
-<area shape="rect" href="$sphere__set_8h.html" title="ltr/optimization/sets/sphere_set.h" alt="" coords="713,155,927,181"/>
-<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="1369,155,1567,181"/>
-<area shape="rect" href="$ball__set_8cc.html" title="ltr/optimization/sets/ball_set.cc" alt="" coords="963,229,1165,256"/>
+<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="692,304,996,331"/>
+<area shape="rect" href="$gradient__descent__solver_8cc.html" title="ltr/optimization/solvers/gradient_descent_solver.cc" alt="" coords="688,379,1000,405"/>
+<area shape="rect" href="$ball__set_8h.html" title="ltr/optimization/sets/ball_set.h" alt="" coords="785,155,980,181"/>
+<area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="1004,155,1180,181"/>
+<area shape="rect" href="$sphere__set_8h.html" title="ltr/optimization/sets/sphere_set.h" alt="" coords="1204,155,1417,181"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="1441,155,1639,181"/>
+<area shape="rect" href="$ball__set_8cc.html" title="ltr/optimization/sets/ball_set.cc" alt="" coords="973,229,1176,256"/>
+<area shape="rect" href="$sets__unittest_8cc.html" title="ltr/optimization/sets/sets_unittest.cc" alt="" coords="717,229,949,256"/>
 <area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="419,229,693,256"/>
-<area shape="rect" href="$sphere__set_8cc.html" title="ltr/optimization/sets/sphere_set.cc" alt="" coords="717,229,939,256"/>
-<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="1316,229,1567,256"/>
-<area shape="rect" href="$simulated__annealing__solver_8cc.html" title="ltr/optimization/solvers/simulated_annealing_solver.cc" alt="" coords="1357,379,1688,405"/>
+<area shape="rect" href="$sphere__set_8cc.html" title="ltr/optimization/sets/sphere_set.cc" alt="" coords="1200,229,1421,256"/>
+<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="1445,229,1696,256"/>
+<area shape="rect" href="$simulated__annealing__solver_8cc.html" title="ltr/optimization/solvers/simulated_annealing_solver.cc" alt="" coords="1487,379,1817,405"/>
 </map>

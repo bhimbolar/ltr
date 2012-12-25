@@ -14,6 +14,7 @@ var searchData=
   ['serialization_5funittest_2ecc',['serialization_unittest.cc',['../serialization__unittest_8cc.html',1,'']]],
   ['set_2ecc',['set.cc',['../set_8cc.html',1,'']]],
   ['set_2eh',['set.h',['../set_8h.html',1,'']]],
+  ['sets_5funittest_2ecc',['sets_unittest.cc',['../sets__unittest_8cc.html',1,'']]],
   ['shared_5fptr_2eh',['shared_ptr.h',['../shared__ptr_8h.html',1,'']]],
   ['shared_5fptr_5funittest_2ecc',['shared_ptr_unittest.cc',['../shared__ptr__unittest_8cc.html',1,'']]],
   ['simulated_5fannealing_5fsolver_2ecc',['simulated_annealing_solver.cc',['../simulated__annealing__solver_8cc.html',1,'']]],
