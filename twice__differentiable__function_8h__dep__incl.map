@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$linear__function_8h.html" title="ltr/optimization/functions/linear_function.h" alt="" coords="325,80,584,107"/>
+<area shape="rect" href="$quadratic__function_8h.html" title="ltr/optimization/functions/quadratic_function.h" alt="" coords="640,80,923,107"/>
+<area shape="rect" href="$linear__function_8cc.html" title="ltr/optimization/functions/linear_function.cc" alt="" coords="5,155,272,181"/>
+<area shape="rect" href="$linear__function__unittest_8cc.html" title="ltr/optimization/functions/linear_function_unittest.cc" alt="" coords="296,155,613,181"/>
+<area shape="rect" href="$quadratic__function_8cc.html" title="ltr/optimization/functions/quadratic_function.cc" alt="" coords="637,155,925,181"/>
+<area shape="rect" href="$quadratic__function__unittest_8cc.html" title="ltr/optimization/functions/quadratic_function_unittest.cc" alt="" coords="949,155,1288,181"/>
+</map>

@@ -26,7 +26,9 @@ var searchData=
   ['splitter_2eh',['splitter.h',['../splitter_8h.html',1,'']]],
   ['splitter_5funittest_2eh',['splitter_unittest.h',['../splitter__unittest_8h.html',1,'']]],
   ['squared_5ferror_2eh',['squared_error.h',['../squared__error_8h.html',1,'']]],
+  ['state_2eh',['state.h',['../state_8h.html',1,'']]],
   ['statistics_5fcalculation_2eh',['statistics_calculation.h',['../statistics__calculation_8h.html',1,'']]],
+  ['stop_5fcriterion_2eh',['stop_criterion.h',['../stop__criterion_8h.html',1,'']]],
   ['stop_5fsplitting_5fcriteria_2eh',['stop_splitting_criteria.h',['../stop__splitting__criteria_8h.html',1,'']]],
   ['sum_5fpredictions_5faggregator_2ecc',['sum_predictions_aggregator.cc',['../sum__predictions__aggregator_8cc.html',1,'']]],
   ['sum_5fpredictions_5faggregator_2eh',['sum_predictions_aggregator.h',['../sum__predictions__aggregator_8h.html',1,'']]]

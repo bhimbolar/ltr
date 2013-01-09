@@ -17,5 +17,6 @@ var searchData=
   ['onlaunchtag',['OnLaunchTag',['../class_on_launch_tag.html',1,'']]],
   ['onpredicttag',['OnPredictTag',['../class_on_predict_tag.html',1,'']]],
   ['ontraintag',['OnTrainTag',['../class_on_train_tag.html',1,'']]],
+  ['or',['Or',['../classoptimization_1_1_or.html',1,'optimization']]],
   ['orderstatisticpredictionsaggregator',['OrderStatisticPredictionsAggregator',['../classltr_1_1_order_statistic_predictions_aggregator.html',1,'ltr']]]
 ];

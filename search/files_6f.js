@@ -14,6 +14,9 @@ var searchData=
   ['one_5ffeature_5fscorer_2ecc',['one_feature_scorer.cc',['../one__feature__scorer_8cc.html',1,'']]],
   ['one_5ffeature_5fscorer_2eh',['one_feature_scorer.h',['../one__feature__scorer_8h.html',1,'']]],
   ['one_5ffeature_5fscorer_5funittest_2ecc',['one_feature_scorer_unittest.cc',['../one__feature__scorer__unittest_8cc.html',1,'']]],
+  ['or_5fcriterion_2ecc',['or_criterion.cc',['../or__criterion_8cc.html',1,'']]],
+  ['or_5fcriterion_2eh',['or_criterion.h',['../or__criterion_8h.html',1,'']]],
+  ['or_5fcriterion_5funittest_2ecc',['or_criterion_unittest.cc',['../or__criterion__unittest_8cc.html',1,'']]],
   ['order_5fstatistic_5fpredictions_5faggregator_2ecc',['order_statistic_predictions_aggregator.cc',['../order__statistic__predictions__aggregator_8cc.html',1,'']]],
   ['order_5fstatistic_5fpredictions_5faggregator_2eh',['order_statistic_predictions_aggregator.h',['../order__statistic__predictions__aggregator_8h.html',1,'']]]
 ];

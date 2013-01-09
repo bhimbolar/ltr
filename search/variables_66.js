@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['factor_5f',['factor_',['../classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0',1,'ltr::PerFeatureLinearConverter']]],
+  ['factor_5f',['factor_',['../classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0',1,'ltr::PerFeatureLinearConverter::factor_()'],['../classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db',1,'optimization::LinearFunction::factor_()']]],
   ['feature',['feature',['../structltr_1_1decision__tree_1_1_feature_with_label_and_weight.html#a696c28995cc2e9be4fadef532c56b8ab',1,'ltr::decision_tree::FeatureWithLabelAndWeight']]],
   ['feature_5fconverter_5f',['feature_converter_',['../classltr_1_1_base_feature_converter_learner.html#a407e88e41c2c18ee789feed03eb41797',1,'ltr::BaseFeatureConverterLearner::feature_converter_()'],['../classltr_1_1_learner.html#a8f2ca2084e87b9052c607699d8d91eea',1,'ltr::Learner::feature_converter_()'],['../classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb',1,'ltr::Scorer::feature_converter_()']]],
   ['feature_5fconverter_5flearner_5f',['feature_converter_learner_',['../classltr_1_1_learner.html#aa9e2d3393fa3245e8fd6903925df710d',1,'ltr::Learner']]],
@@ -15,5 +15,6 @@ var searchData=
   ['features_5fcount',['features_count',['../feature__converters__learner__unittest_8cc.html#a4f3057e2cb77f06001fd8855ac7f8f68',1,'feature_converters_learner_unittest.cc']]],
   ['file',['file',['../struct_data_info.html#a1fb21b4f528cffe8d000d10d3a3f4dc6',1,'DataInfo']]],
   ['first',['first',['../classltr_1_1_object_pair.html#a5bc9d0318053b4a97ae09dba7f1484eb',1,'ltr::ObjectPair::first()'],['../structserialization__test_1_1_report.html#a4f220451273134eb4855c46c83f6fc55',1,'serialization_test::Report::first()']]],
+  ['first_5f',['first_',['../classoptimization_1_1_and.html#ab0ebd8526e174271edeae61a3d548a89',1,'optimization::And::first_()'],['../classoptimization_1_1_or.html#af9e4a125b97901cd3c172546337cdcce',1,'optimization::Or::first_()']]],
   ['format',['format',['../struct_data_info.html#a8094b18d7f3f03a3a99dfddf122c4f09',1,'DataInfo']]]
 ];

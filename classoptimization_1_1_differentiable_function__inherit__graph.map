@@ -1,4 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="5,155,261,181"/>
-<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="59,5,208,32"/>
+<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="79,155,335,181"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="132,5,281,32"/>
+<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="5,229,189,256"/>
+<area shape="rect" href="$classoptimization_1_1_quadratic_function.html" title="optimization::QuadraticFunction" alt="" coords="213,229,419,256"/>
 </map>

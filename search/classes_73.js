@@ -39,6 +39,8 @@ var searchData=
   ['splitter_3c_20objecttype_20_3e',['Splitter< ObjectType >',['../classltr_1_1cv_1_1_splitter.html',1,'ltr::cv']]],
   ['splittertest',['SplitterTest',['../class_splitter_test.html',1,'']]],
   ['squarederror',['SquaredError',['../classltr_1_1_squared_error.html',1,'ltr']]],
+  ['state',['State',['../classoptimization_1_1_state.html',1,'optimization']]],
+  ['stopcriterion',['StopCriterion',['../classoptimization_1_1_stop_criterion.html',1,'optimization']]],
   ['stopsplittingcriteria',['StopSplittingCriteria',['../classltr_1_1decision__tree_1_1_stop_splitting_criteria.html',1,'ltr::decision_tree']]],
   ['subtract',['Subtract',['../classltr_1_1gp_1_1_subtract.html',1,'ltr::gp']]],
   ['sumpredictionsaggregator',['SumPredictionsAggregator',['../classltr_1_1_sum_predictions_aggregator.html',1,'ltr']]],

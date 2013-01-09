@@ -1,5 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="5,80,344,107"/>
-<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="368,80,672,107"/>
-<area shape="rect" href="$gradient__descent__solver_8cc.html" title="ltr/optimization/solvers/gradient_descent_solver.cc" alt="" coords="364,155,676,181"/>
+<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="600,80,939,107"/>
+<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="963,80,1267,107"/>
+<area shape="rect" href="$linear__function_8h.html" title="ltr/optimization/functions/linear_function.h" alt="" coords="325,155,584,181"/>
+<area shape="rect" href="$quadratic__function_8h.html" title="ltr/optimization/functions/quadratic_function.h" alt="" coords="640,155,923,181"/>
+<area shape="rect" href="$linear__function_8cc.html" title="ltr/optimization/functions/linear_function.cc" alt="" coords="5,229,272,256"/>
+<area shape="rect" href="$linear__function__unittest_8cc.html" title="ltr/optimization/functions/linear_function_unittest.cc" alt="" coords="296,229,613,256"/>
+<area shape="rect" href="$quadratic__function_8cc.html" title="ltr/optimization/functions/quadratic_function.cc" alt="" coords="637,229,925,256"/>
+<area shape="rect" href="$quadratic__function__unittest_8cc.html" title="ltr/optimization/functions/quadratic_function_unittest.cc" alt="" coords="949,229,1288,256"/>
+<area shape="rect" href="$gradient__descent__solver_8cc.html" title="ltr/optimization/solvers/gradient_descent_solver.cc" alt="" coords="959,155,1271,181"/>
 </map>

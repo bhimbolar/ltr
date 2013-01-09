@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['a_5f',['a_',['../classoptimization_1_1_quadratic_function.html#a08419075555da69c4889a904cb738240',1,'optimization::QuadraticFunction']]],
   ['actual',['actual',['../structltr_1_1utility_1_1_predicted_and_actual_labels.html#a8af6e9b9c52480dbeee2e067605032af',1,'ltr::utility::PredictedAndActualLabels']]],
   ['actual_5flabel_5f',['actual_label_',['../classltr_1_1_object.html#ad7170dd58bf8668f55c739529b4f5e07',1,'ltr::Object']]],
   ['alias_5f',['alias_',['../classltr_1_1_aliaser.html#a9c486841d743e0ce390b512efc2dd7b9',1,'ltr::Aliaser']]],

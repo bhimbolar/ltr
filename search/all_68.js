@@ -5,7 +5,8 @@ var searchData=
   ['haschild',['hasChild',['../classltr_1_1decision__tree_1_1_vertex.html#a3f62f0e202f180ecdf2979e6dcd7414e',1,'ltr::decision_tree::Vertex']]],
   ['hash',['hash',['../classltr_1_1io__utility_1_1_parser.html#ad8bf4efd2353a92548553ab93105ed4c',1,'ltr::io_utility::Parser']]],
   ['held',['held',['../classltr_1_1utility_1_1_any_1_1_holder.html#a3f811c43c1425d9c0d443da21a7f7b93',1,'ltr::utility::Any::Holder']]],
-  ['hessian',['hessian',['../classoptimization_1_1_twice_differentiable_function.html#a72fb9ad2d9d87492335875206139bb8e',1,'optimization::TwiceDifferentiableFunction']]],
+  ['hessian',['hessian',['../classoptimization_1_1_linear_function.html#a03582457b57919091eb5487e25673ecf',1,'optimization::LinearFunction::hessian()'],['../classoptimization_1_1_quadratic_function.html#a613432aac002aa336e7bab550fe9892e',1,'optimization::QuadraticFunction::hessian()'],['../classoptimization_1_1_twice_differentiable_function.html#a72fb9ad2d9d87492335875206139bb8e',1,'optimization::TwiceDifferentiableFunction::hessian()']]],
+  ['hessian_5f',['hessian_',['../classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2',1,'optimization::State']]],
   ['holder',['Holder',['../classltr_1_1utility_1_1_any_1_1_holder.html#aefed398e19962bd7d88e417b88e89989',1,'ltr::utility::Any::Holder']]],
   ['holder',['Holder',['../classltr_1_1utility_1_1_any_1_1_holder.html',1,'ltr::utility::Any']]]
 ];

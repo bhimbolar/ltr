@@ -12,6 +12,7 @@ var searchData=
   ['add',['Add',['../classltr_1_1gp_1_1_add.html',1,'ltr::gp']]],
   ['aliaser',['Aliaser',['../classltr_1_1_aliaser.html',1,'ltr']]],
   ['aliaserderived',['AliaserDerived',['../class_aliaser_derived.html',1,'']]],
+  ['and',['And',['../classoptimization_1_1_and.html',1,'optimization']]],
   ['any',['Any',['../classltr_1_1utility_1_1_any.html',1,'ltr::utility']]],
   ['arffparser',['ARFFParser',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html',1,'ltr::io_utility']]],
   ['auc',['AUC',['../classltr_1_1_a_u_c.html',1,'ltr']]],
