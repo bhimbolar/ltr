@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" href="$base__splitter_8h.html" title="ltr/learners/decision_tree/base_splitter.h" alt="" coords="559,80,809,107"/>
-<area shape="rect" href="$base__splitter_8cc.html" title="ltr/learners/decision_tree/base_splitter.cc" alt="" coords="104,155,363,181"/>
-<area shape="rect" href="$decision__tree__learner_8h.html" title="ltr/learners/decision_tree/decision_tree_learner.h" alt="" coords="387,155,688,181"/>
-<area shape="rect" href="$oblivious__tree__splitter_8h.html" title="ltr/learners/decision_tree/oblivious_tree_splitter.h" alt="" coords="976,155,1277,181"/>
-<area shape="rect" href="$id3__splitter_8h.html" title="ltr/learners/decision_tree/id3_splitter.h" alt="" coords="712,155,952,181"/>
-<area shape="rect" href="$decision__tree__learner_8cc.html" title="ltr/learners/decision_tree/decision_tree_learner.cc" alt="" coords="5,229,312,256"/>
-<area shape="rect" href="$decision__tree__unittest_8cc.html" title="ltr/learners/decision_tree/decision_tree_unittest.cc" alt="" coords="509,229,821,256"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="845,229,1112,256"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="336,229,485,256"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="340,304,481,331"/>
-<area shape="rect" href="$oblivious__tree__splitter_8cc.html" title="ltr/learners/decision_tree/oblivious_tree_splitter.cc" alt="" coords="1408,229,1717,256"/>
-<area shape="rect" href="$id3__splitter_8cc.html" title="ltr/learners/decision_tree/id3_splitter.cc" alt="" coords="1136,229,1384,256"/>
+<area shape="rect" href="$base__splitter_8h.html" title="ltr/learners/decision_tree/base_splitter.h" alt="" coords="617,80,868,107"/>
+<area shape="rect" href="$base__splitter_8cc.html" title="ltr/learners/decision_tree/base_splitter.cc" alt="" coords="368,155,627,181"/>
+<area shape="rect" href="$decision__tree__learner_8h.html" title="ltr/learners/decision_tree/decision_tree_learner.h" alt="" coords="969,229,1271,256"/>
+<area shape="rect" href="$id3__splitter_8h.html" title="ltr/learners/decision_tree/id3_splitter.h" alt="" coords="701,155,941,181"/>
+<area shape="rect" href="$oblivious__tree__splitter_8h.html" title="ltr/learners/decision_tree/oblivious_tree_splitter.h" alt="" coords="321,229,623,256"/>
+<area shape="rect" href="$decision__tree__learner_8cc.html" title="ltr/learners/decision_tree/decision_tree_learner.cc" alt="" coords="1219,304,1525,331"/>
+<area shape="rect" href="$decision__tree__unittest_8cc.html" title="ltr/learners/decision_tree/decision_tree_unittest.cc" alt="" coords="883,304,1195,331"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="339,304,605,331"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="629,304,779,331"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="633,379,775,405"/>
+<area shape="rect" href="$id3__splitter_8cc.html" title="ltr/learners/decision_tree/id3_splitter.cc" alt="" coords="697,229,945,256"/>
+<area shape="rect" href="$oblivious__tree__splitter_8cc.html" title="ltr/learners/decision_tree/oblivious_tree_splitter.cc" alt="" coords="5,304,315,331"/>
 </map>

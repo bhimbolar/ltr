@@ -16,5 +16,6 @@ var searchData=
   ['file',['file',['../struct_data_info.html#a1fb21b4f528cffe8d000d10d3a3f4dc6',1,'DataInfo']]],
   ['first',['first',['../classltr_1_1_object_pair.html#a5bc9d0318053b4a97ae09dba7f1484eb',1,'ltr::ObjectPair::first()'],['../structserialization__test_1_1_report.html#a4f220451273134eb4855c46c83f6fc55',1,'serialization_test::Report::first()']]],
   ['first_5f',['first_',['../classoptimization_1_1_and.html#ab0ebd8526e174271edeae61a3d548a89',1,'optimization::And::first_()'],['../classoptimization_1_1_or.html#af9e4a125b97901cd3c172546337cdcce',1,'optimization::Or::first_()']]],
-  ['format',['format',['../struct_data_info.html#a8094b18d7f3f03a3a99dfddf122c4f09',1,'DataInfo']]]
+  ['format',['format',['../struct_data_info.html#a8094b18d7f3f03a3a99dfddf122c4f09',1,'DataInfo']]],
+  ['from_5f',['from_',['../classltr_1_1utility_1_1bad__any__cast.html#acc6a1845fb95cc51364ccb7d6714d4fd',1,'ltr::utility::bad_any_cast']]]
 ];

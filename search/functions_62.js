@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['bad_5fany_5fcast',['bad_any_cast',['../classltr_1_1utility_1_1bad__any__cast.html#a116bd4efc816ac4718a2103e1e1e4a0f',1,'ltr::utility::bad_any_cast']]],
   ['bad_5flexical_5fcast',['bad_lexical_cast',['../classltr_1_1utility_1_1bad__lexical__cast.html#af93a51a734c5460bb16bcf8e308281b2',1,'ltr::utility::bad_lexical_cast::bad_lexical_cast()'],['../classltr_1_1utility_1_1bad__lexical__cast.html#a6f88d55f540d246559a2a5a63caef26c',1,'ltr::utility::bad_lexical_cast::bad_lexical_cast(const std::type_info &amp;source_type_arg, const std::type_info &amp;target_type_arg)']]],
   ['bad_5fline',['bad_line',['../classltr_1_1io__utility_1_1_parser_1_1bad__line.html#a5b7adf03f0b4317aa4475478d7983f6f',1,'ltr::io_utility::Parser::bad_line']]],
   ['ballset',['BallSet',['../classoptimization_1_1_ball_set.html#a17412c968a2f081bcb3ff72a21f07959',1,'optimization::BallSet']]],

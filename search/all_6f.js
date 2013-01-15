@@ -30,7 +30,7 @@ var searchData=
   ['oblivious_5ftree_5fsplitter_2ecc',['oblivious_tree_splitter.cc',['../oblivious__tree__splitter_8cc.html',1,'']]],
   ['oblivious_5ftree_5fsplitter_2eh',['oblivious_tree_splitter.h',['../oblivious__tree__splitter_8h.html',1,'']]],
   ['oblivioustreesplitter',['ObliviousTreeSplitter',['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html',1,'ltr::decision_tree']]],
-  ['oblivioustreesplitter',['ObliviousTreeSplitter',['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244',1,'ltr::decision_tree::ObliviousTreeSplitter']]],
+  ['oblivioustreesplitter',['ObliviousTreeSplitter',['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244',1,'ltr::decision_tree::ObliviousTreeSplitter::ObliviousTreeSplitter()'],['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ae306a75468544781f61c99dbf3412998',1,'ltr::decision_tree::ObliviousTreeSplitter::ObliviousTreeSplitter(const ParametersContainer &amp;parameters)']]],
   ['olist',['olist',['../class_listwise_measures_test.html#a7c55df26954229012aa949c7d05a2dc9',1,'ListwiseMeasuresTest']]],
   ['olist2',['olist2',['../class_listwise_measures_test.html#ac9dd429d5cbaa8f9c8fbe3139f8a1319',1,'ListwiseMeasuresTest']]],
   ['onconfigparser',['OnConfigParser',['../class_on_config_parser.html',1,'OnConfigParser'],['../class_on_config_parser.html#a50d993d85a0d4ee7346476e94a393019',1,'OnConfigParser::OnConfigParser()']]],

@@ -139,7 +139,7 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8220f62bd59c0893ae596ae3c6883517"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a8220f62bd59c0893ae596ae3c6883517">DecisionTreeLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:ad33dc43871889b9997dc6aa2f109a893"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#ad33dc43871889b9997dc6aa2f109a893">DecisionTreeLearner</a> (<a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">BaseSplitter::Ptr</a> splitter, <a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html#a1655b0e95f8747f5918aaef47e26e73e">LeafGenerator::Ptr</a> leaf_generator)</td></tr>
+<tr class="memitem:a475900a5ef23c93cc2afedf37dd92f5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a475900a5ef23c93cc2afedf37dd92f5f">DecisionTreeLearner</a> (<a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">BaseSplitter::Ptr</a> splitter=new <a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html">ID3Splitter</a>(), <a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html#a1655b0e95f8747f5918aaef47e26e73e">LeafGenerator::Ptr</a> leaf_generator=new <a class="el" href="classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html">MostCommonLabelLeafGenerator</a>())</td></tr>
 <tr class="memitem:ae085f2d910e6c0a0adec751b78d4f63e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#ae085f2d910e6c0a0adec751b78d4f63e">toString</a> () const </td></tr>
 <tr class="memitem:affe16201a08d9a814653b984ecedb7c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#affe16201a08d9a814653b984ecedb7c9">GET_SET</a> (<a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">BaseSplitter::Ptr</a>, splitter)</td></tr>
 <tr class="memitem:a7a68172e4f7d504d6179df97e8cb74f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a7a68172e4f7d504d6179df97e8cb74f9">GET_SET</a> (<a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html#a1655b0e95f8747f5918aaef47e26e73e">LeafGenerator::Ptr</a>, leaf_generator)</td></tr>
@@ -195,7 +195,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad33dc43871889b9997dc6aa2f109a893"></a>
+<a class="anchor" id="a475900a5ef23c93cc2afedf37dd92f5f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -203,13 +203,13 @@ Private Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a8220f62bd59c0893ae596ae3c6883517">ltr::decision_tree::DecisionTreeLearner::DecisionTreeLearner</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">BaseSplitter::Ptr</a>&#160;</td>
-          <td class="paramname"><em>splitter</em>, </td>
+          <td class="paramname"><em>splitter</em> = <code>new&#160;<a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html">ID3Splitter</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html#a1655b0e95f8747f5918aaef47e26e73e">LeafGenerator::Ptr</a>&#160;</td>
-          <td class="paramname"><em>leaf_generator</em>&#160;</td>
+          <td class="paramname"><em>leaf_generator</em> = <code>new&#160;<a class="el" href="classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html">MostCommonLabelLeafGenerator</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -484,7 +484,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2013 17:20:59 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2013 15:56:53 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -6,7 +6,7 @@
 <area shape="rect" href="$accuracy_8h.html" title="ltr/measures/accuracy.h" alt="" coords="797,80,957,107"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="904,528,1059,555"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1235,528,1413,555"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="384,528,523,555"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="579,528,717,555"/>
 <area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="799,155,956,181"/>
 <area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="21,528,208,555"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1584,379,1720,405"/>

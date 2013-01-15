@@ -18,7 +18,7 @@ var searchData=
   ['decisiontreetest',['DecisionTreeTest',['../class_decision_tree_test.html',1,'']]],
   ['decisionvertex',['DecisionVertex',['../classltr_1_1decision__tree_1_1_decision_vertex.html',1,'ltr::decision_tree']]],
   ['defaultcrossoverstrategy',['DefaultCrossoverStrategy',['../classltr_1_1gp_1_1_default_crossover_strategy.html',1,'ltr::gp']]],
-  ['defaultmutationstandartstrategy',['DefaultMutationStandartStrategy',['../classltr_1_1gp_1_1_default_mutation_standart_strategy.html',1,'ltr::gp']]],
+  ['defaultmutationstandardstrategy',['DefaultMutationStandardStrategy',['../classltr_1_1gp_1_1_default_mutation_standard_strategy.html',1,'ltr::gp']]],
   ['defaultmutationswapstrategy',['DefaultMutationSwapStrategy',['../classltr_1_1gp_1_1_default_mutation_swap_strategy.html',1,'ltr::gp']]],
   ['defaultselectionstrategy',['DefaultSelectionStrategy',['../classltr_1_1gp_1_1_default_selection_strategy.html',1,'ltr::gp']]],
   ['deltaargumentstopcriterion',['DeltaArgumentStopCriterion',['../classoptimization_1_1_delta_argument_stop_criterion.html',1,'optimization']]],

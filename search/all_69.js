@@ -3,7 +3,7 @@ var searchData=
   ['id3_5fsplitter_2ecc',['id3_splitter.cc',['../id3__splitter_8cc.html',1,'']]],
   ['id3_5fsplitter_2eh',['id3_splitter.h',['../id3__splitter_8h.html',1,'']]],
   ['id3splitter',['ID3Splitter',['../classltr_1_1decision__tree_1_1_i_d3_splitter.html',1,'ltr::decision_tree']]],
-  ['id3splitter',['ID3Splitter',['../classltr_1_1decision__tree_1_1_i_d3_splitter.html#a707a579ff2414c85d2536bbfc5a2671c',1,'ltr::decision_tree::ID3Splitter']]],
+  ['id3splitter',['ID3Splitter',['../classltr_1_1decision__tree_1_1_i_d3_splitter.html#a707a579ff2414c85d2536bbfc5a2671c',1,'ltr::decision_tree::ID3Splitter::ID3Splitter()'],['../classltr_1_1decision__tree_1_1_i_d3_splitter.html#a7ba24f7c1586e0b0839906a63ced2c07',1,'ltr::decision_tree::ID3Splitter::ID3Splitter(const ParametersContainer &amp;parameters)']]],
   ['id_5f',['id_',['../classltr_1_1_serializable.html#a164174c6b7cf3c33989a71274225300f',1,'ltr::Serializable']]],
   ['ifthenfunc',['IfThenFunc',['../classltr_1_1gp_1_1_if_then_func.html',1,'ltr::gp']]],
   ['ifthenfunc',['IfThenFunc',['../classltr_1_1gp_1_1_if_then_func.html#ae6a6ded8c02a48755804e94db43d77da',1,'ltr::gp::IfThenFunc']]],

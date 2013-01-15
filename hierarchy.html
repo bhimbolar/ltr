@@ -277,6 +277,9 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 </ul>
 </li>
 <li><a class="el" href="classltr_1_1utility_1_1_any.html">ltr::utility::Any</a></li>
+<li><a class="el" href="classltr_1_1utility_1_1_any_caster.html">ltr::utility::AnyCaster&lt; ResultType, SourceType &gt;</a></li>
+<li><a class="el" href="classltr_1_1utility_1_1_any_caster_3_01vector_3_01_result_type_01_4_00_01_any_01_4.html">ltr::utility::AnyCaster&lt; vector&lt; ResultType &gt;, Any &gt;</a></li>
+<li><a class="el" href="classltr_1_1utility_1_1_any_caster_3_01vector_3_01_result_type_01_4_00_01vector_3_01_source_type_01_4_01_4.html">ltr::utility::AnyCaster&lt; vector&lt; ResultType &gt;, vector&lt; SourceType &gt; &gt;</a></li>
 <li><a class="el" href="classltr_1_1utility_1_1bad__any__cast.html">ltr::utility::bad_any_cast</a></li>
 <li><a class="el" href="classltr_1_1utility_1_1bad__lexical__cast.html">ltr::utility::bad_lexical_cast</a></li>
 <li><a class="el" href="classltr_1_1io__utility_1_1_parser_1_1bad__line.html">ltr::io_utility::Parser::bad_line</a></li>
@@ -287,12 +290,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1gp_1_1_if_then_func.html">ltr::gp::IfThenFunc</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_multiply.html">ltr::gp::Multiply</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_subtract.html">ltr::gp::Subtract</a></li>
-</ul>
-</li>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html">ltr::decision_tree::BaseSplitter</a><ul>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_fake_splitter.html">ltr::decision_tree::FakeSplitter</a></li>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html">ltr::decision_tree::ID3Splitter</a></li>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html">ltr::decision_tree::ObliviousTreeSplitter</a></li>
 </ul>
 </li>
 <li><a class="el" href="classbrief.html">brief</a></li>
@@ -351,10 +348,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">ltr::utility::MultiTable&lt; T, N &gt;::Iterator</a></li>
 <li><a class="el" href="structltr_1_1utility_1_1_label_statistic.html">ltr::utility::LabelStatistic</a></li>
 <li><a class="el" href="classltr_1_1utility_1_1_label_statistic_computer.html">ltr::utility::LabelStatisticComputer</a></li>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html">ltr::decision_tree::LeafGenerator</a><ul>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html">ltr::decision_tree::MostCommonLabelLeafGenerator</a></li>
-</ul>
-</li>
 <li><a class="el" href="class_learners_test.html">LearnersTest</a></li>
 <li><a class="el" href="classltr_1_1_less_actual.html">ltr::LessActual</a></li>
 <li><a class="el" href="classltr_1_1_less_predicted.html">ltr::LessPredicted</a></li>
@@ -404,11 +397,26 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater&lt; TElement &gt;</a></li>
 <li><a class="el" href="classltr_1_1cv_1_1_splitter.html">ltr::cv::Splitter&lt; TElement &gt;</a></li>
 <li><a class="el" href="classltr_1_1_data_preprocessor.html">ltr::DataPreprocessor&lt; TElement &gt;</a></li>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html">ltr::decision_tree::BaseSplitter</a><ul>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_fake_splitter.html">ltr::decision_tree::FakeSplitter</a></li>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html">ltr::decision_tree::ID3Splitter</a></li>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html">ltr::decision_tree::ObliviousTreeSplitter</a></li>
+</ul>
+</li>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html">ltr::decision_tree::LeafGenerator</a><ul>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html">ltr::decision_tree::MostCommonLabelLeafGenerator</a></li>
+</ul>
+</li>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_stop_splitting_criteria.html">ltr::decision_tree::StopSplittingCriteria</a><ul>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_data_size_stop_splitting_criteria.html">ltr::decision_tree::DataSizeStopSplittingCriteria</a></li>
+<li><a class="el" href="classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html">ltr::decision_tree::SameLabelStopSplittingCriteria</a></li>
+</ul>
+</li>
 <li><a class="el" href="classltr_1_1_feature_converter_learner.html">ltr::FeatureConverterLearner&lt; TElement &gt;</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_base_population_handler.html">ltr::gp::BasePopulationHandler</a><ul>
 <li><a class="el" href="classltr_1_1gp_1_1_crossover_adjacent_trees_strategy.html">ltr::gp::CrossoverAdjacentTreesStrategy</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_default_crossover_strategy.html">ltr::gp::DefaultCrossoverStrategy</a></li>
-<li><a class="el" href="classltr_1_1gp_1_1_default_mutation_standart_strategy.html">ltr::gp::DefaultMutationStandartStrategy</a></li>
+<li><a class="el" href="classltr_1_1gp_1_1_default_mutation_standard_strategy.html">ltr::gp::DefaultMutationStandardStrategy</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_default_mutation_swap_strategy.html">ltr::gp::DefaultMutationSwapStrategy</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_default_selection_strategy.html">ltr::gp::DefaultSelectionStrategy</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_select_top_trees_strategy.html">ltr::gp::SelectTopTreesStrategy</a></li>
@@ -538,11 +546,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classoptimization_1_1_or.html">optimization::Or</a></li>
 </ul>
 </li>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_stop_splitting_criteria.html">ltr::decision_tree::StopSplittingCriteria</a><ul>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_data_size_stop_splitting_criteria.html">ltr::decision_tree::DataSizeStopSplittingCriteria</a></li>
-<li><a class="el" href="classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html">ltr::decision_tree::SameLabelStopSplittingCriteria</a></li>
-</ul>
-</li>
 <li><a class="el" href="class_tag_handler.html">TagHandler</a><ul>
 <li><a class="el" href="class_on_config_parser.html">OnConfigParser</a></li>
 <li><a class="el" href="class_on_cpp_gen_tag.html">OnCppGenTag</a></li>
@@ -574,7 +577,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 10 2013 17:20:59 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2013 15:56:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
