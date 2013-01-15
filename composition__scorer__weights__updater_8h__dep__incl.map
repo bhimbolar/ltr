@@ -1,9 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$ada__rank__composition__scorer__weights__updater_8h.html" title="ltr/learners/composition_learner/ada_rank_composition_scorer_weights_updater.h" alt="" coords="527,80,1017,107"/>
-<area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="897,229,1279,256"/>
-<area shape="rect" href="$composition__learner_8h.html" title="ltr/learners/composition_learner/composition_learner.h" alt="" coords="169,80,503,107"/>
-<area shape="rect" href="$average__composition__scorer__weights__updater_8h.html" title="ltr/learners/composition_learner/average_composition_scorer_weights_updater.h" alt="" coords="1041,80,1524,107"/>
-<area shape="rect" href="$ada__boost__learner_8h.html" title="ltr/learners/composition_learner/ada_boost_learner.h" alt="" coords="728,155,1051,181"/>
-<area shape="rect" href="$composition__learner__unittest_8cc.html" title="ltr/learners/composition_learner/composition_learner_unittest.cc" alt="" coords="24,155,413,181"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="437,155,704,181"/>
+<area shape="rect" href="$ada__rank__composition__scorer__weights__updater_8h.html" title="ltr/learners/composition_learner/ada_rank_composition_scorer_weights_updater.h" alt="" coords="563,80,1053,107"/>
+<area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="631,229,1012,256"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="436,155,585,181"/>
+<area shape="rect" href="$composition__learner_8h.html" title="ltr/learners/composition_learner/composition_learner.h" alt="" coords="1077,80,1411,107"/>
+<area shape="rect" href="$average__composition__scorer__weights__updater_8h.html" title="ltr/learners/composition_learner/average_composition_scorer_weights_updater.h" alt="" coords="5,80,488,107"/>
+<area shape="rect" href="$ada__boost__learner_8h.html" title="ltr/learners/composition_learner/ada_boost_learner.h" alt="" coords="660,155,983,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="440,229,581,256"/>
+<area shape="rect" href="$composition__learner__unittest_8cc.html" title="ltr/learners/composition_learner/composition_learner_unittest.cc" alt="" coords="1348,155,1737,181"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1007,155,1273,181"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$multitable_8h.html" title="ltr/utility/multitable.h" alt="" coords="323,80,461,107"/>
-<area shape="rect" href="$multi__array_8h.html" title="ltr/utility/boost/multi_array.h" alt="" coords="205,155,387,181"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="411,155,565,181"/>
+<area shape="rect" href="$multitable_8h.html" title="ltr/utility/multitable.h" alt="" coords="435,80,573,107"/>
+<area shape="rect" href="$multi__array_8h.html" title="ltr/utility/boost/multi_array.h" alt="" coords="285,155,467,181"/>
+<area shape="rect" href="$html_8h.html" title="ltr/utility/html.h" alt="" coords="104,155,211,181"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="541,155,696,181"/>
 </map>

@@ -134,7 +134,8 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html">AdaRankDataSetWeightsUpdater</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#abb4df31f08cfc9e8d2c7a02f0a5a30c9">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6dca2e11fe169cf02ab074f514d7dd17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#a6dca2e11fe169cf02ab074f514d7dd17">AdaRankDataSetWeightsUpdater</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters=<a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a>())</td></tr>
+<tr class="memitem:ac7d0cfc43b6d15e03486c23f76728419"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#ac7d0cfc43b6d15e03486c23f76728419">AdaRankDataSetWeightsUpdater</a> ()</td></tr>
+<tr class="memitem:aaf3244968c2a7b164df6392f40b46925"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#aaf3244968c2a7b164df6392f40b46925">AdaRankDataSetWeightsUpdater</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:aa72dc3fd180ab7df807824a55b0e22e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#aa72dc3fd180ab7df807824a55b0e22e4">AdaRankDataSetWeightsUpdater</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#abb4df31f08cfc9e8d2c7a02f0a5a30c9">Ptr</a> measure)</td></tr>
 <tr class="memitem:a1485a6c82f6cb372122e4563a0ef8e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#a1485a6c82f6cb372122e4563a0ef8e91">updateWeights</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; *data, const <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a> &amp;composition_scorer) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
@@ -165,7 +166,25 @@ template&lt;class TElement &gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6dca2e11fe169cf02ab074f514d7dd17"></a>
+<a class="anchor" id="ac7d0cfc43b6d15e03486c23f76728419"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html">ltr::composition::AdaRankDataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html">AdaRankDataSetWeightsUpdater</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf3244968c2a7b164df6392f40b46925"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -175,7 +194,7 @@ template&lt;class TElement &gt; </div>
           <td class="memname"><a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html">ltr::composition::AdaRankDataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html">AdaRankDataSetWeightsUpdater</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;&#160;</td>
-          <td class="paramname"><em>parameters</em> = <code><a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a>()</code></td><td>)</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
           <td><code> [inline, explicit]</code></td>
         </tr>
       </table>
@@ -183,7 +202,7 @@ template&lt;class TElement &gt; </div>
 <div class="memdoc">
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Standart LTR parameter container with no parameters </td></tr>
+    <tr><td class="paramname">parameters</td><td>Standart LTR parameter container </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,7 +301,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 15 2013 15:56:53 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2013 17:08:28 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

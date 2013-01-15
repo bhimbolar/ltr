@@ -124,7 +124,7 @@ Cross-validation</h2>
 <li>CrossValidator::addSplitter(const typename Splitter&lt;ObjectType&gt;::Ptr&amp; splitter) - adds splitter_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
 <li>CrossValidator::addMeasure(const typename Measure&lt;ObjectType&gt;::Ptr&amp; measure) - adds measure_ptr <b>shared pointer (!!)</b> to the crossvalidator</li>
 <li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ad2fc565d04a966b64e1df951d13b399b">CrossValidator::launch()</a> - launches crossvalidation process</li>
-<li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#ab1244df631964a9c18098fb2d661b964">CrossValidator::toString()</a> - converts crossvalidator to the printable string and forms set of tables</li>
+<li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a2028650b5bf231ee334ec551754ce92a">CrossValidator::toString()</a> - converts crossvalidator to the printable string and forms set of tables</li>
 <li><a class="el" href="classltr_1_1cv_1_1_cross_validator.html#a9bbedd2d9e9be53896f6e44aaf7b42e9">CrossValidator::reset()</a> - resets all the information in CrossVlidator</li>
 </ul>
 </li>
@@ -204,10 +204,10 @@ Cross-validation</h2>
   <span class="keywordflow">return</span> 0;
 }
 </pre></div></td><td><div class="fragment"><pre class="fragment">
-DataSet:data/imat2009/imat2009_learning_small.txt
-Splitter:LeaveOneOutSplitter
-Table ROW: Measure COLUMN: Learner
-        BestFeatureLeaner       GPLeaner        
+DataSet: data/imat2009/imat2009_learning_small.txt
+Splitter: LeaveOneOutSplitter
+Table (row: Measure, column: Learner)
+        BestFeatureLearner      GPLeaner        
 DCG     2.319   2.069   
 NDCG    1       0.75    
 </pre></div> </td></tr>
@@ -216,7 +216,7 @@ NDCG    1       0.75
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 15 2013 15:56:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2013 17:08:26 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

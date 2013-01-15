@@ -13,9 +13,10 @@ var searchData=
   ['predict',['predict',['../classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c',1,'ltr::Scorer::predict(const DataSet&lt; TElement &gt; &amp;elements) const '],['../classltr_1_1_scorer.html#af4d65b8f11ef506ebec36207f64d34d5',1,'ltr::Scorer::predict(const TElement &amp;element) const ']]],
   ['predicted_5flabel',['predicted_label',['../classltr_1_1_object.html#aee9e5793f44f5f6de8fa347544cbbc4b',1,'ltr::Object']]],
   ['print2dtable',['print2DTable',['../classltr_1_1utility_1_1_multi_table.html#aa035b20a4f52250e2dbb84aa374ec67f',1,'ltr::utility::MultiTable']]],
+  ['print2dtableashtml',['print2DTableAsHTML',['../classltr_1_1utility_1_1_multi_table.html#a801291f36b18df58b2a6c91626c3e82b',1,'ltr::utility::MultiTable']]],
   ['printmultiarray',['printMultiArray',['../multi__vector__print_8h.html#a5a1c67441c4d289d586f86a6cef0d327',1,'multi_vector_print.h']]],
   ['printmultiarrayinner',['printMultiArrayInner',['../multi__vector__print_8h.html#a28a89a3d612b8d12fc130312e57bcceb',1,'multi_vector_print.h']]],
-  ['printmultitableinner',['printMultiTableInner',['../classltr_1_1utility_1_1_multi_table.html#a45caf91308472caf83f315c1934c1fcd',1,'ltr::utility::MultiTable']]],
+  ['printmultitableinner',['printMultiTableInner',['../classltr_1_1utility_1_1_multi_table.html#acd1c5b41fdfe8e0185ff364cd8b1e863',1,'ltr::utility::MultiTable']]],
   ['project',['project',['../classoptimization_1_1_ball_set.html#a5d6982141ccb1dab8f5db1fef2e355e1',1,'optimization::BallSet::project()'],['../classoptimization_1_1_linear_inequality_set.html#a552a4b6f6926db63d76806325541ebf8',1,'optimization::LinearInequalitySet::project()'],['../classoptimization_1_1_set.html#ae3573bc81798331a8cd599516a1264b1',1,'optimization::Set::project()'],['../classoptimization_1_1_sphere_set.html#a9eab2da7158a5f9c26c18d2c6aaf2045',1,'optimization::SphereSet::project()']]],
   ['puppyprimitivehandletopserializable',['puppyPrimitiveHandleToPSerializable',['../classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41',1,'ltr::gp::GPScorer']]],
   ['pure_5ffunction',['pure_function',['../class_abstract_test_class.html#af59542f7a0704abe73869d57d003e069',1,'AbstractTestClass::pure_function()'],['../class_concrete_test_class.html#a7f9b23f93123de2620b2a99876bc56a8',1,'ConcreteTestClass::pure_function()']]]

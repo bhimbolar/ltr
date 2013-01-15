@@ -130,26 +130,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00026"></a>00026 
 <a name="l00027"></a>00027   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a79ebcab2a9e8533163c827484aa0be8c">launch</a>();
 <a name="l00028"></a>00028 
-<a name="l00029"></a>00029  <span class="keyword">private</span>:
-<a name="l00030"></a>00030   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00031"></a>00031   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#aead96d929c66b45b05f8e57cc1fe5c4a">launchTrain</a>(<a class="code" href="classltr_1_1utility_1_1_any.html">Any</a> parameterized,
-<a name="l00032"></a>00032                    <span class="keyword">const</span> <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>&amp; train_info);
-<a name="l00033"></a>00033 
+<a name="l00029"></a>00029   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a878e5db0d93ce5fcc9736c0dabab6465">addToReport</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; text);
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a43e2b4ff2bcf64e87d5f9f23bb3f7a89">saveReport</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; file_name);
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033  <span class="keyword">private</span>:
 <a name="l00034"></a>00034   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a4c3bc7e61fd7397c913606cb1cf6c36f">launchCrossvalidation</a>(
-<a name="l00036"></a>00036     <span class="keyword">const</span> <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>&amp; crossvalidation_info);
+<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#aead96d929c66b45b05f8e57cc1fe5c4a">launchTrain</a>(<a class="code" href="classltr_1_1utility_1_1_any.html">Any</a> parameterized,
+<a name="l00036"></a>00036                    <span class="keyword">const</span> <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>&amp; train_info);
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038   <a class="code" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> <a class="code" href="class_ltr_client.html#ac1e5f3fe159ac033930dad5bf04136b8">getLoadQueue</a>() <span class="keyword">const</span>;
-<a name="l00039"></a>00039 
-<a name="l00040"></a><a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">00040</a>   <a class="code" href="class_config_parser.html">ConfigParser</a> <a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">configurator_</a>;
-<a name="l00041"></a>00041 };
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif  // LTR_CLIENT_LTR_CLIENT_H_</span>
+<a name="l00038"></a>00038   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00039"></a>00039   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a4c3bc7e61fd7397c913606cb1cf6c36f">launchCrossvalidation</a>(
+<a name="l00040"></a>00040     <span class="keyword">const</span> <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>&amp; crossvalidation_info);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> <a class="code" href="class_ltr_client.html#ac1e5f3fe159ac033930dad5bf04136b8">getLoadQueue</a>() <span class="keyword">const</span>;
+<a name="l00043"></a>00043 
+<a name="l00044"></a><a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">00044</a>   <a class="code" href="class_config_parser.html">ConfigParser</a> <a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">configurator_</a>;
+<a name="l00045"></a>00045 
+<a name="l00046"></a><a class="code" href="class_ltr_client.html#a47c1ff079e5c952c49218869371d8b1d">00046</a>   <span class="keywordtype">string</span> <a class="code" href="class_ltr_client.html#a47c1ff079e5c952c49218869371d8b1d">report_body</a>;
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#endif  // LTR_CLIENT_LTR_CLIENT_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 15 2013 15:56:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 15 2013 17:08:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -52,5 +52,5 @@ var searchData=
   ['iterationstopcriterion',['IterationStopCriterion',['../classoptimization_1_1_iteration_stop_criterion.html',1,'optimization']]],
   ['iterationstopcriterion',['IterationStopCriterion',['../classoptimization_1_1_iteration_stop_criterion.html#af89e9dba5487bc2491556c2eba311edb',1,'optimization::IterationStopCriterion']]],
   ['iterator',['Iterator',['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html',1,'ltr::utility::MultiTable']]],
-  ['iterator',['Iterator',['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a7488aff687dd71fa2fc028569fc81749',1,'ltr::utility::MultiTable::Iterator::Iterator()'],['../classltr_1_1_vectorized.html#a7ee404c30695455ec3277eef0051a83f',1,'ltr::Vectorized::iterator()']]]
+  ['iterator',['iterator',['../classltr_1_1_vectorized.html#a7ee404c30695455ec3277eef0051a83f',1,'ltr::Vectorized::iterator()'],['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a7488aff687dd71fa2fc028569fc81749',1,'ltr::utility::MultiTable::Iterator::Iterator()']]]
 ];
