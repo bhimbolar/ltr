@@ -1,5 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_solver.html" title="optimization::Solver\&lt; DifferentiableFunction \&gt;" alt="" coords="5,5,288,32"/>
-<area shape="rect" href="$classoptimization_1_1_iteration_solver.html" title="optimization::IterationSolver\&lt; DifferentiableFunction \&gt;" alt="" coords="336,5,664,32"/>
-<area shape="rect" href="$classoptimization_1_1_gradient_descent_solver.html" title="optimization::GradientDescentSolver" alt="" coords="712,5,944,32"/>
+<area shape="rect" href="$structoptimization_1_1_solution.html" title="optimization::Solution" alt="" coords="5,5,152,32"/>
 </map>

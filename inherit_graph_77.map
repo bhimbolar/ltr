@@ -1,6 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_set.html" title="optimization::Set" alt="" coords="5,56,125,83"/>
-<area shape="rect" href="$classoptimization_1_1_ball_set.html" title="optimization::BallSet" alt="" coords="208,5,349,32"/>
-<area shape="rect" href="$classoptimization_1_1_linear_inequality_set.html" title="optimization::LinearInequalitySet" alt="" coords="175,56,383,83"/>
-<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="optimization::SphereSet" alt="" coords="199,107,359,133"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="5,31,155,57"/>
+<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="203,31,427,57"/>
+<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="475,31,731,57"/>
+<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="789,5,973,32"/>
+<area shape="rect" href="$classoptimization_1_1_quadratic_function.html" title="optimization::QuadraticFunction" alt="" coords="779,56,984,83"/>
 </map>

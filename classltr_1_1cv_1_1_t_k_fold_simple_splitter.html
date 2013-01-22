@@ -138,7 +138,7 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acc995bfa0501be66ebda288a517e5ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#acc995bfa0501be66ebda288a517e5ce7">TKFoldSimpleSplitter</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:afdfbfc41ff4aafdf5babd2a81273e6b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#afdfbfc41ff4aafdf5babd2a81273e6b9">TKFoldSimpleSplitter</a> (const int K=10, const int T=10)</td></tr>
+<tr class="memitem:afdfbfc41ff4aafdf5babd2a81273e6b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#afdfbfc41ff4aafdf5babd2a81273e6b9">TKFoldSimpleSplitter</a> (const int K=10, const int <a class="el" href="class_t.html">T</a>=10)</td></tr>
 <tr class="memitem:a2ba4fde2d599f9770344279ecedaf7dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a2ba4fde2d599f9770344279ecedaf7dc">setDefaultParameters</a> ()</td></tr>
 <tr class="memitem:ac3d0dea3ce7ab8c39254f8b82db634ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#ac3d0dea3ce7ab8c39254f8b82db634ad">checkParameters</a> () const </td></tr>
 <tr class="memitem:a4f903fd44c1b30e07518273faa611352"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a4f903fd44c1b30e07518273faa611352">splitCount</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;base_set) const </td></tr>
@@ -148,7 +148,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7783892469a0e11bb32645ab7f220c7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a7783892469a0e11bb32645ab7f220c7b">setParametersImpl</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:a15cbdb53b103ed48cbe3ab1ca74d3a1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a15cbdb53b103ed48cbe3ab1ca74d3a1d">splitImpl</a> (int split_index, const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;base_set, vector&lt; int &gt; *train_set_indexes, vector&lt; int &gt; *test_set_indexes) const </td></tr>
 <tr class="memitem:a6b3110988f3c82b71d328109748fe15e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a6b3110988f3c82b71d328109748fe15e">GET_SET</a> (int, K)</td></tr>
-<tr class="memitem:a45d6e7b86cf569518cca63c21a7def9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a45d6e7b86cf569518cca63c21a7def9c">GET_SET</a> (int, T)</td></tr>
+<tr class="memitem:a45d6e7b86cf569518cca63c21a7def9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a45d6e7b86cf569518cca63c21a7def9c">GET_SET</a> (int, <a class="el" href="class_t.html">T</a>)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a55ea3499074893e458d4c62138a1e12c"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a55ea3499074893e458d4c62138a1e12c">Permutation</a></td></tr>
@@ -165,7 +165,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;class TElement&gt;<br/>
 class ltr::cv::TKFoldSimpleSplitter&lt; TElement &gt;</h3>
 
-<p>Splits by indices of objects in dataset using random. Knows T random permutations of indices (pseudo-random used) and represets a k-fold splitter for every of that permutations </p>
+<p>Splits by indices of objects in dataset using random. Knows <a class="el" href="class_t.html">T</a> random permutations of indices (pseudo-random used) and represets a k-fold splitter for every of that permutations </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a55ea3499074893e458d4c62138a1e12c"></a>
 <div class="memitem">
@@ -218,7 +218,7 @@ template&lt;class TElement &gt; </div>
 <div class="memdoc">
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>Standart LTR parameter container with int parameters K and T, by default K = T = 10 </td></tr>
+    <tr><td class="paramname">parameters</td><td>Standart LTR parameter container with int parameters K and <a class="el" href="class_t.html">T</a>, by default K = <a class="el" href="class_t.html">T</a> = 10 </td></tr>
   </table>
   </dd>
 </dl>
@@ -270,7 +270,7 @@ template&lt;class TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Checks if K &gt;= 2 and T &gt;= 1 (that should be true) </p>
+<p>Checks if K &gt;= 2 and <a class="el" href="class_t.html">T</a> &gt;= 1 (that should be true) </p>
 
 <p>Reimplemented from <a class="el" href="classltr_1_1_parameterized.html#a1179ecf33cb6277323b390bffeca1244">ltr::Parameterized</a>.</p>
 
@@ -320,7 +320,7 @@ template&lt;class TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype"><a class="el" href="class_t.html">T</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -406,7 +406,7 @@ template&lt;class TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Clears parameters container and sets ints K = 10 and T = 10 </p>
+<p>Clears parameters container and sets ints K = 10 and <a class="el" href="class_t.html">T</a> = 10 </p>
 
 <p>Reimplemented from <a class="el" href="classltr_1_1_parameterized.html#aea58f21fbc4599fb71b3103d661e9062">ltr::Parameterized</a>.</p>
 
@@ -566,7 +566,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 22 2013 13:54:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2013 14:14:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

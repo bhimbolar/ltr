@@ -135,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031     <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a8315bcb0af11569a19dd686242c41197">incref</a>();
 <a name="l00032"></a>00032   }
 <a name="l00033"></a>00033 
-<a name="l00034"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a108372cd1422db1bd25e60a64a13009f">00034</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a108372cd1422db1bd25e60a64a13009f">shared_ptr</a>(T* rhs) {
+<a name="l00034"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a108372cd1422db1bd25e60a64a13009f">00034</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a108372cd1422db1bd25e60a64a13009f">shared_ptr</a>(<a class="code" href="class_t.html">T</a>* rhs) {
 <a name="l00035"></a>00035      this-&gt;<a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a> = rhs;
 <a name="l00036"></a>00036      this-&gt;<a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a529247fea099adfd3a965176f99891ed">count</a> = <span class="keyword">new</span> unsigned(1);
 <a name="l00037"></a>00037   }
@@ -154,13 +154,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00050"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a5c9a64a35c51732cfb7f780dbe4ea382">00050</a>   <span class="keywordtype">unsigned</span>* <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a5c9a64a35c51732cfb7f780dbe4ea382">get_count</a>()<span class="keyword"> const </span>{
 <a name="l00051"></a>00051     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a529247fea099adfd3a965176f99891ed">count</a>;
 <a name="l00052"></a>00052   }
-<a name="l00053"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a162a10868b46ab2e218b045dcbacca91">00053</a>   T* <span class="keyword">get</span>() <span class="keyword">const</span> {
+<a name="l00053"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a162a10868b46ab2e218b045dcbacca91">00053</a>   <a class="code" href="class_t.html">T</a>* <span class="keyword">get</span>() <span class="keyword">const</span> {
 <a name="l00054"></a>00054     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a>;
 <a name="l00055"></a>00055   }
-<a name="l00056"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#adbf2da1af98a540397920da2bc8d9d0b">00056</a>   T* <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#adbf2da1af98a540397920da2bc8d9d0b">operator-&gt;</a>()<span class="keyword"> const </span>{
+<a name="l00056"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#adbf2da1af98a540397920da2bc8d9d0b">00056</a>   <a class="code" href="class_t.html">T</a>* <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#adbf2da1af98a540397920da2bc8d9d0b">operator-&gt;</a>()<span class="keyword"> const </span>{
 <a name="l00057"></a>00057     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a>;
 <a name="l00058"></a>00058   }
-<a name="l00059"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a31df23de5b90cc26f0ed17cc20a4588e">00059</a>   T&amp; <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a31df23de5b90cc26f0ed17cc20a4588e">operator*</a>()<span class="keyword"> const </span>{
+<a name="l00059"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a31df23de5b90cc26f0ed17cc20a4588e">00059</a>   <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a31df23de5b90cc26f0ed17cc20a4588e">operator*</a>()<span class="keyword"> const </span>{
 <a name="l00060"></a>00060     <span class="keywordflow">return</span> *<a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a>;
 <a name="l00061"></a>00061   }
 <a name="l00062"></a>00062 
@@ -191,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00087"></a>00087     <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr&lt;T&gt;</a>(rhs).<a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a7de5cc66ef9105881f493192a531a289">swap</a>(*<span class="keyword">this</span>);
 <a name="l00088"></a>00088   }
 <a name="l00089"></a>00089 <span class="keyword">private</span>:
-<a name="l00090"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">00090</a>   T* <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a>;
+<a name="l00090"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">00090</a>   <a class="code" href="class_t.html">T</a>* <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a>;
 <a name="l00091"></a><a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a529247fea099adfd3a965176f99891ed">00091</a>   <span class="keywordtype">unsigned</span>* <a class="code" href="classltr_1_1utility_1_1shared__ptr.html#a529247fea099adfd3a965176f99891ed">count</a>;
 <a name="l00092"></a>00092 
 <a name="l00093"></a>00093   <span class="comment">// special case, null pointer (nil-code)</span>
@@ -219,7 +219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 22 2013 13:54:02 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2013 14:14:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

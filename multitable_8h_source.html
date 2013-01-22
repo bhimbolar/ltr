@@ -150,8 +150,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00067"></a>00067   <span class="keyword">class </span><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">Iterator</a>;
 <a name="l00071"></a>00071   <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a76d1a718be64fb2c71d435990a035412">MultiTable</a>();
 <a name="l00077"></a>00077   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a76d1a718be64fb2c71d435990a035412">MultiTable</a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; table_size);
-<a name="l00085"></a>00085   <span class="keyword">const</span> T&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">operator[] </a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; multiIndex) <span class="keyword">const</span>;
-<a name="l00092"></a>00092   T&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">operator[] </a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; multiIndex);
+<a name="l00085"></a>00085   <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">operator[] </a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; multiIndex) <span class="keyword">const</span>;
+<a name="l00092"></a>00092   <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">operator[] </a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; multiIndex);
 <a name="l00098"></a>00098   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html#af2ef1fec55aad3fc9f55dc8464a78215">setAxisLabel</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> axis_index, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; label);
 <a name="l00105"></a>00105   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a89342d3c6a7e7541c20c059ea403704a">setTickLabel</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> axis_index,
 <a name="l00106"></a>00106                     <span class="keyword">const</span> <span class="keywordtype">int</span> tick_index,
@@ -184,12 +184,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00146"></a>00146 };
 <a name="l00147"></a>00147 
 <a name="l00151"></a>00151 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00152"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">00152</a> <span class="keyword">class </span><a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;T, N&gt;::<a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">Iterator</a> {
+<a name="l00152"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">00152</a> <span class="keyword">class </span><a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;<a class="code" href="class_t.html">T</a>, N&gt;::<a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">Iterator</a> {
 <a name="l00153"></a>00153  <span class="keyword">public</span>:
 <a name="l00158"></a>00158   <a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">Iterator</a>(<a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;</a>* _instance);
-<a name="l00164"></a>00164   <span class="keyword">const</span> T&amp; operator*() <span class="keyword">const</span>;
-<a name="l00170"></a>00170   T&amp; operator*();
-<a name="l00175"></a>00175   T* operator-&gt;();
+<a name="l00164"></a>00164   <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; operator*() <span class="keyword">const</span>;
+<a name="l00170"></a>00170   <a class="code" href="class_t.html">T</a>&amp; operator*();
+<a name="l00175"></a>00175   <a class="code" href="class_t.html">T</a>* operator-&gt;();
 <a name="l00180"></a>00180   <a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">Iterator</a> operator++();
 <a name="l00184"></a>00184   <span class="keyword">const</span> vector&lt;int&gt;&amp; getMultiIndex() <span class="keyword">const</span>;
 <a name="l00188"></a>00188   <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html">Iterator</a>&amp; right);
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00198"></a>00198 };
 <a name="l00199"></a>00199 
 <a name="l00200"></a>00200 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00201"></a><a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html">00201</a> <span class="keyword">struct </span><a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;T, N&gt;::<a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html">DimensionMetaInfo</a> {
+<a name="l00201"></a><a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html">00201</a> <span class="keyword">struct </span><a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;<a class="code" href="class_t.html">T</a>, N&gt;::<a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html">DimensionMetaInfo</a> {
 <a name="l00202"></a><a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#a13cb394122f6e00c6e080e6368e7841a">00202</a>   <span class="keywordtype">string</span> <a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#a13cb394122f6e00c6e080e6368e7841a">axis_label</a>;
 <a name="l00203"></a><a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#ac8fd51be980f7a725202ebc6f4c49f77">00203</a>   vector&lt;string&gt; <a class="code" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#ac8fd51be980f7a725202ebc6f4c49f77">axis_ticks_labels</a>;
 <a name="l00204"></a>00204 };
@@ -359,7 +359,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00355"></a>00355 
 <a name="l00356"></a>00356 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
 <a name="l00357"></a><a class="code" href="classltr_1_1utility_1_1_multi_table.html#a0df8af1e98010850b29749574e020f97">00357</a> <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a76d1a718be64fb2c71d435990a035412">MultiTable&lt;T, N&gt;::MultiTable</a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; table_size)
-<a name="l00358"></a>00358   : table_contents_(new <a class="code" href="classltr_1_1utility_1_1_multi_array.html">MultiArray</a>&lt;T, N&gt;())
+<a name="l00358"></a>00358   : table_contents_(new <a class="code" href="classltr_1_1utility_1_1_multi_array.html">MultiArray</a>&lt;<a class="code" href="class_t.html">T</a>, N&gt;())
 <a name="l00359"></a>00359   , table_meta_info_() {
 <a name="l00360"></a>00360   <span class="keywordflow">if</span> (table_size.size() != N) {
 <a name="l00361"></a>00361     <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;Bad number of input sizes in multitable constructor\n&quot;</span>);
@@ -374,11 +374,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00370"></a>00370 
 <a name="l00371"></a>00371 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
 <a name="l00372"></a><a class="code" href="classltr_1_1utility_1_1_multi_table.html#a76d1a718be64fb2c71d435990a035412">00372</a> <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a76d1a718be64fb2c71d435990a035412">MultiTable&lt;T, N&gt;::MultiTable</a>()
-<a name="l00373"></a>00373   : table_contents_(new <a class="code" href="classltr_1_1utility_1_1_multi_array.html">MultiArray</a>&lt;T, N&gt;())
+<a name="l00373"></a>00373   : table_contents_(new <a class="code" href="classltr_1_1utility_1_1_multi_array.html">MultiArray</a>&lt;<a class="code" href="class_t.html">T</a>, N&gt;())
 <a name="l00374"></a>00374   , table_meta_info_() {}
 <a name="l00375"></a>00375 
 <a name="l00376"></a>00376 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00377"></a><a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">00377</a> <span class="keyword">const</span> T&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">MultiTable&lt;T, N&gt;::operator[] </a>(
+<a name="l00377"></a><a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">00377</a> <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">MultiTable&lt;T, N&gt;::operator[] </a>(
 <a name="l00378"></a>00378   <span class="keyword">const</span> vector&lt;int&gt;&amp; multi_index)<span class="keyword"> const </span>{
 <a name="l00379"></a>00379   <span class="keywordflow">if</span> (multi_index.size() != N) {
 <a name="l00380"></a>00380     <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;Bad number of input sizes in multitable [] operator\n&quot;</span>);
@@ -387,7 +387,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00383"></a>00383 }
 <a name="l00384"></a>00384 
 <a name="l00385"></a>00385 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00386"></a><a class="code" href="classltr_1_1utility_1_1_multi_table.html#ac7a50da432caa1b921a31d6b47b8fc9c">00386</a> T&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">MultiTable&lt;T, N&gt;::operator[] </a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; multi_index) {
+<a name="l00386"></a><a class="code" href="classltr_1_1utility_1_1_multi_table.html#ac7a50da432caa1b921a31d6b47b8fc9c">00386</a> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8f9757212b4ce15e638bed4a55060a08">MultiTable&lt;T, N&gt;::operator[] </a>(<span class="keyword">const</span> vector&lt;int&gt;&amp; multi_index) {
 <a name="l00387"></a>00387   <span class="keywordflow">if</span> (multi_index.size() != N) {
 <a name="l00388"></a>00388     <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;Bad number of input sizes in multitable [] operator\n&quot;</span>);
 <a name="l00389"></a>00389   }
@@ -452,17 +452,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00448"></a>00448   , instance(_instance) {}
 <a name="l00449"></a>00449 
 <a name="l00450"></a>00450 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00451"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a3051112e315f7337b19ea570e0407f01">00451</a> <span class="keyword">const</span> T&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;::Iterator::operator*</a>()<span class="keyword"> const </span>{
+<a name="l00451"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a3051112e315f7337b19ea570e0407f01">00451</a> <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;::Iterator::operator*</a>()<span class="keyword"> const </span>{
 <a name="l00452"></a>00452   <span class="keywordflow">return</span> instance-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a5d91923e234475efccdbb6ef2b3d814f">table_contents_</a>-&gt;operator()(multi_index_);
 <a name="l00453"></a>00453 }
 <a name="l00454"></a>00454 
 <a name="l00455"></a>00455 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00456"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html#ae14d17d25f00f76ee692c02a0de24fbf">00456</a> T&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;::Iterator::operator*</a>() {
+<a name="l00456"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html#ae14d17d25f00f76ee692c02a0de24fbf">00456</a> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;::Iterator::operator*</a>() {
 <a name="l00457"></a>00457   <span class="keywordflow">return</span> instance-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a5d91923e234475efccdbb6ef2b3d814f">table_contents_</a>-&gt;operator()(multi_index_);
 <a name="l00458"></a>00458 }
 <a name="l00459"></a>00459 
 <a name="l00460"></a>00460 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> N&gt;
-<a name="l00461"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a14192536acdc29de8c5ec8d63e666a44">00461</a> T* <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;::Iterator::operator-&gt;</a>() {
+<a name="l00461"></a><a class="code" href="classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a14192536acdc29de8c5ec8d63e666a44">00461</a> <a class="code" href="class_t.html">T</a>* <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;T, N&gt;::Iterator::operator-&gt;</a>() {
 <a name="l00462"></a>00462   <span class="keywordflow">return</span> &amp;(instance-&gt;*<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a5d91923e234475efccdbb6ef2b3d814f">table_contents_</a>(multi_index_));
 <a name="l00463"></a>00463 }
 <a name="l00464"></a>00464 
@@ -510,7 +510,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 22 2013 13:54:02 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2013 14:14:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

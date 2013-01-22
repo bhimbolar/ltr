@@ -12,6 +12,8 @@ var searchData=
   ['tostring_5funittest_2ecc',['tostring_unittest.cc',['../tostring__unittest_8cc.html',1,'']]],
   ['train_5flaunch_5finfo_2ecc',['train_launch_info.cc',['../train__launch__info_8cc.html',1,'']]],
   ['train_5flaunch_5finfo_2eh',['train_launch_info.h',['../train__launch__info_8h.html',1,'']]],
+  ['triple_2eh',['triple.h',['../triple_8h.html',1,'']]],
+  ['triple_5funittest_2ecc',['triple_unittest.cc',['../triple__unittest_8cc.html',1,'']]],
   ['true_5fpoint_2eh',['true_point.h',['../true__point_8h.html',1,'']]],
   ['twice_5fdifferentiable_5ffunction_2eh',['twice_differentiable_function.h',['../twice__differentiable__function_8h.html',1,'']]],
   ['two_5fclass_5factual_5flabel_5fconverter_2eh',['two_class_actual_label_converter.h',['../two__class__actual__label__converter_8h.html',1,'']]],

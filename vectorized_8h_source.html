@@ -125,19 +125,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00028"></a><a class="code" href="classltr_1_1_vectorized.html#a1426c871d06a54f302699ac4ebda4a15">00028</a>     <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_vectorized.html#a1426c871d06a54f302699ac4ebda4a15">count</a>()<span class="keyword"> const </span>{
 <a name="l00029"></a>00029       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769">items_</a>.size();
 <a name="l00030"></a>00030     }
-<a name="l00031"></a><a class="code" href="classltr_1_1_vectorized.html#a025f164be3386cf1346d1c62772f6397">00031</a>     <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_vectorized.html#a025f164be3386cf1346d1c62772f6397">add</a>(<span class="keyword">const</span> T&amp; obj) {
+<a name="l00031"></a><a class="code" href="classltr_1_1_vectorized.html#a025f164be3386cf1346d1c62772f6397">00031</a>     <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_vectorized.html#a025f164be3386cf1346d1c62772f6397">add</a>(<span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; obj) {
 <a name="l00032"></a>00032       <a class="code" href="classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769">items_</a>.push_back(obj);
 <a name="l00033"></a>00033     }
-<a name="l00034"></a><a class="code" href="classltr_1_1_vectorized.html#a39ee6224dd719d692521d0b84aab6512">00034</a>     <span class="keyword">const</span> T&amp; <a class="code" href="classltr_1_1_vectorized.html#a39ee6224dd719d692521d0b84aab6512">operator[]</a>(<span class="keywordtype">int</span> index)<span class="keyword"> const </span>{
+<a name="l00034"></a><a class="code" href="classltr_1_1_vectorized.html#a39ee6224dd719d692521d0b84aab6512">00034</a>     <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1_vectorized.html#a39ee6224dd719d692521d0b84aab6512">operator[]</a>(<span class="keywordtype">int</span> index)<span class="keyword"> const </span>{
 <a name="l00035"></a>00035       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769">items_</a>[index];
 <a name="l00036"></a>00036     }
-<a name="l00037"></a><a class="code" href="classltr_1_1_vectorized.html#a45881cedbecba8ebbda39c02f1c3e609">00037</a>     T&amp; <a class="code" href="classltr_1_1_vectorized.html#a45881cedbecba8ebbda39c02f1c3e609">operator[]</a>(<span class="keywordtype">int</span> index) {
+<a name="l00037"></a><a class="code" href="classltr_1_1_vectorized.html#a45881cedbecba8ebbda39c02f1c3e609">00037</a>     <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1_vectorized.html#a45881cedbecba8ebbda39c02f1c3e609">operator[]</a>(<span class="keywordtype">int</span> index) {
 <a name="l00038"></a>00038       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769">items_</a>[index];
 <a name="l00039"></a>00039     }
-<a name="l00040"></a><a class="code" href="classltr_1_1_vectorized.html#a76f8a71bce31c3695cf782a453ce0e17">00040</a>     <span class="keyword">const</span> T&amp; <a class="code" href="classltr_1_1_vectorized.html#a76f8a71bce31c3695cf782a453ce0e17">at</a>(<span class="keywordtype">int</span> index)<span class="keyword"> const </span>{
+<a name="l00040"></a><a class="code" href="classltr_1_1_vectorized.html#a76f8a71bce31c3695cf782a453ce0e17">00040</a>     <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1_vectorized.html#a76f8a71bce31c3695cf782a453ce0e17">at</a>(<span class="keywordtype">int</span> index)<span class="keyword"> const </span>{
 <a name="l00041"></a>00041       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769">items_</a>.at(index);
 <a name="l00042"></a>00042     }
-<a name="l00043"></a><a class="code" href="classltr_1_1_vectorized.html#a26f5f946e9cb24182af01515ec599092">00043</a>     T&amp; <a class="code" href="classltr_1_1_vectorized.html#a26f5f946e9cb24182af01515ec599092">at</a>(<span class="keywordtype">int</span> index) {
+<a name="l00043"></a><a class="code" href="classltr_1_1_vectorized.html#a26f5f946e9cb24182af01515ec599092">00043</a>     <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1_vectorized.html#a26f5f946e9cb24182af01515ec599092">at</a>(<span class="keywordtype">int</span> index) {
 <a name="l00044"></a>00044       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769">items_</a>.at(index);
 <a name="l00045"></a>00045     }
 <a name="l00046"></a>00046 
@@ -173,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 22 2013 13:54:01 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2013 14:14:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

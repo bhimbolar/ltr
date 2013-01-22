@@ -1,3 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$class_pairwise_measures_test.html" title="PairwiseMeasuresTest" alt="" coords="5,5,157,32"/>
+<area shape="rect" href="$classoptimization_1_1_stop_criterion.html" title="optimization::StopCriterion" alt="" coords="7,132,180,159"/>
+<area shape="rect" href="$classoptimization_1_1_and.html" title="optimization::And" alt="" coords="299,5,421,32"/>
+<area shape="rect" href="$classoptimization_1_1_delta_argument_stop_criterion.html" title="optimization::DeltaArgumentStopCriterion" alt="" coords="231,56,489,83"/>
+<area shape="rect" href="$classoptimization_1_1_delta_function_stop_criterion.html" title="optimization::DeltaFunctionStopCriterion" alt="" coords="233,107,487,133"/>
+<area shape="rect" href="$classoptimization_1_1_gradient_stop_criterion.html" title="optimization::GradientStopCriterion" alt="" coords="248,157,472,184"/>
+<area shape="rect" href="$classoptimization_1_1_iteration_stop_criterion.html" title="optimization::IterationStopCriterion" alt="" coords="251,208,469,235"/>
+<area shape="rect" href="$classoptimization_1_1_or.html" title="optimization::Or" alt="" coords="304,259,416,285"/>
 </map>

@@ -141,10 +141,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00046"></a>00046 
 <a name="l00047"></a>00047   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#acc995bfa0501be66ebda288a517e5ce7">TKFoldSimpleSplitter</a>
 <a name="l00048"></a><a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#afdfbfc41ff4aafdf5babd2a81273e6b9">00048</a>       (<span class="keyword">const</span> <span class="keywordtype">int</span> K = 10,
-<a name="l00049"></a>00049        <span class="keyword">const</span> <span class="keywordtype">int</span> T = 10) {
-<a name="l00050"></a>00050     rDebug(<span class="stringliteral">&quot;Setting K equal to %d and T equal to %d&quot;</span>, K, T);
+<a name="l00049"></a>00049        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_t.html">T</a> = 10) {
+<a name="l00050"></a>00050     rDebug(<span class="stringliteral">&quot;Setting K equal to %d and T equal to %d&quot;</span>, K, <a class="code" href="class_t.html">T</a>);
 <a name="l00051"></a>00051     <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#ac39a4f97e4213dedfda851d24a07f195">K_</a> = K;
-<a name="l00052"></a>00052     <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a8e4dd453389af9192aced9c883d98fdb">T_</a> = T;
+<a name="l00052"></a>00052     <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a8e4dd453389af9192aced9c883d98fdb">T_</a> = <a class="code" href="class_t.html">T</a>;
 <a name="l00053"></a>00053   }
 <a name="l00054"></a>00054 
 <a name="l00058"></a>00058   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a2ba4fde2d599f9770344279ecedaf7dc">setDefaultParameters</a>();
@@ -162,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00073"></a>00073     vector&lt;int&gt;* test_set_indexes) <span class="keyword">const</span>;
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075   <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a6b3110988f3c82b71d328109748fe15e">GET_SET</a>(<span class="keywordtype">int</span>, K);
-<a name="l00076"></a>00076   <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a6b3110988f3c82b71d328109748fe15e">GET_SET</a>(<span class="keywordtype">int</span>, T);
+<a name="l00076"></a>00076   <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a6b3110988f3c82b71d328109748fe15e">GET_SET</a>(<span class="keywordtype">int</span>, <a class="code" href="class_t.html">T</a>);
 <a name="l00077"></a>00077  <span class="keyword">private</span>:
 <a name="l00078"></a><a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a55ea3499074893e458d4c62138a1e12c">00078</a>   <span class="keyword">typedef</span> vector&lt;int&gt; <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a55ea3499074893e458d4c62138a1e12c">Permutation</a>;
 <a name="l00084"></a>00084   <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a55ea3499074893e458d4c62138a1e12c">Permutation</a> <a class="code" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#a77680322ac2ccaecc7408c8c6b281f86">getRandomPermutation</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">int</span> dataset_size) <span class="keyword">const</span>;
@@ -279,7 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 22 2013 13:54:01 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2013 14:14:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
