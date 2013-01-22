@@ -1,4 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="5,80,192,107"/>
-<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="216,80,453,107"/>
+<area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="5,80,232,107"/>
+<area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="256,80,501,107"/>
+<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="525,80,712,107"/>
+<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="736,80,973,107"/>
 </map>
