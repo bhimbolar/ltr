@@ -97,8 +97,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>LTR client is an easy way to make predictions and test algorithms.</p>
-<p>To use LTR client you've got to have XML-like ltr config config.cfg file.</p>
-<p>Suppose I need to make some predictions for a dataset that is named test.txt basing on the marks in learn.txt dataset.</p>
+<p>To use LTR client you've got to have XML-like ltr config <em>config.cfg</em> file.</p>
+<p>Suppose I need to make some predictions for a dataset that is named <em>test.txt</em> basing on the marks in <em>learn.txt</em> dataset.</p>
 <p>So we start writing the code. To indicate that this is an LTR-client source, we write:</p>
 <div class="fragment"><pre class="fragment">&lt;LTR_experiment&gt;
   ***LTR-client code***
@@ -108,8 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     &lt;root_directory&gt;directory_with_files&lt;/root_directory&gt;
   &lt;/config&gt;
 </pre></div><p>To load the datasets:</p>
-<div class="fragment"><pre class="fragment">        &lt;data name=<span class="stringliteral">&quot;learn&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span> format=Yandex&gt;learn.txt&lt;/data&gt;
-        &lt;data name=<span class="stringliteral">&quot;test&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span> format=Yandex&gt;test.txt&lt;/data&gt;
+<div class="fragment"><pre class="fragment">  &lt;data name=<span class="stringliteral">&quot;learn&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span> format=Yandex&gt;learn.txt&lt;/data&gt;
+  &lt;data name=<span class="stringliteral">&quot;test&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span> format=Yandex&gt;test.txt&lt;/data&gt;
 </pre></div><p>You can choose one of the following approaches: <br/>
  -listwise <br/>
  -pairwise <br/>
@@ -132,12 +132,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     &lt;metric&gt;MANHATTAN_METRIC&lt;/metric&gt;
     &lt;neighbor_weighter&gt;INVERSE_POWER_DISTANCE&lt;/neighbor_weighter&gt;
     &lt;<a class="code" href="tester_8cc.html#aeb6e4801d6c571119e639107f44e7ef9">aggregator</a>&gt;SUM_AGGREGATOR&lt;/<a class="code" href="tester_8cc.html#aeb6e4801d6c571119e639107f44e7ef9">aggregator</a>&gt;
-    &lt;number_of_neighbors_to_process&gt;2&lt;/number_of_neighbors_to_process&gt;
+    &lt;number_of_neighbors_to_process&gt;3&lt;/number_of_neighbors_to_process&gt;
   &lt;/learner&gt;
 </pre></div><p>Where the approach is one of the approaches listed above. <b>NOTE</b> that the approach of the learner must be identical to the approach in the learn and test datasets. To set the parameters please consult the documentation for every particular learner.<br/>
 </p>
 <p>List of learners is available on the page: <a class="el" href="_tutorial_measure_learner_scorer.html">Measures, Learners, Scorers</a></p>
-<p>Now we need to create measure to minimize. It is very alike the creation of the learner:</p>
+<p>If the parameter is a vector, than its elements should be separated by commas. Trailing comma is allowed (and is required for vector of length 1). For example:</p>
+<div class="fragment"><pre class="fragment">  &lt;learner name=<span class="stringliteral">&quot;DT&quot;</span> type=<span class="stringliteral">&quot;DecisionTreeLearner&quot;</span> approach=<span class="stringliteral">&quot;pointwise&quot;</span>&gt;
+    &lt;measure&gt;ABS&lt;/measure&gt;
+    &lt;SPLITTER&gt;ID3&lt;/SPLITTER&gt;
+    &lt;LEAF_GENERATOR&gt;MCL&lt;/LEAF_GENERATOR&gt;
+    &lt;STOP_SPLITTING_CRITERIAS&gt;SL,DS,&lt;/STOP_SPLITTING_CRITERIAS&gt;
+  &lt;/learner&gt;
+</pre></div><p>Now we need to create measure to minimize. It is very alike the creation of the learner:</p>
 <div class="fragment"><pre class="fragment">  &lt;measure name=<span class="stringliteral">&quot;Name&quot;</span> type=<span class="stringliteral">&quot;MEASURE_TYPE&quot;</span>&gt;
     &lt;PARAMETER1&gt;Value1&lt;/PARAMETER1&gt;
     &lt;PARAMETER2&gt;Value2&lt;/PARAMETER2&gt;
@@ -154,11 +161,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       &lt;cpp/&gt;
     &lt;/train&gt;
   &lt;/launch&gt;
-</pre></div><p>Here "TrainAndMark" is a name of the train section. Learn is a name of the training dataset. LearnerName is a name of the learner that You want to use to mark the dataset. Test is the name of the dataset that You want to mark. Include &lt;cpp&gt; tag if you want to create the c++ code for your experiment.</p>
+</pre></div><p>Here "TrainAndMark" is a name of the train section. Learn is a name of the training dataset. LearnerName is a name of the learner that you want to use to mark the dataset. Test is the name of the dataset that you want to mark. Include &lt;cpp&gt; tag if you want to create the c++ code for your experiment.</p>
 <p><br/>
 <br/>
 </p>
-<p>To use crossvalidation and to test the algorithms, please use the crossvalidation tag inside of the launch section. Before launch tag you've got to introduce the splitter that You will use.</p>
+<p>To use crossvalidation and to test the algorithms, please use the crossvalidation tag inside of the launch section. Before launch tag you've got to introduce the splitter that you will use.</p>
 <div class="fragment"><pre class="fragment">  &lt;splitter name=<span class="stringliteral">&quot;SplitterName&quot;</span> type=<span class="stringliteral">&quot;SplitterType&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
       &lt;PARAMETER1&gt;Value1&lt;/PARAMETER1&gt;
       &lt;PARAMETER2&gt;Value2&lt;/PARAMETER2&gt;
@@ -167,7 +174,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><pre class="fragment">  &lt;splitter name=<span class="stringliteral">&quot;K_FOLD1&quot;</span> type=<span class="stringliteral">&quot;KFoldSimpleSplitter&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
       &lt;K&gt;2&lt;/K&gt;
   &lt;/splitter&gt;
-</pre></div><p>Here the SplitterName is the name of the splitter that You will use further, SplitterType is a type of the splitter that you will use and the approach is the one of listed above.</p>
+</pre></div><p>Here the SplitterName is the name of the splitter that you will use further, SplitterType is a type of the splitter that you will use and the approach is the one of listed above.</p>
 <p>At the moment the following splitters are available:</p>
 <p>-KFoldSimpleSplitter <br/>
  -TKFoldSimpleSplitter <br/>
@@ -186,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     &lt;/crossvalidation&gt;
   &lt;/launch&gt;
 </pre></div><p>Inside please enumerate the learners, measures and datasets that you would like to test.</p>
-<p>For example for the config like:</p>
+<p>For example, you have the config like:</p>
 <div class="fragment"><pre class="fragment">&lt;LTR_experiment&gt;
   &lt;config&gt;
     &lt;root_directory&gt;/Users/stellar/Work/LTR_Project/qtcreator-build/tmp/&lt;/root_directory&gt;
@@ -204,17 +211,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     &lt;NUMBER_OF_OBJECTS_TO_CONSIDER&gt;10&lt;/NUMBER_OF_OBJECTS_TO_CONSIDER&gt;
   &lt;/measure&gt;
 
-  &lt;learner name=<span class="stringliteral">&quot;BF1&quot;</span> type=<span class="stringliteral">&quot;BEST_FEATURE&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
+  &lt;learner name=<span class="stringliteral">&quot;BF1&quot;</span> type=<span class="stringliteral">&quot;BestFeatureLearner&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
     &lt;measure&gt;dcg&lt;/measure&gt;
   &lt;/learner&gt;
-  &lt;learner name=<span class="stringliteral">&quot;BF2&quot;</span> type=<span class="stringliteral">&quot;BEST_FEATURE&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
+  &lt;learner name=<span class="stringliteral">&quot;BF2&quot;</span> type=<span class="stringliteral">&quot;BestFeatureLearner&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
     &lt;measure&gt;ndcg&lt;/measure&gt;
   &lt;/learner&gt;
-  &lt;learner name=<span class="stringliteral">&quot;GP&quot;</span> type=<span class="stringliteral">&quot;GP&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
+  &lt;learner name=<span class="stringliteral">&quot;GP&quot;</span> type=<span class="stringliteral">&quot;GPLearner&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
     &lt;measure&gt;ndcg&lt;/measure&gt;
   &lt;/learner&gt;
 
-  &lt;splitter name=<span class="stringliteral">&quot;K_FOLD1&quot;</span> type=<span class="stringliteral">&quot;K_FOLD&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
+  &lt;splitter name=<span class="stringliteral">&quot;K_FOLD1&quot;</span> type=<span class="stringliteral">&quot;KFoldSimpleSplitter&quot;</span> approach=<span class="stringliteral">&quot;listwise&quot;</span>&gt;
       &lt;K&gt;2&lt;/K&gt;
   &lt;/splitter&gt;
 
@@ -238,20 +245,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   &lt;/launch&gt;
 
 &lt;/LTR_experiment&gt;
-</pre></div><p>We have an output:</p>
-<div class="fragment"><pre class="fragment">&lt;Very-very-very <span class="keywordtype">long</span> logger output&gt;
-Oct 23 01:59:50 2012: info: 
-DataSet:/Users/stellar/Work/LTR_Project_last/ltr1/data/imat2009/imat2009_learning_small.txt
-Splitter:KFoldSimpleSplitter
-Table ROW: Learner COLUMN: Measure
-        NDCG    DCG     DCG     DCG     
-BestFeatureLeaner       1       2.319   2.319   1.56546 
-BestFeatureLeaner       1       2.319   2.319   1.56546
-</pre></div> </div></div><!-- contents -->
+</pre></div><p><br/>
+</p>
+<p>Then you should launch <em>ltr_client -f &lt;config_file_name&gt;</em>. You will receive a file <em>report.html</em> looking like this:</p>
+<div class="image">
+<img src="report.png" alt="report.png"/>
+</div>
+<p><br/>
+</p>
+<p>To get the full list of ltr_client's parameters, please launch <em>ltr_client -h</em> </p>
+</div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 21 2013 22:53:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 22 2013 13:54:03 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
