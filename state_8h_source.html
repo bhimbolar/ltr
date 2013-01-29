@@ -125,30 +125,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00021"></a>00021                  : <a class="code" href="classoptimization_1_1_state.html#a0c33e9822ddb6986dc476468a403785c">point_</a>(point),
 <a name="l00022"></a>00022                    <a class="code" href="classoptimization_1_1_state.html#a8913114c26058d6d64d2e7e45cb06da0">iteration_</a>(iteration),
 <a name="l00023"></a>00023                    <a class="code" href="classoptimization_1_1_state.html#a8ea07e793587ab5b76f9ed28587f2de2">gradient_</a>(gradient),
-<a name="l00024"></a>00024                    <a class="code" href="classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2">hessian_</a>(hessian) { }
-<a name="l00025"></a><a class="code" href="classoptimization_1_1_state.html#aec49bf0a2eacc56bf1a44d46cb22e3bb">00025</a>   <a class="code" href="classoptimization_1_1_state.html#aec49bf0a2eacc56bf1a44d46cb22e3bb">~State</a>() { }
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Point, point)
-<a name="l00028"></a>00028   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<span class="keywordtype">int</span>, iteration)
-<a name="l00029"></a>00029   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<span class="keywordtype">double</span>, value)
-<a name="l00030"></a>00030   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Vector, gradient)
-<a name="l00031"></a>00031   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Matrix, hessian)
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033  private:
-<a name="l00034"></a><a class="code" href="classoptimization_1_1_state.html#a0c33e9822ddb6986dc476468a403785c">00034</a>   Point <a class="code" href="classoptimization_1_1_state.html#a0c33e9822ddb6986dc476468a403785c">point_</a>;
-<a name="l00035"></a><a class="code" href="classoptimization_1_1_state.html#a8913114c26058d6d64d2e7e45cb06da0">00035</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_state.html#a8913114c26058d6d64d2e7e45cb06da0">iteration_</a>;
-<a name="l00036"></a><a class="code" href="classoptimization_1_1_state.html#a795992afaec03c58a43f35d0be059e49">00036</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_state.html#a795992afaec03c58a43f35d0be059e49">value_</a>;
-<a name="l00037"></a><a class="code" href="classoptimization_1_1_state.html#a8ea07e793587ab5b76f9ed28587f2de2">00037</a>   Vector <a class="code" href="classoptimization_1_1_state.html#a8ea07e793587ab5b76f9ed28587f2de2">gradient_</a>;
-<a name="l00038"></a><a class="code" href="classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2">00038</a>   Matrix <a class="code" href="classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2">hessian_</a>;
-<a name="l00039"></a>00039 };
-<a name="l00040"></a>00040 }
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_STATE_H_</span>
+<a name="l00024"></a>00024                    <a class="code" href="classoptimization_1_1_state.html#a795992afaec03c58a43f35d0be059e49">value_</a>(value),
+<a name="l00025"></a>00025                    <a class="code" href="classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2">hessian_</a>(hessian) { }
+<a name="l00026"></a><a class="code" href="classoptimization_1_1_state.html#aec49bf0a2eacc56bf1a44d46cb22e3bb">00026</a>   <a class="code" href="classoptimization_1_1_state.html#aec49bf0a2eacc56bf1a44d46cb22e3bb">~State</a>() { }
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Point, point)
+<a name="l00029"></a>00029   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<span class="keywordtype">int</span>, iteration)
+<a name="l00030"></a>00030   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<span class="keywordtype">double</span>, value)
+<a name="l00031"></a>00031   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Vector, gradient)
+<a name="l00032"></a>00032   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Matrix, hessian)
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034  private:
+<a name="l00035"></a><a class="code" href="classoptimization_1_1_state.html#a0c33e9822ddb6986dc476468a403785c">00035</a>   Point <a class="code" href="classoptimization_1_1_state.html#a0c33e9822ddb6986dc476468a403785c">point_</a>;
+<a name="l00036"></a><a class="code" href="classoptimization_1_1_state.html#a8913114c26058d6d64d2e7e45cb06da0">00036</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_state.html#a8913114c26058d6d64d2e7e45cb06da0">iteration_</a>;
+<a name="l00037"></a><a class="code" href="classoptimization_1_1_state.html#a795992afaec03c58a43f35d0be059e49">00037</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_state.html#a795992afaec03c58a43f35d0be059e49">value_</a>;
+<a name="l00038"></a><a class="code" href="classoptimization_1_1_state.html#a8ea07e793587ab5b76f9ed28587f2de2">00038</a>   Vector <a class="code" href="classoptimization_1_1_state.html#a8ea07e793587ab5b76f9ed28587f2de2">gradient_</a>;
+<a name="l00039"></a><a class="code" href="classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2">00039</a>   Matrix <a class="code" href="classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2">hessian_</a>;
+<a name="l00040"></a>00040 };
+<a name="l00041"></a>00041 }
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_STATE_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 22 2013 18:14:01 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 29 2013 13:20:12 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
