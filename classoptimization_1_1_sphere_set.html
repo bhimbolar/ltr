@@ -115,23 +115,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="sphere__set_8h_source.html">sphere_set.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for optimization::SphereSet:</div>
-<div class="dyncontent">
-<div class="center"><img src="classoptimization_1_1_sphere_set__inherit__graph.png" border="0" usemap="#optimization_1_1_sphere_set_inherit__map" alt="Inheritance graph"/></div>
-<map name="optimization_1_1_sphere_set_inherit__map" id="optimization_1_1_sphere_set_inherit__map">
-<area shape="rect" href="classoptimization_1_1_set.html" title="optimization::Set" alt="" coords="25,5,145,32"/></map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_sphere_set-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0cd43361258938bcd77b22fa813d7037"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a0cd43361258938bcd77b22fa813d7037">SphereSet</a> (double <a class="el" href="classoptimization_1_1_sphere_set.html#a678e3df3d3b5050b82e1bc38cfc30a54">radius</a>, double <a class="el" href="classoptimization_1_1_sphere_set.html#a72c594b8d98389f52692f2daaff4a38f">precision</a>, int <a class="el" href="classoptimization_1_1_set.html#aab4afd2441a83263f799672350db8f22">dimension</a>)</td></tr>
+<tr class="memitem:a0cd43361258938bcd77b22fa813d7037"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a0cd43361258938bcd77b22fa813d7037">SphereSet</a> (double <a class="el" href="classoptimization_1_1_sphere_set.html#a678e3df3d3b5050b82e1bc38cfc30a54">radius</a>, double <a class="el" href="classoptimization_1_1_sphere_set.html#a72c594b8d98389f52692f2daaff4a38f">precision</a>, int dimension)</td></tr>
 <tr class="memitem:a1c57d1ecd880e45211369e41a2835feb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a1c57d1ecd880e45211369e41a2835feb">isInside</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
 <tr class="memitem:a9eab2da7158a5f9c26c18d2c6aaf2045"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a9eab2da7158a5f9c26c18d2c6aaf2045">project</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
 <tr class="memitem:afb96abead0967200fa817c545b7be537"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#afb96abead0967200fa817c545b7be537">getBoundaries</a> (<a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *top, <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *bottom) const </td></tr>
-<tr class="memitem:a8ecf360965ac246a1d8fe9087de03783"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a8ecf360965ac246a1d8fe9087de03783">getRandomPointInSet</a> () const </td></tr>
+<tr class="memitem:abc1c34aa57b30ad2e7a57aae71106f3c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#abc1c34aa57b30ad2e7a57aae71106f3c">sampleRandomPointInside</a> () const </td></tr>
 <tr class="memitem:a678e3df3d3b5050b82e1bc38cfc30a54"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a678e3df3d3b5050b82e1bc38cfc30a54">radius</a> () const </td></tr>
 <tr class="memitem:a72c594b8d98389f52692f2daaff4a38f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sphere_set.html#a72c594b8d98389f52692f2daaff4a38f">precision</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -199,26 +192,6 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classoptimization_1_1_set.html#a9b22f8fd1f82b981d746c11217a7af4a">optimization::Set</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8ecf360965ac246a1d8fe9087de03783"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> <a class="el" href="classoptimization_1_1_sphere_set.html#a8ecf360965ac246a1d8fe9087de03783">optimization::SphereSet::getRandomPointInSet</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classoptimization_1_1_set.html#ae6d828a590faa1043abf4f2fba3148de">optimization::Set</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a1c57d1ecd880e45211369e41a2835feb"></a>
@@ -235,8 +208,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_set.html#a0368d87b544d79b02c938c6605dd3d61">optimization::Set</a>.</p>
 
 </div>
 </div>
@@ -271,8 +242,6 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classoptimization_1_1_set.html#ae3573bc81798331a8cd599516a1264b1">optimization::Set</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a678e3df3d3b5050b82e1bc38cfc30a54"></a>
@@ -284,6 +253,22 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc1c34aa57b30ad2e7a57aae71106f3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> <a class="el" href="classoptimization_1_1_sphere_set.html#abc1c34aa57b30ad2e7a57aae71106f3c">optimization::SphereSet::sampleRandomPointInside</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -326,7 +311,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 29 2013 13:27:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 1 2013 21:57:00 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

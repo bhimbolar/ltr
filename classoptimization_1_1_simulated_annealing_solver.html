@@ -132,11 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc56b48284b17d40c4d0c2712c3a142b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#afc56b48284b17d40c4d0c2712c3a142b">GET_SET</a> (int, max_iterations)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aff89a75622da160657d01a4e60b527d1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#aff89a75622da160657d01a4e60b527d1">selectNextPoint</a> (const <a class="el" href="classoptimization_1_1_function.html">Function</a> &amp;function, const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;set, const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;current_point, int iteration)</td></tr>
-<tr class="memitem:ac7ad08add7c7ffe0daaad88bcb8c0eb3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#ac7ad08add7c7ffe0daaad88bcb8c0eb3">stop</a> (const <a class="el" href="classoptimization_1_1_function.html">Function</a> &amp;function, const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;set, const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;current_point, int iteration)</td></tr>
+<tr class="memitem:a1358f867b904a1c74c4cbeefd64f57cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptimization_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a1358f867b904a1c74c4cbeefd64f57cd">selectNextPoint</a> (const <a class="el" href="classoptimization_1_1_function.html">Function</a> &amp;function, const Set &amp;set, const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;state)</td></tr>
 <tr class="memitem:a66d9b111aa1243134e00cafbdca25ac5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a66d9b111aa1243134e00cafbdca25ac5">getRandomPoint</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:a23d131335de6c8a0ddd866544adcfcac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a23d131335de6c8a0ddd866544adcfcac">needTransition</a> (double prevValue, double nextValue, double <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#adc73c2cf74d38012f978a0d8420d8080">temperature</a>) const </td></tr>
-<tr class="memitem:adc73c2cf74d38012f978a0d8420d8080"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#adc73c2cf74d38012f978a0d8420d8080">temperature</a> (int iteration, int maxIterations) const </td></tr>
+<tr class="memitem:ace85dc36d5e7a27767f1985a9461d3f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#ace85dc36d5e7a27767f1985a9461d3f0">needTransition</a> (double prev_value, double next_value, double <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a831da00530ecef08887be666ddc14525">temperature</a>) const </td></tr>
+<tr class="memitem:a831da00530ecef08887be666ddc14525"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a831da00530ecef08887be666ddc14525">temperature</a> (int iteration, int max_iterations) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af8bc8f2bb3a0209409464e931337f6f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#af8bc8f2bb3a0209409464e931337f6f8">jump_area_width_</a></td></tr>
@@ -167,6 +166,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>next point is selected randomly in a cube with diameter twice the jump_area_width and center in current point </p>
 
 </div>
 </div>
@@ -194,6 +194,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>number of iterations after which 'temperature' reaches 0 </p>
 
 </div>
 </div>
@@ -214,21 +215,21 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a23d131335de6c8a0ddd866544adcfcac"></a>
+<a class="anchor" id="ace85dc36d5e7a27767f1985a9461d3f0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a23d131335de6c8a0ddd866544adcfcac">optimization::SimulatedAnnealingSolver::needTransition</a> </td>
+          <td class="memname">bool <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#ace85dc36d5e7a27767f1985a9461d3f0">optimization::SimulatedAnnealingSolver::needTransition</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>prevValue</em>, </td>
+          <td class="paramname"><em>prev_value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>nextValue</em>, </td>
+          <td class="paramname"><em>next_value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -247,12 +248,12 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aff89a75622da160657d01a4e60b527d1"></a>
+<a class="anchor" id="a1358f867b904a1c74c4cbeefd64f57cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#aff89a75622da160657d01a4e60b527d1">optimization::SimulatedAnnealingSolver::selectNextPoint</a> </td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_state.html">State</a> <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a1358f867b904a1c74c4cbeefd64f57cd">optimization::SimulatedAnnealingSolver::selectNextPoint</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classoptimization_1_1_function.html">Function</a> &amp;&#160;</td>
           <td class="paramname"><em>function</em>, </td>
@@ -260,20 +261,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;&#160;</td>
+          <td class="paramtype">const Set &amp;&#160;</td>
           <td class="paramname"><em>set</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>current_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iteration</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -283,58 +278,24 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>iteration process, different in different algorithms </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>current iteration process state </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="classoptimization_1_1_iteration_solver.html#a7f3cbdd56d28368d9ac5be3bc1bfa6bc">optimization::IterationSolver&lt; Function &gt;</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_iteration_solver.html#a5cc4d7c415077ddaf974d840fd769be8">optimization::IterationSolver&lt; Function &gt;</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac7ad08add7c7ffe0daaad88bcb8c0eb3"></a>
+<a class="anchor" id="a831da00530ecef08887be666ddc14525"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#ac7ad08add7c7ffe0daaad88bcb8c0eb3">optimization::SimulatedAnnealingSolver::stop</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_function.html">Function</a> &amp;&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;&#160;</td>
-          <td class="paramname"><em>set</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>current_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iteration</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [private, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_iteration_solver.html#a373011e3b54263cce66c14535e70e5d1">optimization::IterationSolver&lt; Function &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adc73c2cf74d38012f978a0d8420d8080"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#adc73c2cf74d38012f978a0d8420d8080">optimization::SimulatedAnnealingSolver::temperature</a> </td>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_simulated_annealing_solver.html#a831da00530ecef08887be666ddc14525">optimization::SimulatedAnnealingSolver::temperature</a> </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>iteration</em>, </td>
@@ -343,7 +304,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxIterations</em>&#160;</td>
+          <td class="paramname"><em>max_iterations</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -391,7 +352,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 29 2013 13:27:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 1 2013 21:57:00 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

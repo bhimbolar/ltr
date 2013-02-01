@@ -108,62 +108,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_OPTIMIZATION_SOLVERS_ITERATION_SOLVER_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="solver_8h.html">ltr/optimization/solvers/solver.h</a>&quot;</span>
-<a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="keyword">namespace </span>optimization {
-<a name="l00009"></a><a class="code" href="classoptimization_1_1_iteration_solver.html">00009</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> FunctionT&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_iteration_solver.html">IterationSolver</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_solver.html">Solver</a>&lt;FunctionT&gt; {
-<a name="l00010"></a>00010  <span class="keyword">public</span>:
-<a name="l00011"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a7342a6b740815822379f423d808a95af">00011</a>   <span class="keyword">virtual</span> <a class="code" href="classoptimization_1_1_iteration_solver.html#a7342a6b740815822379f423d808a95af">~IterationSolver</a>() { }
-<a name="l00012"></a>00012 
-<a name="l00013"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a349769cd3c2efc4db4c671b25c16b3c7">00013</a>   Point <a class="code" href="classoptimization_1_1_iteration_solver.html#a349769cd3c2efc4db4c671b25c16b3c7">initial_point</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classoptimization_1_1_iteration_solver.html#a30d942ceacb72058e2384240b455464b">initial_point_</a>; }
-<a name="l00014"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a7f34198b62b5060a1e32545fe3fae3b9">00014</a>   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_solver.html#a7f34198b62b5060a1e32545fe3fae3b9">set_initial_point</a>(<span class="keyword">const</span> Point&amp; point) { <a class="code" href="classoptimization_1_1_iteration_solver.html#a30d942ceacb72058e2384240b455464b">initial_point_</a> = point; }
-<a name="l00015"></a>00015 
-<a name="l00016"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a4fba2d67ebada9769c8b94d9aa560552">00016</a>   <a class="code" href="structoptimization_1_1_solution.html">Solution</a> <a class="code" href="classoptimization_1_1_iteration_solver.html#a4fba2d67ebada9769c8b94d9aa560552">solve</a>(<span class="keyword">const</span> FunctionT&amp; <span class="keyword">function</span>, <span class="keyword">const</span> <a class="code" href="classoptimization_1_1_set.html">Set</a>&amp; <span class="keyword">set</span>) {
-<a name="l00017"></a>00017     Point current_point = <a class="code" href="classoptimization_1_1_iteration_solver.html#a43887f4d7f5b8eb104befe63d172936f">setInitialPoint</a>(<span class="keyword">set</span>);
-<a name="l00018"></a>00018     <span class="keywordtype">double</span> current_value = <span class="keyword">function</span>.value(current_point);
-<a name="l00019"></a>00019     Point best_point = current_point;
-<a name="l00020"></a>00020     <span class="keywordtype">double</span> best_value = current_value;
-<a name="l00021"></a>00021     <span class="keywordtype">int</span> iteration = 0;
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="stop__criterion_8h.html">ltr/optimization/stop_criteria/stop_criterion.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">ltr/optimization/stop_criteria/state.h</a>&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="keyword">namespace </span>optimization {
+<a name="l00016"></a><a class="code" href="classoptimization_1_1_iteration_solver.html">00016</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_iteration_solver.html">IterationSolver</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_solver.html">Solver</a>&lt;TFunction&gt; {
+<a name="l00017"></a>00017  <span class="keyword">public</span>:
+<a name="l00018"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a2cb8d376d130c320230c3e214906f75b">00018</a>   <span class="keyword">virtual</span> <a class="code" href="classoptimization_1_1_iteration_solver.html#a2cb8d376d130c320230c3e214906f75b">~IterationSolver</a>() { }
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020   <a class="code" href="classoptimization_1_1_iteration_solver.html#a79e32ce0bb46cabcf57eeef36f58a96b">GET_SET</a>(Point, initial_point);
+<a name="l00021"></a>00021   <a class="code" href="classoptimization_1_1_iteration_solver.html#a79e32ce0bb46cabcf57eeef36f58a96b">GET_SET</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion::Ptr</a>, stop_criterion);
 <a name="l00022"></a>00022 
-<a name="l00023"></a>00023     <span class="keywordflow">while</span> (!<a class="code" href="classoptimization_1_1_iteration_solver.html#a373011e3b54263cce66c14535e70e5d1">stop</a>(<span class="keyword">function</span>, <span class="keyword">set</span>, current_point, iteration)) {
-<a name="l00024"></a>00024       current_point = <a class="code" href="classoptimization_1_1_iteration_solver.html#a7f3cbdd56d28368d9ac5be3bc1bfa6bc">selectNextPoint</a>(<span class="keyword">function</span>, <span class="keyword">set</span>, current_point,
-<a name="l00025"></a>00025         iteration);
-<a name="l00026"></a>00026       current_value = <span class="keyword">function</span>.value(current_point);
-<a name="l00027"></a>00027       <span class="keywordflow">if</span> (current_value &lt; best_value) {
-<a name="l00028"></a>00028         best_point = current_point;
-<a name="l00029"></a>00029         best_value = current_value;
-<a name="l00030"></a>00030       }
-<a name="l00031"></a>00031       ++iteration;
-<a name="l00032"></a>00032     }
+<a name="l00026"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a968b8ee107187da5911e468298bfa84e">00026</a>   <a class="code" href="structoptimization_1_1_solution.html">Solution</a> <a class="code" href="classoptimization_1_1_iteration_solver.html#a968b8ee107187da5911e468298bfa84e">solve</a>(<span class="keyword">const</span> TFunction&amp; <span class="keyword">function</span>, <span class="keyword">const</span> Set&amp; <span class="keyword">set</span>) {
+<a name="l00027"></a>00027     <a class="code" href="classoptimization_1_1_state.html">State</a> previous_state;
+<a name="l00028"></a>00028     <a class="code" href="classoptimization_1_1_state.html">State</a> best_state;
+<a name="l00029"></a>00029     <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>.set_point(<a class="code" href="classoptimization_1_1_iteration_solver.html#a59e0692e3b78840a86c9c9f373c01c6f">setInitialPoint</a>(<span class="keyword">set</span>));
+<a name="l00030"></a>00030     <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>.set_value(<span class="keyword">function</span>.value(<a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>.point()));
+<a name="l00031"></a>00031     <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>.set_iteration(0);
+<a name="l00032"></a>00032     best_state = <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>;
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034     <a class="code" href="structoptimization_1_1_solution.html">Solution</a> result;
-<a name="l00035"></a>00035     result.<a class="code" href="structoptimization_1_1_solution.html#a8522dcc17ac7686b722c67bc942339be">solution</a> = best_point;
-<a name="l00036"></a>00036     result.<a class="code" href="structoptimization_1_1_solution.html#a673fe0cd4866f08dbe4a32c30c2a1c09">value</a> = best_value;
-<a name="l00037"></a>00037     <span class="keywordflow">return</span> result;
-<a name="l00038"></a>00038   }
-<a name="l00039"></a>00039  <span class="keyword">protected</span>:
-<a name="l00040"></a>00040   <span class="keyword">virtual</span> Point <a class="code" href="classoptimization_1_1_iteration_solver.html#a7f3cbdd56d28368d9ac5be3bc1bfa6bc">selectNextPoint</a>(<span class="keyword">const</span> FunctionT&amp; <span class="keyword">function</span>,
-<a name="l00041"></a>00041                                 <span class="keyword">const</span> <a class="code" href="classoptimization_1_1_set.html">Set</a>&amp; <span class="keyword">set</span>,
-<a name="l00042"></a>00042                                 <span class="keyword">const</span> Point&amp; current_point,
-<a name="l00043"></a>00043                                 <span class="keywordtype">int</span> iteration) = 0;
-<a name="l00044"></a>00044   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_iteration_solver.html#a373011e3b54263cce66c14535e70e5d1">stop</a>(<span class="keyword">const</span> FunctionT&amp; <span class="keyword">function</span>,
-<a name="l00045"></a>00045                     <span class="keyword">const</span> <a class="code" href="classoptimization_1_1_set.html">Set</a>&amp; <span class="keyword">set</span>,
-<a name="l00046"></a>00046                     <span class="keyword">const</span> Point&amp; current_point,
-<a name="l00047"></a>00047                     <span class="keywordtype">int</span> iteration) = 0;
-<a name="l00048"></a>00048  <span class="keyword">private</span>:
-<a name="l00049"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a30d942ceacb72058e2384240b455464b">00049</a>   Point <a class="code" href="classoptimization_1_1_iteration_solver.html#a30d942ceacb72058e2384240b455464b">initial_point_</a>;
-<a name="l00050"></a>00050 
-<a name="l00051"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a43887f4d7f5b8eb104befe63d172936f">00051</a>   Point <a class="code" href="classoptimization_1_1_iteration_solver.html#a43887f4d7f5b8eb104befe63d172936f">setInitialPoint</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_set.html">Set</a>&amp; <span class="keyword">set</span>)<span class="keyword"> const </span>{
-<a name="l00052"></a>00052     <span class="keywordflow">return</span> <span class="keyword">set</span>.project(<a class="code" href="classoptimization_1_1_iteration_solver.html#a349769cd3c2efc4db4c671b25c16b3c7">initial_point</a>());
-<a name="l00053"></a>00053   }
-<a name="l00054"></a>00054 };
-<a name="l00055"></a>00055 }
-<a name="l00056"></a>00056 
-<a name="l00057"></a>00057 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVERS_ITERATION_SOLVER_H_</span>
+<a name="l00034"></a>00034     <span class="keywordflow">do</span> {
+<a name="l00035"></a>00035       <a class="code" href="classoptimization_1_1_state.html">State</a> previous_state = <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>;
+<a name="l00036"></a>00036       <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a> = <a class="code" href="classoptimization_1_1_iteration_solver.html#a5cc4d7c415077ddaf974d840fd769be8">selectNextPoint</a>(<span class="keyword">function</span>, <span class="keyword">set</span>, previous_state);
+<a name="l00037"></a>00037       <span class="keywordflow">if</span> (<a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>.value() &lt; best_state.value()) {
+<a name="l00038"></a>00038         best_state = <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>;
+<a name="l00039"></a>00039       }
+<a name="l00040"></a>00040     } <span class="keywordflow">while</span> (!<a class="code" href="classoptimization_1_1_iteration_solver.html#abc2e389336654f5b6cccf65d5d93369f">stop</a>(<a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>, previous_state));
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042     <a class="code" href="structoptimization_1_1_solution.html">Solution</a> solution;
+<a name="l00043"></a>00043     solution.<a class="code" href="structoptimization_1_1_solution.html#a8522dcc17ac7686b722c67bc942339be">solution</a> = best_state.point();
+<a name="l00044"></a>00044     solution.<a class="code" href="structoptimization_1_1_solution.html#a673fe0cd4866f08dbe4a32c30c2a1c09">value</a> = best_state.value();
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046     <span class="keywordflow">return</span> solution;
+<a name="l00047"></a>00047   }
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049   <a class="code" href="classoptimization_1_1_iteration_solver.html#ad3c1819a621fe0eb95692511b3b1e71a">GET</a>(<a class="code" href="classoptimization_1_1_state.html">State</a>, current_state);
+<a name="l00050"></a>00050  <span class="keyword">protected</span>:
+<a name="l00054"></a>00054   <span class="keyword">virtual</span> <a class="code" href="classoptimization_1_1_state.html">State</a> <a class="code" href="classoptimization_1_1_iteration_solver.html#a5cc4d7c415077ddaf974d840fd769be8">selectNextPoint</a>(<span class="keyword">const</span> TFunction&amp; <span class="keyword">function</span>,
+<a name="l00055"></a>00055                                 <span class="keyword">const</span> Set&amp; <span class="keyword">set</span>,
+<a name="l00056"></a>00056                                 <span class="keyword">const</span> <a class="code" href="classoptimization_1_1_state.html">State</a>&amp; state) = 0;
+<a name="l00057"></a>00057  <span class="keyword">private</span>:
+<a name="l00058"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a59e0692e3b78840a86c9c9f373c01c6f">00058</a>   Point <a class="code" href="classoptimization_1_1_iteration_solver.html#a59e0692e3b78840a86c9c9f373c01c6f">setInitialPoint</a>(<span class="keyword">const</span> Set&amp; <span class="keyword">set</span>)<span class="keyword"> const </span>{
+<a name="l00059"></a>00059     <span class="keywordflow">return</span> <span class="keyword">set</span>.project(initial_point());
+<a name="l00060"></a>00060   }
+<a name="l00061"></a>00061 
+<a name="l00062"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#abc2e389336654f5b6cccf65d5d93369f">00062</a>   <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_iteration_solver.html#abc2e389336654f5b6cccf65d5d93369f">stop</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_state.html">State</a>&amp; curr_state, <span class="keyword">const</span> <a class="code" href="classoptimization_1_1_state.html">State</a>&amp; prev_state)<span class="keyword"> const </span>{
+<a name="l00063"></a>00063     <span class="keywordflow">if</span> (stop_criterion() == NULL) {
+<a name="l00064"></a>00064       <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00065"></a>00065     }
+<a name="l00066"></a>00066     <span class="keywordflow">return</span> stop_criterion()-&gt;isTrue(curr_state, prev_state);
+<a name="l00067"></a>00067   }
+<a name="l00068"></a>00068 
+<a name="l00069"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#adfffc0a5a55ecad360558c2e04c0d807">00069</a>   Point <a class="code" href="classoptimization_1_1_iteration_solver.html#adfffc0a5a55ecad360558c2e04c0d807">initial_point_</a>;
+<a name="l00070"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a885097f316d2230ca700380d22bf83e3">00070</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion::Ptr</a> <a class="code" href="classoptimization_1_1_iteration_solver.html#a885097f316d2230ca700380d22bf83e3">stop_criterion_</a>;
+<a name="l00071"></a><a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">00071</a>   <a class="code" href="classoptimization_1_1_state.html">State</a> <a class="code" href="classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060">current_state_</a>;
+<a name="l00072"></a>00072 };
+<a name="l00073"></a>00073 }
+<a name="l00074"></a>00074 
+<a name="l00075"></a>00075 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVERS_ITERATION_SOLVER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 29 2013 13:27:22 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 1 2013 21:56:57 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

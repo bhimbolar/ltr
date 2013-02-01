@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$structserialization__test_1_1_report.html" title="serialization_test::Report" alt="" coords="5,5,171,32"/>
+<area shape="rect" href="$classoptimization_1_1_solver.html" title="optimization::Solver\&lt; TFunction \&gt;" alt="" coords="5,5,221,32"/>
+<area shape="rect" href="$classoptimization_1_1_iteration_solver.html" title="optimization::IterationSolver\&lt; TFunction \&gt;" alt="" coords="269,5,531,32"/>
 </map>

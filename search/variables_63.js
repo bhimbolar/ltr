@@ -14,5 +14,6 @@ var searchData=
   ['cross_5fvalidation_5fresults_5f',['cross_validation_results_',['../classltr_1_1cv_1_1_cross_validator.html#ac0b65553c96cf9e5917a4526f45b8775',1,'ltr::cv::CrossValidator']]],
   ['crossvalidation_5finfos',['crossvalidation_infos',['../class_config_parser.html#a39793fac60d08efaed2937125a684ce8',1,'ConfigParser']]],
   ['current_5fid_5f',['current_id_',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987',1,'ltr::io_utility::ARFFParser']]],
-  ['current_5frelevance_5f',['current_relevance_',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7',1,'ltr::io_utility::ARFFParser']]]
+  ['current_5frelevance_5f',['current_relevance_',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7',1,'ltr::io_utility::ARFFParser']]],
+  ['current_5fstate_5f',['current_state_',['../classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060',1,'optimization::IterationSolver']]]
 ];

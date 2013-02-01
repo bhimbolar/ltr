@@ -25,7 +25,7 @@ var searchData=
   ['nearest_5fneighbor_5fscorer_2eh',['nearest_neighbor_scorer.h',['../nearest__neighbor__scorer_8h.html',1,'']]],
   ['nearest_5fneighbor_5fscorer_5funittest_2ecc',['nearest_neighbor_scorer_unittest.cc',['../nearest__neighbor__scorer__unittest_8cc.html',1,'']]],
   ['needtostopsplitting',['needToStopSplitting',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a91acd59927dc1702651dd67bc12b800c',1,'ltr::decision_tree::DecisionTreeLearner::needToStopSplitting()'],['../classltr_1_1decision__tree_1_1_data_size_stop_splitting_criteria.html#abc6483d5a0735ca9432793eee9f28763',1,'ltr::decision_tree::DataSizeStopSplittingCriteria::needToStopSplitting()'],['../classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html#a83180c749b9b3fce9de0e189f4048f68',1,'ltr::decision_tree::SameLabelStopSplittingCriteria::needToStopSplitting()'],['../classltr_1_1decision__tree_1_1_stop_splitting_criteria.html#a541cc5ddc27fe4bf78e1727073f1ba84',1,'ltr::decision_tree::StopSplittingCriteria::needToStopSplitting()']]],
-  ['needtransition',['needTransition',['../classoptimization_1_1_simulated_annealing_solver.html#a23d131335de6c8a0ddd866544adcfcac',1,'optimization::SimulatedAnnealingSolver']]],
+  ['needtransition',['needTransition',['../classoptimization_1_1_simulated_annealing_solver.html#ace85dc36d5e7a27767f1985a9461d3f0',1,'optimization::SimulatedAnnealingSolver']]],
   ['neighbor_5fid',['neighbor_id',['../structltr_1_1_distance_to_neighbor.html#a5d3581ace1f31d882bb075849fce12e5',1,'ltr::DistanceToNeighbor']]],
   ['neighbor_5fweighter_2ecc',['neighbor_weighter.cc',['../neighbor__weighter_8cc.html',1,'']]],
   ['neighbor_5fweighter_2eh',['neighbor_weighter.h',['../neighbor__weighter_8h.html',1,'']]],

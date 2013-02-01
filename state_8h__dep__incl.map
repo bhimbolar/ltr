@@ -1,17 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" href="$and__criterion_8h.html" title="ltr/optimization/stop_criteria/and_criterion.h" alt="" coords="295,155,564,181"/>
-<area shape="rect" href="$and__criterion__unittest_8cc.html" title="ltr/optimization/stop_criteria/and_criterion_unittest.cc" alt="" coords="597,229,925,256"/>
-<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="964,80,1239,107"/>
-<area shape="rect" href="$or__criterion_8h.html" title="ltr/optimization/stop_criteria/or_criterion.h" alt="" coords="639,155,897,181"/>
-<area shape="rect" href="$or__criterion__unittest_8cc.html" title="ltr/optimization/stop_criteria/or_criterion_unittest.cc" alt="" coords="949,229,1267,256"/>
-<area shape="rect" href="$and__criterion_8cc.html" title="ltr/optimization/stop_criteria/and_criterion.cc" alt="" coords="5,229,283,256"/>
-<area shape="rect" href="$delta__function__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/delta_function_stop_criterion.h" alt="" coords="921,155,1281,181"/>
-<area shape="rect" href="$delta__argument__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/delta_argument_stop_criterion.h" alt="" coords="1305,155,1676,181"/>
-<area shape="rect" href="$iteration__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/iteration_stop_criterion.h" alt="" coords="1700,155,2028,181"/>
-<area shape="rect" href="$gradient__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/gradient_stop_criterion.h" alt="" coords="2052,155,2380,181"/>
-<area shape="rect" href="$or__criterion_8cc.html" title="ltr/optimization/stop_criteria/or_criterion.cc" alt="" coords="307,229,573,256"/>
-<area shape="rect" href="$delta__function__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/delta_function_stop_criterion.cc" alt="" coords="1291,229,1659,256"/>
-<area shape="rect" href="$delta__argument__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/delta_argument_stop_criterion.cc" alt="" coords="1683,229,2059,256"/>
-<area shape="rect" href="$iteration__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/iteration_stop_criterion.cc" alt="" coords="2083,229,2416,256"/>
-<area shape="rect" href="$gradient__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/gradient_stop_criterion.cc" alt="" coords="2440,229,2773,256"/>
+<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="1749,80,2024,107"/>
+<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="487,155,737,181"/>
+<area shape="rect" href="$and__criterion_8h.html" title="ltr/optimization/stop_criteria/and_criterion.h" alt="" coords="869,155,1139,181"/>
+<area shape="rect" href="$and__criterion__unittest_8cc.html" title="ltr/optimization/stop_criteria/and_criterion_unittest.cc" alt="" coords="2105,229,2433,256"/>
+<area shape="rect" href="$or__criterion_8h.html" title="ltr/optimization/stop_criteria/or_criterion.h" alt="" coords="2696,155,2955,181"/>
+<area shape="rect" href="$or__criterion__unittest_8cc.html" title="ltr/optimization/stop_criteria/or_criterion_unittest.cc" alt="" coords="2849,229,3167,256"/>
+<area shape="rect" href="$delta__function__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/delta_function_stop_criterion.h" alt="" coords="2312,155,2672,181"/>
+<area shape="rect" href="$delta__argument__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/delta_argument_stop_criterion.h" alt="" coords="1515,155,1885,181"/>
+<area shape="rect" href="$iteration__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/iteration_stop_criterion.h" alt="" coords="1909,155,2237,181"/>
+<area shape="rect" href="$gradient__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/gradient_stop_criterion.h" alt="" coords="1163,155,1491,181"/>
+<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="11,229,315,256"/>
+<area shape="rect" href="$simulated__annealing__solver_8h.html" title="ltr/optimization/solvers/simulated_annealing_solver.h" alt="" coords="343,229,665,256"/>
+<area shape="rect" href="$gradient__descent__solver_8cc.html" title="ltr/optimization/solvers/gradient_descent_solver.cc" alt="" coords="5,304,317,331"/>
+<area shape="rect" href="$simulated__annealing__solver_8cc.html" title="ltr/optimization/solvers/simulated_annealing_solver.cc" alt="" coords="341,304,672,331"/>
+<area shape="rect" href="$and__criterion_8cc.html" title="ltr/optimization/stop_criteria/and_criterion.cc" alt="" coords="689,229,967,256"/>
+<area shape="rect" href="$or__criterion_8cc.html" title="ltr/optimization/stop_criteria/or_criterion.cc" alt="" coords="3191,229,3457,256"/>
+<area shape="rect" href="$delta__function__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/delta_function_stop_criterion.cc" alt="" coords="2457,229,2825,256"/>
+<area shape="rect" href="$delta__argument__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/delta_argument_stop_criterion.cc" alt="" coords="1348,229,1724,256"/>
+<area shape="rect" href="$iteration__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/iteration_stop_criterion.cc" alt="" coords="1748,229,2081,256"/>
+<area shape="rect" href="$gradient__stop__criterion_8cc.html" title="ltr/optimization/stop_criteria/gradient_stop_criterion.cc" alt="" coords="991,229,1324,256"/>
 </map>

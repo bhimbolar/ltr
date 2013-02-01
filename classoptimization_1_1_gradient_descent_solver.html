@@ -129,17 +129,12 @@ Inheritance diagram for optimization::GradientDescentSolver:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad45c6efbe0fd8dcfc64c743a6e458f7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#ad45c6efbe0fd8dcfc64c743a6e458f7a">GET_SET</a> (double, speed)</td></tr>
-<tr class="memitem:a5cc06d8e3e44467aee8f75e026d0cec7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a5cc06d8e3e44467aee8f75e026d0cec7">GET_SET</a> (int, max_iterations)</td></tr>
-<tr class="memitem:a3c1da34bfdd50e7dd917709b0046569e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a3c1da34bfdd50e7dd917709b0046569e">GET_SET</a> (double, gradient_error)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aced8b7de8057cd235672019de63c47f3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#aced8b7de8057cd235672019de63c47f3">selectNextPoint</a> (const <a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> &amp;function, const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;set, const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;current_point, int iteration)</td></tr>
-<tr class="memitem:af3b99c36555af8747781d649ebabecb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#af3b99c36555af8747781d649ebabecb9">stop</a> (const <a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> &amp;function, const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;set, const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;current_point, int iteration)</td></tr>
+<tr class="memitem:a51d6c78ec33344903c840622272c6454"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptimization_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a51d6c78ec33344903c840622272c6454">selectNextPoint</a> (const <a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> &amp;function, const Set &amp;set, const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;state)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2013cb48772b16d3902eb11a443604ea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a2013cb48772b16d3902eb11a443604ea">speed_</a></td></tr>
-<tr class="memitem:aa5d3b8708d9f98bf2b6c8fb6f0b812ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#aa5d3b8708d9f98bf2b6c8fb6f0b812ee">max_iterations_</a></td></tr>
-<tr class="memitem:a811b4f753afb26a9545c6d6a7daaa771"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a811b4f753afb26a9545c6d6a7daaa771">gradient_error_</a></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="ad45c6efbe0fd8dcfc64c743a6e458f7a"></a>
@@ -166,69 +161,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>speed of descent </p>
 
 </div>
 </div>
-<a class="anchor" id="a5cc06d8e3e44467aee8f75e026d0cec7"></a>
+<a class="anchor" id="a51d6c78ec33344903c840622272c6454"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#ad45c6efbe0fd8dcfc64c743a6e458f7a">optimization::GradientDescentSolver::GET_SET</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">max_iterations&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3c1da34bfdd50e7dd917709b0046569e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_gradient_descent_solver.html#ad45c6efbe0fd8dcfc64c743a6e458f7a">optimization::GradientDescentSolver::GET_SET</a> </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">gradient_error&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aced8b7de8057cd235672019de63c47f3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> <a class="el" href="classoptimization_1_1_gradient_descent_solver.html#aced8b7de8057cd235672019de63c47f3">optimization::GradientDescentSolver::selectNextPoint</a> </td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_state.html">State</a> <a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a51d6c78ec33344903c840622272c6454">optimization::GradientDescentSolver::selectNextPoint</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> &amp;&#160;</td>
           <td class="paramname"><em>function</em>, </td>
@@ -236,20 +178,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;&#160;</td>
+          <td class="paramtype">const Set &amp;&#160;</td>
           <td class="paramname"><em>set</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>current_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iteration</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,79 +195,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>iteration process, different in different algorithms </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>current iteration process state </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="classoptimization_1_1_iteration_solver.html#a7f3cbdd56d28368d9ac5be3bc1bfa6bc">optimization::IterationSolver&lt; DifferentiableFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af3b99c36555af8747781d649ebabecb9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classoptimization_1_1_gradient_descent_solver.html#af3b99c36555af8747781d649ebabecb9">optimization::GradientDescentSolver::stop</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> &amp;&#160;</td>
-          <td class="paramname"><em>function</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_set.html">Set</a> &amp;&#160;</td>
-          <td class="paramname"><em>set</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>current_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iteration</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [private, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_iteration_solver.html#a373011e3b54263cce66c14535e70e5d1">optimization::IterationSolver&lt; DifferentiableFunction &gt;</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_iteration_solver.html#a5cc4d7c415077ddaf974d840fd769be8">optimization::IterationSolver&lt; DifferentiableFunction &gt;</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a811b4f753afb26a9545c6d6a7daaa771"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classoptimization_1_1_gradient_descent_solver.html#a811b4f753afb26a9545c6d6a7daaa771">optimization::GradientDescentSolver::gradient_error_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa5d3b8708d9f98bf2b6c8fb6f0b812ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classoptimization_1_1_gradient_descent_solver.html#aa5d3b8708d9f98bf2b6c8fb6f0b812ee">optimization::GradientDescentSolver::max_iterations_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a2013cb48772b16d3902eb11a443604ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +229,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 29 2013 13:27:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 1 2013 21:57:00 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

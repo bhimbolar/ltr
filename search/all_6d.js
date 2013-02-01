@@ -21,7 +21,7 @@ var searchData=
   ['max_5finit_5fdepth_5f',['max_init_depth_',['../classltr_1_1gp_1_1_g_p_learner.html#a474e960c6e8a105ec8511c0fe7c636cc',1,'ltr::gp::GPLearner']]],
   ['max_5fiteration',['max_iteration',['../classoptimization_1_1_iteration_stop_criterion.html#a67cd6ea5e73f0abfd07bcb626a66f213',1,'optimization::IterationStopCriterion']]],
   ['max_5fiteration_5f',['max_iteration_',['../classoptimization_1_1_iteration_stop_criterion.html#a3ad30e145a5ece7e854252eb3075b99d',1,'optimization::IterationStopCriterion']]],
-  ['max_5fiterations_5f',['max_iterations_',['../classoptimization_1_1_gradient_descent_solver.html#aa5d3b8708d9f98bf2b6c8fb6f0b812ee',1,'optimization::GradientDescentSolver::max_iterations_()'],['../classoptimization_1_1_simulated_annealing_solver.html#ac2f461b4bee02641107ed730790057db',1,'optimization::SimulatedAnnealingSolver::max_iterations_()']]],
+  ['max_5fiterations_5f',['max_iterations_',['../classoptimization_1_1_simulated_annealing_solver.html#ac2f461b4bee02641107ed730790057db',1,'optimization::SimulatedAnnealingSolver']]],
   ['max_5flabel_5f',['max_label_',['../classltr_1_1_g_m_r_r.html#ac220b75a5afc1859fa30e34638fa82ca',1,'ltr::GMRR::max_label_()'],['../classltr_1_1_p_found.html#a32fed183331b5c05eef4328b3fc8696b',1,'ltr::PFound::max_label_()']]],
   ['max_5fregeneration_5fdepth_5f',['max_regeneration_depth_',['../classltr_1_1gp_1_1_default_mutation_standard_strategy.html#a5329914dca0a9592c5b83bc2d349687d',1,'ltr::gp::DefaultMutationStandardStrategy']]],
   ['max_5fweight_5fpredictions_5faggregator_2ecc',['max_weight_predictions_aggregator.cc',['../max__weight__predictions__aggregator_8cc.html',1,'']]],
