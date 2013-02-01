@@ -1,6 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="5,80,232,107"/>
-<area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="256,80,501,107"/>
-<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="525,80,712,107"/>
-<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="736,80,973,107"/>
+<area shape="rect" href="$parse__arff_8cc.html" title="ltr/data/utility/parsers/parse_arff.cc" alt="" coords="5,80,227,107"/>
+<area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="251,80,477,107"/>
+<area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="501,80,747,107"/>
+<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="771,80,957,107"/>
+<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="981,80,1219,107"/>
 </map>
