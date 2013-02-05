@@ -133,26 +133,26 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1c153714cd742929daef497d967b1842"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_factory.html">Factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a1c153714cd742929daef497d967b1842">instance</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a59b16b1574183b7b823a192562e61aa1"><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map<br class="typebreak"/>
-&lt; string, <a class="el" href="class_factory_1_1_abstract_creator.html#a06cb8fc5017b6f129a394de297cd158a">AbstractCreator::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a59b16b1574183b7b823a192562e61aa1">NameCreatorHash</a></td></tr>
+<tr class="memitem:a1ce68b0c7400398718065e1ac8c6682d"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; string, <br class="typebreak"/>
+<a class="el" href="class_factory_1_1_abstract_creator.html#a06cb8fc5017b6f129a394de297cd158a">AbstractCreator::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a1ce68b0c7400398718065e1ac8c6682d">NameCreatorHash</a></td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a91f84520900307ce294c03e992812d55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a91f84520900307ce294c03e992812d55">Factory</a> (const <a class="el" href="class_factory.html">Factory</a> &amp;)</td></tr>
 <tr class="memitem:a49797aea73328fbc508e842ef7285b1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_factory.html">Factory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a49797aea73328fbc508e842ef7285b1a">operator=</a> (const <a class="el" href="class_factory.html">Factory</a> &amp;)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0f677e278f374d35a789c7f2a8642a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_factory.html#a59b16b1574183b7b823a192562e61aa1">NameCreatorHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a0f677e278f374d35a789c7f2a8642a13">name_creators_</a></td></tr>
+<tr class="memitem:a0f677e278f374d35a789c7f2a8642a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_factory.html#a1ce68b0c7400398718065e1ac8c6682d">NameCreatorHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a0f677e278f374d35a789c7f2a8642a13">name_creators_</a></td></tr>
 <tr><td colspan="2"><h2><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a820e8b9987d55a4d291c3460f753213f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_factory.html">Factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_factory.html#a820e8b9987d55a4d291c3460f753213f">self_</a> = NULL</td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a59b16b1574183b7b823a192562e61aa1"></a>
+<a class="anchor" id="a1ce68b0c7400398718065e1ac8c6682d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::unordered_map&lt;string, <a class="el" href="class_factory_1_1_abstract_creator.html#a06cb8fc5017b6f129a394de297cd158a">AbstractCreator::Ptr</a>&gt; <a class="el" href="class_factory.html#a59b16b1574183b7b823a192562e61aa1">Factory::NameCreatorHash</a><code> [private]</code></td>
+          <td class="memname">typedef std::map&lt;string, <a class="el" href="class_factory_1_1_abstract_creator.html#a06cb8fc5017b6f129a394de297cd158a">AbstractCreator::Ptr</a>&gt; <a class="el" href="class_factory.html#a1ce68b0c7400398718065e1ac8c6682d">Factory::NameCreatorHash</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -296,7 +296,7 @@ template&lt;class Base , class Derived &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_factory.html#a59b16b1574183b7b823a192562e61aa1">NameCreatorHash</a> <a class="el" href="class_factory.html#a0f677e278f374d35a789c7f2a8642a13">Factory::name_creators_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="class_factory.html#a1ce68b0c7400398718065e1ac8c6682d">NameCreatorHash</a> <a class="el" href="class_factory.html#a0f677e278f374d35a789c7f2a8642a13">Factory::name_creators_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -325,7 +325,7 @@ template&lt;class Base , class Derived &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 2 2013 00:42:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2013 23:52:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

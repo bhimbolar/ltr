@@ -1,20 +1,20 @@
 <map id="G" name="G">
 <area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="43,229,229,256"/>
-<area shape="rect" href="$reciprocal__rank_8h.html" title="ltr/measures/reciprocal_rank.h" alt="" coords="565,80,760,107"/>
-<area shape="rect" href="$measure__utility_8h.html" title="ltr/measures/utils/measure_utility.h" alt="" coords="1379,155,1603,181"/>
-<area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="844,155,1001,181"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1271,379,1407,405"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1629,453,1741,480"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1376,528,1531,555"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1173,528,1352,555"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1509,379,1648,405"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1428,229,1553,256"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="853,304,997,331"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="508,229,697,256"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="595,453,896,480"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="721,229,860,256"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="2061,379,2203,405"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1528,304,1723,331"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="2019,453,2144,480"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="696,528,835,555"/>
+<area shape="rect" href="$reciprocal__rank_8h.html" title="ltr/measures/reciprocal_rank.h" alt="" coords="551,80,745,107"/>
+<area shape="rect" href="$measure__utility_8h.html" title="ltr/measures/utils/measure_utility.h" alt="" coords="1420,155,1644,181"/>
+<area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="815,155,972,181"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1177,379,1313,405"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1491,453,1603,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1261,528,1416,555"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1059,528,1237,555"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1388,379,1527,405"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1469,229,1595,256"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="861,304,1005,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="507,229,696,256"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="557,453,859,480"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="771,229,909,256"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1823,379,1964,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1435,304,1629,331"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1931,453,2056,480"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="608,528,747,555"/>
 </map>

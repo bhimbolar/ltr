@@ -109,60 +109,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;list&gt;</span>
-<a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;boost/unordered_map.hpp&gt;</span> <span class="comment">// NOLINT</span>
-<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;boost/unordered_set.hpp&gt;</span> <span class="comment">// NOLINT</span>
-<a name="l00011"></a>00011 
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;tinyxml/tinyxml.h&quot;</span>
-<a name="l00013"></a>00013 
-<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="parameters__container_8h.html">ltr/parameters_container/parameters_container.h</a>&quot;</span>
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="crossvalidation__launch__info_8h.html">ltr_client/utility/crossvalidation_launch_info.h</a>&quot;</span>
-<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="data__info_8h.html">ltr_client/utility/data_info.h</a>&quot;</span>
-<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="train__launch__info_8h.html">ltr_client/utility/train_launch_info.h</a>&quot;</span>
-<a name="l00019"></a>00019 <span class="preprocessor">#include &quot;<a class="code" href="parameterized__info_8h.html">ltr_client/utility/parameterized_info.h</a>&quot;</span>
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="keyword">using</span> std::string;
-<a name="l00022"></a>00022 <span class="keyword">using</span> std::auto_ptr;
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;memory&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;tinyxml/tinyxml.h&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="parameters__container_8h.html">ltr/parameters_container/parameters_container.h</a>&quot;</span>
+<a name="l00014"></a>00014 
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="crossvalidation__launch__info_8h.html">ltr_client/utility/crossvalidation_launch_info.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="data__info_8h.html">ltr_client/utility/data_info.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="train__launch__info_8h.html">ltr_client/utility/train_launch_info.h</a>&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#include &quot;<a class="code" href="parameterized__info_8h.html">ltr_client/utility/parameterized_info.h</a>&quot;</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 <span class="keyword">using</span> std::string;
+<a name="l00021"></a>00021 <span class="keyword">using</span> std::auto_ptr;
+<a name="l00022"></a>00022 <span class="keyword">using</span> std::map;
 <a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">00024</a> <span class="keyword">class </span><a class="code" href="class_tag_handler.html">TagHandler</a>;
+<a name="l00024"></a><a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">00024</a> <span class="keyword">class </span><a class="code" href="class_tag_handler.html">TagHandler</a>;
 <a name="l00025"></a>00025 
-<a name="l00026"></a>00026 <span class="keyword">typedef</span> boost::unordered_map&lt;string, TagHandler*&gt; <a class="code" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a>;
+<a name="l00026"></a>00026 <span class="keyword">typedef</span> map&lt;string, TagHandler*&gt; <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>;
 <a name="l00027"></a>00027 
 <a name="l00031"></a><a class="code" href="class_config_parser.html">00031</a> <span class="keyword">class </span><a class="code" href="class_config_parser.html">ConfigParser</a> {
 <a name="l00032"></a>00032  <span class="keyword">public</span>:
-<a name="l00033"></a><a class="code" href="class_config_parser.html#a5de9ecd4cb57f9ac913766fef50a742a">00033</a>   <span class="keyword">typedef</span> boost::unordered_map&lt;string, DataInfo&gt; <a class="code" href="class_config_parser.html#a5de9ecd4cb57f9ac913766fef50a742a">DataInfos</a>;
-<a name="l00034"></a><a class="code" href="class_config_parser.html#aa2251e547d03816b266cff8e9e70319d">00034</a>   <span class="keyword">typedef</span> boost::unordered_map&lt;string, ParameterizedInfo&gt; <a class="code" href="class_config_parser.html#aa2251e547d03816b266cff8e9e70319d">ParameterizedInfos</a>;
-<a name="l00035"></a><a class="code" href="class_config_parser.html#a8ace9b68ceda5028e0767ff8552287f7">00035</a>   <span class="keyword">typedef</span> boost::unordered_map&lt;string, TrainLaunchInfo&gt; <a class="code" href="class_config_parser.html#a8ace9b68ceda5028e0767ff8552287f7">TrainInfos</a>;
-<a name="l00036"></a>00036   <span class="keyword">typedef</span> boost::unordered_map&lt;string, CrossvalidationLaunchInfo&gt;
-<a name="l00037"></a><a class="code" href="class_config_parser.html#ab1d34bdaabffb56c9f3e9327bc731f7d">00037</a>     <a class="code" href="class_config_parser.html#ab1d34bdaabffb56c9f3e9327bc731f7d">CrossvalidationInfos</a>;
+<a name="l00033"></a><a class="code" href="class_config_parser.html#a0fd2697a121fff9528e1b1634c011876">00033</a>   <span class="keyword">typedef</span> map&lt;string, DataInfo&gt; <a class="code" href="class_config_parser.html#a0fd2697a121fff9528e1b1634c011876">DataInfos</a>;
+<a name="l00034"></a><a class="code" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">00034</a>   <span class="keyword">typedef</span> map&lt;string, ParameterizedInfo&gt; <a class="code" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ParameterizedInfos</a>;
+<a name="l00035"></a><a class="code" href="class_config_parser.html#a78065ff649f8658fa8b944efaaf7de90">00035</a>   <span class="keyword">typedef</span> map&lt;string, TrainLaunchInfo&gt; <a class="code" href="class_config_parser.html#a78065ff649f8658fa8b944efaaf7de90">TrainInfos</a>;
+<a name="l00036"></a>00036   <span class="keyword">typedef</span> map&lt;string, CrossvalidationLaunchInfo&gt;
+<a name="l00037"></a><a class="code" href="class_config_parser.html#a7884e86baf490e1e6419e2ceb0ab6667">00037</a>     <a class="code" href="class_config_parser.html#a7884e86baf490e1e6419e2ceb0ab6667">CrossvalidationInfos</a>;
 <a name="l00041"></a>00041   <a class="code" href="class_config_parser.html#adbda5b88fefbabf0986325056bcb0af5">ConfigParser</a>();
 <a name="l00045"></a>00045   <a class="code" href="class_config_parser.html#a47fc5318cbdeddb0645bedaf4c38ab2e">~ConfigParser</a>();
 <a name="l00050"></a>00050   <span class="keywordtype">void</span> <a class="code" href="class_config_parser.html#a416cb2a202f688a20558c0bb61233623">parseConfig</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; file_name);
 <a name="l00051"></a>00051 
-<a name="l00056"></a>00056   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#a5de9ecd4cb57f9ac913766fef50a742a">DataInfos</a>&amp; <a class="code" href="class_config_parser.html#aa596d0d10abb0f6a3b9af2947600f544">dataInfos</a>() <span class="keyword">const</span>;
-<a name="l00061"></a>00061   <a class="code" href="class_config_parser.html#a5de9ecd4cb57f9ac913766fef50a742a">DataInfos</a>&amp; <a class="code" href="class_config_parser.html#aa596d0d10abb0f6a3b9af2947600f544">dataInfos</a>();
-<a name="l00066"></a>00066   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#aa2251e547d03816b266cff8e9e70319d">ParameterizedInfos</a>&amp; <a class="code" href="class_config_parser.html#a2e8e86f0b9ea5c8cd11253ada2602524">xmlTokenSpecs</a>() <span class="keyword">const</span>;
-<a name="l00071"></a>00071   <a class="code" href="class_config_parser.html#aa2251e547d03816b266cff8e9e70319d">ParameterizedInfos</a>&amp; <a class="code" href="class_config_parser.html#a2e8e86f0b9ea5c8cd11253ada2602524">xmlTokenSpecs</a>();
-<a name="l00076"></a>00076   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#a8ace9b68ceda5028e0767ff8552287f7">TrainInfos</a>&amp; <a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>() <span class="keyword">const</span>;
-<a name="l00081"></a>00081   <a class="code" href="class_config_parser.html#a8ace9b68ceda5028e0767ff8552287f7">TrainInfos</a>&amp; <a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>();
-<a name="l00086"></a>00086   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#ab1d34bdaabffb56c9f3e9327bc731f7d">CrossvalidationInfos</a>&amp; <a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>() <span class="keyword">const</span>;
-<a name="l00091"></a>00091   <a class="code" href="class_config_parser.html#ab1d34bdaabffb56c9f3e9327bc731f7d">CrossvalidationInfos</a>&amp; <a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>();
+<a name="l00056"></a>00056   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#a0fd2697a121fff9528e1b1634c011876">DataInfos</a>&amp; <a class="code" href="class_config_parser.html#aa596d0d10abb0f6a3b9af2947600f544">dataInfos</a>() <span class="keyword">const</span>;
+<a name="l00061"></a>00061   <a class="code" href="class_config_parser.html#a0fd2697a121fff9528e1b1634c011876">DataInfos</a>&amp; <a class="code" href="class_config_parser.html#aa596d0d10abb0f6a3b9af2947600f544">dataInfos</a>();
+<a name="l00066"></a>00066   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ParameterizedInfos</a>&amp; <a class="code" href="class_config_parser.html#a2e8e86f0b9ea5c8cd11253ada2602524">xmlTokenSpecs</a>() <span class="keyword">const</span>;
+<a name="l00071"></a>00071   <a class="code" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ParameterizedInfos</a>&amp; <a class="code" href="class_config_parser.html#a2e8e86f0b9ea5c8cd11253ada2602524">xmlTokenSpecs</a>();
+<a name="l00076"></a>00076   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#a78065ff649f8658fa8b944efaaf7de90">TrainInfos</a>&amp; <a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>() <span class="keyword">const</span>;
+<a name="l00081"></a>00081   <a class="code" href="class_config_parser.html#a78065ff649f8658fa8b944efaaf7de90">TrainInfos</a>&amp; <a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>();
+<a name="l00086"></a>00086   <span class="keyword">const</span> <a class="code" href="class_config_parser.html#a7884e86baf490e1e6419e2ceb0ab6667">CrossvalidationInfos</a>&amp; <a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>() <span class="keyword">const</span>;
+<a name="l00091"></a>00091   <a class="code" href="class_config_parser.html#a7884e86baf490e1e6419e2ceb0ab6667">CrossvalidationInfos</a>&amp; <a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>();
 <a name="l00098"></a>00098   <span class="keyword">const</span> <a class="code" href="class_parameterized_info.html">ParameterizedInfo</a>&amp; <a class="code" href="class_config_parser.html#a72bce5a85d418445aec5f45ea26dc4c8">findParameterized</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name) <span class="keyword">const</span>;
 <a name="l00105"></a>00105   <span class="keyword">const</span> <a class="code" href="struct_data_info.html">DataInfo</a>&amp; <a class="code" href="class_config_parser.html#aad04b4db50cd7d28830145a601cb73b2">findData</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name) <span class="keyword">const</span>;
 <a name="l00110"></a>00110   <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <a class="code" href="class_config_parser.html#ab9074e73bfde25f145d43f44c40f86ef">rootPath</a>() <span class="keyword">const</span>;
 <a name="l00111"></a>00111 
 <a name="l00112"></a>00112  <span class="keyword">private</span>:
-<a name="l00113"></a><a class="code" href="class_config_parser.html#a5c522ba5cdc87fcb89447a75bdf3f85f">00113</a>   <a class="code" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a> <a class="code" href="class_config_parser.html#a5c522ba5cdc87fcb89447a75bdf3f85f">tag_handlers_</a>;
+<a name="l00113"></a><a class="code" href="class_config_parser.html#a5c522ba5cdc87fcb89447a75bdf3f85f">00113</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_config_parser.html#a5c522ba5cdc87fcb89447a75bdf3f85f">tag_handlers_</a>;
 <a name="l00114"></a><a class="code" href="class_config_parser.html#a95e5cd0415a185cc5984ea6e270d344d">00114</a>   <a class="code" href="class_tag_handler.html">TagHandler</a>* <a class="code" href="class_config_parser.html#a95e5cd0415a185cc5984ea6e270d344d">general_xml_token_</a>;
 <a name="l00115"></a>00115 
 <a name="l00116"></a><a class="code" href="class_config_parser.html#a343845514c69f0e325743179a04023ee">00116</a>   auto_ptr&lt;TiXmlDocument&gt; <a class="code" href="class_config_parser.html#a343845514c69f0e325743179a04023ee">document_</a>;
 <a name="l00117"></a><a class="code" href="class_config_parser.html#aef23e045e0844fc4ba14bae755632a4b">00117</a>   TiXmlElement* <a class="code" href="class_config_parser.html#aef23e045e0844fc4ba14bae755632a4b">root_</a>;
 <a name="l00118"></a><a class="code" href="class_config_parser.html#a616f842e7e610a6d6b91c283565bc997">00118</a>   <span class="keywordtype">string</span> <a class="code" href="class_config_parser.html#a616f842e7e610a6d6b91c283565bc997">root_path_</a>;
-<a name="l00119"></a><a class="code" href="class_config_parser.html#ae923904392fd2d73ee6c7c123e4648b4">00119</a>   <a class="code" href="class_config_parser.html#a5de9ecd4cb57f9ac913766fef50a742a">ConfigParser::DataInfos</a> <a class="code" href="class_config_parser.html#ae923904392fd2d73ee6c7c123e4648b4">data_infos_</a>;
-<a name="l00120"></a><a class="code" href="class_config_parser.html#a2c4f2488da83b03b0d392975df3a1cda">00120</a>   <a class="code" href="class_config_parser.html#aa2251e547d03816b266cff8e9e70319d">ConfigParser::ParameterizedInfos</a> <a class="code" href="class_config_parser.html#a2c4f2488da83b03b0d392975df3a1cda">xml_token_specs</a>;
-<a name="l00121"></a><a class="code" href="class_config_parser.html#a7da7b1c83f78d8c73eff90830d53a804">00121</a>   <a class="code" href="class_config_parser.html#a8ace9b68ceda5028e0767ff8552287f7">ConfigParser::TrainInfos</a> <a class="code" href="class_config_parser.html#a7da7b1c83f78d8c73eff90830d53a804">train_infos</a>;
-<a name="l00122"></a><a class="code" href="class_config_parser.html#a39793fac60d08efaed2937125a684ce8">00122</a>   <a class="code" href="class_config_parser.html#ab1d34bdaabffb56c9f3e9327bc731f7d">ConfigParser::CrossvalidationInfos</a> <a class="code" href="class_config_parser.html#a39793fac60d08efaed2937125a684ce8">crossvalidation_infos</a>;
+<a name="l00119"></a><a class="code" href="class_config_parser.html#ae923904392fd2d73ee6c7c123e4648b4">00119</a>   <a class="code" href="class_config_parser.html#a0fd2697a121fff9528e1b1634c011876">ConfigParser::DataInfos</a> <a class="code" href="class_config_parser.html#ae923904392fd2d73ee6c7c123e4648b4">data_infos_</a>;
+<a name="l00120"></a><a class="code" href="class_config_parser.html#a2c4f2488da83b03b0d392975df3a1cda">00120</a>   <a class="code" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> <a class="code" href="class_config_parser.html#a2c4f2488da83b03b0d392975df3a1cda">xml_token_specs</a>;
+<a name="l00121"></a><a class="code" href="class_config_parser.html#a7da7b1c83f78d8c73eff90830d53a804">00121</a>   <a class="code" href="class_config_parser.html#a78065ff649f8658fa8b944efaaf7de90">ConfigParser::TrainInfos</a> <a class="code" href="class_config_parser.html#a7da7b1c83f78d8c73eff90830d53a804">train_infos</a>;
+<a name="l00122"></a><a class="code" href="class_config_parser.html#a39793fac60d08efaed2937125a684ce8">00122</a>   <a class="code" href="class_config_parser.html#a7884e86baf490e1e6419e2ceb0ab6667">ConfigParser::CrossvalidationInfos</a> <a class="code" href="class_config_parser.html#a39793fac60d08efaed2937125a684ce8">crossvalidation_infos</a>;
 <a name="l00123"></a>00123 };
 <a name="l00124"></a>00124 
 <a name="l00125"></a>00125 <span class="keyword">class </span><a class="code" href="class_parameterized_info.html">ParameterizedInfo</a>;
@@ -172,7 +172,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 2 2013 00:42:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2013 23:52:53 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

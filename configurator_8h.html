@@ -107,8 +107,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;list&gt;</code><br/>
-<code>#include &lt;boost/unordered_map.hpp&gt;</code><br/>
-<code>#include &lt;boost/unordered_set.hpp&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
 <code>#include &quot;tinyxml/tinyxml.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="parameters__container_8h_source.html">ltr/parameters_container/parameters_container.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="crossvalidation__launch__info_8h_source.html">ltr_client/utility/crossvalidation_launch_info.h</a>&quot;</code><br/>
@@ -120,7 +120,7 @@ Include dependency graph for configurator.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="configurator_8h__incl.png" border="0" usemap="#ltr__client_2configurator_8h" alt=""/></div>
 <map name="ltr__client_2configurator_8h" id="ltr__client_2configurator_8h">
-<area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="457,155,759,181"/><area shape="rect" href="crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="1087,80,1364,107"/><area shape="rect" href="data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="1036,155,1207,181"/><area shape="rect" href="train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="1439,80,1655,107"/><area shape="rect" href="parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="672,80,901,107"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="208,229,347,256"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="5,229,184,256"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="371,229,525,256"/></map>
+<area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="343,155,644,181"/><area shape="rect" href="crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="1171,80,1448,107"/><area shape="rect" href="data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="1016,155,1187,181"/><area shape="rect" href="train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="931,80,1147,107"/><area shape="rect" href="parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="627,80,856,107"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="440,229,579,256"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="237,229,416,256"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="603,229,757,256"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -137,16 +137,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config_parser.html">ConfigParser</a></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7492254ae218922f7bd3a5b8e9693362"><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map<br class="typebreak"/>
-&lt; string, <a class="el" href="class_tag_handler.html">TagHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a></td></tr>
+<tr class="memitem:a89118a56eb6da0cc513c2204ea73ad3e"><td class="memItemLeft" align="right" valign="top">typedef map&lt; string, <a class="el" href="class_tag_handler.html">TagHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a></td></tr>
 </table>
 <hr/><h2>Typedef Documentation</h2>
-<a class="anchor" id="a7492254ae218922f7bd3a5b8e9693362"></a>
+<a class="anchor" id="a89118a56eb6da0cc513c2204ea73ad3e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::unordered_map&lt;string, <a class="el" href="class_tag_handler.html">TagHandler</a>*&gt; <a class="el" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a></td>
+          <td class="memname">typedef map&lt;string, <a class="el" href="class_tag_handler.html">TagHandler</a>*&gt; <a class="el" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a></td>
         </tr>
       </table>
 </div>
@@ -158,7 +157,7 @@ Typedefs</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 2 2013 00:42:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2013 23:52:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

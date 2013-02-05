@@ -38,7 +38,7 @@ var searchData=
   ['measure_5funittest_2ecc',['measure_unittest.cc',['../measure__unittest_8cc.html',1,'']]],
   ['measure_5futility_2ecc',['measure_utility.cc',['../measure__utility_8cc.html',1,'']]],
   ['measure_5futility_2eh',['measure_utility.h',['../measure__utility_8h.html',1,'']]],
-  ['measures',['measures',['../struct_crossvalidation_launch_info.html#ab766e2b6cf118b01c5a386a8931aee4b',1,'CrossvalidationLaunchInfo']]],
+  ['measures',['measures',['../struct_crossvalidation_launch_info.html#a16f59e6fd569336dc5937d1511df5013',1,'CrossvalidationLaunchInfo']]],
   ['meta',['META',['../classltr_1_1io__utility_1_1_parser.html#a10138b27d311b6662e87d6faf2bd9dc3a0a2a69f80d915e1956a9fcc8798ac040',1,'ltr::io_utility::Parser']]],
   ['meta_5ffeatures_5f',['meta_features_',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2',1,'ltr::io_utility::ARFFParser']]],
   ['meta_5finfo_5f',['meta_info_',['../classltr_1_1_object.html#a37e9cc1ce6f803bd000c625a9f1e6afb',1,'ltr::Object']]],

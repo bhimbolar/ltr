@@ -10,7 +10,7 @@ var searchData=
   ['learner',['learner',['../struct_train_launch_info.html#a6b723431be47811b6da7ba80fd468081',1,'TrainLaunchInfo']]],
   ['learner_5f',['learner_',['../classltr_1_1cv_1_1_cross_validator.html#a4014f8ad689ef7f1c387d367358005e6',1,'ltr::cv::CrossValidator']]],
   ['learner_5fexecutor',['learner_executor',['../class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6',1,'OnCrossvalidationTag']]],
-  ['learners',['learners',['../struct_crossvalidation_launch_info.html#aa4c4992b6281d00b52dbb30b4dc478fb',1,'CrossvalidationLaunchInfo']]],
+  ['learners',['learners',['../struct_crossvalidation_launch_info.html#a1fa1f60692b0d3426d295f748b7a000c',1,'CrossvalidationLaunchInfo']]],
   ['left_5ffeature_5fvalue_5fbound_5f',['left_feature_value_bound_',['../classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf',1,'ltr::decision_tree::ThresholdCondition']]],
   ['linear_5fbiases_5f',['linear_biases_',['../classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572',1,'ltr::FisherDiscriminant']]],
   ['linear_5ffactors_5f',['linear_factors_',['../classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703',1,'ltr::FisherDiscriminant']]]

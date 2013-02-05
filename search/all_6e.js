@@ -4,7 +4,7 @@ var searchData=
   ['name_5fcreators_5f',['name_creators_',['../class_factory.html#a0f677e278f374d35a789c7f2a8642a13',1,'Factory']]],
   ['name_5fstorage',['name_storage',['../registration_8h.html#a40f74be00c63c4b72d18afcf409f2a2c',1,'registration.h']]],
   ['name_5fvalue_5fhash_5f',['name_value_hash_',['../classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17',1,'ltr::ParametersContainer']]],
-  ['namecreatorhash',['NameCreatorHash',['../class_factory.html#a59b16b1574183b7b823a192562e61aa1',1,'Factory']]],
+  ['namecreatorhash',['NameCreatorHash',['../class_factory.html#a1ce68b0c7400398718065e1ac8c6682d',1,'Factory']]],
   ['namevalue',['NameValue',['../structltr_1_1_parameters_container_1_1_name_value.html',1,'ltr::ParametersContainer']]],
   ['namevalue',['NameValue',['../structltr_1_1_parameters_container_1_1_name_value.html#aaed1a1cb7d728d2e1c5f96f6e86127d1',1,'ltr::ParametersContainer::NameValue']]],
   ['nan_5fto_5faverage_5flearner_2eh',['nan_to_average_learner.h',['../nan__to__average__learner_8h.html',1,'']]],

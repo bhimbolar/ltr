@@ -106,15 +106,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ltr_client/utility/tag_handlers.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="lexical__cast_8h_source.html">ltr/utility/boost/lexical_cast.h</a>&quot;</code><br/>
-<code>#include &lt;iostream&gt;</code><br/>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &quot;<a class="el" href="lexical__cast_8h_source.html">ltr/utility/boost/lexical_cast.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="string__utils_8h_source.html">ltr/utility/boost/string_utils.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for tag_handlers.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="tag__handlers_8h__incl.png" border="0" usemap="#ltr__client_2utility_2tag__handlers_8h" alt=""/></div>
 <map name="ltr__client_2utility_2tag__handlers_8h" id="ltr__client_2utility_2tag__handlers_8h">
-<area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="41,80,228,107"/></map>
+<area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="101,80,288,107"/><area shape="rect" href="string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="363,80,544,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -144,11 +146,11 @@ Classes</h2></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a6e89264d215ce529dca7f9ed848ec6ee"><td class="memItemLeft" align="right" valign="top">typedef string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tag__handlers_8h.html#a6e89264d215ce529dca7f9ed848ec6ee">ParameterizedDependency</a></td></tr>
-<tr class="memitem:a7492254ae218922f7bd3a5b8e9693362"><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map<br class="typebreak"/>
-&lt; string, <a class="el" href="class_tag_handler.html">TagHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tag__handlers_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a></td></tr>
+<tr class="memitem:a5cbdcc67a1b65693208c98829bdad17d"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; string, <br class="typebreak"/>
+<a class="el" href="class_tag_handler.html">TagHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tag__handlers_8h.html#a5cbdcc67a1b65693208c98829bdad17d">TagHandlers</a></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0bc92e7d51a37cbd67c4ea37b1447318"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a> (const <a class="el" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a> &amp;parsers, TiXmlNode *xmlNode, <a class="el" href="class_tag_handler.html">TagHandler</a> *on_unknown_token=NULL)</td></tr>
+<tr class="memitem:a0bc92e7d51a37cbd67c4ea37b1447318"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a> (const <a class="el" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> &amp;parsers, TiXmlNode *xmlNode, <a class="el" href="class_tag_handler.html">TagHandler</a> *on_unknown_token=NULL)</td></tr>
 </table>
 <hr/><h2>Typedef Documentation</h2>
 <a class="anchor" id="a6e89264d215ce529dca7f9ed848ec6ee"></a>
@@ -164,12 +166,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7492254ae218922f7bd3a5b8e9693362"></a>
+<a class="anchor" id="a5cbdcc67a1b65693208c98829bdad17d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::unordered_map&lt;string, <a class="el" href="class_tag_handler.html">TagHandler</a>*&gt; <a class="el" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a></td>
+          <td class="memname">typedef std::map&lt;string, <a class="el" href="class_tag_handler.html">TagHandler</a>*&gt; <a class="el" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a></td>
         </tr>
       </table>
 </div>
@@ -185,7 +187,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static void <a class="el" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="configurator_8h.html#a7492254ae218922f7bd3a5b8e9693362">TagHandlers</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> &amp;&#160;</td>
           <td class="paramname"><em>parsers</em>, </td>
         </tr>
         <tr>
@@ -224,7 +226,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 2 2013 00:42:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2013 23:52:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

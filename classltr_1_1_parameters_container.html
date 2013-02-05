@@ -135,8 +135,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structltr_1_1_parameters_container_1_1_name_value.html">NameValue</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a46bb32e614525838c0264e141c7fb2eb"><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map<br class="typebreak"/>
-&lt; string, <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a46bb32e614525838c0264e141c7fb2eb">StringAnyHash</a></td></tr>
+<tr class="memitem:aabdb4cfd8a572994eed4ff4791c65477"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; string, <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#aabdb4cfd8a572994eed4ff4791c65477">StringAnyHash</a></td></tr>
 <tr class="memitem:abaf8b021f41c41c82a5dca537e45ac2f"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#abaf8b021f41c41c82a5dca537e45ac2f">Ptr</a></td></tr>
@@ -172,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a032525c1ed8a27955469ab3b3c7e027d"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a032525c1ed8a27955469ab3b3c7e027d">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abe5e46b18d41154112ceb25e67030c17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_parameters_container.html#a46bb32e614525838c0264e141c7fb2eb">StringAnyHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17">name_value_hash_</a></td></tr>
+<tr class="memitem:abe5e46b18d41154112ceb25e67030c17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_parameters_container.html#aabdb4cfd8a572994eed4ff4791c65477">StringAnyHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17">name_value_hash_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>This class is a storage for parameters of different types. Is able to store POD-type parameters and user-defined-type parameters. This class is needed for unified initialization in ltr-client. </p>
@@ -191,12 +190,12 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a46bb32e614525838c0264e141c7fb2eb"></a>
+<a class="anchor" id="aabdb4cfd8a572994eed4ff4791c65477"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::unordered_map&lt;string, <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>&gt; <a class="el" href="classltr_1_1_parameters_container.html#a46bb32e614525838c0264e141c7fb2eb">ltr::ParametersContainer::StringAnyHash</a></td>
+          <td class="memname">typedef std::map&lt;string, <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>&gt; <a class="el" href="classltr_1_1_parameters_container.html#aabdb4cfd8a572994eed4ff4791c65477">ltr::ParametersContainer::StringAnyHash</a></td>
         </tr>
       </table>
 </div>
@@ -636,7 +635,7 @@ template&lt;class T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_parameters_container.html#a46bb32e614525838c0264e141c7fb2eb">StringAnyHash</a> <a class="el" href="classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17">ltr::ParametersContainer::name_value_hash_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1_parameters_container.html#aabdb4cfd8a572994eed4ff4791c65477">StringAnyHash</a> <a class="el" href="classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17">ltr::ParametersContainer::name_value_hash_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -653,7 +652,7 @@ template&lt;class T &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 2 2013 00:42:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2013 23:52:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

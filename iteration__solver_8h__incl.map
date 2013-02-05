@@ -1,13 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="1023,80,1220,107"/>
-<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="621,80,896,107"/>
-<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="768,155,992,181"/>
-<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="1016,155,1227,181"/>
-<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="1251,155,1419,181"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="391,229,692,256"/>
-<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="1121,229,1343,256"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="208,304,347,331"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="897,80,1095,107"/>
+<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="496,80,771,107"/>
+<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="643,155,867,181"/>
+<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="891,155,1101,181"/>
+<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="1125,155,1293,181"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="407,229,708,256"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="996,229,1217,256"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="600,304,739,331"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="5,304,184,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="779,304,933,331"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="921,229,1047,256"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="208,304,363,331"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="796,229,921,256"/>
 </map>

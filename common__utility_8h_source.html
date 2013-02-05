@@ -106,27 +106,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 <span class="preprocessor">#ifndef LTR_CLIENT_UTILITY_COMMON_UTILITY_H_</span>
 <a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#define LTR_CLIENT_UTILITY_COMMON_UTILITY_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span>
-<a name="l00011"></a>00011 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Key, <span class="keyword">class</span> Value&gt;
-<a name="l00012"></a><a class="code" href="common__utility_8h.html#ac9d9e386aafe0f84d86839a521f68675">00012</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="common__utility_8h.html#ac9d9e386aafe0f84d86839a521f68675">DeleteAllFromUnorderedMap</a>(
-<a name="l00013"></a>00013     boost::unordered_map&lt;Key, Value&gt;* unorderedMapInstance
-<a name="l00014"></a>00014     ) {
-<a name="l00015"></a>00015   assert(unorderedMapInstance);
-<a name="l00016"></a>00016   <span class="comment">// C++11 We have no unique_ptr so we MUST delete pointers manually</span>
-<a name="l00017"></a>00017   <span class="keywordflow">for</span> (<span class="keyword">typename</span> boost::unordered_map&lt;Key, Value&gt;::const_iterator it =
-<a name="l00018"></a>00018        unorderedMapInstance-&gt;begin();
-<a name="l00019"></a>00019        it != unorderedMapInstance-&gt;end();
-<a name="l00020"></a>00020        ++it) {
-<a name="l00021"></a>00021     <span class="keyword">delete</span> it-&gt;second;
-<a name="l00022"></a>00022   }
-<a name="l00023"></a>00023 }
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025 <span class="preprocessor">#endif //LTR_CLIENT_UTILITY_COMMON_UTILITY_H_</span>
-<a name="l00026"></a>00026 <span class="preprocessor"></span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00012"></a>00012 <span class="keyword">using</span> std::map;
+<a name="l00013"></a>00013 
+<a name="l00014"></a>00014 <span class="keyword">template</span> &lt;<span class="keyword">class</span> Key, <span class="keyword">class</span> Value&gt;
+<a name="l00015"></a><a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">00015</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(map&lt;Key, Value&gt;* mapInstance) {
+<a name="l00016"></a>00016   assert(mapInstance);
+<a name="l00017"></a>00017   <span class="comment">// C++11 We have no unique_ptr so we MUST delete pointers manually</span>
+<a name="l00018"></a>00018   <span class="keywordflow">for</span> (<span class="keyword">typename</span> map&lt;Key, Value&gt;::const_iterator it =
+<a name="l00019"></a>00019        mapInstance-&gt;begin();
+<a name="l00020"></a>00020        it != mapInstance-&gt;end();
+<a name="l00021"></a>00021        ++it) {
+<a name="l00022"></a>00022     <span class="keyword">delete</span> it-&gt;second;
+<a name="l00023"></a>00023   }
+<a name="l00024"></a>00024 }
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="preprocessor">#endif //LTR_CLIENT_UTILITY_COMMON_UTILITY_H_</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Feb 2 2013 00:42:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 5 2013 23:52:53 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
