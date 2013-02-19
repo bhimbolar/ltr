@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['g3_5ffunction_2ecc',['g3_function.cc',['../g3__function_8cc.html',1,'']]],
+  ['g3_5ffunction_2eh',['g3_function.h',['../g3__function_8h.html',1,'']]],
+  ['g3_5fset_2ecc',['g3_set.cc',['../g3__set_8cc.html',1,'']]],
+  ['g3_5fset_2eh',['g3_set.h',['../g3__set_8h.html',1,'']]],
   ['generator_2ecc',['generator.cc',['../generator_8cc.html',1,'']]],
   ['generator_5futility_2ecc',['generator_utility.cc',['../generator__utility_8cc.html',1,'']]],
   ['generator_5futility_2eh',['generator_utility.h',['../generator__utility_8h.html',1,'']]],
@@ -15,5 +19,7 @@ var searchData=
   ['gradient_5fdescent_5fsolver_2ecc',['gradient_descent_solver.cc',['../gradient__descent__solver_8cc.html',1,'']]],
   ['gradient_5fdescent_5fsolver_2eh',['gradient_descent_solver.h',['../gradient__descent__solver_8h.html',1,'']]],
   ['gradient_5fstop_5fcriterion_2ecc',['gradient_stop_criterion.cc',['../gradient__stop__criterion_8cc.html',1,'']]],
-  ['gradient_5fstop_5fcriterion_2eh',['gradient_stop_criterion.h',['../gradient__stop__criterion_8h.html',1,'']]]
+  ['gradient_5fstop_5fcriterion_2eh',['gradient_stop_criterion.h',['../gradient__stop__criterion_8h.html',1,'']]],
+  ['griewank_5ffunction_2ecc',['griewank_function.cc',['../griewank__function_8cc.html',1,'']]],
+  ['griewank_5ffunction_2eh',['griewank_function.h',['../griewank__function_8h.html',1,'']]]
 ];

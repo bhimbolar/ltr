@@ -108,6 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::Function Class Reference</div>  </div>
@@ -120,7 +121,7 @@ Inheritance diagram for optimization::Function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptimization_1_1_function__inherit__graph.png" border="0" usemap="#optimization_1_1_function_inherit__map" alt="Inheritance graph"/></div>
 <map name="optimization_1_1_function_inherit__map" id="optimization_1_1_function_inherit__map">
-<area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="95,80,319,107"/><area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="79,155,335,181"/><area shape="rect" href="classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="5,229,189,256"/><area shape="rect" href="classoptimization_1_1_quadratic_function.html" title="optimization::QuadraticFunction" alt="" coords="213,229,419,256"/></map>
+<area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="331,81,555,108"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,81,85,108"/><area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="603,81,859,108"/><area shape="rect" href="classoptimization_1_1_easom_function.html" title="optimization::EasomFunction" alt="" coords="908,5,1097,32"/><area shape="rect" href="classoptimization_1_1_g3_function.html" title="optimization::G3Function" alt="" coords="920,56,1085,83"/><area shape="rect" href="classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="911,107,1095,133"/><area shape="rect" href="classoptimization_1_1_trid_function.html" title="optimization::TridFunction" alt="" coords="917,157,1088,184"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_function-members.html">List of all members.</a></p>
@@ -128,9 +129,13 @@ Inheritance diagram for optimization::Function:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42904a00e0dd7db7d962f6eb94f1b648"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#a42904a00e0dd7db7d962f6eb94f1b648">Function</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
-<tr class="memitem:afac6205e171c75b3aecb45365b25a118"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#afac6205e171c75b3aecb45365b25a118">~Function</a> ()</td></tr>
+<tr class="memitem:a4fef545e8cad6553c46363e14659dc94"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#a4fef545e8cad6553c46363e14659dc94">~Function</a> ()</td></tr>
 <tr class="memitem:a8126347b65132a2469e13753f596fa88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a> () const </td></tr>
 <tr class="memitem:a5f276ab9807f79bc0ac6489a804f5f46"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#a5f276ab9807f79bc0ac6489a804f5f46">value</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
+<tr class="memitem:ae4055a21a457dc461046053a18ca2e33"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#ae4055a21a457dc461046053a18ca2e33">operator()</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3fc8be5700af3447229307a029f7538b"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#a3fc8be5700af3447229307a029f7538b">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3df1df649bdbc1399ed2d0c7c7ded0b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_function.html#a3df1df649bdbc1399ed2d0c7c7ded0b5">dimension_</a></td></tr>
@@ -155,15 +160,15 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afac6205e171c75b3aecb45365b25a118"></a>
+<a class="anchor" id="a4fef545e8cad6553c46363e14659dc94"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_function.html#afac6205e171c75b3aecb45365b25a118">optimization::Function::~Function</a> </td>
+          <td class="memname">virtual <a class="el" href="classoptimization_1_1_function.html#a4fef545e8cad6553c46363e14659dc94">optimization::Function::~Function</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -181,6 +186,44 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>get dimension of the function domain </p>
+
+</div>
+</div>
+<a class="anchor" id="a3fc8be5700af3447229307a029f7538b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string <a class="el" href="classoptimization_1_1_function.html#a3fc8be5700af3447229307a029f7538b">optimization::Function::getDefaultAlias</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_aliaser.html#ad724414573ec5df2cc00bb5aaa57e9d0">ltr::Aliaser</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">optimization::EasomFunction</a>, and <a class="el" href="classoptimization_1_1_trid_function.html#a07fc8ff8297730fc488ebde73e201f52">optimization::TridFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4055a21a457dc461046053a18ca2e33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double optimization::Function::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -203,7 +246,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="classoptimization_1_1_linear_function.html#aa677e0e6893d2cf1418f59c680323e9f">optimization::LinearFunction</a>, <a class="el" href="classoptimization_1_1_quadratic_function.html#a3b25803210b32a79dc4991d38bc907b6">optimization::QuadraticFunction</a>, <a class="el" href="classoptimization_1_1_differentiable_function.html#ab9c3eab6321dbe29cfc8264f87052139">optimization::DifferentiableFunction</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1bd37a4fd5ceb02ba2289d967ae3fb24">optimization::TwiceDifferentiableFunction</a>.</p>
+<p>Implemented in <a class="el" href="classoptimization_1_1_linear_function.html#aa677e0e6893d2cf1418f59c680323e9f">optimization::LinearFunction</a>, <a class="el" href="classoptimization_1_1_easom_function.html#a471612b3924cf96caf624af9bbf5781f">optimization::EasomFunction</a>, <a class="el" href="classoptimization_1_1_trid_function.html#a336b574c8206203d461e041b07923ac6">optimization::TridFunction</a>, <a class="el" href="classoptimization_1_1_g3_function.html#a94d457cfbb966db974b8fd5555d1f70b">optimization::G3Function</a>, <a class="el" href="classoptimization_1_1_differentiable_function.html#ab9c3eab6321dbe29cfc8264f87052139">optimization::DifferentiableFunction</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1bd37a4fd5ceb02ba2289d967ae3fb24">optimization::TwiceDifferentiableFunction</a>.</p>
 
 </div>
 </div>
@@ -229,7 +272,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2013 23:52:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 19 2013 10:58:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

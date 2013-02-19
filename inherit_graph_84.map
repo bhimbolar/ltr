@@ -1,7 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="5,31,155,57"/>
-<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="203,31,427,57"/>
-<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="475,31,731,57"/>
-<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="789,5,973,32"/>
-<area shape="rect" href="$classoptimization_1_1_quadratic_function.html" title="optimization::QuadraticFunction" alt="" coords="779,56,984,83"/>
+<area shape="rect" href="$struct_multi_array_traits.html" title="MultiArrayTraits\&lt; T \&gt;" alt="" coords="5,5,149,32"/>
 </map>

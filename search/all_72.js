@@ -5,8 +5,8 @@ var searchData=
   ['rand',['rand',['../classltr_1_1utility_1_1_randomizer.html#a29a7c7497f9aff836a1b12d27f1d9c29',1,'ltr::utility::Randomizer']]],
   ['random_5fnumber_5fgenerator_2ecc',['random_number_generator.cc',['../random__number__generator_8cc.html',1,'']]],
   ['random_5fnumber_5fgenerator_2eh',['random_number_generator.h',['../random__number__generator_8h.html',1,'']]],
-  ['randomizer',['Randomizer',['../classltr_1_1utility_1_1_randomizer.html#a7f447eb72cdcf6b0ded68143cf851f0e',1,'ltr::utility::Randomizer']]],
   ['randomizer',['Randomizer',['../classltr_1_1utility_1_1_randomizer.html',1,'ltr::utility']]],
+  ['randomizer',['Randomizer',['../classltr_1_1utility_1_1_randomizer.html#a7f447eb72cdcf6b0ded68143cf851f0e',1,'ltr::utility::Randomizer']]],
   ['ratio_5f',['ratio_',['../classltr_1_1_order_statistic_predictions_aggregator.html#af6038d0a5033f475f814448a7621b3c4',1,'ltr::OrderStatisticPredictionsAggregator']]],
   ['raw_5fquery_5fid_5fidx_5f',['raw_query_id_idx_',['../classltr_1_1io__utility_1_1_s_v_m_parser.html#a69df1c2e3f279517a32fa73a3a90dab7',1,'ltr::io_utility::SVMParser::raw_query_id_idx_()'],['../classltr_1_1io__utility_1_1_yandex_parser.html#a6338a9e49939e2d5e8ac910ad2348608',1,'ltr::io_utility::YandexParser::raw_query_id_idx_()']]],
   ['raw_5frelevance_5fidx_5f',['raw_relevance_idx_',['../classltr_1_1io__utility_1_1_s_v_m_parser.html#aa8baa7fc5453c8611b6f2197c17a5966',1,'ltr::io_utility::SVMParser::raw_relevance_idx_()'],['../classltr_1_1io__utility_1_1_yandex_parser.html#aa8de442471b92486fa65e737f4989f12',1,'ltr::io_utility::YandexParser::raw_relevance_idx_()']]],
@@ -33,8 +33,8 @@ var searchData=
   ['remove_5fnominal_5flearner_2eh',['remove_nominal_learner.h',['../remove__nominal__learner_8h.html',1,'']]],
   ['removenominalconverter',['RemoveNominalConverter',['../classltr_1_1_remove_nominal_converter.html#a1b2604717ea18875b3a46b934dfcc69f',1,'ltr::RemoveNominalConverter::RemoveNominalConverter(const ParametersContainer &amp;parameters)'],['../classltr_1_1_remove_nominal_converter.html#aea2883214d01778b78a2afe3100b1968',1,'ltr::RemoveNominalConverter::RemoveNominalConverter(const FeatureInfo &amp;feature_info=FeatureInfo())']]],
   ['removenominalconverter',['RemoveNominalConverter',['../classltr_1_1_remove_nominal_converter.html',1,'ltr']]],
-  ['removenominalconverterlearner',['RemoveNominalConverterLearner',['../classltr_1_1_remove_nominal_converter_learner.html#a0da2e5b5fd575118fb93aa32dc2a2800',1,'ltr::RemoveNominalConverterLearner::RemoveNominalConverterLearner(const ParametersContainer &amp;parameters)'],['../classltr_1_1_remove_nominal_converter_learner.html#ac89500142e58c907184a2be5c7ceb51b',1,'ltr::RemoveNominalConverterLearner::RemoveNominalConverterLearner()']]],
   ['removenominalconverterlearner',['RemoveNominalConverterLearner',['../classltr_1_1_remove_nominal_converter_learner.html',1,'ltr']]],
+  ['removenominalconverterlearner',['RemoveNominalConverterLearner',['../classltr_1_1_remove_nominal_converter_learner.html#a0da2e5b5fd575118fb93aa32dc2a2800',1,'ltr::RemoveNominalConverterLearner::RemoveNominalConverterLearner(const ParametersContainer &amp;parameters)'],['../classltr_1_1_remove_nominal_converter_learner.html#ac89500142e58c907184a2be5c7ceb51b',1,'ltr::RemoveNominalConverterLearner::RemoveNominalConverterLearner()']]],
   ['report',['Report',['../structserialization__test_1_1_report.html',1,'serialization_test']]],
   ['report',['Report',['../structserialization__test_1_1_report.html#a2532d4aae4f17f347d783b025eed5ff5',1,'serialization_test::Report::Report()'],['../classltr_1_1_reporter.html#a33d29d5064565d87264241d6f0616251',1,'ltr::Reporter::report()']]],
   ['report_5f',['report_',['../classltr_1_1_reporter.html#ae1b2e0b97e0183aba0c56de781700808',1,'ltr::Reporter']]],
@@ -49,5 +49,7 @@ var searchData=
   ['root_5f',['root_',['../classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28',1,'ltr::decision_tree::DecisionTree::root_()'],['../class_config_parser.html#aef23e045e0844fc4ba14bae755632a4b',1,'ConfigParser::root_()']]],
   ['root_5fpath_5f',['root_path_',['../class_config_parser.html#a616f842e7e610a6d6b91c283565bc997',1,'ConfigParser']]],
   ['rootpath',['rootPath',['../class_config_parser.html#ab9074e73bfde25f145d43f44c40f86ef',1,'ConfigParser']]],
+  ['rosenbrock_5ffunction_2ecc',['rosenbrock_function.cc',['../rosenbrock__function_8cc.html',1,'']]],
+  ['rosenbrock_5ffunction_2eh',['rosenbrock_function.h',['../rosenbrock__function_8h.html',1,'']]],
   ['rrformula',['RRFormula',['../classltr_1_1_reciprocal_rank.html#a13ddda4631d789cbcc5a7eb8125d69cc',1,'ltr::ReciprocalRank']]]
 ];

@@ -1,6 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="79,155,335,181"/>
-<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="132,5,281,32"/>
-<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="5,229,189,256"/>
-<area shape="rect" href="$classoptimization_1_1_quadratic_function.html" title="optimization::QuadraticFunction" alt="" coords="213,229,419,256"/>
+<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="603,81,859,108"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="133,81,283,108"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,81,85,108"/>
+<area shape="rect" href="$classoptimization_1_1_easom_function.html" title="optimization::EasomFunction" alt="" coords="908,5,1097,32"/>
+<area shape="rect" href="$classoptimization_1_1_g3_function.html" title="optimization::G3Function" alt="" coords="920,56,1085,83"/>
+<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="911,107,1095,133"/>
+<area shape="rect" href="$classoptimization_1_1_trid_function.html" title="optimization::TridFunction" alt="" coords="917,157,1088,184"/>
 </map>

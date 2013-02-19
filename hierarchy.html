@@ -244,6 +244,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 </ul>
 </li>
 <li><a class="el" href="classltr_1_1_measure.html">ltr::Measure&lt; TElement &gt;</a><ul>
+<li><a class="el" href="classltr_1_1_abs_error.html">ltr::AbsError</a></li>
 <li><a class="el" href="classltr_1_1_accuracy.html">ltr::Accuracy&lt; TElement &gt;</a></li>
 <li><a class="el" href="classltr_1_1_average_precision.html">ltr::AveragePrecision</a></li>
 <li><a class="el" href="classltr_1_1_base_d_c_g.html">ltr::BaseDCG&lt; TDCGFormula &gt;</a></li>
@@ -254,7 +255,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1_normalized_measure.html">ltr::NormalizedMeasure&lt; TElement &gt;</a></li>
 <li><a class="el" href="classltr_1_1_p_found.html">ltr::PFound</a></li>
 <li><a class="el" href="classltr_1_1_reciprocal_rank.html">ltr::ReciprocalRank</a></li>
-<li><a class="el" href="classltr_1_1_squared_error.html">ltr::SquaredError</a></li>
 </ul>
 </li>
 <li><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a><ul>
@@ -269,9 +269,22 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 </ul>
 </li>
 <li><a class="el" href="classltr_1_1_measure.html">ltr::Measure&lt; Object &gt;</a><ul>
-<li><a class="el" href="classltr_1_1_abs_error.html">ltr::AbsError</a></li>
 <li><a class="el" href="classltr_1_1_a_u_c.html">ltr::AUC</a></li>
+<li><a class="el" href="classltr_1_1_squared_error.html">ltr::SquaredError</a></li>
 <li><a class="el" href="classltr_1_1_true_point.html">ltr::TruePoint</a></li>
+</ul>
+</li>
+<li><a class="el" href="classoptimization_1_1_function.html">optimization::Function</a><ul>
+<li><a class="el" href="classoptimization_1_1_differentiable_function.html">optimization::DifferentiableFunction</a><ul>
+<li><a class="el" href="classoptimization_1_1_twice_differentiable_function.html">optimization::TwiceDifferentiableFunction</a><ul>
+<li><a class="el" href="classoptimization_1_1_easom_function.html">optimization::EasomFunction</a></li>
+<li><a class="el" href="classoptimization_1_1_g3_function.html">optimization::G3Function</a></li>
+<li><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></li>
+<li><a class="el" href="classoptimization_1_1_trid_function.html">optimization::TridFunction</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -299,6 +312,10 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classbrief.html">brief</a></li>
 <li><a class="el" href="classbrief.html">brief</a></li>
 <li><a class="el" href="classbrief.html">brief</a></li>
+<li><a class="el" href="classbrief.html">brief</a></li>
+<li><a class="el" href="classbrief.html">brief</a></li>
+<li><a class="el" href="classbrief.html">brief</a></li>
+<li><a class="el" href="classbrief.html">brief</a></li>
 <li><a class="el" href="class_composition_learner_test.html">CompositionLearnerTest</a></li>
 <li><a class="el" href="class_config_parser.html">ConfigParser</a></li>
 <li><a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a></li>
@@ -315,17 +332,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="class_feature_converters_learner_test.html">FeatureConvertersLearnerTest</a></li>
 <li><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></li>
 <li><a class="el" href="structltr_1_1decision__tree_1_1_feature_with_label_and_weight.html">ltr::decision_tree::FeatureWithLabelAndWeight</a></li>
-<li><a class="el" href="classoptimization_1_1_function.html">optimization::Function</a><ul>
-<li><a class="el" href="classoptimization_1_1_differentiable_function.html">optimization::DifferentiableFunction</a><ul>
-<li><a class="el" href="classoptimization_1_1_twice_differentiable_function.html">optimization::TwiceDifferentiableFunction</a><ul>
-<li><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></li>
-<li><a class="el" href="classoptimization_1_1_quadratic_function.html">optimization::QuadraticFunction</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li><a class="el" href="classltr_1_1_functor.html">ltr::Functor&lt; TValue &gt;</a><ul>
 <li><a class="el" href="classltr_1_1_serializable_functor.html">ltr::SerializableFunctor&lt; TValue &gt;</a></li>
 </ul>
@@ -536,7 +542,10 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classoptimization_1_1_iteration_solver.html">optimization::IterationSolver&lt; TFunction &gt;</a></li>
 </ul>
 </li>
-<li><a class="el" href="classoptimization_1_1_sphere_set.html">optimization::SphereSet</a></li>
+<li><a class="el" href="classoptimization_1_1_sphere_set.html">optimization::SphereSet</a><ul>
+<li><a class="el" href="classoptimization_1_1_g3_set.html">optimization::G3Set</a></li>
+</ul>
+</li>
 <li><a class="el" href="structltr_1_1cv_1_1_splitted_data_set.html">ltr::cv::SplittedDataSet&lt; TElement &gt;</a></li>
 <li><a class="el" href="class_splitter_test.html">SplitterTest</a></li>
 <li><a class="el" href="classoptimization_1_1_state.html">optimization::State</a></li>
@@ -582,7 +591,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2013 23:52:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 19 2013 10:58:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

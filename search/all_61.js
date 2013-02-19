@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['a_5f',['a_',['../classoptimization_1_1_quadratic_function.html#a08419075555da69c4889a904cb738240',1,'optimization::QuadraticFunction']]],
   ['abs_5ferror_2eh',['abs_error.h',['../abs__error_8h.html',1,'']]],
   ['abserror',['AbsError',['../classltr_1_1_abs_error.html#abf9898d1e10f2cd12b634ba9cb8fe203',1,'ltr::AbsError::AbsError()'],['../classltr_1_1_abs_error.html#a2f2b4fddbfbe1691b045de93b6bb3e1a',1,'ltr::AbsError::AbsError(const ParametersContainer &amp;parameters)']]],
   ['abserror',['AbsError',['../classltr_1_1_abs_error.html',1,'ltr']]],
@@ -76,8 +75,8 @@ var searchData=
   ['average_5fprecision_2eh',['average_precision.h',['../average__precision_8h.html',1,'']]],
   ['average_5fpredictions_5faggregator_2ecc',['average_predictions_aggregator.cc',['../average__predictions__aggregator_8cc.html',1,'']]],
   ['average_5fpredictions_5faggregator_2eh',['average_predictions_aggregator.h',['../average__predictions__aggregator_8h.html',1,'']]],
-  ['averagecompositionscorerweightsupdater',['AverageCompositionScorerWeightsUpdater',['../classltr_1_1composition_1_1_average_composition_scorer_weights_updater.html#a567a4bfaa14d5984e49132f29ea42f98',1,'ltr::composition::AverageCompositionScorerWeightsUpdater']]],
   ['averagecompositionscorerweightsupdater',['AverageCompositionScorerWeightsUpdater',['../classltr_1_1composition_1_1_average_composition_scorer_weights_updater.html',1,'ltr::composition']]],
+  ['averagecompositionscorerweightsupdater',['AverageCompositionScorerWeightsUpdater',['../classltr_1_1composition_1_1_average_composition_scorer_weights_updater.html#a567a4bfaa14d5984e49132f29ea42f98',1,'ltr::composition::AverageCompositionScorerWeightsUpdater']]],
   ['averageprecision',['AveragePrecision',['../classltr_1_1_average_precision.html',1,'ltr']]],
   ['averageprecision',['AveragePrecision',['../classltr_1_1_average_precision.html#a355478a9a3d4d0aaea42010e26b82272',1,'ltr::AveragePrecision::AveragePrecision(const ParametersContainer &amp;parameters)'],['../classltr_1_1_average_precision.html#ad6c11853e1b7d8318d95ecc621c43348',1,'ltr::AveragePrecision::AveragePrecision(double score_for_relevant=3.0)']]],
   ['averagepredictionsaggregator',['AveragePredictionsAggregator',['../classltr_1_1_average_predictions_aggregator.html',1,'ltr']]],

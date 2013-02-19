@@ -8,6 +8,7 @@ var searchData=
   ['tondatatag',['TOnDataTag',['../class_t_on_data_tag.html',1,'']]],
   ['tonparametertag',['TOnParameterTag',['../class_t_on_parameter_tag.html',1,'']]],
   ['trainlaunchinfo',['TrainLaunchInfo',['../struct_train_launch_info.html',1,'']]],
+  ['tridfunction',['TridFunction',['../classoptimization_1_1_trid_function.html',1,'optimization']]],
   ['triple',['triple',['../classltr_1_1utility_1_1triple.html',1,'ltr::utility']]],
   ['truepoint',['TruePoint',['../classltr_1_1_true_point.html',1,'ltr']]],
   ['twicedifferentiablefunction',['TwiceDifferentiableFunction',['../classoptimization_1_1_twice_differentiable_function.html',1,'optimization']]],

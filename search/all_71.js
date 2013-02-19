@@ -6,9 +6,7 @@ var searchData=
   ['quadratic_5ffunction_5funittest_2ecc',['quadratic_function_unittest.cc',['../quadratic__function__unittest_8cc.html',1,'']]],
   ['quadraticdiscriminantdensitylearner',['QuadraticDiscriminantDensityLearner',['../classltr_1_1_quadratic_discriminant_density_learner.html#a3f04d519e76c7b87767429b6d016b691',1,'ltr::QuadraticDiscriminantDensityLearner::QuadraticDiscriminantDensityLearner()'],['../classltr_1_1_quadratic_discriminant_density_learner.html#a069aefcb4cbaa582cc402df9faef82ee',1,'ltr::QuadraticDiscriminantDensityLearner::QuadraticDiscriminantDensityLearner(const ParametersContainer &amp;parameters)']]],
   ['quadraticdiscriminantdensitylearner',['QuadraticDiscriminantDensityLearner',['../classltr_1_1_quadratic_discriminant_density_learner.html',1,'ltr']]],
-  ['quadraticdiscriminantlearner',['QuadraticDiscriminantLearner',['../classltr_1_1_quadratic_discriminant_learner.html',1,'ltr']]],
   ['quadraticdiscriminantlearner',['QuadraticDiscriminantLearner',['../classltr_1_1_quadratic_discriminant_learner.html#a06ac19dee47d04a58bedd875adc94a3a',1,'ltr::QuadraticDiscriminantLearner::QuadraticDiscriminantLearner()'],['../classltr_1_1_quadratic_discriminant_learner.html#ae365298ddaf81346179da296a83b9263',1,'ltr::QuadraticDiscriminantLearner::QuadraticDiscriminantLearner(const ParametersContainer &amp;parameters)']]],
-  ['quadraticfunction',['QuadraticFunction',['../classoptimization_1_1_quadratic_function.html',1,'optimization']]],
-  ['quadraticfunction',['QuadraticFunction',['../classoptimization_1_1_quadratic_function.html#ae6135b3aae73269f7b8068f4f5de3036',1,'optimization::QuadraticFunction::QuadraticFunction(int dimension)'],['../classoptimization_1_1_quadratic_function.html#ac0523d98784000df146d2f0ea39fcf3c',1,'optimization::QuadraticFunction::QuadraticFunction(Matrix a)']]],
+  ['quadraticdiscriminantlearner',['QuadraticDiscriminantLearner',['../classltr_1_1_quadratic_discriminant_learner.html',1,'ltr']]],
   ['quality_2edox',['quality.dox',['../quality_8dox.html',1,'']]]
 ];

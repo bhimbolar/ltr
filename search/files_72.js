@@ -9,5 +9,7 @@ var searchData=
   ['remove_5fnominal_5fconverter_2eh',['remove_nominal_converter.h',['../remove__nominal__converter_8h.html',1,'']]],
   ['remove_5fnominal_5flearner_2eh',['remove_nominal_learner.h',['../remove__nominal__learner_8h.html',1,'']]],
   ['reporter_2eh',['reporter.h',['../reporter_8h.html',1,'']]],
-  ['reporter_5funittest_2ecc',['reporter_unittest.cc',['../reporter__unittest_8cc.html',1,'']]]
+  ['reporter_5funittest_2ecc',['reporter_unittest.cc',['../reporter__unittest_8cc.html',1,'']]],
+  ['rosenbrock_5ffunction_2ecc',['rosenbrock_function.cc',['../rosenbrock__function_8cc.html',1,'']]],
+  ['rosenbrock_5ffunction_2eh',['rosenbrock_function.h',['../rosenbrock__function_8h.html',1,'']]]
 ];

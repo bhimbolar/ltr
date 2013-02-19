@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="optimization::SphereSet" alt="" coords="5,5,165,32"/>
+<area shape="rect" href="$classoptimization_1_1_solver.html" title="optimization::Solver\&lt; Function \&gt;" alt="" coords="5,5,213,32"/>
+<area shape="rect" href="$classoptimization_1_1_iteration_solver.html" title="optimization::IterationSolver\&lt; Function \&gt;" alt="" coords="263,5,516,32"/>
+<area shape="rect" href="$classoptimization_1_1_simulated_annealing_solver.html" title="optimization::SimulatedAnnealingSolver" alt="" coords="567,5,815,32"/>
 </map>

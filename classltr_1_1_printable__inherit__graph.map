@@ -36,15 +36,15 @@
 <area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, PerFeatureLinearConverter \&gt;" alt="" coords="456,816,888,843"/>
 <area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, RemoveNominalConverter \&gt;" alt="" coords="459,867,885,893"/>
 <area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners." alt="" coords="527,917,817,944"/>
-<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="585,968,759,995"/>
-<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision\&lt; ObjectList \&gt;" alt="" coords="560,1019,784,1045"/>
-<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; ObjectList \&gt;" alt="" coords="581,1069,763,1096"/>
-<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; ObjectList \&gt;" alt="" coords="577,1120,767,1147"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy\&lt; Object \&gt;" alt="" coords="536,1171,808,1197"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin\&lt; Object \&gt;" alt="" coords="544,1221,800,1248"/>
-<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR\&lt; ObjectList \&gt;" alt="" coords="591,1272,753,1299"/>
-<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="555,1323,789,1349"/>
-<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="588,1373,756,1400"/>
-<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="565,1424,779,1451"/>
-<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError\&lt; Object \&gt;" alt="" coords="583,1475,761,1501"/>
+<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError\&lt; Object \&gt;" alt="" coords="596,968,748,995"/>
+<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="585,1019,759,1045"/>
+<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision\&lt; ObjectList \&gt;" alt="" coords="560,1069,784,1096"/>
+<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; ObjectList \&gt;" alt="" coords="581,1120,763,1147"/>
+<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; ObjectList \&gt;" alt="" coords="577,1171,767,1197"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy\&lt; Object \&gt;" alt="" coords="536,1221,808,1248"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin\&lt; Object \&gt;" alt="" coords="544,1272,800,1299"/>
+<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR\&lt; ObjectList \&gt;" alt="" coords="591,1323,753,1349"/>
+<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="555,1373,789,1400"/>
+<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="588,1424,756,1451"/>
+<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="565,1475,779,1501"/>
 </map>
