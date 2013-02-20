@@ -129,39 +129,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00025"></a>00025 
 <a name="l00026"></a>00026     <span class="keyword">public</span>:
 <a name="l00027"></a>00027       <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9e507e2519b83bd2c3807619f90b39c7">parseRawObject</a>(<span class="keywordtype">string</span> line, <a class="code" href="classltr_1_1io__utility_1_1_parser.html#a527567c60e7f23939bb6b838a753db09">RawObject</a>* result);
-<a name="l00028"></a>00028       <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a6ddbe425daa6a67a102b6a3473f284d6">makeString</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj, std::string* result);
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030       <a class="code" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa778e44ba85dd9a8a01a79f75e1c29b2">buildPairwiseDataSet</a>(<span class="keyword">const</span> std::vector&lt;Object&gt;&amp; objects,
-<a name="l00031"></a>00031                                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; info);
-<a name="l00032"></a>00032       <a class="code" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9ecfc752236207a026491d3b5c927278">buildListwiseDataSet</a>(<span class="keyword">const</span> std::vector&lt;Object&gt;&amp; objects,
-<a name="l00033"></a>00033                                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; info);
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035     <span class="keyword">private</span>:
-<a name="l00036"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987">00036</a>       <span class="keywordtype">int</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987">current_id_</a>;
-<a name="l00037"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7">00037</a>       <span class="keywordtype">double</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7">current_relevance_</a>;
-<a name="l00038"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aca87f66c5938d5dfcd1c79891fa486be">00038</a>       map&lt;int, string&gt; <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aca87f66c5938d5dfcd1c79891fa486be">features_</a>;
-<a name="l00039"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a100864a5decb2e7bddc9dc0683dadc39">00039</a>       map&lt;string, double&gt; <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a100864a5decb2e7bddc9dc0683dadc39">classes_</a>;
-<a name="l00040"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2">00040</a>       map&lt;string, string&gt; <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2">meta_features_</a>;
-<a name="l00046"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html">00046</a>       <span class="keyword">class </span><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html">NextFeatureParser</a> {
-<a name="l00047"></a>00047         <span class="keyword">public</span>:
-<a name="l00051"></a>00051           <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#a205157916fe53e6b78eaf9e27d8282af">init</a>(<a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html">ARFFParser</a>* parser);
-<a name="l00057"></a>00057           <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#a9312b11c71e25216103640e2cf191320">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* feature) <span class="keyword">const</span>;
-<a name="l00061"></a>00061           <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#aeea59357a615753b00d785f1a4fc647a">reset</a>();
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063         <span class="keyword">private</span>:
-<a name="l00064"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#ab0d379d10a3bc1061e525a89745f6c3d">00064</a>           <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html">ARFFParser</a>* <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html#ab0d379d10a3bc1061e525a89745f6c3d">parser_</a>;
-<a name="l00065"></a>00065       } <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa3852d7c2bfaecc2fe3b42a2d78d0242">parseNextFeature</a>;
-<a name="l00066"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a58b2ba81f9d6d4b182fb812128026eb0">00066</a>       <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html">NextFeatureParser</a>;
-<a name="l00067"></a>00067   };
-<a name="l00068"></a>00068 };
-<a name="l00069"></a>00069 };
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071 <span class="preprocessor">#endif  // LTR_DATA_UTILITY_PARSERS_PARSE_ARFF_H_</span>
+<a name="l00028"></a>00028       <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a0be89699fb7424cf57a8395b250e5c07">makeString</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>, <span class="keywordtype">string</span>* result);
+<a name="l00029"></a>00029       <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a0be89699fb7424cf57a8395b250e5c07">makeString</a>(
+<a name="l00030"></a>00030           <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> &amp; feature_info,
+<a name="l00031"></a>00031           <span class="keyword">const</span> vector&lt;const Object *&gt; &amp; objects,
+<a name="l00032"></a>00032           std::string* result);
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034       <a class="code" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa778e44ba85dd9a8a01a79f75e1c29b2">buildPairwiseDataSet</a>(<span class="keyword">const</span> std::vector&lt;Object&gt;&amp; objects,
+<a name="l00035"></a>00035                                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; info);
+<a name="l00036"></a>00036       <a class="code" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9ecfc752236207a026491d3b5c927278">buildListwiseDataSet</a>(<span class="keyword">const</span> std::vector&lt;Object&gt;&amp; objects,
+<a name="l00037"></a>00037                                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; info);
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039     <span class="keyword">private</span>:
+<a name="l00040"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987">00040</a>       <span class="keywordtype">int</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987">current_id_</a>;
+<a name="l00041"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7">00041</a>       <span class="keywordtype">double</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7">current_relevance_</a>;
+<a name="l00042"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aca87f66c5938d5dfcd1c79891fa486be">00042</a>       map&lt;int, string&gt; <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aca87f66c5938d5dfcd1c79891fa486be">features_</a>;
+<a name="l00043"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a100864a5decb2e7bddc9dc0683dadc39">00043</a>       map&lt;string, double&gt; <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a100864a5decb2e7bddc9dc0683dadc39">classes_</a>;
+<a name="l00044"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2">00044</a>       map&lt;string, string&gt; <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2">meta_features_</a>;
+<a name="l00045"></a>00045   };
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#endif  // LTR_DATA_UTILITY_PARSERS_PARSE_ARFF_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 19 2013 11:14:12 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2013 16:24:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

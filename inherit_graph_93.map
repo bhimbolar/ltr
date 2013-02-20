@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_solver.html" title="optimization::Solver\&lt; TFunction \&gt;" alt="" coords="5,5,221,32"/>
-<area shape="rect" href="$classoptimization_1_1_iteration_solver.html" title="optimization::IterationSolver\&lt; TFunction \&gt;" alt="" coords="269,5,531,32"/>
+<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="optimization::SphereSet" alt="" coords="5,5,165,32"/>
+<area shape="rect" href="$classoptimization_1_1_g3_set.html" title="optimization::G3Set" alt="" coords="213,5,349,32"/>
 </map>

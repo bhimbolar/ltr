@@ -1,18 +1,19 @@
 <map id="G" name="G">
-<area shape="rect" href="$dcg_8h.html" title="ltr/measures/dcg.h" alt="" coords="376,80,504,107"/>
-<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="585,155,721,181"/>
-<area shape="rect" href="$auc_8cc.html" title="ltr/measures/auc.cc" alt="" coords="796,155,932,181"/>
-<area shape="rect" href="$auc_8h.html" title="ltr/measures/auc.h" alt="" coords="800,80,928,107"/>
-<area shape="rect" href="$average__precision_8cc.html" title="ltr/measures/average_precision.cc" alt="" coords="952,80,1171,107"/>
-<area shape="rect" href="$gmrr_8cc.html" title="ltr/measures/gmrr.cc" alt="" coords="1195,80,1336,107"/>
-<area shape="rect" href="$pfound_8cc.html" title="ltr/measures/pfound.cc" alt="" coords="1360,80,1512,107"/>
-<area shape="rect" href="$reciprocal__rank_8cc.html" title="ltr/measures/reciprocal_rank.cc" alt="" coords="1536,80,1739,107"/>
-<area shape="rect" href="$measure__utility_8cc.html" title="ltr/measures/utils/measure_utility.cc" alt="" coords="1763,80,1992,107"/>
-<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="23,155,300,181"/>
-<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="675,229,875,256"/>
-<area shape="rect" href="$listwise__measures__unittest_8cc.html" title="ltr/measures/listwise_measures_unittest.cc" alt="" coords="155,229,427,256"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="455,304,596,331"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="451,229,600,256"/>
-<area shape="rect" href="$dcg_8cc.html" title="ltr/measures/dcg.cc" alt="" coords="425,155,561,181"/>
-<area shape="rect" href="$measure__unittest_8cc.html" title="ltr/measures/measure_unittest.cc" alt="" coords="956,155,1172,181"/>
+<area shape="rect" href="$dcg_8h.html" title="ltr/measures/dcg.h" alt="" coords="731,80,859,107"/>
+<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="883,155,1019,181"/>
+<area shape="rect" href="$auc_8cc.html" title="ltr/measures/auc.cc" alt="" coords="1093,155,1229,181"/>
+<area shape="rect" href="$auc_8h.html" title="ltr/measures/auc.h" alt="" coords="1097,80,1225,107"/>
+<area shape="rect" href="$average__precision_8cc.html" title="ltr/measures/average_precision.cc" alt="" coords="1249,80,1468,107"/>
+<area shape="rect" href="$gmrr_8cc.html" title="ltr/measures/gmrr.cc" alt="" coords="1492,80,1633,107"/>
+<area shape="rect" href="$pfound_8cc.html" title="ltr/measures/pfound.cc" alt="" coords="1657,80,1809,107"/>
+<area shape="rect" href="$reciprocal__rank_8cc.html" title="ltr/measures/reciprocal_rank.cc" alt="" coords="1833,80,2036,107"/>
+<area shape="rect" href="$measure__utility_8cc.html" title="ltr/measures/utils/measure_utility.cc" alt="" coords="2060,80,2289,107"/>
+<area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="184,155,456,181"/>
+<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="480,155,757,181"/>
+<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="451,229,651,256"/>
+<area shape="rect" href="$listwise__measures__unittest_8cc.html" title="ltr/measures/listwise_measures_unittest.cc" alt="" coords="675,229,947,256"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="913,304,1055,331"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1021,229,1171,256"/>
+<area shape="rect" href="$dcg_8cc.html" title="ltr/measures/dcg.cc" alt="" coords="24,155,160,181"/>
+<area shape="rect" href="$measure__unittest_8cc.html" title="ltr/measures/measure_unittest.cc" alt="" coords="1253,155,1469,181"/>
 </map>

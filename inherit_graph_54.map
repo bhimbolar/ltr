@@ -1,3 +1,170 @@
 <map id="G" name="G">
-<area shape="rect" href="$classltr_1_1_per_object_accessor.html" title="ltr::PerObjectAccessor\&lt; TElement \&gt;" alt="" coords="5,5,237,32"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="49,1259,129,1285"/>
+<area shape="rect" href="$class_aliaser_derived.html" title="AliaserDerived" alt="" coords="388,853,492,880"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer_weights_updater.html" title="ltr::composition::CompositionScorerWeightsUpdater\&lt; Object \&gt;" alt="" coords="248,2424,632,2451"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_data_set_weights_updater.html" title="ltr::composition::DataSetWeightsUpdater\&lt; Object \&gt;" alt="" coords="280,2475,600,2501"/>
+<area shape="rect" href="$classltr_1_1_learner.html" title="ltr::Learner\&lt; Object \&gt;" alt="" coords="368,803,512,829"/>
+<area shape="rect" href="$classltr_1_1_base_metric.html" title="ltr::BaseMetric" alt="" coords="387,3133,493,3160"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer_weights_updater.html" title="ltr::composition::CompositionScorerWeightsUpdater\&lt; TElement \&gt;" alt="" coords="240,2373,640,2400"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_data_set_weights_updater.html" title="ltr::composition::DataSetWeightsUpdater\&lt; TElement \&gt;" alt="" coords="272,2525,608,2552"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; TElement \&gt;" alt="" coords="351,1132,529,1159"/>
+<area shape="rect" href="$classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors." alt="" coords="328,1259,552,1285"/>
+<area shape="rect" href="$classltr_1_1_data_set.html" title="ltr::DataSet\&lt; TElement \&gt;" alt="" coords="357,651,523,677"/>
+<area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="371,955,509,981"/>
+<area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="311,1487,569,1513"/>
+<area shape="rect" href="$classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer." alt="" coords="359,701,521,728"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="356,1943,524,1969"/>
+<area shape="rect" href="$classltr_1_1_scorer.html" title="ltr::Scorer" alt="" coords="895,2272,972,2299"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="364,904,516,931"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="365,752,515,779"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; Object, CompositionScorer \&gt;" alt="" coords="787,549,1080,576"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; Object, DecisionTreeScorer \&gt;" alt="" coords="785,499,1081,525"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_composition_learner.html" title="ltr::composition::CompositionLearner\&lt; Object \&gt;" alt="" coords="1320,563,1616,589"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_ada_boost_learner.html" title="ltr::composition::AdaBoostLearner" alt="" coords="1812,563,2031,589"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree_learner.html" title="DecisionTreeLearner Builds decision tree for given data." alt="" coords="1347,512,1589,539"/>
+<area shape="rect" href="$classltr_1_1_euclidean_metric.html" title="ltr::EuclideanMetric" alt="" coords="867,3133,1000,3160"/>
+<area shape="rect" href="$classltr_1_1_manhattan_metric.html" title="ltr::ManhattanMetric" alt="" coords="865,3184,1001,3211"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_ada_rank_scorer_weights_updater.html" title="ltr::composition::AdaRankScorerWeightsUpdater\&lt; TElement \&gt;" alt="" coords="743,2424,1124,2451"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_average_composition_scorer_weights_updater.html" title="ltr::composition::AverageCompositionScorerWeightsUpdater\&lt; TElement \&gt;" alt="" coords="711,2323,1156,2349"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html" title="ltr::composition::FakeCompositionScorerWeightsUpdater\&lt; TElement \&gt;" alt="" coords="719,2373,1148,2400"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_ada_boost_data_set_weights_updater.html" title="ltr::composition::AdaBoostDataSetWeightsUpdater\&lt; TElement \&gt;" alt="" coords="736,2576,1131,2603"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html" title="ltr::composition::AdaRankDataSetWeightsUpdater\&lt; TElement \&gt;" alt="" coords="739,2475,1128,2501"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_fake_data_set_weights_updater.html" title="ltr::composition::FakeDataSetWeightsUpdater\&lt; TElement \&gt;" alt="" coords="751,2525,1116,2552"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_k_fold_simple_splitter.html" title="ltr::cv::KFoldSimpleSplitter\&lt; TElement \&gt;" alt="" coords="807,1157,1060,1184"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_leave_one_out_splitter.html" title="ltr::cv::LeaveOneOutSplitter\&lt; TElement \&gt;" alt="" coords="804,1056,1063,1083"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_t_k_fold_simple_splitter.html" title="ltr::cv::TKFoldSimpleSplitter\&lt; TElement \&gt;" alt="" coords="803,1107,1064,1133"/>
+<area shape="rect" href="$classltr_1_1_data_random_sampler.html" title="Acts as DataSampler with random indices each new applying (duplication may be allowed)." alt="" coords="812,1309,1055,1336"/>
+<area shape="rect" href="$classltr_1_1_data_sampler.html" title="Samples elements with specififed indices from input DataSet. Duplication of indices leads to duplicat..." alt="" coords="836,1208,1031,1235"/>
+<area shape="rect" href="$classltr_1_1_fake_preprocessor.html" title="Does nothing with input DataSet." alt="" coords="821,1259,1045,1285"/>
+<area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="849,1005,1017,1032"/>
+<area shape="rect" href="$classltr_1_1_feature_sampler.html" title="Samples features with specified indices." alt="" coords="868,752,999,779"/>
+<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="848,803,1019,829"/>
+<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="844,853,1023,880"/>
+<area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="837,904,1029,931"/>
+<area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="840,955,1027,981"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, FakeFeatureConverter \&gt;" alt="" coords="721,1360,1145,1387"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, FeatureSampler \&gt;" alt="" coords="739,1411,1128,1437"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, NanToNeutralConverter \&gt;" alt="" coords="719,1461,1148,1488"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, NominalToBoolConverter \&gt;" alt="" coords="715,1512,1152,1539"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, PerFeatureLinearConverter \&gt;" alt="" coords="708,1563,1159,1589"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, RemoveNominalConverter \&gt;" alt="" coords="711,1613,1156,1640"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners." alt="" coords="732,1664,1135,1691"/>
+<area shape="rect" href="$classltr_1_1_fake_feature_converter_learner.html" title="ltr::FakeFeatureConverterLearner\&lt; TElement \&gt;" alt="" coords="1324,1284,1612,1311"/>
+<area shape="rect" href="$classltr_1_1_feature_random_sampler_learner.html" title="Produces FeatureSampler with random indices." alt="" coords="1317,1385,1619,1412"/>
+<area shape="rect" href="$classltr_1_1_feature_sampler_learner.html" title="Produces FeatureSampler with specified indices." alt="" coords="1341,1335,1595,1361"/>
+<area shape="rect" href="$classltr_1_1_nan_to_average_converter_learner.html" title="ltr::NanToAverageConverterLearner\&lt; TElement \&gt;" alt="" coords="1319,1487,1617,1513"/>
+<area shape="rect" href="$classltr_1_1_nan_to_zero_converter_learner.html" title="ltr::NanToZeroConverterLearner\&lt; TElement \&gt;" alt="" coords="1329,1436,1607,1463"/>
+<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter_learner.html" title="ltr::NominalToBoolConverterLearner\&lt; TElement \&gt;" alt="" coords="1317,1537,1619,1564"/>
+<area shape="rect" href="$classltr_1_1_feature_normalizer_learner.html" title="Independently normalize each feature component to the specified range." alt="" coords="1335,1588,1601,1615"/>
+<area shape="rect" href="$classltr_1_1_remove_nominal_converter_learner.html" title="ltr::RemoveNominalConverterLearner\&lt; TElement \&gt;" alt="" coords="1313,1639,1623,1665"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, BayesianScorer \&gt;" alt="" coords="788,284,1079,311"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, CompositionScorer \&gt;" alt="" coords="779,347,1088,373"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, GPScorer \&gt;" alt="" coords="805,397,1061,424"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, LinearScorer \&gt;" alt="" coords="797,16,1069,43"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, NNScorer \&gt;" alt="" coords="805,76,1061,103"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, OneFeatureScorer \&gt;" alt="" coords="780,145,1087,172"/>
+<area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement, TScorer \&gt;" alt="" coords="811,233,1056,260"/>
+<area shape="rect" href="$classltr_1_1_bayesian_learner.html" title="ltr::BayesianLearner\&lt; TElement, FisherDiscriminantDensityLearner\&lt; TElement \&gt; \&gt;" alt="" coords="1219,208,1717,235"/>
+<area shape="rect" href="$classltr_1_1_bayesian_learner.html" title="ltr::BayesianLearner\&lt; TElement, NormalNaiveBayesDensityLearner\&lt; TElement \&gt; \&gt;" alt="" coords="1219,259,1717,285"/>
+<area shape="rect" href="$classltr_1_1_bayesian_learner.html" title="ltr::BayesianLearner\&lt; TElement, QuadraticDiscriminantDensityLearner\&lt; TElement \&gt; \&gt;" alt="" coords="1209,309,1727,336"/>
+<area shape="rect" href="$classltr_1_1_bayesian_learner.html" title="ltr::BayesianLearner\&lt; TElement, TDensityLearner \&gt;" alt="" coords="1309,157,1627,184"/>
+<area shape="rect" href="$classltr_1_1_fisher_discriminant_learner.html" title="ltr::FisherDiscriminantLearner\&lt; TElement \&gt;" alt="" coords="1787,208,2056,235"/>
+<area shape="rect" href="$classltr_1_1_normal_naive_bayes_learner.html" title="ltr::NormalNaiveBayesLearner\&lt; TElement \&gt;" alt="" coords="1785,259,2057,285"/>
+<area shape="rect" href="$classltr_1_1_quadratic_discriminant_learner.html" title="ltr::QuadraticDiscriminantLearner\&lt; TElement \&gt;" alt="" coords="1776,309,2067,336"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_composition_learner.html" title="Learner, wich uses other learner (weak learner), produces with it different scorers and tie them into..." alt="" coords="1312,360,1624,387"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank." alt="" coords="1367,411,1569,437"/>
+<area shape="rect" href="$classltr_1_1_linear_learner.html" title="ltr::LinearLearner\&lt; TElement \&gt;" alt="" coords="1369,5,1567,32"/>
+<area shape="rect" href="$classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach." alt="" coords="1379,56,1557,83"/>
+<area shape="rect" href="$classltr_1_1_best_feature_learner.html" title="ltr::BestFeatureLearner\&lt; TElement \&gt;" alt="" coords="1352,107,1584,133"/>
+<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError" alt="" coords="888,1715,979,1741"/>
+<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="847,1765,1020,1792"/>
+<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision" alt="" coords="864,1816,1003,1843"/>
+<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; TDCGFormula \&gt;" alt="" coords="832,1867,1035,1893"/>
+<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; TDCGFormula \&gt;" alt="" coords="827,1917,1040,1944"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy" alt="" coords="829,1968,1037,1995"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin" alt="" coords="837,2019,1029,2045"/>
+<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR" alt="" coords="893,2069,973,2096"/>
+<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="816,2120,1051,2147"/>
+<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound" alt="" coords="891,2171,976,2197"/>
+<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank" alt="" coords="868,2221,999,2248"/>
+<area shape="rect" href="$classltr_1_1_bayesian_scorer.html" title="ltr::BayesianScorer" alt="" coords="1403,2272,1533,2299"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer.html" title="ltr::composition::CompositionScorer" alt="" coords="1355,2855,1581,2881"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree_scorer.html" title="ltr::decision_tree::DecisionTreeScorer" alt="" coords="1349,2323,1587,2349"/>
+<area shape="rect" href="$classltr_1_1_fake_scorer.html" title="ltr::FakeScorer" alt="" coords="1415,2373,1521,2400"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e..." alt="" coords="1408,2424,1528,2451"/>
+<area shape="rect" href="$classltr_1_1_linear_scorer.html" title="ltr::LinearScorer" alt="" coords="1412,2120,1524,2147"/>
+<area shape="rect" href="$classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator..." alt="" coords="1420,2171,1516,2197"/>
+<area shape="rect" href="$classltr_1_1_one_feature_scorer.html" title="ltr::OneFeatureScorer" alt="" coords="1395,2221,1541,2248"/>
+<area shape="rect" href="$classltr_1_1_a_u_c.html" title="ltr::AUC" alt="" coords="900,701,967,728"/>
+<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError" alt="" coords="876,600,991,627"/>
+<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint" alt="" coords="885,651,981,677"/>
+<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="821,448,1045,475"/>
+<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="1340,461,1596,488"/>
+<area shape="rect" href="$classoptimization_1_1_easom_function.html" title="optimization::EasomFunction" alt="" coords="1827,360,2016,387"/>
+<area shape="rect" href="$classoptimization_1_1_g3_function.html" title="optimization::G3Function" alt="" coords="1839,411,2004,437"/>
+<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="1829,461,2013,488"/>
+<area shape="rect" href="$classoptimization_1_1_trid_function.html" title="optimization::TridFunction" alt="" coords="1836,512,2007,539"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_base_g_p_operation.html" title="ltr::gp::BaseGPOperation" alt="" coords="5,4045,173,4072"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_add.html" title="The Puppy::Primitive implements addition functor, it is used to build Puppy::trees from..." alt="" coords="397,4071,483,4097"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_divide.html" title="The Puppy::Primitive implements division functor, it is used to build Puppy::trees from..." alt="" coords="392,4121,488,4148"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_ephemeral.html" title="The Puppy::Primitive implements the functor, that gives random constants to build Puppy::Tree..." alt="" coords="379,4223,501,4249"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_if_then_func.html" title="The Puppy::Primitive implements if&#45;then&#45;else functor, it is used to build Puppy::trees from..." alt="" coords="377,3919,503,3945"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_multiply.html" title="The Puppy::Primitive implements multiplication functor, it is used to build Puppy::trees from..." alt="" coords="387,3969,493,3996"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_subtract.html" title="The Puppy::Primitive implements subtraction functor, it is used to build Puppy::trees from..." alt="" coords="384,4020,496,4047"/>
+<area shape="rect" href="$classltr_1_1_functor.html" title="ltr::Functor\&lt; TValue \&gt;" alt="" coords="16,4172,163,4199"/>
+<area shape="rect" href="$classltr_1_1_serializable_functor.html" title="ltr::SerializableFunctor\&lt; TValue \&gt;" alt="" coords="333,4172,547,4199"/>
+<area shape="rect" href="$classltr_1_1_functor.html" title="ltr::Functor\&lt; double \&gt;" alt="" coords="16,3057,163,3084"/>
+<area shape="rect" href="$classltr_1_1_serializable_functor.html" title="ltr::SerializableFunctor\&lt; double \&gt;" alt="" coords="333,3057,547,3084"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree.html" title="ltr::decision_tree::DecisionTree" alt="" coords="833,3032,1033,3059"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_vertex.html" title="ltr::decision_tree::Vertex" alt="" coords="852,3083,1015,3109"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_vertex.html" title="ltr::decision_tree::DecisionVertex" alt="" coords="1361,3108,1575,3135"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_leaf_vertex.html" title="ltr::decision_tree::LeafVertex" alt="" coords="1375,3057,1561,3084"/>
+<area shape="rect" href="$classltr_1_1_parameterized.html" title="ltr::Parameterized" alt="" coords="28,2588,151,2615"/>
+<area shape="rect" href="$classltr_1_1_base_probability_density_learner.html" title="ltr::BaseProbabilityDensityLearner\&lt; TElement, FisherDiscriminant \&gt;" alt="" coords="233,3463,647,3489"/>
+<area shape="rect" href="$classltr_1_1_base_probability_density_learner.html" title="ltr::BaseProbabilityDensityLearner\&lt; TElement, NonLinearDiscriminant \&gt;" alt="" coords="223,2588,657,2615"/>
+<area shape="rect" href="$classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator." alt="" coords="324,3615,556,3641"/>
+<area shape="rect" href="$classltr_1_1_base_probability_density_learner.html" title="Simple interface of the probability density estimation learner." alt="" coords="256,2639,624,2665"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_base_splitter.html" title="ltr::decision_tree::BaseSplitter" alt="" coords="343,2703,537,2729"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_leaf_generator.html" title="ltr::decision_tree::LeafGenerator" alt="" coords="337,2779,543,2805"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_stop_splitting_criteria.html" title="ltr::decision_tree::StopSplittingCriteria" alt="" coords="320,2880,560,2907"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_base_population_handler.html" title="ltr::gp::BasePopulationHandler" alt="" coords="341,3336,539,3363"/>
+<area shape="rect" href="$classltr_1_1_predictions_aggregator.html" title="ltr::PredictionsAggregator" alt="" coords="356,3767,524,3793"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_neighbor_weighter.html" title="ltr::utility::NeighborWeighter" alt="" coords="349,3817,531,3844"/>
+<area shape="rect" href="$classltr_1_1_fisher_discriminant_density_learner.html" title="Probability density learner that uses Fisher discriminant to generate probability density estimator..." alt="" coords="776,3539,1091,3565"/>
+<area shape="rect" href="$classltr_1_1_non_linear_discriminant_density_learner.html" title="Interface of discriminants that can not be converted to linear separators." alt="" coords="765,2627,1101,2653"/>
+<area shape="rect" href="$classltr_1_1_normal_naive_bayes_density_learner.html" title="Probability density learner that uses Normal Naive Bayesian approach to generate probability density ..." alt="" coords="1311,2652,1625,2679"/>
+<area shape="rect" href="$classltr_1_1_quadratic_discriminant_density_learner.html" title="Probability density learner that uses Quadratic Discriminant approach to generate probability density..." alt="" coords="1301,2601,1635,2628"/>
+<area shape="rect" href="$classltr_1_1_fisher_discriminant.html" title="probability density estimator that uses Fisher Linear Discriminant approach" alt="" coords="860,3589,1007,3616"/>
+<area shape="rect" href="$classltr_1_1_non_linear_discriminant.html" title="probability density estimator that cannot be represented as linear separator" alt="" coords="848,3640,1019,3667"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_fake_splitter.html" title="ltr::decision_tree::FakeSplitter" alt="" coords="836,2779,1031,2805"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_i_d3_splitter.html" title="ltr::decision_tree::ID3Splitter" alt="" coords="841,2677,1025,2704"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html" title="ltr::decision_tree::ObliviousTreeSplitter" alt="" coords="812,2728,1055,2755"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html" title="ltr::decision_tree::MostCommonLabelLeafGenerator" alt="" coords="775,2829,1092,2856"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_data_size_stop_splitting_criteria.html" title="ltr::decision_tree::DataSizeStopSplittingCriteria" alt="" coords="787,2880,1080,2907"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html" title="ltr::decision_tree::SameLabelStopSplittingCriteria" alt="" coords="781,2931,1085,2957"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_crossover_adjacent_trees_strategy.html" title="ltr::gp::CrossoverAdjacentTreesStrategy" alt="" coords="808,3336,1059,3363"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_default_crossover_strategy.html" title="ltr::gp::DefaultCrossoverStrategy" alt="" coords="829,3387,1037,3413"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_default_mutation_standard_strategy.html" title="ltr::gp::DefaultMutationStandardStrategy" alt="" coords="807,3437,1060,3464"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_default_mutation_swap_strategy.html" title="ltr::gp::DefaultMutationSwapStrategy" alt="" coords="817,3488,1049,3515"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_default_selection_strategy.html" title="ltr::gp::DefaultSelectionStrategy" alt="" coords="831,3235,1036,3261"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_select_top_trees_strategy.html" title="ltr::gp::SelectTopTreesStrategy" alt="" coords="833,3285,1033,3312"/>
+<area shape="rect" href="$classltr_1_1_average_predictions_aggregator.html" title="ltr::AveragePredictionsAggregator" alt="" coords="827,3691,1040,3717"/>
+<area shape="rect" href="$classltr_1_1_max_weight_predictions_aggregator.html" title="ltr::MaxWeightPredictionsAggregator" alt="" coords="816,3741,1051,3768"/>
+<area shape="rect" href="$classltr_1_1_order_statistic_predictions_aggregator.html" title="ltr::OrderStatisticPredictionsAggregator" alt="" coords="809,3792,1057,3819"/>
+<area shape="rect" href="$classltr_1_1_sum_predictions_aggregator.html" title="ltr::SumPredictionsAggregator" alt="" coords="836,3843,1031,3869"/>
+<area shape="rect" href="$classltr_1_1_vote_predictions_aggregator.html" title="ltr::VotePredictionsAggregator" alt="" coords="836,3893,1031,3920"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_inverse_linear_distance.html" title="ltr::utility::InverseLinearDistance" alt="" coords="831,3944,1036,3971"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_inverse_order.html" title="ltr::utility::InverseOrder" alt="" coords="857,3995,1009,4021"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_inverse_power_distance.html" title="ltr::utility::InversePowerDistance" alt="" coords="831,4045,1036,4072"/>
+<area shape="rect" href="$classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="44,904,135,931"/>
+<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="401,397,479,424"/>
+<area shape="rect" href="$classltr_1_1_object_list.html" title="ltr::ObjectList" alt="" coords="391,448,489,475"/>
+<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="389,499,491,525"/>
+<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="359,549,521,576"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="348,600,532,627"/>
+<area shape="rect" href="$classltr_1_1_reporter.html" title="ltr::Reporter" alt="" coords="45,752,133,779"/>
+<area shape="rect" href="$classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="36,3868,143,3895"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_condition.html" title="ltr::decision_tree::Condition" alt="" coords="351,3868,529,3895"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_fake_condition.html" title="ltr::decision_tree::FakeCondition" alt="" coords="829,4096,1037,4123"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_threshold_condition.html" title="ltr::decision_tree::ThresholdCondition" alt="" coords="816,4147,1051,4173"/>
 </map>

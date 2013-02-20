@@ -1,19 +1,19 @@
 <map id="G" name="G">
-<area shape="rect" href="$parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="1481,155,1676,181"/>
-<area shape="rect" href="$parse__svm_8h.html" title="ltr/data/utility/parsers/parse_svm.h" alt="" coords="1032,80,1251,107"/>
-<area shape="rect" href="$parse__yandex_8h.html" title="ltr/data/utility/parsers/parse_yandex.h" alt="" coords="768,80,1008,107"/>
-<area shape="rect" href="$parse__arff_8h.html" title="ltr/data/utility/parsers/parse_arff.h" alt="" coords="1983,80,2196,107"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="2691,80,2829,107"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="499,453,611,480"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1173,229,1299,256"/>
-<area shape="rect" href="$murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="1499,229,1659,256"/>
-<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="1735,229,1921,256"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="448,528,603,555"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="987,528,1165,555"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="365,379,501,405"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="875,379,1013,405"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1233,379,1375,405"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="752,304,947,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1341,453,1485,480"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="837,453,963,480"/>
+<area shape="rect" href="$parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="755,155,949,181"/>
+<area shape="rect" href="$parse__svm_8h.html" title="ltr/data/utility/parsers/parse_svm.h" alt="" coords="577,80,796,107"/>
+<area shape="rect" href="$parse__yandex_8h.html" title="ltr/data/utility/parsers/parse_yandex.h" alt="" coords="889,80,1129,107"/>
+<area shape="rect" href="$parse__arff_8h.html" title="ltr/data/utility/parsers/parse_arff.h" alt="" coords="1991,80,2204,107"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="2708,80,2847,107"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="537,453,649,480"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1012,229,1137,256"/>
+<area shape="rect" href="$murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="772,229,932,256"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="443,229,629,256"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="397,528,552,555"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="627,528,805,555"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="455,379,591,405"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="893,379,1032,405"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1367,379,1508,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="792,304,987,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1836,453,1980,480"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1180,453,1305,480"/>
 </map>

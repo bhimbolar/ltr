@@ -161,11 +161,21 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Function to create Listwise data set of given objects </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
+    <tr><td class="paramname">info</td><td>- information about features in the object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#abdc6769eaebd984840da4cd809eebdda">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
@@ -188,11 +198,21 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Function to create Pairwise data set of given objects </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
+    <tr><td class="paramname">info</td><td>- information about features in the object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a5e4d19a0ff167986e2adeb8e194813bf">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
@@ -210,33 +230,10 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Functions serializes object into string. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">object</td><td>- object to serialize </td></tr>
-    <tr><td class="paramname">result</td><td>- string, which will contain serialized object <div class="fragment"><pre class="fragment"> <span class="keywordtype">string</span> result;
- parser-&gt;makeString(<span class="keywordtype">object</span>, &amp;result);
- <span class="keyword">@end</span>coe
-   */
-  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#af4186aeb5751b6c31043441300d17769">makeString</a>(<span class="keyword">const</span> Object&amp; <span class="keywordtype">object</span>, std::string* result) = 0;
-  <span class="keyword">virtual</span> PairwiseDataSet <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#afbadbff490f7bc9d80c3149d9319c660">buildPairwiseDataSet</a>(
-    <span class="keyword">const</span> vector&lt;Object&gt;&amp; objects, <span class="keyword">const</span> FeatureInfo&amp; info) = 0;
-  <span class="keyword">virtual</span> ListwiseDataSet <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#aa415bc51e2975ba4e5e81cc3c903b778">buildListwiseDataSet</a>(
-    <span class="keyword">const</span> vector&lt;Object&gt;&amp; objects, <span class="keyword">const</span> FeatureInfo&amp; info) = 0;
-
-  <span class="keyword">virtual</span> ~Parser() {}
-
- <span class="keyword">protected</span>:
-  map&lt;RawFeatureIndex, FeatureIndex&gt; feature_id_;
-  <a class="code" href="classltr_1_1io__utility_1_1_parser.html#af51fa8ac5aed9f95e69e9c2b6ca37f79">RawFeatureInfo</a> raw_feature_info_;
-  <span class="keywordtype">int</span> last_feature_index_;
-  FeatureInfo feature_info_;
-  std::istream* file_;
-</pre></div> </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<p>Method to init parser. It must fill the raw_feature_onfo_. </p>
+<div class="fragment"><pre class="fragment"> ifstream fin(<span class="stringliteral">&quot;file.txt&quot;</span>);
+ parser-&gt;init(&amp;fin);
+</pre></div> 
 <p>Reimplemented from <a class="el" href="classltr_1_1io__utility_1_1_parser.html#ad86a5c48ad68516e05aa2400e9c8df88">ltr::io_utility::Parser</a>.</p>
 
 </div>
@@ -249,7 +246,7 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#af4186aeb5751b6c31043441300d17769">ltr::io_utility::SVMParser::makeString</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em>, </td>
+          <td class="paramname"><em>object</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -260,11 +257,23 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Functions serializes object into string. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>- object to serialize </td></tr>
+    <tr><td class="paramname">result</td><td>- string, which will contain serialized object <div class="fragment"><pre class="fragment"> <span class="keywordtype">string</span> result;
+ parser-&gt;makeString(<span class="keywordtype">object</span>, &amp;result);
+</pre></div> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#aff3c9b5ca3d501ae8630ffebdf70e3da">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
@@ -340,7 +349,7 @@ Static Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 19 2013 11:14:16 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 20 2013 16:25:00 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

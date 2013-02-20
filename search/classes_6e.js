@@ -5,7 +5,6 @@ var searchData=
   ['nantoneutralconverter',['NanToNeutralConverter',['../classltr_1_1_nan_to_neutral_converter.html',1,'ltr']]],
   ['nantozeroconverterlearner',['NanToZeroConverterLearner',['../classltr_1_1_nan_to_zero_converter_learner.html',1,'ltr']]],
   ['neighborweighter',['NeighborWeighter',['../classltr_1_1utility_1_1_neighbor_weighter.html',1,'ltr::utility']]],
-  ['nextfeatureparser',['NextFeatureParser',['../classltr_1_1io__utility_1_1_a_r_f_f_parser_1_1_next_feature_parser.html',1,'ltr::io_utility::ARFFParser']]],
   ['nnlearner',['NNLearner',['../classltr_1_1_n_n_learner.html',1,'ltr']]],
   ['nnscorer',['NNScorer',['../classltr_1_1_n_n_scorer.html',1,'ltr']]],
   ['nominaltoboolconverter',['NominalToBoolConverter',['../classltr_1_1_nominal_to_bool_converter.html',1,'ltr']]],

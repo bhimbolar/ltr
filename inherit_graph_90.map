@@ -1,5 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_solver.html" title="optimization::Solver\&lt; DifferentiableFunction \&gt;" alt="" coords="5,5,288,32"/>
-<area shape="rect" href="$classoptimization_1_1_iteration_solver.html" title="optimization::IterationSolver\&lt; DifferentiableFunction \&gt;" alt="" coords="336,5,664,32"/>
-<area shape="rect" href="$classoptimization_1_1_gradient_descent_solver.html" title="optimization::GradientDescentSolver" alt="" coords="712,5,944,32"/>
+<area shape="rect" href="$classoptimization_1_1_solver.html" title="optimization::Solver\&lt; Function \&gt;" alt="" coords="5,5,213,32"/>
+<area shape="rect" href="$classoptimization_1_1_iteration_solver.html" title="optimization::IterationSolver\&lt; Function \&gt;" alt="" coords="263,5,516,32"/>
+<area shape="rect" href="$classoptimization_1_1_simulated_annealing_solver.html" title="optimization::SimulatedAnnealingSolver" alt="" coords="567,5,815,32"/>
 </map>
