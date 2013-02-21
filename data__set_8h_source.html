@@ -199,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00168"></a>00168 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
 <a name="l00169"></a><a class="code" href="classltr_1_1_data_set.html#a01a3fe8f84d88f1d8c7cc36f38a93479">00169</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_set.html#addb95d8ff26575686ddc3d0f845b6d32">DataSet&lt;TElement&gt;::add</a>(<span class="keyword">const</span> TElement&amp; element, <span class="keywordtype">double</span> weight) {
 <a name="l00170"></a>00170   <a class="code" href="classltr_1_1_per_object_accessor.html">PerObjectAccessor&lt;const TElement&gt;</a> per_object_accessor(&amp;element);
-<a name="l00171"></a>00171   <span class="keywordflow">if</span> (feature_info_ == NULL || feature_info_-&gt;feature_count() == 0) {
+<a name="l00171"></a>00171   <span class="keywordflow">if</span> (feature_info_ == <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">FeatureInfo::Ptr</a>() || feature_info_-&gt;<a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>() == 0) {
 <a name="l00172"></a>00172     feature_info_ = <a class="code" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">FeatureInfo::Ptr</a>(
 <a name="l00173"></a>00173       <span class="keyword">new</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>(per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(0).<a class="code" href="classltr_1_1_object.html#aa841806e10832406a57c2bd83541b112">feature_count</a>()));
 <a name="l00174"></a>00174   }
@@ -325,7 +325,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 20 2013 16:24:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 21 2013 12:32:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00067"></a>00067     std::stringstream str;
 <a name="l00068"></a>00068     std::fixed(str);
 <a name="l00069"></a>00069     str.precision(2);
-<a name="l00070"></a>00070     <span class="keywordflow">if</span> (<a class="code" href="classltr_1_1_normalized_measure.html#aea3df89f2899541e8554de210d764625">weak_measure_</a> == NULL) {
+<a name="l00070"></a>00070     <span class="keywordflow">if</span> (<a class="code" href="classltr_1_1_normalized_measure.html#aea3df89f2899541e8554de210d764625">weak_measure_</a> == <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a>()) {
 <a name="l00071"></a>00071       str &lt;&lt; <span class="stringliteral">&quot;Normalized measure without setted weak measure&quot;</span>;
 <a name="l00072"></a>00072     } <span class="keywordflow">else</span> {
 <a name="l00073"></a>00073       str &lt;&lt; <span class="stringliteral">&quot;Normalized measure over { &quot;</span>;
@@ -192,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00094"></a>00094   }
 <a name="l00095"></a>00095 
 <a name="l00096"></a><a class="code" href="classltr_1_1_normalized_measure.html#a4b190402c23db4602121477e69764570">00096</a>   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_normalized_measure.html#a4b190402c23db4602121477e69764570">get_measure</a>(<span class="keyword">const</span> TElement&amp; element)<span class="keyword"> const </span>{
-<a name="l00097"></a>00097     <span class="keywordflow">if</span> (<a class="code" href="classltr_1_1_normalized_measure.html#aea3df89f2899541e8554de210d764625">weak_measure_</a> == NULL) {
+<a name="l00097"></a>00097     <span class="keywordflow">if</span> (<a class="code" href="classltr_1_1_normalized_measure.html#aea3df89f2899541e8554de210d764625">weak_measure_</a> == <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a>()) {
 <a name="l00098"></a>00098       rError(<span class="stringliteral">&quot;No weak measure&quot;</span>);
 <a name="l00099"></a>00099       <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;No weak measure&quot;</span>);
 <a name="l00100"></a>00100     }
@@ -215,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 20 2013 16:24:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 21 2013 12:32:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

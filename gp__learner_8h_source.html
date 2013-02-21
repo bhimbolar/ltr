@@ -407,7 +407,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00372"></a>00372       best_tree_ = population_[best_tree_index];
 <a name="l00373"></a>00373       log_out &lt;&lt; best_tree_ &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>;
 <a name="l00374"></a>00374       log_out &lt;&lt; <span class="stringliteral">&quot;with fitness &quot;</span> &lt;&lt; best_tree_.mFitness;
-<a name="l00375"></a>00375       rDebug(log_out.str().c_str());
+<a name="l00375"></a>00375       rDebug(<span class="stringliteral">&quot;%s&quot;</span>, log_out.str().c_str());
 <a name="l00376"></a>00376     }
 <a name="l00377"></a>00377     <span class="comment">// \TODO ? rewrite with setters and getters</span>
 <a name="l00378"></a>00378     *scorer = <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>(best_tree_, context_, feature_count_);
@@ -439,7 +439,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 20 2013 16:24:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 21 2013 12:32:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
