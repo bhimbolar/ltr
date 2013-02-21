@@ -11,7 +11,7 @@ var searchData=
   ['composition_5fscorer_5fweights_5fupdater_2eh',['composition_scorer_weights_updater.h',['../composition__scorer__weights__updater_8h.html',1,'']]],
   ['composition_5ftutorial_2edox',['composition_tutorial.dox',['../composition__tutorial_8dox.html',1,'']]],
   ['condition_2eh',['condition.h',['../condition_8h.html',1,'']]],
-  ['config_2eh',['config.h',['../config_8h.html',1,'']]],
+  ['config_2eh',['config.h',['../config_8h.html',1,'(Global Namespace)'],['../_config_8h.html',1,'(Global Namespace)']]],
   ['configurator_2ecc',['configurator.cc',['../configurator_8cc.html',1,'']]],
   ['configurator_2eh',['configurator.h',['../configurator_8h.html',1,'']]],
   ['container_5futility_2eh',['container_utility.h',['../container__utility_8h.html',1,'']]],

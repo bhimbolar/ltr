@@ -1,6 +1,14 @@
 var searchData=
 [
+  ['magic',['magic',['../class_random_lib_1_1_m_t19937.html#a9196d4e46086d3ce55716a8bfadefce8',1,'RandomLib::MT19937']]],
+  ['magic0',['magic0',['../class_random_lib_1_1_s_f_m_t19937.html#aefbe754eee58999075c9b14663a9b44b',1,'RandomLib::SFMT19937']]],
+  ['magic1',['magic1',['../class_random_lib_1_1_s_f_m_t19937.html#ad287e04f6024df6aee1106849d80d777',1,'RandomLib::SFMT19937']]],
+  ['magic2',['magic2',['../class_random_lib_1_1_s_f_m_t19937.html#a2fbf7b20624a4cd134997a3fc6d96372',1,'RandomLib::SFMT19937']]],
+  ['magic3',['magic3',['../class_random_lib_1_1_s_f_m_t19937.html#a90745b39a3fbc12acb8989c192c73f9e',1,'RandomLib::SFMT19937']]],
+  ['mask',['mask',['../class_random_lib_1_1_m_t19937.html#a3770cfadab9771acd1849cc452f6f8c6',1,'RandomLib::MT19937::mask()'],['../class_random_lib_1_1_s_f_m_t19937.html#aae809156de3b2ddba9873f4943e5776f',1,'RandomLib::SFMT19937::mask()'],['../class_random_lib_1_1_random_engine.html#ad8bebba67a7254746742053f6b7791a6',1,'RandomLib::RandomEngine::mask()'],['../class_random_lib_1_1_mixer_m_t0.html#ac27bee6209f029df09ca057472994e08',1,'RandomLib::MixerMT0::mask()'],['../class_random_lib_1_1_mixer_m_t1.html#a02f3189673842b0b921ae1ad86ebbad9',1,'RandomLib::MixerMT1::mask()'],['../class_random_lib_1_1_mixer_s_f_m_t.html#a0eca4b00f9a0b1fb7112c49f1632eb47',1,'RandomLib::MixerSFMT::mask()'],['../class_random_lib_1_1_random_number.html#acbb22ce5b27d9aba4f2dc138363ad3ba',1,'RandomLib::RandomNumber::mask()'],['../class_random_lib_1_1_random_type.html#aa7a7831c430a9306a62a198e8379c4ab',1,'RandomLib::RandomType::mask()']]],
+  ['mask18',['mask18',['../class_random_lib_1_1_s_f_m_t19937.html#a492d422ffc79899b426cfed2fae8d71f',1,'RandomLib::SFMT19937']]],
   ['mating_5fprobability_5f',['mating_probability_',['../classltr_1_1gp_1_1_default_crossover_strategy.html#af3ebd891f46c4aff35ef62f70e204f81',1,'ltr::gp::DefaultCrossoverStrategy']]],
+  ['max',['max',['../class_random_lib_1_1_random_engine.html#a2f79f28d67529ab286d664a1169b698a',1,'RandomLib::RandomEngine::max()'],['../class_random_lib_1_1_random_type.html#a9b50e1774d28b8122e930611eb4861e3',1,'RandomLib::RandomType::max()']]],
   ['max_5f',['max_',['../classltr_1_1_feature_normalizer_learner.html#ad7c3ffca94bdd4adda10617df7ab3bb8',1,'ltr::FeatureNormalizerLearner']]],
   ['max_5fdepth_5f',['max_depth_',['../classltr_1_1gp_1_1_crossover_adjacent_trees_strategy.html#a64adc5d7a943d353f0e3ecb940c63c40',1,'ltr::gp::CrossoverAdjacentTreesStrategy::max_depth_()'],['../classltr_1_1gp_1_1_default_crossover_strategy.html#a1a49553e341514397dfdcd2b67ecb29a',1,'ltr::gp::DefaultCrossoverStrategy::max_depth_()'],['../classltr_1_1gp_1_1_default_mutation_standard_strategy.html#a0734ec1272d5292e7516d7983e24cacd',1,'ltr::gp::DefaultMutationStandardStrategy::max_depth_()']]],
   ['max_5finit_5fdepth_5f',['max_init_depth_',['../classltr_1_1gp_1_1_g_p_learner.html#a474e960c6e8a105ec8511c0fe7c636cc',1,'ltr::gp::GPLearner']]],
@@ -15,6 +23,7 @@ var searchData=
   ['meta_5ffeatures_5f',['meta_features_',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2',1,'ltr::io_utility::ARFFParser']]],
   ['meta_5finfo_5f',['meta_info_',['../classltr_1_1_object.html#a37e9cc1ce6f803bd000c625a9f1e6afb',1,'ltr::Object']]],
   ['metric_5f',['metric_',['../classltr_1_1_n_n_learner.html#a0b2c5fcbbcaa12d369fad1319a7a88d2',1,'ltr::NNLearner::metric_()'],['../classltr_1_1_n_n_scorer.html#a4c646056bb85e857caee6dcd616f0323',1,'ltr::NNScorer::metric_()']]],
+  ['min',['min',['../class_random_lib_1_1_random_engine.html#a510559ccd4e414c176bbd8e058033cd7',1,'RandomLib::RandomEngine::min()'],['../class_random_lib_1_1_random_type.html#a5d318f7112b0335b96d75fc579412eb9',1,'RandomLib::RandomType::min()']]],
   ['min_5f',['min_',['../classltr_1_1_feature_normalizer_learner.html#ac43d9801806b99f4e866a3f9ea553ed5',1,'ltr::FeatureNormalizerLearner']]],
   ['min_5fdistance_5f',['min_distance_',['../classltr_1_1utility_1_1_inverse_linear_distance.html#a703e2e705b1ceb25dd4f029ccf98fb8d',1,'ltr::utility::InverseLinearDistance::min_distance_()'],['../classltr_1_1utility_1_1_inverse_power_distance.html#ad04ecee639c8020e0f29149b72366d32',1,'ltr::utility::InversePowerDistance::min_distance_()']]],
   ['min_5finit_5fdepth_5f',['min_init_depth_',['../classltr_1_1gp_1_1_g_p_learner.html#aa46e93178336e33c41f2c028e5def783',1,'ltr::gp::GPLearner']]],

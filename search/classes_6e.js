@@ -11,6 +11,7 @@ var searchData=
   ['nominaltoboolconverterlearner',['NominalToBoolConverterLearner',['../classltr_1_1_nominal_to_bool_converter_learner.html',1,'ltr']]],
   ['nonlineardiscriminant',['NonLinearDiscriminant',['../classltr_1_1_non_linear_discriminant.html',1,'ltr']]],
   ['nonlineardiscriminantdensitylearner',['NonLinearDiscriminantDensityLearner',['../classltr_1_1_non_linear_discriminant_density_learner.html',1,'ltr']]],
+  ['normaldistribution',['NormalDistribution',['../class_random_lib_1_1_normal_distribution.html',1,'RandomLib']]],
   ['normalizedmeasure',['NormalizedMeasure',['../classltr_1_1_normalized_measure.html',1,'ltr']]],
   ['normalnaivebayesdensitylearner',['NormalNaiveBayesDensityLearner',['../classltr_1_1_normal_naive_bayes_density_learner.html',1,'ltr']]],
   ['normalnaivebayeslearner',['NormalNaiveBayesLearner',['../classltr_1_1_normal_naive_bayes_learner.html',1,'ltr']]]

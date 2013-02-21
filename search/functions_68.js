@@ -4,5 +4,6 @@ var searchData=
   ['haschild',['hasChild',['../classltr_1_1decision__tree_1_1_vertex.html#a3f62f0e202f180ecdf2979e6dcd7414e',1,'ltr::decision_tree::Vertex']]],
   ['hash',['hash',['../classltr_1_1io__utility_1_1_parser.html#ad8bf4efd2353a92548553ab93105ed4c',1,'ltr::io_utility::Parser']]],
   ['hessian',['hessian',['../classoptimization_1_1_linear_function.html#a03582457b57919091eb5487e25673ecf',1,'optimization::LinearFunction::hessian()'],['../classoptimization_1_1_g3_function.html#ab35dfb22b53f0ed4980b6d2947800bda',1,'optimization::G3Function::hessian()'],['../classoptimization_1_1_easom_function.html#ad68d5566956c2cdfbd57f3b30e87b9d1',1,'optimization::EasomFunction::hessian()'],['../classoptimization_1_1_trid_function.html#ae16190a80300eb4d18701787e1cb9a26',1,'optimization::TridFunction::hessian()'],['../classoptimization_1_1_twice_differentiable_function.html#a72fb9ad2d9d87492335875206139bb8e',1,'optimization::TwiceDifferentiableFunction::hessian()']]],
+  ['highest_5fbit_5fidx',['highest_bit_idx',['../class_random_lib_1_1_random_number.html#ae597ca24a309b30650646e38039b26d1',1,'RandomLib::RandomNumber']]],
   ['holder',['Holder',['../classltr_1_1utility_1_1_any_1_1_holder.html#aefed398e19962bd7d88e417b88e89989',1,'ltr::utility::Any::Holder']]]
 ];
