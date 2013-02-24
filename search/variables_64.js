@@ -13,7 +13,7 @@ var searchData=
   ['datas',['datas',['../struct_crossvalidation_launch_info.html#a090084180d71b0b0bbe86d64e941ce1c',1,'CrossvalidationLaunchInfo']]],
   ['delta_5f',['delta_',['../classoptimization_1_1_delta_argument_stop_criterion.html#aba1ad9b7f74791e58882d91477ec767d',1,'optimization::DeltaArgumentStopCriterion::delta_()'],['../classoptimization_1_1_delta_function_stop_criterion.html#adfe80a52bb95f7d951c1af4b25f5b21d',1,'optimization::DeltaFunctionStopCriterion::delta_()'],['../classoptimization_1_1_gradient_stop_criterion.html#af3fd80ae620ab5e89f5324154a0f087b',1,'optimization::GradientStopCriterion::delta_()']]],
   ['density_5flearner_5f',['density_learner_',['../classltr_1_1_bayesian_learner.html#a296506b7764ccf8d6c200a7f3683d904',1,'ltr::BayesianLearner']]],
-  ['dependency_5fspecs_5f',['dependency_specs_',['../class_parameterized_info.html#a423f0b3dec896cf46bb9d4c532972be3',1,'ParameterizedInfo']]],
+  ['dependency_5finfos_5f',['dependency_infos_',['../class_object_info.html#a8381edc264e6aab248ba6556d71aed59',1,'ObjectInfo']]],
   ['dimension_5f',['dimension_',['../classoptimization_1_1_function.html#a3df1df649bdbc1399ed2d0c7c7ded0b5',1,'optimization::Function']]],
   ['dimensions_5f',['dimensions_',['../classltr_1_1utility_1_1_multi_array.html#af9a7bea48ec3f633e2e22c0fd19cbc36',1,'ltr::utility::MultiArray']]],
   ['distance',['distance',['../structltr_1_1_distance_to_neighbor.html#afed47c193fbc5773b00c971d9840b806',1,'ltr::DistanceToNeighbor']]],

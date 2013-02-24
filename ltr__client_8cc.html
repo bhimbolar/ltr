@@ -98,233 +98,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div>
 <div class="header">
-  <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ltr_client/ltr_client.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;rlog/rlog_default.h&quot;</code><br/>
-<code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;stdexcept&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;ctime&gt;</code><br/>
-<code>#include &lt;set&gt;</code><br/>
-<code>#include &quot;<a class="el" href="predictions__aggregator_8h_source.html">ltr/predictions_aggregators/predictions_aggregator.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="average__predictions__aggregator_8h_source.html">ltr/predictions_aggregators/average_predictions_aggregator.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="vote__predictions__aggregator_8h_source.html">ltr/predictions_aggregators/vote_predictions_aggregator.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="splitter_8h_source.html">ltr/crossvalidation/splitter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="crossvalidator_8h_source.html">ltr/crossvalidation/crossvalidator.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="k__fold__simple__splitter_8h_source.html">ltr/crossvalidation/k_fold_simple_splitter.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="io__utility_8h_source.html">ltr/data/utility/io_utility.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="learner_8h_source.html">ltr/learners/learner.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="best__feature__learner_8h_source.html">ltr/learners/best_feature_learner/best_feature_learner.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="linear__learner_8h_source.html">ltr/learners/linear_learner/linear_learner.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="nearest__neighbor__learner_8h_source.html">ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="measure_8h_source.html">ltr/measures/measure.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="dcg_8h_source.html">ltr/measures/dcg.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="ndcg_8h_source.html">ltr/measures/ndcg.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="abs__error_8h_source.html">ltr/measures/abs_error.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="metric_8h_source.html">ltr/metrics/metric.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="euclidean__metric_8h_source.html">ltr/metrics/euclidean_metric.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="neighbor__weighter_8h_source.html">ltr/utility/neighbor_weighter.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="io__utility_8h_source.html">ltr/data/utility/io_utility.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ltr__client_8h_source.html">ltr_client/ltr_client.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="configurator_8h_source.html">ltr_client/configurator.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="factory_8h_source.html">ltr_client/factory.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="registration_8h_source.html">ltr_client/registration.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="neighbor__weighter_8h_source.html">ltr/utility/neighbor_weighter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="path_8h_source.html">ltr/utility/boost/path.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="string__utils_8h_source.html">ltr/utility/boost/string_utils.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="html_8h_source.html">ltr/utility/html.h</a>&quot;</code><br/>
-<code>#include &quot;contrib/getopt_pp/getopt_pp.h&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ltr_client.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="ltr__client_8cc__incl.png" border="0" usemap="#ltr__client_2ltr__client_8cc" alt=""/></div>
 <map name="ltr__client_2ltr__client_8cc" id="ltr__client_2ltr__client_8cc">
-<area shape="rect" href="predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="2013,304,2333,331"/><area shape="rect" href="average__predictions__aggregator_8h.html" title="ltr/predictions_aggregators/average_predictions_aggregator.h" alt="" coords="2387,229,2757,256"/><area shape="rect" href="vote__predictions__aggregator_8h.html" title="ltr/predictions_aggregators/vote_predictions_aggregator.h" alt="" coords="1405,229,1755,256"/><area shape="rect" href="splitter_8h.html" title="ltr/crossvalidation/splitter.h" alt="" coords="3893,304,4069,331"/><area shape="rect" href="crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="3252,155,3468,181"/><area shape="rect" href="learner_8h.html" title="ltr/learners/learner.h" alt="" coords="2781,229,2917,256"/><area shape="rect" href="measure_8h.html" title="ltr/measures/measure.h" alt="" coords="2927,304,3084,331"/><area shape="rect" href="html_8h.html" title="ltr/utility/html.h" alt="" coords="1291,528,1397,555"/><area shape="rect" href="k__fold__simple__splitter_8h.html" title="ltr/crossvalidation/k_fold_simple_splitter.h" alt="" coords="4621,229,4883,256"/><area shape="rect" href="io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="4199,304,4356,331"/><area shape="rect" href="path_8h.html" title="ltr/utility/boost/path.h" alt="" coords="3523,379,3667,405"/><area shape="rect" href="best__feature__learner_8h.html" title="ltr/learners/best_feature_learner/best_feature_learner.h" alt="" coords="2681,155,3017,181"/><area shape="rect" href="linear__learner_8h.html" title="ltr/learners/linear_learner/linear_learner.h" alt="" coords="3547,155,3803,181"/><area shape="rect" href="nearest__neighbor__learner_8h.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.h" alt="" coords="1796,155,2188,181"/><area shape="rect" href="metric_8h.html" title="ltr/metrics/metric.h" alt="" coords="1547,304,1677,331"/><area shape="rect" href="euclidean__metric_8h.html" title="ltr/metrics/euclidean_metric.h" alt="" coords="1189,229,1381,256"/><area shape="rect" href="neighbor__weighter_8h.html" title="ltr/utility/neighbor_weighter.h" alt="" coords="1701,304,1888,331"/><area shape="rect" href="dcg_8h.html" title="ltr/measures/dcg.h" alt="" coords="4965,229,5093,256"/><area shape="rect" href="ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="4575,155,4711,181"/><area shape="rect" href="abs__error_8h.html" title="ltr/measures/abs_error.h" alt="" coords="1240,155,1403,181"/><area shape="rect" href="ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="525,304,659,331"/><area shape="rect" href="configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="557,379,709,405"/><area shape="rect" href="factory_8h.html" title="ltr_client/factory.h" alt="" coords="1243,304,1365,331"/><area shape="rect" href="registration_8h.html" title="ltr_client/registration.h" alt="" coords="2191,80,2340,107"/><area shape="rect" href="string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="4989,528,5171,555"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2573,528,2752,555"/><area shape="rect" href="serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="1443,379,1613,405"/><area shape="rect" href="parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2043,379,2232,405"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2915,453,3059,480"/><area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1696,453,1997,480"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="4005,528,4160,555"/><area shape="rect" href="data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="3944,379,4069,405"/><area shape="rect" href="multitable_8h.html" title="ltr/utility/multitable.h" alt="" coords="3792,453,3931,480"/></map>
+<area shape="rect" href="splitter_8h.html" title="ltr/crossvalidation/splitter.h" alt="" coords="752,229,928,256"/><area shape="rect" href="crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="987,80,1203,107"/><area shape="rect" href="learner_8h.html" title="ltr/learners/learner.h" alt="" coords="2347,155,2483,181"/><area shape="rect" href="measure_8h.html" title="ltr/measures/measure.h" alt="" coords="2079,229,2236,256"/><area shape="rect" href="html_8h.html" title="ltr/utility/html.h" alt="" coords="3979,528,4085,555"/><area shape="rect" href="metric_8h.html" title="ltr/metrics/metric.h" alt="" coords="2992,229,3123,256"/><area shape="rect" href="neighbor__weighter_8h.html" title="ltr/utility/neighbor_weighter.h" alt="" coords="3259,229,3445,256"/><area shape="rect" href="io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="3841,155,3999,181"/><area shape="rect" href="path_8h.html" title="ltr/utility/boost/path.h" alt="" coords="5128,229,5272,256"/><area shape="rect" href="ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="4595,80,4728,107"/><area shape="rect" href="configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="4952,229,5104,256"/><area shape="rect" href="factory_8h.html" title="ltr_client/factory.h" alt="" coords="4188,229,4311,256"/><area shape="rect" href="string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="456,528,637,555"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2080,528,2259,555"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1112,528,1267,555"/><area shape="rect" href="data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1360,304,1485,331"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2261,379,2405,405"/><area shape="rect" href="parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2320,304,2509,331"/><area shape="rect" href="object_8h.html" title="ltr/data/object.h" alt="" coords="2240,453,2352,480"/><area shape="rect" href="object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1493,379,1629,405"/><area shape="rect" href="object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1280,379,1419,405"/><area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="2885,379,3187,405"/><area shape="rect" href="multitable_8h.html" title="ltr/utility/multitable.h" alt="" coords="709,453,848,480"/><area shape="rect" href="data__preprocessor_8h.html" title="ltr/data_preprocessors/data_preprocessor.h" alt="" coords="1783,229,2055,256"/><area shape="rect" href="feature__converter__learner_8h.html" title="ltr/feature_converters/feature_converter_learner.h" alt="" coords="1460,229,1759,256"/><area shape="rect" href="reporter_8h.html" title="ltr/interfaces/reporter.h" alt="" coords="2587,453,2739,480"/><area shape="rect" href="scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="2685,304,2816,331"/><area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="3363,379,3549,405"/><area shape="rect" href="numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3541,304,3680,331"/><area shape="rect" href="serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="3144,304,3315,331"/><area shape="rect" href="parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="3755,229,3949,256"/><area shape="rect" href="parameterized__info_8h.html" title="ltr_client/utility/parameterized_info.h" alt="" coords="4717,304,4947,331"/><area shape="rect" href="dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="4616,155,4872,181"/><area shape="rect" href="crossvalidation__launch__info_8h.html" title="ltr_client/utility/crossvalidation_launch_info.h" alt="" coords="5048,453,5325,480"/><area shape="rect" href="data__info_8h.html" title="ltr_client/utility/data_info.h" alt="" coords="5349,453,5520,480"/><area shape="rect" href="train__launch__info_8h.html" title="ltr_client/utility/train_launch_info.h" alt="" coords="4832,379,5048,405"/></map>
 </div>
-</div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a6e89264d215ce529dca7f9ed848ec6ee"><td class="memItemLeft" align="right" valign="top">typedef string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#a6e89264d215ce529dca7f9ed848ec6ee">ParameterizedDependency</a></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:af76a30a1c9d7e39e5137ade35bca6dd5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#af76a30a1c9d7e39e5137ade35bca6dd5">BuildObjectCreationChain</a> (const <a class="el" href="class_parameterized_info.html">ParameterizedInfo</a> *spec, <a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> *queue, <a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> *circularity_check_queue)</td></tr>
-<tr class="memitem:a997e93abfdd065738fdfbc6d0934dd12"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12">values</a> (const <a class="el" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> &amp;cont)</td></tr>
-<tr class="memitem:a09a0562a63ef32a5641299e742fe5908"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#a09a0562a63ef32a5641299e742fe5908">Create</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;src_parameters, const <a class="el" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> &amp;all_specs)</td></tr>
-<tr class="memitem:a73c676fc10b7c0f841b1fd437113547c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#a73c676fc10b7c0f841b1fd437113547c">Create</a> (const string &amp;name, const <a class="el" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> &amp;all_specs)</td></tr>
-<tr class="memitem:a78bf8646c074be1959943f73bd7458c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#a78bf8646c074be1959943f73bd7458c0">show_usage</a> ()</td></tr>
-<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ltr__client_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
-</table>
-<hr/><h2>Typedef Documentation</h2>
-<a class="anchor" id="a6e89264d215ce529dca7f9ed848ec6ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef string <a class="el" href="ltr__client_8cc.html#a6e89264d215ce529dca7f9ed848ec6ee">ParameterizedDependency</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="af76a30a1c9d7e39e5137ade35bca6dd5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool <a class="el" href="ltr__client_8cc.html#af76a30a1c9d7e39e5137ade35bca6dd5">BuildObjectCreationChain</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_parameterized_info.html">ParameterizedInfo</a> *&#160;</td>
-          <td class="paramname"><em>spec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> *&#160;</td>
-          <td class="paramname"><em>circularity_check_queue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a09a0562a63ef32a5641299e742fe5908"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> <a class="el" href="ltr__client_8cc.html#a73c676fc10b7c0f841b1fd437113547c">Create</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;&#160;</td>
-          <td class="paramname"><em>src_parameters</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> &amp;&#160;</td>
-          <td class="paramname"><em>all_specs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a73c676fc10b7c0f841b1fd437113547c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> <a class="el" href="ltr__client_8cc.html#a73c676fc10b7c0f841b1fd437113547c">Create</a> </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> &amp;&#160;</td>
-          <td class="paramname"><em>all_specs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="_c_make_c_x_x_compiler_id_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a78bf8646c074be1959943f73bd7458c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="ltr__client_8cc.html#a78bf8646c074be1959943f73bd7458c0">show_usage</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a997e93abfdd065738fdfbc6d0934dd12"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> <a class="el" href="ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12">values</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_config_parser.html#ad67c6b6ada8d90ce2bf01e7f3b1481ae">ConfigParser::ParameterizedInfos</a> &amp;&#160;</td>
-          <td class="paramname"><em>cont</em></td><td>)</td>
-          <td><code> [static]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2013 17:48:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 24 2013 18:17:10 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

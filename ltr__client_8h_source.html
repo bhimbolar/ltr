@@ -109,53 +109,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="parameterized_8h.html">ltr/interfaces/parameterized.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="learner_8h.html">ltr/learners/learner.h</a>&quot;</span>
 <a name="l00009"></a>00009 
 <a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="configurator_8h.html">ltr_client/configurator.h</a>&quot;</span>
-<a name="l00011"></a>00011 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="dependency__resolving__factory_8h.html">ltr_client/dependency_resolving_factory.h</a>&quot;</span>
 <a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="parameterized__info_8h.html">ltr_client/utility/parameterized_info.h</a>&quot;</span>
 <a name="l00013"></a>00013 
 <a name="l00014"></a>00014 <span class="keyword">using</span> std::string;
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016 <span class="keyword">using</span> <a class="code" href="classltr_1_1_parameterized.html">ltr::Parameterized</a>;
-<a name="l00017"></a>00017 <span class="keyword">using</span> <a class="code" href="classltr_1_1utility_1_1_any.html">ltr::utility::Any</a>;
-<a name="l00018"></a>00018 
-<a name="l00019"></a><a class="code" href="class_ltr_client.html">00019</a> <span class="keyword">class </span><a class="code" href="class_ltr_client.html">LtrClient</a> {
-<a name="l00020"></a>00020  <span class="keyword">public</span>:
-<a name="l00021"></a>00021   <a class="code" href="class_ltr_client.html#a47df9d29023c6f3a04096a66d93169b6">LtrClient</a>();
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023   <a class="code" href="class_ltr_client.html#a1ae228e51c0dd617cfe7fbfe4d444489">~LtrClient</a>();
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a44c7fbd7e36a2317c7509b2403e7da12">initFrom</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; file_name);
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a79ebcab2a9e8533163c827484aa0be8c">launch</a>();
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a878e5db0d93ce5fcc9736c0dabab6465">addToReport</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; text);
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a43e2b4ff2bcf64e87d5f9f23bb3f7a89">saveReport</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; file_name);
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033  <span class="keyword">private</span>:
-<a name="l00034"></a>00034   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#aead96d929c66b45b05f8e57cc1fe5c4a">launchTrain</a>(<a class="code" href="classltr_1_1utility_1_1_any.html">Any</a> parameterized,
-<a name="l00036"></a>00036                    <span class="keyword">const</span> <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>&amp; train_info);
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00039"></a>00039   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a4c3bc7e61fd7397c913606cb1cf6c36f">launchCrossvalidation</a>(
-<a name="l00040"></a>00040     <span class="keyword">const</span> <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>&amp; crossvalidation_info);
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042   <a class="code" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> <a class="code" href="class_ltr_client.html#ac1e5f3fe159ac033930dad5bf04136b8">getLoadQueue</a>() <span class="keyword">const</span>;
-<a name="l00043"></a>00043 
-<a name="l00044"></a><a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">00044</a>   <a class="code" href="class_config_parser.html">ConfigParser</a> <a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">configurator_</a>;
-<a name="l00045"></a>00045 
-<a name="l00046"></a><a class="code" href="class_ltr_client.html#a47c1ff079e5c952c49218869371d8b1d">00046</a>   <span class="keywordtype">string</span> <a class="code" href="class_ltr_client.html#a47c1ff079e5c952c49218869371d8b1d">report_body</a>;
-<a name="l00047"></a>00047 };
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049 <span class="preprocessor">#endif  // LTR_CLIENT_LTR_CLIENT_H_</span>
+<a name="l00015"></a>00015 <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">ltr::Learner</a>;
+<a name="l00016"></a>00016 
+<a name="l00020"></a><a class="code" href="class_ltr_client.html">00020</a> <span class="keyword">class </span><a class="code" href="class_ltr_client.html">LtrClient</a> {
+<a name="l00021"></a>00021  <span class="keyword">public</span>:
+<a name="l00025"></a>00025   <a class="code" href="class_ltr_client.html#a47df9d29023c6f3a04096a66d93169b6">LtrClient</a>();
+<a name="l00029"></a>00029   <a class="code" href="class_ltr_client.html#a1ae228e51c0dd617cfe7fbfe4d444489">~LtrClient</a>();
+<a name="l00034"></a>00034   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a44c7fbd7e36a2317c7509b2403e7da12">initFrom</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; file_name);
+<a name="l00038"></a>00038   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a79ebcab2a9e8533163c827484aa0be8c">launch</a>();
+<a name="l00042"></a>00042   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a76f04c79c0b623439dcebd891db8019b">launchTrain</a>();
+<a name="l00046"></a>00046   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#aa699ede3adb88f8c98f76505d8d8e044">launchCrossvalidation</a>();
+<a name="l00051"></a>00051   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a7fc0237924ba18e3929c79cc974b106b">saveReport</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; file_name) <span class="keyword">const</span>;
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053  <span class="keyword">private</span>:
+<a name="l00058"></a>00058   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a878e5db0d93ce5fcc9736c0dabab6465">addToReport</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; text);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00061"></a>00061   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a49a54ece3c6e7ded521259df0380929c">launchTrainImpl</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::Ptr</a> learner,
+<a name="l00062"></a>00062                    <span class="keyword">const</span> <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>&amp; train_info);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00065"></a>00065   <span class="keywordtype">void</span> <a class="code" href="class_ltr_client.html#a470b938f48a83dac3b51c17fb152f980">launchCrossvalidationImpl</a>(
+<a name="l00066"></a>00066     <span class="keyword">const</span> <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>&amp; crossvalidation_info);
+<a name="l00067"></a>00067 
+<a name="l00068"></a><a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">00068</a>   <a class="code" href="class_config_parser.html">ConfigParser</a> <a class="code" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">configurator_</a>;
+<a name="l00069"></a><a class="code" href="class_ltr_client.html#ad6404364284326f2d211bc0f80623cdf">00069</a>   <a class="code" href="class_dependency_resolving_factory.html">DependencyResolvingFactory</a> <a class="code" href="class_ltr_client.html#ad6404364284326f2d211bc0f80623cdf">factory_</a>;
+<a name="l00070"></a><a class="code" href="class_ltr_client.html#a41767edc9dcad68197a066cfa2f81661">00070</a>   <span class="keywordtype">string</span> <a class="code" href="class_ltr_client.html#a41767edc9dcad68197a066cfa2f81661">report_body_</a>;
+<a name="l00071"></a>00071 };
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="preprocessor">#endif  // LTR_CLIENT_LTR_CLIENT_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2013 17:48:31 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 24 2013 18:17:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

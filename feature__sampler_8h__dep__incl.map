@@ -5,7 +5,7 @@
 <area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="803,80,1120,107"/>
 <area shape="rect" href="$feature__sampler_8cc.html" title="ltr/feature_converters/feature_sampler.cc" alt="" coords="1144,80,1400,107"/>
 <area shape="rect" href="$feature__converters__learner__unittest_8cc.html" title="ltr/feature_converters/feature_converters_learner_unittest.cc" alt="" coords="179,155,541,181"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="9,229,151,256"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="20,229,140,256"/>
 <area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="565,155,947,181"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="971,155,1237,181"/>
 </map>

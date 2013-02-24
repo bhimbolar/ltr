@@ -119,21 +119,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ae228e51c0dd617cfe7fbfe4d444489"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a1ae228e51c0dd617cfe7fbfe4d444489">~LtrClient</a> ()</td></tr>
 <tr class="memitem:a44c7fbd7e36a2317c7509b2403e7da12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a44c7fbd7e36a2317c7509b2403e7da12">initFrom</a> (const string &amp;file_name)</td></tr>
 <tr class="memitem:a79ebcab2a9e8533163c827484aa0be8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a79ebcab2a9e8533163c827484aa0be8c">launch</a> ()</td></tr>
-<tr class="memitem:a878e5db0d93ce5fcc9736c0dabab6465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a878e5db0d93ce5fcc9736c0dabab6465">addToReport</a> (const string &amp;text)</td></tr>
-<tr class="memitem:a43e2b4ff2bcf64e87d5f9f23bb3f7a89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a43e2b4ff2bcf64e87d5f9f23bb3f7a89">saveReport</a> (const string &amp;file_name)</td></tr>
+<tr class="memitem:a76f04c79c0b623439dcebd891db8019b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a76f04c79c0b623439dcebd891db8019b">launchTrain</a> ()</td></tr>
+<tr class="memitem:aa699ede3adb88f8c98f76505d8d8e044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#aa699ede3adb88f8c98f76505d8d8e044">launchCrossvalidation</a> ()</td></tr>
+<tr class="memitem:a7fc0237924ba18e3929c79cc974b106b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a7fc0237924ba18e3929c79cc974b106b">saveReport</a> (const string &amp;file_name) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aead96d929c66b45b05f8e57cc1fe5c4a"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
-<tr class="memitem:aead96d929c66b45b05f8e57cc1fe5c4a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#aead96d929c66b45b05f8e57cc1fe5c4a">launchTrain</a> (<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> parameterized, const <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> &amp;train_info)</td></tr>
-<tr class="memitem:a4c3bc7e61fd7397c913606cb1cf6c36f"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
-<tr class="memitem:a4c3bc7e61fd7397c913606cb1cf6c36f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a4c3bc7e61fd7397c913606cb1cf6c36f">launchCrossvalidation</a> (const <a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> &amp;crossvalidation_info)</td></tr>
-<tr class="memitem:ac1e5f3fe159ac033930dad5bf04136b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#ac1e5f3fe159ac033930dad5bf04136b8">getLoadQueue</a> () const </td></tr>
+<tr class="memitem:a878e5db0d93ce5fcc9736c0dabab6465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a878e5db0d93ce5fcc9736c0dabab6465">addToReport</a> (const string &amp;text)</td></tr>
+<tr class="memitem:a49a54ece3c6e7ded521259df0380929c"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
+<tr class="memitem:a49a54ece3c6e7ded521259df0380929c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a49a54ece3c6e7ded521259df0380929c">launchTrainImpl</a> (typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr learner, const <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> &amp;train_info)</td></tr>
+<tr class="memitem:a470b938f48a83dac3b51c17fb152f980"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
+<tr class="memitem:a470b938f48a83dac3b51c17fb152f980"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a470b938f48a83dac3b51c17fb152f980">launchCrossvalidationImpl</a> (const <a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> &amp;crossvalidation_info)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a30d1b6863d7b1a66a13a5ad00d35fdb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_parser.html">ConfigParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">configurator_</a></td></tr>
-<tr class="memitem:a47c1ff079e5c952c49218869371d8b1d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a47c1ff079e5c952c49218869371d8b1d">report_body</a></td></tr>
+<tr class="memitem:ad6404364284326f2d211bc0f80623cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dependency_resolving_factory.html">DependencyResolvingFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#ad6404364284326f2d211bc0f80623cdf">factory_</a></td></tr>
+<tr class="memitem:a41767edc9dcad68197a066cfa2f81661"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a41767edc9dcad68197a066cfa2f81661">report_body_</a></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Performs all the application actions </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a47df9d29023c6f3a04096a66d93169b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +151,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Basic constructor for <a class="el" href="class_ltr_client.html">LtrClient</a> </p>
 
 </div>
 </div>
@@ -163,6 +168,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Basic destructor for <a class="el" href="class_ltr_client.html">LtrClient</a> </p>
 
 </div>
 </div>
@@ -176,27 +182,18 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>text</em></td><td>)</td>
-          <td></td>
+          <td><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac1e5f3fe159ac033930dad5bf04136b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="parameterized__info_8h.html#a9b8ea6f714501ebe525c98e310fa9a6e">ParameterizedInfosList</a> <a class="el" href="class_ltr_client.html#ac1e5f3fe159ac033930dad5bf04136b8">LtrClient::getLoadQueue</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Adds given text to report </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>- text to be added </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -214,6 +211,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Reads all the settings from the config file specified </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- string with the name of config file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -230,17 +234,35 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Starts all the computations according to the settings read from config </p>
 
 </div>
 </div>
-<a class="anchor" id="a4c3bc7e61fd7397c913606cb1cf6c36f"></a>
+<a class="anchor" id="aa699ede3adb88f8c98f76505d8d8e044"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#aa699ede3adb88f8c98f76505d8d8e044">LtrClient::launchCrossvalidation</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Starts crossvalidation according to the settings read from config </p>
+
+</div>
+</div>
+<a class="anchor" id="a470b938f48a83dac3b51c17fb152f980"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_ltr_client.html#a4c3bc7e61fd7397c913606cb1cf6c36f">LtrClient::launchCrossvalidation</a> </td>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#a470b938f48a83dac3b51c17fb152f980">LtrClient::launchCrossvalidationImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>crossvalidation_info</em></td><td>)</td>
@@ -252,17 +274,34 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aead96d929c66b45b05f8e57cc1fe5c4a"></a>
+<a class="anchor" id="a76f04c79c0b623439dcebd891db8019b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#a76f04c79c0b623439dcebd891db8019b">LtrClient::launchTrain</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Starts train according to the settings read from config </p>
+
+</div>
+</div>
+<a class="anchor" id="a49a54ece3c6e7ded521259df0380929c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_ltr_client.html#aead96d929c66b45b05f8e57cc1fe5c4a">LtrClient::launchTrain</a> </td>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#a49a54ece3c6e7ded521259df0380929c">LtrClient::launchTrainImpl</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>&#160;</td>
-          <td class="paramname"><em>parameterized</em>, </td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr&#160;</td>
+          <td class="paramname"><em>learner</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -281,20 +320,27 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a43e2b4ff2bcf64e87d5f9f23bb3f7a89"></a>
+<a class="anchor" id="a7fc0237924ba18e3929c79cc974b106b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_ltr_client.html#a43e2b4ff2bcf64e87d5f9f23bb3f7a89">LtrClient::saveReport</a> </td>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#a7fc0237924ba18e3929c79cc974b106b">LtrClient::saveReport</a> </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>file_name</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Saves the report to file </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- string with the name of report file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -312,12 +358,25 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a47c1ff079e5c952c49218869371d8b1d"></a>
+<a class="anchor" id="ad6404364284326f2d211bc0f80623cdf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="class_ltr_client.html#a47c1ff079e5c952c49218869371d8b1d">LtrClient::report_body</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="class_dependency_resolving_factory.html">DependencyResolvingFactory</a> <a class="el" href="class_ltr_client.html#ad6404364284326f2d211bc0f80623cdf">LtrClient::factory_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41767edc9dcad68197a066cfa2f81661"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="class_ltr_client.html#a41767edc9dcad68197a066cfa2f81661">LtrClient::report_body_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -333,7 +392,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2013 17:48:34 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 24 2013 18:17:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

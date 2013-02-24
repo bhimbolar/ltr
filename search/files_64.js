@@ -47,6 +47,8 @@ var searchData=
   ['delta_5ffunction_5fstop_5fcriterion_2eh',['delta_function_stop_criterion.h',['../delta__function__stop__criterion_8h.html',1,'']]],
   ['density_5festimators_5flearners_5funittests_2ecc',['density_estimators_learners_unittests.cc',['../density__estimators__learners__unittests_8cc.html',1,'']]],
   ['density_5festimators_5fscorers_5funittests_2ecc',['density_estimators_scorers_unittests.cc',['../density__estimators__scorers__unittests_8cc.html',1,'']]],
+  ['dependency_5fresolving_5ffactory_2ecc',['dependency_resolving_factory.cc',['../dependency__resolving__factory_8cc.html',1,'']]],
+  ['dependency_5fresolving_5ffactory_2eh',['dependency_resolving_factory.h',['../dependency__resolving__factory_8h.html',1,'']]],
   ['differentiable_5ffunction_2eh',['differentiable_function.h',['../differentiable__function_8h.html',1,'']]],
   ['doc_5fcontents_2edox',['doc_contents.dox',['../doc__contents_8dox.html',1,'']]]
 ];

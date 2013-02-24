@@ -5,7 +5,7 @@
 <area shape="rect" href="$composition__learner_8h.html" title="ltr/learners/composition_learner/composition_learner.h" alt="" coords="1077,80,1411,107"/>
 <area shape="rect" href="$average__composition__scorer__weights__updater_8h.html" title="ltr/learners/composition_learner/average_composition_scorer_weights_updater.h" alt="" coords="5,80,488,107"/>
 <area shape="rect" href="$ada__boost__learner_8h.html" title="ltr/learners/composition_learner/ada_boost_learner.h" alt="" coords="660,155,983,181"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="440,229,581,256"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="451,229,571,256"/>
 <area shape="rect" href="$composition__learner__unittest_8cc.html" title="ltr/learners/composition_learner/composition_learner_unittest.cc" alt="" coords="1348,155,1737,181"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1007,155,1273,181"/>
 </map>

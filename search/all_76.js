@@ -5,7 +5,6 @@ var searchData=
   ['value_5f0_5f',['value_0_',['../classltr_1_1utility_1_1triple.html#a0122d0bc1f0f6c8def1ce49b867578f5',1,'ltr::utility::triple']]],
   ['value_5f1_5f',['value_1_',['../classltr_1_1utility_1_1triple.html#a604c372c37788de56c633f9614bdaaea',1,'ltr::utility::triple']]],
   ['value_5f2_5f',['value_2_',['../classltr_1_1utility_1_1triple.html#a32b0878c0f3552aeef8d4a68bbbbe58e',1,'ltr::utility::triple']]],
-  ['values',['values',['../ltr__client_8cc.html#a997e93abfdd065738fdfbc6d0934dd12',1,'ltr_client.cc']]],
   ['values_5f',['values_',['../structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb',1,'ltr::OneFeatureInfo']]],
   ['vector',['Vector',['../and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56',1,'and_criterion_unittest.cc']]],
   ['vectorinheritancetestclass',['VectorInheritanceTestClass',['../class_vector_inheritance_test_class.html',1,'VectorInheritanceTestClass'],['../class_vector_inheritance_test_class.html#ad3e3a52fe5b98391203ec3a6c1373cfc',1,'VectorInheritanceTestClass::VectorInheritanceTestClass()']]],
@@ -25,6 +24,6 @@ var searchData=
   ['vertexwithdata',['VertexWithData',['../structltr_1_1decision__tree_1_1_vertex_with_data.html#ae10b489bbf214dff852c9a00c11223e4',1,'ltr::decision_tree::VertexWithData::VertexWithData(Vertex::Ptr vertex, const DataSet&lt; Object &gt; &amp;data)'],['../structltr_1_1decision__tree_1_1_vertex_with_data.html#ae099d55df3fed36589552e2343b87dfd',1,'ltr::decision_tree::VertexWithData::VertexWithData(const VertexWithData &amp;other)']]],
   ['vote_5fpredictions_5faggregator_2ecc',['vote_predictions_aggregator.cc',['../vote__predictions__aggregator_8cc.html',1,'']]],
   ['vote_5fpredictions_5faggregator_2eh',['vote_predictions_aggregator.h',['../vote__predictions__aggregator_8h.html',1,'']]],
-  ['votepredictionsaggregator',['VotePredictionsAggregator',['../classltr_1_1_vote_predictions_aggregator.html#a17fc56b4dfe9d0ff3071cee0763c10bf',1,'ltr::VotePredictionsAggregator::VotePredictionsAggregator()'],['../classltr_1_1_vote_predictions_aggregator.html#ad98fa6d15a1d45df54ebac0e8948008d',1,'ltr::VotePredictionsAggregator::VotePredictionsAggregator(const ParametersContainer &amp;parameters)']]],
-  ['votepredictionsaggregator',['VotePredictionsAggregator',['../classltr_1_1_vote_predictions_aggregator.html',1,'ltr']]]
+  ['votepredictionsaggregator',['VotePredictionsAggregator',['../classltr_1_1_vote_predictions_aggregator.html',1,'ltr']]],
+  ['votepredictionsaggregator',['VotePredictionsAggregator',['../classltr_1_1_vote_predictions_aggregator.html#a17fc56b4dfe9d0ff3071cee0763c10bf',1,'ltr::VotePredictionsAggregator::VotePredictionsAggregator()'],['../classltr_1_1_vote_predictions_aggregator.html#ad98fa6d15a1d45df54ebac0e8948008d',1,'ltr::VotePredictionsAggregator::VotePredictionsAggregator(const ParametersContainer &amp;parameters)']]]
 ];

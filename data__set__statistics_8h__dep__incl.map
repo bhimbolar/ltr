@@ -6,7 +6,7 @@
 <area shape="rect" href="$most__common__label__leaf__generator_8h.html" title="ltr/learners/decision_tree/leaf_generator/most_common_label_leaf_generator.h" alt="" coords="1545,155,2017,181"/>
 <area shape="rect" href="$feature__converters__learner__unittest_8cc.html" title="ltr/feature_converters/feature_converters_learner_unittest.cc" alt="" coords="213,155,576,181"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="700,304,849,331"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="704,379,845,405"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="715,379,835,405"/>
 <area shape="rect" href="$base__splitter_8cc.html" title="ltr/learners/decision_tree/base_splitter.cc" alt="" coords="1212,155,1471,181"/>
 <area shape="rect" href="$decision__tree__learner_8h.html" title="ltr/learners/decision_tree/decision_tree_learner.h" alt="" coords="1400,229,1701,256"/>
 <area shape="rect" href="$id3__splitter_8h.html" title="ltr/learners/decision_tree/id3_splitter.h" alt="" coords="948,155,1188,181"/>

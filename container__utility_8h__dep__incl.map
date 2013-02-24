@@ -1,5 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="5,80,165,107"/>
-<area shape="rect" href="$crossvalidation__launch__info_8cc.html" title="ltr_client/utility/crossvalidation_launch_info.cc" alt="" coords="189,80,472,107"/>
-<area shape="rect" href="$train__launch__info_8cc.html" title="ltr_client/utility/train_launch_info.cc" alt="" coords="496,80,720,107"/>
+<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="189,80,453,107"/>
+<area shape="rect" href="$crossvalidation__launch__info_8cc.html" title="ltr_client/utility/crossvalidation_launch_info.cc" alt="" coords="477,80,760,107"/>
+<area shape="rect" href="$train__launch__info_8cc.html" title="ltr_client/utility/train_launch_info.cc" alt="" coords="784,80,1008,107"/>
 </map>

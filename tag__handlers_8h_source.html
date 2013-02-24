@@ -118,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 
 <a name="l00015"></a>00015 <span class="keyword">using</span> ltr::utility::iequals;
 <a name="l00016"></a>00016 
-<a name="l00017"></a><a class="code" href="tag__handlers_8h.html#a6e89264d215ce529dca7f9ed848ec6ee">00017</a> <span class="keyword">typedef</span> <span class="keywordtype">string</span> <a class="code" href="ltr__client_8cc.html#a6e89264d215ce529dca7f9ed848ec6ee">ParameterizedDependency</a>;
+<a name="l00017"></a><a class="code" href="tag__handlers_8h.html#ac97ee1dc1188eb7ac5fefd5ede57329a">00017</a> <span class="keyword">typedef</span> <span class="keywordtype">string</span> <a class="code" href="dependency__resolving__factory_8cc.html#ac97ee1dc1188eb7ac5fefd5ede57329a">ObjectDependency</a>;
 <a name="l00018"></a>00018 
 <a name="l00019"></a>00019 <span class="keyword">namespace </span>{ <span class="comment">// NOLINT</span>
 <a name="l00020"></a>00020 <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> CONFIG               = <span class="stringliteral">&quot;config&quot;</span>;
@@ -312,7 +312,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00287"></a>00287       rInfo(<span class="stringliteral">&quot;TOnParametersExecutor: Added int %s %d\n&quot;</span>,
 <a name="l00288"></a>00288            name.c_str(), <a class="code" href="class_t_on_parameter_tag.html#a9e2ba0a3cf39346172f95ff3458c0572">toInt</a>(value));
 <a name="l00289"></a>00289     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">XML_TOKEN_DEPENDENCY_TYPE</a>) {
-<a name="l00290"></a>00290       <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>-&gt;<a class="code" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">AddNew</a>(name, <a class="code" href="ltr__client_8cc.html#a6e89264d215ce529dca7f9ed848ec6ee">ParameterizedDependency</a>(value));
+<a name="l00290"></a>00290       <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>-&gt;<a class="code" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">AddNew</a>(name, <a class="code" href="dependency__resolving__factory_8cc.html#ac97ee1dc1188eb7ac5fefd5ede57329a">ObjectDependency</a>(value));
 <a name="l00291"></a>00291       rInfo(<span class="stringliteral">&quot;TOnParametersExecutor: Added TXmlTokenDependency %s %s\n&quot;</span>,
 <a name="l00292"></a>00292            name.c_str(), value.c_str());
 <a name="l00293"></a>00293     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type.substr(0, 6) == <span class="stringliteral">&quot;vector&quot;</span>) {   <span class="comment">//TODO: rewrite using split</span>
@@ -379,7 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00383"></a>00383     rInfo(<span class="stringliteral">&quot;TOnGeneralXmlToken\n&quot;</span>);
 <a name="l00384"></a>00384 
 <a name="l00385"></a>00385     <span class="keyword">const</span> <span class="keywordtype">char</span>* name = element-&gt;Attribute(NAME_ATTR);
-<a name="l00386"></a>00386     <a class="code" href="class_parameterized_info.html">ParameterizedInfo</a>&amp; spec = ltr::utility::SafeInsert(<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a2e8e86f0b9ea5c8cd11253ada2602524">xmlTokenSpecs</a>(),
+<a name="l00386"></a>00386     <a class="code" href="class_object_info.html">ObjectInfo</a>&amp; info = ltr::utility::SafeInsert(<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a9e43849bfd8640526976086647f2a9a0">objectInfos</a>(),
 <a name="l00387"></a>00387                                                       name);
 <a name="l00388"></a>00388     <span class="keyword">const</span> <span class="keywordtype">char</span>* type = element-&gt;Attribute(TYPE_ATTR);
 <a name="l00389"></a>00389     <span class="keywordflow">if</span> (!type) {
@@ -396,12 +396,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00400"></a>00400       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;no tag name&quot;</span>);
 <a name="l00401"></a>00401     }
 <a name="l00402"></a>00402 
-<a name="l00403"></a>00403     spec.<a class="code" href="class_parameterized_info.html#aeb1b67f1e650aaffa94c71b4becbb654">tag_name_</a> = tag_name;
-<a name="l00404"></a>00404     spec.<a class="code" href="class_parameterized_info.html#a39371e23f8eedbc813fc49e5d92ae566">object_name_</a> = name;
-<a name="l00405"></a>00405     spec.<a class="code" href="class_parameterized_info.html#a8d2908bfdd6657068877478436b6e7c5">object_type_</a> = type;
-<a name="l00406"></a>00406     spec.<a class="code" href="class_parameterized_info.html#a968ea682c8454e531c91e907b14ebe98">approach_</a> = approach;
+<a name="l00403"></a>00403     info.<a class="code" href="class_object_info.html#a8d76b72265745d63856cb51bdacaa693">tag_name_</a> = tag_name;
+<a name="l00404"></a>00404     info.<a class="code" href="class_object_info.html#a68810e39a37792a34043eb447eb52e89">object_name_</a> = name;
+<a name="l00405"></a>00405     info.<a class="code" href="class_object_info.html#a66ba3b7921a5237b7b0378e246f9279b">object_type_</a> = type;
+<a name="l00406"></a>00406     info.<a class="code" href="class_object_info.html#a789fecf7d41b264846532245f8a905cf">approach_</a> = approach;
 <a name="l00407"></a>00407 
-<a name="l00408"></a>00408     <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>-&gt;<a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(&amp;spec.<a class="code" href="class_parameterized_info.html#affa1429f07b4e35f22c3c5f1fa25194d">parameters_</a>);
+<a name="l00408"></a>00408     <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>-&gt;<a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(&amp;info.<a class="code" href="class_object_info.html#a7c061806b439cccbaca7c0f406357d7c">parameters_</a>);
 <a name="l00409"></a>00409     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>(),
 <a name="l00410"></a>00410                  element-&gt;FirstChildElement(),
 <a name="l00411"></a>00411                  <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>);
@@ -616,7 +616,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2013 17:48:31 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Feb 24 2013 18:17:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

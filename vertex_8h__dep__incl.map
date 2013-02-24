@@ -12,7 +12,7 @@
 <area shape="rect" href="$decision__tree__unittest_8cc.html" title="ltr/learners/decision_tree/decision_tree_unittest.cc" alt="" coords="527,379,839,405"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1036,379,1303,405"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="863,379,1012,405"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="867,453,1008,480"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="877,453,997,480"/>
 <area shape="rect" href="$decision__tree_8cc.html" title="ltr/learners/decision_tree/decision_tree.cc" alt="" coords="448,155,709,181"/>
 <area shape="rect" href="$base__splitter_8cc.html" title="ltr/learners/decision_tree/base_splitter.cc" alt="" coords="867,229,1125,256"/>
 <area shape="rect" href="$decision__vertex_8cc.html" title="ltr/learners/decision_tree/vertex/decision_vertex.cc" alt="" coords="1200,229,1512,256"/>

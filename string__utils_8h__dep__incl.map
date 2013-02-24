@@ -2,11 +2,13 @@
 <area shape="rect" href="$parse__arff_8cc.html" title="ltr/data/utility/parsers/parse_arff.cc" alt="" coords="5,80,227,107"/>
 <area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="251,80,477,107"/>
 <area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="501,80,747,107"/>
-<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="771,80,957,107"/>
-<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="981,80,1219,107"/>
-<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="1243,80,1373,107"/>
-<area shape="rect" href="$tag__handlers_8h.html" title="ltr_client/utility/tag_handlers.h" alt="" coords="1397,80,1592,107"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1616,80,1757,107"/>
-<area shape="rect" href="$parameterized__info_8cc.html" title="ltr_client/utility/parameterized_info.cc" alt="" coords="1781,80,2016,107"/>
-<area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="1415,155,1575,181"/>
+<area shape="rect" href="$parser_8cc.html" title="ltr/data/utility/parsers/parser.cc" alt="" coords="771,80,971,107"/>
+<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="995,80,1181,107"/>
+<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="1205,80,1443,107"/>
+<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="1467,80,1597,107"/>
+<area shape="rect" href="$tag__handlers_8h.html" title="ltr_client/utility/tag_handlers.h" alt="" coords="1621,80,1816,107"/>
+<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="1840,80,2104,107"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="2128,80,2269,107"/>
+<area shape="rect" href="$parameterized__info_8cc.html" title="ltr_client/utility/parameterized_info.cc" alt="" coords="2293,80,2528,107"/>
+<area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="1639,155,1799,181"/>
 </map>

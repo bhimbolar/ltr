@@ -20,7 +20,7 @@
 <area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="3388,379,3631,405"/>
 <area shape="rect" href="$tk__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/tk_fold_simple_splitter_unittest.cc" alt="" coords="5,453,328,480"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="352,453,501,480"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="356,528,497,555"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="367,528,487,555"/>
 <area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="525,453,701,480"/>
 <area shape="rect" href="$data__preprocessors__unittest_8cc.html" title="ltr/data_preprocessors/data_preprocessors_unittest.cc" alt="" coords="725,453,1061,480"/>
 <area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="1085,453,1467,480"/>

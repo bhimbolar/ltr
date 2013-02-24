@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="5,155,147,181"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="57,80,207,107"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="5,80,147,107"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="180,155,300,181"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="221,80,371,107"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" href="$tostring__unittest_8cc.html" title="ltr/data/tostring_unittest.cc" alt="" coords="5,80,181,107"/>
 <area shape="rect" href="$ada__boost__data__set__weights__updater_8h.html" title="ltr/learners/composition_learner/ada_boost_data_set_weights_updater.h" alt="" coords="1165,155,1600,181"/>
-<area shape="rect" href="$ada__boost__learner_8h.html" title="ltr/learners/composition_learner/ada_boost_learner.h" alt="" coords="1931,229,2253,256"/>
-<area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="1703,304,2084,331"/>
+<area shape="rect" href="$ada__boost__learner_8h.html" title="ltr/learners/composition_learner/ada_boost_learner.h" alt="" coords="1925,229,2248,256"/>
+<area shape="rect" href="$linear__composition__unittest_8cc.html" title="ltr/learners/composition_learner/linear_composition_unittest.cc" alt="" coords="1697,304,2079,331"/>
 <area shape="rect" href="$data__set__weights__updater_8h.html" title="ltr/learners/composition_learner/data_set_weights_updater.h" alt="" coords="833,80,1201,107"/>
 <area shape="rect" href="$composition__learner_8h.html" title="ltr/learners/composition_learner/composition_learner.h" alt="" coords="757,155,1091,181"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="757,229,1024,256"/>
@@ -14,6 +14,6 @@
 <area shape="rect" href="$composition__scorer__unittest_8cc.html" title="ltr/scorers/composition_scorers/composition_scorer_unittest.cc" alt="" coords="3211,80,3597,107"/>
 <area shape="rect" href="$linear__composition__scorer__unittest_8cc.html" title="ltr/scorers/linear_composition_scorer_unittest.cc" alt="" coords="3621,80,3923,107"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1512,229,1661,256"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1516,304,1657,331"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="1527,304,1647,331"/>
 <area shape="rect" href="$composition__learner__unittest_8cc.html" title="ltr/learners/composition_learner/composition_learner_unittest.cc" alt="" coords="1048,229,1437,256"/>
 </map>

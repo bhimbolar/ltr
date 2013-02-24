@@ -13,7 +13,7 @@
 <area shape="rect" href="$bayesian__scorer_8h.html" title="ltr/scorers/bayesian_scorer.h" alt="" coords="2451,304,2640,331"/>
 <area shape="rect" href="$bayesian__learner__unittest_8cc.html" title="ltr/learners/bayesian_learner/bayesian_learner_unittest.cc" alt="" coords="1727,453,2081,480"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="1195,453,1461,480"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="629,528,771,555"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="640,528,760,555"/>
 <area shape="rect" href="$non__linear__discriminant_8cc.html" title="ltr/density_estimators/non_linear_discriminant.cc" alt="" coords="369,229,673,256"/>
 <area shape="rect" href="$fisher__discriminant_8cc.html" title="ltr/density_estimators/fisher_discriminant.cc" alt="" coords="1592,304,1867,331"/>
 <area shape="rect" href="$bayesian__scorer_8cc.html" title="ltr/scorers/bayesian_scorer.cc" alt="" coords="2501,379,2696,405"/>

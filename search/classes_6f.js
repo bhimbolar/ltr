@@ -1,6 +1,7 @@
 var searchData=
 [
   ['object',['Object',['../classltr_1_1_object.html',1,'ltr']]],
+  ['objectinfo',['ObjectInfo',['../class_object_info.html',1,'']]],
   ['objectlist',['ObjectList',['../classltr_1_1_object_list.html',1,'ltr']]],
   ['objectpair',['ObjectPair',['../classltr_1_1_object_pair.html',1,'ltr']]],
   ['oblivioustreesplitter',['ObliviousTreeSplitter',['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html',1,'ltr::decision_tree']]],

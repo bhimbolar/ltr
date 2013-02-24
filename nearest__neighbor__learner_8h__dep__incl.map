@@ -2,6 +2,6 @@
 <area shape="rect" href="$nearest__neighbor__learner_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner.cc" alt="" coords="5,80,403,107"/>
 <area shape="rect" href="$nearest__neighbor__learner__unittest_8cc.html" title="ltr/learners/nearest_neighbor_learner/nearest_neighbor_learner_unittest.cc" alt="" coords="427,80,875,107"/>
 <area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="899,80,1165,107"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1188,155,1329,181"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1240,80,1389,107"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="1189,80,1339,107"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="1204,155,1324,181"/>
 </map>
