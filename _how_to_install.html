@@ -98,14 +98,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#InstallingLTR">Installing LTR</a></li>
-<li class="level1"><a href="#WindowsInstall">Installation on Windows</a><ul><li class="level2"><a href="#WInstallingBoost">Installing Boost</a></li>
-<li class="level2"><a href="#WInstallingCMake">Installing CMake</a></li>
+<li class="level1"><a href="#WindowsInstall">Installation on Windows</a><ul><li class="level2"><a href="#WInstallingCMake">Installing CMake</a></li>
 <li class="level2"><a href="#WConfiguringLTR">Configuring LTR</a></li>
 <li class="level2"><a href="#WBuildingLTR">Building LTR</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#LinuxInstall">Installation on Linux</a><ul><li class="level2"><a href="#LInstallingBoostCmake">Installing Boost and Cmake</a></li>
-<li class="level2"><a href="#LConfiguringLTR">Configuring LTR</a></li>
+<li class="level1"><a href="#LinuxInstall">Installation on Linux</a><ul><li class="level2"><a href="#LConfiguringLTR">Configuring LTR</a></li>
 <li class="level2"><a href="#LBuildingLTR">Building LTR</a></li>
 </ul>
 </li>
@@ -117,10 +115,6 @@ Installing LTR</h2>
 <p>Assuming you already have downloaded LTR to you computer, LTR's root directory is supposed to contain CMakeLists.txt file and the following folders: cmake, contrib, data, doc, ltr and ltr_client.</p>
 <h2><a class="anchor" id="WindowsInstall"></a>
 Installation on Windows</h2>
-<h3><a class="anchor" id="WInstallingBoost"></a>
-Installing Boost</h3>
-<p>The simplest way to install boost under Windows is to use an installer from <a href="http://www.boostpro.com/download">http://www.boostpro.com/download</a>.</p>
-<p>Now LTR uses only <em>multithreaded</em> and <em>multithreaded debug</em> versions of boost, but it is recommended to install DLL variants too.</p>
 <h3><a class="anchor" id="WInstallingCMake"></a>
 Installing CMake</h3>
 <p>Install CMake from <a href="www.cmake.org/cmake/resources/software.html">www.cmake.org/cmake/resources/software.html</a> and add CMake to the system PATH.</p>
@@ -145,11 +139,7 @@ Building LTR</h3>
 </pre></div><p>This will create an &lt;LTR_root&gt;/lib directory with 3 static libraries in there: ltr, logog and puppy (with "_d" suffix if the debug build has been used). If you want to use LTR in your project, you have to link to these libraries.</p>
 <h2><a class="anchor" id="LinuxInstall"></a>
 Installation on Linux</h2>
-<h3><a class="anchor" id="LInstallingBoostCmake"></a>
-Installing Boost and Cmake</h3>
-<p>One can install boost and cmake with one command as follows</p>
-<div class="fragment"><pre class="fragment">sudo apt-<span class="keyword">get</span> install libboost-all-dev cmake
-</pre></div><h3><a class="anchor" id="LConfiguringLTR"></a>
+<h3><a class="anchor" id="LConfiguringLTR"></a>
 Configuring LTR</h3>
 <p>Create a directory for building, the recommended name of which is &lt;LTR_root&gt;/build. Further shell commands will be written as if you've chosen the &lt;LTR_root&gt;/build directory for building. From the chosen directory run the following shell command:</p>
 <div class="fragment"><pre class="fragment">cmake ../
@@ -201,7 +191,7 @@ TARGET_LINK_LIBRARIES(test_executable ${LTR_libs})
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 4 2013 20:58:02 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 11 2013 18:18:58 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
