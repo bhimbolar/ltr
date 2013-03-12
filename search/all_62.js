@@ -28,9 +28,9 @@ var searchData=
   ['basegpoperation',['BaseGPOperation',['../classltr_1_1gp_1_1_base_g_p_operation.html#aaf709735b64cfe6f2012e66ef0742466',1,'ltr::gp::BaseGPOperation']]],
   ['baselearner',['BaseLearner',['../classltr_1_1_base_learner.html',1,'ltr']]],
   ['baselearner_3c_20object_2c_20compositionscorer_20_3e',['BaseLearner< Object, CompositionScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
-  ['baselearner_3c_20object_2c_20decisiontreescorer_20_3e',['BaseLearner< Object, DecisionTreeScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
   ['baselearner_3c_20telement_2c_20bayesianscorer_20_3e',['BaseLearner< TElement, BayesianScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
   ['baselearner_3c_20telement_2c_20compositionscorer_20_3e',['BaseLearner< TElement, CompositionScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
+  ['baselearner_3c_20telement_2c_20decisiontreescorer_20_3e',['BaseLearner< TElement, DecisionTreeScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
   ['baselearner_3c_20telement_2c_20gpscorer_20_3e',['BaseLearner< TElement, GPScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
   ['baselearner_3c_20telement_2c_20linearscorer_20_3e',['BaseLearner< TElement, LinearScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
   ['baselearner_3c_20telement_2c_20nnscorer_20_3e',['BaseLearner< TElement, NNScorer >',['../classltr_1_1_base_learner.html',1,'ltr']]],
@@ -81,5 +81,5 @@ var searchData=
   ['brief',['brief',['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief'],['../classbrief.html',1,'brief']]],
   ['buildlistwisedataset',['buildListwiseDataSet',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9ecfc752236207a026491d3b5c927278',1,'ltr::io_utility::ARFFParser::buildListwiseDataSet()'],['../classltr_1_1io__utility_1_1_s_v_m_parser.html#aa415bc51e2975ba4e5e81cc3c903b778',1,'ltr::io_utility::SVMParser::buildListwiseDataSet()'],['../classltr_1_1io__utility_1_1_yandex_parser.html#aaa2a7f8e6435ed819710592d0cd9e1eb',1,'ltr::io_utility::YandexParser::buildListwiseDataSet()'],['../classltr_1_1io__utility_1_1_parser.html#abdc6769eaebd984840da4cd809eebdda',1,'ltr::io_utility::Parser::buildListwiseDataSet()']]],
   ['buildpairwisedataset',['buildPairwiseDataSet',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa778e44ba85dd9a8a01a79f75e1c29b2',1,'ltr::io_utility::ARFFParser::buildPairwiseDataSet()'],['../classltr_1_1io__utility_1_1_s_v_m_parser.html#afbadbff490f7bc9d80c3149d9319c660',1,'ltr::io_utility::SVMParser::buildPairwiseDataSet()'],['../classltr_1_1io__utility_1_1_yandex_parser.html#a5827a3cda448ee226bb1a0330a3e757f',1,'ltr::io_utility::YandexParser::buildPairwiseDataSet()'],['../classltr_1_1io__utility_1_1_parser.html#a5e4d19a0ff167986e2adeb8e194813bf',1,'ltr::io_utility::Parser::buildPairwiseDataSet()']]],
-  ['buildtree',['buildTree',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#aa3f399d88b7abc8896f2d4f766dc9730',1,'ltr::decision_tree::DecisionTreeLearner']]]
+  ['buildtree',['buildTree',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#aacba1a6d772f449ef809e7d75a34ae72',1,'ltr::decision_tree::DecisionTreeLearner']]]
 ];

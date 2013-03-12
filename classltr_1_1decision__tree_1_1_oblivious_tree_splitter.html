@@ -137,6 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae306a75468544781f61c99dbf3412998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ae306a75468544781f61c99dbf3412998">ObliviousTreeSplitter</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:adbaf4b1aa2565bac664d21e4217f3379"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#adbaf4b1aa2565bac664d21e4217f3379">toString</a> () const </td></tr>
 <tr class="memitem:ad2eb2eb079dffa963b07b37411e40e5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad2eb2eb079dffa963b07b37411e40e5a">generateNextLayer</a> (const vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; &amp;layer, vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; *next_layer) const </td></tr>
+<tr class="memitem:ad8861bdf41f82b525e6cdc75f6e162de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad8861bdf41f82b525e6cdc75f6e162de">findBestThresholdWithQualityByFeature</a> (const vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; &amp;layer, vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_threshold.html">Threshold</a> &gt; &amp;thresholds, int feature_index, double *layer_split_quality) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>splitting aplorithm. Checks all the possible features and determines the one that has the highest layer quality. For continious features try all possible thresholds between two adjacent values of a feature. </p>
@@ -182,7 +183,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;&#160;</td>
           <td class="paramname"><em>parameters</em></td><td>)</td>
-          <td></td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -191,6 +192,45 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ad8861bdf41f82b525e6cdc75f6e162de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad8861bdf41f82b525e6cdc75f6e162de">ltr::decision_tree::ObliviousTreeSplitter::findBestThresholdWithQualityByFeature</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_threshold.html">Threshold</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>thresholds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>feature_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>layer_split_quality</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ad2eb2eb079dffa963b07b37411e40e5a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +287,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 11 2013 18:18:59 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 12 2013 14:15:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

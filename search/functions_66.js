@@ -23,6 +23,7 @@ var searchData=
   ['fill_5fdependency_5flist',['fill_dependency_list',['../class_object_info.html#adc3e03eeea66417a12751563744b243e',1,'ObjectInfo']]],
   ['findbestchild',['findBestChild',['../classltr_1_1decision__tree_1_1_decision_vertex.html#a4e99d87abcf2ab16ec14e09ddc8c514e',1,'ltr::decision_tree::DecisionVertex']]],
   ['findbestthresholdwithquality',['findBestThresholdWithQuality',['../classltr_1_1decision__tree_1_1_base_splitter.html#a1460fee5c7b640441b3268e424146fc7',1,'ltr::decision_tree::BaseSplitter']]],
+  ['findbestthresholdwithqualitybyfeature',['findBestThresholdWithQualityByFeature',['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad8861bdf41f82b525e6cdc75f6e162de',1,'ltr::decision_tree::ObliviousTreeSplitter']]],
   ['finddata',['findData',['../class_config_parser.html#aad04b4db50cd7d28830145a601cb73b2',1,'ConfigParser']]],
   ['findlinearfactorsandbiases',['findLinearFactorsAndBiases',['../classltr_1_1_fisher_discriminant_density_learner.html#af1bfcc1314ae662268e07b1e3d693d38',1,'ltr::FisherDiscriminantDensityLearner']]],
   ['findobject',['findObject',['../class_config_parser.html#a0eb1012054a127f7ccf497aae2339c84',1,'ConfigParser']]],
