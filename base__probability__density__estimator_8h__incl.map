@@ -8,9 +8,8 @@
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="973,528,1128,555"/>
 <area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2589,453,2776,480"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1544,453,1688,480"/>
-<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1135,155,1388,181"/>
+<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1143,155,1396,181"/>
 <area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="1769,304,1988,331"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="1299,229,1475,256"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="833,229,959,256"/>
 <area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="185,379,327,405"/>
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="613,304,808,331"/>

@@ -1,10 +1,9 @@
 <map id="G" name="G">
 <area shape="rect" href="$nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="199,80,497,107"/>
-<area shape="rect" href="$feature__converter__learner_8h.html" title="ltr/feature_converters/feature_converter_learner.h" alt="" coords="1187,80,1485,107"/>
-<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1124,155,1377,181"/>
+<area shape="rect" href="$feature__converter__learner_8h.html" title="ltr/feature_converters/feature_converter_learner.h" alt="" coords="1188,80,1487,107"/>
+<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1127,155,1380,181"/>
 <area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="253,229,443,256"/>
 <area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="43,155,181,181"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="1157,229,1333,256"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1637,229,1763,256"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1864,453,1976,480"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1408,528,1587,555"/>

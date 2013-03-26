@@ -107,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br/>
 <code>#include &lt;map&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &quot;contrib/include_Eigen.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="object_8h_source.html">ltr/data/object.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="data__set_8h_source.html">ltr/data/data_set.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="feature__info_8h_source.html">ltr/data/feature_info.h</a>&quot;</code><br/>
@@ -115,16 +116,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="feature__converter_8h_source.html">ltr/feature_converters/feature_converter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="fake__feature__converter_8h_source.html">ltr/feature_converters/fake_feature_converter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="feature__sampler_8h_source.html">ltr/feature_converters/feature_sampler.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="per__feature__linear__converter_8h_source.html">ltr/feature_converters/per_feature_linear_converter.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="linear__converter_8h_source.html">ltr/feature_converters/linear_converter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="nan__to__neutral__converter_8h_source.html">ltr/feature_converters/nan_to_neutral_converter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="nominal__to__bool__converter_8h_source.html">ltr/feature_converters/nominal_to_bool_converter.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="per__feature__linear__converter_8h_source.html">ltr/feature_converters/per_feature_linear_converter.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="remove__nominal__converter_8h_source.html">ltr/feature_converters/remove_nominal_converter.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for feature_converters_unittest.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="feature__converters__unittest_8cc__incl.png" border="0" usemap="#ltr_2feature__converters_2feature__converters__unittest_8cc" alt=""/></div>
 <map name="ltr_2feature__converters_2feature__converters__unittest_8cc" id="ltr_2feature__converters_2feature__converters__unittest_8cc">
-<area shape="rect" href="object_8h.html" title="ltr/data/object.h" alt="" coords="528,453,640,480"/><area shape="rect" href="data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="857,229,983,256"/><area shape="rect" href="feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1189,304,1331,331"/><area shape="rect" href="indices_8h.html" title="ltr/utility/indices.h" alt="" coords="2104,453,2227,480"/><area shape="rect" href="numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3224,155,3363,181"/><area shape="rect" href="feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1748,155,2001,181"/><area shape="rect" href="fake__feature__converter_8h.html" title="ltr/feature_converters/fake_feature_converter.h" alt="" coords="1485,80,1771,107"/><area shape="rect" href="feature__sampler_8h.html" title="ltr/feature_converters/feature_sampler.h" alt="" coords="1213,80,1461,107"/><area shape="rect" href="per__feature__linear__converter_8h.html" title="ltr/feature_converters/per_feature_linear_converter.h" alt="" coords="1845,80,2163,107"/><area shape="rect" href="nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="2851,80,3149,107"/><area shape="rect" href="nominal__to__bool__converter_8h.html" title="ltr/feature_converters/nominal_to_bool_converter.h" alt="" coords="2517,80,2827,107"/><area shape="rect" href="remove__nominal__converter_8h.html" title="ltr/feature_converters/remove_nominal_converter.h" alt="" coords="2187,80,2493,107"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="711,528,865,555"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1259,528,1437,555"/><area shape="rect" href="object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="731,379,867,405"/><area shape="rect" href="object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="891,379,1029,405"/><area shape="rect" href="per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="920,304,1115,331"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2651,528,2795,555"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1053,379,1179,405"/><area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2091,528,2277,555"/><area shape="rect" href="include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="1912,229,2088,256"/><area shape="rect" href="parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2529,229,2719,256"/><area shape="rect" href="serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="2504,453,2675,480"/><area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1728,453,2029,480"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1613,528,1752,555"/></map>
+<area shape="rect" href="object_8h.html" title="ltr/data/object.h" alt="" coords="763,453,875,480"/><area shape="rect" href="data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="908,229,1033,256"/><area shape="rect" href="feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1392,304,1533,331"/><area shape="rect" href="indices_8h.html" title="ltr/utility/indices.h" alt="" coords="2956,453,3079,480"/><area shape="rect" href="numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3009,155,3148,181"/><area shape="rect" href="feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1753,155,2007,181"/><area shape="rect" href="fake__feature__converter_8h.html" title="ltr/feature_converters/fake_feature_converter.h" alt="" coords="1227,80,1512,107"/><area shape="rect" href="feature__sampler_8h.html" title="ltr/feature_converters/feature_sampler.h" alt="" coords="2616,80,2864,107"/><area shape="rect" href="linear__converter_8h.html" title="ltr/feature_converters/linear_converter.h" alt="" coords="3088,80,3333,107"/><area shape="rect" href="nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="1952,80,2251,107"/><area shape="rect" href="nominal__to__bool__converter_8h.html" title="ltr/feature_converters/nominal_to_bool_converter.h" alt="" coords="383,80,692,107"/><area shape="rect" href="per__feature__linear__converter_8h.html" title="ltr/feature_converters/per_feature_linear_converter.h" alt="" coords="2275,80,2592,107"/><area shape="rect" href="remove__nominal__converter_8h.html" title="ltr/feature_converters/remove_nominal_converter.h" alt="" coords="896,80,1203,107"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="627,528,781,555"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2140,528,2319,555"/><area shape="rect" href="object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="944,379,1080,405"/><area shape="rect" href="object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="528,379,667,405"/><area shape="rect" href="per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1059,304,1253,331"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1357,528,1501,555"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1155,379,1280,405"/><area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2809,528,2996,555"/><area shape="rect" href="parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2044,229,2233,256"/><area shape="rect" href="serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="1933,453,2104,480"/><area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1608,453,1909,480"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="2596,528,2735,555"/></map>
 </div>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
@@ -132,6 +134,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a9a4b64b1b4fc559310f6c94a51b559bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#a9a4b64b1b4fc559310f6c94a51b559bb">TEST</a> (FeatureConvertersTest, FakeFeatureConverterTest)</td></tr>
 <tr class="memitem:a9e9a29601679d7aea829c8a586a7f809"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#a9e9a29601679d7aea829c8a586a7f809">TEST</a> (FeatureConvertersTest, FeatureSamplerTest)</td></tr>
 <tr class="memitem:a2f3501baacec2df3aeb19b0d4263490a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#a2f3501baacec2df3aeb19b0d4263490a">TEST</a> (FeatureConvertersTest, PerFeatureLinearConverterTest)</td></tr>
+<tr class="memitem:a9e2d6cb1cbe775c04994ce253a94a209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#a9e2d6cb1cbe775c04994ce253a94a209">TEST</a> (FeatureConvertersTest, LinearConverterTest)</td></tr>
 <tr class="memitem:a66be548d5f149670665181498b464c34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#a66be548d5f149670665181498b464c34">TEST</a> (FeatureConvertersTest, NanToNeutralConverterTest)</td></tr>
 <tr class="memitem:aacced21d9c62c6c66707d3d7bedf2496"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#aacced21d9c62c6c66707d3d7bedf2496">TEST</a> (FeatureConvertersTest, NominalToBoolConverterTest)</td></tr>
 <tr class="memitem:a43dbc6ab82b9c795a069824799630b9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__converters__unittest_8cc.html#a43dbc6ab82b9c795a069824799630b9d">TEST</a> (FeatureConvertersTest, RemoveNominalConverterTest)</td></tr>
@@ -205,6 +208,33 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">PerFeatureLinearConverterTest&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e2d6cb1cbe775c04994ce253a94a209"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="two__class__predicted__label__converter__unittest_8cc.html#aaee62476dea5a9f8cd9a4c2efc8c096b">TEST</a> </td>
+          <td>(</td>
+          <td class="paramtype">FeatureConvertersTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LinearConverterTest&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -303,7 +333,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 21 2013 11:43:19 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2013 12:34:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

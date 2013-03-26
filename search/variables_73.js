@@ -12,7 +12,7 @@ var searchData=
   ['seed_5f',['seed_',['../classltr_1_1_data_random_sampler.html#a999e7139a35d5b2c80131b3bbe8216f8',1,'ltr::DataRandomSampler::seed_()'],['../classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5',1,'ltr::FeatureRandomSamplerLearner::seed_()'],['../classltr_1_1gp_1_1_g_p_learner.html#a1f33573d26e6ce1904cb6f753a56281f',1,'ltr::gp::GPLearner::seed_()']]],
   ['self_5f',['self_',['../class_factory.html#a820e8b9987d55a4d291c3460f753213f',1,'Factory']]],
   ['serializated_5flabels',['serializated_labels',['../class_serialization_test.html#a6e4bde44114e72282e704b8b0f68c12c',1,'SerializationTest']]],
-  ['shift_5f',['shift_',['../classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c',1,'ltr::PerFeatureLinearConverter::shift_()'],['../classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2',1,'optimization::LinearFunction::shift_()']]],
+  ['shift_5f',['shift_',['../classltr_1_1_linear_converter.html#a388327d1dca7e952c307058a2b47e7e4',1,'ltr::LinearConverter::shift_()'],['../classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c',1,'ltr::PerFeatureLinearConverter::shift_()'],['../classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2',1,'optimization::LinearFunction::shift_()']]],
   ['size',['size',['../structltr_1_1utility_1_1_dimension_size.html#aa28ff716ca31557c6404621f51c2e734',1,'ltr::utility::DimensionSize']]],
   ['sizeval',['sizeVal',['../struct_size_over_index.html#a397c8cada8056e0e3506c9e6e7ffacf3',1,'SizeOverIndex']]],
   ['solution',['solution',['../structoptimization_1_1_solution.html#a8522dcc17ac7686b722c67bc942339be',1,'optimization::Solution']]],

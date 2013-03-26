@@ -1,9 +1,9 @@
 <map id="G" name="G">
 <area shape="rect" href="$parse__yandex_8h.html" title="ltr/data/utility/parsers/parse_yandex.h" alt="" coords="1516,155,1756,181"/>
-<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2865,379,3052,405"/>
-<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="2333,80,2491,107"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3177,155,3316,181"/>
-<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="3177,379,3359,405"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2857,379,3044,405"/>
+<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="2328,80,2485,107"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3169,155,3308,181"/>
+<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="3169,379,3351,405"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1752,528,1864,555"/>
 <area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="2131,453,2269,480"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1920,453,2056,480"/>
@@ -20,7 +20,6 @@
 <area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="1957,155,2088,181"/>
 <area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1345,229,1599,256"/>
 <area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="691,229,909,256"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="2260,304,2436,331"/>
 <area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1359,304,1548,331"/>
 <area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="689,304,860,331"/>
 <area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1325,528,1627,555"/>

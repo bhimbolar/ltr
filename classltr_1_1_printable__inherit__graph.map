@@ -3,20 +3,20 @@
 <area shape="rect" href="$classltr_1_1_data_set.html" title="ltr::DataSet\&lt; ObjectType \&gt;" alt="" coords="189,81,365,108"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; TElement \&gt;" alt="" coords="188,132,367,159"/>
 <area shape="rect" href="$classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors." alt="" coords="165,233,389,260"/>
-<area shape="rect" href="$classltr_1_1_data_set.html" title="ltr::DataSet\&lt; TElement \&gt;" alt="" coords="195,436,360,463"/>
-<area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="208,487,347,513"/>
-<area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="148,791,407,817"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="193,1044,361,1071"/>
-<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="239,1095,316,1121"/>
-<area shape="rect" href="$classltr_1_1_object_list.html" title="ltr::ObjectList" alt="" coords="228,1145,327,1172"/>
-<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="227,1196,328,1223"/>
-<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="196,1247,359,1273"/>
-<area shape="rect" href="$classltr_1_1_scorer.html" title="ltr::Scorer" alt="" coords="239,1297,316,1324"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="185,1348,369,1375"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="201,1399,353,1425"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="188,1449,367,1476"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; double, 4 \&gt;" alt="" coords="171,1500,384,1527"/>
-<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="181,1551,373,1577"/>
+<area shape="rect" href="$classltr_1_1_data_set.html" title="ltr::DataSet\&lt; TElement \&gt;" alt="" coords="195,461,360,488"/>
+<area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="208,512,347,539"/>
+<area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="148,867,407,893"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="193,1095,361,1121"/>
+<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="239,1145,316,1172"/>
+<area shape="rect" href="$classltr_1_1_object_list.html" title="ltr::ObjectList" alt="" coords="228,1196,327,1223"/>
+<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="227,1247,328,1273"/>
+<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="196,1297,359,1324"/>
+<area shape="rect" href="$classltr_1_1_scorer.html" title="ltr::Scorer" alt="" coords="239,1348,316,1375"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="185,1399,369,1425"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="201,1449,353,1476"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="188,1500,367,1527"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; double, 4 \&gt;" alt="" coords="171,1551,384,1577"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="181,1601,373,1628"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_k_fold_simple_splitter.html" title="ltr::cv::KFoldSimpleSplitter\&lt; TElement \&gt;" alt="" coords="545,5,799,32"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_leave_one_out_splitter.html" title="ltr::cv::LeaveOneOutSplitter\&lt; TElement \&gt;" alt="" coords="543,56,801,83"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_t_k_fold_simple_splitter.html" title="ltr::cv::TKFoldSimpleSplitter\&lt; TElement \&gt;" alt="" coords="541,107,803,133"/>
@@ -25,26 +25,26 @@
 <area shape="rect" href="$classltr_1_1_fake_preprocessor.html" title="Does nothing with input DataSet." alt="" coords="560,259,784,285"/>
 <area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="588,309,756,336"/>
 <area shape="rect" href="$classltr_1_1_feature_sampler.html" title="Samples features with specified indices." alt="" coords="607,360,737,387"/>
-<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="587,411,757,437"/>
-<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="583,461,761,488"/>
-<area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="576,512,768,539"/>
-<area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="579,563,765,589"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FakeFeatureConverter \&gt;" alt="" coords="469,613,875,640"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FeatureSampler \&gt;" alt="" coords="487,664,857,691"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NanToNeutralConverter \&gt;" alt="" coords="467,715,877,741"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NominalToBoolConverter \&gt;" alt="" coords="463,765,881,792"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, PerFeatureLinearConverter \&gt;" alt="" coords="456,816,888,843"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, RemoveNominalConverter \&gt;" alt="" coords="459,867,885,893"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners." alt="" coords="527,917,817,944"/>
-<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError\&lt; Object \&gt;" alt="" coords="596,968,748,995"/>
-<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="585,1019,759,1045"/>
-<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision\&lt; ObjectList \&gt;" alt="" coords="560,1069,784,1096"/>
-<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; ObjectList \&gt;" alt="" coords="581,1120,763,1147"/>
-<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; ObjectList \&gt;" alt="" coords="577,1171,767,1197"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy\&lt; Object \&gt;" alt="" coords="536,1221,808,1248"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin\&lt; Object \&gt;" alt="" coords="544,1272,800,1299"/>
-<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR\&lt; ObjectList \&gt;" alt="" coords="591,1323,753,1349"/>
-<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="555,1373,789,1400"/>
-<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="588,1424,756,1451"/>
-<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="565,1475,779,1501"/>
+<area shape="rect" href="$classltr_1_1_linear_converter.html" title="Perform linear transformation of dataset." alt="" coords="608,411,736,437"/>
+<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="587,461,757,488"/>
+<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="583,512,761,539"/>
+<area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="576,563,768,589"/>
+<area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="579,613,765,640"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FakeFeatureConverter \&gt;" alt="" coords="469,664,875,691"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FeatureSampler \&gt;" alt="" coords="487,715,857,741"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, LinearConverter \&gt;" alt="" coords="488,765,856,792"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NanToNeutralConverter \&gt;" alt="" coords="467,816,877,843"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NominalToBoolConverter \&gt;" alt="" coords="463,867,881,893"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, PerFeatureLinearConverter \&gt;" alt="" coords="456,917,888,944"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, RemoveNominalConverter \&gt;" alt="" coords="459,968,885,995"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners." alt="" coords="527,1019,817,1045"/>
+<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError\&lt; Object \&gt;" alt="" coords="596,1069,748,1096"/>
+<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="585,1120,759,1147"/>
+<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision\&lt; ObjectList \&gt;" alt="" coords="560,1171,784,1197"/>
+<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; ObjectList \&gt;" alt="" coords="581,1221,763,1248"/>
+<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; ObjectList \&gt;" alt="" coords="577,1272,767,1299"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy\&lt; Object \&gt;" alt="" coords="536,1323,808,1349"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin\&lt; Object \&gt;" alt="" coords="544,1373,800,1400"/>
+<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR\&lt; ObjectList \&gt;" alt="" coords="591,1424,753,1451"/>
+<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="555,1475,789,1501"/>
 </map>

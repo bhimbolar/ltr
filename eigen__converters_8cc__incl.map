@@ -1,6 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" href="$eigen__converters_8h.html" title="ltr/utility/eigen_converters.h" alt="" coords="49,80,228,107"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="425,155,537,181"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="227,229,381,256"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="608,229,787,256"/>
+<area shape="rect" href="$eigen__converters_8h.html" title="ltr/utility/eigen_converters.h" alt="" coords="265,80,444,107"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="775,528,887,555"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="956,453,1095,480"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1119,453,1255,480"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="805,304,931,331"/>
+<area shape="rect" href="$data__set__statistics_8h.html" title="ltr/data/utility/data_set_statistics.h" alt="" coords="449,155,671,181"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1144,603,1299,629"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="637,603,816,629"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="420,453,561,480"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="636,379,831,405"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1475,528,1619,555"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="321,528,447,555"/>
+<area shape="rect" href="$data__set__label__statistics_8h.html" title="ltr/data/utility/data_set_label_statistics.h" alt="" coords="412,229,668,256"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="471,304,609,331"/>
 </map>

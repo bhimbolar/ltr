@@ -1,14 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" href="$per__feature__linear__converter_8h.html" title="ltr/feature_converters/per_feature_linear_converter.h" alt="" coords="1012,80,1329,107"/>
-<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1044,155,1297,181"/>
+<area shape="rect" href="$per__feature__linear__converter_8h.html" title="ltr/feature_converters/per_feature_linear_converter.h" alt="" coords="1013,80,1331,107"/>
+<area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1045,155,1299,181"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1635,528,1813,555"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="195,229,371,256"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="709,229,835,256"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="901,453,1013,480"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1128,379,1269,405"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1129,379,1271,405"/>
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="809,304,1004,331"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1939,528,2083,555"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1500,304,1689,331"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1501,304,1691,331"/>
 <area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="2072,453,2243,480"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="808,379,944,405"/>
 <area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="544,379,683,405"/>

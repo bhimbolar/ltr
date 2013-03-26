@@ -103,45 +103,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="eigen__converters_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Copyright 2012 Yandex</span>
-<a name="l00002"></a>00002 <span class="preprocessor">#ifndef LTR_UTILITY_EIGEN_CONVERTERS_H_</span>
-<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#define LTR_UTILITY_EIGEN_CONVERTERS_H_</span>
-<a name="l00004"></a>00004 <span class="preprocessor"></span>
-<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;Eigen/Dense&gt;</span>
-<a name="l00006"></a>00006 
-<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;vector&gt;</span>
-<a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_UTILITY_EIGEN_CONVERTERS_H_</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_UTILITY_EIGEN_CONVERTERS_H_</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;utility&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;map&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;functional&gt;</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="keyword">using</span> std::vector;
-<a name="l00012"></a>00012 <span class="keyword">using</span> std::map;
-<a name="l00013"></a>00013 
-<a name="l00014"></a>00014 <span class="keyword">using</span> Eigen::VectorXd;
-<a name="l00015"></a>00015 <span class="keyword">using</span> Eigen::MatrixXd;
-<a name="l00016"></a>00016 <span class="keyword">using</span> Eigen::aligned_allocator;
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018 <span class="keyword">namespace </span>ltr {
-<a name="l00019"></a>00019 <span class="keyword">namespace </span>utility {
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="keyword">typedef</span> map&lt;double, VectorXd, std::less&lt;double&gt;,
-<a name="l00022"></a>00022             aligned_allocator&lt;std::pair&lt;double, VectorXd&gt; &gt; &gt; doubleVectorXdMap;
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">typedef</span> map&lt;double, MatrixXd, std::less&lt;double&gt;,
-<a name="l00025"></a>00025             aligned_allocator&lt;std::pair&lt;double, MatrixXd&gt; &gt; &gt; doubleMatrixXdMap;
-<a name="l00026"></a>00026 
-<a name="l00030"></a>00030 VectorXd StdVectorToEigenVector(<span class="keyword">const</span> vector&lt;double&gt;&amp; std_vector);
-<a name="l00031"></a>00031 
-<a name="l00035"></a>00035 <span class="keywordtype">void</span> InitEigenMatrix(MatrixXd* eigen_matrix);
-<a name="l00036"></a>00036 
-<a name="l00040"></a>00040 <span class="keywordtype">void</span> InitEigenVector(VectorXd* eigen_vector);
-<a name="l00041"></a>00041 };
-<a name="l00042"></a>00042 };
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044 <span class="preprocessor">#endif  // LTR_UTILITY_EIGEN_CONVERTERS_H_</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;contrib/include_Eigen.h&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="object__pair_8h.html">ltr/data/object_pair.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="object__list_8h.html">ltr/data/object_list.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="data__set__statistics_8h.html">ltr/data/utility/data_set_statistics.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">using</span> std::vector;
+<a name="l00020"></a>00020 <span class="keyword">using</span> std::map;
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="keyword">using</span> Eigen::VectorXd;
+<a name="l00023"></a>00023 <span class="keyword">using</span> Eigen::MatrixXd;
+<a name="l00024"></a>00024 <span class="keyword">using</span> Eigen::aligned_allocator;
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">namespace </span>ltr {
+<a name="l00027"></a>00027 <span class="keyword">namespace </span>utility {
+<a name="l00028"></a>00028 
+<a name="l00032"></a>00032 <span class="keyword">typedef</span> map&lt;double, VectorXd, std::less&lt;double&gt;,
+<a name="l00033"></a>00033             aligned_allocator&lt;std::pair&lt;double, VectorXd&gt; &gt; &gt; doubleVectorXdMap;
+<a name="l00037"></a>00037 <span class="keyword">typedef</span> map&lt;double, MatrixXd, std::less&lt;double&gt;,
+<a name="l00038"></a>00038             aligned_allocator&lt;std::pair&lt;double, MatrixXd&gt; &gt; &gt; doubleMatrixXdMap;
+<a name="l00039"></a>00039 
+<a name="l00044"></a>00044 VectorXd StdVectorToEigenVector(<span class="keyword">const</span> vector&lt;double&gt;&amp; std_vector);
+<a name="l00045"></a>00045 
+<a name="l00051"></a>00051 <span class="keywordtype">void</span> EigenVectorToStdVector(<span class="keyword">const</span> VectorXd&amp; eigen_vector,
+<a name="l00052"></a>00052                             vector&lt;double&gt;* std_vector);
+<a name="l00053"></a>00053 
+<a name="l00058"></a>00058 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00059"></a>00059 MatrixXd DataSetToEigenMatrix(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; source) {
+<a name="l00060"></a>00060   <span class="keywordtype">int</span> rows_count = getDataSetObjectCount(source);
+<a name="l00061"></a>00061   <span class="keywordtype">int</span> cols_count = source.<a class="code" href="classltr_1_1_data_set.html#a6b173f125c05565128da0ab8486b2e5c">feature_info</a>().feature_count();
+<a name="l00062"></a>00062   MatrixXd result(rows_count, cols_count);
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064   <span class="keywordtype">int</span> row_index = 0;
+<a name="l00065"></a>00065   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> element_index = 0; element_index &lt; source.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>(); ++element_index) {
+<a name="l00066"></a>00066     PerObjectAccessor&lt;const TElement&gt; object_accessor(&amp;source[element_index]);
+<a name="l00067"></a>00067     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> object_index = 0;
+<a name="l00068"></a>00068          object_index &lt; object_accessor.object_count();
+<a name="l00069"></a>00069          ++object_index) {
+<a name="l00070"></a>00070       result.row(row_index) =
+<a name="l00071"></a>00071         StdVectorToEigenVector(object_accessor.object(object_index).features());
+<a name="l00072"></a>00072       ++row_index;
+<a name="l00073"></a>00073     }
+<a name="l00074"></a>00074   }
+<a name="l00075"></a>00075   <span class="keywordflow">return</span> result;
+<a name="l00076"></a>00076 }
+<a name="l00077"></a>00077 
+<a name="l00081"></a>00081 <span class="keywordtype">void</span> InitEigenMatrix(MatrixXd* eigen_matrix);
+<a name="l00082"></a>00082 
+<a name="l00086"></a>00086 <span class="keywordtype">void</span> InitEigenVector(VectorXd* eigen_vector);
+<a name="l00087"></a>00087 };
+<a name="l00088"></a>00088 };
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090 <span class="preprocessor">#endif  // LTR_UTILITY_EIGEN_CONVERTERS_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 21 2013 11:43:19 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2013 12:34:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

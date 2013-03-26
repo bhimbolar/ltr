@@ -2,15 +2,15 @@
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="3128,603,3240,629"/>
 <area shape="rect" href="$best__feature__learner_8h.html" title="ltr/learners/best_feature_learner/best_feature_learner.h" alt="" coords="1865,80,2201,107"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="3249,379,3375,405"/>
-<area shape="rect" href="$fake__scorer_8h.html" title="ltr/scorers/fake_scorer.h" alt="" coords="5128,155,5288,181"/>
-<area shape="rect" href="$abs__error_8h.html" title="ltr/measures/abs_error.h" alt="" coords="1233,229,1396,256"/>
-<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="944,155,1080,181"/>
+<area shape="rect" href="$fake__scorer_8h.html" title="ltr/scorers/fake_scorer.h" alt="" coords="5157,155,5317,181"/>
+<area shape="rect" href="$abs__error_8h.html" title="ltr/measures/abs_error.h" alt="" coords="1236,229,1399,256"/>
+<area shape="rect" href="$ndcg_8h.html" title="ltr/measures/ndcg.h" alt="" coords="945,155,1081,181"/>
 <area shape="rect" href="$dcg_8h.html" title="ltr/measures/dcg.h" alt="" coords="500,229,628,256"/>
-<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="4816,155,4973,181"/>
+<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="4875,155,5032,181"/>
 <area shape="rect" href="$path_8h.html" title="ltr/utility/boost/path.h" alt="" coords="5603,229,5747,256"/>
 <area shape="rect" href="$nan__to__zero__learner_8h.html" title="ltr/feature_converters/nan_to_zero_learner.h" alt="" coords="1519,155,1791,181"/>
 <area shape="rect" href="$linear__learner_8h.html" title="ltr/learners/linear_learner/linear_learner.h" alt="" coords="4061,80,4317,107"/>
-<area shape="rect" href="$linear__scorer_8h.html" title="ltr/scorers/linear_scorer.h" alt="" coords="4624,155,4792,181"/>
+<area shape="rect" href="$linear__scorer_8h.html" title="ltr/scorers/linear_scorer.h" alt="" coords="4683,155,4851,181"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="3077,677,3232,704"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2748,677,2927,704"/>
 <area shape="rect" href="$learner_8h.html" title="ltr/learners/learner.h" alt="" coords="3608,155,3744,181"/>
@@ -32,5 +32,5 @@
 <area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1235,379,1373,405"/>
 <area shape="rect" href="$measure__utility_8h.html" title="ltr/measures/utils/measure_utility.h" alt="" coords="677,304,901,331"/>
 <area shape="rect" href="$parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="4903,304,5097,331"/>
-<area shape="rect" href="$nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="1420,229,1719,256"/>
+<area shape="rect" href="$nan__to__neutral__converter_8h.html" title="ltr/feature_converters/nan_to_neutral_converter.h" alt="" coords="1423,229,1721,256"/>
 </map>

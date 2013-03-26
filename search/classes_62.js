@@ -8,6 +8,7 @@ var searchData=
   ['basefeatureconverterlearner',['BaseFeatureConverterLearner',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],
   ['basefeatureconverterlearner_3c_20telement_2c_20fakefeatureconverter_20_3e',['BaseFeatureConverterLearner< TElement, FakeFeatureConverter >',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],
   ['basefeatureconverterlearner_3c_20telement_2c_20featuresampler_20_3e',['BaseFeatureConverterLearner< TElement, FeatureSampler >',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],
+  ['basefeatureconverterlearner_3c_20telement_2c_20linearconverter_20_3e',['BaseFeatureConverterLearner< TElement, LinearConverter >',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],
   ['basefeatureconverterlearner_3c_20telement_2c_20nantoneutralconverter_20_3e',['BaseFeatureConverterLearner< TElement, NanToNeutralConverter >',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],
   ['basefeatureconverterlearner_3c_20telement_2c_20nominaltoboolconverter_20_3e',['BaseFeatureConverterLearner< TElement, NominalToBoolConverter >',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],
   ['basefeatureconverterlearner_3c_20telement_2c_20perfeaturelinearconverter_20_3e',['BaseFeatureConverterLearner< TElement, PerFeatureLinearConverter >',['../classltr_1_1_base_feature_converter_learner.html',1,'ltr']]],

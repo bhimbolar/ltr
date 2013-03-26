@@ -1,17 +1,17 @@
 <map id="G" name="G">
-<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="633,80,937,107"/>
-<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="660,155,911,181"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="933,379,1059,405"/>
-<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="249,155,551,181"/>
-<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="512,229,709,256"/>
-<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="823,229,1097,256"/>
-<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="788,304,1012,331"/>
-<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="505,304,716,331"/>
-<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="313,304,481,331"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="461,379,763,405"/>
-<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="165,379,387,405"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="533,453,672,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1128,453,1307,480"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="797,453,952,480"/>
+<area shape="rect" href="$gradient__descent__solver_8h.html" title="ltr/optimization/solvers/gradient_descent_solver.h" alt="" coords="700,80,1004,107"/>
+<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="727,155,977,181"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1000,379,1125,405"/>
+<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="316,155,617,181"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="571,229,768,256"/>
+<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="889,229,1164,256"/>
+<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="851,304,1075,331"/>
+<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="564,304,775,331"/>
+<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="368,304,536,331"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="521,379,823,405"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="209,379,431,405"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="603,453,741,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1197,453,1376,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="867,453,1021,480"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="24,453,168,480"/>
 </map>

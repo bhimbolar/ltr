@@ -38,13 +38,13 @@
 <area shape="rect" href="$classltr_1_1_fake_preprocessor.html" title="Does nothing with input DataSet." alt="" coords="693,715,917,741"/>
 <area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="721,765,889,792"/>
 <area shape="rect" href="$classltr_1_1_feature_sampler.html" title="Samples features with specified indices." alt="" coords="740,816,871,843"/>
-<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="720,867,891,893"/>
-<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="716,917,895,944"/>
-<area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="709,968,901,995"/>
-<area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="712,1019,899,1045"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FakeFeatureConverter \&gt;" alt="" coords="603,1069,1008,1096"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FeatureSampler \&gt;" alt="" coords="620,1120,991,1147"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NanToNeutralConverter \&gt;" alt="" coords="600,1171,1011,1197"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NominalToBoolConverter \&gt;" alt="" coords="596,1221,1015,1248"/>
-<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, PerFeatureLinearConverter \&gt;" alt="" coords="589,1272,1021,1299"/>
+<area shape="rect" href="$classltr_1_1_linear_converter.html" title="Perform linear transformation of dataset." alt="" coords="741,867,869,893"/>
+<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="720,917,891,944"/>
+<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="716,968,895,995"/>
+<area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="709,1019,901,1045"/>
+<area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="712,1069,899,1096"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FakeFeatureConverter \&gt;" alt="" coords="603,1120,1008,1147"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, FeatureSampler \&gt;" alt="" coords="620,1171,991,1197"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, LinearConverter \&gt;" alt="" coords="621,1221,989,1248"/>
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, NanToNeutralConverter \&gt;" alt="" coords="600,1272,1011,1299"/>
 </map>

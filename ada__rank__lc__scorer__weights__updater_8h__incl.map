@@ -2,7 +2,7 @@
 <area shape="rect" href="$measure_8h.html" title="ltr/measures/measure.h" alt="" coords="1119,155,1276,181"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="2241,229,2367,256"/>
 <area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3053,229,3192,256"/>
-<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="1684,80,1815,107"/>
+<area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="1636,80,1767,107"/>
 <area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="245,453,432,480"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="1856,453,1968,480"/>
 <area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1525,528,1680,555"/>
@@ -17,8 +17,7 @@
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="2549,453,2675,480"/>
 <area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="647,528,785,555"/>
 <area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="2047,155,2300,181"/>
-<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="849,304,1068,331"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="2600,229,2776,256"/>
+<area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="847,304,1065,331"/>
 <area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="1035,379,1205,405"/>
 <area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="813,379,960,405"/>
 </map>

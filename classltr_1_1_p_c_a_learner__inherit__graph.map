@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="ltr::BaseFeatureConverterLearner\&lt; TElement, LinearConverter \&gt;" alt="" coords="5,155,392,181"/>
+<area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="69,80,328,107"/>
+<area shape="rect" href="$classltr_1_1_parameterized.html" title="ltr::Parameterized" alt="" coords="7,5,129,32"/>
+<area shape="rect" href="$classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="153,5,244,32"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="268,5,348,32"/>
+</map>

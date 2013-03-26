@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['factor_5f',['factor_',['../classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0',1,'ltr::PerFeatureLinearConverter::factor_()'],['../classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db',1,'optimization::LinearFunction::factor_()']]],
+  ['factor_5f',['factor_',['../classltr_1_1_linear_converter.html#a939babbee1888f3a8551664c255d09d4',1,'ltr::LinearConverter::factor_()'],['../classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0',1,'ltr::PerFeatureLinearConverter::factor_()'],['../classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db',1,'optimization::LinearFunction::factor_()']]],
   ['factory_5f',['factory_',['../class_ltr_client.html#ad6404364284326f2d211bc0f80623cdf',1,'LtrClient']]],
   ['feature',['feature',['../structltr_1_1decision__tree_1_1_feature_with_label_and_weight.html#a696c28995cc2e9be4fadef532c56b8ab',1,'ltr::decision_tree::FeatureWithLabelAndWeight']]],
   ['feature_5fconverter_5f',['feature_converter_',['../classltr_1_1_base_feature_converter_learner.html#a407e88e41c2c18ee789feed03eb41797',1,'ltr::BaseFeatureConverterLearner::feature_converter_()'],['../classltr_1_1_learner.html#a8f2ca2084e87b9052c607699d8d91eea',1,'ltr::Learner::feature_converter_()'],['../classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb',1,'ltr::Scorer::feature_converter_()']]],

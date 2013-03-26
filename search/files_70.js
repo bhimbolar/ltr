@@ -23,6 +23,7 @@ var searchData=
   ['path_2ecc',['path.cc',['../path_8cc.html',1,'']]],
   ['path_2eh',['path.h',['../path_8h.html',1,'']]],
   ['path_5funittest_2ecc',['path_unittest.cc',['../path__unittest_8cc.html',1,'']]],
+  ['pca_5flearner_2eh',['pca_learner.h',['../pca__learner_8h.html',1,'']]],
   ['per_5ffeature_5flinear_5fconverter_2ecc',['per_feature_linear_converter.cc',['../per__feature__linear__converter_8cc.html',1,'']]],
   ['per_5ffeature_5flinear_5fconverter_2eh',['per_feature_linear_converter.h',['../per__feature__linear__converter_8h.html',1,'']]],
   ['per_5fobject_5faccessor_2eh',['per_object_accessor.h',['../per__object__accessor_8h.html',1,'']]],

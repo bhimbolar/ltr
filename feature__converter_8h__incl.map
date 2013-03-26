@@ -1,5 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="1933,80,2109,107"/>
 <area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="771,80,896,107"/>
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="597,304,709,331"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="936,379,1115,405"/>

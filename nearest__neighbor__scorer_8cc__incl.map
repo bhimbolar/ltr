@@ -4,7 +4,7 @@
 <area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="2221,528,2333,555"/>
 <area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="592,379,912,405"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1483,603,1661,629"/>
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="2749,304,2875,331"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="2756,304,2881,331"/>
 <area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="1684,155,1815,181"/>
 <area shape="rect" href="$metric_8h.html" title="ltr/metrics/metric.h" alt="" coords="1136,379,1267,405"/>
 <area shape="rect" href="$neighbor__weighter_8h.html" title="ltr/utility/neighbor_weighter.h" alt="" coords="381,379,568,405"/>
@@ -21,6 +21,5 @@
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="3016,528,3141,555"/>
 <area shape="rect" href="$feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1876,229,2129,256"/>
 <area shape="rect" href="$serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="1493,379,1712,405"/>
-<area shape="rect" href="$include__openmp_8h.html" title="ltr/utility/include_openmp.h" alt="" coords="2141,304,2317,331"/>
 <area shape="rect" href="$functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="1544,453,1691,480"/>
 </map>

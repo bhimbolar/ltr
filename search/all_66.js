@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['factor_5f',['factor_',['../classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0',1,'ltr::PerFeatureLinearConverter::factor_()'],['../classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db',1,'optimization::LinearFunction::factor_()']]],
+  ['factor_5f',['factor_',['../classltr_1_1_linear_converter.html#a939babbee1888f3a8551664c255d09d4',1,'ltr::LinearConverter::factor_()'],['../classltr_1_1_per_feature_linear_converter.html#abe59d0fd529472f29bda38d7e8edf8d0',1,'ltr::PerFeatureLinearConverter::factor_()'],['../classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db',1,'optimization::LinearFunction::factor_()']]],
   ['factorial',['Factorial',['../indices__unittest_8cc.html#add2051c05ae0af82b9f85a7aed140679',1,'indices_unittest.cc']]],
   ['factory',['Factory',['../class_factory.html',1,'Factory'],['../class_factory.html#ac792bf88cfb7b6804b479529da5308cc',1,'Factory::Factory()'],['../class_factory.html#a91f84520900307ce294c03e992812d55',1,'Factory::Factory(const Factory &amp;)']]],
   ['factory_2ecc',['factory.cc',['../factory_8cc.html',1,'']]],
