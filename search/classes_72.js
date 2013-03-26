@@ -12,6 +12,8 @@ var searchData=
   ['reciprocalrank',['ReciprocalRank',['../classltr_1_1_reciprocal_rank.html',1,'ltr']]],
   ['removenominalconverter',['RemoveNominalConverter',['../classltr_1_1_remove_nominal_converter.html',1,'ltr']]],
   ['removenominalconverterlearner',['RemoveNominalConverterLearner',['../classltr_1_1_remove_nominal_converter_learner.html',1,'ltr']]],
-  ['report',['Report',['../structserialization__test_1_1_report.html',1,'serialization_test']]],
+  ['report',['Report',['../classserialization__test_1_1_report.html',1,'serialization_test']]],
+  ['report_3c_20vector_3c_20double_20_3e_20_3e',['Report< vector< double > >',['../classserialization__test_1_1_report_3_01vector_3_01double_01_4_01_4.html',1,'serialization_test']]],
+  ['report_3c_20vector_3c_20vector_3c_20double_20_3e_20_3e_20_3e',['Report< vector< vector< double > > >',['../classserialization__test_1_1_report_3_01vector_3_01vector_3_01double_01_4_01_4_01_4.html',1,'serialization_test']]],
   ['reporter',['Reporter',['../classltr_1_1_reporter.html',1,'ltr']]]
 ];

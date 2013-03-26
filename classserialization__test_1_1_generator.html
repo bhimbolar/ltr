@@ -108,13 +108,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">serialization_test::Generator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classserialization__test_1_1_generator.html" title="Generator of tests for serializable objects.">Generator</a> of tests for serializable objects.  
+ <a href="classserialization__test_1_1_generator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="generator__utility_8h_source.html">generator_utility.h</a>&gt;</code></p>
 
@@ -123,27 +125,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c0436f76103b33084798e17921ea0ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a8c0436f76103b33084798e17921ea0ac">Generator</a> ()</td></tr>
+<tr class="memdesc:a8c0436f76103b33084798e17921ea0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs generator.  <a href="#a8c0436f76103b33084798e17921ea0ac"></a><br/></td></tr>
 <tr class="memitem:a42c0f4446561e9c2d6c8d08fa75cb9dd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a42c0f4446561e9c2d6c8d08fa75cb9dd">code</a> () const </td></tr>
+<tr class="memdesc:a42c0f4446561e9c2d6c8d08fa75cb9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns code of unittests.  <a href="#a42c0f4446561e9c2d6c8d08fa75cb9dd"></a><br/></td></tr>
 <tr class="memitem:a768c57dae1252fdf7adfdb9f5188ad57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a768c57dae1252fdf7adfdb9f5188ad57">write</a> (const char *filename) const </td></tr>
-<tr class="memitem:abe16ec0d9b866ba288a0186f06497bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#abe16ec0d9b866ba288a0186f06497bd0">setScorerTest</a> (<a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;::Ptr learner, string test_name)</td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a9e74592c514718d77d93e1047fca86c4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">train_data</a></td></tr>
-<tr class="memitem:a03b27fc6492798907a4a251da96abab2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">test_data</a></td></tr>
+<tr class="memdesc:a768c57dae1252fdf7adfdb9f5188ad57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes unittests to file.  <a href="#a768c57dae1252fdf7adfdb9f5188ad57"></a><br/></td></tr>
+<tr class="memitem:ac1cddfc78fc3db78759232c2cb689193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#ac1cddfc78fc3db78759232c2cb689193">addScorerTest</a> (<a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;::Ptr learner, const string &amp;test_name)</td></tr>
+<tr class="memdesc:ac1cddfc78fc3db78759232c2cb689193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds unittest for scorer serialization to generator.  <a href="#ac1cddfc78fc3db78759232c2cb689193"></a><br/></td></tr>
+<tr class="memitem:aceeda51d4649213cdeff1363589b3cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#aceeda51d4649213cdeff1363589b3cf7">addFeatureConverterTest</a> (<a class="el" href="classltr_1_1_feature_converter_learner.html">FeatureConverterLearner</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;::Ptr feature_converter_learner, const string &amp;test_name)</td></tr>
+<tr class="memdesc:aceeda51d4649213cdeff1363589b3cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds unittest for feature converter serialization to generator.  <a href="#aceeda51d4649213cdeff1363589b3cf7"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a9ae779bf463742a71f47dda7ad611144"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a9ae779bf463742a71f47dda7ad611144">setIncludes</a> () const </td></tr>
-<tr class="memitem:a3421a53eaae7d6365ba2d09fdefd1d60"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a3421a53eaae7d6365ba2d09fdefd1d60">setFixture</a> () const </td></tr>
-<tr class="memitem:a55b60786686c818bd3df09f938770678"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a55b60786686c818bd3df09f938770678">setTestLabelsFunction</a> (string function_name) const </td></tr>
-<tr class="memitem:aba33aab499f982cbfa4f77ba0de9b38c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#aba33aab499f982cbfa4f77ba0de9b38c">setTestCode</a> (int index, const string &amp;test_name) const </td></tr>
-<tr class="memitem:aea08283d497bbcfb356d252dffd69176"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#aea08283d497bbcfb356d252dffd69176">setBeginBlockComment</a> (string message) const </td></tr>
-<tr class="memitem:ace4732c0b04c9d38ef200c72b8f4211d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#ace4732c0b04c9d38ef200c72b8f4211d">setEndBlockComment</a> (string message) const </td></tr>
+<tr class="memitem:a5a882ed5ce2a82805ff82457f9f9e425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a5a882ed5ce2a82805ff82457f9f9e425">addIncludes</a> ()</td></tr>
+<tr class="memdesc:a5a882ed5ce2a82805ff82457f9f9e425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds includes to unittests code.  <a href="#a5a882ed5ce2a82805ff82457f9f9e425"></a><br/></td></tr>
+<tr class="memitem:ac5df05b18aee755f227770767c7b7bac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#ac5df05b18aee755f227770767c7b7bac">addFixture</a> ()</td></tr>
+<tr class="memdesc:ac5df05b18aee755f227770767c7b7bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds service class for unittest code.  <a href="#ac5df05b18aee755f227770767c7b7bac"></a><br/></td></tr>
+<tr class="memitem:a55f0004c961b293803351944afceb5a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a55f0004c961b293803351944afceb5a7">addCheckLabelsFunction</a> ()</td></tr>
+<tr class="memdesc:a55f0004c961b293803351944afceb5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds checking labels function.  <a href="#a55f0004c961b293803351944afceb5a7"></a><br/></td></tr>
+<tr class="memitem:a6cde5baf79908253e459d7647b366369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a6cde5baf79908253e459d7647b366369">addCheckFeaturesFunction</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;processed_data)</td></tr>
+<tr class="memdesc:a6cde5baf79908253e459d7647b366369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds checking features function.  <a href="#a6cde5baf79908253e459d7647b366369"></a><br/></td></tr>
+<tr class="memitem:af9334f3fa15225df88983c6ddadfccd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#af9334f3fa15225df88983c6ddadfccd4">addBeginBlockComment</a> (const string &amp;message)</td></tr>
+<tr class="memdesc:af9334f3fa15225df88983c6ddadfccd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds begin comment of the block.  <a href="#af9334f3fa15225df88983c6ddadfccd4"></a><br/></td></tr>
+<tr class="memitem:ae044ba419fb333e0185f6f594c9eb89e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#ae044ba419fb333e0185f6f594c9eb89e">addEndBlockComment</a> (const string &amp;message)</td></tr>
+<tr class="memdesc:ae044ba419fb333e0185f6f594c9eb89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds end comment of the block.  <a href="#ae044ba419fb333e0185f6f594c9eb89e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae9b5f1246fd204489ad4345a8f472de6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#ae9b5f1246fd204489ad4345a8f472de6">tester_code</a></td></tr>
-<tr class="memitem:a402c465c32cff489b1db41b0d0c04199"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a402c465c32cff489b1db41b0d0c04199">scorers_to_test</a></td></tr>
+<tr class="memitem:a3927231007c72201db5395fdc4092e92"><td class="memItemLeft" align="right" valign="top">std::stringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a3927231007c72201db5395fdc4092e92">tester_code</a></td></tr>
+<tr class="memitem:a5797d464e4538bf5a7f2a2410bb694b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a5797d464e4538bf5a7f2a2410bb694b8">serializating_object_number</a></td></tr>
+<tr class="memitem:a9e74592c514718d77d93e1047fca86c4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">train_data</a></td></tr>
+<tr class="memitem:a03b27fc6492798907a4a251da96abab2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">test_data</a></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classserialization__test_1_1_generator.html" title="Generator of tests for serializable objects.">Generator</a> of tests for serializable objects. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8c0436f76103b33084798e17921ea0ac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -158,9 +172,208 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Constructs generator. </p>
+
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="af9334f3fa15225df88983c6ddadfccd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#af9334f3fa15225df88983c6ddadfccd4">serialization_test::Generator::addBeginBlockComment</a> </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds begin comment of the block. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>text of the message placed in comment </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6cde5baf79908253e459d7647b366369"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#a6cde5baf79908253e459d7647b366369">serialization_test::Generator::addCheckFeaturesFunction</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>processed_data</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds checking features function. </p>
+<p>This function checks equality of features generated by serialized object and processed_data dataset. </p>
+
+</div>
+</div>
+<a class="anchor" id="a55f0004c961b293803351944afceb5a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#a55f0004c961b293803351944afceb5a7">serialization_test::Generator::addCheckLabelsFunction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds checking labels function. </p>
+<p>This function checks equality of labels predicted by serialized object and labels from test_data. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae044ba419fb333e0185f6f594c9eb89e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#ae044ba419fb333e0185f6f594c9eb89e">serialization_test::Generator::addEndBlockComment</a> </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds end comment of the block. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>text of the message placed in comment </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aceeda51d4649213cdeff1363589b3cf7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#aceeda51d4649213cdeff1363589b3cf7">serialization_test::Generator::addFeatureConverterTest</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_feature_converter_learner.html">FeatureConverterLearner</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;::Ptr&#160;</td>
+          <td class="paramname"><em>feature_converter_learner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>test_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds unittest for feature converter serialization to generator. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature_converter_learner</td><td>learner which creates serializing feature_converter. </td></tr>
+    <tr><td class="paramname">test_name</td><td>name of the generating unittest. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5df05b18aee755f227770767c7b7bac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#ac5df05b18aee755f227770767c7b7bac">serialization_test::Generator::addFixture</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds service class for unittest code. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a882ed5ce2a82805ff82457f9f9e425"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#a5a882ed5ce2a82805ff82457f9f9e425">serialization_test::Generator::addIncludes</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds includes to unittests code. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1cddfc78fc3db78759232c2cb689193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#ac1cddfc78fc3db78759232c2cb689193">serialization_test::Generator::addScorerTest</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;::Ptr&#160;</td>
+          <td class="paramname"><em>learner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>test_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Adds unittest for scorer serialization to generator. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">learner</td><td>learner which creates serializing scorer. </td></tr>
+    <tr><td class="paramname">test_name</td><td>name of the generating unittest. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a42c0f4446561e9c2d6c8d08fa75cb9dd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -175,142 +388,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="aea08283d497bbcfb356d252dffd69176"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#aea08283d497bbcfb356d252dffd69176">serialization_test::Generator::setBeginBlockComment</a> </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ace4732c0b04c9d38ef200c72b8f4211d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#ace4732c0b04c9d38ef200c72b8f4211d">serialization_test::Generator::setEndBlockComment</a> </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3421a53eaae7d6365ba2d09fdefd1d60"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#a3421a53eaae7d6365ba2d09fdefd1d60">serialization_test::Generator::setFixture</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9ae779bf463742a71f47dda7ad611144"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#a9ae779bf463742a71f47dda7ad611144">serialization_test::Generator::setIncludes</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abe16ec0d9b866ba288a0186f06497bd0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classserialization__test_1_1_generator.html#abe16ec0d9b866ba288a0186f06497bd0">serialization_test::Generator::setScorerTest</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt;::Ptr&#160;</td>
-          <td class="paramname"><em>learner</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>test_name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aba33aab499f982cbfa4f77ba0de9b38c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#aba33aab499f982cbfa4f77ba0de9b38c">serialization_test::Generator::setTestCode</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>test_name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a55b60786686c818bd3df09f938770678"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#a55b60786686c818bd3df09f938770678">serialization_test::Generator::setTestLabelsFunction</a> </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>function_name</em></td><td>)</td>
-          <td> const<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Returns code of unittests. </p>
 
 </div>
 </div>
@@ -329,19 +407,28 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Writes unittests to file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>filename for writing unittests. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a402c465c32cff489b1db41b0d0c04199"></a>
+<a class="anchor" id="a5797d464e4538bf5a7f2a2410bb694b8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classserialization__test_1_1_generator.html#a402c465c32cff489b1db41b0d0c04199">serialization_test::Generator::scorers_to_test</a><code> [private]</code></td>
+          <td class="memname">int <a class="el" href="classserialization__test_1_1_generator.html#a5797d464e4538bf5a7f2a2410bb694b8">serialization_test::Generator::serializating_object_number</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Number of added to generator objects. Needed to avoid name collisions </p>
 
 </div>
 </div>
@@ -350,24 +437,26 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt;<a class="el" href="classltr_1_1_object.html">Object</a>&gt; <a class="el" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">serialization_test::Generator::test_data</a></td>
+          <td class="memname">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt;<a class="el" href="classltr_1_1_object.html">Object</a>&gt; <a class="el" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">serialization_test::Generator::test_data</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Test dataset </p>
 
 </div>
 </div>
-<a class="anchor" id="ae9b5f1246fd204489ad4345a8f472de6"></a>
+<a class="anchor" id="a3927231007c72201db5395fdc4092e92"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classserialization__test_1_1_generator.html#ae9b5f1246fd204489ad4345a8f472de6">serialization_test::Generator::tester_code</a><code> [private]</code></td>
+          <td class="memname">std::stringstream <a class="el" href="classserialization__test_1_1_generator.html#a3927231007c72201db5395fdc4092e92">serialization_test::Generator::tester_code</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Code of tester file. </p>
 
 </div>
 </div>
@@ -376,11 +465,12 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt;<a class="el" href="classltr_1_1_object.html">Object</a>&gt; <a class="el" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">serialization_test::Generator::train_data</a></td>
+          <td class="memname">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt;<a class="el" href="classltr_1_1_object.html">Object</a>&gt; <a class="el" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">serialization_test::Generator::train_data</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Train dataset </p>
 
 </div>
 </div>
@@ -392,7 +482,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2013 12:34:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2013 15:30:57 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

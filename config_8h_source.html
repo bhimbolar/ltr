@@ -107,28 +107,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_SERIALIZATION_TEST_GENERATOR_CONFIG_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_SERIALIZATION_TEST_GENERATOR_CONFIG_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="path_8h.html">ltr/utility/boost/path.h</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="path_8h.html">ltr/utility/boost/path.h</a>&quot;</span>
 <a name="l00009"></a>00009 
 <a name="l00010"></a>00010 <span class="keyword">using</span> std::string;
 <a name="l00011"></a>00011 <span class="keyword">using</span> ltr::utility::FixPathSeparators;
 <a name="l00012"></a>00012 
 <a name="l00013"></a>00013 <span class="keyword">namespace </span>serialization_test {
-<a name="l00014"></a>00014   <span class="keywordtype">string</span> TrainDataPath() {
-<a name="l00015"></a>00015     <span class="keywordflow">return</span> FixPathSeparators(<span class="stringliteral">&quot;data/serialization_tests/svm1.txt&quot;</span>);
-<a name="l00016"></a>00016   }
-<a name="l00017"></a>00017   <span class="keywordtype">string</span> TestDataPath() {
-<a name="l00018"></a>00018     <span class="keywordflow">return</span> FixPathSeparators(<span class="stringliteral">&quot;data/serialization_tests/svm2.txt&quot;</span>);
+<a name="l00017"></a>00017   <span class="keywordtype">string</span> TrainDataPath() {
+<a name="l00018"></a>00018     <span class="keywordflow">return</span> FixPathSeparators(<span class="stringliteral">&quot;data/serialization_tests/svm1.txt&quot;</span>);
 <a name="l00019"></a>00019   }
-<a name="l00020"></a>00020 };
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022 <span class="preprocessor">#endif  // LTR_SERIALIZATION_TEST_GENERATOR_CONFIG_H_</span>
+<a name="l00023"></a>00023   <span class="keywordtype">string</span> TestDataPath() {
+<a name="l00024"></a>00024     <span class="keywordflow">return</span> FixPathSeparators(<span class="stringliteral">&quot;data/serialization_tests/svm2.txt&quot;</span>);
+<a name="l00025"></a>00025   }
+<a name="l00026"></a>00026 };
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028 <span class="preprocessor">#endif  // LTR_SERIALIZATION_TEST_GENERATOR_CONFIG_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 26 2013 12:34:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 26 2013 15:30:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -18,5 +18,5 @@ var searchData=
   ['_5fwmax',['_wmax',['../class_random_lib_1_1_random_select.html#af22884f14edee9dd6c0cc1da7d339903',1,'RandomLib::RandomSelect']]],
   ['_5fwsum',['_wsum',['../class_random_lib_1_1_random_select.html#af2de5923ec28488d389ce1f63062b611',1,'RandomLib::RandomSelect']]],
   ['_5fx',['_x',['../class_random_lib_1_1_exact_exponential.html#a439c42104bbf5eeb1807d1c7c079088f',1,'RandomLib::ExactExponential::_x()'],['../class_random_lib_1_1_exact_normal.html#a129d9ff3cd3a2d3f6185940a9775096d',1,'RandomLib::ExactNormal::_x()'],['../class_random_lib_1_1_exact_power.html#abbcdab0fa2d2c394890043744861884f',1,'RandomLib::ExactPower::_x()']]],
-  ['_5fy',['_Y',['../class_random_lib_1_1_random_select.html#a0ceefcb2615446b90f3f6520b924a786',1,'RandomLib::RandomSelect::_Y()'],['../class_random_lib_1_1_exact_power.html#afedc3dfb6623d3dec6e58014d116c985',1,'RandomLib::ExactPower::_y()']]]
+  ['_5fy',['_y',['../class_random_lib_1_1_exact_power.html#afedc3dfb6623d3dec6e58014d116c985',1,'RandomLib::ExactPower::_y()'],['../class_random_lib_1_1_random_select.html#a0ceefcb2615446b90f3f6520b924a786',1,'RandomLib::RandomSelect::_Y()']]]
 ];
