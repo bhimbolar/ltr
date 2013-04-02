@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::DifferentiableFunction Class Reference</div>  </div>
@@ -124,13 +125,37 @@ Inheritance diagram for optimization::DifferentiableFunction:</div>
 
 <p><a href="classoptimization_1_1_differentiable_function-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abd570e96a5c97168b4f6f22ad61223b4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#abd570e96a5c97168b4f6f22ad61223b4">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5db8154663f0fb05305b39e7d181823e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a5db8154663f0fb05305b39e7d181823e">DifferentiableFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
 <tr class="memitem:a7ee403c4c20e8d1de8002dc6ca4d481d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a7ee403c4c20e8d1de8002dc6ca4d481d">~DifferentiableFunction</a> ()</td></tr>
-<tr class="memitem:ab9c3eab6321dbe29cfc8264f87052139"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#ab9c3eab6321dbe29cfc8264f87052139">value</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
-<tr class="memitem:aa457a0b8980fd02cd1ed31493cb9af82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#aa457a0b8980fd02cd1ed31493cb9af82">gradient</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
+<tr class="memitem:a915759b4d140b7752f3dcc0bb7762181"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a915759b4d140b7752f3dcc0bb7762181">computeValue</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
+<tr class="memitem:a197cc68819df5db055f9d3e347e092e7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a197cc68819df5db055f9d3e347e092e7">computeGradient</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *gradient) const =0</td></tr>
+<tr class="memitem:a463a5fc608b14261ef2f2171f7b3d8e0"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a463a5fc608b14261ef2f2171f7b3d8e0">getDefaultAlias</a> () const </td></tr>
 </table>
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="abd570e96a5c97168b4f6f22ad61223b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a>&gt; <a class="el" href="classoptimization_1_1_differentiable_function.html#abd570e96a5c97168b4f6f22ad61223b4">optimization::DifferentiableFunction::Ptr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_function.html#ac5a993200e288e8b65cbff3d85d2d320">optimization::Function</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_linear_function.html#aeda1882d0cf2b12dc8f5f06040b4244f">optimization::LinearFunction</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5db8154663f0fb05305b39e7d181823e"></a>
 <div class="memitem">
@@ -166,12 +191,42 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aa457a0b8980fd02cd1ed31493cb9af82"></a>
+<a class="anchor" id="a197cc68819df5db055f9d3e347e092e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> <a class="el" href="classoptimization_1_1_differentiable_function.html#aa457a0b8980fd02cd1ed31493cb9af82">optimization::DifferentiableFunction::gradient</a> </td>
+          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_differentiable_function.html#a197cc68819df5db055f9d3e347e092e7">optimization::DifferentiableFunction::computeGradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *&#160;</td>
+          <td class="paramname"><em>gradient</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>compute first derivative of this function in a given point </p>
+
+<p>Implemented in <a class="el" href="classoptimization_1_1_linear_function.html#aecffa021b19190539a1e8a7590cec769">optimization::LinearFunction</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#af4066ba0c46aa0fefcb7fb5b31f0ca6d">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a915759b4d140b7752f3dcc0bb7762181"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double <a class="el" href="classoptimization_1_1_differentiable_function.html#a915759b4d140b7752f3dcc0bb7762181">optimization::DifferentiableFunction::computeValue</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
@@ -180,29 +235,31 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>compute value of this function in a given point </p>
 
-<p>Implemented in <a class="el" href="classoptimization_1_1_linear_function.html#a96c69c8e16b1d7396b797b320d5ad11e">optimization::LinearFunction</a>, <a class="el" href="classoptimization_1_1_easom_function.html#a4d2b87df600e83f535f212b5d42cb533">optimization::EasomFunction</a>, <a class="el" href="classoptimization_1_1_trid_function.html#ab36d9c7c148d037b5ddc1d34bfe2ce3b">optimization::TridFunction</a>, <a class="el" href="classoptimization_1_1_g3_function.html#a37ccd549f96e03ced6d884f6ad01c6a9">optimization::G3Function</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#af20876299401708200ce06a58d444861">optimization::TwiceDifferentiableFunction</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_function.html#aab07e0876059d3d050ca57579b376e7f">optimization::Function</a>.</p>
+
+<p>Implemented in <a class="el" href="classoptimization_1_1_linear_function.html#aa1897d0e226f078670dc00efd7d2285d">optimization::LinearFunction</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#aa0a56f0a5f6357423bc5084c636082d5">optimization::TwiceDifferentiableFunction</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab9c3eab6321dbe29cfc8264f87052139"></a>
+<a class="anchor" id="a463a5fc608b14261ef2f2171f7b3d8e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual double <a class="el" href="classoptimization_1_1_differentiable_function.html#ab9c3eab6321dbe29cfc8264f87052139">optimization::DifferentiableFunction::value</a> </td>
+          <td class="memname">virtual string <a class="el" href="classoptimization_1_1_differentiable_function.html#a463a5fc608b14261ef2f2171f7b3d8e0">optimization::DifferentiableFunction::getDefaultAlias</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const<code> [pure virtual]</code></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classoptimization_1_1_function.html#a5f276ab9807f79bc0ac6489a804f5f46">optimization::Function</a>.</p>
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_function.html#a3fc8be5700af3447229307a029f7538b">optimization::Function</a>.</p>
 
-<p>Implemented in <a class="el" href="classoptimization_1_1_linear_function.html#aa677e0e6893d2cf1418f59c680323e9f">optimization::LinearFunction</a>, <a class="el" href="classoptimization_1_1_easom_function.html#a471612b3924cf96caf624af9bbf5781f">optimization::EasomFunction</a>, <a class="el" href="classoptimization_1_1_trid_function.html#a336b574c8206203d461e041b07923ac6">optimization::TridFunction</a>, <a class="el" href="classoptimization_1_1_g3_function.html#a94d457cfbb966db974b8fd5555d1f70b">optimization::G3Function</a>, and <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1bd37a4fd5ceb02ba2289d967ae3fb24">optimization::TwiceDifferentiableFunction</a>.</p>
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_linear_function.html#a9c4d8e8d0908ddf091cf955b83688725">optimization::LinearFunction</a>, <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">optimization::TwiceDifferentiableFunction</a>, <a class="el" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">optimization::EasomFunction</a>, and <a class="el" href="classoptimization_1_1_trid_function.html#a07fc8ff8297730fc488ebde73e201f52">optimization::TridFunction</a>.</p>
 
 </div>
 </div>
@@ -213,7 +270,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

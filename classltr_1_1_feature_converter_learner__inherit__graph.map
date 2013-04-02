@@ -14,9 +14,9 @@
 <area shape="rect" href="$classltr_1_1_feature_random_sampler_learner.html" title="Produces FeatureSampler with random indices." alt="" coords="972,56,1273,83"/>
 <area shape="rect" href="$classltr_1_1_feature_sampler_learner.html" title="Produces FeatureSampler with specified indices." alt="" coords="996,107,1249,133"/>
 <area shape="rect" href="$classltr_1_1_p_c_a_learner.html" title="Learner for principal components analisys feature converter." alt="" coords="1028,157,1217,184"/>
-<area shape="rect" href="$classltr_1_1_nan_to_average_converter_learner.html" title="ltr::NanToAverageConverterLearner\&lt; TElement \&gt;" alt="" coords="973,208,1272,235"/>
-<area shape="rect" href="$classltr_1_1_nan_to_zero_converter_learner.html" title="ltr::NanToZeroConverterLearner\&lt; TElement \&gt;" alt="" coords="984,259,1261,285"/>
-<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter_learner.html" title="ltr::NominalToBoolConverterLearner\&lt; TElement \&gt;" alt="" coords="972,309,1273,336"/>
+<area shape="rect" href="$classltr_1_1_nan_to_average_converter_learner.html" title="Produces NanToNeutralConverter with average features neutral object." alt="" coords="973,208,1272,235"/>
+<area shape="rect" href="$classltr_1_1_nan_to_zero_converter_learner.html" title="Produces NanToNeutralConverter with zero neutral object." alt="" coords="984,259,1261,285"/>
+<area shape="rect" href="$classltr_1_1_nominal_to_bool_converter_learner.html" title="Produces NominalToBoolConverter." alt="" coords="972,309,1273,336"/>
 <area shape="rect" href="$classltr_1_1_feature_normalizer_learner.html" title="Independently normalize each feature component to the specified range." alt="" coords="989,360,1256,387"/>
-<area shape="rect" href="$classltr_1_1_remove_nominal_converter_learner.html" title="ltr::RemoveNominalConverterLearner\&lt; TElement \&gt;" alt="" coords="968,411,1277,437"/>
+<area shape="rect" href="$classltr_1_1_remove_nominal_converter_learner.html" title="Produces RemoveNominalConverter." alt="" coords="968,411,1277,437"/>
 </map>

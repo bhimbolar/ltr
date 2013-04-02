@@ -11,7 +11,7 @@
 <area shape="rect" href="$classltr_1_1_object_list.html" title="ltr::ObjectList" alt="" coords="228,1196,327,1223"/>
 <area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="227,1247,328,1273"/>
 <area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="196,1297,359,1324"/>
-<area shape="rect" href="$classltr_1_1_scorer.html" title="ltr::Scorer" alt="" coords="239,1348,316,1375"/>
+<area shape="rect" href="$classltr_1_1_scorer.html" title="Class that can for every object evaluate a value &#45; its rank, or score." alt="" coords="239,1348,316,1375"/>
 <area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="185,1399,369,1425"/>
 <area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="201,1449,353,1476"/>
 <area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="188,1500,367,1527"/>
@@ -26,7 +26,7 @@
 <area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="588,309,756,336"/>
 <area shape="rect" href="$classltr_1_1_feature_sampler.html" title="Samples features with specified indices." alt="" coords="607,360,737,387"/>
 <area shape="rect" href="$classltr_1_1_linear_converter.html" title="Perform linear transformation of dataset." alt="" coords="608,411,736,437"/>
-<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="587,461,757,488"/>
+<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="Converts NaN features to average values." alt="" coords="587,461,757,488"/>
 <area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="583,512,761,539"/>
 <area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="576,563,768,589"/>
 <area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="579,613,765,640"/>

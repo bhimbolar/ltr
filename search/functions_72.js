@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['radius',['radius',['../classoptimization_1_1_ball_set.html#add0bb2deb35346bf092170ae9bba6932',1,'optimization::BallSet::radius()'],['../classoptimization_1_1_sphere_set.html#a678e3df3d3b5050b82e1bc38cfc30a54',1,'optimization::SphereSet::radius()']]],
   ['ran',['Ran',['../class_random_lib_1_1_random_engine.html#a16e78466c646d4a9a083501823f99fab',1,'RandomLib::RandomEngine']]],
   ['ran32',['Ran32',['../class_random_lib_1_1_random_engine.html#aea1e0013e141468fbad2ce006c43b405',1,'RandomLib::RandomEngine']]],
   ['ran64',['Ran64',['../class_random_lib_1_1_random_engine.html#a5df4ab9a7bd52b1d76b5eaeae235dfa2',1,'RandomLib::RandomEngine']]],

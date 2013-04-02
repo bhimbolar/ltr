@@ -1,8 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$feature__normalizer__learner_8h.html" title="ltr/feature_converters/feature_normalizer_learner.h" alt="" coords="123,80,429,107"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="392,155,541,181"/>
-<area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="504,80,821,107"/>
-<area shape="rect" href="$per__feature__linear__converter_8cc.html" title="ltr/feature_converters/per_feature_linear_converter.cc" alt="" coords="845,80,1168,107"/>
+<area shape="rect" href="$feature__normalizer__learner_8h.html" title="ltr/feature_converters/feature_normalizer_learner.h" alt="" coords="383,80,689,107"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="683,155,832,181"/>
+<area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="784,80,1101,107"/>
+<area shape="rect" href="$per__feature__linear__converter_8cc.html" title="ltr/feature_converters/per_feature_linear_converter.cc" alt="" coords="1125,80,1448,107"/>
 <area shape="rect" href="$feature__converters__learner__unittest_8cc.html" title="ltr/feature_converters/feature_converters_learner_unittest.cc" alt="" coords="5,155,368,181"/>
-<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="407,229,527,256"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="392,155,659,181"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="697,229,817,256"/>
 </map>

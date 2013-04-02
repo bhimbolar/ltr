@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,15 +111,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="tester__utility_8h_source.html">ltr/serialization_test/tester/tester_utility.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="data__set_8h_source.html">ltr/data/data_set.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="io__utility_8h_source.html">ltr/data/utility/io_utility.h</a>&quot;</code><br/>
-<code>#include &lt;cmath&gt;</code><br/>
 <code>#include &quot;contrib/include_Eigen.h&quot;</code><br/>
 <code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;cmath&gt;</code><br/>
+<code>#include &lt;limits&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for tester.cc:</div>
 <div class="dyncontent">
 <div class="center"><img src="tester_8cc__incl.png" border="0" usemap="#ltr_2serialization__test_2tester_2tester_8cc" alt=""/></div>
 <map name="ltr_2serialization__test_2tester_2tester_8cc" id="ltr_2serialization__test_2tester_2tester_8cc">
-<area shape="rect" href="config_8h.html" title="ltr/serialization_test/generator/config.h" alt="" coords="192,80,432,107"/><area shape="rect" href="tester__utility_8h.html" title="ltr/serialization_test/tester/tester_utility.h" alt="" coords="195,229,451,256"/><area shape="rect" href="data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="905,304,1031,331"/><area shape="rect" href="io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="2215,80,2372,107"/><area shape="rect" href="path_8h.html" title="ltr/utility/boost/path.h" alt="" coords="507,155,651,181"/><area shape="rect" href="object_8h.html" title="ltr/data/object.h" alt="" coords="1307,528,1419,555"/><area shape="rect" href="object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="715,453,851,480"/><area shape="rect" href="object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="875,453,1013,480"/><area shape="rect" href="feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1595,453,1736,480"/><area shape="rect" href="per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="971,379,1165,405"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2275,528,2419,555"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1149,603,1304,629"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2043,603,2221,629"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1005,528,1131,555"/><area shape="rect" href="parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="3000,229,3195,256"/><area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="3147,528,3333,555"/><area shape="rect" href="scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="2228,155,2359,181"/><area shape="rect" href="numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3275,155,3413,181"/><area shape="rect" href="murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="3101,304,3261,331"/><area shape="rect" href="feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1724,229,1977,256"/><area shape="rect" href="serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="2331,379,2549,405"/><area shape="rect" href="parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1864,379,2053,405"/><area shape="rect" href="serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="2603,453,2773,480"/><area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1696,528,1997,555"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1868,603,2007,629"/><area shape="rect" href="functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="2381,453,2528,480"/></map>
+<area shape="rect" href="config_8h.html" title="ltr/serialization_test/generator/config.h" alt="" coords="3584,80,3824,107"/><area shape="rect" href="tester__utility_8h.html" title="ltr/serialization_test/tester/tester_utility.h" alt="" coords="195,229,451,256"/><area shape="rect" href="data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1075,304,1200,331"/><area shape="rect" href="io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="2552,80,2709,107"/><area shape="rect" href="path_8h.html" title="ltr/utility/boost/path.h" alt="" coords="3584,155,3728,181"/><area shape="rect" href="object_8h.html" title="ltr/data/object.h" alt="" coords="1307,528,1419,555"/><area shape="rect" href="object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="835,453,971,480"/><area shape="rect" href="object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="995,453,1133,480"/><area shape="rect" href="feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1715,453,1856,480"/><area shape="rect" href="per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1040,379,1235,405"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2611,528,2755,555"/><area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="803,603,957,629"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="3179,603,3357,629"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1157,528,1283,555"/><area shape="rect" href="murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="1595,528,1755,555"/><area shape="rect" href="parser_8h.html" title="ltr/data/utility/parsers/parser.h" alt="" coords="1251,229,1445,256"/><area shape="rect" href="scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="2616,155,2747,181"/><area shape="rect" href="lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="3027,528,3213,555"/><area shape="rect" href="numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="3803,155,3941,181"/><area shape="rect" href="feature__converter_8h.html" title="ltr/feature_converters/feature_converter.h" alt="" coords="1880,229,2133,256"/><area shape="rect" href="serializable__functor_8h.html" title="ltr/interfaces/serializable_functor.h" alt="" coords="2853,379,3072,405"/><area shape="rect" href="parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2037,379,2227,405"/><area shape="rect" href="serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="2741,453,2912,480"/><area shape="rect" href="parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="2083,528,2384,555"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="2813,603,2952,629"/><area shape="rect" href="functor_8h.html" title="ltr/interfaces/functor.h" alt="" coords="2936,453,3083,480"/></map>
 </div>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
@@ -128,55 +129,56 @@ Classes</h2></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a40c76dcc3d9e1ec4a7023fa5520e7ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a40c76dcc3d9e1ec4a7023fa5520e7ed4">checkLabels0</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
+<tr class="memitem:a90cebecc9261135b441640e3e0471369"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a90cebecc9261135b441640e3e0471369">SavedScorer0_estimator</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, double label)</td></tr>
 <tr class="memitem:a956fe6d6daff38c7c7e5f59d273179e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a956fe6d6daff38c7c7e5f59d273179e2">SavedScorer0</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a373887c638833daf60bca67bb781c91d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a373887c638833daf60bca67bb781c91d">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, BFLearner)</td></tr>
+<tr class="memitem:a2ef1b04c8b16964d2310948c0c628f50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a2ef1b04c8b16964d2310948c0c628f50">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, BayesianLearner)</td></tr>
 <tr class="memitem:ad367f54e9ed8ad8aabf35f0b985214b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ad367f54e9ed8ad8aabf35f0b985214b8">checkLabels1</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
-<tr class="memitem:a62cb4ec227844c383b8a80e9e8c70e6e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a62cb4ec227844c383b8a80e9e8c70e6e">serializable_object_11ADD</a> (double lhs, double rhs)</td></tr>
-<tr class="memitem:abd708622fb3cd138beaed4cb5994c207"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#abd708622fb3cd138beaed4cb5994c207">serializable_object_12SUB</a> (double lhs, double rhs)</td></tr>
-<tr class="memitem:acd7db8fbc7676658b7463bc5bc163ea3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#acd7db8fbc7676658b7463bc5bc163ea3">serializable_object_13MUL</a> (double lhs, double rhs)</td></tr>
-<tr class="memitem:ae1d022badf2e820feec7a61b081cd9d7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae1d022badf2e820feec7a61b081cd9d7">serializable_object_14DIV</a> (double lhs, double rhs)</td></tr>
-<tr class="memitem:a84eb25c063acf8641a1f7ed4931f5534"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a84eb25c063acf8641a1f7ed4931f5534">SavedScorer1</a> (const std::vector&lt; double &gt; &amp;feature)</td></tr>
-<tr class="memitem:a3094f8d12dd8a50b256a2b24df58ca1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a3094f8d12dd8a50b256a2b24df58ca1f">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, GPLearner)</td></tr>
+<tr class="memitem:af279cd12e33425a3e750204875a6840c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af279cd12e33425a3e750204875a6840c">SavedScorer1</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a373887c638833daf60bca67bb781c91d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a373887c638833daf60bca67bb781c91d">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, BFLearner)</td></tr>
 <tr class="memitem:ad8a7c5afbb0d181d7b6458327f6f020c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ad8a7c5afbb0d181d7b6458327f6f020c">checkLabels2</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
-<tr class="memitem:a16602cde9978a18afe1daa29963bf1a0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a16602cde9978a18afe1daa29963bf1a0">SavedScorer2_id_60</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a77969383a3a481ec78542af15c0795c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a77969383a3a481ec78542af15c0795c2">SavedScorer2_condition_id_61</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a3070d14be2bb670115d745394eac95a1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a3070d14be2bb670115d745394eac95a1">SavedScorer2_id_56</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:aa9ecae035b2b9667c78616c9e05de9db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aa9ecae035b2b9667c78616c9e05de9db">SavedScorer2_condition_id_57</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a33bb248cc025c7f1cc288d4f5bf62a16"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a33bb248cc025c7f1cc288d4f5bf62a16">SavedScorer2_id_66</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a94c9602979d5aaa4b225bdf0d34eabdb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a94c9602979d5aaa4b225bdf0d34eabdb">SavedScorer2_condition_id_67</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a2bbc0cf04a2c9c5dd28e93cb9c6d65bf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a2bbc0cf04a2c9c5dd28e93cb9c6d65bf">SavedScorer2_id_62</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a53bf1e0333ac98854faf4e3d1eeef6cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a53bf1e0333ac98854faf4e3d1eeef6cb">SavedScorer2_condition_id_63</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a7ef5bab8c1e007e235098eb0cd139e93"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a7ef5bab8c1e007e235098eb0cd139e93">SavedScorer2_id_68</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a344a1ab47cfb3ec85c6f35e77358a657"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a344a1ab47cfb3ec85c6f35e77358a657">SavedScorer2_condition_id_69</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a8f07f5f09d73ac66fb73e9751d90d6c8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a8f07f5f09d73ac66fb73e9751d90d6c8">SavedScorer2_id_64</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:af3b0194bb7311a4bc139722e4906d565"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af3b0194bb7311a4bc139722e4906d565">SavedScorer2_condition_id_65</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:ade11405a83b4dddae1a1edd945a4d98a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ade11405a83b4dddae1a1edd945a4d98a">SavedScorer2_id_58</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:abf7d44387f56d92a4ce155aa17237529"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#abf7d44387f56d92a4ce155aa17237529">SavedScorer2_condition_id_59</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a96867bc89598adc4a853ce89fe671806"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a96867bc89598adc4a853ce89fe671806">SavedScorer2</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:af6f8cb46b97e4bcca892c668fac8a677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af6f8cb46b97e4bcca892c668fac8a677">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, ID3)</td></tr>
+<tr class="memitem:a63f75744e4fbedf3c0886f9d7df82d84"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a63f75744e4fbedf3c0886f9d7df82d84">serializable_object_18ADD</a> (double lhs, double rhs)</td></tr>
+<tr class="memitem:aaf7e14aefc84a4d534f7425a321b4930"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aaf7e14aefc84a4d534f7425a321b4930">serializable_object_19SUB</a> (double lhs, double rhs)</td></tr>
+<tr class="memitem:afd636b5780b3e97025ab296516048b9f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#afd636b5780b3e97025ab296516048b9f">serializable_object_20MUL</a> (double lhs, double rhs)</td></tr>
+<tr class="memitem:a7347359026e3275daef347609e479509"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a7347359026e3275daef347609e479509">serializable_object_21DIV</a> (double lhs, double rhs)</td></tr>
+<tr class="memitem:a5ddbbf32095fc9d0425b9a9fc546155b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a5ddbbf32095fc9d0425b9a9fc546155b">SavedScorer2</a> (const std::vector&lt; double &gt; &amp;feature)</td></tr>
+<tr class="memitem:a3094f8d12dd8a50b256a2b24df58ca1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a3094f8d12dd8a50b256a2b24df58ca1f">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, GPLearner)</td></tr>
 <tr class="memitem:a59cb36c987b914f98fd3ec0b3426e354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a59cb36c987b914f98fd3ec0b3426e354">checkLabels3</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
-<tr class="memitem:af68ffea7b2703f030f38957b1542f8a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af68ffea7b2703f030f38957b1542f8a3">SavedScorer3_id_79</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a45f769fbaeea292ef81ac1a42620f958"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a45f769fbaeea292ef81ac1a42620f958">SavedScorer3_condition_id_80</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a19f7c3d5b30b8ad47a291d0d0a475f76"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a19f7c3d5b30b8ad47a291d0d0a475f76">SavedScorer3_id_67</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:aa3d2d770c68763f77fce10ebd7ed494a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aa3d2d770c68763f77fce10ebd7ed494a">SavedScorer3_condition_id_68</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a4a3265fff4d4317a0d8faa3c45cdbd8a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a4a3265fff4d4317a0d8faa3c45cdbd8a">SavedScorer3_id_63</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a33dca89901e61055bf6e6d704f136d07"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a33dca89901e61055bf6e6d704f136d07">SavedScorer3_condition_id_64</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:acf3f3d42e14c3706049f7fbb90f3161d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#acf3f3d42e14c3706049f7fbb90f3161d">SavedScorer3_id_73</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a05cc2c1f1f0d10e15a7924d169c7612c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a05cc2c1f1f0d10e15a7924d169c7612c">SavedScorer3_condition_id_74</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a39e23c724539e4ef3119e21fe4d4b1de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a39e23c724539e4ef3119e21fe4d4b1de">SavedScorer3_id_69</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:ae4965e18a4c8a45ba31ca3c49d745d75"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae4965e18a4c8a45ba31ca3c49d745d75">SavedScorer3_condition_id_70</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a1cc93d29f77be254fb4c6ecab04ade93"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1cc93d29f77be254fb4c6ecab04ade93">SavedScorer3_id_75</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:ad1311b9ece991331f5aa4f243588a8e2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ad1311b9ece991331f5aa4f243588a8e2">SavedScorer3_condition_id_76</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a818743619ff917e9159f9a4db791ed7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a818743619ff917e9159f9a4db791ed7d">SavedScorer3_id_85</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:ab45a552e574baa4f86dfea43abcab35f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ab45a552e574baa4f86dfea43abcab35f">SavedScorer3_condition_id_86</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:abe0ea04d0d2188f42bf5256660b5a710"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#abe0ea04d0d2188f42bf5256660b5a710">SavedScorer3_id_81</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a11acdf00520db1ce85b02540d71e6b6e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a11acdf00520db1ce85b02540d71e6b6e">SavedScorer3_condition_id_82</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:aeac538028f853fe27cf4f799264a31fd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aeac538028f853fe27cf4f799264a31fd">SavedScorer3_id_87</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a857cc6017282d963ee8082c45b65c310"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a857cc6017282d963ee8082c45b65c310">SavedScorer3_condition_id_88</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:ae76f2d607bf35acd00baf9d73aa236dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae76f2d607bf35acd00baf9d73aa236dd">SavedScorer3_id_83</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:a3c636d5f5428be043c782f7f8e1bff2a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a3c636d5f5428be043c782f7f8e1bff2a">SavedScorer3_condition_id_84</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:ae6766dfa53ce1c39b12de0fe6cb52781"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae6766dfa53ce1c39b12de0fe6cb52781">SavedScorer3_id_77</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:af76566dcda4890b8093b6cb9a4ae4663"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af76566dcda4890b8093b6cb9a4ae4663">SavedScorer3_condition_id_78</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:abb05e6c92c3aa00d32f08bb7209e67be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#abb05e6c92c3aa00d32f08bb7209e67be">SavedScorer3_id_71</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:ae834cd5734ffb6b299f5a55e0cc844c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae834cd5734ffb6b299f5a55e0cc844c2">SavedScorer3_condition_id_72</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a91da1fce811b5d8b16c24526a32fabf5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a91da1fce811b5d8b16c24526a32fabf5">SavedScorer3_id_65</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a23423a33a303e4ab0c68518ff4d0b672"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a23423a33a303e4ab0c68518ff4d0b672">SavedScorer3_condition_id_66</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a4d1aaca3a83a976b82d75eb1b7f1f1d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a4d1aaca3a83a976b82d75eb1b7f1f1d0">SavedScorer3</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
-<tr class="memitem:ae74f460a1b6256c8be298436a7accc2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae74f460a1b6256c8be298436a7accc2f">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, ObliviousTree)</td></tr>
+<tr class="memitem:af6f8cb46b97e4bcca892c668fac8a677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af6f8cb46b97e4bcca892c668fac8a677">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, ID3)</td></tr>
 <tr class="memitem:a0fbab709114eabae534d8638307d266f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a0fbab709114eabae534d8638307d266f">checkLabels4</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
+<tr class="memitem:a3bcac81a51671ef0ef19734a5822fde1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a3bcac81a51671ef0ef19734a5822fde1">SavedScorer4_id_86</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a037681a1b8ebd253bc699095919ff729"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a037681a1b8ebd253bc699095919ff729">SavedScorer4_condition_id_87</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:aae52fae307e463ea7406a4bb1e4134f1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aae52fae307e463ea7406a4bb1e4134f1">SavedScorer4_id_82</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:aaad9b874707ea0f1362b33b79c8c3f8e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aaad9b874707ea0f1362b33b79c8c3f8e">SavedScorer4_condition_id_83</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a1eff93112fb0ef6683a556b0ab6973aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1eff93112fb0ef6683a556b0ab6973aa">SavedScorer4_id_92</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a1352d7469175d5789dc84027458e9e51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1352d7469175d5789dc84027458e9e51">SavedScorer4_condition_id_93</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a34f1ce0b6fd693c1ef1e35cefac2d78c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a34f1ce0b6fd693c1ef1e35cefac2d78c">SavedScorer4_id_88</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a8ec3f759670a4fa5ef16066df3103bdd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a8ec3f759670a4fa5ef16066df3103bdd">SavedScorer4_condition_id_89</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a22ca2384c58fa6a55b44cfbce5a7c90a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a22ca2384c58fa6a55b44cfbce5a7c90a">SavedScorer4_id_94</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a72e616175681948e3ad92d86f7fbd1e8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a72e616175681948e3ad92d86f7fbd1e8">SavedScorer4_condition_id_95</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a0511dba6608a50f2736ddb6e829fca52"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a0511dba6608a50f2736ddb6e829fca52">SavedScorer4_id_90</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:aad057134e77550e414f6cacc8bb08c06"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aad057134e77550e414f6cacc8bb08c06">SavedScorer4_condition_id_91</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:a0becfce7ed7c43ede62bc7d940620c50"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a0becfce7ed7c43ede62bc7d940620c50">SavedScorer4_id_84</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:ac079df5e6fff46b78420f093b76efc7c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ac079df5e6fff46b78420f093b76efc7c">SavedScorer4_condition_id_85</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a521e88fb4b3aa4092a372925f4a21b99"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a521e88fb4b3aa4092a372925f4a21b99">SavedScorer4</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
+<tr class="memitem:ae74f460a1b6256c8be298436a7accc2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae74f460a1b6256c8be298436a7accc2f">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, ObliviousTree)</td></tr>
+<tr class="memitem:ae65967015f13ecb89fae1649b211c6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae65967015f13ecb89fae1649b211c6f2">checkLabels5</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
+<tr class="memitem:a0f2694d71339b23b8e43de8596080dbd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a0f2694d71339b23b8e43de8596080dbd">SavedScorer5</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a2386f378707dfd8fd9358b2b54cd67d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a2386f378707dfd8fd9358b2b54cd67d5">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, LinearLearner)</td></tr>
-<tr class="memitem:a7b7edc862c41dbd1dfb9342f325ff0c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a7b7edc862c41dbd1dfb9342f325ff0c3">checkFeatures5</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
-<tr class="memitem:ad8dbaf8a1ae10572c1e42a253d0ddcdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ad8dbaf8a1ae10572c1e42a253d0ddcdf">SavedFeatureConverter5</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
-<tr class="memitem:ae087d2a0b580d03c8750bd28d0181ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae087d2a0b580d03c8750bd28d0181ca8">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, RSMLCLearner)</td></tr>
 <tr class="memitem:a5cfd11591b1f0d066810bdd21dca6ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a5cfd11591b1f0d066810bdd21dca6ad0">checkLabels6</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
 <tr class="memitem:ad5ee61e39011a1bb01b5dd9297c6c46a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ad5ee61e39011a1bb01b5dd9297c6c46a">distance</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;lhs, const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;rhs)</td></tr>
 <tr class="memitem:aeb6e4801d6c571119e639107f44e7ef9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aeb6e4801d6c571119e639107f44e7ef9">aggregator</a> (const vector&lt; double &gt; &amp;labels, const vector&lt; double &gt; &amp;weights)</td></tr>
@@ -184,16 +186,40 @@ Functions</h2></td></tr>
 <tr class="memitem:a84bf0cad88e225a04cbb8cddd86c0a61"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a84bf0cad88e225a04cbb8cddd86c0a61">SavedScorer6</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a331a349b599f8a749d8d827ba7d73059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a331a349b599f8a749d8d827ba7d73059">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, KNNScorer)</td></tr>
 <tr class="memitem:acdcd09430185d2578b91194e8922675a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#acdcd09430185d2578b91194e8922675a">checkLabels7</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
-<tr class="memitem:a8aed9d3d81caefe980edf170cbda215a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a8aed9d3d81caefe980edf170cbda215a">SavedScorer7_estimator</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, const double label)</td></tr>
+<tr class="memitem:a824a2d24579d6298fde32399dbefbda4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a824a2d24579d6298fde32399dbefbda4">SavedScorer7_estimator</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, double label)</td></tr>
 <tr class="memitem:af845d2c143fd49b165fd18974729cfe2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af845d2c143fd49b165fd18974729cfe2">SavedScorer7</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a1326d116ab78d23d0076c0f70edba7e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1326d116ab78d23d0076c0f70edba7e4">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, FisherDiscriminant)</td></tr>
 <tr class="memitem:a5dd1fe82569329be65b72cdf01a4dd16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a5dd1fe82569329be65b72cdf01a4dd16">checkLabels8</a> (const vector&lt; double &gt; &amp;labels)</td></tr>
-<tr class="memitem:a2e1700b66cb234cdec805e5deed2cf6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a2e1700b66cb234cdec805e5deed2cf6b">SavedScorer8_estimator</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, const double label)</td></tr>
+<tr class="memitem:a43e75386351ad954dad46bb00c1a3d3a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a43e75386351ad954dad46bb00c1a3d3a">SavedScorer8_estimator</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, double label)</td></tr>
 <tr class="memitem:a08c4e5cc9b835f5b94ab85d0ab680281"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a08c4e5cc9b835f5b94ab85d0ab680281">SavedScorer8</a> (const std::vector&lt; double &gt; &amp;features)</td></tr>
 <tr class="memitem:a49f6ccb08e87646e1d4bcbc899da89a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a49f6ccb08e87646e1d4bcbc899da89a4">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, NaiveBayes)</td></tr>
 <tr class="memitem:affd0219e4a7a7ce39b582aaa4461efa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#affd0219e4a7a7ce39b582aaa4461efa0">checkFeatures9</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
 <tr class="memitem:a1b0839578ab48e7cb3e2ed364520bbce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1b0839578ab48e7cb3e2ed364520bbce">SavedFeatureConverter9</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
 <tr class="memitem:a91a407aa413c76bac53f25305d5185df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, PCALearner)</td></tr>
+<tr class="memitem:a1954f5935f5f68701ddaf70e66385021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1954f5935f5f68701ddaf70e66385021">checkFeatures10</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:a1fc438cc1849ae0d1e52d6a0a3c2e6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a1fc438cc1849ae0d1e52d6a0a3c2e6c2">SavedFeatureConverter10</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:a0a6e1ad6526a67a41b9681067b20c596"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a0a6e1ad6526a67a41b9681067b20c596">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, FakeFeatureLearner)</td></tr>
+<tr class="memitem:a5c31b653991d88be67b0d06066b61e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a5c31b653991d88be67b0d06066b61e4a">checkFeatures11</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:ae6efec593b98030ee87247b70baf760d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae6efec593b98030ee87247b70baf760d">SavedFeatureConverter11</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:a2db79e5f2fd2e0794c2480571f85df29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a2db79e5f2fd2e0794c2480571f85df29">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, FeatureNormalizerLearner)</td></tr>
+<tr class="memitem:ad72b62a67ecba38048aa3ca02e8ac466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ad72b62a67ecba38048aa3ca02e8ac466">checkFeatures12</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:a8d42e2a6973a9af1ad6099bd08d2fecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a8d42e2a6973a9af1ad6099bd08d2fecf">SavedFeatureConverter12</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:aed1a700f870eb703028f1051036f26d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aed1a700f870eb703028f1051036f26d5">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, FeatureRandomSamplerLearner)</td></tr>
+<tr class="memitem:a3a17bcbfe049ca9cf0040ea30bc41bdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a3a17bcbfe049ca9cf0040ea30bc41bdf">checkFeatures13</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:ab71de0340465b632709d9d821f6b8673"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ab71de0340465b632709d9d821f6b8673">SavedFeatureConverter13</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:a907cef2237be5560b9acc1b02de042f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a907cef2237be5560b9acc1b02de042f1">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, FeatureSamplerLearner)</td></tr>
+<tr class="memitem:a78780cba0839d168c9caf3be9f872e5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a78780cba0839d168c9caf3be9f872e5a">checkFeatures14</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:af5fad23c81f8bd87ecb9b09fadde198f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af5fad23c81f8bd87ecb9b09fadde198f">SavedFeatureConverter14</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:acb5594a83adef69cc2290437988addf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#acb5594a83adef69cc2290437988addf0">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, NanToAverageConverterLearner)</td></tr>
+<tr class="memitem:af181bf1fad6367976a7fd6a835be6d99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#af181bf1fad6367976a7fd6a835be6d99">checkFeatures15</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:ab99ad95bc731e623671713f70abdc59d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ab99ad95bc731e623671713f70abdc59d">SavedFeatureConverter15</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:a23f785355f0647df20c7ad572b01f924"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a23f785355f0647df20c7ad572b01f924">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, NanToZeroConverterLearner)</td></tr>
+<tr class="memitem:aa6f1996b070a8cb3321c728515a59524"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#aa6f1996b070a8cb3321c728515a59524">checkFeatures16</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:ae278170afc61a8c6f55f44d786c6e3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#ae278170afc61a8c6f55f44d786c6e3fd">SavedFeatureConverter16</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:a8163bdb2d0cb7139e7790b3942cf5b49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a8163bdb2d0cb7139e7790b3942cf5b49">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, NominalToBoolConverterLearner)</td></tr>
+<tr class="memitem:a77fa194ee89375e021d8ddf9f8089a31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a77fa194ee89375e021d8ddf9f8089a31">checkFeatures17</a> (const vector&lt; vector&lt; double &gt; &gt; &amp;data)</td></tr>
+<tr class="memitem:a5c300bf8b8be677790b59b0652242841"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a5c300bf8b8be677790b59b0652242841">SavedFeatureConverter17</a> (const std::vector&lt; double &gt; &amp;features, std::vector&lt; double &gt; *result)</td></tr>
+<tr class="memitem:a2cd7c93c3030fb41ffc4e7c1afb69838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> (<a class="el" href="class_serialization_test.html">SerializationTest</a>, RemoveNominalConverterLearner)</td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
 <a class="anchor" id="aeb6e4801d6c571119e639107f44e7ef9"></a>
@@ -223,12 +249,131 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7b7edc862c41dbd1dfb9342f325ff0c3"></a>
+<a class="anchor" id="a1954f5935f5f68701ddaf70e66385021"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="tester_8cc.html#a7b7edc862c41dbd1dfb9342f325ff0c3">checkFeatures5</a> </td>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a1954f5935f5f68701ddaf70e66385021">checkFeatures10</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c31b653991d88be67b0d06066b61e4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a5c31b653991d88be67b0d06066b61e4a">checkFeatures11</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad72b62a67ecba38048aa3ca02e8ac466"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#ad72b62a67ecba38048aa3ca02e8ac466">checkFeatures12</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a17bcbfe049ca9cf0040ea30bc41bdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a3a17bcbfe049ca9cf0040ea30bc41bdf">checkFeatures13</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78780cba0839d168c9caf3be9f872e5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a78780cba0839d168c9caf3be9f872e5a">checkFeatures14</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af181bf1fad6367976a7fd6a835be6d99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#af181bf1fad6367976a7fd6a835be6d99">checkFeatures15</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6f1996b070a8cb3321c728515a59524"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#aa6f1996b070a8cb3321c728515a59524">checkFeatures16</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77fa194ee89375e021d8ddf9f8089a31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a77fa194ee89375e021d8ddf9f8089a31">checkFeatures17</a> </td>
           <td>(</td>
           <td class="paramtype">const vector&lt; vector&lt; double &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -342,6 +487,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae65967015f13ecb89fae1649b211c6f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#ae65967015f13ecb89fae1649b211c6f2">checkLabels5</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>labels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a5cfd11591b1f0d066810bdd21dca6ad0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -420,12 +582,201 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad8dbaf8a1ae10572c1e42a253d0ddcdf"></a>
+<a class="anchor" id="a1fc438cc1849ae0d1e52d6a0a3c2e6c2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="tester_8cc.html#ad8dbaf8a1ae10572c1e42a253d0ddcdf">SavedFeatureConverter5</a> </td>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a1fc438cc1849ae0d1e52d6a0a3c2e6c2">SavedFeatureConverter10</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae6efec593b98030ee87247b70baf760d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#ae6efec593b98030ee87247b70baf760d">SavedFeatureConverter11</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d42e2a6973a9af1ad6099bd08d2fecf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a8d42e2a6973a9af1ad6099bd08d2fecf">SavedFeatureConverter12</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab71de0340465b632709d9d821f6b8673"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#ab71de0340465b632709d9d821f6b8673">SavedFeatureConverter13</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5fad23c81f8bd87ecb9b09fadde198f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#af5fad23c81f8bd87ecb9b09fadde198f">SavedFeatureConverter14</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab99ad95bc731e623671713f70abdc59d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#ab99ad95bc731e623671713f70abdc59d">SavedFeatureConverter15</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae278170afc61a8c6f55f44d786c6e3fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#ae278170afc61a8c6f55f44d786c6e3fd">SavedFeatureConverter16</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c300bf8b8be677790b59b0652242841"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="tester_8cc.html#a5c300bf8b8be677790b59b0652242841">SavedFeatureConverter17</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em>, </td>
@@ -483,23 +834,6 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a84eb25c063acf8641a1f7ed4931f5534"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a84eb25c063acf8641a1f7ed4931f5534">SavedScorer1</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>feature</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -508,12 +842,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a96867bc89598adc4a853ce89fe671806"></a>
+<a class="anchor" id="a90cebecc9261135b441640e3e0471369"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a96867bc89598adc4a853ce89fe671806">SavedScorer2</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a90cebecc9261135b441640e3e0471369">SavedScorer0_estimator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>label</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af279cd12e33425a3e750204875a6840c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#af279cd12e33425a3e750204875a6840c">SavedScorer1</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -525,237 +886,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa9ecae035b2b9667c78616c9e05de9db"></a>
+<a class="anchor" id="a5ddbbf32095fc9d0425b9a9fc546155b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#aa9ecae035b2b9667c78616c9e05de9db">SavedScorer2_condition_id_57</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a5ddbbf32095fc9d0425b9a9fc546155b">SavedScorer2</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abf7d44387f56d92a4ce155aa17237529"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#abf7d44387f56d92a4ce155aa17237529">SavedScorer2_condition_id_59</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a77969383a3a481ec78542af15c0795c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a77969383a3a481ec78542af15c0795c2">SavedScorer2_condition_id_61</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a53bf1e0333ac98854faf4e3d1eeef6cb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a53bf1e0333ac98854faf4e3d1eeef6cb">SavedScorer2_condition_id_63</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af3b0194bb7311a4bc139722e4906d565"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#af3b0194bb7311a4bc139722e4906d565">SavedScorer2_condition_id_65</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a94c9602979d5aaa4b225bdf0d34eabdb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a94c9602979d5aaa4b225bdf0d34eabdb">SavedScorer2_condition_id_67</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a344a1ab47cfb3ec85c6f35e77358a657"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a344a1ab47cfb3ec85c6f35e77358a657">SavedScorer2_condition_id_69</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3070d14be2bb670115d745394eac95a1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a3070d14be2bb670115d745394eac95a1">SavedScorer2_id_56</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ade11405a83b4dddae1a1edd945a4d98a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#ade11405a83b4dddae1a1edd945a4d98a">SavedScorer2_id_58</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a16602cde9978a18afe1daa29963bf1a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a16602cde9978a18afe1daa29963bf1a0">SavedScorer2_id_60</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2bbc0cf04a2c9c5dd28e93cb9c6d65bf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a2bbc0cf04a2c9c5dd28e93cb9c6d65bf">SavedScorer2_id_62</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8f07f5f09d73ac66fb73e9751d90d6c8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a8f07f5f09d73ac66fb73e9751d90d6c8">SavedScorer2_id_64</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a33bb248cc025c7f1cc288d4f5bf62a16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a33bb248cc025c7f1cc288d4f5bf62a16">SavedScorer2_id_66</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7ef5bab8c1e007e235098eb0cd139e93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a7ef5bab8c1e007e235098eb0cd139e93">SavedScorer2_id_68</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -769,6 +909,108 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double <a class="el" href="tester_8cc.html#a4d1aaca3a83a976b82d75eb1b7f1f1d0">SavedScorer3</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33dca89901e61055bf6e6d704f136d07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a33dca89901e61055bf6e6d704f136d07">SavedScorer3_condition_id_64</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23423a33a303e4ab0c68518ff4d0b672"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a23423a33a303e4ab0c68518ff4d0b672">SavedScorer3_condition_id_66</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa3d2d770c68763f77fce10ebd7ed494a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#aa3d2d770c68763f77fce10ebd7ed494a">SavedScorer3_condition_id_68</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4965e18a4c8a45ba31ca3c49d745d75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#ae4965e18a4c8a45ba31ca3c49d745d75">SavedScorer3_condition_id_70</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae834cd5734ffb6b299f5a55e0cc844c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#ae834cd5734ffb6b299f5a55e0cc844c2">SavedScorer3_condition_id_72</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05cc2c1f1f0d10e15a7924d169c7612c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a05cc2c1f1f0d10e15a7924d169c7612c">SavedScorer3_condition_id_74</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -797,12 +1039,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af76566dcda4890b8093b6cb9a4ae4663"></a>
+<a class="anchor" id="a4a3265fff4d4317a0d8faa3c45cdbd8a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#af76566dcda4890b8093b6cb9a4ae4663">SavedScorer3_condition_id_78</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a4a3265fff4d4317a0d8faa3c45cdbd8a">SavedScorer3_id_63</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -814,12 +1056,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a45f769fbaeea292ef81ac1a42620f958"></a>
+<a class="anchor" id="a91da1fce811b5d8b16c24526a32fabf5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a45f769fbaeea292ef81ac1a42620f958">SavedScorer3_condition_id_80</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a91da1fce811b5d8b16c24526a32fabf5">SavedScorer3_id_65</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -831,12 +1073,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a11acdf00520db1ce85b02540d71e6b6e"></a>
+<a class="anchor" id="a19f7c3d5b30b8ad47a291d0d0a475f76"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a11acdf00520db1ce85b02540d71e6b6e">SavedScorer3_condition_id_82</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a19f7c3d5b30b8ad47a291d0d0a475f76">SavedScorer3_id_67</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -848,12 +1090,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3c636d5f5428be043c782f7f8e1bff2a"></a>
+<a class="anchor" id="a39e23c724539e4ef3119e21fe4d4b1de"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a3c636d5f5428be043c782f7f8e1bff2a">SavedScorer3_condition_id_84</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a39e23c724539e4ef3119e21fe4d4b1de">SavedScorer3_id_69</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -865,12 +1107,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab45a552e574baa4f86dfea43abcab35f"></a>
+<a class="anchor" id="abb05e6c92c3aa00d32f08bb7209e67be"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#ab45a552e574baa4f86dfea43abcab35f">SavedScorer3_condition_id_86</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#abb05e6c92c3aa00d32f08bb7209e67be">SavedScorer3_id_71</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -882,12 +1124,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a857cc6017282d963ee8082c45b65c310"></a>
+<a class="anchor" id="acf3f3d42e14c3706049f7fbb90f3161d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a857cc6017282d963ee8082c45b65c310">SavedScorer3_condition_id_88</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#acf3f3d42e14c3706049f7fbb90f3161d">SavedScorer3_id_73</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -916,114 +1158,267 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae6766dfa53ce1c39b12de0fe6cb52781"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#ae6766dfa53ce1c39b12de0fe6cb52781">SavedScorer3_id_77</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af68ffea7b2703f030f38957b1542f8a3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#af68ffea7b2703f030f38957b1542f8a3">SavedScorer3_id_79</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abe0ea04d0d2188f42bf5256660b5a710"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#abe0ea04d0d2188f42bf5256660b5a710">SavedScorer3_id_81</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae76f2d607bf35acd00baf9d73aa236dd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#ae76f2d607bf35acd00baf9d73aa236dd">SavedScorer3_id_83</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a818743619ff917e9159f9a4db791ed7d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a818743619ff917e9159f9a4db791ed7d">SavedScorer3_id_85</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeac538028f853fe27cf4f799264a31fd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#aeac538028f853fe27cf4f799264a31fd">SavedScorer3_id_87</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>features</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a521e88fb4b3aa4092a372925f4a21b99"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">double <a class="el" href="tester_8cc.html#a521e88fb4b3aa4092a372925f4a21b99">SavedScorer4</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaad9b874707ea0f1362b33b79c8c3f8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#aaad9b874707ea0f1362b33b79c8c3f8e">SavedScorer4_condition_id_83</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac079df5e6fff46b78420f093b76efc7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#ac079df5e6fff46b78420f093b76efc7c">SavedScorer4_condition_id_85</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a037681a1b8ebd253bc699095919ff729"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a037681a1b8ebd253bc699095919ff729">SavedScorer4_condition_id_87</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ec3f759670a4fa5ef16066df3103bdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a8ec3f759670a4fa5ef16066df3103bdd">SavedScorer4_condition_id_89</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad057134e77550e414f6cacc8bb08c06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#aad057134e77550e414f6cacc8bb08c06">SavedScorer4_condition_id_91</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1352d7469175d5789dc84027458e9e51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a1352d7469175d5789dc84027458e9e51">SavedScorer4_condition_id_93</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a72e616175681948e3ad92d86f7fbd1e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a72e616175681948e3ad92d86f7fbd1e8">SavedScorer4_condition_id_95</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae52fae307e463ea7406a4bb1e4134f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#aae52fae307e463ea7406a4bb1e4134f1">SavedScorer4_id_82</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0becfce7ed7c43ede62bc7d940620c50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a0becfce7ed7c43ede62bc7d940620c50">SavedScorer4_id_84</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3bcac81a51671ef0ef19734a5822fde1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a3bcac81a51671ef0ef19734a5822fde1">SavedScorer4_id_86</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34f1ce0b6fd693c1ef1e35cefac2d78c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a34f1ce0b6fd693c1ef1e35cefac2d78c">SavedScorer4_id_88</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0511dba6608a50f2736ddb6e829fca52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a0511dba6608a50f2736ddb6e829fca52">SavedScorer4_id_90</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1eff93112fb0ef6683a556b0ab6973aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a1eff93112fb0ef6683a556b0ab6973aa">SavedScorer4_id_92</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22ca2384c58fa6a55b44cfbce5a7c90a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a22ca2384c58fa6a55b44cfbce5a7c90a">SavedScorer4_id_94</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>features</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f2694d71339b23b8e43de8596080dbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a0f2694d71339b23b8e43de8596080dbd">SavedScorer5</a> </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>features</em></td><td>)</td>
@@ -1069,12 +1464,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8aed9d3d81caefe980edf170cbda215a"></a>
+<a class="anchor" id="a824a2d24579d6298fde32399dbefbda4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a8aed9d3d81caefe980edf170cbda215a">SavedScorer7_estimator</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a824a2d24579d6298fde32399dbefbda4">SavedScorer7_estimator</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
           <td class="paramname"><em>object</em>, </td>
@@ -1082,7 +1477,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>label</em>&#160;</td>
         </tr>
         <tr>
@@ -1113,12 +1508,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2e1700b66cb234cdec805e5deed2cf6b"></a>
+<a class="anchor" id="a43e75386351ad954dad46bb00c1a3d3a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a2e1700b66cb234cdec805e5deed2cf6b">SavedScorer8_estimator</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a43e75386351ad954dad46bb00c1a3d3a">SavedScorer8_estimator</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
           <td class="paramname"><em>object</em>, </td>
@@ -1126,7 +1521,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>label</em>&#160;</td>
         </tr>
         <tr>
@@ -1140,12 +1535,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a62cb4ec227844c383b8a80e9e8c70e6e"></a>
+<a class="anchor" id="a63f75744e4fbedf3c0886f9d7df82d84"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#a62cb4ec227844c383b8a80e9e8c70e6e">serializable_object_11ADD</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a63f75744e4fbedf3c0886f9d7df82d84">serializable_object_18ADD</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1167,12 +1562,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abd708622fb3cd138beaed4cb5994c207"></a>
+<a class="anchor" id="aaf7e14aefc84a4d534f7425a321b4930"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#abd708622fb3cd138beaed4cb5994c207">serializable_object_12SUB</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#aaf7e14aefc84a4d534f7425a321b4930">serializable_object_19SUB</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1194,12 +1589,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acd7db8fbc7676658b7463bc5bc163ea3"></a>
+<a class="anchor" id="afd636b5780b3e97025ab296516048b9f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#acd7db8fbc7676658b7463bc5bc163ea3">serializable_object_13MUL</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#afd636b5780b3e97025ab296516048b9f">serializable_object_20MUL</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1221,12 +1616,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae1d022badf2e820feec7a61b081cd9d7"></a>
+<a class="anchor" id="a7347359026e3275daef347609e479509"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="tester_8cc.html#ae1d022badf2e820feec7a61b081cd9d7">serializable_object_14DIV</a> </td>
+          <td class="memname">double <a class="el" href="tester_8cc.html#a7347359026e3275daef347609e479509">serializable_object_21DIV</a> </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -1241,6 +1636,33 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ef1b04c8b16964d2310948c0c628f50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BayesianLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -1253,7 +1675,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1280,7 +1702,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1307,7 +1729,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1334,7 +1756,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1361,7 +1783,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1383,39 +1805,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae087d2a0b580d03c8750bd28d0181ca8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RSMLCLearner&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a331a349b599f8a749d8d827ba7d73059"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1442,7 +1837,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1469,7 +1864,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1496,7 +1891,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tester_8cc.html#a91a407aa413c76bac53f25305d5185df">TEST_F</a> </td>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
           <td class="paramname">, </td>
@@ -1505,6 +1900,222 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">PCALearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a6e1ad6526a67a41b9681067b20c596"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FakeFeatureLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2db79e5f2fd2e0794c2480571f85df29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FeatureNormalizerLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed1a700f870eb703028f1051036f26d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FeatureRandomSamplerLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a907cef2237be5560b9acc1b02de042f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FeatureSamplerLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb5594a83adef69cc2290437988addf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NanToAverageConverterLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23f785355f0647df20c7ad572b01f924"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NanToZeroConverterLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8163bdb2d0cb7139e7790b3942cf5b49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NominalToBoolConverterLearner&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2cd7c93c3030fb41ffc4e7c1afb69838"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tester_8cc.html#a2cd7c93c3030fb41ffc4e7c1afb69838">TEST_F</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serialization_test.html">SerializationTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RemoveNominalConverterLearner&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1549,7 +2160,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:32 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

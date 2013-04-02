@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,12 +109,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ltr::io_utility::ARFFParser Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Parse ARFF format (<a href="http://www.cs.waikato.ac.nz/ml/weka/arff.html">http://www.cs.waikato.ac.nz/ml/weka/arff.html</a>)  
+ <a href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="parse__arff_8h_source.html">parse_arff.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -129,38 +131,39 @@ Inheritance diagram for ltr::io_utility::ARFFParser:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e507e2519b83bd2c3807619f90b39c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9e507e2519b83bd2c3807619f90b39c7">parseRawObject</a> (string line, <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a527567c60e7f23939bb6b838a753db09">RawObject</a> *result)</td></tr>
-<tr class="memitem:a0be89699fb7424cf57a8395b250e5c07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a0be89699fb7424cf57a8395b250e5c07">makeString</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object, string *result)</td></tr>
-<tr class="memitem:a68d445dd87d6b3598b788f89f38332dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a68d445dd87d6b3598b788f89f38332dc">makeString</a> (const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const vector&lt; const <a class="el" href="classltr_1_1_object.html">Object</a> * &gt; &amp;objects, std::string *result)</td></tr>
-<tr class="memitem:aa778e44ba85dd9a8a01a79f75e1c29b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa778e44ba85dd9a8a01a79f75e1c29b2">buildPairwiseDataSet</a> (const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;info)</td></tr>
-<tr class="memitem:a9ecfc752236207a026491d3b5c927278"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9ecfc752236207a026491d3b5c927278">buildListwiseDataSet</a> (const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;info)</td></tr>
-<tr><td colspan="2"><h2><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a60fbef26f2a8b254fccaa570fcef9682"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a60fbef26f2a8b254fccaa570fcef9682">init</a> (std::istream *in)</td></tr>
-<tr><td colspan="2"><h2><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a5d4265337e4cd441bb51122fbe310987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987">current_id_</a></td></tr>
-<tr class="memitem:a2b449a6b52adf4accdd1e9423cdc8aa7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7">current_relevance_</a></td></tr>
-<tr class="memitem:aca87f66c5938d5dfcd1c79891fa486be"><td class="memItemLeft" align="right" valign="top">map&lt; int, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aca87f66c5938d5dfcd1c79891fa486be">features_</a></td></tr>
-<tr class="memitem:a100864a5decb2e7bddc9dc0683dadc39"><td class="memItemLeft" align="right" valign="top">map&lt; string, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a100864a5decb2e7bddc9dc0683dadc39">classes_</a></td></tr>
-<tr class="memitem:a5e259cc60ab1dc6dd18291af51b9f7b2"><td class="memItemLeft" align="right" valign="top">map&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2">meta_features_</a></td></tr>
+<tr class="memitem:ad54c0bc4aeef60486f83945751d0a47f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#ad54c0bc4aeef60486f83945751d0a47f">saveObject</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;obj, ostream &amp;stream)</td></tr>
+<tr class="memitem:abbd2adee41e88751b64d800724c810ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#abbd2adee41e88751b64d800724c810ee">saveObjects</a> (const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info, ostream &amp;stream)</td></tr>
+<tr class="memitem:acd8d82b088187eadfedd01675e35e612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#acd8d82b088187eadfedd01675e35e612">buildPairwiseDataSet</a> (const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info)</td></tr>
+<tr class="memitem:af2822268b59e5642dcf0f8fc68d45d9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#af2822268b59e5642dcf0f8fc68d45d9d">buildListwiseDataSet</a> (const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8d759ce832d89619371f7395f38102c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a8d759ce832d89619371f7395f38102c0">parseDataInfo</a> (istream &amp;in, <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> *feature_info, <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> *label_info)</td></tr>
+<tr class="memitem:a3ebf5716e3a3805e2cbcfa218200abef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a3ebf5716e3a3805e2cbcfa218200abef">parseObject</a> (const string &amp;record, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info, <a class="el" href="classltr_1_1_object.html">Object</a> *object)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9ecfc752236207a026491d3b5c927278"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Parse ARFF format (<a href="http://www.cs.waikato.ac.nz/ml/weka/arff.html">http://www.cs.waikato.ac.nz/ml/weka/arff.html</a>) </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="af2822268b59e5642dcf0f8fc68d45d9d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9ecfc752236207a026491d3b5c927278">ltr::io_utility::ARFFParser::buildListwiseDataSet</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#af2822268b59e5642dcf0f8fc68d45d9d">ltr::io_utility::ARFFParser::buildListwiseDataSet</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>objects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -174,30 +177,37 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
-    <tr><td class="paramname">info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label values </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#abdc6769eaebd984840da4cd809eebdda">ltr::io_utility::Parser</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a467f02e013cbc5c96c7b949f550f59f3">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa778e44ba85dd9a8a01a79f75e1c29b2"></a>
+<a class="anchor" id="acd8d82b088187eadfedd01675e35e612"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aa778e44ba85dd9a8a01a79f75e1c29b2">ltr::io_utility::ARFFParser::buildPairwiseDataSet</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#acd8d82b088187eadfedd01675e35e612">ltr::io_utility::ARFFParser::buildPairwiseDataSet</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>objects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -211,43 +221,117 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
-    <tr><td class="paramname">info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label values </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a5e4d19a0ff167986e2adeb8e194813bf">ltr::io_utility::Parser</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#abed8e250ba6d8377dc36d42ea22eceaa">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a60fbef26f2a8b254fccaa570fcef9682"></a>
+<a class="anchor" id="a8d759ce832d89619371f7395f38102c0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a60fbef26f2a8b254fccaa570fcef9682">ltr::io_utility::ARFFParser::init</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a8d759ce832d89619371f7395f38102c0">ltr::io_utility::ARFFParser::parseDataInfo</a> </td>
           <td>(</td>
-          <td class="paramtype">std::istream *&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td><code> [private, virtual]</code></td>
+          <td class="paramtype">istream &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> *&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> *&#160;</td>
+          <td class="paramname"><em>label_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Method to init parser. It must fill the raw_feature_onfo_. </p>
-<div class="fragment"><pre class="fragment"> ifstream fin(<span class="stringliteral">&quot;file.txt&quot;</span>);
- parser-&gt;init(&amp;fin);
-</pre></div> 
-<p>Reimplemented from <a class="el" href="classltr_1_1io__utility_1_1_parser.html#ad86a5c48ad68516e05aa2400e9c8df88">ltr::io_utility::Parser</a>.</p>
+<p>Realization of parsing data information for format. Function must set 'in' onto first symbol of first object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>- input stream with file </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- parsed information about features </td></tr>
+    <tr><td class="paramname">label_info</td><td>- parsed information about label values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a3b7575bde0ba758b5103c696e28440af">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0be89699fb7424cf57a8395b250e5c07"></a>
+<a class="anchor" id="a3ebf5716e3a3805e2cbcfa218200abef"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a0be89699fb7424cf57a8395b250e5c07">ltr::io_utility::ARFFParser::makeString</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a3ebf5716e3a3805e2cbcfa218200abef">ltr::io_utility::ARFFParser::parseObject</a> </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Realization of parsing object by its string representation. Every line from file starting from position after parsing data information will be casted into object by this function </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">record</td><td>- string which contains object to parse </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- information about features </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label values </td></tr>
+    <tr><td class="paramname">object</td><td>- result of parsing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a401d6e180690d5bf80c7a6c931cf60cb">ltr::io_utility::Parser</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad54c0bc4aeef60486f83945751d0a47f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#ad54c0bc4aeef60486f83945751d0a47f">ltr::io_utility::ARFFParser::saveObject</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
           <td class="paramname"><em>object</em>, </td>
@@ -255,7 +339,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string *&#160;</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
           <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
@@ -270,37 +354,42 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>- object to serialize </td></tr>
-    <tr><td class="paramname">result</td><td>- string, which will contain serialized object <div class="fragment"><pre class="fragment"> <span class="keywordtype">string</span> result;
- parser-&gt;makeString(<span class="keywordtype">object</span>, &amp;result);
+    <tr><td class="paramname">stream</td><td>- ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObject(<span class="keywordtype">object</span>, cout);
 </pre></div> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#aff3c9b5ca3d501ae8630ffebdf70e3da">ltr::io_utility::Parser</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#af49a38073d3919b3f54b2129d972f2ba">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a68d445dd87d6b3598b788f89f38332dc"></a>
+<a class="anchor" id="abbd2adee41e88751b64d800724c810ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a0be89699fb7424cf57a8395b250e5c07">ltr::io_utility::ARFFParser::makeString</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#abbd2adee41e88751b64d800724c810ee">ltr::io_utility::ARFFParser::saveObjects</a> </td>
           <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>objects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>feature_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const vector&lt; const <a class="el" href="classltr_1_1_object.html">Object</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>objects</em>, </td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
           <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
@@ -314,119 +403,16 @@ Private Attributes</h2></td></tr>
 <p>Functions serializes dataset into string. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">feature_info</td><td>- information about features </td></tr>
     <tr><td class="paramname">objects</td><td>- vector of dataset's objects </td></tr>
-    <tr><td class="paramname">result</td><td>- string, which will contain serialized object <div class="fragment"><pre class="fragment"> <span class="keywordtype">string</span> result;
- parser-&gt;makeString(data, &amp;result);
+    <tr><td class="paramname">feature_info</td><td>- information about feature types </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label type </td></tr>
+    <tr><td class="paramname">stream</td><td>- ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObjects(object_list, feature_info, label_info, cout);
 </pre></div> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classltr_1_1io__utility_1_1_parser.html#ac3466844b03142a19c3a2bca58043671">ltr::io_utility::Parser</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9e507e2519b83bd2c3807619f90b39c7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a9e507e2519b83bd2c3807619f90b39c7">ltr::io_utility::ARFFParser::parseRawObject</a> </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1io__utility_1_1_parser.html#a527567c60e7f23939bb6b838a753db09">RawObject</a> *&#160;</td>
-          <td class="paramname"><em>result</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Function to parse string into RawObject. Can throw <a class="el" href="classltr_1_1io__utility_1_1_parser_1_1bad__line.html">Parser::bad_line</a> if impossible to parse. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">line</td><td>- string to parse. </td></tr>
-    <tr><td class="paramname">result</td><td>- link to RawObject to save result in. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a8fdeb3124882063b467fb8668378478a">ltr::io_utility::Parser</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a100864a5decb2e7bddc9dc0683dadc39"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map&lt;string, double&gt; <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a100864a5decb2e7bddc9dc0683dadc39">ltr::io_utility::ARFFParser::classes_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5d4265337e4cd441bb51122fbe310987"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5d4265337e4cd441bb51122fbe310987">ltr::io_utility::ARFFParser::current_id_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2b449a6b52adf4accdd1e9423cdc8aa7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a2b449a6b52adf4accdd1e9423cdc8aa7">ltr::io_utility::ARFFParser::current_relevance_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aca87f66c5938d5dfcd1c79891fa486be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map&lt;int, string&gt; <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#aca87f66c5938d5dfcd1c79891fa486be">ltr::io_utility::ARFFParser::features_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5e259cc60ab1dc6dd18291af51b9f7b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map&lt;string, string&gt; <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a5e259cc60ab1dc6dd18291af51b9f7b2">ltr::io_utility::ARFFParser::meta_features_</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Reimplemented from <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a7919c92c8d76023548856f9ed38d254e">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
@@ -438,7 +424,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

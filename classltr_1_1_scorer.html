@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,6 +115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ltr::Scorer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class that can for every object evaluate a value - its rank, or score.  
+ <a href="classltr_1_1_scorer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="scorer_8h_source.html">scorer.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -158,7 +161,9 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa38de14d7a4f25acd3d95acce4a794eb"><td class="memItemLeft" align="right" valign="top">FeatureConverterArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">feature_converter_</a></td></tr>
 </table>
-<hr/><h2>Member Typedef Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Class that can for every object evaluate a value - its rank, or score. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="ae13d9b31c6e72177b8c77c3e861dc298"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +190,7 @@ Private Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classltr_1_1_serializable_functor.html#a079765aa058496c753107dc98a9b1acd">ltr::SerializableFunctor&lt; double &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a3f52fbaf8d964cf6bd699b1e99916ffd">ltr::gp::GPScorer</a>, <a class="el" href="classltr_1_1_n_n_scorer.html#ac163ca6ae34f91d46a502bdb584a4222">ltr::NNScorer</a>, <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html#a7bd94a555cf1cc95ca14af65b0047e6a">ltr::composition::CompositionScorer</a>, <a class="el" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">ltr::BayesianScorer</a>, <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html#a99c29891ec5a0d70f2792fd2cb0d147e">ltr::decision_tree::DecisionTreeScorer</a>, <a class="el" href="classltr_1_1_fake_scorer.html#a11a35ae014b5d3986aab80654147e5a3">ltr::FakeScorer</a>, <a class="el" href="classltr_1_1_one_feature_scorer.html#ac8ba587531266eac095014350e584bc7">ltr::OneFeatureScorer</a>, and <a class="el" href="classltr_1_1_linear_scorer.html#a3bee2cb6087d7113fef872613acb84d8">ltr::LinearScorer</a>.</p>
+<p>Reimplemented in <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a3f52fbaf8d964cf6bd699b1e99916ffd">ltr::gp::GPScorer</a>, <a class="el" href="classltr_1_1_n_n_scorer.html#ac163ca6ae34f91d46a502bdb584a4222">ltr::NNScorer</a>, <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html#a7bd94a555cf1cc95ca14af65b0047e6a">ltr::composition::CompositionScorer</a>, <a class="el" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">ltr::BayesianScorer</a>, <a class="el" href="classltr_1_1_fake_scorer.html#a11a35ae014b5d3986aab80654147e5a3">ltr::FakeScorer</a>, <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html#a99c29891ec5a0d70f2792fd2cb0d147e">ltr::decision_tree::DecisionTreeScorer</a>, <a class="el" href="classltr_1_1_one_feature_scorer.html#ac8ba587531266eac095014350e584bc7">ltr::OneFeatureScorer</a>, and <a class="el" href="classltr_1_1_linear_scorer.html#a3bee2cb6087d7113fef872613acb84d8">ltr::LinearScorer</a>.</p>
 
 </div>
 </div>
@@ -233,7 +238,7 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>serrializable_object_name</em></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -265,7 +270,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Implemented in <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html#a27ad8d272abf2180c74ffa1437311c18">ltr::composition::CompositionScorer</a>, <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a409bc72542984c5f434b0a83dc158ecd">ltr::gp::GPScorer</a>, <a class="el" href="classltr_1_1_n_n_scorer.html#af332781de9c183fcfed52f90f3c5109d">ltr::NNScorer</a>, <a class="el" href="classltr_1_1_one_feature_scorer.html#a7ae3e19d39f08c98e38d5130b0245345">ltr::OneFeatureScorer</a>, <a class="el" href="classltr_1_1_bayesian_scorer.html#a191bd6478508c6af10894dbeac65d237">ltr::BayesianScorer</a>, <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html#a88c993291b92c54561ebb2373f3d793a">ltr::decision_tree::DecisionTreeScorer</a>, <a class="el" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">ltr::FakeScorer</a>, and <a class="el" href="classltr_1_1_linear_scorer.html#a60e4d590056ef89637767479c6f74fe7">ltr::LinearScorer</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html#a27ad8d272abf2180c74ffa1437311c18">ltr::composition::CompositionScorer</a>, <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a409bc72542984c5f434b0a83dc158ecd">ltr::gp::GPScorer</a>, <a class="el" href="classltr_1_1_n_n_scorer.html#af332781de9c183fcfed52f90f3c5109d">ltr::NNScorer</a>, <a class="el" href="classltr_1_1_one_feature_scorer.html#a7ae3e19d39f08c98e38d5130b0245345">ltr::OneFeatureScorer</a>, <a class="el" href="classltr_1_1_bayesian_scorer.html#a191bd6478508c6af10894dbeac65d237">ltr::BayesianScorer</a>, <a class="el" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">ltr::FakeScorer</a>, <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html#a88c993291b92c54561ebb2373f3d793a">ltr::decision_tree::DecisionTreeScorer</a>, and <a class="el" href="classltr_1_1_linear_scorer.html#a60e4d590056ef89637767479c6f74fe7">ltr::LinearScorer</a>.</p>
 
 </div>
 </div>
@@ -465,7 +470,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:49 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

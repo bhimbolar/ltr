@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,8 +120,8 @@ FeatureConverter</h2>
 <li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const Object &amp;input, Object *output) </a> - convert one object </li>
 <li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const DataSet&lt;TElement&gt; &amp;input, DataSet&lt;TElement&gt; *output) </a> - convert whole dataset</li>
 </ul>
-<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via via <a class="el" href="">addFeatureConverterLearner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
-<p>After learning on converted data <a class="el" href="classltr_1_1_scorer.html">Scorer</a> can be applied only to objects which features are preprocessed the same way. For this reason FeatureConverters used in <a class="el" href="classltr_1_1_scorer.html">Scorer</a> should be also serialized in C++ code during <a class="el" href="classltr_1_1_scorer.html">Scorer</a> serialization.</p>
+<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via via <a class="el" href="">addFeatureConverterLearner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
+<p>After learning on converted data <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> can be applied only to objects which features are preprocessed the same way. For this reason FeatureConverters used in <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> should be also serialized in C++ code during <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> serialization.</p>
 <h2><a class="anchor" id="FeatureConverterList"></a>
 List of all FeatureConverters</h2>
 <table class="doxtable">
@@ -196,14 +196,14 @@ List of all FeatureConverters</h2>
 <td>Output: </td></tr>
 <tr>
 <td><div class="fragment"><pre class="fragment">Before:
-[5.23, 1.53, -5.38]{0.00, 0.00}
-[2.21, -1.23, 0.32]{0.00, 0.00}
-[-2.12, 0.21, -6.08]{0.00, 0.00}
+[5.23, 1.53, -5.38]{nan, nan}
+[2.21, -1.23, 0.32]{nan, nan}
+[-2.12, 0.21, -6.08]{nan, nan}
 
 After:
-[1.00, 1.00, -0.78]{0.00, 0.00}
-[0.18, -1.00, 1.00]{0.00, 0.00}
-[-1.00, 0.04, -1.00]{0.00, 0.00}
+[1.00, 1.00, -0.78]{nan, nan}
+[0.18, -1.00, 1.00]{nan, nan}
+[-1.00, 0.04, -1.00]{nan, nan}
 
 </pre></div>  </td></tr>
 </table>
@@ -267,14 +267,14 @@ FeatureSamplerLearner</h3>
 <td>Output: </td></tr>
 <tr>
 <td><div class="fragment"><pre class="fragment">Before:
-[5.23, 1.53, -5.38]{0.00, 0.00}
-[2.21, -1.23, 0.32]{0.00, 0.00}
-[-2.12, 0.21, -6.08]{0.00, 0.00}
+[5.23, 1.53, -5.38]{nan, nan}
+[2.21, -1.23, 0.32]{nan, nan}
+[-2.12, 0.21, -6.08]{nan, nan}
 
 After:
-[5.23, -5.38]{0.00, 0.00}
-[2.21, 0.32]{0.00, 0.00}
-[-2.12, -6.08]{0.00, 0.00}
+[5.23, -5.38]{nan, nan}
+[2.21, 0.32]{nan, nan}
+[-2.12, -6.08]{nan, nan}
 
 </pre></div>  </td></tr>
 </table>
@@ -282,7 +282,7 @@ After:
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:47 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

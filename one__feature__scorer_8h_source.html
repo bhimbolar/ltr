@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -115,13 +115,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00011"></a>00011 <span class="keyword">using</span> std::string;
 <a name="l00012"></a>00012 
 <a name="l00013"></a>00013 <span class="keyword">namespace </span>ltr {
-<a name="l00017"></a><a class="code" href="classltr_1_1_one_feature_scorer.html">00017</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_one_feature_scorer.html">OneFeatureScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html">Scorer</a> {
+<a name="l00017"></a><a class="code" href="classltr_1_1_one_feature_scorer.html">00017</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_one_feature_scorer.html">OneFeatureScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> {
 <a name="l00018"></a>00018  <span class="keyword">public</span>:
 <a name="l00019"></a><a class="code" href="classltr_1_1_one_feature_scorer.html#ac8ba587531266eac095014350e584bc7">00019</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;OneFeatureScorer&gt;</a> <a class="code" href="classltr_1_1_one_feature_scorer.html#ac8ba587531266eac095014350e584bc7">Ptr</a>;
 <a name="l00020"></a>00020 
 <a name="l00021"></a><a class="code" href="classltr_1_1_one_feature_scorer.html#a4850acfaf8db6c7fbf56c3041e6fd842">00021</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_one_feature_scorer.html#a4850acfaf8db6c7fbf56c3041e6fd842">OneFeatureScorer</a>(<span class="keywordtype">size_t</span> feature_index = 0,
 <a name="l00022"></a>00022     FeatureConverterArray featureConverterArray = FeatureConverterArray()) :
-<a name="l00023"></a>00023       <a class="code" href="classltr_1_1_scorer.html">Scorer</a>(featureConverterArray),
+<a name="l00023"></a>00023       <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a>(featureConverterArray),
 <a name="l00024"></a>00024       <a class="code" href="classltr_1_1_one_feature_scorer.html#a74ddcd15dbd0c5a4f393b4a449aaac0e">index_</a>(feature_index) {}
 <a name="l00025"></a>00025 
 <a name="l00026"></a><a class="code" href="classltr_1_1_one_feature_scorer.html#a8db03385e357644cab6096185a95fc2a">00026</a>   <span class="keywordtype">size_t</span> <a class="code" href="classltr_1_1_one_feature_scorer.html#a8db03385e357644cab6096185a95fc2a">getIndex</a>()<span class="keyword"> const </span>{
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:44 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -41,7 +41,7 @@ var searchData=
   ['datas',['datas',['../struct_crossvalidation_launch_info.html#a090084180d71b0b0bbe86d64e941ce1c',1,'CrossvalidationLaunchInfo']]],
   ['datasampler',['DataSampler',['../classltr_1_1_data_sampler.html',1,'ltr']]],
   ['datasampler',['DataSampler',['../classltr_1_1_data_sampler.html#a233a962c1d7adab18eb6228059496ef2',1,'ltr::DataSampler::DataSampler(Indices indices=Indices())'],['../classltr_1_1_data_sampler.html#a2412b91997882555e858cad972fe91a4',1,'ltr::DataSampler::DataSampler(const ParametersContainer &amp;parameters)']]],
-  ['dataset',['DataSet',['../classltr_1_1_object.html#aef648af6c56fa8ee0738c93629e725dc',1,'ltr::Object::DataSet()'],['../classltr_1_1_data_set.html#a4641ee39df0a6e462a6ad7c662945e79',1,'ltr::DataSet::DataSet()'],['../class_serialization_test.html#acf578b7b7ef19e01c8db99e2ca9b5664',1,'SerializationTest::dataset()']]],
+  ['dataset',['dataset',['../class_serialization_test.html#acf578b7b7ef19e01c8db99e2ca9b5664',1,'SerializationTest::dataset()'],['../classltr_1_1_object.html#aef648af6c56fa8ee0738c93629e725dc',1,'ltr::Object::DataSet()'],['../classltr_1_1_data_set.html#a6120e1e838c45f02bf123c40488a5d07',1,'ltr::DataSet::DataSet()']]],
   ['dataset',['DataSet',['../classltr_1_1_data_set.html',1,'ltr']]],
   ['dataset_3c_20object_20_3e',['DataSet< Object >',['../classltr_1_1_data_set.html',1,'ltr']]],
   ['dataset_3c_20objecttype_20_3e',['DataSet< ObjectType >',['../classltr_1_1_data_set.html',1,'ltr']]],

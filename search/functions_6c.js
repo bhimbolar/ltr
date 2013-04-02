@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['label_5finfo',['label_info',['../classltr_1_1_data_set.html#afa305902fa6c5ea6a81f974d3a5aedf5',1,'ltr::DataSet']]],
   ['labelstatistic',['LabelStatistic',['../structltr_1_1utility_1_1_label_statistic.html#ae08c56b541dcb636afcce6490414f770',1,'ltr::utility::LabelStatistic']]],
   ['labelstatisticcomputer',['LabelStatisticComputer',['../classltr_1_1utility_1_1_label_statistic_computer.html#a3dc47483e6058045690dcd68197129ed',1,'ltr::utility::LabelStatisticComputer::LabelStatisticComputer()'],['../classltr_1_1utility_1_1_label_statistic_computer.html#a6f36253dd39b46b4a1230f823ee06ed1',1,'ltr::utility::LabelStatisticComputer::LabelStatisticComputer(const DataSet&lt; TElement &gt; &amp;data)']]],
   ['launch',['launch',['../classltr_1_1cv_1_1_cross_validator.html#ad2fc565d04a966b64e1df951d13b399b',1,'ltr::cv::CrossValidator::launch()'],['../class_ltr_client.html#a79ebcab2a9e8533163c827484aa0be8c',1,'LtrClient::launch()']]],
@@ -16,7 +17,6 @@ var searchData=
   ['linearcompositiontest',['LinearCompositionTest',['../class_linear_composition_test.html#ad97d674615137372c0267174ea877c7a',1,'LinearCompositionTest']]],
   ['linearconverter',['LinearConverter',['../classltr_1_1_linear_converter.html#a3fdd535783cae2ee3d19b81f532ed4ab',1,'ltr::LinearConverter']]],
   ['linearfunction',['LinearFunction',['../classoptimization_1_1_linear_function.html#a36dff8aac802dcd94e9588953c7ecf1f',1,'optimization::LinearFunction::LinearFunction(int dimension)'],['../classoptimization_1_1_linear_function.html#abcd5568695c4bf8b3349f58cca8541aa',1,'optimization::LinearFunction::LinearFunction(Vector factor, double shift=0.0)']]],
-  ['linearinequalityset',['LinearInequalitySet',['../classoptimization_1_1_linear_inequality_set.html#a8f5a877759e167b58b195da97111be95',1,'optimization::LinearInequalitySet']]],
   ['linearlearner',['LinearLearner',['../classltr_1_1_linear_learner.html#a8e7f5ac33a5284b2c032cb3586b6db78',1,'ltr::LinearLearner::LinearLearner(const ParametersContainer &amp;parameters)'],['../classltr_1_1_linear_learner.html#a03d205e82c35a541c5575c367a6b2ed4',1,'ltr::LinearLearner::LinearLearner()']]],
   ['linearscorer',['LinearScorer',['../classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824',1,'ltr::LinearScorer::LinearScorer()'],['../classltr_1_1_linear_scorer.html#a8d6aa05494811a624157d6b909ceaf36',1,'ltr::LinearScorer::LinearScorer(const vector&lt; double &gt; &amp;weights)']]],
   ['load',['Load',['../class_random_lib_1_1_random_engine.html#acd071ad41fca4e4dc0ee66fc53929669',1,'RandomLib::RandomEngine']]],

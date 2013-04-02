@@ -2,7 +2,7 @@
 <area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="363,5,531,32"/>
 <area shape="rect" href="$classltr_1_1_feature_sampler.html" title="Samples features with specified indices." alt="" coords="381,56,512,83"/>
 <area shape="rect" href="$classltr_1_1_linear_converter.html" title="Perform linear transformation of dataset." alt="" coords="383,107,511,133"/>
-<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="361,157,532,184"/>
+<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="Converts NaN features to average values." alt="" coords="361,157,532,184"/>
 <area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="357,208,536,235"/>
 <area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="351,259,543,285"/>
 <area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="353,309,540,336"/>

@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -175,12 +175,12 @@ Features</h3>
   <span class="keywordflow">return</span> 0;
 }
 
-</pre></div> </td><td><div class="fragment"><pre class="fragment">obj = [1.10, 45.30, 1000000.00]{0.00, 0.00}
+</pre></div> </td><td><div class="fragment"><pre class="fragment">obj = [1.10, 45.30, 1000000.00]{nan, nan}
 obj.feature_count() = 3
 feature was added
 obj.feature_count() = 4
 obj[0] = 1.1, obj.at(1) = 45.3
-obj = [1.00, 5.00, 2.00]{0.00, 0.00}
+obj = [1.00, 5.00, 2.00]{nan, nan}
 </pre></div> </td></tr>
 </table>
 <h3><a class="anchor" id="TutorialDataObjectLabels"></a>
@@ -302,7 +302,7 @@ ObjectPair</h2>
   <span class="keywordflow">return</span> 0;
 }
 
-</pre></div> </td><td><div class="fragment"><pre class="fragment">pair = ([1.00, 2.00, 3.00, 4.00]{0.00, 0.00}, [4.00, 6.00, 7.00, 8.00]{0.00, 0.00})
+</pre></div> </td><td><div class="fragment"><pre class="fragment">pair = ([1.00, 2.00, 3.00, 4.00]{nan, nan}, [4.00, 6.00, 7.00, 8.00]{nan, nan})
 </pre></div> </td></tr>
 </table>
 <h2><a class="anchor" id="TutorialDataObjectList"></a>
@@ -444,18 +444,18 @@ Basic operations</h3>
 }
 
 </pre></div> </td><td><div class="fragment"><pre class="fragment">data = 
-[12.00, 54.11]{0.00, 0.00}
-[1.30, 4.15]{0.00, 0.00}
-[10.30, 14.30]{0.00, 0.00}
-[19.00, 47.50]{0.00, 0.00}
+[12.00, 54.11]{nan, nan}
+[1.30, 4.15]{nan, nan}
+[10.30, 14.30]{nan, nan}
+[19.00, 47.50]{nan, nan}
 
 data.size() = 4
-data[0] = [12.00, 54.11]{0.00, 0.00}
-data.at(1) = [1.30, 4.15]{0.00, 0.00}
+data[0] = [12.00, 54.11]{nan, nan}
+data.at(1) = [1.30, 4.15]{nan, nan}
 data.getWeight(2) = 2.12
 data.getWeight(2) = 0.01
 called data.erase(1)
-data[1] = [10.30, 14.30]{0.00, 0.00}
+data[1] = [10.30, 14.30]{nan, nan}
 called data.clear()
 data.size() = 0
 </pre></div> </td></tr>
@@ -485,7 +485,7 @@ DataSet&lt;TElement&gt; ltr::io_utility::loadDataSet(<span class="keyword">const
 <dl class="section note"><dt>Note:</dt><dd><ul>
 <li>Missed features will be changed by ltr::utility::NaN</li>
 <li>String (nominal) features will be changed by hash of the string value</li>
-<li>Use <a class="el" href="classltr_1_1_feature_info.html#a566d68f92e542ffa489c2fa0b7aeb151">FeatureInfo::getFeatureValues</a> (see the next section) to restore the string value of a nominal feature</li>
+<li>Use FeatureInfo::getFeatureValues (see the next section) to restore the string value of a nominal feature</li>
 </ul>
 </dd></dl>
 <p>Function for saving <a class="el" href="classltr_1_1_data_set.html">DataSet</a> into file. </p>
@@ -517,15 +517,15 @@ Feature info</h3>
 <ul>
 <li><a class="el" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">FeatureInfo::feature_count()</a> - return count of features</li>
 <li><a class="el" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">FeatureInfo::resize</a> - change number of features</li>
-<li><a class="el" href="classltr_1_1_feature_info.html#ab1983d9f60172d03f4152d2aa129e1c8">FeatureInfo::addFeature</a> - add info about one feature</li>
+<li><a class="el" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">FeatureInfo::addFeature</a> - add info about one feature</li>
 <li><a class="el" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">FeatureInfo::getFeatureType</a> - return feature type: <code>NOMINAL</code>, <code>NUMERIC</code> or <code>BOOLEAN</code> </li>
-<li><a class="el" href="classltr_1_1_feature_info.html#a566d68f92e542ffa489c2fa0b7aeb151">FeatureInfo::getFeatureValues</a> - return map from numeric to string values for <code>NOMINAL</code> features </li>
+<li>FeatureInfo::getFeatureValues - return map from numeric to string values for <code>NOMINAL</code> features </li>
 </ul>
 </div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:32 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

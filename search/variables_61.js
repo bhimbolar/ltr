@@ -9,7 +9,9 @@ var searchData=
   ['alloc_5fincr',['alloc_incr',['../class_random_lib_1_1_exponential_prob.html#a22bd6f2f2871bc966100e7b8922ca141',1,'RandomLib::ExponentialProb']]],
   ['approach',['approach',['../struct_data_info.html#a9ee5044c93902ac46dec7878f1474999',1,'DataInfo']]],
   ['approach_5f',['approach_',['../class_object_info.html#a789fecf7d41b264846532245f8a905cf',1,'ObjectInfo']]],
-  ['arff_5farff_5ftest_5ffile_5fname',['arff_arff_test_file_name',['../class_i_o_utility_test.html#a5b56c5e55c29752c3ad418ba7b78da93',1,'IOUtilityTest']]],
+  ['arff_5farff_5ftest_5ffile_5fname',['arff_arff_test_file_name',['../class_i_o_utility_test.html#a236192e1e2316b1a834daac692690548',1,'IOUtilityTest']]],
+  ['arff_5finput_5ftest_5ffile_5fname',['arff_input_test_file_name',['../class_i_o_utility_test.html#a4833558f12ba8e85e6763132bf2a8a9e',1,'IOUtilityTest']]],
+  ['arff_5foutput_5ftest_5ffile_5fname',['arff_output_test_file_name',['../class_i_o_utility_test.html#a0ba943931ac862f05972f5f0ff679190',1,'IOUtilityTest']]],
   ['axis_5flabel',['axis_label',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#a13cb394122f6e00c6e080e6368e7841a',1,'ltr::utility::MultiTable::DimensionMetaInfo']]],
   ['axis_5fticks_5flabels',['axis_ticks_labels',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#ac8fd51be980f7a725202ebc6f4c49f77',1,'ltr::utility::MultiTable::DimensionMetaInfo']]]
 ];

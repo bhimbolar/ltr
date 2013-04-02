@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,12 +109,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ltr::io_utility::YandexParser Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Parse Yandex Mathematics 2009 format (<a href="http://imat2009.yandex.ru/datasets">http://imat2009.yandex.ru/datasets</a>)  
+ <a href="classltr_1_1io__utility_1_1_yandex_parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="parse__yandex_8h_source.html">parse_yandex.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -129,34 +131,38 @@ Inheritance diagram for ltr::io_utility::YandexParser:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a86255e33806df7870af6e423b7dfb220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a86255e33806df7870af6e423b7dfb220">parseRawObject</a> (string line, <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a527567c60e7f23939bb6b838a753db09">RawObject</a> *result)</td></tr>
-<tr class="memitem:ac8827e36a7e0c8fb0f1c8769aca16fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ac8827e36a7e0c8fb0f1c8769aca16fee">makeString</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;obj, std::string *result)</td></tr>
-<tr class="memitem:a5827a3cda448ee226bb1a0330a3e757f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a5827a3cda448ee226bb1a0330a3e757f">buildPairwiseDataSet</a> (const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;info)</td></tr>
-<tr class="memitem:aaa2a7f8e6435ed819710592d0cd9e1eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#aaa2a7f8e6435ed819710592d0cd9e1eb">buildListwiseDataSet</a> (const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;info)</td></tr>
-<tr><td colspan="2"><h2><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab562cc45757f9d0b42d6f70130f0f9ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ab562cc45757f9d0b42d6f70130f0f9ee">init</a> (std::istream *in)</td></tr>
-<tr><td colspan="2"><h2><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a6338a9e49939e2d5e8ac910ad2348608"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a6338a9e49939e2d5e8ac910ad2348608">raw_query_id_idx_</a> = 0</td></tr>
-<tr class="memitem:aa8de442471b92486fa65e737f4989f12"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#aa8de442471b92486fa65e737f4989f12">raw_relevance_idx_</a> = -1</td></tr>
+<tr class="memitem:a861c3088039437c34573bb8a99a310f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a861c3088039437c34573bb8a99a310f0">saveObject</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;obj, ostream &amp;stream)</td></tr>
+<tr class="memitem:ae4297d436b19902807f01c8c9b051d71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae4297d436b19902807f01c8c9b051d71">buildPairwiseDataSet</a> (const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info)</td></tr>
+<tr class="memitem:ab63abc0fa3412a22e4e30b10a70aa2c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ab63abc0fa3412a22e4e30b10a70aa2c7">buildListwiseDataSet</a> (const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;objects, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info)</td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acf9de9d2efaeeeddb8b5eafd3c719100"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#acf9de9d2efaeeeddb8b5eafd3c719100">parseDataInfo</a> (istream &amp;in, <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> *feature_info, <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> *label_info)</td></tr>
+<tr class="memitem:ae089ff5bba2b73ca6d196862cc5ae2c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae089ff5bba2b73ca6d196862cc5ae2c4">parseObject</a> (const string &amp;record, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info, <a class="el" href="classltr_1_1_object.html">Object</a> *object)</td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aaa2a7f8e6435ed819710592d0cd9e1eb"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Parse Yandex Mathematics 2009 format (<a href="http://imat2009.yandex.ru/datasets">http://imat2009.yandex.ru/datasets</a>) </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ab63abc0fa3412a22e4e30b10a70aa2c7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#aaa2a7f8e6435ed819710592d0cd9e1eb">ltr::io_utility::YandexParser::buildListwiseDataSet</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ab63abc0fa3412a22e4e30b10a70aa2c7">ltr::io_utility::YandexParser::buildListwiseDataSet</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>objects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -170,30 +176,37 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
-    <tr><td class="paramname">info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label values </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#abdc6769eaebd984840da4cd809eebdda">ltr::io_utility::Parser</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a467f02e013cbc5c96c7b949f550f59f3">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5827a3cda448ee226bb1a0330a3e757f"></a>
+<a class="anchor" id="ae4297d436b19902807f01c8c9b051d71"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a5827a3cda448ee226bb1a0330a3e757f">ltr::io_utility::YandexParser::buildPairwiseDataSet</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae4297d436b19902807f01c8c9b051d71">ltr::io_utility::YandexParser::buildPairwiseDataSet</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="classltr_1_1_object.html">Object</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>objects</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,43 +220,117 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
-    <tr><td class="paramname">info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- information about features in the object </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label values </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a5e4d19a0ff167986e2adeb8e194813bf">ltr::io_utility::Parser</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#abed8e250ba6d8377dc36d42ea22eceaa">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab562cc45757f9d0b42d6f70130f0f9ee"></a>
+<a class="anchor" id="acf9de9d2efaeeeddb8b5eafd3c719100"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ab562cc45757f9d0b42d6f70130f0f9ee">ltr::io_utility::YandexParser::init</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#acf9de9d2efaeeeddb8b5eafd3c719100">ltr::io_utility::YandexParser::parseDataInfo</a> </td>
           <td>(</td>
-          <td class="paramtype">std::istream *&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td><code> [private, virtual]</code></td>
+          <td class="paramtype">istream &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> *&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> *&#160;</td>
+          <td class="paramname"><em>label_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Method to init parser. It must fill the raw_feature_onfo_. </p>
-<div class="fragment"><pre class="fragment"> ifstream fin(<span class="stringliteral">&quot;file.txt&quot;</span>);
- parser-&gt;init(&amp;fin);
-</pre></div> 
-<p>Reimplemented from <a class="el" href="classltr_1_1io__utility_1_1_parser.html#ad86a5c48ad68516e05aa2400e9c8df88">ltr::io_utility::Parser</a>.</p>
+<p>Realization of parsing data information for format. Function must set 'in' onto first symbol of first object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td>- input stream with file </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- parsed information about features </td></tr>
+    <tr><td class="paramname">label_info</td><td>- parsed information about label values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a3b7575bde0ba758b5103c696e28440af">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac8827e36a7e0c8fb0f1c8769aca16fee"></a>
+<a class="anchor" id="ae089ff5bba2b73ca6d196862cc5ae2c4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ac8827e36a7e0c8fb0f1c8769aca16fee">ltr::io_utility::YandexParser::makeString</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae089ff5bba2b73ca6d196862cc5ae2c4">ltr::io_utility::YandexParser::parseObject</a> </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>feature_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>label_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_object.html">Object</a> *&#160;</td>
+          <td class="paramname"><em>object</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Realization of parsing object by its string representation. Every line from file starting from position after parsing data information will be casted into object by this function </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">record</td><td>- string which contains object to parse </td></tr>
+    <tr><td class="paramname">feature_info</td><td>- information about features </td></tr>
+    <tr><td class="paramname">label_info</td><td>- information about label values </td></tr>
+    <tr><td class="paramname">object</td><td>- result of parsing </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a401d6e180690d5bf80c7a6c931cf60cb">ltr::io_utility::Parser</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a861c3088039437c34573bb8a99a310f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a861c3088039437c34573bb8a99a310f0">ltr::io_utility::YandexParser::saveObject</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
           <td class="paramname"><em>object</em>, </td>
@@ -251,7 +338,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
           <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
@@ -266,78 +353,13 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>- object to serialize </td></tr>
-    <tr><td class="paramname">result</td><td>- string, which will contain serialized object <div class="fragment"><pre class="fragment"> <span class="keywordtype">string</span> result;
- parser-&gt;makeString(<span class="keywordtype">object</span>, &amp;result);
+    <tr><td class="paramname">stream</td><td>- ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObject(<span class="keywordtype">object</span>, cout);
 </pre></div> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#aff3c9b5ca3d501ae8630ffebdf70e3da">ltr::io_utility::Parser</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a86255e33806df7870af6e423b7dfb220"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a86255e33806df7870af6e423b7dfb220">ltr::io_utility::YandexParser::parseRawObject</a> </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1io__utility_1_1_parser.html#a527567c60e7f23939bb6b838a753db09">RawObject</a> *&#160;</td>
-          <td class="paramname"><em>result</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Function to parse string into RawObject. Can throw <a class="el" href="classltr_1_1io__utility_1_1_parser_1_1bad__line.html">Parser::bad_line</a> if impossible to parse. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">line</td><td>- string to parse. </td></tr>
-    <tr><td class="paramname">result</td><td>- link to RawObject to save result in. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a8fdeb3124882063b467fb8668378478a">ltr::io_utility::Parser</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a6338a9e49939e2d5e8ac910ad2348608"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a6338a9e49939e2d5e8ac910ad2348608">ltr::io_utility::YandexParser::raw_query_id_idx_</a> = 0<code> [static, private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa8de442471b92486fa65e737f4989f12"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#aa8de442471b92486fa65e737f4989f12">ltr::io_utility::YandexParser::raw_relevance_idx_</a> = -1<code> [static, private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Implements <a class="el" href="classltr_1_1io__utility_1_1_parser.html#af49a38073d3919b3f54b2129d972f2ba">ltr::io_utility::Parser</a>.</p>
 
 </div>
 </div>
@@ -349,7 +371,7 @@ Static Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 11:04:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 14:26:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

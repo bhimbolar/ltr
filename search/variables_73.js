@@ -22,5 +22,5 @@ var searchData=
   ['splitter_5f',['splitter_',['../classltr_1_1cv_1_1_cross_validator.html#a48580310e51d887b7e4e8212aa2de4ec',1,'ltr::cv::CrossValidator::splitter_()'],['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a66a8a2d7ede496a36fbb9c49c93ce73e',1,'ltr::decision_tree::DecisionTreeLearner::splitter_()']]],
   ['stop_5fcriterion_5f',['stop_criterion_',['../classoptimization_1_1_iteration_solver.html#a885097f316d2230ca700380d22bf83e3',1,'optimization::IterationSolver']]],
   ['stop_5fsplitting_5fcriteria_5f',['stop_splitting_criteria_',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a83843087eaca77581709a289fffb22ea',1,'ltr::decision_tree::DecisionTreeLearner']]],
-  ['svm_5farff_5ftest_5ffile_5fname',['svm_arff_test_file_name',['../class_i_o_utility_test.html#a2530c4b60c3bc5ed0a717967c7b23105',1,'IOUtilityTest']]]
+  ['svm_5farff_5ftest_5ffile_5fname',['svm_arff_test_file_name',['../class_i_o_utility_test.html#a4891e6fabad40165060e7327cd3f8ad2',1,'IOUtilityTest']]]
 ];

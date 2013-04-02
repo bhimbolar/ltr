@@ -1,6 +1,7 @@
 var searchData=
 [
   ['name',['name',['../structltr_1_1_parameters_container_1_1_name_value.html#a3a88c91d3dcacac92849824d627b01f9',1,'ltr::ParametersContainer::NameValue::name()'],['../struct_data_info.html#a22a091fa0d51d2e09afb25c7d7de436e',1,'DataInfo::name()'],['../struct_train_launch_info.html#a3147e1837745a2fe8f48b1a64e105f18',1,'TrainLaunchInfo::name()']]],
+  ['name_5f',['name_',['../structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606',1,'ltr::OneFeatureInfo']]],
   ['name_5fcreators_5f',['name_creators_',['../class_factory.html#a0f677e278f374d35a789c7f2a8642a13',1,'Factory']]],
   ['name_5fstorage',['name_storage',['../registration_8h.html#a40f74be00c63c4b72d18afcf409f2a2c',1,'registration.h']]],
   ['name_5fvalue_5fhash_5f',['name_value_hash_',['../classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17',1,'ltr::ParametersContainer']]],

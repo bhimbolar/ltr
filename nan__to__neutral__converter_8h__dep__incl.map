@@ -1,11 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$nan__to__zero__learner_8h.html" title="ltr/feature_converters/nan_to_zero_learner.h" alt="" coords="157,80,429,107"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="616,155,765,181"/>
-<area shape="rect" href="$nan__to__average__learner_8h.html" title="ltr/feature_converters/nan_to_average_learner.h" alt="" coords="453,80,744,107"/>
-<area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="819,80,1136,107"/>
-<area shape="rect" href="$nan__to__neutral__converter_8cc.html" title="ltr/feature_converters/nan_to_neutral_converter.cc" alt="" coords="1160,80,1467,107"/>
-<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="1491,80,1768,107"/>
+<area shape="rect" href="$nan__to__zero__learner_8h.html" title="ltr/feature_converters/nan_to_zero_learner.h" alt="" coords="332,80,604,107"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="907,155,1056,181"/>
+<area shape="rect" href="$nan__to__average__learner_8h.html" title="ltr/feature_converters/nan_to_average_learner.h" alt="" coords="628,80,919,107"/>
+<area shape="rect" href="$feature__converters__unittest_8cc.html" title="ltr/feature_converters/feature_converters_unittest.cc" alt="" coords="993,80,1311,107"/>
+<area shape="rect" href="$nan__to__neutral__converter_8cc.html" title="ltr/feature_converters/nan_to_neutral_converter.cc" alt="" coords="1335,80,1641,107"/>
+<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="1665,80,1943,107"/>
 <area shape="rect" href="$feature__converters__learner__unittest_8cc.html" title="ltr/feature_converters/feature_converters_learner_unittest.cc" alt="" coords="229,155,592,181"/>
 <area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="5,155,205,181"/>
-<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="631,229,751,256"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="616,155,883,181"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="921,229,1041,256"/>
 </map>

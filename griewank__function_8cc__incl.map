@@ -1,8 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$griewank__function_8h.html" title="ltr/optimization/functions/test_functions/unconstrained/griewank_function/griewank_function.h" alt="" coords="5,80,563,107"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="672,80,797,107"/>
-<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="272,155,611,181"/>
-<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="291,229,592,256"/>
-<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="331,304,552,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="501,379,645,405"/>
+<area shape="rect" href="$griewank__function_8h.html" title="ltr/optimization/functions/test_functions/unconstrained/griewank_function/griewank_function.h" alt="" coords="59,80,616,107"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="640,80,765,107"/>
+<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="169,155,508,181"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="472,379,651,405"/>
+<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="189,229,491,256"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="232,304,453,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="195,379,339,405"/>
 </map>

@@ -12,7 +12,6 @@ var searchData=
   ['oncvlearnertag',['OnCVLearnerTag',['../class_on_c_v_learner_tag.html',1,'']]],
   ['oncvmeasuretag',['OnCVMeasureTag',['../class_on_c_v_measure_tag.html',1,'']]],
   ['onefeatureinfo',['OneFeatureInfo',['../structltr_1_1_one_feature_info.html',1,'ltr']]],
-  ['onefeaturerawinfo',['OneFeatureRawInfo',['../structltr_1_1io__utility_1_1_parser_1_1_one_feature_raw_info.html',1,'ltr::io_utility::Parser']]],
   ['onefeaturescorer',['OneFeatureScorer',['../classltr_1_1_one_feature_scorer.html',1,'ltr']]],
   ['ongeneralparameterized',['OnGeneralParameterized',['../class_on_general_parameterized.html',1,'']]],
   ['onlaunchtag',['OnLaunchTag',['../class_on_launch_tag.html',1,'']]],

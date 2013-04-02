@@ -21,7 +21,7 @@
 <area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="483,309,651,336"/>
 <area shape="rect" href="$classltr_1_1_feature_sampler.html" title="Samples features with specified indices." alt="" coords="501,360,632,387"/>
 <area shape="rect" href="$classltr_1_1_linear_converter.html" title="Perform linear transformation of dataset." alt="" coords="503,411,631,437"/>
-<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="ltr::NanToNeutralConverter" alt="" coords="481,461,652,488"/>
+<area shape="rect" href="$classltr_1_1_nan_to_neutral_converter.html" title="Converts NaN features to average values." alt="" coords="481,461,652,488"/>
 <area shape="rect" href="$classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean." alt="" coords="477,512,656,539"/>
 <area shape="rect" href="$classltr_1_1_per_feature_linear_converter.html" title="Perform linear transformation of each feature." alt="" coords="471,563,663,589"/>
 <area shape="rect" href="$classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features." alt="" coords="473,613,660,640"/>
@@ -35,7 +35,7 @@
 <area shape="rect" href="$classltr_1_1utility_1_1_inverse_power_distance.html" title="ltr::utility::InversePowerDistance" alt="" coords="464,1019,669,1045"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree.html" title="ltr::decision_tree::DecisionTree" alt="" coords="467,1069,667,1096"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_vertex.html" title="ltr::decision_tree::Vertex" alt="" coords="485,1120,648,1147"/>
-<area shape="rect" href="$classltr_1_1_scorer.html" title="ltr::Scorer" alt="" coords="528,1323,605,1349"/>
+<area shape="rect" href="$classltr_1_1_scorer.html" title="Class that can for every object evaluate a value &#45; its rank, or score." alt="" coords="528,1323,605,1349"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_vertex.html" title="ltr::decision_tree::DecisionVertex" alt="" coords="752,1069,965,1096"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_leaf_vertex.html" title="ltr::decision_tree::LeafVertex" alt="" coords="765,1120,952,1147"/>
 <area shape="rect" href="$classltr_1_1_bayesian_scorer.html" title="ltr::BayesianScorer" alt="" coords="793,1171,924,1197"/>
