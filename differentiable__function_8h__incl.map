@@ -1,5 +1,12 @@
 <map id="G" name="G">
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="427,155,605,181"/>
 <area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="155,80,376,107"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="383,229,649,256"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="169,304,332,331"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="356,304,468,331"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="492,304,540,331"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="564,304,655,331"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="679,304,812,331"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="247,379,385,405"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="69,155,213,181"/>
 </map>

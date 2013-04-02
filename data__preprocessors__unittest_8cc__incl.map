@@ -1,31 +1,33 @@
 <map id="G" name="G">
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1173,229,1299,256"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="493,453,605,480"/>
-<area shape="rect" href="$data__preprocessor_8h.html" title="ltr/data_preprocessors/data_preprocessor.h" alt="" coords="2232,155,2504,181"/>
-<area shape="rect" href="$data__sampler_8h.html" title="ltr/data_preprocessors/data_sampler.h" alt="" coords="2697,80,2940,107"/>
-<area shape="rect" href="$indices_8h.html" title="ltr/utility/indices.h" alt="" coords="2856,453,2979,480"/>
-<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="3419,528,3605,555"/>
-<area shape="rect" href="$data__random__sampler_8h.html" title="ltr/data_preprocessors/data_random_sampler.h" alt="" coords="3572,80,3865,107"/>
-<area shape="rect" href="$fake__data__preprocessor_8h.html" title="ltr/data_preprocessors/fake_data_preprocessor.h" alt="" coords="2369,80,2673,107"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="777,379,913,405"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1080,379,1219,405"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1293,453,1435,480"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="952,304,1147,331"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2324,304,2468,331"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="731,528,885,555"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2616,528,2795,555"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1011,528,1136,555"/>
-<area shape="rect" href="$murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="1381,528,1541,555"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2131,229,2320,256"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1797,453,2099,480"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="2403,528,2541,555"/>
-<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="3809,155,4044,181"/>
-<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="3835,229,4027,256"/>
-<area shape="rect" href="$_config_8h.html" title="ltr/utility/random/Config.h" alt="" coords="4079,304,4244,331"/>
-<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="3807,304,4055,331"/>
-<area shape="rect" href="$_random_power2_8hpp.html" title="Header for RandomPower2." alt="" coords="4040,379,4275,405"/>
-<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="3272,379,3504,405"/>
-<area shape="rect" href="$_random_seed_8hpp.html" title="Header for RandomSeed." alt="" coords="3173,528,3395,555"/>
-<area shape="rect" href="$_random_algorithm_8hpp.html" title="Header for MT19937 and SFMT19937." alt="" coords="2083,528,2328,555"/>
-<area shape="rect" href="$_random_mixer_8hpp.html" title="Header for Mixer classes." alt="" coords="3155,453,3379,480"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="1287,229,1412,256"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="829,453,941,480"/>
+<area shape="rect" href="$data__preprocessor_8h.html" title="ltr/data_preprocessors/data_preprocessor.h" alt="" coords="1916,155,2188,181"/>
+<area shape="rect" href="$data__sampler_8h.html" title="ltr/data_preprocessors/data_sampler.h" alt="" coords="2089,80,2332,107"/>
+<area shape="rect" href="$indices_8h.html" title="ltr/utility/indices.h" alt="" coords="2488,453,2611,480"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="2951,528,3137,555"/>
+<area shape="rect" href="$data__random__sampler_8h.html" title="ltr/data_preprocessors/data_random_sampler.h" alt="" coords="2799,80,3092,107"/>
+<area shape="rect" href="$fake__data__preprocessor_8h.html" title="ltr/data_preprocessors/fake_data_preprocessor.h" alt="" coords="1711,80,2015,107"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="928,379,1064,405"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1088,379,1227,405"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1408,379,1549,405"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="921,304,1116,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="2219,304,2363,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1055,528,1209,555"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1375,528,1553,555"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="1331,603,1597,629"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="1117,677,1280,704"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="1304,677,1416,704"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="1440,677,1488,704"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="1512,677,1603,704"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="1627,677,1760,704"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1195,752,1333,779"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="579,453,704,480"/>
+<area shape="rect" href="$murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="1624,453,1784,480"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="2089,229,2279,256"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1909,453,2211,480"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="2636,528,2775,555"/>
+<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="3108,379,3343,405"/>
+<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="3291,453,3483,480"/>
+<area shape="rect" href="$_config_8h.html" title="ltr/utility/random/Config.h" alt="" coords="3535,528,3700,555"/>
+<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="3263,528,3511,555"/>
 </map>

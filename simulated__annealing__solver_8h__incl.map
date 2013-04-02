@@ -1,15 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="396,80,647,107"/>
-<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="928,304,1149,331"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="9,304,135,331"/>
-<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="720,155,917,181"/>
-<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="384,155,659,181"/>
-<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="143,229,367,256"/>
-<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="713,229,924,256"/>
-<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="948,229,1116,256"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="337,304,639,331"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="581,379,720,405"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="795,379,973,405"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="120,379,275,405"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1157,379,1301,405"/>
+<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="1013,80,1264,107"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="840,304,1061,331"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="684,304,809,331"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="972,155,1169,181"/>
+<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="1244,155,1519,181"/>
+<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="1224,229,1448,256"/>
+<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="797,229,1008,256"/>
+<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="1032,229,1200,256"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="359,304,660,331"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="355,379,493,405"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1211,379,1389,405"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="176,379,331,405"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="1167,453,1433,480"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="953,528,1116,555"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="1140,528,1252,555"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="1276,528,1324,555"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="1348,528,1439,555"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="1463,528,1596,555"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1031,603,1169,629"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="992,379,1136,405"/>
 </map>

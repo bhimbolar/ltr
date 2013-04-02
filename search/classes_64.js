@@ -24,6 +24,7 @@ var searchData=
   ['deltaargumentstopcriterion',['DeltaArgumentStopCriterion',['../classoptimization_1_1_delta_argument_stop_criterion.html',1,'optimization']]],
   ['deltafunctionstopcriterion',['DeltaFunctionStopCriterion',['../classoptimization_1_1_delta_function_stop_criterion.html',1,'optimization']]],
   ['dependencyresolvingfactory',['DependencyResolvingFactory',['../class_dependency_resolving_factory.html',1,'']]],
+  ['dereferencednull',['DereferencedNULL',['../class_ptr_exceptions_1_1_dereferenced_n_u_l_l.html',1,'PtrExceptions']]],
   ['differentiablefunction',['DifferentiableFunction',['../classoptimization_1_1_differentiable_function.html',1,'optimization']]],
   ['dimensionmetainfo',['DimensionMetaInfo',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html',1,'ltr::utility::MultiTable']]],
   ['dimensionsize',['DimensionSize',['../structltr_1_1utility_1_1_dimension_size.html',1,'ltr::utility']]],

@@ -1,13 +1,20 @@
 <map id="G" name="G">
-<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="661,80,787,107"/>
-<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="651,304,763,331"/>
-<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="165,229,301,256"/>
-<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="493,229,632,256"/>
-<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="980,229,1121,256"/>
-<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="467,155,661,181"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="939,155,1083,181"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="448,379,603,405"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="195,379,373,405"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="888,304,1013,331"/>
-<area shape="rect" href="$murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="1189,304,1349,331"/>
+<area shape="rect" href="$data__set_8h.html" title="ltr/data/data_set.h" alt="" coords="751,80,876,107"/>
+<area shape="rect" href="$object_8h.html" title="ltr/data/object.h" alt="" coords="740,304,852,331"/>
+<area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="255,229,391,256"/>
+<area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="583,229,721,256"/>
+<area shape="rect" href="$feature__info_8h.html" title="ltr/data/feature_info.h" alt="" coords="1069,229,1211,256"/>
+<area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="556,155,751,181"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1028,155,1172,181"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="537,379,692,405"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="284,379,463,405"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="240,453,507,480"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="27,528,189,555"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="213,528,325,555"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="349,528,397,555"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="421,528,512,555"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="536,528,669,555"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="104,603,243,629"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="977,304,1103,331"/>
+<area shape="rect" href="$murmur__hash_8h.html" title="ltr/utility/murmur_hash.h" alt="" coords="1279,304,1439,331"/>
 </map>

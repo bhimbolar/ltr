@@ -1,5 +1,13 @@
 var searchData=
 [
+  ['m_5fblocked',['m_bLocked',['../class_thread_safe_1_1_quick_mutex.html#ae89505b2cceae25a7f6fe7c764177480',1,'ThreadSafe::QuickMutex']]],
+  ['m_5fcriticalsection',['m_CriticalSection',['../class_thread_safe_1_1_quick_mutex.html#a0937ba62dae2f62187dc603fb48dd824',1,'ThreadSafe::QuickMutex']]],
+  ['m_5fpmutex',['m_pMutex',['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#abb45ddf8cb3052d31c9e292f620b49be',1,'ReferenceCountedSmartPointer::PtrRefCounter']]],
+  ['m_5fposixmutex',['m_PosixMutex',['../class_thread_safe_1_1_quick_mutex.html#a85c149bf5ad469ab963b239193dbfbc7',1,'ThreadSafe::QuickMutex']]],
+  ['m_5fprawptr',['m_pRawPtr',['../class_reference_counted_smart_pointer_1_1_inactive_ptr.html#a73ec3ecd4a9c8582e1bc88fa8a41b0f5',1,'ReferenceCountedSmartPointer::InactivePtr::m_pRawPtr()'],['../classltr_1_1utility_1_1shared__ptr.html#a409846df160056d0273a0f7eac77ef9e',1,'ltr::utility::shared_ptr::m_pRawPtr()']]],
+  ['m_5fprefcount',['m_pRefCount',['../class_reference_counted_smart_pointer_1_1_inactive_ptr.html#a70ae9047ee765f1de320b252f198d720',1,'ReferenceCountedSmartPointer::InactivePtr::m_pRefCount()'],['../classltr_1_1utility_1_1shared__ptr.html#aef45983756dac216535363ad145d1d6b',1,'ltr::utility::shared_ptr::m_pRefCount()']]],
+  ['m_5fuactivecount',['m_uActiveCount',['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a31824f2a5ec0f1305202c24cee22d1c8',1,'ReferenceCountedSmartPointer::PtrRefCounter']]],
+  ['m_5fuinactivecount',['m_uInactiveCount',['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a195a2f575a6c55d2b1d86b6365f5b403',1,'ReferenceCountedSmartPointer::PtrRefCounter']]],
   ['magic',['magic',['../class_random_lib_1_1_m_t19937.html#a9196d4e46086d3ce55716a8bfadefce8',1,'RandomLib::MT19937']]],
   ['magic0',['magic0',['../class_random_lib_1_1_s_f_m_t19937.html#aefbe754eee58999075c9b14663a9b44b',1,'RandomLib::SFMT19937']]],
   ['magic1',['magic1',['../class_random_lib_1_1_s_f_m_t19937.html#ad287e04f6024df6aee1106849d80d777',1,'RandomLib::SFMT19937']]],

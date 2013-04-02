@@ -4,6 +4,13 @@
 <area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="145,155,484,181"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="472,379,651,405"/>
 <area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="165,229,467,256"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="428,453,695,480"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="215,528,377,555"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="401,528,513,555"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="537,528,585,555"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="609,528,700,555"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="724,528,857,555"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="292,603,431,629"/>
 <area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="212,304,433,331"/>
 <area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="195,379,339,405"/>
 </map>

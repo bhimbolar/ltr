@@ -20,5 +20,6 @@ var searchData=
   ['linearlearner',['LinearLearner',['../classltr_1_1_linear_learner.html#a8e7f5ac33a5284b2c032cb3586b6db78',1,'ltr::LinearLearner::LinearLearner(const ParametersContainer &amp;parameters)'],['../classltr_1_1_linear_learner.html#a03d205e82c35a541c5575c367a6b2ed4',1,'ltr::LinearLearner::LinearLearner()']]],
   ['linearscorer',['LinearScorer',['../classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824',1,'ltr::LinearScorer::LinearScorer()'],['../classltr_1_1_linear_scorer.html#a8d6aa05494811a624157d6b909ceaf36',1,'ltr::LinearScorer::LinearScorer(const vector&lt; double &gt; &amp;weights)']]],
   ['load',['Load',['../class_random_lib_1_1_random_engine.html#acd071ad41fca4e4dc0ee66fc53929669',1,'RandomLib::RandomEngine']]],
+  ['lock',['Lock',['../class_thread_safe_1_1_quick_mutex.html#a546e00d37b5df5e86de036af045d1615',1,'ThreadSafe::QuickMutex::Lock(void)'],['../class_thread_safe_1_1_quick_mutex.html#a546e00d37b5df5e86de036af045d1615',1,'ThreadSafe::QuickMutex::Lock(void)']]],
   ['ltrclient',['LtrClient',['../class_ltr_client.html#a47df9d29023c6f3a04096a66d93169b6',1,'LtrClient']]]
 ];

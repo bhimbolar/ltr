@@ -34,5 +34,7 @@ var searchData=
   ['predictions_5faggregator_2eh',['predictions_aggregator.h',['../predictions__aggregator_8h.html',1,'']]],
   ['predictions_5faggregators_5funittest_2ecc',['predictions_aggregators_unittest.cc',['../predictions__aggregators__unittest_8cc.html',1,'']]],
   ['printable_2ecc',['printable.cc',['../printable_8cc.html',1,'']]],
-  ['printable_2eh',['printable.h',['../printable_8h.html',1,'']]]
+  ['printable_2eh',['printable.h',['../printable_8h.html',1,'']]],
+  ['ptr_2eh',['Ptr.h',['../_ptr_8h.html',1,'']]],
+  ['ptrrefcounter_2eh',['PtrRefCounter.h',['../_ptr_ref_counter_8h.html',1,'']]]
 ];

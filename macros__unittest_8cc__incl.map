@@ -1,4 +1,11 @@
 <map id="G" name="G">
 <area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="173,80,299,107"/>
 <area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="373,80,552,107"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="329,155,596,181"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="116,229,279,256"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="303,229,415,256"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="439,229,487,256"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="511,229,601,256"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="625,229,759,256"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="193,304,332,331"/>
 </map>

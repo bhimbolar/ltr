@@ -1,16 +1,23 @@
 <map id="G" name="G">
-<area shape="rect" href="$indices_8h.html" title="ltr/utility/indices.h" alt="" coords="1308,379,1431,405"/>
-<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="1437,453,1624,480"/>
-<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="773,80,1008,107"/>
-<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="1648,453,1829,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1083,453,1261,480"/>
-<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="389,155,581,181"/>
-<area shape="rect" href="$_config_8h.html" title="ltr/utility/random/Config.h" alt="" coords="403,229,568,256"/>
-<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="592,229,840,256"/>
-<area shape="rect" href="$_random_power2_8hpp.html" title="Header for RandomPower2." alt="" coords="5,304,240,331"/>
-<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="504,304,736,331"/>
-<area shape="rect" href="$_random_seed_8hpp.html" title="Header for RandomSeed." alt="" coords="584,453,805,480"/>
-<area shape="rect" href="$_random_algorithm_8hpp.html" title="Header for MT19937 and SFMT19937." alt="" coords="315,453,560,480"/>
-<area shape="rect" href="$_random_mixer_8hpp.html" title="Header for Mixer classes." alt="" coords="683,379,907,405"/>
-<area shape="rect" href="$_random_type_8hpp.html" title="Class to hold bit&#45;width and unsigned type." alt="" coords="400,528,619,555"/>
+<area shape="rect" href="$indices_8h.html" title="ltr/utility/indices.h" alt="" coords="1319,379,1441,405"/>
+<area shape="rect" href="$lexical__cast_8h.html" title="ltr/utility/boost/lexical_cast.h" alt="" coords="1287,453,1473,480"/>
+<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="5,80,240,107"/>
+<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="1497,453,1679,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1703,453,1881,480"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="1659,528,1925,555"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="1549,603,1712,629"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="1736,603,1848,629"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="1872,603,1920,629"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="1944,603,2035,629"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="1392,603,1525,629"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1627,677,1765,704"/>
+<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="383,155,575,181"/>
+<area shape="rect" href="$_config_8h.html" title="ltr/utility/random/Config.h" alt="" coords="276,229,441,256"/>
+<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="639,229,887,256"/>
+<area shape="rect" href="$_random_power2_8hpp.html" title="Header for RandomPower2." alt="" coords="1037,304,1272,331"/>
+<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="745,304,977,331"/>
+<area shape="rect" href="$_random_seed_8hpp.html" title="Header for RandomSeed." alt="" coords="647,453,868,480"/>
+<area shape="rect" href="$_random_algorithm_8hpp.html" title="Header for MT19937 and SFMT19937." alt="" coords="377,453,623,480"/>
+<area shape="rect" href="$_random_mixer_8hpp.html" title="Header for Mixer classes." alt="" coords="991,379,1215,405"/>
+<area shape="rect" href="$_random_type_8hpp.html" title="Class to hold bit&#45;width and unsigned type." alt="" coords="513,528,732,555"/>
 </map>

@@ -158,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00069"></a>00069 
 <a name="l00078"></a><a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">00078</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<span class="keyword">const</span> <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>&amp; parsers,
 <a name="l00079"></a>00079                                 TiXmlNode* xmlNode,
-<a name="l00080"></a>00080                                 <a class="code" href="class_tag_handler.html">TagHandler</a>* on_unknown_token = NULL) {
+<a name="l00080"></a>00080                                 <a class="code" href="class_tag_handler.html">TagHandler</a>* on_unknown_token = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {
 <a name="l00081"></a>00081   <span class="keywordflow">for</span> (; xmlNode; xmlNode = xmlNode-&gt;NextSibling()) {
 <a name="l00082"></a>00082     <span class="keywordflow">if</span> (xmlNode-&gt;Type() != TiXmlNode::TINYXML_ELEMENT) {
 <a name="l00083"></a>00083       <span class="keywordflow">continue</span>;
@@ -239,7 +239,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00174"></a>00174  <span class="keyword">public</span>:
 <a name="l00180"></a><a class="code" href="class_t_on_parameter_tag.html#ac12e36b6f3601e0a4473818ad548f8b4">00180</a>   <span class="keyword">explicit</span> <a class="code" href="class_t_on_parameter_tag.html#ac12e36b6f3601e0a4473818ad548f8b4">TOnParameterTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
 <a name="l00181"></a>00181     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00182"></a>00182     , <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>(NULL) {}
+<a name="l00182"></a>00182     , <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
 <a name="l00189"></a><a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">00189</a>   <span class="keywordtype">void</span> <a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(<a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ltr::ParametersContainer</a>* cont) {
 <a name="l00190"></a>00190     <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a> = cont;
 <a name="l00191"></a>00191   }
@@ -249,7 +249,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00201"></a>00201     assert(<a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>);
 <a name="l00202"></a>00202 
 <a name="l00203"></a>00203     <span class="keyword">const</span> <span class="keywordtype">string</span> name = element-&gt;Value();
-<a name="l00204"></a>00204     <span class="keyword">const</span> <span class="keywordtype">string</span> val = element-&gt;GetText() != NULL ? element-&gt;GetText() : <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00204"></a>00204     <span class="keyword">const</span> <span class="keywordtype">string</span> val = element-&gt;GetText() != <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ? element-&gt;GetText() : <span class="stringliteral">&quot;&quot;</span>;
 <a name="l00205"></a>00205 
 <a name="l00206"></a>00206     <span class="keywordflow">if</span> (element-&gt;FirstChildElement()) {
 <a name="l00207"></a>00207       assert(<span class="keyword">false</span> &amp;&amp; <span class="stringliteral">&quot;parameters in parameters is not implemented yet...&quot;</span>);
@@ -416,7 +416,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00425"></a><a class="code" href="class_on_c_v_learner_tag.html">00425</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
 <a name="l00426"></a>00426   <span class="keyword">public</span>:
 <a name="l00431"></a><a class="code" href="class_on_c_v_learner_tag.html#a39a551957dedc2f60466906e41d34d08">00431</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_learner_tag.html#a39a551957dedc2f60466906e41d34d08">OnCVLearnerTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00432"></a>00432     <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a> = NULL;
+<a name="l00432"></a>00432     <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a> = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
 <a name="l00433"></a>00433   }
 <a name="l00437"></a><a class="code" href="class_on_c_v_learner_tag.html#a557df2a78f4126e6d33a152b3f3af2ab">00437</a>   <a class="code" href="class_on_c_v_learner_tag.html#a557df2a78f4126e6d33a152b3f3af2ab">~OnCVLearnerTag</a>() { }
 <a name="l00438"></a><a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">00438</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* ti) {
@@ -436,7 +436,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00461"></a><a class="code" href="class_on_c_v_measure_tag.html">00461</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
 <a name="l00462"></a>00462  <span class="keyword">public</span>:
 <a name="l00468"></a><a class="code" href="class_on_c_v_measure_tag.html#a4f619a590f408595cd67331c0b3fb90f">00468</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_measure_tag.html#a4f619a590f408595cd67331c0b3fb90f">OnCVMeasureTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00469"></a>00469     <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a> = NULL;
+<a name="l00469"></a>00469     <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a> = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
 <a name="l00470"></a>00470   }
 <a name="l00474"></a><a class="code" href="class_on_c_v_measure_tag.html#aa7c781875372d4d086c9bff0b71910df">00474</a>   <a class="code" href="class_on_c_v_measure_tag.html#aa7c781875372d4d086c9bff0b71910df">~OnCVMeasureTag</a>() { }
 <a name="l00475"></a><a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">00475</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* ti) {
@@ -457,7 +457,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00499"></a>00499  <span class="keyword">public</span>:
 <a name="l00505"></a><a class="code" href="class_on_c_v_data_tag.html#a393eec26f60593db70eeb2b27cd57b47">00505</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_data_tag.html#a393eec26f60593db70eeb2b27cd57b47">OnCVDataTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
 <a name="l00506"></a>00506     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00507"></a>00507     , <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>(NULL) {}
+<a name="l00507"></a>00507     , <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
 <a name="l00511"></a><a class="code" href="class_on_c_v_data_tag.html#a2e8761b9d245cc256ce2e0543078eafe">00511</a>   <a class="code" href="class_on_c_v_data_tag.html#a2e8761b9d245cc256ce2e0543078eafe">~OnCVDataTag</a>() {}
 <a name="l00512"></a><a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">00512</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* trainInfo) {
 <a name="l00513"></a>00513     <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a> = trainInfo;
@@ -512,7 +512,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00589"></a>00589   <span class="keyword">public</span>:
 <a name="l00595"></a><a class="code" href="class_on_predict_tag.html#a9ce38798bdfc8c1ea41fbb2d66c15de7">00595</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_predict_tag.html#a9ce38798bdfc8c1ea41fbb2d66c15de7">OnPredictTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
 <a name="l00596"></a>00596     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00597"></a>00597     , <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>(NULL) {}
+<a name="l00597"></a>00597     , <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
 <a name="l00601"></a><a class="code" href="class_on_predict_tag.html#a520a0592a093f658822f1888d640ae24">00601</a>   <a class="code" href="class_on_predict_tag.html#a520a0592a093f658822f1888d640ae24">~OnPredictTag</a>() {}
 <a name="l00602"></a><a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">00602</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">setTrainInfo</a>(<a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* trainInfo) {
 <a name="l00603"></a>00603     <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a> = trainInfo;
@@ -531,7 +531,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00625"></a>00625   <span class="keyword">public</span>:
 <a name="l00631"></a><a class="code" href="class_on_cpp_gen_tag.html#a7649a16ead8cf06731e1cca1eab4328f">00631</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_cpp_gen_tag.html#a7649a16ead8cf06731e1cca1eab4328f">OnCppGenTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
 <a name="l00632"></a>00632     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00633"></a>00633     , <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>(NULL) {}
+<a name="l00633"></a>00633     , <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
 <a name="l00637"></a><a class="code" href="class_on_cpp_gen_tag.html#a52c47f692cb4852b4fb6fd7e003ccb3d">00637</a>   <a class="code" href="class_on_cpp_gen_tag.html#a52c47f692cb4852b4fb6fd7e003ccb3d">~OnCppGenTag</a>() {}
 <a name="l00638"></a><a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">00638</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">setTrainInfo</a>(<a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* trainInfo) {
 <a name="l00639"></a>00639     <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a> = trainInfo;
@@ -616,7 +616,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 14:26:31 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 15:06:43 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -18,5 +18,6 @@ var searchData=
   ['pointwisemeasurestest',['PointwiseMeasuresTest',['../class_pointwise_measures_test.html',1,'']]],
   ['predictedandactuallabels',['PredictedAndActualLabels',['../structltr_1_1utility_1_1_predicted_and_actual_labels.html',1,'ltr::utility']]],
   ['predictionsaggregator',['PredictionsAggregator',['../classltr_1_1_predictions_aggregator.html',1,'ltr']]],
-  ['printable',['Printable',['../classltr_1_1_printable.html',1,'ltr']]]
+  ['printable',['Printable',['../classltr_1_1_printable.html',1,'ltr']]],
+  ['ptrrefcounter',['PtrRefCounter',['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html',1,'ReferenceCountedSmartPointer']]]
 ];

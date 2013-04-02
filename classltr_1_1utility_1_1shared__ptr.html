@@ -110,63 +110,74 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">ltr::utility::shared_ptr&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="shared__ptr_8h_source.html">shared_ptr.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_ptr_8h_source.html">Ptr.h</a>&gt;</code></p>
 
 <p><a href="classltr_1_1utility_1_1shared__ptr-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a091b18a6e53d542ff4d9507cc6c34ee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a091b18a6e53d542ff4d9507cc6c34ee2">shared_ptr</a> ()</td></tr>
-<tr class="memitem:a64180087011aefd944b7675561b568c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a64180087011aefd944b7675561b568c4">~shared_ptr</a> ()</td></tr>
-<tr class="memitem:a7225034e53996f2c0a3d5b69f1226ce2"><td class="memTemplParams" colspan="2">template&lt;class Y &gt; </td></tr>
-<tr class="memitem:a7225034e53996f2c0a3d5b69f1226ce2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a7225034e53996f2c0a3d5b69f1226ce2">shared_ptr</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; Y &gt; &amp;rhs)</td></tr>
-<tr class="memitem:ae3f0abe2f04e7733b77a009e2a137e9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ae3f0abe2f04e7733b77a009e2a137e9a">shared_ptr</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;rhs)</td></tr>
-<tr class="memitem:a108372cd1422db1bd25e60a64a13009f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a108372cd1422db1bd25e60a64a13009f">shared_ptr</a> (<a class="el" href="class_t.html">T</a> *rhs)</td></tr>
-<tr class="memitem:ad8be1501f46683d4ba00b1c1061dab06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ad8be1501f46683d4ba00b1c1061dab06">operator=</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;rhs)</td></tr>
-<tr class="memitem:a5c9a64a35c51732cfb7f780dbe4ea382"><td class="memItemLeft" align="right" valign="top">unsigned *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a5c9a64a35c51732cfb7f780dbe4ea382">get_count</a> () const </td></tr>
-<tr class="memitem:a162a10868b46ab2e218b045dcbacca91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a162a10868b46ab2e218b045dcbacca91">get</a> () const </td></tr>
-<tr class="memitem:adbf2da1af98a540397920da2bc8d9d0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#adbf2da1af98a540397920da2bc8d9d0b">operator-&gt;</a> () const </td></tr>
-<tr class="memitem:a31df23de5b90cc26f0ed17cc20a4588e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a31df23de5b90cc26f0ed17cc20a4588e">operator*</a> () const </td></tr>
+<tr class="memitem:abe1e5a371db27ef5dfe2f64ecc934d30"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:abe1e5a371db27ef5dfe2f64ecc934d30"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#abe1e5a371db27ef5dfe2f64ecc934d30">shared_ptr</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;pSmartPtr)</td></tr>
+<tr class="memitem:a332147b16cdb9c136e0c6266184a30d7"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a332147b16cdb9c136e0c6266184a30d7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a332147b16cdb9c136e0c6266184a30d7">operator=</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;pRightSide)</td></tr>
+<tr class="memitem:aee456db78411df9c15a73fa313868274"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:aee456db78411df9c15a73fa313868274"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aee456db78411df9c15a73fa313868274">shared_ptr</a> (const <a class="el" href="class_reference_counted_smart_pointer_1_1_inactive_ptr.html">InactivePtr</a>&lt; U &gt; &amp;pInactivePtr)</td></tr>
+<tr class="memitem:a059f594553736e7be57e9e7aa0f61bb3"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a059f594553736e7be57e9e7aa0f61bb3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a059f594553736e7be57e9e7aa0f61bb3">operator=</a> (const <a class="el" href="class_reference_counted_smart_pointer_1_1_inactive_ptr.html">InactivePtr</a>&lt; U &gt; &amp;pRightSide)</td></tr>
+<tr class="memitem:a43069318881ead44e40aa8b7f9859733"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a43069318881ead44e40aa8b7f9859733"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a43069318881ead44e40aa8b7f9859733">operator==</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;pRightSide) const </td></tr>
+<tr class="memitem:a32227a9e140c7ae1c812e65eeeb2c6b0"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a32227a9e140c7ae1c812e65eeeb2c6b0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a32227a9e140c7ae1c812e65eeeb2c6b0">operator!=</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;pRightSide) const </td></tr>
+<tr class="memitem:a022bfc1396e5c2b3af35e74aa9e5a1a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a022bfc1396e5c2b3af35e74aa9e5a1a1">shared_ptr</a> (<a class="el" href="class_t.html">T</a> *pRawPtr=<a class="el" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</td></tr>
+<tr class="memitem:ac3ed12b5da97ec16c6528ac75aa888fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ac3ed12b5da97ec16c6528ac75aa888fe">shared_ptr</a> (<a class="el" href="class_t.html">T</a> *pRawPtr, <a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> *pRefCount)</td></tr>
+<tr class="memitem:a05b5905d481e898397636c125abdec50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a05b5905d481e898397636c125abdec50">shared_ptr</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> &amp;pSmartPtr)</td></tr>
+<tr class="memitem:a0fb135fb553b3e937a01d3282fd614c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a0fb135fb553b3e937a01d3282fd614c7">operator=</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> &amp;pRightSide)</td></tr>
+<tr class="memitem:ac417d49a7433aefe3b805d56bb31f14b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ac417d49a7433aefe3b805d56bb31f14b">operator=</a> (<a class="el" href="class_t.html">T</a> *pRawPtr)</td></tr>
+<tr class="memitem:a683bfe47e3b08507124e9b9ac30b8a04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a683bfe47e3b08507124e9b9ac30b8a04">~shared_ptr</a> (void)</td></tr>
+<tr class="memitem:a7c96eb749695e720c2aba02eb3ceb6de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a7c96eb749695e720c2aba02eb3ceb6de">operator*</a> (void) const </td></tr>
+<tr class="memitem:a2f436af2e96dce7566356d344503e83c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a2f436af2e96dce7566356d344503e83c">operator-&gt;</a> (void) const </td></tr>
+<tr class="memitem:af632e8172df92a76e76d3194be5cdcba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#af632e8172df92a76e76d3194be5cdcba">operator==</a> (int iShouldBeNull) const </td></tr>
+<tr class="memitem:a624681276335194dcbe5793e75690765"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a624681276335194dcbe5793e75690765">operator!=</a> (int iShouldBeNull) const </td></tr>
 <tr class="memitem:ac5628fd30d24dc4c3a1bf2b4e0897eab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ac5628fd30d24dc4c3a1bf2b4e0897eab">operator bool</a> () const </td></tr>
-<tr class="memitem:ac6b0a0e366a14dea62a55cd932f49bf4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ac6b0a0e366a14dea62a55cd932f49bf4">operator&lt;</a> (const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;rhs) const </td></tr>
-<tr class="memitem:a47d1375288bf455398f86c9a76d623f4"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a47d1375288bf455398f86c9a76d623f4">refcount</a> () const </td></tr>
-<tr class="memitem:a7de5cc66ef9105881f493192a531a289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a7de5cc66ef9105881f493192a531a289">swap</a> (<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;rhs)</td></tr>
-<tr class="memitem:a70d8163761331e165397da39db20f753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a70d8163761331e165397da39db20f753">reset</a> ()</td></tr>
-<tr class="memitem:ab37447e791a417ed52a24929a6561287"><td class="memTemplParams" colspan="2">template&lt;class Y &gt; </td></tr>
-<tr class="memitem:ab37447e791a417ed52a24929a6561287"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ab37447e791a417ed52a24929a6561287">reset</a> (Y *rhs)</td></tr>
+<tr class="memitem:a76ea155e98b232ad4cbf1feba3e45d8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a76ea155e98b232ad4cbf1feba3e45d8d">ResetPtr</a> (void)</td></tr>
+<tr class="memitem:a159a764582957b602e5892f962fbf7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a159a764582957b602e5892f962fbf7c0">reset</a> (void)</td></tr>
+<tr class="memitem:a31bb1d1a61cb599b2fe5d389bcbb32a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a31bb1d1a61cb599b2fe5d389bcbb32a5">reset</a> (<a class="el" href="class_t.html">T</a> *pRawPtr)</td></tr>
+<tr class="memitem:a3cfb9cfe11ad41d68155aa3171786ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a3cfb9cfe11ad41d68155aa3171786ccd">GetRawPtr</a> (void) const </td></tr>
+<tr class="memitem:acaf3ff35cae4031a9904e1633da70af4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#acaf3ff35cae4031a9904e1633da70af4">get</a> (void) const </td></tr>
+<tr class="memitem:ab31c16f3cbb4ce3e446ba483e6efaa1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ab31c16f3cbb4ce3e446ba483e6efaa1b">GetRefObject</a> (void) const </td></tr>
+<tr class="memitem:ae4422e3c88af594a2b58bd24e2fc05f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ae4422e3c88af594a2b58bd24e2fc05f5">swap</a> (<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;ptr)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:af9b27d078433f45b28ab2a4b9c3ef6e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#af9b27d078433f45b28ab2a4b9c3ef6e6">decref</a> ()</td></tr>
-<tr class="memitem:a8315bcb0af11569a19dd686242c41197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a8315bcb0af11569a19dd686242c41197">incref</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:aa0c22fdb4c01a8507dbec44b454cfd5b"><td class="memItemLeft" align="right" valign="top">static unsigned *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aa0c22fdb4c01a8507dbec44b454cfd5b">nil_counter</a> ()</td></tr>
+<tr class="memitem:af425beb25131aec32b67714bb1c8505c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#af425beb25131aec32b67714bb1c8505c">AdjustRefCount</a> (void)</td></tr>
+<tr class="memitem:aa8149c25fba4e8327b8bbaf8b512f3d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aa8149c25fba4e8327b8bbaf8b512f3d1">ReassignSelf</a> (<a class="el" href="class_t.html">T</a> *pRawPtr, <a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> *pRefCount)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:afe2ddee4a0f07de3b1595e73692b4221"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a></td></tr>
-<tr class="memitem:a529247fea099adfd3a965176f99891ed"><td class="memItemLeft" align="right" valign="top">unsigned *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a529247fea099adfd3a965176f99891ed">count</a></td></tr>
+<tr class="memitem:a409846df160056d0273a0f7eac77ef9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a409846df160056d0273a0f7eac77ef9e">m_pRawPtr</a></td></tr>
+<tr class="memitem:aef45983756dac216535363ad145d1d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aef45983756dac216535363ad145d1d6b">m_pRefCount</a></td></tr>
 </table>
 <h3>template&lt;class T&gt;<br/>
  class ltr::utility::shared_ptr&lt; T &gt;</h3>
 
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a091b18a6e53d542ff4d9507cc6c34ee2"></a>
+<a class="anchor" id="abe1e5a371db27ef5dfe2f64ecc934d30"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pSmartPtr</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
       </table>
@@ -175,37 +186,19 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a64180087011aefd944b7675561b568c4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::~<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7225034e53996f2c0a3d5b69f1226ce2"></a>
+<a class="anchor" id="aee456db78411df9c15a73fa313868274"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
 <div class="memtemplate">
-template&lt;class Y &gt; </div>
+template&lt;class U &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; Y &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_reference_counted_smart_pointer_1_1_inactive_ptr.html">InactivePtr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pInactivePtr</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
       </table>
@@ -214,26 +207,7 @@ template&lt;class Y &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae3f0abe2f04e7733b77a009e2a137e9a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a108372cd1422db1bd25e60a64a13009f"></a>
+<a class="anchor" id="a022bfc1396e5c2b3af35e74aa9e5a1a1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -243,8 +217,75 @@ template&lt;class T&gt; </div>
           <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_t.html">T</a> *&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramname"><em>pRawPtr</em> = <code><a class="el" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3ed12b5da97ec16c6528ac75aa888fe"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t.html">T</a> *&#160;</td>
+          <td class="paramname"><em>pRawPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> *&#160;</td>
+          <td class="paramname"><em>pRefCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05b5905d481e898397636c125abdec50"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pSmartPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a683bfe47e3b08507124e9b9ac30b8a04"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::~<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -253,15 +294,16 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af9b27d078433f45b28ab2a4b9c3ef6e6"></a>
+<a class="anchor" id="af425beb25131aec32b67714bb1c8505c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#af9b27d078433f45b28ab2a4b9c3ef6e6">decref</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#af425beb25131aec32b67714bb1c8505c">AdjustRefCount</a> </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline, private]</code></td>
         </tr>
@@ -271,15 +313,16 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a162a10868b46ab2e218b045dcbacca91"></a>
+<a class="anchor" id="acaf3ff35cae4031a9904e1633da70af4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_t.html">T</a>* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a162a10868b46ab2e218b045dcbacca91">get</a> </td>
+          <td class="memname"><a class="el" href="class_t.html">T</a>* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#acaf3ff35cae4031a9904e1633da70af4">get</a> </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
@@ -289,15 +332,16 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5c9a64a35c51732cfb7f780dbe4ea382"></a>
+<a class="anchor" id="a3cfb9cfe11ad41d68155aa3171786ccd"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a5c9a64a35c51732cfb7f780dbe4ea382">get_count</a> </td>
+          <td class="memname"><a class="el" href="class_t.html">T</a> * <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a3cfb9cfe11ad41d68155aa3171786ccd">GetRawPtr</a> </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
@@ -307,35 +351,18 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8315bcb0af11569a19dd686242c41197"></a>
+<a class="anchor" id="ab31c16f3cbb4ce3e446ba483e6efaa1b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a8315bcb0af11569a19dd686242c41197">incref</a> </td>
+          <td class="memname"><a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> * <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ab31c16f3cbb4ce3e446ba483e6efaa1b">GetRefObject</a> </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa0c22fdb4c01a8507dbec44b454cfd5b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">static unsigned* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aa0c22fdb4c01a8507dbec44b454cfd5b">nil_counter</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, static, private]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -361,15 +388,56 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a31df23de5b90cc26f0ed17cc20a4588e"></a>
+<a class="anchor" id="a32227a9e140c7ae1c812e65eeeb2c6b0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_t.html">T</a>&amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator* </td>
+          <td class="memname">bool <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator!= </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pRightSide</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a624681276335194dcbe5793e75690765"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iShouldBeNull</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c96eb749695e720c2aba02eb3ceb6de"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_t.html">T</a> &amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
@@ -379,15 +447,16 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adbf2da1af98a540397920da2bc8d9d0b"></a>
+<a class="anchor" id="a2f436af2e96dce7566356d344503e83c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_t.html">T</a>* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator-&gt; </td>
+          <td class="memname"><a class="el" href="class_t.html">T</a> * <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator-&gt; </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
@@ -397,17 +466,99 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac6b0a0e366a14dea62a55cd932f49bf4"></a>
+<a class="anchor" id="a332147b16cdb9c136e0c6266184a30d7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator&lt; </td>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pRightSide</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a059f594553736e7be57e9e7aa0f61bb3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_reference_counted_smart_pointer_1_1_inactive_ptr.html">InactivePtr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pRightSide</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fb135fb553b3e937a01d3282fd614c7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td class="paramname"><em>pRightSide</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac417d49a7433aefe3b805d56bb31f14b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t.html">T</a> *&#160;</td>
+          <td class="paramname"><em>pRawPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43069318881ead44e40aa8b7f9859733"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pRightSide</em></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
       </table>
@@ -416,35 +567,17 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad8be1501f46683d4ba00b1c1061dab06"></a>
+<a class="anchor" id="af632e8172df92a76e76d3194be5cdcba"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T&gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt;<a class="el" href="class_t.html">T</a>&gt;&amp; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator= </td>
+          <td class="memname">bool <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a47d1375288bf455398f86c9a76d623f4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a47d1375288bf455398f86c9a76d623f4">refcount</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iShouldBeNull</em></td><td>)</td>
           <td> const<code> [inline]</code></td>
         </tr>
       </table>
@@ -453,15 +586,45 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a70d8163761331e165397da39db20f753"></a>
+<a class="anchor" id="aa8149c25fba4e8327b8bbaf8b512f3d1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a70d8163761331e165397da39db20f753">reset</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aa8149c25fba4e8327b8bbaf8b512f3d1">ReassignSelf</a> </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="class_t.html">T</a> *&#160;</td>
+          <td class="paramname"><em>pRawPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a> *&#160;</td>
+          <td class="paramname"><em>pRefCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a159a764582957b602e5892f962fbf7c0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a159a764582957b602e5892f962fbf7c0">reset</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -471,19 +634,17 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab37447e791a417ed52a24929a6561287"></a>
+<a class="anchor" id="a31bb1d1a61cb599b2fe5d389bcbb32a5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
-<div class="memtemplate">
-template&lt;class Y &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a70d8163761331e165397da39db20f753">reset</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a159a764582957b602e5892f962fbf7c0">reset</a> </td>
           <td>(</td>
-          <td class="paramtype">Y *&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_t.html">T</a> *&#160;</td>
+          <td class="paramname"><em>pRawPtr</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
       </table>
@@ -492,17 +653,36 @@ template&lt;class Y &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7de5cc66ef9105881f493192a531a289"></a>
+<a class="anchor" id="a76ea155e98b232ad4cbf1feba3e45d8d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a76ea155e98b232ad4cbf1feba3e45d8d">ResetPtr</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4422e3c88af594a2b58bd24e2fc05f5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a7de5cc66ef9105881f493192a531a289">swap</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#ae4422e3c88af594a2b58bd24e2fc05f5">swap</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
       </table>
@@ -512,14 +692,14 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a529247fea099adfd3a965176f99891ed"></a>
+<a class="anchor" id="a409846df160056d0273a0f7eac77ef9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a529247fea099adfd3a965176f99891ed">count</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="class_t.html">T</a>* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#a409846df160056d0273a0f7eac77ef9e">m_pRawPtr</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -527,14 +707,14 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afe2ddee4a0f07de3b1595e73692b4221"></a>
+<a class="anchor" id="aef45983756dac216535363ad145d1d6b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_t.html">T</a>* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#afe2ddee4a0f07de3b1595e73692b4221">ptr</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html">PtrRefCounter</a>* <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="class_t.html">T</a> &gt;::<a class="el" href="classltr_1_1utility_1_1shared__ptr.html#aef45983756dac216535363ad145d1d6b">m_pRefCount</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -543,13 +723,13 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>ltr/utility/boost/<a class="el" href="shared__ptr_8h_source.html">shared_ptr.h</a></li>
+<li>ltr/utility/boost/shared_ptr/<a class="el" href="_ptr_8h_source.html">Ptr.h</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 2 2013 14:26:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 2 2013 15:06:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -4,5 +4,7 @@ var searchData=
   ['quadratic_5ffunction_2ecc',['quadratic_function.cc',['../quadratic__function_8cc.html',1,'']]],
   ['quadratic_5ffunction_2eh',['quadratic_function.h',['../quadratic__function_8h.html',1,'']]],
   ['quadratic_5ffunction_5funittest_2ecc',['quadratic_function_unittest.cc',['../quadratic__function__unittest_8cc.html',1,'']]],
-  ['quality_2edox',['quality.dox',['../quality_8dox.html',1,'']]]
+  ['quality_2edox',['quality.dox',['../quality_8dox.html',1,'']]],
+  ['quickmutexposix_2eh',['QuickMutexPOSIX.h',['../_quick_mutex_p_o_s_i_x_8h.html',1,'']]],
+  ['quickmutexwin32_2eh',['QuickMutexWin32.h',['../_quick_mutex_win32_8h.html',1,'']]]
 ];

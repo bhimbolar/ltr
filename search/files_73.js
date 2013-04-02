@@ -19,6 +19,7 @@ var searchData=
   ['shared_5fptr_5funittest_2ecc',['shared_ptr_unittest.cc',['../shared__ptr__unittest_8cc.html',1,'']]],
   ['simulated_5fannealing_5fsolver_2ecc',['simulated_annealing_solver.cc',['../simulated__annealing__solver_8cc.html',1,'']]],
   ['simulated_5fannealing_5fsolver_2eh',['simulated_annealing_solver.h',['../simulated__annealing__solver_8h.html',1,'']]],
+  ['smartpointers_2eh',['SmartPointers.h',['../_smart_pointers_8h.html',1,'']]],
   ['solution_2eh',['solution.h',['../solution_8h.html',1,'']]],
   ['solver_2eh',['solver.h',['../solver_8h.html',1,'']]],
   ['sphere_5fset_2ecc',['sphere_set.cc',['../sphere__set_8cc.html',1,'']]],

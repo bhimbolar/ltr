@@ -1,26 +1,33 @@
 <map id="G" name="G">
-<area shape="rect" href="$simulated__annealing__solver_8h.html" title="ltr/optimization/solvers/simulated_annealing_solver.h" alt="" coords="775,80,1097,107"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1120,379,1245,405"/>
-<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="1220,80,1455,107"/>
-<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="763,155,1013,181"/>
-<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="224,379,445,405"/>
-<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="449,229,647,256"/>
-<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="671,229,945,256"/>
-<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="871,304,1095,331"/>
-<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="443,304,653,331"/>
-<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="251,304,419,331"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="616,379,917,405"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1099,453,1237,480"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="435,453,613,480"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="920,453,1075,480"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="5,453,149,480"/>
-<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="1829,155,2021,181"/>
-<area shape="rect" href="$_config_8h.html" title="ltr/utility/random/Config.h" alt="" coords="1963,229,2128,256"/>
-<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="1605,229,1853,256"/>
-<area shape="rect" href="$_random_power2_8hpp.html" title="Header for RandomPower2." alt="" coords="1320,304,1555,331"/>
-<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="1579,304,1811,331"/>
-<area shape="rect" href="$_random_seed_8hpp.html" title="Header for RandomSeed." alt="" coords="1565,453,1787,480"/>
-<area shape="rect" href="$_random_algorithm_8hpp.html" title="Header for MT19937 and SFMT19937." alt="" coords="1963,453,2208,480"/>
-<area shape="rect" href="$_random_mixer_8hpp.html" title="Header for Mixer classes." alt="" coords="1501,379,1725,405"/>
-<area shape="rect" href="$_random_type_8hpp.html" title="Class to hold bit&#45;width and unsigned type." alt="" coords="1960,528,2179,555"/>
+<area shape="rect" href="$simulated__annealing__solver_8h.html" title="ltr/optimization/solvers/simulated_annealing_solver.h" alt="" coords="952,80,1275,107"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1285,379,1411,405"/>
+<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="1387,80,1621,107"/>
+<area shape="rect" href="$iteration__solver_8h.html" title="ltr/optimization/solvers/iteration_solver.h" alt="" coords="945,155,1196,181"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="463,379,684,405"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solvers/solver.h" alt="" coords="911,229,1108,256"/>
+<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="612,229,887,256"/>
+<area shape="rect" href="$state_8h.html" title="ltr/optimization/stop_criteria/state.h" alt="" coords="1037,304,1261,331"/>
+<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solvers/solution.h" alt="" coords="803,304,1013,331"/>
+<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="611,304,779,331"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="772,379,1073,405"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="852,453,991,480"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="169,453,348,480"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1116,453,1271,480"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="125,528,392,555"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="485,603,648,629"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="5,603,117,629"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="141,603,189,629"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="213,603,304,629"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="328,603,461,629"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="563,677,701,704"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="372,453,516,480"/>
+<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="1652,155,1844,181"/>
+<area shape="rect" href="$_config_8h.html" title="ltr/utility/random/Config.h" alt="" coords="1527,229,1692,256"/>
+<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="1981,229,2229,256"/>
+<area shape="rect" href="$_random_power2_8hpp.html" title="Header for RandomPower2." alt="" coords="2364,304,2599,331"/>
+<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="2020,304,2252,331"/>
+<area shape="rect" href="$_random_seed_8hpp.html" title="Header for RandomSeed." alt="" coords="1780,453,2001,480"/>
+<area shape="rect" href="$_random_algorithm_8hpp.html" title="Header for MT19937 and SFMT19937." alt="" coords="2076,453,2321,480"/>
+<area shape="rect" href="$_random_mixer_8hpp.html" title="Header for Mixer classes." alt="" coords="1820,379,2044,405"/>
+<area shape="rect" href="$_random_type_8hpp.html" title="Class to hold bit&#45;width and unsigned type." alt="" coords="2191,528,2409,555"/>
 </map>
