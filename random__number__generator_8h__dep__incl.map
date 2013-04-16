@@ -8,9 +8,8 @@
 <area shape="rect" href="$ball__set_8cc.html" title="ltr/optimization/sets/ball_set.cc" alt="" coords="2153,80,2356,107"/>
 <area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="2380,80,2655,107"/>
 <area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="2679,80,2855,107"/>
-<area shape="rect" href="$simulated__annealing__solver_8cc.html" title="ltr/optimization/solvers/simulated_annealing_solver.cc" alt="" coords="2879,80,3209,107"/>
-<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="3233,80,3364,107"/>
-<area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="3388,80,3631,107"/>
+<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="2879,80,3009,107"/>
+<area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="3033,80,3276,107"/>
 <area shape="rect" href="$tk__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/tk_fold_simple_splitter_unittest.cc" alt="" coords="5,155,328,181"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="352,155,501,181"/>
 <area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="367,229,487,256"/>

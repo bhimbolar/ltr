@@ -9,9 +9,7 @@ var searchData=
   ['info_5fcompiler',['info_compiler',['../_c_make_c_compiler_id_8c.html#aab4f0400f2b990cc0cfaa596066ed23a',1,'info_compiler():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#aab4f0400f2b990cc0cfaa596066ed23a',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
   ['info_5fplatform',['info_platform',['../_c_make_c_compiler_id_8c.html#abfa30dab5bd89c85774e2aaaca5262d1',1,'info_platform():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#abfa30dab5bd89c85774e2aaaca5262d1',1,'info_platform():&#160;CMakeCXXCompilerId.cpp']]],
   ['init_5fgrow_5fprobability_5f',['init_grow_probability_',['../classltr_1_1gp_1_1_g_p_learner.html#a8494a735b803873759daadb920eea2fa',1,'ltr::gp::GPLearner']]],
-  ['initial_5fpoint_5f',['initial_point_',['../classoptimization_1_1_iteration_solver.html#adfffc0a5a55ecad360558c2e04c0d807',1,'optimization::IterationSolver']]],
   ['input_5ffeature_5finfo_5f',['input_feature_info_',['../classltr_1_1_feature_converter.html#a80d3fcbc090e5777e1244bf272c82fe7',1,'ltr::FeatureConverter']]],
   ['instance',['instance',['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a7e2a0c039bc4dd7dcf3a2b2edb511e04',1,'ltr::utility::MultiTable::Iterator']]],
-  ['items_5f',['items_',['../classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769',1,'ltr::Vectorized']]],
-  ['iteration_5f',['iteration_',['../classoptimization_1_1_state.html#a8913114c26058d6d64d2e7e45cb06da0',1,'optimization::State']]]
+  ['items_5f',['items_',['../classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769',1,'ltr::Vectorized']]]
 ];

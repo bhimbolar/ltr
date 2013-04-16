@@ -12,7 +12,6 @@ var searchData=
   ['add',['Add',['../classltr_1_1gp_1_1_add.html',1,'ltr::gp']]],
   ['aliaser',['Aliaser',['../classltr_1_1_aliaser.html',1,'ltr']]],
   ['aliaserderived',['AliaserDerived',['../class_aliaser_derived.html',1,'']]],
-  ['and',['And',['../classoptimization_1_1_and.html',1,'optimization']]],
   ['any',['Any',['../classltr_1_1utility_1_1_any.html',1,'ltr::utility']]],
   ['anycaster',['AnyCaster',['../classltr_1_1utility_1_1_any_caster.html',1,'ltr::utility']]],
   ['anycaster_3c_20vector_3c_20resulttype_20_3e_2c_20any_20_3e',['AnyCaster< vector< ResultType >, Any >',['../classltr_1_1utility_1_1_any_caster_3_01vector_3_01_result_type_01_4_00_01_any_01_4.html',1,'ltr::utility']]],

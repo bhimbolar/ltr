@@ -121,17 +121,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00020"></a>00020   <span class="keyword">explicit</span> Set(<span class="keywordtype">int</span> dimension);
 <a name="l00021"></a>00021   <span class="keyword">virtual</span> ~Set();
 <a name="l00022"></a>00022 
-<a name="l00026"></a>00026   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isInside(<span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&amp; point) <span class="keyword">const</span> = 0;
-<a name="l00030"></a>00030   <span class="keyword">virtual</span> <span class="keywordtype">void</span> computeProjection(<span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&amp; point,
-<a name="l00031"></a>00031                                  <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>* projection) <span class="keyword">const</span> = 0;
-<a name="l00035"></a>00035   <span class="keyword">virtual</span> <span class="keywordtype">void</span> getBoundaries(<a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>* top, <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>* bottom) <span class="keyword">const</span> = 0;
-<a name="l00039"></a>00039   <span class="keyword">virtual</span> <span class="keywordtype">void</span> sampleRandomPointInside(<a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>* random_point) <span class="keyword">const</span>;
+<a name="l00026"></a>00026   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isInside(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span> = 0;
+<a name="l00030"></a>00030   <span class="keyword">virtual</span> <span class="keywordtype">void</span> computeProjection(<span class="keyword">const</span> Point&amp; point,
+<a name="l00031"></a>00031                                  Point* projection) <span class="keyword">const</span> = 0;
+<a name="l00035"></a>00035   <span class="keyword">virtual</span> <span class="keywordtype">void</span> getBoundaries(Point* top, Point* bottom) <span class="keyword">const</span> = 0;
+<a name="l00039"></a>00039   <span class="keyword">virtual</span> <span class="keywordtype">void</span> sampleRandomPointInside(Point* random_point) <span class="keyword">const</span>;
 <a name="l00040"></a>00040 
 <a name="l00044"></a>00044   <a class="code" href="macros_8h.html#a349075e98439c0ddd76af74f4fc6dc1c">GET</a>(<span class="keywordtype">int</span>, dimension);
 <a name="l00045"></a>00045 
 <a name="l00046"></a>00046   <span class="keyword">virtual</span> <span class="keywordtype">string</span> getDefaultAlias()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Set&quot;</span>; }
 <a name="l00047"></a>00047  <span class="keyword">protected</span>:
-<a name="l00051"></a>00051   <span class="keywordtype">void</span> getRandomPoint(<a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>* random_point) <span class="keyword">const</span>;
+<a name="l00051"></a>00051   <span class="keywordtype">void</span> getRandomPoint(Point* random_point) <span class="keyword">const</span>;
 <a name="l00052"></a>00052  <span class="keyword">private</span>:
 <a name="l00057"></a>00057   <span class="keywordtype">int</span> dimension_;
 <a name="l00058"></a>00058 };
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 3 2013 00:07:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

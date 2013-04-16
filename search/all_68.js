@@ -7,7 +7,6 @@ var searchData=
   ['have_5fmpfr',['HAVE_MPFR',['../_m_p_f_r_exponential_l_8hpp.html#a7bd74f166a6445dc311cf501b124ec2e',1,'HAVE_MPFR():&#160;MPFRExponentialL.hpp'],['../_m_p_f_r_normal_r_8hpp.html#a7bd74f166a6445dc311cf501b124ec2e',1,'HAVE_MPFR():&#160;MPFRNormalR.hpp'],['../_m_p_f_r_random_8hpp.html#a7bd74f166a6445dc311cf501b124ec2e',1,'HAVE_MPFR():&#160;MPFRRandom.hpp']]],
   ['held',['held',['../classltr_1_1utility_1_1_any_1_1_holder.html#a3f811c43c1425d9c0d443da21a7f7b93',1,'ltr::utility::Any::Holder']]],
   ['hessian',['hessian',['../classoptimization_1_1_g3_function.html#ab35dfb22b53f0ed4980b6d2947800bda',1,'optimization::G3Function::hessian()'],['../classoptimization_1_1_easom_function.html#ad68d5566956c2cdfbd57f3b30e87b9d1',1,'optimization::EasomFunction::hessian()'],['../classoptimization_1_1_trid_function.html#ae16190a80300eb4d18701787e1cb9a26',1,'optimization::TridFunction::hessian()']]],
-  ['hessian_5f',['hessian_',['../classoptimization_1_1_state.html#a372912f29f00f44afc775c1bd95669a2',1,'optimization::State']]],
   ['highest_5fbit_5fidx',['highest_bit_idx',['../class_random_lib_1_1_random_number.html#ae597ca24a309b30650646e38039b26d1',1,'RandomLib::RandomNumber']]],
   ['holder',['Holder',['../classltr_1_1utility_1_1_any_1_1_holder.html#aefed398e19962bd7d88e417b88e89989',1,'ltr::utility::Any::Holder']]],
   ['holder',['Holder',['../classltr_1_1utility_1_1_any_1_1_holder.html',1,'ltr::utility::Any']]],

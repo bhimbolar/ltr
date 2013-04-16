@@ -13,6 +13,5 @@ var searchData=
   ['covariance_5fmatrix_5f',['covariance_matrix_',['../classltr_1_1_non_linear_discriminant.html#aec7d3a98f1fb5ec06fa12a02b10af1d3',1,'ltr::NonLinearDiscriminant']]],
   ['cpp_5fgen_5fexecutor',['cpp_gen_executor',['../class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e',1,'OnTrainTag']]],
   ['cross_5fvalidation_5fresults_5f',['cross_validation_results_',['../classltr_1_1cv_1_1_cross_validator.html#ac0b65553c96cf9e5917a4526f45b8775',1,'ltr::cv::CrossValidator']]],
-  ['crossvalidation_5finfos_5f',['crossvalidation_infos_',['../class_config_parser.html#a6c72dbfc0e7490821a8099e021a200aa',1,'ConfigParser']]],
-  ['current_5fstate_5f',['current_state_',['../classoptimization_1_1_iteration_solver.html#a25b05b761288f2ebce33e63329017060',1,'optimization::IterationSolver']]]
+  ['crossvalidation_5finfos_5f',['crossvalidation_infos_',['../class_config_parser.html#a6c72dbfc0e7490821a8099e021a200aa',1,'ConfigParser']]]
 ];

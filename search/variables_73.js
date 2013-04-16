@@ -7,7 +7,6 @@ var searchData=
   ['scorer',['scorer',['../structltr_1_1composition_1_1_composition_scorer_1_1_scorer_and_weight.html#a965ed8af877788f1c8d0d307c4837297',1,'ltr::composition::CompositionScorer::ScorerAndWeight']]],
   ['scorer_5f',['scorer_',['../classltr_1_1_base_learner.html#a9e56d63388d331e61e7f2045279c39ba',1,'ltr::BaseLearner']]],
   ['second',['second',['../classltr_1_1_object_pair.html#a16d1f72890a21590044b8a915f5793f0',1,'ltr::ObjectPair::second()'],['../classserialization__test_1_1_report.html#af9974538b6360d65d33f92696b8e5bf1',1,'serialization_test::Report::second()'],['../classserialization__test_1_1_report_3_01vector_3_01double_01_4_01_4.html#a2ec472fb99789f4562cb451aa2fff608',1,'serialization_test::Report&lt; vector&lt; double &gt; &gt;::second()'],['../classserialization__test_1_1_report_3_01vector_3_01vector_3_01double_01_4_01_4_01_4.html#ada9a015b08b75e91ca220856213b16a6',1,'serialization_test::Report&lt; vector&lt; vector&lt; double &gt; &gt; &gt;::second()']]],
-  ['second_5f',['second_',['../classoptimization_1_1_and.html#a93d81cd179338414457450f38c0cb0bf',1,'optimization::And::second_()'],['../classoptimization_1_1_or.html#aca65e26e78c2ee6ffa2d54dfc20d3cf2',1,'optimization::Or::second_()']]],
   ['seed_5f',['seed_',['../classltr_1_1_data_random_sampler.html#a999e7139a35d5b2c80131b3bbe8216f8',1,'ltr::DataRandomSampler::seed_()'],['../classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5',1,'ltr::FeatureRandomSamplerLearner::seed_()'],['../classltr_1_1gp_1_1_g_p_learner.html#a1f33573d26e6ce1904cb6f753a56281f',1,'ltr::gp::GPLearner::seed_()']]],
   ['self_5f',['self_',['../class_factory.html#a820e8b9987d55a4d291c3460f753213f',1,'Factory']]],
   ['serializated_5flabels',['serializated_labels',['../class_serialization_test.html#a6e4bde44114e72282e704b8b0f68c12c',1,'SerializationTest']]],
@@ -15,12 +14,9 @@ var searchData=
   ['shift_5f',['shift_',['../classltr_1_1_linear_converter.html#a388327d1dca7e952c307058a2b47e7e4',1,'ltr::LinearConverter::shift_()'],['../classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c',1,'ltr::PerFeatureLinearConverter::shift_()'],['../classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2',1,'optimization::LinearFunction::shift_()']]],
   ['size',['size',['../structltr_1_1utility_1_1_dimension_size.html#aa28ff716ca31557c6404621f51c2e734',1,'ltr::utility::DimensionSize']]],
   ['sizeval',['sizeVal',['../struct_size_over_index.html#a397c8cada8056e0e3506c9e6e7ffacf3',1,'SizeOverIndex']]],
-  ['solution',['solution',['../structoptimization_1_1_solution.html#a8522dcc17ac7686b722c67bc942339be',1,'optimization::Solution']]],
   ['source',['source',['../classltr_1_1utility_1_1bad__lexical__cast.html#a588c672db5fe7fa76eb7e1080b9e69a8',1,'ltr::utility::bad_lexical_cast']]],
-  ['speed_5f',['speed_',['../classoptimization_1_1_gradient_descent_solver.html#a2013cb48772b16d3902eb11a443604ea',1,'optimization::GradientDescentSolver']]],
   ['splitter',['splitter',['../struct_crossvalidation_launch_info.html#a21ee79a41098bf23fa2e506a43ef3f04',1,'CrossvalidationLaunchInfo']]],
   ['splitter_5f',['splitter_',['../classltr_1_1cv_1_1_cross_validator.html#a48580310e51d887b7e4e8212aa2de4ec',1,'ltr::cv::CrossValidator::splitter_()'],['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a66a8a2d7ede496a36fbb9c49c93ce73e',1,'ltr::decision_tree::DecisionTreeLearner::splitter_()']]],
-  ['stop_5fcriterion_5f',['stop_criterion_',['../classoptimization_1_1_iteration_solver.html#a885097f316d2230ca700380d22bf83e3',1,'optimization::IterationSolver']]],
   ['stop_5fsplitting_5fcriteria_5f',['stop_splitting_criteria_',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a83843087eaca77581709a289fffb22ea',1,'ltr::decision_tree::DecisionTreeLearner']]],
   ['svm_5farff_5ftest_5ffile_5fname',['svm_arff_test_file_name',['../class_i_o_utility_test.html#a4891e6fabad40165060e7327cd3f8ad2',1,'IOUtilityTest']]]
 ];

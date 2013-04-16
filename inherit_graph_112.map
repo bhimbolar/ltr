@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$class_random_lib_1_1_leading_zeros.html" title="Count of leading zeros." alt="" coords="7,5,177,32"/>
+<area shape="rect" href="$class_random_lib_1_1_random_seed.html" title="A base class for random generators." alt="" coords="7,5,177,32"/>
+<area shape="rect" href="$class_random_lib_1_1_random_engine.html" title="Uniform random number generator." alt="" coords="227,5,528,32"/>
 </map>

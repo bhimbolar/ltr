@@ -118,23 +118,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00019"></a>00019 
 <a name="l00020"></a>00020   <span class="keyword">explicit</span> QuadraticFunction(<span class="keywordtype">int</span> dimension)
 <a name="l00021"></a>00021     : TwiceDifferentiableFunction(dimension) { }
-<a name="l00022"></a>00022   <span class="keyword">explicit</span> QuadraticFunction(<span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>&amp; quadratic,
-<a name="l00023"></a>00023                              <span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&amp; linear,
+<a name="l00022"></a>00022   <span class="keyword">explicit</span> QuadraticFunction(<span class="keyword">const</span> Matrix&amp; quadratic,
+<a name="l00023"></a>00023                              <span class="keyword">const</span> Vector&amp; linear,
 <a name="l00024"></a>00024                              <span class="keywordtype">double</span> shift);
 <a name="l00025"></a>00025   ~QuadraticFunction() { }
 <a name="l00026"></a>00026 
-<a name="l00030"></a>00030   <span class="keywordtype">double</span> computeValue(<span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&amp; point) <span class="keyword">const</span>;
-<a name="l00034"></a>00034   <span class="keywordtype">void</span> computeGradient(<span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&amp; point, <a class="code" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>* gradient) <span class="keyword">const</span>;
-<a name="l00038"></a>00038   <span class="keywordtype">void</span> computeHessian(<span class="keyword">const</span> <a class="code" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>&amp; point, <a class="code" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>* hessian) <span class="keyword">const</span>;
+<a name="l00030"></a>00030   <span class="keywordtype">double</span> computeValue(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00034"></a>00034   <span class="keywordtype">void</span> computeGradient(<span class="keyword">const</span> Point&amp; point, Vector* gradient) <span class="keyword">const</span>;
+<a name="l00038"></a>00038   <span class="keywordtype">void</span> computeHessian(<span class="keyword">const</span> Point&amp; point, Matrix* hessian) <span class="keyword">const</span>;
 <a name="l00039"></a>00039 
-<a name="l00040"></a>00040   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<a class="code" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>, quadratic);
-<a name="l00041"></a>00041   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<a class="code" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>, linear);
+<a name="l00040"></a>00040   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Matrix, quadratic);
+<a name="l00041"></a>00041   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Vector, linear);
 <a name="l00042"></a>00042   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<span class="keywordtype">double</span>, shift);
 <a name="l00043"></a>00043 
 <a name="l00044"></a>00044   <span class="keywordtype">string</span> getDefaultAlias()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;QuadraticFunction&quot;</span>;}
 <a name="l00045"></a>00045  <span class="keyword">private</span>:
-<a name="l00049"></a>00049   <a class="code" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> quadratic_;
-<a name="l00053"></a>00053   <a class="code" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> linear_;
+<a name="l00049"></a>00049   Matrix quadratic_;
+<a name="l00053"></a>00053   Vector linear_;
 <a name="l00057"></a>00057   <span class="keywordtype">double</span> shift_;
 <a name="l00058"></a>00058 };
 <a name="l00059"></a>00059 }
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 3 2013 00:07:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

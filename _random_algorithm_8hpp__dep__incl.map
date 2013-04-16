@@ -1,11 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="2393,80,2625,107"/>
-<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="2385,155,2633,181"/>
-<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="2413,229,2605,256"/>
-<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="2020,304,2255,331"/>
-<area shape="rect" href="$_inverse_e_prob_8hpp.html" title="Header for InverseEProb." alt="" coords="2279,304,2497,331"/>
-<area shape="rect" href="$_inverse_pi_prob_8hpp.html" title="Header for InversePiProb." alt="" coords="2521,304,2743,331"/>
-<area shape="rect" href="$_random_8cpp.html" title="Implementation code for RandomLib." alt="" coords="2767,304,2959,331"/>
+<area shape="rect" href="$_random_engine_8hpp.html" title="Header for RandomEngine." alt="" coords="2277,80,2509,107"/>
+<area shape="rect" href="$_random_canonical_8hpp.html" title="Header for RandomCanonical." alt="" coords="2269,155,2517,181"/>
+<area shape="rect" href="$_random_8hpp.html" title="Header for Random, RandomGenerator." alt="" coords="2297,229,2489,256"/>
+<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="1904,304,2139,331"/>
+<area shape="rect" href="$_inverse_e_prob_8hpp.html" title="Header for InverseEProb." alt="" coords="2163,304,2381,331"/>
+<area shape="rect" href="$_inverse_pi_prob_8hpp.html" title="Header for InversePiProb." alt="" coords="2405,304,2627,331"/>
+<area shape="rect" href="$_random_8cpp.html" title="Implementation code for RandomLib." alt="" coords="2651,304,2843,331"/>
 <area shape="rect" href="$tk__fold__simple__splitter_8h.html" title="ltr/crossvalidation/tk_fold_simple_splitter.h" alt="" coords="295,379,559,405"/>
 <area shape="rect" href="$data__set__unittest_8cc.html" title="ltr/data/data_set_unittest.cc" alt="" coords="1452,379,1636,405"/>
 <area shape="rect" href="$save__predictions__unittest_8cc.html" title="ltr/data/save_predictions_unittest.cc" alt="" coords="1660,379,1889,405"/>
@@ -15,9 +15,8 @@
 <area shape="rect" href="$ball__set_8cc.html" title="ltr/optimization/sets/ball_set.cc" alt="" coords="2153,379,2356,405"/>
 <area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="2380,379,2655,405"/>
 <area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="2679,379,2855,405"/>
-<area shape="rect" href="$simulated__annealing__solver_8cc.html" title="ltr/optimization/solvers/simulated_annealing_solver.cc" alt="" coords="2879,379,3209,405"/>
-<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="3233,379,3364,405"/>
-<area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="3388,379,3631,405"/>
+<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="2879,379,3009,405"/>
+<area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="3033,379,3276,405"/>
 <area shape="rect" href="$tk__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/tk_fold_simple_splitter_unittest.cc" alt="" coords="5,453,328,480"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="352,453,501,480"/>
 <area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="367,528,487,555"/>
