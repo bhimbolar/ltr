@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$test__problems__unittest_8cc.html" title="ltr/optimization/test_problems/test_problems_unittest.cc" alt="" coords="5,80,352,107"/>
-<area shape="rect" href="$unconstrained__functions_8cc.html" title="ltr/optimization/test_problems/unconstrained_functions.cc" alt="" coords="376,80,731,107"/>
+<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="5,80,328,107"/>
+<area shape="rect" href="$test__problems__unittest_8cc.html" title="ltr/optimization/test_problems/test_problems_unittest.cc" alt="" coords="352,80,699,107"/>
+<area shape="rect" href="$unconstrained__functions_8cc.html" title="ltr/optimization/test_problems/unconstrained_functions.cc" alt="" coords="723,80,1077,107"/>
 </map>

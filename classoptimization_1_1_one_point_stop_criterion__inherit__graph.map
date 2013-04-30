@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" href="$classoptimization_1_1_and.html" title="Class for test 2 stop criteria in current point from population." alt="" coords="572,5,775,32"/>
+<area shape="rect" href="$classoptimization_1_1_delta_argument_stop_criterion.html" title="Class for test delta argument of point from population." alt="" coords="503,56,844,83"/>
+<area shape="rect" href="$classoptimization_1_1_delta_function_stop_criterion.html" title="Class for test delta function of point from population." alt="" coords="505,107,841,133"/>
+<area shape="rect" href="$classoptimization_1_1_gradient_magnitude_stop_criterion.html" title="Class for test gradient of function in current point from population." alt="" coords="492,157,855,184"/>
+<area shape="rect" href="$classoptimization_1_1_iteration_count_stop_criterion.html" title="Class for test iteration of point from population." alt="" coords="505,208,841,235"/>
+<area shape="rect" href="$classoptimization_1_1_or.html" title="Class for test 2 stop criteria in current point from population." alt="" coords="576,259,771,285"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,132,85,159"/>
+</map>

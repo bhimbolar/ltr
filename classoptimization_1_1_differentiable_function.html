@@ -138,12 +138,12 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5db8154663f0fb05305b39e7d181823e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a5db8154663f0fb05305b39e7d181823e">DifferentiableFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
 <tr class="memitem:a7ee403c4c20e8d1de8002dc6ca4d481d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a7ee403c4c20e8d1de8002dc6ca4d481d">~DifferentiableFunction</a> ()</td></tr>
-<tr class="memitem:a7a4b21a2a1d1c64b190833686820a8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a7a4b21a2a1d1c64b190833686820a8a7">computeGradient</a> (const Point &amp;point, Vector *gradient) const </td></tr>
+<tr class="memitem:a7a4b21a2a1d1c64b190833686820a8a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a7a4b21a2a1d1c64b190833686820a8a7">computeGradient</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *gradient) const </td></tr>
 <tr class="memitem:a463a5fc608b14261ef2f2171f7b3d8e0"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#a463a5fc608b14261ef2f2171f7b3d8e0">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aadd5a9b46a7f0bc01288555c382c21fe"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#aadd5a9b46a7f0bc01288555c382c21fe">computeValueImpl</a> (const Point &amp;point) const =0</td></tr>
-<tr class="memitem:abafc18f8847ca1e672d7e7432090c406"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#abafc18f8847ca1e672d7e7432090c406">computeGradientImpl</a> (const Point &amp;point, Vector *gradient) const =0</td></tr>
+<tr class="memitem:aadd5a9b46a7f0bc01288555c382c21fe"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#aadd5a9b46a7f0bc01288555c382c21fe">computeValueImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
+<tr class="memitem:abafc18f8847ca1e672d7e7432090c406"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_differentiable_function.html#abafc18f8847ca1e672d7e7432090c406">computeGradientImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *gradient) const =0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Abstract class for defining differentiable functions in \(\mathbb{R}^n\). </p>
@@ -208,13 +208,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classoptimization_1_1_differentiable_function.html#a7a4b21a2a1d1c64b190833686820a8a7">optimization::DifferentiableFunction::computeGradient</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Vector *&#160;</td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *&#160;</td>
           <td class="paramname"><em>gradient</em>&#160;</td>
         </tr>
         <tr>
@@ -236,13 +236,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void <a class="el" href="classoptimization_1_1_differentiable_function.html#abafc18f8847ca1e672d7e7432090c406">optimization::DifferentiableFunction::computeGradientImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Vector *&#160;</td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *&#160;</td>
           <td class="paramname"><em>gradient</em>&#160;</td>
         </tr>
         <tr>
@@ -266,7 +266,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual double <a class="el" href="classoptimization_1_1_differentiable_function.html#aadd5a9b46a7f0bc01288555c382c21fe">optimization::DifferentiableFunction::computeValueImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> const<code> [private, pure virtual]</code></td>
         </tr>
@@ -309,7 +309,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:18:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

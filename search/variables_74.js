@@ -21,5 +21,6 @@ var searchData=
   ['train_5finfos_5f',['train_infos_',['../class_config_parser.html#a689b5262736f8061e4057106c5021013',1,'ConfigParser']]],
   ['train_5fset',['train_set',['../structltr_1_1cv_1_1_splitted_data_set.html#a673d39224dcdf9ab99a1eb057c4e09f2',1,'ltr::cv::SplittedDataSet']]],
   ['tree_5f',['tree_',['../classltr_1_1decision__tree_1_1_decision_tree_scorer.html#a1ec1a4b1d6a1dc647d2dce00689aa06b',1,'ltr::decision_tree::DecisionTreeScorer']]],
+  ['true_5fanswers_5f',['true_answers_',['../classoptimization_1_1_vote_aggregator.html#a5cc9e1b35b96446f7bddb494c7b71ea9',1,'optimization::VoteAggregator']]],
   ['type_5f',['type_',['../structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b',1,'ltr::OneFeatureInfo']]]
 ];

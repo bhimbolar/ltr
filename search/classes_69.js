@@ -9,6 +9,7 @@ var searchData=
   ['inversepiprob',['InversePiProb',['../class_random_lib_1_1_inverse_pi_prob.html',1,'RandomLib']]],
   ['inversepowerdistance',['InversePowerDistance',['../classltr_1_1utility_1_1_inverse_power_distance.html',1,'ltr::utility']]],
   ['ioutilitytest',['IOUtilityTest',['../class_i_o_utility_test.html',1,'']]],
-  ['iterator',['Iterator',['../classoptimization_1_1_population_1_1_iterator.html',1,'optimization::Population']]],
-  ['iterator',['Iterator',['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html',1,'ltr::utility::MultiTable']]]
+  ['iterationcountstopcriterion',['IterationCountStopCriterion',['../classoptimization_1_1_iteration_count_stop_criterion.html',1,'optimization']]],
+  ['iterator',['Iterator',['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html',1,'ltr::utility::MultiTable']]],
+  ['iterator',['Iterator',['../classoptimization_1_1_population_1_1_iterator.html',1,'optimization::Population']]]
 ];

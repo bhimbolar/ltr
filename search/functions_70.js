@@ -32,5 +32,6 @@ var searchData=
   ['projectonfurthestplane',['projectOnFurthestPlane',['../classoptimization_1_1_polyhedron_set.html#a95fba50f3299385ede7b588c5818cede',1,'optimization::PolyhedronSet']]],
   ['ptrrefcounter',['PtrRefCounter',['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a872523fa5ddd635953ad5d5706006b62',1,'ReferenceCountedSmartPointer::PtrRefCounter::PtrRefCounter(void)'],['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a19df48a3979695ed990ef3a4962519e0',1,'ReferenceCountedSmartPointer::PtrRefCounter::PtrRefCounter(const PtrRefCounter &amp;)']]],
   ['puppyprimitivehandletopserializable',['puppyPrimitiveHandleToPSerializable',['../classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41',1,'ltr::gp::GPScorer']]],
-  ['pure_5ffunction',['pure_function',['../class_abstract_test_class.html#af59542f7a0704abe73869d57d003e069',1,'AbstractTestClass::pure_function()'],['../class_concrete_test_class.html#a7f9b23f93123de2620b2a99876bc56a8',1,'ConcreteTestClass::pure_function()']]]
+  ['pure_5ffunction',['pure_function',['../class_abstract_test_class.html#af59542f7a0704abe73869d57d003e069',1,'AbstractTestClass::pure_function()'],['../class_concrete_test_class.html#a7f9b23f93123de2620b2a99876bc56a8',1,'ConcreteTestClass::pure_function()']]],
+  ['push',['push',['../classoptimization_1_1_vote_aggregator.html#a321a580a26d38f1f34a04e56dc8fa2cc',1,'optimization::VoteAggregator']]]
 ];

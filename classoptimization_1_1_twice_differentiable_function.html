@@ -138,13 +138,13 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad623bd671eaeb4eb94280ccafed3d092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#ad623bd671eaeb4eb94280ccafed3d092">TwiceDifferentiableFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
 <tr class="memitem:a9ddb8258fd408ab49c8985f2f3cb4f92"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9ddb8258fd408ab49c8985f2f3cb4f92">~TwiceDifferentiableFunction</a> ()</td></tr>
-<tr class="memitem:a871398ee011ae9cbceedeb53526ec9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a871398ee011ae9cbceedeb53526ec9d0">computeHessian</a> (const Point &amp;point, Matrix *hessian) const </td></tr>
+<tr class="memitem:a871398ee011ae9cbceedeb53526ec9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a871398ee011ae9cbceedeb53526ec9d0">computeHessian</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> *hessian) const </td></tr>
 <tr class="memitem:a88c2156fac2279debe27bf3ba7b2bc8b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a3ddcb5b7913fd3a54e38bbcca07c82d1"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">computeValueImpl</a> (const Point &amp;point) const =0</td></tr>
-<tr class="memitem:a9a3c5ca6bffdaf363816645c14e655c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">computeGradientImpl</a> (const Point &amp;point, Vector *gradient) const =0</td></tr>
-<tr class="memitem:acd3cdf4b3480335c2d45a63d454af7dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">computeHessianImpl</a> (const Point &amp;point, Matrix *hessian) const =0</td></tr>
+<tr class="memitem:a3ddcb5b7913fd3a54e38bbcca07c82d1"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">computeValueImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
+<tr class="memitem:a9a3c5ca6bffdaf363816645c14e655c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">computeGradientImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *gradient) const =0</td></tr>
+<tr class="memitem:acd3cdf4b3480335c2d45a63d454af7dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">computeHessianImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> *hessian) const =0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Abstract class for defining twice differentiable functions in \(\mathbb{R}^n\). </p>
@@ -209,13 +209,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">optimization::TwiceDifferentiableFunction::computeGradientImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Vector *&#160;</td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *&#160;</td>
           <td class="paramname"><em>gradient</em>&#160;</td>
         </tr>
         <tr>
@@ -241,13 +241,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a871398ee011ae9cbceedeb53526ec9d0">optimization::TwiceDifferentiableFunction::computeHessian</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Matrix *&#160;</td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> *&#160;</td>
           <td class="paramname"><em>hessian</em>&#160;</td>
         </tr>
         <tr>
@@ -269,13 +269,13 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">optimization::TwiceDifferentiableFunction::computeHessianImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Matrix *&#160;</td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> *&#160;</td>
           <td class="paramname"><em>hessian</em>&#160;</td>
         </tr>
         <tr>
@@ -299,7 +299,7 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual double <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">optimization::TwiceDifferentiableFunction::computeValueImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
           <td> const<code> [private, pure virtual]</code></td>
         </tr>
@@ -342,7 +342,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:18:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

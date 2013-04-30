@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Learning To Rank Library: optimization::And Class Reference</title>
+<title>Learning To Rank Library: optimization::And&lt; TFunction &gt; Class Template Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -107,54 +107,120 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">optimization::And Class Reference</div>  </div>
+<div class="title">optimization::And&lt; TFunction &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="and__criterion_8h_source.html">and_criterion.h</a>&gt;</code></p>
+<p>Class for test 2 stop criteria in current point from population.  
+ <a href="classoptimization_1_1_and.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="and__or__stop__criteria_8hpp_source.html">and_or_stop_criteria.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for optimization::And:</div>
+Inheritance diagram for optimization::And&lt; TFunction &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classoptimization_1_1_and__inherit__graph.png" border="0" usemap="#optimization_1_1_and_inherit__map" alt="Inheritance graph"/></div>
-<map name="optimization_1_1_and_inherit__map" id="optimization_1_1_and_inherit__map">
-<area shape="rect" href="classoptimization_1_1_stop_criterion.html" title="optimization::StopCriterion" alt="" coords="5,5,179,32"/></map>
+<div class="center"><img src="classoptimization_1_1_and__inherit__graph.png" border="0" usemap="#optimization_1_1_and_3_01_t_function_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="optimization_1_1_and_3_01_t_function_01_4_inherit__map" id="optimization_1_1_and_3_01_t_function_01_4_inherit__map">
+<area shape="rect" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points." alt="" coords="5,80,315,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="120,5,200,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_and-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae1a429521146c589ad91c2618ecf99d0"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt; <a class="el" href="classoptimization_1_1_and.html">And</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3ade47229e4ec40ec56a14af28dc48af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a3ade47229e4ec40ec56a14af28dc48af">And</a> (const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &amp;first, const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &amp;second)</td></tr>
-<tr class="memitem:a51fe0b5c53210410316b8cc05a843c12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a51fe0b5c53210410316b8cc05a843c12">isTrue</a> (const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;current_state, const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;previous_state=<a class="el" href="classoptimization_1_1_state.html">State</a>()) const </td></tr>
+<tr class="memitem:a2997c7718fb4597602e18064703c0f91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a2997c7718fb4597602e18064703c0f91">And</a> (typename TFunction::Ptr function, typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a> first, typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a> second)</td></tr>
+<tr class="memitem:a1fd4052448713858b57b842cda567292"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a1fd4052448713858b57b842cda567292">~And</a> ()</td></tr>
+<tr class="memitem:a2e5f83c65ee3196e9994d4eba0c127bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">init</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point)</td></tr>
+<tr class="memitem:a65027fbc1d81f24302ff862c5140bd17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">update</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point)</td></tr>
+<tr class="memitem:a2f368707cad7cd9be8c6e177bce4c96f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">getDefaultAlias</a> () const </td></tr>
+<tr class="memitem:a0ec91f83d94b42d6649db0d9d92d4029"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
+&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">clone</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab0ebd8526e174271edeae61a3d548a89"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#ab0ebd8526e174271edeae61a3d548a89">first_</a></td></tr>
-<tr class="memitem:a93d81cd179338414457450f38c0cb0bf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a93d81cd179338414457450f38c0cb0bf">second_</a></td></tr>
+<tr class="memitem:a89be42e884e96f813470f13f1e79fbc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
+&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a89be42e884e96f813470f13f1e79fbc7">first_</a></td></tr>
+<tr class="memitem:a07d4f7ae64e5494a6868ee6cf4b6fc66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
+&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_and.html#a07d4f7ae64e5494a6868ee6cf4b6fc66">second_</a></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a3ade47229e4ec40ec56a14af28dc48af"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class TFunction&gt;<br/>
+class optimization::And&lt; TFunction &gt;</h3>
+
+<p>Class for test 2 stop criteria in current point from population. </p>
+<p>Stop criterion is true when both of stop criteria is true in current point.</p>
+<dl class="section see"><dt>See also:</dt><dd><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>, PerPointStopCriterion </dd></dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="ae1a429521146c589ad91c2618ecf99d0"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_and.html#a3ade47229e4ec40ec56a14af28dc48af">optimization::And::And</a> </td>
+          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classoptimization_1_1_and.html">And</a>&gt; <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2997c7718fb4597602e18064703c0f91"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html">And</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &amp;&#160;</td>
+          <td class="paramtype">typename TFunction::Ptr&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a>&#160;</td>
           <td class="paramname"><em>first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &amp;&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a>&#160;</td>
           <td class="paramname"><em>second</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [inline, explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1fd4052448713858b57b842cda567292"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::~<a class="el" href="classoptimization_1_1_and.html">And</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -163,42 +229,100 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a51fe0b5c53210410316b8cc05a843c12"></a>
+<a class="anchor" id="a0ec91f83d94b42d6649db0d9d92d4029"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classoptimization_1_1_and.html#a51fe0b5c53210410316b8cc05a843c12">optimization::And::isTrue</a> </td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a> <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">clone</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;&#160;</td>
-          <td class="paramname"><em>current_state</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Create deep copy of this stop criterion. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#aa257a2793a0e9a5c101db68f6956b57f">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f368707cad7cd9be8c6e177bce4c96f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_state.html">State</a> &amp;&#160;</td>
-          <td class="paramname"><em>previous_state</em> = <code><a class="el" href="classoptimization_1_1_state.html">State</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
+          <td class="memname">string <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">getDefaultAlias</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#ac748248fb65756487cd6e0735c516494">optimization::StopCriterion</a>.</p>
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#a675f60f679b846500c20d0a377854297">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e5f83c65ee3196e9994d4eba0c127bc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">init</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Init data for future test of current point. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#af4671c51ae69a7469673edb388083727">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65027fbc1d81f24302ff862c5140bd17"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">update</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Update data for future test of current point. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#a799030796ffc493cbf317b4e65aa8c10">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ab0ebd8526e174271edeae61a3d548a89"></a>
+<a class="anchor" id="a89be42e884e96f813470f13f1e79fbc7"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a>&amp; <a class="el" href="classoptimization_1_1_and.html#ab0ebd8526e174271edeae61a3d548a89">optimization::And::first_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a> <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#a89be42e884e96f813470f13f1e79fbc7">first_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -206,12 +330,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a93d81cd179338414457450f38c0cb0bf"></a>
+<a class="anchor" id="a07d4f7ae64e5494a6868ee6cf4b6fc66"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a>&amp; <a class="el" href="classoptimization_1_1_and.html#a93d81cd179338414457450f38c0cb0bf">optimization::And::second_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt;::<a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a> <a class="el" href="classoptimization_1_1_and.html">optimization::And</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_and.html#a07d4f7ae64e5494a6868ee6cf4b6fc66">second_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -219,15 +345,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>ltr/optimization/stop_criteria/<a class="el" href="and__criterion_8h_source.html">and_criterion.h</a></li>
-<li>ltr/optimization/stop_criteria/<a class="el" href="and__criterion_8cc.html">and_criterion.cc</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>ltr/optimization/stop_criteria/<a class="el" href="and__or__stop__criteria_8hpp_source.html">and_or_stop_criteria.hpp</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 3 2013 00:07:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:18:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

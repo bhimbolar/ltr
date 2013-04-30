@@ -12,6 +12,7 @@ var searchData=
   ['gplearner',['GPLearner',['../classltr_1_1gp_1_1_g_p_learner.html',1,'ltr::gp']]],
   ['gplearnertest',['GPLearnerTest',['../class_g_p_learner_test.html',1,'']]],
   ['gpscorer',['GPScorer',['../classltr_1_1gp_1_1_g_p_scorer.html',1,'ltr::gp']]],
+  ['gradientmagnitudestopcriterion',['GradientMagnitudeStopCriterion',['../classoptimization_1_1_gradient_magnitude_stop_criterion.html',1,'optimization']]],
   ['greateractual',['GreaterActual',['../classltr_1_1_greater_actual.html',1,'ltr']]],
   ['greaterpredicted',['GreaterPredicted',['../classltr_1_1_greater_predicted.html',1,'ltr']]],
   ['griewankfunction',['GriewankFunction',['../classoptimization_1_1_griewank_function.html',1,'optimization']]]

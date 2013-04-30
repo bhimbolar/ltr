@@ -11,21 +11,22 @@
 <area shape="rect" href="$classltr_1_1composition_1_1_data_set_weights_updater.html" title="ltr::composition::DataSetWeightsUpdater\&lt; TElement \&gt;" alt="" coords="165,512,501,539"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; TElement \&gt;" alt="" coords="244,563,423,589"/>
 <area shape="rect" href="$classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors." alt="" coords="221,689,445,716"/>
-<area shape="rect" href="$classltr_1_1_data_set.html" title="Template class that implements DataSet." alt="" coords="251,791,416,817"/>
-<area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="264,892,403,919"/>
+<area shape="rect" href="$classltr_1_1_data_set.html" title="Template class that implements DataSet." alt="" coords="251,892,416,919"/>
+<area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="264,943,403,969"/>
 <area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="204,1272,463,1299"/>
 <area shape="rect" href="$classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer." alt="" coords="252,1677,415,1704"/>
 <area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="249,2184,417,2211"/>
-<area shape="rect" href="$classltr_1_1_scorer.html" title="Class that can for every object evaluate a value &#45; its rank, or score." alt="" coords="295,2665,372,2692"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="257,2716,409,2743"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="244,2767,423,2793"/>
-<area shape="rect" href="$classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="259,2817,408,2844"/>
-<area shape="rect" href="$classoptimization_1_1_population.html" title="Class for population of points." alt="" coords="253,2868,413,2895"/>
-<area shape="rect" href="$classoptimization_1_1_population_initer.html" title="Abstract class for initializing population of points." alt="" coords="240,3008,427,3035"/>
-<area shape="rect" href="$classoptimization_1_1_set.html" title="Interface class for sets in ." alt="" coords="273,3147,393,3173"/>
-<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="237,3197,429,3224"/>
+<area shape="rect" href="$classltr_1_1_scorer.html" title="Class that can for every object evaluate a value &#45; its rank, or score." alt="" coords="295,2691,372,2717"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="257,2792,409,2819"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="244,2843,423,2869"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="259,2995,408,3021"/>
+<area shape="rect" href="$classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points." alt="" coords="179,3172,488,3199"/>
+<area shape="rect" href="$classoptimization_1_1_population.html" title="Class for population of points." alt="" coords="253,3223,413,3249"/>
+<area shape="rect" href="$classoptimization_1_1_population_initer.html" title="Abstract class for initializing population of points." alt="" coords="240,3336,427,3363"/>
+<area shape="rect" href="$classoptimization_1_1_set.html" title="Interface class for sets in ." alt="" coords="273,3419,393,3445"/>
+<area shape="rect" href="$classoptimization_1_1_vote_aggregator.html" title="Aggregator which returns true if part of true answers from one point stop criteria more than minimal_..." alt="" coords="239,3469,428,3496"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="237,3520,429,3547"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; Object, CompositionScorer \&gt;" alt="" coords="659,5,952,32"/>
-<area shape="rect" href="$classltr_1_1composition_1_1_composition_learner.html" title="ltr::composition::CompositionLearner\&lt; Object \&gt;" alt="" coords="1081,5,1377,32"/>
 <area shape="rect" href="$classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects." alt="" coords="739,56,872,83"/>
 <area shape="rect" href="$classltr_1_1_manhattan_metric.html" title="Manhattan metric on two objects." alt="" coords="737,107,873,133"/>
 <area shape="rect" href="$classltr_1_1composition_1_1_ada_rank_scorer_weights_updater.html" title="ltr::composition::AdaRankScorerWeightsUpdater\&lt; TElement \&gt;" alt="" coords="615,157,996,184"/>
@@ -55,12 +56,6 @@
 <area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, PerFeatureLinearConverter \&gt;" alt="" coords="589,1373,1021,1400"/>
 <area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="BaseFeatureConverterLearner\&lt; TElement, RemoveNominalConverter \&gt;" alt="" coords="592,1424,1019,1451"/>
 <area shape="rect" href="$classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners." alt="" coords="660,1475,951,1501"/>
-<area shape="rect" href="$classltr_1_1_fake_feature_converter_learner.html" title="ltr::FakeFeatureConverterLearner\&lt; TElement \&gt;" alt="" coords="1085,1069,1373,1096"/>
-<area shape="rect" href="$classltr_1_1_feature_random_sampler_learner.html" title="Produces FeatureSampler with random indices." alt="" coords="1079,1120,1380,1147"/>
-<area shape="rect" href="$classltr_1_1_feature_sampler_learner.html" title="Produces FeatureSampler with specified indices." alt="" coords="1103,1171,1356,1197"/>
-<area shape="rect" href="$classltr_1_1_p_c_a_learner.html" title="Learner for principal components analisys feature converter." alt="" coords="1135,1221,1324,1248"/>
-<area shape="rect" href="$classltr_1_1_nan_to_average_converter_learner.html" title="Produces NanToNeutralConverter with average features neutral object." alt="" coords="1080,1272,1379,1299"/>
-<area shape="rect" href="$classltr_1_1_nan_to_zero_converter_learner.html" title="Produces NanToNeutralConverter with zero neutral object." alt="" coords="1091,1323,1368,1349"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="BaseLearner\&lt; TElement, BayesianScorer \&gt;" alt="" coords="669,1525,941,1552"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="BaseLearner\&lt; TElement, CompositionScorer \&gt;" alt="" coords="660,1576,951,1603"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="BaseLearner\&lt; TElement, DecisionTreeScorer \&gt;" alt="" coords="659,1627,952,1653"/>
@@ -92,9 +87,14 @@
 <area shape="rect" href="$classltr_1_1_a_u_c.html" title="ltr::AUC" alt="" coords="772,2944,839,2971"/>
 <area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError" alt="" coords="748,2995,863,3021"/>
 <area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="693,3045,917,3072"/>
-<area shape="rect" href="$classoptimization_1_1_naive_initer.html" title="Class for i.i.d initializing population of points." alt="" coords="727,3096,884,3123"/>
-<area shape="rect" href="$classoptimization_1_1_ball_set.html" title="Implements ball of a given radius with center in a given point." alt="" coords="735,3147,876,3173"/>
-<area shape="rect" href="$classoptimization_1_1_linear_inequality_set.html" title="Implements semi&#45;space define solutions of inequality." alt="" coords="701,3197,909,3224"/>
-<area shape="rect" href="$classoptimization_1_1_polyhedron_set.html" title="Class for polyhedron sets in ." alt="" coords="713,3248,897,3275"/>
-<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="Implements sphere of a given radius with center in a given point." alt="" coords="725,3299,885,3325"/>
+<area shape="rect" href="$classoptimization_1_1_and.html" title="Class for test 2 stop criteria in current point from population." alt="" coords="704,3096,907,3123"/>
+<area shape="rect" href="$classoptimization_1_1_delta_argument_stop_criterion.html" title="Class for test delta argument of point from population." alt="" coords="635,3147,976,3173"/>
+<area shape="rect" href="$classoptimization_1_1_delta_function_stop_criterion.html" title="Class for test delta function of point from population." alt="" coords="637,3197,973,3224"/>
+<area shape="rect" href="$classoptimization_1_1_gradient_magnitude_stop_criterion.html" title="Class for test gradient of function in current point from population." alt="" coords="624,3248,987,3275"/>
+<area shape="rect" href="$classoptimization_1_1_iteration_count_stop_criterion.html" title="Class for test iteration of point from population." alt="" coords="637,3299,973,3325"/>
+<area shape="rect" href="$classoptimization_1_1_or.html" title="Class for test 2 stop criteria in current point from population." alt="" coords="708,3349,903,3376"/>
+<area shape="rect" href="$classoptimization_1_1_naive_initer.html" title="Class for i.i.d initializing population of points." alt="" coords="727,3400,884,3427"/>
+<area shape="rect" href="$classoptimization_1_1_ball_set.html" title="Implements ball of a given radius with center in a given point." alt="" coords="735,3451,876,3477"/>
+<area shape="rect" href="$classoptimization_1_1_linear_inequality_set.html" title="Implements semi&#45;space define solutions of inequality." alt="" coords="701,3501,909,3528"/>
+<area shape="rect" href="$classoptimization_1_1_polyhedron_set.html" title="Class for polyhedron sets in ." alt="" coords="713,3552,897,3579"/>
 </map>

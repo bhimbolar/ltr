@@ -25,6 +25,7 @@ var searchData=
   ['squared_5ferror_2eh',['squared_error.h',['../squared__error_8h.html',1,'']]],
   ['stand_5ffunctions_5funittest_2ecc',['stand_functions_unittest.cc',['../stand__functions__unittest_8cc.html',1,'']]],
   ['statistics_5fcalculation_2eh',['statistics_calculation.h',['../statistics__calculation_8h.html',1,'']]],
+  ['stop_5fcriteria_5funittest_2ecc',['stop_criteria_unittest.cc',['../stop__criteria__unittest_8cc.html',1,'']]],
   ['stop_5fsplitting_5fcriteria_2eh',['stop_splitting_criteria.h',['../stop__splitting__criteria_8h.html',1,'']]],
   ['string_5futils_2ecc',['string_utils.cc',['../string__utils_8cc.html',1,'']]],
   ['string_5futils_2eh',['string_utils.h',['../string__utils_8h.html',1,'']]],

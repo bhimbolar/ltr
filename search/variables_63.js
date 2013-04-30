@@ -14,5 +14,8 @@ var searchData=
   ['covariance_5fmatrix_5f',['covariance_matrix_',['../classltr_1_1_non_linear_discriminant.html#aec7d3a98f1fb5ec06fa12a02b10af1d3',1,'ltr::NonLinearDiscriminant']]],
   ['cpp_5fgen_5fexecutor',['cpp_gen_executor',['../class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e',1,'OnTrainTag']]],
   ['cross_5fvalidation_5fresults_5f',['cross_validation_results_',['../classltr_1_1cv_1_1_cross_validator.html#ac0b65553c96cf9e5917a4526f45b8775',1,'ltr::cv::CrossValidator']]],
-  ['crossvalidation_5finfos_5f',['crossvalidation_infos_',['../class_config_parser.html#a6c72dbfc0e7490821a8099e021a200aa',1,'ConfigParser']]]
+  ['crossvalidation_5finfos_5f',['crossvalidation_infos_',['../class_config_parser.html#a6c72dbfc0e7490821a8099e021a200aa',1,'ConfigParser']]],
+  ['current_5fargument_5f',['current_argument_',['../classoptimization_1_1_delta_argument_stop_criterion.html#af733d586608ec15bc50117c87802cade',1,'optimization::DeltaArgumentStopCriterion']]],
+  ['current_5fiteration_5f',['current_iteration_',['../classoptimization_1_1_iteration_count_stop_criterion.html#ab2db13eeb029f6308848165fdd7094a9',1,'optimization::IterationCountStopCriterion']]],
+  ['current_5fvalue_5f',['current_value_',['../classoptimization_1_1_delta_function_stop_criterion.html#acb9921934714a8830aea80e96d7c30d0',1,'optimization::DeltaFunctionStopCriterion']]]
 ];
