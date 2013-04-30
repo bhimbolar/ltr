@@ -13,6 +13,7 @@
 <area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="720,752,768,779"/>
 <area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="792,752,883,779"/>
 <area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="907,752,1040,779"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="475,827,613,853"/>
 <area shape="rect" href="$scorer_8h.html" title="ltr/scorers/scorer.h" alt="" coords="1684,155,1815,181"/>
 <area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1255,453,1444,480"/>
 <area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="784,379,1104,405"/>

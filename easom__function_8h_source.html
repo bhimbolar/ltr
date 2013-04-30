@@ -111,30 +111,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="twice__differentiable__function_8h.html">ltr/optimization/functions/twice_differentiable_function.h</a>&quot;</span>
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="keyword">namespace </span>optimization {
-<a name="l00017"></a><a class="code" href="classoptimization_1_1_easom_function.html">00017</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_easom_function.html">EasomFunction</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html">TwiceDifferentiableFunction</a> {
-<a name="l00018"></a>00018  <span class="keyword">public</span>:
-<a name="l00019"></a><a class="code" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">00019</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">EasomFunction</a>()
-<a name="l00020"></a>00020     : <a class="code" href="classoptimization_1_1_twice_differentiable_function.html">TwiceDifferentiableFunction</a>(2) { }
-<a name="l00021"></a><a class="code" href="classoptimization_1_1_easom_function.html#a0d24fadf348fda178f38ad5110a48ae6">00021</a>   <a class="code" href="classoptimization_1_1_easom_function.html#a0d24fadf348fda178f38ad5110a48ae6">~EasomFunction</a>() { }
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a471612b3924cf96caf624af9bbf5781f">value</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00024"></a>00024   Vector <a class="code" href="classoptimization_1_1_easom_function.html#a4d2b87df600e83f535f212b5d42cb533">gradient</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00025"></a>00025   Matrix <a class="code" href="classoptimization_1_1_easom_function.html#ad68d5566956c2cdfbd57f3b30e87b9d1">hessian</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00026"></a><a class="code" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">00026</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;EasomFunction&quot;</span>; }
-<a name="l00027"></a>00027  <span class="keyword">private</span>:
-<a name="l00030"></a>00030   <span class="keywordtype">double</span> squareExp(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
-<a name="l00033"></a>00033   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a9666b5dfe5766931f8d76c324609326a">partValue</a>(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
-<a name="l00036"></a>00036   <span class="keywordtype">double</span> partGradient(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
-<a name="l00039"></a>00039   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a73c36a9a7e74ae9ae2f0be8eb7261eb7">partHessian</a>(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
-<a name="l00040"></a>00040 };
-<a name="l00041"></a>00041 }
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TEST_UNCONSTRAINED_EASOM_FUNCTION_EASOM_FUNCTION_H_</span>
+<a name="l00019"></a><a class="code" href="classoptimization_1_1_easom_function.html">00019</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_easom_function.html" title="Class for Easom function in .">EasomFunction</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a> {
+<a name="l00020"></a>00020  <span class="keyword">public</span>:
+<a name="l00021"></a><a class="code" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">00021</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">EasomFunction</a>()
+<a name="l00022"></a>00022     : <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a>(2) { }
+<a name="l00023"></a><a class="code" href="classoptimization_1_1_easom_function.html#a0d24fadf348fda178f38ad5110a48ae6">00023</a>   <a class="code" href="classoptimization_1_1_easom_function.html#a0d24fadf348fda178f38ad5110a48ae6">~EasomFunction</a>() { }
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a471612b3924cf96caf624af9bbf5781f">value</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00026"></a>00026   Vector <a class="code" href="classoptimization_1_1_easom_function.html#a4d2b87df600e83f535f212b5d42cb533">gradient</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00027"></a>00027   Matrix <a class="code" href="classoptimization_1_1_easom_function.html#ad68d5566956c2cdfbd57f3b30e87b9d1">hessian</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00028"></a><a class="code" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">00028</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;EasomFunction&quot;</span>; }
+<a name="l00029"></a>00029  <span class="keyword">private</span>:
+<a name="l00033"></a>00033   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#ae7c41ae8060f1b8a81df7ce5412ea401">squareExp</a>(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
+<a name="l00037"></a>00037   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a9666b5dfe5766931f8d76c324609326a">partValue</a>(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
+<a name="l00041"></a>00041   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a34b7fa6bc2ce6f65a7e5d4bfb8e82029">partGradient</a>(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
+<a name="l00045"></a>00045   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_easom_function.html#a73c36a9a7e74ae9ae2f0be8eb7261eb7">partHessian</a>(<span class="keywordtype">double</span> variable) <span class="keyword">const</span>;
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 }
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TEST_UNCONSTRAINED_EASOM_FUNCTION_EASOM_FUNCTION_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

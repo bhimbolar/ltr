@@ -8,6 +8,7 @@ var searchData=
   ['serializablefunctor',['SerializableFunctor',['../classltr_1_1_serializable_functor.html',1,'ltr']]],
   ['serializablefunctor_3c_20double_20_3e',['SerializableFunctor< double >',['../classltr_1_1_serializable_functor.html',1,'ltr']]],
   ['serializationtest',['SerializationTest',['../class_serialization_test.html',1,'']]],
+  ['set',['Set',['../classoptimization_1_1_set.html',1,'optimization']]],
   ['sfmt19937',['SFMT19937',['../class_random_lib_1_1_s_f_m_t19937.html',1,'RandomLib']]],
   ['shared_5fptr',['shared_ptr',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20basemetric_20_3e',['shared_ptr< BaseMetric >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
@@ -20,6 +21,7 @@ var searchData=
   ['shared_5fptr_3c_20leafgenerator_20_3e',['shared_ptr< LeafGenerator >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20ltr_3a_3abasemetric_20_3e',['shared_ptr< ltr::BaseMetric >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20metainfo_20_3e',['shared_ptr< MetaInfo >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
+  ['shared_5fptr_3c_20numberofcomponentsrule_20_3e',['shared_ptr< NumberOfComponentsRule >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20predictionsaggregator_20_3e',['shared_ptr< PredictionsAggregator >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20scorer_20_3e',['shared_ptr< Scorer >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20vector_3c_20double_20_3e_20_3e',['shared_ptr< vector< double > >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
@@ -37,5 +39,6 @@ var searchData=
   ['stopsplittingcriteria',['StopSplittingCriteria',['../classltr_1_1decision__tree_1_1_stop_splitting_criteria.html',1,'ltr::decision_tree']]],
   ['subtract',['Subtract',['../classltr_1_1gp_1_1_subtract.html',1,'ltr::gp']]],
   ['sumpredictionsaggregator',['SumPredictionsAggregator',['../classltr_1_1_sum_predictions_aggregator.html',1,'ltr']]],
+  ['sumsquaresfunction',['SumSquaresFunction',['../classoptimization_1_1_sum_squares_function.html',1,'optimization']]],
   ['svmparser',['SVMParser',['../classltr_1_1io__utility_1_1_s_v_m_parser.html',1,'ltr::io_utility']]]
 ];

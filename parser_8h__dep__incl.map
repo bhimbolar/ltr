@@ -1,20 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="1576,80,1733,107"/>
+<area shape="rect" href="$io__utility_8h.html" title="ltr/data/utility/io_utility.h" alt="" coords="1584,80,1741,107"/>
 <area shape="rect" href="$parse__arff_8h.html" title="ltr/data/utility/parsers/parse_arff.h" alt="" coords="3073,80,3287,107"/>
 <area shape="rect" href="$parser_8cc.html" title="ltr/data/utility/parsers/parser.cc" alt="" coords="2981,155,3181,181"/>
+<area shape="rect" href="$parse__dsv_8h.html" title="ltr/data/utility/parsers/parse_dsv.h" alt="" coords="3311,80,3527,107"/>
 <area shape="rect" href="$parse__svm_8h.html" title="ltr/data/utility/parsers/parse_svm.h" alt="" coords="2516,80,2735,107"/>
 <area shape="rect" href="$parse__yandex_8h.html" title="ltr/data/utility/parsers/parse_yandex.h" alt="" coords="2759,80,2999,107"/>
-<area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="1957,155,2229,181"/>
-<area shape="rect" href="$data__set__unittest_8cc.html" title="ltr/data/data_set_unittest.cc" alt="" coords="2253,155,2437,181"/>
-<area shape="rect" href="$save__predictions__unittest_8cc.html" title="ltr/data/save_predictions_unittest.cc" alt="" coords="5,155,235,181"/>
-<area shape="rect" href="$io__utility_8cc.html" title="ltr/data/utility/io_utility.cc" alt="" coords="259,155,424,181"/>
-<area shape="rect" href="$io__utility__unittest_8cc.html" title="ltr/data/utility/io_utility_unittest.cc" alt="" coords="448,155,664,181"/>
+<area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="1275,155,1547,181"/>
+<area shape="rect" href="$data__set__unittest_8cc.html" title="ltr/data/data_set_unittest.cc" alt="" coords="1571,155,1755,181"/>
+<area shape="rect" href="$save__predictions__unittest_8cc.html" title="ltr/data/save_predictions_unittest.cc" alt="" coords="1779,155,2008,181"/>
+<area shape="rect" href="$io__utility_8cc.html" title="ltr/data/utility/io_utility.cc" alt="" coords="2032,155,2197,181"/>
+<area shape="rect" href="$io__utility__unittest_8cc.html" title="ltr/data/utility/io_utility_unittest.cc" alt="" coords="2221,155,2437,181"/>
 <area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="2461,155,2688,181"/>
 <area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="2712,155,2957,181"/>
-<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="688,155,965,181"/>
-<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="989,155,1189,181"/>
-<area shape="rect" href="$generator__utility_8cc.html" title="ltr/serialization_test/generator/generator_utility.cc" alt="" coords="1213,155,1517,181"/>
-<area shape="rect" href="$tester_8cc.html" title="ltr/serialization_test/tester/tester.cc" alt="" coords="1541,155,1768,181"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1792,155,1933,181"/>
+<area shape="rect" href="$gp__learner__unittest_8cc.html" title="ltr/learners/gp_learner/gp_learner_unittest.cc" alt="" coords="5,155,283,181"/>
+<area shape="rect" href="$learners__unittest_8cc.html" title="ltr/learners/learners_unittest.cc" alt="" coords="307,155,507,181"/>
+<area shape="rect" href="$generator__utility_8cc.html" title="ltr/serialization_test/generator/generator_utility.cc" alt="" coords="531,155,835,181"/>
+<area shape="rect" href="$tester_8cc.html" title="ltr/serialization_test/tester/tester.cc" alt="" coords="859,155,1085,181"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="1109,155,1251,181"/>
 <area shape="rect" href="$parse__arff_8cc.html" title="ltr/data/utility/parsers/parse_arff.cc" alt="" coords="3205,155,3427,181"/>
+<area shape="rect" href="$parse__dsv_8cc.html" title="ltr/data/utility/parsers/parse_dsv.cc" alt="" coords="3451,155,3672,181"/>
 </map>

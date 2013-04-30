@@ -1,9 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_easom_function.html" title="optimization::EasomFunction" alt="" coords="908,5,1097,32"/>
-<area shape="rect" href="$classoptimization_1_1_g3_function.html" title="optimization::G3Function" alt="" coords="920,56,1085,83"/>
-<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="optimization::LinearFunction" alt="" coords="911,107,1095,133"/>
-<area shape="rect" href="$classoptimization_1_1_trid_function.html" title="optimization::TridFunction" alt="" coords="917,157,1088,184"/>
-<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="331,81,555,108"/>
-<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="133,81,283,108"/>
-<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,81,85,108"/>
+<area shape="rect" href="$classoptimization_1_1_easom_function.html" title="Class for Easom function in ." alt="" coords="924,5,1113,32"/>
+<area shape="rect" href="$classoptimization_1_1_g1_function.html" title="Class for G1 function in ." alt="" coords="936,56,1101,83"/>
+<area shape="rect" href="$classoptimization_1_1_g3_function.html" title="Class for G1 function in ." alt="" coords="936,107,1101,133"/>
+<area shape="rect" href="$classoptimization_1_1_griewank_function.html" title="Class for Griewank function in ." alt="" coords="917,157,1120,184"/>
+<area shape="rect" href="$classoptimization_1_1_linear_function.html" title="Class for defining linear functions in ." alt="" coords="927,208,1111,235"/>
+<area shape="rect" href="$classoptimization_1_1_quadratic_function.html" title="Class for quadratic functions in ." alt="" coords="916,259,1121,285"/>
+<area shape="rect" href="$classoptimization_1_1_rosenbrock_function.html" title="Class for Rosenbrock function in ." alt="" coords="909,309,1128,336"/>
+<area shape="rect" href="$classoptimization_1_1_sum_squares_function.html" title="Class for Sum Squares function in . , minimum at ." alt="" coords="907,360,1131,387"/>
+<area shape="rect" href="$classoptimization_1_1_trid_function.html" title="Class for Trid function in . ." alt="" coords="933,411,1104,437"/>
+<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="331,208,555,235"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="133,208,283,235"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,208,85,235"/>
 </map>

@@ -15,5 +15,6 @@ var searchData=
   ['report',['Report',['../classserialization__test_1_1_report.html',1,'serialization_test']]],
   ['report_3c_20vector_3c_20double_20_3e_20_3e',['Report< vector< double > >',['../classserialization__test_1_1_report_3_01vector_3_01double_01_4_01_4.html',1,'serialization_test']]],
   ['report_3c_20vector_3c_20vector_3c_20double_20_3e_20_3e_20_3e',['Report< vector< vector< double > > >',['../classserialization__test_1_1_report_3_01vector_3_01vector_3_01double_01_4_01_4_01_4.html',1,'serialization_test']]],
-  ['reporter',['Reporter',['../classltr_1_1_reporter.html',1,'ltr']]]
+  ['reporter',['Reporter',['../classltr_1_1_reporter.html',1,'ltr']]],
+  ['rosenbrockfunction',['RosenbrockFunction',['../classoptimization_1_1_rosenbrock_function.html',1,'optimization']]]
 ];

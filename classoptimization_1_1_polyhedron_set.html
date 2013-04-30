@@ -116,7 +116,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Class for polyhedron sets in \(\mathbb{R}^n\).  
+ <a href="classoptimization_1_1_polyhedron_set.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="polyhedron__set_8h_source.html">polyhedron_set.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for optimization::PolyhedronSet:</div>
+<div class="dyncontent">
+<div class="center"><img src="classoptimization_1_1_polyhedron_set__inherit__graph.png" border="0" usemap="#optimization_1_1_polyhedron_set_inherit__map" alt="Inheritance graph"/></div>
+<map name="optimization_1_1_polyhedron_set_inherit__map" id="optimization_1_1_polyhedron_set_inherit__map">
+<area shape="rect" href="classoptimization_1_1_g1_set.html" title="Class for G1 polyhedron set in ." alt="" coords="29,229,165,256"/><area shape="rect" href="classoptimization_1_1_set.html" title="Interface class for sets in ." alt="" coords="37,80,157,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="57,5,137,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_polyhedron_set-members.html">List of all members.</a></p>
 <table class="memberdecls">
@@ -145,7 +155,11 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:afa8c31039e988a8f19d0cc7213fc352d"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#afa8c31039e988a8f19d0cc7213fc352d">b_</a></td></tr>
 <tr class="memitem:a74feb283b4069d783ab41e87db5f771b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a74feb283b4069d783ab41e87db5f771b">precision_</a></td></tr>
 </table>
-<hr/><h2>Member Typedef Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Class for polyhedron sets in \(\mathbb{R}^n\). </p>
+<p><a class="el" href="classoptimization_1_1_set.html" title="Interface class for sets in .">Set</a> is defined by set of equations \(A\overrightarrow{x} \le \overrightarrow{b}\) </p>
+<dl class="section see"><dt>See also:</dt><dd><a class="el" href="classoptimization_1_1_set.html" title="Interface class for sets in .">Set</a> </dd></dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="ab748f25b9f374020c474b0bb6d38e599"></a>
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +170,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">optimization::Set</a>.</p>
 
 </div>
 </div>
@@ -234,7 +250,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>compute distance from current point to the plane with number plane_id if margin &lt; 0 then point is outside the set </p>
+<p>Compute distance from current point to the plane with number plane_id if margin &lt; 0 then point is outside the set. </p>
 
 </div>
 </div>
@@ -257,12 +273,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>project point on the polyhedron via method of successive projections </p>
+<p>Project point on the polyhedron via method of successive projections. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_set.html#a0bf2a13ad2f09cd4802a1abed9aee46a">optimization::Set</a>.</p>
 
 </div>
 </div>
@@ -285,12 +303,14 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>get approximate boundaries of polyhedron set based on the assumption that diam(polyhedron) is approximately 10.0 * fabs(b_i) / sum(fabs(A_i)) </p>
+<p>Get approximate boundaries of polyhedron set based on the assumption that diam(polyhedron) is approximately 10.0 * fabs(b_i) / sum(fabs(A_i)). </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_set.html#a9b22f8fd1f82b981d746c11217a7af4a">optimization::Set</a>.</p>
 
 </div>
 </div>
@@ -302,11 +322,15 @@ Private Attributes</h2></td></tr>
           <td class="memname">string <a class="el" href="classoptimization_1_1_polyhedron_set.html#ada803c8186e98d60e7f4eb4fd3f02aa6">optimization::PolyhedronSet::getDefaultAlias</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td> const<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_set.html#aee9c189fd26ef237664184f5682284ce">optimization::Set</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_g1_set.html#a073c7f66f8fb19d2ba102b9e04882157">optimization::G1Set</a>.</p>
 
 </div>
 </div>
@@ -334,8 +358,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>is this point break limit number limit_id </p>
-<dl class="section return"><dt>Returns:</dt><dd>true if yes. </dd></dl>
+<p>Is this point break limit number limit_id.</p>
+<dl class="section return"><dt>Returns:</dt><dd>True if yes. </dd></dl>
 <p>if margin &lt; 0 then point outside</p>
 
 </div>
@@ -349,11 +373,14 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const Point &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Checks, whether given point is inside this set. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_set.html#a0368d87b544d79b02c938c6605dd3d61">optimization::Set</a>.</p>
 
 </div>
 </div>
@@ -381,7 +408,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>project current point on the furthest plane of polyhedron </p>
+<p>Project current point on the furthest plane of polyhedron. </p>
 
 </div>
 </div>
@@ -394,11 +421,14 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">Point *&#160;</td>
           <td class="paramname"><em>random_point</em></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Get arbitrary point in given set. </p>
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_set.html#ad8758f29237276d6640de2db5c46f41c">optimization::Set</a>.</p>
 
 </div>
 </div>
@@ -439,7 +469,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>space where point is inside in the polyhedron near it </p>
+<p>Space where point is inside in the polyhedron near it. </p>
 
 </div>
 </div>
@@ -451,7 +481,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac401b4c48ca120c5c2ebba7007602a37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a> () const </td></tr>
 <tr class="memitem:ada9d073392d626e6ae45663dd0f5c4f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">resize</a> (int <a class="el" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>, FeatureType type=NUMERIC)</td></tr>
 <tr class="memitem:accdb3049365f1daa6df0999e6f04c665"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a> (const <a class="el" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> &amp;info)</td></tr>
-<tr class="memitem:a6fa3412fc337509f0c34ae333732adfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a6fa3412fc337509f0c34ae333732adfc">addFeature</a> (FeatureType type=NUMERIC, const NominalFeatureValues &amp;values=NominalFeatureValues())</td></tr>
+<tr class="memitem:ae15cc0782a2131df1d3975d9034e4b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#ae15cc0782a2131df1d3975d9034e4b7d">addFeature</a> (FeatureType type=NUMERIC, const NominalFeatureValues &amp;values=NominalFeatureValues(), const string &amp;name=&quot;&quot;)</td></tr>
 <tr class="memitem:ae624c0d725b10d08c2541fd8ca88cb25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">addNominalFeatureValue</a> (int feature_index, const string &amp;value)</td></tr>
 <tr class="memitem:ae62583a2da6ccc47de9f1c2a1ed4a8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#ae62583a2da6ccc47de9f1c2a1ed4a8ac">addNominalFeatureValues</a> (int feature_index, const vector&lt; string &gt; &amp;values)</td></tr>
 <tr class="memitem:a9bd017d68a4a1d7edfa809811f7d9bf6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a9bd017d68a4a1d7edfa809811f7d9bf6">getNominalFeatureValue</a> (int feature_index, int value_hash) const </td></tr>
@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e4b18c5daed953e68a27a136d93d76b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a0e4b18c5daed953e68a27a136d93d76b">clearNominalFeatureValues</a> (int feature_index)</td></tr>
 <tr class="memitem:a57d3eeea58cb56cd73b41b500ca7e50e"><td class="memItemLeft" align="right" valign="top">FeatureType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">getFeatureType</a> (int feature_index) const </td></tr>
 <tr class="memitem:a3da69d7c86b6598e2482d11ddc597e22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">setFeatureType</a> (int feature_index, FeatureType type)</td></tr>
+<tr class="memitem:a22f5d229438952dd0023bd66e915caeb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a22f5d229438952dd0023bd66e915caeb">getFeatureName</a> (int feature_index) const </td></tr>
+<tr class="memitem:af77ac55847d73e3c4f1383db821410fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#af77ac55847d73e3c4f1383db821410fc">setFeatureName</a> (int feature_index, const string &amp;name)</td></tr>
 <tr class="memitem:aeae6a2c4fe26ac9d160a64cea7a53d4f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#aeae6a2c4fe26ac9d160a64cea7a53d4f">operator[]</a> (int feature_index) const </td></tr>
 <tr class="memitem:a354b7168c894f296a33618d5e5524521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a354b7168c894f296a33618d5e5524521">operator[]</a> (int feature_index)</td></tr>
 <tr class="memitem:a8bf580d8b517f46345e0f821a653665e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_info.html#a8bf580d8b517f46345e0f821a653665e">clear</a> ()</td></tr>
@@ -169,6 +171,7 @@ Friends</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Shared pointer to feature info. </p>
 
 </div>
 </div>
@@ -220,7 +223,7 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6fa3412fc337509f0c34ae333732adfc"></a>
+<a class="anchor" id="ae15cc0782a2131df1d3975d9034e4b7d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -234,7 +237,13 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const NominalFeatureValues &amp;&#160;</td>
-          <td class="paramname"><em>values</em> = <code>NominalFeatureValues()</code>&#160;</td>
+          <td class="paramname"><em>values</em> = <code>NominalFeatureValues()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -366,6 +375,24 @@ Friends</h2></td></tr>
 </div>
 <div class="memdoc">
 <p>Returns count of features </p>
+
+</div>
+</div>
+<a class="anchor" id="a22f5d229438952dd0023bd66e915caeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classltr_1_1_feature_info.html#a22f5d229438952dd0023bd66e915caeb">ltr::FeatureInfo::getFeatureName</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>feature_index</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Returns name of feature with given index </p>
 
 </div>
 </div>
@@ -564,6 +591,34 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af77ac55847d73e3c4f1383db821410fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1_feature_info.html#af77ac55847d73e3c4f1383db821410fc">ltr::FeatureInfo::setFeatureName</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>feature_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Changes name of feature with given index </p>
+
+</div>
+</div>
 <a class="anchor" id="a3da69d7c86b6598e2482d11ddc597e22"></a>
 <div class="memitem">
 <div class="memproto">
@@ -641,7 +696,7 @@ Friends</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

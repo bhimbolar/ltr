@@ -154,12 +154,6 @@ Private Attributes</h2></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Samples features with specified indices. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">indices</td><td>indices of features to sample </td></tr>
-  </table>
-  </dd>
-</dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a62c8126bba0996784b6ae827db3fc363"></a>
 <div class="memitem">
@@ -171,6 +165,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
 
 <p>Reimplemented from <a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">ltr::FeatureConverter</a>.</p>
 
@@ -191,12 +186,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">indices</td><td>indices of features to sample </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -224,6 +213,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indices</td><td>are indices of features to sample. </td></tr>
+    <tr><td class="paramname">feature_info</td><td>is feature_info structure. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -290,10 +286,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The function creates cpp code for serializable object using given name. </p>
+<p>The function creates cpp code for serializable object using given name.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">serrializable_object_name</td><td>name that should be used for naming the object (function or class) within the generated cpp code. </td></tr>
+    <tr><td class="paramname">serrializable_object_name</td><td>is a name that should be used for naming the object (function or class) within the generated cpp code. </td></tr>
   </table>
   </dd>
 </dl>
@@ -393,6 +389,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Indices of features to sample. </p>
 
 </div>
 </div>
@@ -404,7 +401,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -170,7 +170,7 @@ Creating new learner</h2>
 <p>First of all, let us be definite with terms: <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a> class is an ancestor class for all the Learners in the LTR. It has only one template argument (the element type). The only inheritor of this class <a class="el" href="classltr_1_1_base_learner.html">BaseLearner</a> that has two template arguments: the element type and the type of the specific scorer to return with make function.<br/>
 <br/>
 </p>
-<p>Now let us proceed with the <a class="el" href="classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach.">NNLearner</a>:</p>
+<p>Now let us proceed with the <a class="el" href="classltr_1_1_n_n_learner.html" title="Implements nearest neighbor approach.">NNLearner</a>:</p>
 <p>As we know, the <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a> must create the <a class="el" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a> with the make function. Thus we write in <a class="el" href="nearest__neighbor__learner_8h.html">nearest_neighbor_learner.h</a>:</p>
 <div class="fragment"><pre class="fragment"><span class="preprocessor">#include &quot;<a class="code" href="learner_8h.html">ltr/learners/learner.h</a>&quot;</span>
 
@@ -235,7 +235,7 @@ NeighborWeighter::Ptr neighbor_weighter_;
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -112,29 +112,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="differentiable__function_8h.html">ltr/optimization/functions/differentiable_function.h</a>&quot;</span>
 <a name="l00009"></a>00009 
 <a name="l00010"></a>00010 <span class="keyword">namespace </span>optimization {
-<a name="l00016"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html">00016</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_twice_differentiable_function.html">TwiceDifferentiableFunction</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a> {
-<a name="l00017"></a>00017  <span class="keyword">public</span>:
-<a name="l00018"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">00018</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;TwiceDifferentiableFunction&gt;</a> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">Ptr</a>;
-<a name="l00019"></a>00019 
-<a name="l00020"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#ad623bd671eaeb4eb94280ccafed3d092">00020</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#ad623bd671eaeb4eb94280ccafed3d092">TwiceDifferentiableFunction</a>(<span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)
-<a name="l00021"></a>00021     : <a class="code" href="classoptimization_1_1_differentiable_function.html">DifferentiableFunction</a>(dimension) { }
-<a name="l00022"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a9ddb8258fd408ab49c8985f2f3cb4f92">00022</a>   <span class="keyword">virtual</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a9ddb8258fd408ab49c8985f2f3cb4f92">~TwiceDifferentiableFunction</a>() { }
-<a name="l00023"></a>00023 
-<a name="l00027"></a>00027   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#aa0a56f0a5f6357423bc5084c636082d5">computeValue</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span> = 0;
-<a name="l00031"></a>00031   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#af4066ba0c46aa0fefcb7fb5b31f0ca6d">computeGradient</a>(<span class="keyword">const</span> Point&amp; point, Vector* gradient) <span class="keyword">const</span> = 0;
-<a name="l00032"></a>00032 
-<a name="l00036"></a>00036   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a8604ea201b7cf8f3a4c206c5a365f4e6">computeHessian</a>(<span class="keyword">const</span> Point&amp; point, Matrix* hessian) <span class="keyword">const</span> = 0;
-<a name="l00037"></a>00037 
-<a name="l00038"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">00038</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TwiceDifferentiableFunction&quot;</span>;}
-<a name="l00039"></a>00039 };
-<a name="l00040"></a>00040 }
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TWICE_DIFFERENTIABLE_FUNCTION_H_</span>
+<a name="l00017"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html">00017</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in .">DifferentiableFunction</a> {
+<a name="l00018"></a>00018  <span class="keyword">public</span>:
+<a name="l00019"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">00019</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;TwiceDifferentiableFunction&gt;</a> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">Ptr</a>;
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#ad623bd671eaeb4eb94280ccafed3d092">00021</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#ad623bd671eaeb4eb94280ccafed3d092">TwiceDifferentiableFunction</a>(<span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)
+<a name="l00022"></a>00022     : <a class="code" href="classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in .">DifferentiableFunction</a>(dimension) { }
+<a name="l00023"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a9ddb8258fd408ab49c8985f2f3cb4f92">00023</a>   <span class="keyword">virtual</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a9ddb8258fd408ab49c8985f2f3cb4f92">~TwiceDifferentiableFunction</a>() { }
+<a name="l00024"></a>00024 
+<a name="l00028"></a>00028   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a871398ee011ae9cbceedeb53526ec9d0">computeHessian</a>(<span class="keyword">const</span> Point&amp; point, Matrix* hessian) <span class="keyword">const</span>;
+<a name="l00029"></a>00029 
+<a name="l00030"></a><a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">00030</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;TwiceDifferentiableFunction&quot;</span>; }
+<a name="l00031"></a>00031  <span class="keyword">private</span>:
+<a name="l00035"></a>00035   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">computeValueImpl</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span> = 0;
+<a name="l00039"></a>00039   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">computeGradientImpl</a>(<span class="keyword">const</span> Point&amp; point,
+<a name="l00040"></a>00040                                    Vector* gradient) <span class="keyword">const</span> = 0;
+<a name="l00044"></a>00044   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">computeHessianImpl</a>(<span class="keyword">const</span> Point&amp; point,
+<a name="l00045"></a>00045                                   Matrix* hessian) <span class="keyword">const</span> = 0;
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 }
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TWICE_DIFFERENTIABLE_FUNCTION_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

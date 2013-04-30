@@ -118,33 +118,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 
 <a name="l00015"></a>00015 <span class="keyword">namespace </span>ltr {
 <a name="l00016"></a>00016 <span class="keyword">namespace </span>decision_tree {
-<a name="l00024"></a><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html">00024</a> <span class="keyword">class </span><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html">ObliviousTreeSplitter</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1decision__tree_1_1_base_splitter.html">BaseSplitter</a> {
-<a name="l00025"></a>00025  <span class="keyword">public</span>:
-<a name="l00026"></a><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">00026</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;ObliviousTreeSplitter&gt;</a> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">Ptr</a>;
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244">00028</a>   <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244">ObliviousTreeSplitter</a>() {}
+<a name="l00026"></a><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html">00026</a> <span class="keyword">class </span><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html" title="Implements ObliviousTree splitting aplorithm.">ObliviousTreeSplitter</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1decision__tree_1_1_base_splitter.html">BaseSplitter</a> {
+<a name="l00027"></a>00027  <span class="keyword">public</span>:
+<a name="l00028"></a><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">00028</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;ObliviousTreeSplitter&gt;</a> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">Ptr</a>;
 <a name="l00029"></a>00029 
-<a name="l00030"></a>00030   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244">ObliviousTreeSplitter</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters);
+<a name="l00030"></a><a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244">00030</a>   <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244">ObliviousTreeSplitter</a>() {}
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#adbaf4b1aa2565bac664d21e4217f3379">toString</a>() <span class="keyword">const</span>;
+<a name="l00032"></a>00032   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#a0cb12eaee566fefb4f2c98c07cf72244">ObliviousTreeSplitter</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters);
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad2eb2eb079dffa963b07b37411e40e5a">generateNextLayer</a>(<span class="keyword">const</span> vector&lt;VertexWithData&gt;&amp; layer,
-<a name="l00035"></a>00035                                  vector&lt;VertexWithData&gt;* next_layer) <span class="keyword">const</span>;
-<a name="l00036"></a>00036   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad8861bdf41f82b525e6cdc75f6e162de">findBestThresholdWithQualityByFeature</a>(
-<a name="l00037"></a>00037                                 <span class="keyword">const</span> vector&lt;VertexWithData&gt;&amp; layer,
-<a name="l00038"></a>00038                                 vector&lt;Threshold&gt;&amp; thresholds,
-<a name="l00039"></a>00039                                 <span class="keywordtype">int</span> feature_index,
-<a name="l00040"></a>00040                                 <span class="keywordtype">double</span>* layer_split_quality) <span class="keyword">const</span>;
-<a name="l00041"></a>00041 };
-<a name="l00042"></a>00042 };
+<a name="l00034"></a>00034   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#adbaf4b1aa2565bac664d21e4217f3379">toString</a>() <span class="keyword">const</span>;
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad2eb2eb079dffa963b07b37411e40e5a">generateNextLayer</a>(<span class="keyword">const</span> vector&lt;VertexWithData&gt;&amp; layer,
+<a name="l00037"></a>00037                                  vector&lt;VertexWithData&gt;* next_layer) <span class="keyword">const</span>;
+<a name="l00038"></a>00038   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad8861bdf41f82b525e6cdc75f6e162de">findBestThresholdWithQualityByFeature</a>(
+<a name="l00039"></a>00039                                 <span class="keyword">const</span> vector&lt;VertexWithData&gt;&amp; layer,
+<a name="l00040"></a>00040                                 vector&lt;Threshold&gt;&amp; thresholds,
+<a name="l00041"></a>00041                                 <span class="keywordtype">int</span> feature_index,
+<a name="l00042"></a>00042                                 <span class="keywordtype">double</span>* layer_split_quality) <span class="keyword">const</span>;
 <a name="l00043"></a>00043 };
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 <span class="preprocessor">#endif  // LTR_LEARNERS_DECISION_TREE_OBLIVIOUS_TREE_SPLITTER_H_</span>
+<a name="l00044"></a>00044 };
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="preprocessor">#endif  // LTR_LEARNERS_DECISION_TREE_OBLIVIOUS_TREE_SPLITTER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

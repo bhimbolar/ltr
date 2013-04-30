@@ -107,11 +107,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::TridFunction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for Trid function in \(\mathbb{R}^n\). \(f(x) = \sum_{i = 1}^{n} (x_i - 1)^2 - \sum_{i = 2}^n x_i*x_{i-1}\).  
+ <a href="classoptimization_1_1_trid_function.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="trid__function_8h_source.html">trid_function.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -119,11 +124,16 @@ Inheritance diagram for optimization::TridFunction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptimization_1_1_trid_function__inherit__graph.png" border="0" usemap="#optimization_1_1_trid_function_inherit__map" alt="Inheritance graph"/></div>
 <map name="optimization_1_1_trid_function_inherit__map" id="optimization_1_1_trid_function_inherit__map">
-<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
+<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_trid_function-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a036c32eb2a70ec77eba64df3f40efbc4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="classoptimization_1_1_trid_function.html">TridFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a036c32eb2a70ec77eba64df3f40efbc4">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a239eac08a922b38766dd5b8b4b142ee0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a239eac08a922b38766dd5b8b4b142ee0">TridFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
@@ -132,7 +142,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab36d9c7c148d037b5ddc1d34bfe2ce3b"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#ab36d9c7c148d037b5ddc1d34bfe2ce3b">gradient</a> (const Point &amp;point) const </td></tr>
 <tr class="memitem:ae16190a80300eb4d18701787e1cb9a26"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#ae16190a80300eb4d18701787e1cb9a26">hessian</a> (const Point &amp;point) const </td></tr>
 <tr class="memitem:a07fc8ff8297730fc488ebde73e201f52"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a07fc8ff8297730fc488ebde73e201f52">getDefaultAlias</a> () const </td></tr>
+<tr class="memitem:a239eac08a922b38766dd5b8b4b142ee0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a239eac08a922b38766dd5b8b4b142ee0">TridFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
+<tr class="memitem:af7f7ed1b8aaa654bdce3514404264df1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#af7f7ed1b8aaa654bdce3514404264df1">~TridFunction</a> ()</td></tr>
+<tr class="memitem:a07fc8ff8297730fc488ebde73e201f52"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a07fc8ff8297730fc488ebde73e201f52">getDefaultAlias</a> () const </td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a77633d5c1d116c505567b9abe0408eeb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a77633d5c1d116c505567b9abe0408eeb">computeValueImpl</a> (const Point &amp;point) const </td></tr>
+<tr class="memitem:abc54132ebd7929a8bdf0d5a7dc845bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#abc54132ebd7929a8bdf0d5a7dc845bf1">computeGradientImpl</a> (const Point &amp;point, Vector *<a class="el" href="classoptimization_1_1_trid_function.html#ab36d9c7c148d037b5ddc1d34bfe2ce3b">gradient</a>) const </td></tr>
+<tr class="memitem:a75ae5b8cea7032ab8584e32c3013d6da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html#a75ae5b8cea7032ab8584e32c3013d6da">computeHessianImpl</a> (const Point &amp;point, Matrix *<a class="el" href="classoptimization_1_1_trid_function.html#ae16190a80300eb4d18701787e1cb9a26">hessian</a>) const </td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Class for Trid function in \(\mathbb{R}^n\). \(f(x) = \sum_{i = 1}^{n} (x_i - 1)^2 - \sum_{i = 2}^n x_i*x_{i-1}\). </p>
+<p>Class for Trid function in \(\mathbb{R}^n\).</p>
+<p>Get more info on <a href="http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2904.htm">http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2904.htm</a></p>
+<p>\(f(x) = \sum_{i = 1}^{n} (x_i - 1)^2 - \sum_{i = 2}^n x_i*x_{i-1}\) <br/>
+ Get more info on <a href="http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2904.htm">http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2904.htm</a> </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a036c32eb2a70ec77eba64df3f40efbc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classoptimization_1_1_trid_function.html">TridFunction</a>&gt; <a class="el" href="classoptimization_1_1_trid_function.html#a036c32eb2a70ec77eba64df3f40efbc4">optimization::TridFunction::Ptr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a239eac08a922b38766dd5b8b4b142ee0"></a>
 <div class="memitem">
@@ -167,7 +207,141 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a239eac08a922b38766dd5b8b4b142ee0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_trid_function.html#a239eac08a922b38766dd5b8b4b142ee0">optimization::TridFunction::TridFunction</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dimension</em></td><td>)</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af7f7ed1b8aaa654bdce3514404264df1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_trid_function.html#af7f7ed1b8aaa654bdce3514404264df1">optimization::TridFunction::~TridFunction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="abc54132ebd7929a8bdf0d5a7dc845bf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_trid_function.html#abc54132ebd7929a8bdf0d5a7dc845bf1">optimization::TridFunction::computeGradientImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector *&#160;</td>
+          <td class="paramname"><em>gradient</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeGradient method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75ae5b8cea7032ab8584e32c3013d6da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_trid_function.html#a75ae5b8cea7032ab8584e32c3013d6da">optimization::TridFunction::computeHessianImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix *&#160;</td>
+          <td class="paramname"><em>hessian</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeHessian method. </p>
+<p>compute diag elements of hessian</p>
+<p>compute another elements</p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77633d5c1d116c505567b9abe0408eeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_trid_function.html#a77633d5c1d116c505567b9abe0408eeb">optimization::TridFunction::computeValueImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeValue method. </p>
+<p>f(x) = sum_squares - prod</p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07fc8ff8297730fc488ebde73e201f52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classoptimization_1_1_trid_function.html#a07fc8ff8297730fc488ebde73e201f52">optimization::TridFunction::getDefaultAlias</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a07fc8ff8297730fc488ebde73e201f52"></a>
 <div class="memitem">
 <div class="memproto">
@@ -239,13 +413,15 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>ltr/optimization/functions/test_functions/unconstrained/trid_function/<a class="el" href="trid__function_8h_source.html">trid_function.h</a></li>
+<li>ltr/optimization/test_problems/<a class="el" href="unconstrained__functions_8h_source.html">unconstrained_functions.h</a></li>
 <li>ltr/optimization/functions/test_functions/unconstrained/trid_function/<a class="el" href="trid__function_8cc.html">trid_function.cc</a></li>
+<li>ltr/optimization/test_problems/<a class="el" href="unconstrained__functions_8cc.html">unconstrained_functions.cc</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

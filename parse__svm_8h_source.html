@@ -120,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="keyword">namespace </span>ltr {
 <a name="l00018"></a>00018 <span class="keyword">namespace </span>io_utility {
-<a name="l00021"></a><a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html">00021</a> <span class="keyword">class </span><a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html" title="Parse SVM light format (http://svmlight.joachims.org/)">SVMParser</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1io__utility_1_1_parser.html">Parser</a> {
+<a name="l00021"></a><a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html">00021</a> <span class="keyword">class </span><a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html" title="Parse SVM light format (http://svmlight.joachims.org/)">SVMParser</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1io__utility_1_1_parser.html" title="This class allows to parse strings into Objects and serialize Objects into strings.">Parser</a> {
 <a name="l00022"></a>00022  <span class="keyword">protected</span>:
 <a name="l00023"></a>00023   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ab6517003b4cd2514763eb5df14eb06c3">parseDataInfo</a>(istream&amp; in, <span class="comment">// NOLINT</span>
 <a name="l00024"></a>00024                              <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>* feature_info,
@@ -134,11 +134,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a>00032 
 <a name="l00033"></a>00033   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#a12cf3cd7fb986dcf3a8313c3f1a94430">saveObject</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj, ostream&amp; stream); <span class="comment">// NOLINT</span>
 <a name="l00034"></a>00034 
-<a name="l00035"></a>00035   <a class="code" href="classltr_1_1_data_set.html">PairwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#aee6c347decfc7a58691f8842b89a3e17">buildPairwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
+<a name="l00035"></a>00035   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">PairwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#aee6c347decfc7a58691f8842b89a3e17">buildPairwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
 <a name="l00036"></a>00036                                        <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
 <a name="l00037"></a>00037                                        <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info);
 <a name="l00038"></a>00038 
-<a name="l00039"></a>00039   <a class="code" href="classltr_1_1_data_set.html">ListwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ae7a591ef830ebd23ef7c7fc82e1e5769">buildListwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
+<a name="l00039"></a>00039   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ListwiseDataSet</a> <a class="code" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ae7a591ef830ebd23ef7c7fc82e1e5769">buildListwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
 <a name="l00040"></a>00040                                        <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
 <a name="l00041"></a>00041                                        <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info);
 <a name="l00042"></a>00042 };
@@ -150,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

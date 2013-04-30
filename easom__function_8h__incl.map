@@ -1,14 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="220,80,559,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="703,304,881,331"/>
-<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="267,155,568,181"/>
-<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="659,379,925,405"/>
-<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="445,453,608,480"/>
-<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="632,453,744,480"/>
-<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="768,453,816,480"/>
-<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="840,453,931,480"/>
-<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="955,453,1088,480"/>
-<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="523,528,661,555"/>
-<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="328,229,549,256"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="535,304,679,331"/>
+<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="225,80,564,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="767,304,945,331"/>
+<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="281,155,583,181"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="723,379,989,405"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="509,453,672,480"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="696,453,808,480"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="832,453,880,480"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="904,453,995,480"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="1019,453,1152,480"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="587,528,725,555"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="363,229,584,256"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="599,304,743,331"/>
 </map>

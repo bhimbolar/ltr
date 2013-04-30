@@ -25,5 +25,6 @@ var searchData=
   ['dimensions_5fcount',['dimensions_count',['../classltr_1_1utility_1_1_multi_array.html#a648e28abef5cd411a3d8f8ba509ecbb9',1,'ltr::utility::MultiArray::dimensions_count()'],['../classltr_1_1utility_1_1_multi_array_3_01_t_00_011_01_4.html#a31c57d0c0e46c15a07ec8af8372a41c3',1,'ltr::utility::MultiArray&lt; T, 1 &gt;::dimensions_count()']]],
   ['distance',['distance',['../classltr_1_1_euclidean_metric.html#aef1868bbd4ecc6b7acb0f99743d9190b',1,'ltr::EuclideanMetric::distance()'],['../classltr_1_1_manhattan_metric.html#a7b017140a044b9527fbd3870212dcf52',1,'ltr::ManhattanMetric::distance()'],['../classltr_1_1_base_metric.html#a354a6dec54b3b4a798d88cdb91037c13',1,'ltr::BaseMetric::distance()'],['../tester_8cc.html#ad5ee61e39011a1bb01b5dd9297c6c46a',1,'distance():&#160;tester.cc']]],
   ['divide',['Divide',['../classltr_1_1gp_1_1_divide.html#a64b5e999de07bb22e97b1e3f8d03d279',1,'ltr::gp::Divide']]],
-  ['doublerand',['doubleRand',['../classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf',1,'ltr::utility::Randomizer']]]
+  ['doublerand',['doubleRand',['../classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf',1,'ltr::utility::Randomizer']]],
+  ['dsvparser',['DSVParser',['../classltr_1_1io__utility_1_1_d_s_v_parser.html#a972b56077315aff75d71ab373d4259de',1,'ltr::io_utility::DSVParser']]]
 ];

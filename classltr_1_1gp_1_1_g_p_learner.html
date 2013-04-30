@@ -118,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">GPLearner</a> Implements genetic programming approach applied to learning to rank.  
+<p>Implements genetic programming approach applied to learning to rank.  
  <a href="classltr_1_1gp_1_1_g_p_learner.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gp__learner_8h_source.html">gp_learner.h</a>&gt;</code></p>
@@ -171,7 +171,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a8a15a30e9c8e883a5794f44c96fb46a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7">initContext</a> ()</td></tr>
 <tr class="memitem:a53466308695b1b8ee1ecfe4ccc17d77f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a53466308695b1b8ee1ecfe4ccc17d77f">initPopulation</a> ()</td></tr>
 <tr class="memitem:a3db132affb2577028cb3068d6c35c936"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a3db132affb2577028cb3068d6c35c936">evaluationStepImpl</a> ()</td></tr>
-<tr class="memdesc:a3db132affb2577028cb3068d6c35c936"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function implements the changes made in the population at each algorithm's iteration.  <a href="#a3db132affb2577028cb3068d6c35c936"></a><br/></td></tr>
 <tr class="memitem:af39e7a2381c9aa7c016969d1ec8d05e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#af39e7a2381c9aa7c016969d1ec8d05e1">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html">GPScorer</a> *scorer)</td></tr>
 <tr class="memitem:a4711875bc272b7054a364e59fc5b26df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">evaluatePopulation</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -189,10 +188,10 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TElement&gt;<br/>
 class ltr::gp::GPLearner&lt; TElement &gt;</h3>
 
-<p><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">GPLearner</a> Implements genetic programming approach applied to learning to rank. </p>
+<p>Implements genetic programming approach applied to learning to rank. </p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">TElement</td><td>object container of those the dataset consists (it can be <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html">ObjectList</a>). </td></tr>
+    <tr><td class="paramname">TElement</td><td>object container of those the dataset consists (it can be <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet...">ObjectList</a>). </td></tr>
   </table>
   </dd>
 </dl>
@@ -241,11 +240,10 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor creates a <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">GPLearner</a>. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">measure</td><td>shared pointer to the measure that would be maximized on a dataset within learning. </td></tr>
-    <tr><td class="paramname">parameters</td><td>the <a class="el" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a> parameters from which would overwrite the default parameters. </td></tr>
+    <tr><td class="paramname">measure</td><td>is a shared pointer to the measure that would be maximized on a dataset within learning. </td></tr>
+    <tr><td class="paramname">parameters</td><td>is the <a class="el" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a> parameters from which would overwrite the default parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,10 +266,10 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor creates a <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">GPLearner</a>. But leaves p_measure uninitialized. </p>
+<p>Constructor creates a <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner</a>. But leaves p_measure uninitialized. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">parameters</td><td>the <a class="el" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a> parameters from which would overwrite the default parameters. </td></tr>
+    <tr><td class="paramname">parameters</td><td>is the <a class="el" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a> parameters from which would overwrite the default parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -466,10 +464,10 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Method evaluates the population, it sets individ tree fitness to the average on the data set metric value. </p>
+<p>Method evaluates the population, it sets individ tree fitness to the average on the data set metric value.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>data set for calculation of the average metric value </td></tr>
+    <tr><td class="paramname">data</td><td>is data set for calculation of the average metric value </td></tr>
   </table>
   </dd>
 </dl>
@@ -491,7 +489,6 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
 <p>This function implements the changes made in the population at each algorithm's iteration. </p>
 
 </div>
@@ -812,10 +809,11 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>The implementation of genetic programming optimization approach. </p>
+<p>The implementation of genetic programming optimization approach.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td><a class="el" href="classltr_1_1_data_set.html">DataSet</a> on which the measure would be maximized within the learning procedure. </td></tr>
+    <tr><td class="paramname">data</td><td>is <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a> on which the measure would be maximized within the learning procedure. </td></tr>
+    <tr><td class="paramname">scorer</td><td>is learning scorer </td></tr>
   </table>
   </dd>
 </dl>
@@ -883,7 +881,7 @@ template&lt;typename TElement &gt; </div>
 <p>The function sets up context and population from the given <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">scorer</td><td><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a> whose population and context would be set up. </td></tr>
+    <tr><td class="paramname">scorer</td><td>is <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a> whose population and context would be set up. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1136,7 +1134,7 @@ template&lt;typename TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

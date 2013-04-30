@@ -120,43 +120,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="keyword">namespace </span>ltr {
 <a name="l00018"></a>00018 <span class="keyword">namespace </span>io_utility {
-<a name="l00021"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html">00021</a> <span class="keyword">class </span><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html" title="Parse ARFF format (http://www.cs.waikato.ac.nz/ml/weka/arff.html)">ARFFParser</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1io__utility_1_1_parser.html">Parser</a> {
-<a name="l00022"></a>00022  <span class="keyword">protected</span>:
-<a name="l00023"></a>00023   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a8d759ce832d89619371f7395f38102c0">parseDataInfo</a>(istream&amp; in, <span class="comment">// NOLINT</span>
-<a name="l00024"></a>00024                              <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>* feature_info,
-<a name="l00025"></a>00025                              <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>* label_info);
-<a name="l00026"></a>00026   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a3ebf5716e3a3805e2cbcfa218200abef">parseObject</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; record,
-<a name="l00027"></a>00027                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
-<a name="l00028"></a>00028                            <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info,
-<a name="l00029"></a>00029                            <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>* <span class="keywordtype">object</span>);
-<a name="l00030"></a>00030 
-<a name="l00031"></a>00031  <span class="keyword">public</span>:
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#ad54c0bc4aeef60486f83945751d0a47f">saveObject</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj, ostream&amp; stream); <span class="comment">// NOLINT</span>
-<a name="l00034"></a>00034   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#abbd2adee41e88751b64d800724c810ee">saveObjects</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
-<a name="l00035"></a>00035                    <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
-<a name="l00036"></a>00036                    <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info,
-<a name="l00037"></a>00037                    ostream&amp; stream); <span class="comment">// NOLINT</span>
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039   <a class="code" href="classltr_1_1_data_set.html">PairwiseDataSet</a>
-<a name="l00040"></a>00040       <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#acd8d82b088187eadfedd01675e35e612">buildPairwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
-<a name="l00041"></a>00041                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
-<a name="l00042"></a>00042                            <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info);
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <a class="code" href="classltr_1_1_data_set.html">ListwiseDataSet</a>
-<a name="l00045"></a>00045       <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#af2822268b59e5642dcf0f8fc68d45d9d">buildListwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
-<a name="l00046"></a>00046                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
-<a name="l00047"></a>00047                            <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info);
-<a name="l00048"></a>00048 };
+<a name="l00022"></a><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html">00022</a> <span class="keyword">class </span><a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html" title="Parse ARFF format (http://www.cs.waikato.ac.nz/ml/weka/arff.html)">ARFFParser</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1io__utility_1_1_parser.html" title="This class allows to parse strings into Objects and serialize Objects into strings.">Parser</a> {
+<a name="l00023"></a>00023  <span class="keyword">protected</span>:
+<a name="l00024"></a>00024   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a8d759ce832d89619371f7395f38102c0">parseDataInfo</a>(istream&amp; in, <span class="comment">// NOLINT</span>
+<a name="l00025"></a>00025                              <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>* feature_info,
+<a name="l00026"></a>00026                              <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>* label_info);
+<a name="l00027"></a>00027   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a3ebf5716e3a3805e2cbcfa218200abef">parseObject</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; record,
+<a name="l00028"></a>00028                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
+<a name="l00029"></a>00029                            <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info,
+<a name="l00030"></a>00030                            <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>* <span class="keywordtype">object</span>);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032  <span class="keyword">public</span>:
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#ad54c0bc4aeef60486f83945751d0a47f">saveObject</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj, ostream&amp; stream); <span class="comment">// NOLINT</span>
+<a name="l00035"></a>00035   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#abbd2adee41e88751b64d800724c810ee">saveObjects</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
+<a name="l00036"></a>00036                    <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
+<a name="l00037"></a>00037                    <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info,
+<a name="l00038"></a>00038                    ostream&amp; stream); <span class="comment">// NOLINT</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">PairwiseDataSet</a>
+<a name="l00041"></a>00041       <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#acd8d82b088187eadfedd01675e35e612">buildPairwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
+<a name="l00042"></a>00042                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
+<a name="l00043"></a>00043                            <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info);
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ListwiseDataSet</a>
+<a name="l00046"></a>00046       <a class="code" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#af2822268b59e5642dcf0f8fc68d45d9d">buildListwiseDataSet</a>(<span class="keyword">const</span> vector&lt;Object&gt;&amp; objects,
+<a name="l00047"></a>00047                            <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; feature_info,
+<a name="l00048"></a>00048                            <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>&amp; label_info);
 <a name="l00049"></a>00049 };
 <a name="l00050"></a>00050 };
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052 <span class="preprocessor">#endif  // LTR_DATA_UTILITY_PARSERS_PARSE_ARFF_H_</span>
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#endif  // LTR_DATA_UTILITY_PARSERS_PARSE_ARFF_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

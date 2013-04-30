@@ -138,8 +138,8 @@ Learner</h2>
 <li><a class="el" href="classltr_1_1_learner.html#a597e9bfbc0e1bb388eeac58dc160685d">make </a>, <a class="el" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific </a> - return the pointer to a new scorer, see the example below to understand the difference</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer </a> - set the initial approximation of a scorer</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">reset </a> - reset a current state of the learner</li>
-<li><a class="el" href="">addDataPreprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Data preprocessors</a></li>
-<li><a class="el" href="">addFeatureConverterLearner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Feature converters</a></li>
+<li><a class="el" href="classltr_1_1_learner.html#aeb070480758feabd335eeb00afc82344">set_data_preprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Data preprocessors</a></li>
+<li><a class="el" href="classltr_1_1_learner.html#a0ddc20f3a14fded8873f813c7581ea11">set_feature_converter_learner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Feature converters</a></li>
 </ul>
 <h2><a class="anchor" id="Scorer"></a>
 Scorer</h2>
@@ -157,9 +157,9 @@ Scorer</h2>
 <tr>
 <td><a class="el" href="classltr_1_1_linear_learner.html">LinearLearner</a> </td><td><a href="http://en.wikipedia.org/wiki/Ordinary_least_squares">http://en.wikipedia.org/wiki/Ordinary_least_squares</a> </td><td><a class="el" href="classltr_1_1_linear_scorer.html">LinearScorer</a> </td></tr>
 <tr>
-<td><a class="el" href="classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach.">NNLearner</a> </td><td><a href="http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm">http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm</a> </td><td><a class="el" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a> </td></tr>
+<td><a class="el" href="classltr_1_1_n_n_learner.html" title="Implements nearest neighbor approach.">NNLearner</a> </td><td><a href="http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm">http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm</a> </td><td><a class="el" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a> </td></tr>
 <tr>
-<td><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">gp::GPLearner</a> </td><td><a href="http://en.wikipedia.org/wiki/Genetic_programming">http://en.wikipedia.org/wiki/Genetic_programming</a> </td><td><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">gp::GPScorer</a> </td></tr>
+<td><a class="el" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">gp::GPLearner</a> </td><td><a href="http://en.wikipedia.org/wiki/Genetic_programming">http://en.wikipedia.org/wiki/Genetic_programming</a> </td><td><a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">gp::GPScorer</a> </td></tr>
 <tr>
 <td><a class="el" href="classltr_1_1composition_1_1_composition_learner.html" title="Learner, wich uses other learner (weak learner), produces with it different scorers and tie them into...">composition::CompositionLearner</a> </td><td><a class="el" href="_tutorial_composition.html">Composition of algorithms</a> </td><td><a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">composition::CompositionScorer</a> </td></tr>
 <tr>
@@ -171,7 +171,7 @@ Scorer</h2>
 Measure</h2>
 <p><a class="el" href="classltr_1_1_measure.html">Measure</a> public fuctions:</p>
 <ul>
-<li><a class="el" href="">operator() </a> - compute how well predicted labels aproximates actual</li>
+<li><a class="el" href="classltr_1_1_measure.html#abcc33fa395f9ae83e4efdd6f1b80685f">operator() </a> - compute how well predicted labels aproximates actual</li>
 </ul>
 <table class="doxtable">
 <tr>
@@ -288,7 +288,7 @@ f(x, y) = 10 + 1 * x + 1 * y
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:13 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -15,6 +15,7 @@ var searchData=
   ['linearcompositiontest',['LinearCompositionTest',['../class_linear_composition_test.html',1,'']]],
   ['linearconverter',['LinearConverter',['../classltr_1_1_linear_converter.html',1,'ltr']]],
   ['linearfunction',['LinearFunction',['../classoptimization_1_1_linear_function.html',1,'optimization']]],
+  ['linearinequalityset',['LinearInequalitySet',['../classoptimization_1_1_linear_inequality_set.html',1,'optimization']]],
   ['linearlearner',['LinearLearner',['../classltr_1_1_linear_learner.html',1,'ltr']]],
   ['linearscorer',['LinearScorer',['../classltr_1_1_linear_scorer.html',1,'ltr']]],
   ['listtoallpairsconverter',['ListToAllPairsConverter',['../classltr_1_1utility_1_1_list_to_all_pairs_converter.html',1,'ltr::utility']]],

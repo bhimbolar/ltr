@@ -21,6 +21,7 @@ var searchData=
   ['fisherdiscriminant',['FisherDiscriminant',['../classltr_1_1_fisher_discriminant.html',1,'ltr']]],
   ['fisherdiscriminantdensitylearner',['FisherDiscriminantDensityLearner',['../classltr_1_1_fisher_discriminant_density_learner.html',1,'ltr']]],
   ['fisherdiscriminantlearner',['FisherDiscriminantLearner',['../classltr_1_1_fisher_discriminant_learner.html',1,'ltr']]],
+  ['fixednumberofcomponentsrule',['FixedNumberOfComponentsRule',['../classltr_1_1_fixed_number_of_components_rule.html',1,'ltr']]],
   ['function',['Function',['../classoptimization_1_1_function.html',1,'optimization']]],
   ['functor',['Functor',['../classltr_1_1_functor.html',1,'ltr']]],
   ['functor_3c_20double_20_3e',['Functor< double >',['../classltr_1_1_functor.html',1,'ltr']]]

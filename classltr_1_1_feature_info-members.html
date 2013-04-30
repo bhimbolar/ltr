@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 This is the complete list of members for <a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a>, including all inherited members.<table>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(const OneFeatureInfo &amp;info)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a6fa3412fc337509f0c34ae333732adfc">addFeature</a>(FeatureType type=NUMERIC, const NominalFeatureValues &amp;values=NominalFeatureValues())</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#ae15cc0782a2131df1d3975d9034e4b7d">addFeature</a>(FeatureType type=NUMERIC, const NominalFeatureValues &amp;values=NominalFeatureValues(), const string &amp;name=&quot;&quot;)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">addNominalFeatureValue</a>(int feature_index, const string &amp;value)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#ae62583a2da6ccc47de9f1c2a1ed4a8ac">addNominalFeatureValues</a>(int feature_index, const vector&lt; string &gt; &amp;values)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a8bf580d8b517f46345e0f821a653665e">clear</a>()</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
@@ -121,6 +121,7 @@ This is the complete list of members for <a class="el" href="classltr_1_1_featur
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>() const </td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a></td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a33a80926ea7b77cb8f3bb437b6955c61">FeatureInfo</a>(int feature_count=0, FeatureType type=NUMERIC)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a22f5d229438952dd0023bd66e915caeb">getFeatureName</a>(int feature_index) const </td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">getFeatureType</a>(int feature_index) const </td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a9bd017d68a4a1d7edfa809811f7d9bf6">getNominalFeatureValue</a>(int feature_index, int value_hash) const </td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a367596c5f7b2f781da3a7c456fa9ae47">getNominalFeatureValue</a>(int feature_index, double value_hash) const </td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
@@ -132,12 +133,13 @@ This is the complete list of members for <a class="el" href="classltr_1_1_featur
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a354b7168c894f296a33618d5e5524521">operator[]</a>(int feature_index)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">Ptr</a> typedef</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">resize</a>(int feature_count, FeatureType type=NUMERIC)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#af77ac55847d73e3c4f1383db821410fc">setFeatureName</a>(int feature_index, const string &amp;name)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">setFeatureType</a>(int feature_index, FeatureType type)</td><td><a class="el" href="classltr_1_1_feature_info.html">ltr::FeatureInfo</a></td><td><code> [inline]</code></td></tr>
 </table></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

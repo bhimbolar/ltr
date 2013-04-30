@@ -116,6 +116,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Template class that implements <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>.  
+ <a href="classltr_1_1_data_set.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="data__set_8h_source.html">data_set.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ltr::DataSet&lt; TElement &gt;:</div>
@@ -169,10 +172,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aee6835ad051b537d83bca52b0225b753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#aee6835ad051b537d83bca52b0225b753">weights_</a></td></tr>
 </table>
-<h3>template&lt;typename TElement&gt;<br/>
- class ltr::DataSet&lt; TElement &gt;</h3>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename TElement&gt;<br/>
+class ltr::DataSet&lt; TElement &gt;</h3>
 
-<hr/><h2>Member Typedef Documentation</h2>
+<p>Template class that implements <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">Type</td><td>of elements, which would be stored in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. The elements should implement <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a> container interface. Those could be <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a> or <a class="el" href="classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet...">ObjectList</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a39572627b0bef56071c46c5d789feba7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +196,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Shared pointer type to the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Shared pointer type to the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -216,7 +227,13 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>The constructor creates a data set to store objects with the given <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature_info</td><td>Information about features. </td></tr>
+    <tr><td class="paramname">label_info</td><td>Information about labels. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -235,7 +252,6 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Destructor </p>
 
 </div>
 </div>
@@ -256,7 +272,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds an element(<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html">ObjectList</a> etc.) with DEFAULT_ELEMENT_WEIGHT to the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Adds an element(<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet...">ObjectList</a> etc.) with DEFAULT_ELEMENT_WEIGHT to the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -286,7 +302,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds an element(<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html">ObjectList</a> etc.) with given weight to the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Adds an element(<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet...">ObjectList</a> etc.) with given weight to the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -306,7 +322,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns a constant link to the ith element of the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns a constant link to the ith element of the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -326,7 +342,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns a link to the ith element of the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns a link to the ith element of the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -345,7 +361,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Deletes all elements from the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Deletes all elements from the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -364,7 +380,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates a new <a class="el" href="classltr_1_1_data_set.html">DataSet</a> containing the copies of the elements in the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Creates a new <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a> containing the copies of the elements in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -384,7 +400,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Deletes the element with given index from the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Deletes the element with given index from the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -403,7 +419,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns the number of features in objects of the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns the number of features in objects of the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -422,7 +438,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>, objects with the same <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> are allowed to be stored in the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>, objects with the same <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> are allowed to be stored in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -441,6 +457,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
+<p>Returns default alias of class </p>
 
 <p>Implements <a class="el" href="classltr_1_1_aliaser.html#ad724414573ec5df2cc00bb5aaa57e9d0">ltr::Aliaser</a>.</p>
 
@@ -481,7 +498,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Getters and setters for label value type information </p>
+<p>Getter for label value type information </p>
 
 </div>
 </div>
@@ -501,7 +518,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates new <a class="el" href="classltr_1_1_data_set.html">DataSet</a>, which contains easy copies of elements with given indexes (easy means that they share objects' resources: feature vectors, objects' meat information). </p>
+<p>Creates new <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>, which contains easy copies of elements with given indexes (easy means that they share objects' resources: feature vectors, objects' meat information).</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">indices</td><td>the indices of elements from data based on those the subset is build. </td></tr>
@@ -527,7 +544,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds an element(<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html">ObjectList</a> etc.) to the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Adds an element(<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>, <a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a>, <a class="el" href="classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet...">ObjectList</a> etc.) to the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -547,7 +564,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns a constant link to the ith element of the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns a constant link to the ith element of the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -567,7 +584,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns a link to the ith element of the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns a link to the ith element of the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -607,6 +624,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
+<p>Setter for label value type information </p>
 
 </div>
 </div>
@@ -636,11 +654,11 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Sets the weight of ith element. </p>
+<p>Sets the weight of ith element.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">element_idx</td><td>index of the element to set up weight. </td></tr>
-    <tr><td class="paramname">new</td><td>weight value. </td></tr>
+    <tr><td class="paramname">element_index</td><td>is an index of the element to set up weight. </td></tr>
+    <tr><td class="paramname">weight</td><td>is a new weight value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -662,7 +680,7 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns the number of elements in the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>Returns the number of elements in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -716,7 +734,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>The information about objects that are stored in the <a class="el" href="classltr_1_1_data_set.html">DataSet</a>. </p>
+<p>The information about objects that are stored in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
 
 </div>
 </div>
@@ -759,7 +777,7 @@ template&lt;typename TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

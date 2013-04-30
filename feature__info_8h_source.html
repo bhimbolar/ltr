@@ -126,139 +126,151 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00028"></a>00028 <span class="keyword">enum</span> FeatureType {NUMERIC, NOMINAL, BOOLEAN};
 <a name="l00032"></a>00032 <span class="keyword">typedef</span> map&lt;int, string&gt; NominalFeatureValues;
 <a name="l00036"></a><a class="code" href="structltr_1_1_one_feature_info.html">00036</a> <span class="keyword">struct </span><a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> {
-<a name="l00037"></a><a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">00037</a>   <a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">OneFeatureInfo</a>(FeatureType type = NUMERIC,
-<a name="l00038"></a>00038                  NominalFeatureValues values = NominalFeatureValues())
-<a name="l00039"></a>00039   : <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>(type),
-<a name="l00040"></a>00040     <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>(values) {}
-<a name="l00041"></a><a class="code" href="structltr_1_1_one_feature_info.html#ae08df5774289330c177d2d3807e1eb76">00041</a>   <span class="keyword">explicit</span> <a class="code" href="structltr_1_1_one_feature_info.html#a528b6d098f94f9f611226a7abead7dee">OneFeatureInfo</a>(<span class="keyword">const</span> vector&lt;string&gt;&amp; values)
-<a name="l00042"></a>00042   : <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>(NOMINAL) {
-<a name="l00043"></a>00043     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value_index = 0; value_index &lt; values.size(); ++value_index) {
-<a name="l00044"></a>00044       <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>[hash(values[value_index])] = values[value_index];
-<a name="l00045"></a>00045     }
-<a name="l00046"></a>00046   }
-<a name="l00050"></a><a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">00050</a>   FeatureType <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>;
-<a name="l00054"></a><a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">00054</a>   NominalFeatureValues <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>;
-<a name="l00058"></a><a class="code" href="structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606">00058</a>   <span class="keywordtype">string</span> <a class="code" href="structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606">name_</a>;
-<a name="l00059"></a>00059 };
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061 <span class="keyword">typedef</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>;
+<a name="l00037"></a><a class="code" href="structltr_1_1_one_feature_info.html#a164117f44f6fe7363b7ab870686d92f2">00037</a>   <a class="code" href="structltr_1_1_one_feature_info.html#a164117f44f6fe7363b7ab870686d92f2">OneFeatureInfo</a>(FeatureType type = NUMERIC,
+<a name="l00038"></a>00038                  NominalFeatureValues values = NominalFeatureValues(),
+<a name="l00039"></a>00039                  <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name = <span class="stringliteral">&quot;&quot;</span>)
+<a name="l00040"></a>00040   : <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>(type),
+<a name="l00041"></a>00041     <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>(values),
+<a name="l00042"></a>00042     <a class="code" href="structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606">name_</a>(name) {}
+<a name="l00043"></a><a class="code" href="structltr_1_1_one_feature_info.html#ae08df5774289330c177d2d3807e1eb76">00043</a>   <span class="keyword">explicit</span> <a class="code" href="structltr_1_1_one_feature_info.html#a164117f44f6fe7363b7ab870686d92f2">OneFeatureInfo</a>(<span class="keyword">const</span> vector&lt;string&gt;&amp; values)
+<a name="l00044"></a>00044   : <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>(NOMINAL) {
+<a name="l00045"></a>00045     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value_index = 0; value_index &lt; values.size(); ++value_index) {
+<a name="l00046"></a>00046       <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>[hash(values[value_index])] = values[value_index];
+<a name="l00047"></a>00047     }
+<a name="l00048"></a>00048   }
+<a name="l00052"></a><a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">00052</a>   FeatureType <a class="code" href="structltr_1_1_one_feature_info.html#ac29dff6794d68c96e46cc7063d23621b">type_</a>;
+<a name="l00056"></a><a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">00056</a>   NominalFeatureValues <a class="code" href="structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb">values_</a>;
+<a name="l00060"></a><a class="code" href="structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606">00060</a>   <span class="keywordtype">string</span> <a class="code" href="structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606">name_</a>;
+<a name="l00061"></a>00061 };
 <a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; rhs);
-<a name="l00066"></a><a class="code" href="classltr_1_1_feature_info.html">00066</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> {
-<a name="l00067"></a>00067  <span class="keyword">public</span>:
-<a name="l00070"></a><a class="code" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">00070</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;FeatureInfo&gt;</a> <a class="code" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">Ptr</a>;
-<a name="l00074"></a><a class="code" href="classltr_1_1_feature_info.html#a33a80926ea7b77cb8f3bb437b6955c61">00074</a>   <a class="code" href="classltr_1_1_feature_info.html#a33a80926ea7b77cb8f3bb437b6955c61">FeatureInfo</a>(<span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a> = 0, FeatureType type = NUMERIC)
-<a name="l00075"></a>00075              : <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>(<a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>, type) {}
-<a name="l00078"></a><a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">00078</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>()<span class="keyword"> const </span>{
-<a name="l00079"></a>00079       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size();
-<a name="l00080"></a>00080   }
-<a name="l00083"></a><a class="code" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">00083</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">resize</a>(<span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>, FeatureType type = NUMERIC) {
-<a name="l00084"></a>00084       <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.resize(feature_count, <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type));
-<a name="l00085"></a>00085   }
-<a name="l00088"></a><a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">00088</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(<span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; info) {
-<a name="l00089"></a>00089     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.push_back(info);
-<a name="l00090"></a>00090   }
-<a name="l00093"></a><a class="code" href="classltr_1_1_feature_info.html#a6fa3412fc337509f0c34ae333732adfc">00093</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(FeatureType type = NUMERIC,
-<a name="l00094"></a>00094                   <span class="keyword">const</span> NominalFeatureValues&amp; values = NominalFeatureValues()) {
-<a name="l00095"></a>00095     <a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(<a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type, values));
-<a name="l00096"></a>00096   }
-<a name="l00099"></a><a class="code" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">00099</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">addNominalFeatureValue</a>(<span class="keywordtype">int</span> feature_index, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
-<a name="l00100"></a>00100     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00101"></a>00101     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00102"></a>00102     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_[hash(value)] = value;
-<a name="l00103"></a>00103   }
-<a name="l00104"></a><a class="code" href="classltr_1_1_feature_info.html#ae62583a2da6ccc47de9f1c2a1ed4a8ac">00104</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ae62583a2da6ccc47de9f1c2a1ed4a8ac">addNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index,
-<a name="l00105"></a>00105                                <span class="keyword">const</span> vector&lt;string&gt;&amp; values) {
-<a name="l00106"></a>00106     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value_index = 0; value_index &lt; values.size(); ++value_index) {
-<a name="l00107"></a>00107       <a class="code" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">addNominalFeatureValue</a>(feature_index, values[value_index]);
-<a name="l00108"></a>00108     }
-<a name="l00109"></a>00109   }
-<a name="l00110"></a><a class="code" href="classltr_1_1_feature_info.html#a9bd017d68a4a1d7edfa809811f7d9bf6">00110</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_info.html#a9bd017d68a4a1d7edfa809811f7d9bf6">getNominalFeatureValue</a>(<span class="keywordtype">int</span> feature_index, <span class="keywordtype">int</span> value_hash)<span class="keyword"> const </span>{
-<a name="l00111"></a>00111     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00112"></a>00112     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00113"></a>00113     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(value_hash) !=
-<a name="l00114"></a>00114           <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.end());
-<a name="l00115"></a>00115     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(value_hash)-&gt;second;
-<a name="l00116"></a>00116   }
-<a name="l00117"></a><a class="code" href="classltr_1_1_feature_info.html#a367596c5f7b2f781da3a7c456fa9ae47">00117</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_info.html#a367596c5f7b2f781da3a7c456fa9ae47">getNominalFeatureValue</a>(<span class="keywordtype">int</span> feature_index, <span class="keywordtype">double</span> value_hash)<span class="keyword"> const </span>{
-<a name="l00118"></a>00118     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00119"></a>00119     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00120"></a>00120     <span class="keywordtype">int</span> int_value_hash = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(value_hash);
-<a name="l00121"></a>00121     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(int_value_hash) !=
-<a name="l00122"></a>00122           <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.end());
-<a name="l00123"></a>00123     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(int_value_hash)-&gt;second;
-<a name="l00124"></a>00124   }
-<a name="l00125"></a><a class="code" href="classltr_1_1_feature_info.html#ab03a1b00cbcf7d88c2287f52d0e6c4d1">00125</a>   <span class="keyword">const</span> NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#ab03a1b00cbcf7d88c2287f52d0e6c4d1">getNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
-<a name="l00126"></a>00126     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00127"></a>00127     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00128"></a>00128     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
-<a name="l00129"></a>00129   }
-<a name="l00130"></a><a class="code" href="classltr_1_1_feature_info.html#a32f9f9e82541278e2c17209d10f78c58">00130</a>   NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#a32f9f9e82541278e2c17209d10f78c58">getNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index) {
-<a name="l00131"></a>00131     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00132"></a>00132     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00133"></a>00133     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
-<a name="l00134"></a>00134   }
-<a name="l00135"></a><a class="code" href="classltr_1_1_feature_info.html#a2221d2ee2e4cbdee9d92807e3c8419c8">00135</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ab03a1b00cbcf7d88c2287f52d0e6c4d1">getNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index,
-<a name="l00136"></a>00136                                vector&lt;string&gt;* result)<span class="keyword"> const </span>{
-<a name="l00137"></a>00137     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00138"></a>00138     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00139"></a>00139     <span class="keyword">const</span> NominalFeatureValues&amp; values_map =
-<a name="l00140"></a>00140         <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
-<a name="l00141"></a>00141     result-&gt;clear();
-<a name="l00142"></a>00142     <span class="keywordflow">for</span> (NominalFeatureValues::const_iterator value_index = values_map.begin();
-<a name="l00143"></a>00143          value_index != values_map.end();
-<a name="l00144"></a>00144          ++value_index) {
-<a name="l00145"></a>00145       result-&gt;push_back(value_index-&gt;second);
-<a name="l00146"></a>00146     }
-<a name="l00147"></a>00147   }
-<a name="l00148"></a><a class="code" href="classltr_1_1_feature_info.html#a0e4b18c5daed953e68a27a136d93d76b">00148</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a0e4b18c5daed953e68a27a136d93d76b">clearNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index) {
-<a name="l00149"></a>00149     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00150"></a>00150     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
-<a name="l00151"></a>00151     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.clear();
-<a name="l00152"></a>00152   }
-<a name="l00155"></a><a class="code" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">00155</a>   FeatureType <a class="code" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">getFeatureType</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
-<a name="l00156"></a>00156     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00157"></a>00157     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_;
-<a name="l00158"></a>00158   }
-<a name="l00161"></a><a class="code" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">00161</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">setFeatureType</a>(<span class="keywordtype">int</span> feature_index, FeatureType type) {
-<a name="l00162"></a>00162     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00163"></a>00163     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ = type;
-<a name="l00164"></a>00164   }
-<a name="l00165"></a>00165 
-<a name="l00166"></a><a class="code" href="classltr_1_1_feature_info.html#aeae6a2c4fe26ac9d160a64cea7a53d4f">00166</a>   <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; <a class="code" href="classltr_1_1_feature_info.html#aeae6a2c4fe26ac9d160a64cea7a53d4f">operator[]</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
-<a name="l00167"></a>00167     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00168"></a>00168     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index];
-<a name="l00169"></a>00169   }
-<a name="l00170"></a>00170 
-<a name="l00171"></a><a class="code" href="classltr_1_1_feature_info.html#a354b7168c894f296a33618d5e5524521">00171</a>   <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; <a class="code" href="classltr_1_1_feature_info.html#a354b7168c894f296a33618d5e5524521">operator[]</a>(<span class="keywordtype">int</span> feature_index) {
+<a name="l00063"></a>00063 <span class="keyword">typedef</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a> <a class="code" href="structltr_1_1_one_feature_info.html">LabelInfo</a>;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; rhs);
+<a name="l00068"></a><a class="code" href="classltr_1_1_feature_info.html">00068</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> {
+<a name="l00069"></a>00069  <span class="keyword">public</span>:
+<a name="l00072"></a><a class="code" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">00072</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;FeatureInfo&gt;</a> <a class="code" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">Ptr</a>;
+<a name="l00076"></a><a class="code" href="classltr_1_1_feature_info.html#a33a80926ea7b77cb8f3bb437b6955c61">00076</a>   <a class="code" href="classltr_1_1_feature_info.html#a33a80926ea7b77cb8f3bb437b6955c61">FeatureInfo</a>(<span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a> = 0, FeatureType type = NUMERIC)
+<a name="l00077"></a>00077              : <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>(<a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>, type) {}
+<a name="l00080"></a><a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">00080</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>()<span class="keyword"> const </span>{
+<a name="l00081"></a>00081       <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size();
+<a name="l00082"></a>00082   }
+<a name="l00085"></a><a class="code" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">00085</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ada9d073392d626e6ae45663dd0f5c4f6">resize</a>(<span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_info.html#ac401b4c48ca120c5c2ebba7007602a37">feature_count</a>, FeatureType type = NUMERIC) {
+<a name="l00086"></a>00086       <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.resize(feature_count, <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type));
+<a name="l00087"></a>00087   }
+<a name="l00090"></a><a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">00090</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(<span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; info) {
+<a name="l00091"></a>00091     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.push_back(info);
+<a name="l00092"></a>00092   }
+<a name="l00095"></a><a class="code" href="classltr_1_1_feature_info.html#ae15cc0782a2131df1d3975d9034e4b7d">00095</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(FeatureType type = NUMERIC,
+<a name="l00096"></a>00096                   <span class="keyword">const</span> NominalFeatureValues&amp; values = NominalFeatureValues(),
+<a name="l00097"></a>00097                   <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name = <span class="stringliteral">&quot;&quot;</span>) {
+<a name="l00098"></a>00098     <a class="code" href="classltr_1_1_feature_info.html#accdb3049365f1daa6df0999e6f04c665">addFeature</a>(<a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>(type, values, name));
+<a name="l00099"></a>00099   }
+<a name="l00102"></a><a class="code" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">00102</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">addNominalFeatureValue</a>(<span class="keywordtype">int</span> feature_index, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
+<a name="l00103"></a>00103     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00104"></a>00104     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00105"></a>00105     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_[hash(value)] = value;
+<a name="l00106"></a>00106   }
+<a name="l00107"></a><a class="code" href="classltr_1_1_feature_info.html#ae62583a2da6ccc47de9f1c2a1ed4a8ac">00107</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ae62583a2da6ccc47de9f1c2a1ed4a8ac">addNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index,
+<a name="l00108"></a>00108                                <span class="keyword">const</span> vector&lt;string&gt;&amp; values) {
+<a name="l00109"></a>00109     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> value_index = 0; value_index &lt; values.size(); ++value_index) {
+<a name="l00110"></a>00110       <a class="code" href="classltr_1_1_feature_info.html#ae624c0d725b10d08c2541fd8ca88cb25">addNominalFeatureValue</a>(feature_index, values[value_index]);
+<a name="l00111"></a>00111     }
+<a name="l00112"></a>00112   }
+<a name="l00113"></a><a class="code" href="classltr_1_1_feature_info.html#a9bd017d68a4a1d7edfa809811f7d9bf6">00113</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_info.html#a9bd017d68a4a1d7edfa809811f7d9bf6">getNominalFeatureValue</a>(<span class="keywordtype">int</span> feature_index, <span class="keywordtype">int</span> value_hash)<span class="keyword"> const </span>{
+<a name="l00114"></a>00114     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00115"></a>00115     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00116"></a>00116     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(value_hash) !=
+<a name="l00117"></a>00117           <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.end());
+<a name="l00118"></a>00118     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(value_hash)-&gt;second;
+<a name="l00119"></a>00119   }
+<a name="l00120"></a><a class="code" href="classltr_1_1_feature_info.html#a367596c5f7b2f781da3a7c456fa9ae47">00120</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_info.html#a367596c5f7b2f781da3a7c456fa9ae47">getNominalFeatureValue</a>(<span class="keywordtype">int</span> feature_index, <span class="keywordtype">double</span> value_hash)<span class="keyword"> const </span>{
+<a name="l00121"></a>00121     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00122"></a>00122     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00123"></a>00123     <span class="keywordtype">int</span> int_value_hash = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(value_hash);
+<a name="l00124"></a>00124     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(int_value_hash) !=
+<a name="l00125"></a>00125           <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.end());
+<a name="l00126"></a>00126     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.find(int_value_hash)-&gt;second;
+<a name="l00127"></a>00127   }
+<a name="l00128"></a><a class="code" href="classltr_1_1_feature_info.html#ab03a1b00cbcf7d88c2287f52d0e6c4d1">00128</a>   <span class="keyword">const</span> NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#ab03a1b00cbcf7d88c2287f52d0e6c4d1">getNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
+<a name="l00129"></a>00129     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00130"></a>00130     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00131"></a>00131     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
+<a name="l00132"></a>00132   }
+<a name="l00133"></a><a class="code" href="classltr_1_1_feature_info.html#a32f9f9e82541278e2c17209d10f78c58">00133</a>   NominalFeatureValues&amp; <a class="code" href="classltr_1_1_feature_info.html#a32f9f9e82541278e2c17209d10f78c58">getNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index) {
+<a name="l00134"></a>00134     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00135"></a>00135     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00136"></a>00136     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
+<a name="l00137"></a>00137   }
+<a name="l00138"></a><a class="code" href="classltr_1_1_feature_info.html#a2221d2ee2e4cbdee9d92807e3c8419c8">00138</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#ab03a1b00cbcf7d88c2287f52d0e6c4d1">getNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index,
+<a name="l00139"></a>00139                                vector&lt;string&gt;* result)<span class="keyword"> const </span>{
+<a name="l00140"></a>00140     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00141"></a>00141     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00142"></a>00142     <span class="keyword">const</span> NominalFeatureValues&amp; values_map =
+<a name="l00143"></a>00143         <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_;
+<a name="l00144"></a>00144     result-&gt;clear();
+<a name="l00145"></a>00145     <span class="keywordflow">for</span> (NominalFeatureValues::const_iterator value_index = values_map.begin();
+<a name="l00146"></a>00146          value_index != values_map.end();
+<a name="l00147"></a>00147          ++value_index) {
+<a name="l00148"></a>00148       result-&gt;push_back(value_index-&gt;second);
+<a name="l00149"></a>00149     }
+<a name="l00150"></a>00150   }
+<a name="l00151"></a><a class="code" href="classltr_1_1_feature_info.html#a0e4b18c5daed953e68a27a136d93d76b">00151</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a0e4b18c5daed953e68a27a136d93d76b">clearNominalFeatureValues</a>(<span class="keywordtype">int</span> feature_index) {
+<a name="l00152"></a>00152     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00153"></a>00153     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ == NOMINAL);
+<a name="l00154"></a>00154     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].values_.clear();
+<a name="l00155"></a>00155   }
+<a name="l00158"></a><a class="code" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">00158</a>   FeatureType <a class="code" href="classltr_1_1_feature_info.html#a57d3eeea58cb56cd73b41b500ca7e50e">getFeatureType</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
+<a name="l00159"></a>00159     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00160"></a>00160     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_;
+<a name="l00161"></a>00161   }
+<a name="l00164"></a><a class="code" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">00164</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a3da69d7c86b6598e2482d11ddc597e22">setFeatureType</a>(<span class="keywordtype">int</span> feature_index, FeatureType type) {
+<a name="l00165"></a>00165     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00166"></a>00166     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].type_ = type;
+<a name="l00167"></a>00167   }
+<a name="l00168"></a>00168 
+<a name="l00171"></a><a class="code" href="classltr_1_1_feature_info.html#a22f5d229438952dd0023bd66e915caeb">00171</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_info.html#a22f5d229438952dd0023bd66e915caeb">getFeatureName</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
 <a name="l00172"></a>00172     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
-<a name="l00173"></a>00173     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index];
+<a name="l00173"></a>00173     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].name_;
 <a name="l00174"></a>00174   }
-<a name="l00175"></a>00175 
-<a name="l00176"></a><a class="code" href="classltr_1_1_feature_info.html#a8bf580d8b517f46345e0f821a653665e">00176</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a8bf580d8b517f46345e0f821a653665e">clear</a>() {
-<a name="l00177"></a>00177     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.clear();
-<a name="l00178"></a>00178   }
-<a name="l00179"></a>00179 
-<a name="l00180"></a><a class="code" href="classltr_1_1_feature_info.html#a199e9c107d82a515fbbc1ece9050e0ef">00180</a>   <span class="keywordtype">bool</span> <a class="code" href="classltr_1_1_feature_info.html#a199e9c107d82a515fbbc1ece9050e0ef">empty</a>() {
-<a name="l00181"></a>00181     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.empty();
-<a name="l00182"></a>00182   }
-<a name="l00183"></a>00183 
-<a name="l00184"></a>00184   <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classltr_1_1_feature_info.html#abddca4c2582d89457c846d017cf19641">operator==</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; rhs);
-<a name="l00185"></a>00185 
-<a name="l00186"></a>00186  <span class="keyword">private</span>:
-<a name="l00187"></a><a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">00187</a>   vector&lt;OneFeatureInfo&gt; <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>;
-<a name="l00188"></a>00188 };
-<a name="l00189"></a>00189 
-<a name="l00190"></a>00190 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; rhs);
+<a name="l00177"></a><a class="code" href="classltr_1_1_feature_info.html#af77ac55847d73e3c4f1383db821410fc">00177</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#af77ac55847d73e3c4f1383db821410fc">setFeatureName</a>(<span class="keywordtype">int</span> feature_index, <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name) {
+<a name="l00178"></a>00178     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00179"></a>00179     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index].name_ = name;
+<a name="l00180"></a>00180   }
+<a name="l00181"></a>00181 
+<a name="l00182"></a><a class="code" href="classltr_1_1_feature_info.html#aeae6a2c4fe26ac9d160a64cea7a53d4f">00182</a>   <span class="keyword">const</span> <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; <a class="code" href="classltr_1_1_feature_info.html#aeae6a2c4fe26ac9d160a64cea7a53d4f">operator[]</a>(<span class="keywordtype">int</span> feature_index)<span class="keyword"> const </span>{
+<a name="l00183"></a>00183     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00184"></a>00184     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index];
+<a name="l00185"></a>00185   }
+<a name="l00186"></a>00186 
+<a name="l00187"></a><a class="code" href="classltr_1_1_feature_info.html#a354b7168c894f296a33618d5e5524521">00187</a>   <a class="code" href="structltr_1_1_one_feature_info.html">OneFeatureInfo</a>&amp; <a class="code" href="classltr_1_1_feature_info.html#a354b7168c894f296a33618d5e5524521">operator[]</a>(<span class="keywordtype">int</span> feature_index) {
+<a name="l00188"></a>00188     <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(feature_index &lt; (<span class="keywordtype">int</span>)<a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.size() &amp;&amp; feature_index &gt;= 0);
+<a name="l00189"></a>00189     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>[feature_index];
+<a name="l00190"></a>00190   }
 <a name="l00191"></a>00191 
-<a name="l00192"></a>00192 <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; rhs);
-<a name="l00193"></a>00193 };
-<a name="l00194"></a>00194 <span class="preprocessor">#endif  // LTR_DATA_FEATURE_INFO_H_</span>
+<a name="l00192"></a><a class="code" href="classltr_1_1_feature_info.html#a8bf580d8b517f46345e0f821a653665e">00192</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_info.html#a8bf580d8b517f46345e0f821a653665e">clear</a>() {
+<a name="l00193"></a>00193     <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.clear();
+<a name="l00194"></a>00194   }
+<a name="l00195"></a>00195 
+<a name="l00196"></a><a class="code" href="classltr_1_1_feature_info.html#a199e9c107d82a515fbbc1ece9050e0ef">00196</a>   <span class="keywordtype">bool</span> <a class="code" href="classltr_1_1_feature_info.html#a199e9c107d82a515fbbc1ece9050e0ef">empty</a>() {
+<a name="l00197"></a>00197     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>.empty();
+<a name="l00198"></a>00198   }
+<a name="l00199"></a>00199 
+<a name="l00200"></a>00200   <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classltr_1_1_feature_info.html#abddca4c2582d89457c846d017cf19641">operator==</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; rhs);
+<a name="l00201"></a>00201 
+<a name="l00202"></a>00202  <span class="keyword">private</span>:
+<a name="l00203"></a><a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">00203</a>   vector&lt;OneFeatureInfo&gt; <a class="code" href="classltr_1_1_feature_info.html#a777a16aabd170b8f81d8dc52feb66cc3">feature_info_</a>;
+<a name="l00204"></a>00204 };
+<a name="l00205"></a>00205 
+<a name="l00206"></a>00206 <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; rhs);
+<a name="l00207"></a>00207 
+<a name="l00208"></a>00208 <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>&amp; rhs);
+<a name="l00209"></a>00209 };
+<a name="l00210"></a>00210 <span class="preprocessor">#endif  // LTR_DATA_FEATURE_INFO_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

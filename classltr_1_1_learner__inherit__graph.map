@@ -19,8 +19,8 @@
 <area shape="rect" href="$classltr_1_1_quadratic_discriminant_learner.html" title="ltr::QuadraticDiscriminantLearner\&lt; TElement \&gt;" alt="" coords="1301,107,1592,133"/>
 <area shape="rect" href="$classltr_1_1composition_1_1_composition_learner.html" title="Learner, wich uses other learner (weak learner), produces with it different scorers and tie them into..." alt="" coords="837,208,1149,235"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree_learner.html" title="DecisionTreeLearner Builds decision tree for given data." alt="" coords="832,259,1155,285"/>
-<area shape="rect" href="$classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank." alt="" coords="892,309,1095,336"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank." alt="" coords="892,309,1095,336"/>
 <area shape="rect" href="$classltr_1_1_linear_learner.html" title="ltr::LinearLearner\&lt; TElement \&gt;" alt="" coords="895,360,1092,387"/>
-<area shape="rect" href="$classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach." alt="" coords="904,411,1083,437"/>
+<area shape="rect" href="$classltr_1_1_n_n_learner.html" title="Implements nearest neighbor approach." alt="" coords="904,411,1083,437"/>
 <area shape="rect" href="$classltr_1_1_best_feature_learner.html" title="ltr::BestFeatureLearner\&lt; TElement \&gt;" alt="" coords="877,461,1109,488"/>
 </map>

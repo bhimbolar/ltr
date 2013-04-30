@@ -131,41 +131,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00027"></a>00027 
 <a name="l00031"></a>00031 <span class="keyword">typedef</span> <span class="keywordtype">double</span> Label;
 <a name="l00032"></a>00032 
-<a name="l00037"></a>00037 <span class="keyword">typedef</span> map&lt;Label, VectorXd, std::less&lt;Label&gt;,
-<a name="l00038"></a>00038             aligned_allocator&lt;std::pair&lt;Label, VectorXd&gt; &gt; &gt; LabelToLinearFactor;
-<a name="l00039"></a>00039 
-<a name="l00044"></a>00044 <span class="keyword">typedef</span> map&lt;Label, double&gt; LabelToLinearBias;
-<a name="l00045"></a>00045 
-<a name="l00050"></a><a class="code" href="classltr_1_1_fisher_discriminant.html">00050</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_fisher_discriminant.html" title="probability density estimator that uses Fisher Linear Discriminant approach">FisherDiscriminant</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">BaseProbabilityDensityEstimator</a> {
-<a name="l00051"></a>00051  <span class="keyword">public</span>:
-<a name="l00052"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">00052</a>   <a class="code" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">FisherDiscriminant</a>() {
-<a name="l00053"></a>00053   }
-<a name="l00054"></a>00054 
-<a name="l00055"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#a725e9656d4ccd2065202fd39f512b3e1">00055</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_fisher_discriminant.html#a725e9656d4ccd2065202fd39f512b3e1">FisherDiscriminant</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
-<a name="l00056"></a>00056   }
-<a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#aeec9feaaaf19d7a5747e8da90c7a8633">00058</a>   <a class="code" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">FisherDiscriminant</a>(<span class="keyword">const</span> LabelToLinearFactor&amp; linear_factors,
-<a name="l00059"></a>00059                      <span class="keyword">const</span> LabelToLinearBias&amp; linear_biases) :
-<a name="l00060"></a>00060     <a class="code" href="classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703">linear_factors_</a>(linear_factors),
-<a name="l00061"></a>00061     <a class="code" href="classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572">linear_biases_</a>(linear_biases) {
-<a name="l00062"></a>00062   }
+<a name="l00036"></a>00036 <span class="keyword">typedef</span> map&lt;Label, VectorXd, std::less&lt;Label&gt;,
+<a name="l00037"></a>00037             aligned_allocator&lt;std::pair&lt;Label, VectorXd&gt; &gt; &gt; LabelToLinearFactor;
+<a name="l00038"></a>00038 
+<a name="l00042"></a>00042 <span class="keyword">typedef</span> map&lt;Label, double&gt; LabelToLinearBias;
+<a name="l00043"></a>00043 
+<a name="l00048"></a><a class="code" href="classltr_1_1_fisher_discriminant.html">00048</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_fisher_discriminant.html" title="Probability density estimator that uses Fisher Linear Discriminant approach.">FisherDiscriminant</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">BaseProbabilityDensityEstimator</a> {
+<a name="l00049"></a>00049  <span class="keyword">public</span>:
+<a name="l00050"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">00050</a>   <a class="code" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">FisherDiscriminant</a>() {
+<a name="l00051"></a>00051   }
+<a name="l00052"></a>00052 
+<a name="l00053"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#a725e9656d4ccd2065202fd39f512b3e1">00053</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_fisher_discriminant.html#a725e9656d4ccd2065202fd39f512b3e1">FisherDiscriminant</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
+<a name="l00054"></a>00054   }
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#aeec9feaaaf19d7a5747e8da90c7a8633">00056</a>   <a class="code" href="classltr_1_1_fisher_discriminant.html#a5a05c996039bca11aa656ea280a9c648">FisherDiscriminant</a>(<span class="keyword">const</span> LabelToLinearFactor&amp; linear_factors,
+<a name="l00057"></a>00057                      <span class="keyword">const</span> LabelToLinearBias&amp; linear_biases) :
+<a name="l00058"></a>00058     <a class="code" href="classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703">linear_factors_</a>(linear_factors),
+<a name="l00059"></a>00059     <a class="code" href="classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572">linear_biases_</a>(linear_biases) {
+<a name="l00060"></a>00060   }
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_fisher_discriminant.html#a7ecc039242acf8fe8f69b252b8418ed2">estimate</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>, <span class="keyword">const</span> <span class="keywordtype">double</span> label) <span class="keyword">const</span>;
 <a name="l00063"></a>00063 
-<a name="l00064"></a>00064   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_fisher_discriminant.html#a7ecc039242acf8fe8f69b252b8418ed2">estimate</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>, <span class="keyword">const</span> <span class="keywordtype">double</span> label) <span class="keyword">const</span>;
+<a name="l00064"></a>00064   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
 <a name="l00065"></a>00065 
-<a name="l00066"></a>00066   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00067"></a>00067 
-<a name="l00068"></a>00068  <span class="keyword">private</span>:
-<a name="l00069"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703">00069</a>   LabelToLinearFactor <a class="code" href="classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703">linear_factors_</a>;
-<a name="l00070"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572">00070</a>   LabelToLinearBias <a class="code" href="classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572">linear_biases_</a>;
-<a name="l00071"></a>00071 };
-<a name="l00072"></a>00072 };
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 <span class="preprocessor">#endif  // LTR_DENSITY_ESTIMATORS_FISHER_DISCRIMINANT_H_</span>
+<a name="l00066"></a>00066  <span class="keyword">private</span>:
+<a name="l00067"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703">00067</a>   LabelToLinearFactor <a class="code" href="classltr_1_1_fisher_discriminant.html#a9f9c8192ae032c09819b11b45c1f5703">linear_factors_</a>;
+<a name="l00068"></a><a class="code" href="classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572">00068</a>   LabelToLinearBias <a class="code" href="classltr_1_1_fisher_discriminant.html#ae7429f197eb38b4ddad84ee298804572">linear_biases_</a>;
+<a name="l00069"></a>00069 };
+<a name="l00070"></a>00070 };
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072 <span class="preprocessor">#endif  // LTR_DENSITY_ESTIMATORS_FISHER_DISCRIMINANT_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

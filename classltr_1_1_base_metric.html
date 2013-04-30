@@ -120,7 +120,7 @@ Inheritance diagram for ltr::BaseMetric:</div>
 <div class="dyncontent">
 <div class="center"><img src="classltr_1_1_base_metric__inherit__graph.png" border="0" usemap="#ltr_1_1_base_metric_inherit__map" alt="Inheritance graph"/></div>
 <map name="ltr_1_1_base_metric_inherit__map" id="ltr_1_1_base_metric_inherit__map">
-<area shape="rect" href="classltr_1_1_euclidean_metric.html" title="ltr::EuclideanMetric" alt="" coords="25,155,159,181"/><area shape="rect" href="classltr_1_1_manhattan_metric.html" title="ltr::ManhattanMetric" alt="" coords="183,155,319,181"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,5,85,32"/><area shape="rect" href="classltr_1_1_parameterized.html" title="ltr::Parameterized" alt="" coords="109,5,232,32"/><area shape="rect" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="256,5,363,32"/></map>
+<area shape="rect" href="classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects." alt="" coords="25,155,159,181"/><area shape="rect" href="classltr_1_1_manhattan_metric.html" title="Manhattan metric on two objects." alt="" coords="183,155,319,181"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,5,85,32"/><area shape="rect" href="classltr_1_1_parameterized.html" title="ltr::Parameterized" alt="" coords="109,5,232,32"/><area shape="rect" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ..." alt="" coords="256,5,363,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classltr_1_1_base_metric-members.html">List of all members.</a></p>
@@ -167,6 +167,7 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
+<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
 
 <p>Reimplemented from <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">ltr::Serializable</a>.</p>
 
@@ -236,7 +237,8 @@ DESCRIPTION</h2>
 <p>Value of metric(distance between objects) </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td>and rhs - elements to calculate measure on </td></tr>
+    <tr><td class="paramname">lhs</td><td>is a first element to calculate measure on </td></tr>
+    <tr><td class="paramname">rhs</td><td>is a second element to calculate measure on </td></tr>
   </table>
   </dd>
 </dl>
@@ -252,7 +254,7 @@ DESCRIPTION</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

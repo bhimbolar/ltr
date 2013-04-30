@@ -109,11 +109,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::LinearFunction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for defining linear functions in \(\mathbb{R}^n\).  
+ <a href="classoptimization_1_1_linear_function.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="linear__function_8h_source.html">linear_function.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -121,7 +125,7 @@ Inheritance diagram for optimization::LinearFunction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptimization_1_1_linear_function__inherit__graph.png" border="0" usemap="#optimization_1_1_linear_function_inherit__map" alt="Inheritance graph"/></div>
 <map name="optimization_1_1_linear_function_inherit__map" id="optimization_1_1_linear_function_inherit__map">
-<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
+<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_linear_function-members.html">List of all members.</a></p>
@@ -136,18 +140,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36dff8aac802dcd94e9588953c7ecf1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a36dff8aac802dcd94e9588953c7ecf1f">LinearFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
 <tr class="memitem:abcd5568695c4bf8b3349f58cca8541aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#abcd5568695c4bf8b3349f58cca8541aa">LinearFunction</a> (Vector factor, double shift=0.0)</td></tr>
 <tr class="memitem:a08b92636394978f23e95e9ea4d75e17d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a08b92636394978f23e95e9ea4d75e17d">~LinearFunction</a> ()</td></tr>
-<tr class="memitem:aa1897d0e226f078670dc00efd7d2285d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aa1897d0e226f078670dc00efd7d2285d">computeValue</a> (const Point &amp;point) const </td></tr>
-<tr class="memitem:aecffa021b19190539a1e8a7590cec769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aecffa021b19190539a1e8a7590cec769">computeGradient</a> (const Point &amp;point, Vector *gradient) const </td></tr>
-<tr class="memitem:a8fa5a482a128fb7d4613b8b5d5d264b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a8fa5a482a128fb7d4613b8b5d5d264b9">computeHessian</a> (const Point &amp;point, Matrix *hessian) const </td></tr>
 <tr class="memitem:ae05e6d610fead5af2f12625b2e536260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#ae05e6d610fead5af2f12625b2e536260">GET_SET</a> (Vector, factor)</td></tr>
 <tr class="memitem:a662b243e5128a1e83bd329a0951f0090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a662b243e5128a1e83bd329a0951f0090">GET_SET</a> (double, shift)</td></tr>
 <tr class="memitem:a9c4d8e8d0908ddf091cf955b83688725"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a9c4d8e8d0908ddf091cf955b83688725">getDefaultAlias</a> () const </td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa2d612fbce9a4ed8b56f624e6a0ed685"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aa2d612fbce9a4ed8b56f624e6a0ed685">computeValueImpl</a> (const Point &amp;point) const </td></tr>
+<tr class="memitem:a27a6a5dc9b255d28356afb3922012ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a27a6a5dc9b255d28356afb3922012ff5">computeGradientImpl</a> (const Point &amp;point, Vector *gradient) const </td></tr>
+<tr class="memitem:aee2abfb10b32ec14bb7d46e1e51a6205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aee2abfb10b32ec14bb7d46e1e51a6205">computeHessianImpl</a> (const Point &amp;point, Matrix *hessian) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a7847ab42ce1099f90e887d33c3d564db"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db">factor_</a></td></tr>
 <tr class="memitem:a95d367a7115b949996a34b92165e06a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2">shift_</a></td></tr>
 </table>
-<hr/><h2>Member Typedef Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Class for defining linear functions in \(\mathbb{R}^n\). </p>
+<p>\(f(x_1...x_n) = a_1*x_1 + ..+ a_n*x_n + b\) </p>
+<dl class="section see"><dt>See also:</dt><dd><a class="el" href="classoptimization_1_1_function.html" title="Abstract class for defining functions in .">Function</a> </dd></dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="aeda1882d0cf2b12dc8f5f06040b4244f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -225,12 +235,12 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="aecffa021b19190539a1e8a7590cec769"></a>
+<a class="anchor" id="a27a6a5dc9b255d28356afb3922012ff5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_linear_function.html#aecffa021b19190539a1e8a7590cec769">optimization::LinearFunction::computeGradient</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_linear_function.html#a27a6a5dc9b255d28356afb3922012ff5">optimization::LinearFunction::computeGradientImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const Point &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
@@ -244,23 +254,23 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
+          <td></td><td> const<code> [private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>compute first derivative of this function in a given point </p>
+<p>Implementation of computeGradient method. </p>
 
-<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#af4066ba0c46aa0fefcb7fb5b31f0ca6d">optimization::TwiceDifferentiableFunction</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">optimization::TwiceDifferentiableFunction</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8fa5a482a128fb7d4613b8b5d5d264b9"></a>
+<a class="anchor" id="aee2abfb10b32ec14bb7d46e1e51a6205"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_linear_function.html#a8fa5a482a128fb7d4613b8b5d5d264b9">optimization::LinearFunction::computeHessian</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_linear_function.html#aee2abfb10b32ec14bb7d46e1e51a6205">optimization::LinearFunction::computeHessianImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const Point &amp;&#160;</td>
           <td class="paramname"><em>point</em>, </td>
@@ -274,34 +284,34 @@ Private Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
+          <td></td><td> const<code> [private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>compute second derivative in given point </p>
+<p>Implementation of computeHessian method. </p>
 
-<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a8604ea201b7cf8f3a4c206c5a365f4e6">optimization::TwiceDifferentiableFunction</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">optimization::TwiceDifferentiableFunction</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa1897d0e226f078670dc00efd7d2285d"></a>
+<a class="anchor" id="aa2d612fbce9a4ed8b56f624e6a0ed685"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classoptimization_1_1_linear_function.html#aa1897d0e226f078670dc00efd7d2285d">optimization::LinearFunction::computeValue</a> </td>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_linear_function.html#aa2d612fbce9a4ed8b56f624e6a0ed685">optimization::LinearFunction::computeValueImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const Point &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td> const<code> [private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>compute value of this function in a given point </p>
+<p>Implementation of computeValue method. </p>
 
-<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#aa0a56f0a5f6357423bc5084c636082d5">optimization::TwiceDifferentiableFunction</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">optimization::TwiceDifferentiableFunction</a>.</p>
 
 </div>
 </div>
@@ -388,7 +398,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>vector of coefficients in linear form </p>
+<p>Vector of coefficients in linear form. </p>
 
 </div>
 </div>
@@ -402,7 +412,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>free term in linear form </p>
+<p>Free term in linear form. </p>
 
 </div>
 </div>
@@ -414,7 +424,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

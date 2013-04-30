@@ -114,32 +114,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="function_8h.html">ltr/optimization/functions/function.h</a>&quot;</span>
 <a name="l00011"></a>00011 
 <a name="l00012"></a>00012 <span class="keyword">namespace </span>optimization {
-<a name="l00020"></a>00020 <span class="keyword">class </span>LinearInequalitySet : <span class="keyword">public</span> Set {
-<a name="l00021"></a>00021  <span class="keyword">public</span>:
-<a name="l00022"></a>00022   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;LinearInequalitySet&gt;</a> Ptr;
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024   LinearInequalitySet(<span class="keyword">const</span> Vector&amp; positive_normal,
-<a name="l00025"></a>00025                       <span class="keywordtype">double</span> shift_);
-<a name="l00029"></a>00029   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isInside(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00033"></a>00033   <span class="keyword">virtual</span> <span class="keywordtype">void</span> computeProjection(<span class="keyword">const</span> Point&amp; point, Point* projection) <span class="keyword">const</span>;
-<a name="l00037"></a>00037   <span class="keyword">virtual</span> <span class="keywordtype">void</span> getBoundaries(Point* top, Point* bottom) <span class="keyword">const</span>;
-<a name="l00041"></a>00041   <span class="keyword">virtual</span> <span class="keywordtype">void</span> sampleRandomPointInside(Point* random_point) <span class="keyword">const</span>;
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(Vector, positive_normal);
-<a name="l00044"></a>00044   <a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">GET_SET</a>(<span class="keywordtype">double</span>, shift);
-<a name="l00045"></a>00045   <span class="keyword">virtual</span> <span class="keywordtype">string</span> getDefaultAlias()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;LinearInequalitySet&quot;</span>; }
-<a name="l00046"></a>00046  <span class="keyword">private</span>:
-<a name="l00050"></a>00050   Vector positive_normal_;
-<a name="l00054"></a>00054   <span class="keywordtype">double</span> shift_;
-<a name="l00055"></a>00055 };
-<a name="l00056"></a>00056 }
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SETS_LINEAR_INEQUALITY_SET_H_</span>
+<a name="l00019"></a><a class="code" href="classoptimization_1_1_linear_inequality_set.html">00019</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_linear_inequality_set.html" title="Implements semi-space define solutions of inequality.">LinearInequalitySet</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_set.html" title="Interface class for sets in .">Set</a> {
+<a name="l00020"></a>00020  <span class="keyword">public</span>:
+<a name="l00021"></a><a class="code" href="classoptimization_1_1_linear_inequality_set.html#a39cd21ad85d24833673f9bca9ac08b17">00021</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;LinearInequalitySet&gt;</a> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a39cd21ad85d24833673f9bca9ac08b17">Ptr</a>;
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023   <a class="code" href="classoptimization_1_1_linear_inequality_set.html#ac7f3db728df9466d261ae3828199eb84">LinearInequalitySet</a>(<span class="keyword">const</span> Vector&amp; positive_normal,
+<a name="l00024"></a>00024                       <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a603194ab3eea9566b15ed38dbebf2bc3">shift_</a>);
+<a name="l00028"></a>00028   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#af78c223d3282607d9fcf26503f06dd6e">isInside</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00032"></a>00032   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a34292db18a2569db3ec0596543bf9ea0">computeProjection</a>(<span class="keyword">const</span> Point&amp; point, Point* projection) <span class="keyword">const</span>;
+<a name="l00036"></a>00036   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a395ad68e483b75e18714e6feabd8efdc">getBoundaries</a>(Point* top, Point* bottom) <span class="keyword">const</span>;
+<a name="l00040"></a>00040   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#aed42eeeec7b89fcd5571e98c5ed97245">sampleRandomPointInside</a>(Point* random_point) <span class="keyword">const</span>;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a9be60d0bc6144abe719dfa58b0ed7258">GET_SET</a>(Vector, positive_normal);
+<a name="l00043"></a>00043   <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a9be60d0bc6144abe719dfa58b0ed7258">GET_SET</a>(<span class="keywordtype">double</span>, shift);
+<a name="l00044"></a><a class="code" href="classoptimization_1_1_linear_inequality_set.html#abd20df57e784be38670b479aab1b1bde">00044</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#abd20df57e784be38670b479aab1b1bde">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;LinearInequalitySet&quot;</span>; }
+<a name="l00045"></a>00045  <span class="keyword">private</span>:
+<a name="l00049"></a><a class="code" href="classoptimization_1_1_linear_inequality_set.html#a38034e8880ffa4eb0586c4a11f73d994">00049</a>   Vector <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a38034e8880ffa4eb0586c4a11f73d994">positive_normal_</a>;
+<a name="l00053"></a><a class="code" href="classoptimization_1_1_linear_inequality_set.html#a603194ab3eea9566b15ed38dbebf2bc3">00053</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_linear_inequality_set.html#a603194ab3eea9566b15ed38dbebf2bc3">shift_</a>;
+<a name="l00054"></a>00054 };
+<a name="l00055"></a>00055 }
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SETS_LINEAR_INEQUALITY_SET_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

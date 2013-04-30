@@ -107,6 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
@@ -114,17 +115,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Class for Easom function in \(\mathbb{R}^2\).  
+ <a href="classoptimization_1_1_easom_function.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="easom__function_8h_source.html">easom_function.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for optimization::EasomFunction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptimization_1_1_easom_function__inherit__graph.png" border="0" usemap="#optimization_1_1_easom_function_inherit__map" alt="Inheritance graph"/></div>
 <map name="optimization_1_1_easom_function_inherit__map" id="optimization_1_1_easom_function_inherit__map">
-<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
+<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_easom_function-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa10ba9f677e45c610d86168a7d1293bb"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="classoptimization_1_1_easom_function.html">EasomFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#aa10ba9f677e45c610d86168a7d1293bb">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a444c33bad0cf1a2dccba778e55d6cd9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">EasomFunction</a> ()</td></tr>
@@ -133,11 +142,47 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d2b87df600e83f535f212b5d42cb533"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a4d2b87df600e83f535f212b5d42cb533">gradient</a> (const Point &amp;point) const </td></tr>
 <tr class="memitem:ad68d5566956c2cdfbd57f3b30e87b9d1"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#ad68d5566956c2cdfbd57f3b30e87b9d1">hessian</a> (const Point &amp;point) const </td></tr>
 <tr class="memitem:ab8f6e42791d4b461cb745896f0d5397a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">getDefaultAlias</a> () const </td></tr>
+<tr class="memitem:a444c33bad0cf1a2dccba778e55d6cd9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">EasomFunction</a> ()</td></tr>
+<tr class="memitem:a0d24fadf348fda178f38ad5110a48ae6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a0d24fadf348fda178f38ad5110a48ae6">~EasomFunction</a> ()</td></tr>
+<tr class="memitem:ab8f6e42791d4b461cb745896f0d5397a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:ae7c41ae8060f1b8a81df7ce5412ea401"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#ae7c41ae8060f1b8a81df7ce5412ea401">squareExp</a> (double variable) const </td></tr>
 <tr class="memitem:a9666b5dfe5766931f8d76c324609326a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a9666b5dfe5766931f8d76c324609326a">partValue</a> (double variable) const </td></tr>
+<tr class="memitem:a34b7fa6bc2ce6f65a7e5d4bfb8e82029"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a34b7fa6bc2ce6f65a7e5d4bfb8e82029">partGradient</a> (double variable) const </td></tr>
+<tr class="memitem:a73c36a9a7e74ae9ae2f0be8eb7261eb7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a73c36a9a7e74ae9ae2f0be8eb7261eb7">partHessian</a> (double variable) const </td></tr>
+<tr class="memitem:a192540f41c1a1b5cb6129fe643117fc1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a192540f41c1a1b5cb6129fe643117fc1">computeValueImpl</a> (const Point &amp;point) const </td></tr>
+<tr class="memitem:aa22f137347d730cda46f0aa851ebc8b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#aa22f137347d730cda46f0aa851ebc8b9">computeGradientImpl</a> (const Point &amp;point, Vector *<a class="el" href="classoptimization_1_1_easom_function.html#a4d2b87df600e83f535f212b5d42cb533">gradient</a>) const </td></tr>
+<tr class="memitem:a6147c0e20563b935f88cb179a3708b1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a6147c0e20563b935f88cb179a3708b1e">computeHessianImpl</a> (const Point &amp;point, Matrix *<a class="el" href="classoptimization_1_1_easom_function.html#ad68d5566956c2cdfbd57f3b30e87b9d1">hessian</a>) const </td></tr>
+<tr class="memitem:ae7c41ae8060f1b8a81df7ce5412ea401"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#ae7c41ae8060f1b8a81df7ce5412ea401">squareExp</a> (double variable) const </td></tr>
+<tr class="memitem:a9666b5dfe5766931f8d76c324609326a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a9666b5dfe5766931f8d76c324609326a">partValue</a> (double variable) const </td></tr>
+<tr class="memitem:a34b7fa6bc2ce6f65a7e5d4bfb8e82029"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a34b7fa6bc2ce6f65a7e5d4bfb8e82029">partGradient</a> (double variable) const </td></tr>
 <tr class="memitem:a73c36a9a7e74ae9ae2f0be8eb7261eb7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_easom_function.html#a73c36a9a7e74ae9ae2f0be8eb7261eb7">partHessian</a> (double variable) const </td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Class for Easom function in \(\mathbb{R}^2\). </p>
+<p>\(f(x, y) = - e^{-(x - \pi)^2} * e^{-(y - \pi)^2} * \cos(x) * \cos(y)\) \(f(x, y) = - g(x) * g(y), \text{where } g(x) = e^{-(x - \pi)^2} * cos(x)\), minimum at \( (x, y) = (\pi, \pi), \quad f(x, y) = -1\).</p>
+<p>Get more info on <a href="http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page1361.htm">http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page1361.htm</a>.</p>
+<p>\(f(x, y) = - e^{-(x - \pi)^2} * e^{-(y - \pi)^2} * \cos(x) * \cos(y)\) <br/>
+ \(f(x, y) = - g(x) * g(y), \text{where } g(x) = e^{-(x - \pi)^2} * cos(x)\) <br/>
+ Minimum at \( (x, y) = (\pi, \pi), \quad f(x, y) = -1\) <br/>
+ Get more info on <a href="http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page1361.htm">http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page1361.htm</a> </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="aa10ba9f677e45c610d86168a7d1293bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classoptimization_1_1_easom_function.html">EasomFunction</a>&gt; <a class="el" href="classoptimization_1_1_easom_function.html#aa10ba9f677e45c610d86168a7d1293bb">optimization::EasomFunction::Ptr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a444c33bad0cf1a2dccba778e55d6cd9d"></a>
 <div class="memitem">
@@ -171,7 +216,137 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a444c33bad0cf1a2dccba778e55d6cd9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d">optimization::EasomFunction::EasomFunction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d24fadf348fda178f38ad5110a48ae6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_easom_function.html#a0d24fadf348fda178f38ad5110a48ae6">optimization::EasomFunction::~EasomFunction</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="aa22f137347d730cda46f0aa851ebc8b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_easom_function.html#aa22f137347d730cda46f0aa851ebc8b9">optimization::EasomFunction::computeGradientImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector *&#160;</td>
+          <td class="paramname"><em>gradient</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeGradient method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6147c0e20563b935f88cb179a3708b1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_easom_function.html#a6147c0e20563b935f88cb179a3708b1e">optimization::EasomFunction::computeHessianImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix *&#160;</td>
+          <td class="paramname"><em>hessian</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeHessian method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a192540f41c1a1b5cb6129fe643117fc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#a192540f41c1a1b5cb6129fe643117fc1">optimization::EasomFunction::computeValueImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeValue method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8f6e42791d4b461cb745896f0d5397a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classoptimization_1_1_easom_function.html#ab8f6e42791d4b461cb745896f0d5397a">optimization::EasomFunction::getDefaultAlias</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab8f6e42791d4b461cb745896f0d5397a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -224,6 +399,42 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a34b7fa6bc2ce6f65a7e5d4bfb8e82029"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#a34b7fa6bc2ce6f65a7e5d4bfb8e82029">optimization::EasomFunction::partGradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Find \(\frac{dg(x)}{dx}\) </p>
+
+</div>
+</div>
+<a class="anchor" id="a34b7fa6bc2ce6f65a7e5d4bfb8e82029"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#a34b7fa6bc2ce6f65a7e5d4bfb8e82029">optimization::EasomFunction::partGradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Find \(\frac{dg(x)}{dx}\). </p>
+
+</div>
+</div>
 <a class="anchor" id="a73c36a9a7e74ae9ae2f0be8eb7261eb7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +449,25 @@ Private Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>find \(\frac{dg(x)}{dx}$\f */ double partGradient(double variable) const; /** find \){d^2g(x)}{dx^2}$ </p>
+<p>Find \(\frac{d^2g(x)}{dx^2}\) </p>
+
+</div>
+</div>
+<a class="anchor" id="a73c36a9a7e74ae9ae2f0be8eb7261eb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#a73c36a9a7e74ae9ae2f0be8eb7261eb7">optimization::EasomFunction::partHessian</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Find \(\frac{d^2g(x)}{dx^2}\). </p>
 
 </div>
 </div>
@@ -256,7 +485,61 @@ Private Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>find \(e^{-(x - \pi)^2}$\f */ double squareExp(double variable) const; /** find \)(x)$ </p>
+<p>Find \(g(x)\) </p>
+
+</div>
+</div>
+<a class="anchor" id="a9666b5dfe5766931f8d76c324609326a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#a9666b5dfe5766931f8d76c324609326a">optimization::EasomFunction::partValue</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Find \(g(x)\). </p>
+
+</div>
+</div>
+<a class="anchor" id="ae7c41ae8060f1b8a81df7ce5412ea401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#ae7c41ae8060f1b8a81df7ce5412ea401">optimization::EasomFunction::squareExp</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Find \(e^{-(x - \pi)^2}\) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae7c41ae8060f1b8a81df7ce5412ea401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_easom_function.html#ae7c41ae8060f1b8a81df7ce5412ea401">optimization::EasomFunction::squareExp</a> </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>variable</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Find \(e^{-(x - \pi)^2}\). </p>
 
 </div>
 </div>
@@ -279,13 +562,15 @@ Private Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>ltr/optimization/functions/test_functions/unconstrained/easom_function/<a class="el" href="easom__function_8h_source.html">easom_function.h</a></li>
+<li>ltr/optimization/test_problems/<a class="el" href="unconstrained__functions_8h_source.html">unconstrained_functions.h</a></li>
 <li>ltr/optimization/functions/test_functions/unconstrained/easom_function/<a class="el" href="easom__function_8cc.html">easom_function.cc</a></li>
+<li>ltr/optimization/test_problems/<a class="el" href="unconstrained__functions_8cc.html">unconstrained_functions.cc</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

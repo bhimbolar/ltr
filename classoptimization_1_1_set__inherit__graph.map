@@ -1,5 +1,9 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_ball_set.html" title="optimization::BallSet" alt="" coords="5,80,147,107"/>
-<area shape="rect" href="$classoptimization_1_1_linear_inequality_set.html" title="optimization::LinearInequalitySet" alt="" coords="171,80,379,107"/>
-<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="optimization::SphereSet" alt="" coords="403,80,563,107"/>
+<area shape="rect" href="$classoptimization_1_1_ball_set.html" title="Implements ball of a given radius with center in a given point." alt="" coords="336,5,477,32"/>
+<area shape="rect" href="$classoptimization_1_1_linear_inequality_set.html" title="Implements semi&#45;space define solutions of inequality." alt="" coords="303,56,511,83"/>
+<area shape="rect" href="$classoptimization_1_1_polyhedron_set.html" title="Class for polyhedron sets in ." alt="" coords="315,107,499,133"/>
+<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="Implements sphere of a given radius with center in a given point." alt="" coords="327,157,487,184"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,81,85,108"/>
+<area shape="rect" href="$classoptimization_1_1_g1_set.html" title="Class for G1 polyhedron set in ." alt="" coords="560,107,696,133"/>
+<area shape="rect" href="$classoptimization_1_1_g3_set.html" title="Class for G1 set in ." alt="" coords="560,157,696,184"/>
 </map>

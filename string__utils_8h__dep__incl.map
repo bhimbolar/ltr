@@ -1,14 +1,15 @@
 <map id="G" name="G">
 <area shape="rect" href="$parse__arff_8cc.html" title="ltr/data/utility/parsers/parse_arff.cc" alt="" coords="5,80,227,107"/>
-<area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="251,80,477,107"/>
-<area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="501,80,747,107"/>
-<area shape="rect" href="$parser_8cc.html" title="ltr/data/utility/parsers/parser.cc" alt="" coords="771,80,971,107"/>
-<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="995,80,1181,107"/>
-<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="1205,80,1443,107"/>
-<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="1467,80,1597,107"/>
-<area shape="rect" href="$tag__handlers_8h.html" title="ltr_client/utility/tag_handlers.h" alt="" coords="1621,80,1816,107"/>
-<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="1840,80,2104,107"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="2128,80,2269,107"/>
-<area shape="rect" href="$parameterized__info_8cc.html" title="ltr_client/utility/parameterized_info.cc" alt="" coords="2293,80,2528,107"/>
-<area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="1639,155,1799,181"/>
+<area shape="rect" href="$parse__dsv_8cc.html" title="ltr/data/utility/parsers/parse_dsv.cc" alt="" coords="251,80,472,107"/>
+<area shape="rect" href="$parse__svm_8cc.html" title="ltr/data/utility/parsers/parse_svm.cc" alt="" coords="496,80,723,107"/>
+<area shape="rect" href="$parse__yandex_8cc.html" title="ltr/data/utility/parsers/parse_yandex.cc" alt="" coords="747,80,992,107"/>
+<area shape="rect" href="$parser_8cc.html" title="ltr/data/utility/parsers/parser.cc" alt="" coords="1016,80,1216,107"/>
+<area shape="rect" href="$string__utils_8cc.html" title="ltr/utility/boost/string_utils.cc" alt="" coords="1240,80,1427,107"/>
+<area shape="rect" href="$string__utils__unittest_8cc.html" title="ltr/utility/boost/string_utils_unittest.cc" alt="" coords="1451,80,1688,107"/>
+<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="1712,80,1843,107"/>
+<area shape="rect" href="$tag__handlers_8h.html" title="ltr_client/utility/tag_handlers.h" alt="" coords="1867,80,2061,107"/>
+<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="2085,80,2349,107"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="2373,80,2515,107"/>
+<area shape="rect" href="$parameterized__info_8cc.html" title="ltr_client/utility/parameterized_info.cc" alt="" coords="2539,80,2773,107"/>
+<area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="1884,155,2044,181"/>
 </map>

@@ -118,12 +118,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="keyword">namespace </span>ltr {
 <a name="l00015"></a>00015 <span class="keyword">namespace </span>utility {
 <a name="l00022"></a>00022 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00023"></a>00023 <span class="keywordtype">void</span> getFeaturesMinMaxValues(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; dataset,
+<a name="l00023"></a>00023 <span class="keywordtype">void</span> getFeaturesMinMaxValues(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; dataset,
 <a name="l00024"></a>00024                              vector&lt;double&gt;* min_features_values,
 <a name="l00025"></a>00025                              vector&lt;double&gt;* max_features_values);
 <a name="l00026"></a>00026 
 <a name="l00032"></a>00032 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00033"></a>00033 <span class="keywordtype">void</span> getFeaturesAverageValues(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; dataset,
+<a name="l00033"></a>00033 <span class="keywordtype">void</span> getFeaturesAverageValues(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; dataset,
 <a name="l00034"></a>00034                               vector&lt;double&gt;* average_values) {
 <a name="l00035"></a>00035   average_values-&gt;resize(dataset.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>());
 <a name="l00036"></a>00036   fill(average_values-&gt;begin(), average_values-&gt;end(), 0);
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00064"></a>00064 }
 <a name="l00065"></a>00065 
 <a name="l00070"></a>00070 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00071"></a>00071 <span class="keywordtype">int</span> getDataSetObjectCount(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; data_set) {
+<a name="l00071"></a>00071 <span class="keywordtype">int</span> getDataSetObjectCount(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set) {
 <a name="l00072"></a>00072   <span class="keywordtype">int</span> object_count = 0;
 <a name="l00073"></a>00073   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> element_index = 0;
 <a name="l00074"></a>00074        element_index &lt; data_set.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>();
@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00082"></a>00082 <span class="keywordtype">double</span> getDataSetEntropy(<span class="keyword">const</span> LabelStatisticComputer&amp; label_stat_computer);
 <a name="l00083"></a>00083 
 <a name="l00084"></a>00084 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00085"></a>00085 <span class="keywordtype">double</span> getDataSetEntropy(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; data);
+<a name="l00085"></a>00085 <span class="keywordtype">double</span> getDataSetEntropy(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data);
 <a name="l00086"></a>00086 };
 <a name="l00087"></a>00087 };
 <a name="l00088"></a>00088 
@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

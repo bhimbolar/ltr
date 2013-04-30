@@ -143,7 +143,7 @@ Cross-validation</h2>
 <tr>
 <td><a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html">TKFoldSimpleSplitter</a> </td><td>As a <a class="el" href="classltr_1_1cv_1_1_k_fold_simple_splitter.html">KFoldSimpleSplitter</a>, but runs <a class="el" href="class_t.html">T</a> times producing different subsets </td></tr>
 <tr>
-<td><a class="el" href="classltr_1_1cv_1_1_leave_one_out_splitter.html">LeaveOneOutSplitter</a> </td><td>Test subset contains only one object (see wikipedia page) </td></tr>
+<td><a class="el" href="classltr_1_1cv_1_1_leave_one_out_splitter.html" title="Splits leaving only one test object.">LeaveOneOutSplitter</a> </td><td>Test subset contains only one object (see wikipedia page) </td></tr>
 </table>
 <p>Here is an example how to use <a class="el" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator</a>: </p>
 <table class="doxtable">
@@ -173,9 +173,9 @@ Cross-validation</h2>
 <span class="keyword">using namespace </span>ltr::io_utility;
 
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
-  <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;ObjectList&gt;</a> test_data = loadDataSet&lt;ObjectList&gt;(
+  <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;ObjectList&gt;</a> test_data = loadDataSet&lt;ObjectList&gt;(
           <span class="stringliteral">&quot;data/imat2009/imat2009_test_small.txt&quot;</span>, <span class="stringliteral">&quot;Yandex&quot;</span>);
-  <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;ObjectList&gt;</a> train_data = loadDataSet&lt;ObjectList&gt;(
+  <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;ObjectList&gt;</a> train_data = loadDataSet&lt;ObjectList&gt;(
           <span class="stringliteral">&quot;data/imat2009/imat2009_learning_small.txt&quot;</span>, <span class="stringliteral">&quot;Yandex&quot;</span>);
 
   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_one(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_d_c_g.html">DCG</a>());
@@ -185,11 +185,11 @@ Cross-validation</h2>
       <span class="keyword">new</span> <a class="code" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner&lt;ObjectList&gt;</a>(measure_one);
   learner_one-&gt;learn(train_data);
   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GPLearner&lt;ObjectList&gt;::Ptr</a> learner_two =
-      <span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="GPLearner Implements genetic programming approach applied to learning to rank.">GPLearner&lt;ObjectList&gt;</a>(measure_one);
+      <span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner&lt;ObjectList&gt;</a>(measure_one);
   learner_two-&gt;learn(train_data);
 
   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">LeaveOneOutSplitter&lt;ObjectList&gt;::Ptr</a> splitter=
-      <span class="keyword">new</span> <a class="code" href="classltr_1_1cv_1_1_leave_one_out_splitter.html">LeaveOneOutSplitter&lt;ObjectList&gt;</a>();
+      <span class="keyword">new</span> <a class="code" href="classltr_1_1cv_1_1_leave_one_out_splitter.html" title="Splits leaving only one test object.">LeaveOneOutSplitter&lt;ObjectList&gt;</a>();
 
   <a class="code" href="classltr_1_1cv_1_1_cross_validator.html">CrossValidator&lt;ObjectList&gt;</a> cross_validator;
   cross_validator.add_data_set(train_data);
@@ -216,7 +216,7 @@ NDCG    1       0.75
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

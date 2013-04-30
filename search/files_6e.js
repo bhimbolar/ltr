@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['naive_5finiter_2ecc',['naive_initer.cc',['../naive__initer_8cc.html',1,'']]],
+  ['naive_5finiter_2eh',['naive_initer.h',['../naive__initer_8h.html',1,'']]],
   ['nan_5fto_5faverage_5flearner_2eh',['nan_to_average_learner.h',['../nan__to__average__learner_8h.html',1,'']]],
   ['nan_5fto_5fneutral_5fconverter_2ecc',['nan_to_neutral_converter.cc',['../nan__to__neutral__converter_8cc.html',1,'']]],
   ['nan_5fto_5fneutral_5fconverter_2eh',['nan_to_neutral_converter.h',['../nan__to__neutral__converter_8h.html',1,'']]],

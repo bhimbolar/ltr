@@ -117,13 +117,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>This class allows to parse strings into Objects and serialize Objects into strings.  
+ <a href="classltr_1_1io__utility_1_1_parser.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="parser_8h_source.html">parser.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ltr::io_utility::Parser:</div>
 <div class="dyncontent">
 <div class="center"><img src="classltr_1_1io__utility_1_1_parser__inherit__graph.png" border="0" usemap="#ltr_1_1io__utility_1_1_parser_inherit__map" alt="Inheritance graph"/></div>
 <map name="ltr_1_1io__utility_1_1_parser_inherit__map" id="ltr_1_1io__utility_1_1_parser_inherit__map">
-<area shape="rect" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html" title="Parse ARFF format (http://www.cs.waikato.ac.nz/ml/weka/arff.html)" alt="" coords="195,5,363,32"/><area shape="rect" href="classltr_1_1io__utility_1_1_s_v_m_parser.html" title="Parse SVM light format (http://svmlight.joachims.org/)" alt="" coords="197,56,360,83"/><area shape="rect" href="classltr_1_1io__utility_1_1_yandex_parser.html" title="Parse Yandex Mathematics 2009 format (http://imat2009.yandex.ru/datasets)" alt="" coords="191,107,367,133"/></map>
+<area shape="rect" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html" title="Parse ARFF format (http://www.cs.waikato.ac.nz/ml/weka/arff.html)" alt="" coords="195,5,363,32"/><area shape="rect" href="classltr_1_1io__utility_1_1_d_s_v_parser.html" title="Parse DSV format (http://en.wikipedia.org/wiki/Delimiter&#45;separated_values) We don&#39;t support double qu..." alt="" coords="199,56,359,83"/><area shape="rect" href="classltr_1_1io__utility_1_1_s_v_m_parser.html" title="Parse SVM light format (http://svmlight.joachims.org/)" alt="" coords="197,107,360,133"/><area shape="rect" href="classltr_1_1io__utility_1_1_yandex_parser.html" title="Parse Yandex Mathematics 2009 format (http://imat2009.yandex.ru/datasets)" alt="" coords="191,157,367,184"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classltr_1_1io__utility_1_1_parser-members.html">List of all members.</a></p>
@@ -150,9 +153,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a401d6e180690d5bf80c7a6c931cf60cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1io__utility_1_1_parser.html#a401d6e180690d5bf80c7a6c931cf60cb">parseObject</a> (const string &amp;record, const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;feature_info, const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;label_info, <a class="el" href="classltr_1_1_object.html">Object</a> *object)=0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h2><a class="anchor" id="DESCRIPTION"></a>
-DESCRIPTION</h2>
-<p>This class allows to parse strings into Objects and serialize Objects into strings. </p>
+<div class="textblock"><p>This class allows to parse strings into Objects and serialize Objects into strings. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a367191bad23e46fb8f7e13e7801cd0db"></a>
 <div class="memitem">
@@ -215,7 +216,7 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to create Listwise data set of given objects </p>
+<p>Function to create Listwise data set of given objects</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
@@ -225,7 +226,7 @@ DESCRIPTION</h2>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#af2822268b59e5642dcf0f8fc68d45d9d">ltr::io_utility::ARFFParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ab63abc0fa3412a22e4e30b10a70aa2c7">ltr::io_utility::YandexParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ae7a591ef830ebd23ef7c7fc82e1e5769">ltr::io_utility::SVMParser</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_d_s_v_parser.html#ad5c0ea49997fd194b22f615f96ec485d">ltr::io_utility::DSVParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#af2822268b59e5642dcf0f8fc68d45d9d">ltr::io_utility::ARFFParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ab63abc0fa3412a22e4e30b10a70aa2c7">ltr::io_utility::YandexParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ae7a591ef830ebd23ef7c7fc82e1e5769">ltr::io_utility::SVMParser</a>.</p>
 
 </div>
 </div>
@@ -259,7 +260,7 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to create Pairwise data set of given objects </p>
+<p>Function to create Pairwise data set of given objects</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- objects to create data set from </td></tr>
@@ -269,7 +270,7 @@ DESCRIPTION</h2>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#acd8d82b088187eadfedd01675e35e612">ltr::io_utility::ARFFParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae4297d436b19902807f01c8c9b051d71">ltr::io_utility::YandexParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#aee6c347decfc7a58691f8842b89a3e17">ltr::io_utility::SVMParser</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_d_s_v_parser.html#acb0096033a3daf295a12c69c03f7a04b">ltr::io_utility::DSVParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#acd8d82b088187eadfedd01675e35e612">ltr::io_utility::ARFFParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae4297d436b19902807f01c8c9b051d71">ltr::io_utility::YandexParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#aee6c347decfc7a58691f8842b89a3e17">ltr::io_utility::SVMParser</a>.</p>
 
 </div>
 </div>
@@ -309,13 +310,13 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Parse file into PointwiseDataSet </p>
+<p>Parse file into PointwiseDataSet</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>- name of file with data set </td></tr>
-    <tr><td class="paramname">objects</td><td>- vector of extracted objects </td></tr>
-    <tr><td class="paramname">feature_info</td><td>- feature information of extracted data set </td></tr>
-    <tr><td class="paramname">label_info</td><td>- label information of extracted data set </td></tr>
+    <tr><td class="paramname">filename</td><td>is a name of file with data set </td></tr>
+    <tr><td class="paramname">objects</td><td>is a vector of extracted objects </td></tr>
+    <tr><td class="paramname">feature_info</td><td>is a feature information of extracted data set </td></tr>
+    <tr><td class="paramname">label_info</td><td>is label information of extracted data set </td></tr>
   </table>
   </dd>
 </dl>
@@ -352,7 +353,7 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Realization of parsing data information for format. Function must set 'in' onto first symbol of first object. </p>
+<p>Realization of parsing data information for format. Function must set 'in' onto first symbol of first object.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>- input stream with file </td></tr>
@@ -362,7 +363,7 @@ DESCRIPTION</h2>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#acf9de9d2efaeeeddb8b5eafd3c719100">ltr::io_utility::YandexParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a8d759ce832d89619371f7395f38102c0">ltr::io_utility::ARFFParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ab6517003b4cd2514763eb5df14eb06c3">ltr::io_utility::SVMParser</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_d_s_v_parser.html#a1325c16b6c239e9b0db7f090f409eeb6">ltr::io_utility::DSVParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#acf9de9d2efaeeeddb8b5eafd3c719100">ltr::io_utility::YandexParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a8d759ce832d89619371f7395f38102c0">ltr::io_utility::ARFFParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#ab6517003b4cd2514763eb5df14eb06c3">ltr::io_utility::SVMParser</a>.</p>
 
 </div>
 </div>
@@ -402,7 +403,7 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Realization of parsing object by its string representation. Every line from file starting from position after parsing data information will be casted into object by this function </p>
+<p>Realization of parsing object by its string representation. Every line from file starting from position after parsing data information will be casted into object by this function</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">record</td><td>- string which contains object to parse </td></tr>
@@ -413,7 +414,7 @@ DESCRIPTION</h2>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae089ff5bba2b73ca6d196862cc5ae2c4">ltr::io_utility::YandexParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a3ebf5716e3a3805e2cbcfa218200abef">ltr::io_utility::ARFFParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#a54898090b1740053850fabce9479b555">ltr::io_utility::SVMParser</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_d_s_v_parser.html#a770379a9f54e5656705a9362dc079e0f">ltr::io_utility::DSVParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#ae089ff5bba2b73ca6d196862cc5ae2c4">ltr::io_utility::YandexParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#a3ebf5716e3a3805e2cbcfa218200abef">ltr::io_utility::ARFFParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#a54898090b1740053850fabce9479b555">ltr::io_utility::SVMParser</a>.</p>
 
 </div>
 </div>
@@ -441,17 +442,17 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Functions serializes object into string. </p>
+<p>Function serializes object into string.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>- object to serialize </td></tr>
-    <tr><td class="paramname">stream</td><td>- ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObject(<span class="keywordtype">object</span>, cout);
+    <tr><td class="paramname">object</td><td>is object to serialize </td></tr>
+    <tr><td class="paramname">result</td><td>is ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObject(<span class="keywordtype">object</span>, cout);
 </pre></div> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a861c3088039437c34573bb8a99a310f0">ltr::io_utility::YandexParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#ad54c0bc4aeef60486f83945751d0a47f">ltr::io_utility::ARFFParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#a12cf3cd7fb986dcf3a8313c3f1a94430">ltr::io_utility::SVMParser</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1io__utility_1_1_d_s_v_parser.html#a159187fd106c7df3fc5cc9b5c6eb8988">ltr::io_utility::DSVParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_yandex_parser.html#a861c3088039437c34573bb8a99a310f0">ltr::io_utility::YandexParser</a>, <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#ad54c0bc4aeef60486f83945751d0a47f">ltr::io_utility::ARFFParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_s_v_m_parser.html#a12cf3cd7fb986dcf3a8313c3f1a94430">ltr::io_utility::SVMParser</a>.</p>
 
 </div>
 </div>
@@ -491,19 +492,19 @@ DESCRIPTION</h2>
       </table>
 </div>
 <div class="memdoc">
-<p>Functions serializes dataset into string. </p>
+<p>Functions serializes dataset into string.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">objects</td><td>- vector of dataset's objects </td></tr>
     <tr><td class="paramname">feature_info</td><td>- information about feature types </td></tr>
     <tr><td class="paramname">label_info</td><td>- information about label type </td></tr>
-    <tr><td class="paramname">stream</td><td>- ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObjects(object_list, feature_info, label_info, cout);
+    <tr><td class="paramname">result</td><td>- ostream to output string representation <div class="fragment"><pre class="fragment"> parser-&gt;saveObjects(object_list, feature_info, label_info, cout);
 </pre></div> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#abbd2adee41e88751b64d800724c810ee">ltr::io_utility::ARFFParser</a>.</p>
+<p>Reimplemented in <a class="el" href="classltr_1_1io__utility_1_1_d_s_v_parser.html#a7356f4fd4ab2860f751fb2ba6902b2ac">ltr::io_utility::DSVParser</a>, and <a class="el" href="classltr_1_1io__utility_1_1_a_r_f_f_parser.html#abbd2adee41e88751b64d800724c810ee">ltr::io_utility::ARFFParser</a>.</p>
 
 </div>
 </div>
@@ -515,7 +516,7 @@ DESCRIPTION</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

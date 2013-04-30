@@ -115,6 +115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Implements ID3 splitting aplorithm.  
+ <a href="classltr_1_1decision__tree_1_1_i_d3_splitter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="id3__splitter_8h_source.html">id3_splitter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ltr::decision_tree::ID3Splitter:</div>
@@ -139,7 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a648313cd6ca9e5e3d84d4475f64091c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html#a648313cd6ca9e5e3d84d4475f64091c7">generateNextLayer</a> (const vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; &amp;layer, vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; *next_layer) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>splitting aplorithm. For each vertex at given layer checks all the possible features and determines the one that has the highest quality. For continious features try all possible thresholds between two adjacent values of a feature. </p>
+<div class="textblock"><p>Implements ID3 splitting aplorithm. </p>
+<p>For each vertex at given layer checks all the possible features and determines the one that has the highest quality. For continious features try all possible thresholds between two adjacent values of a feature. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a6545bb7e4760e596d8241363e7091fbd"></a>
 <div class="memitem">
@@ -247,7 +251,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -111,25 +111,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="twice__differentiable__function_8h.html">ltr/optimization/functions/twice_differentiable_function.h</a>&quot;</span>
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="keyword">namespace </span>optimization {
-<a name="l00016"></a>00016 <span class="keyword">class </span>GriewankFunction : <span class="keyword">public</span> TwiceDifferentiableFunction {
-<a name="l00017"></a>00017  <span class="keyword">public</span>:
-<a name="l00018"></a>00018   <span class="keyword">explicit</span> GriewankFunction(<span class="keywordtype">int</span> dimension)
-<a name="l00019"></a>00019     : TwiceDifferentiableFunction(dimension) { }
-<a name="l00020"></a>00020   ~GriewankFunction() { }
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022   <span class="keywordtype">double</span> value(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00023"></a>00023   Vector gradient(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00024"></a>00024   Matrix hessian(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00025"></a>00025   <span class="keywordtype">string</span> getDefaultAlias()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GriewankFunction&quot;</span>; }
-<a name="l00026"></a>00026 };
-<a name="l00027"></a>00027 }
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TEST_UNCONSTRAINED_GRIEWANK_FUNCTION_GRIEWANK_FUNCTION_H_</span>
+<a name="l00018"></a><a class="code" href="classoptimization_1_1_griewank_function.html">00018</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_griewank_function.html" title="Class for Griewank function in .">GriewankFunction</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a> {
+<a name="l00019"></a>00019  <span class="keyword">public</span>:
+<a name="l00020"></a><a class="code" href="classoptimization_1_1_griewank_function.html#a247d02472d6d02b84ce09a458e91552d">00020</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_griewank_function.html#a247d02472d6d02b84ce09a458e91552d">GriewankFunction</a>(<span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)
+<a name="l00021"></a>00021     : <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a>(dimension) { }
+<a name="l00022"></a><a class="code" href="classoptimization_1_1_griewank_function.html#ad32ae04c0e1ae48d8f24c36a43c2429b">00022</a>   <a class="code" href="classoptimization_1_1_griewank_function.html#ad32ae04c0e1ae48d8f24c36a43c2429b">~GriewankFunction</a>() { }
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_griewank_function.html#a18138d37dd6e20cde16e9790494a3d27">value</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00025"></a>00025   Vector <a class="code" href="classoptimization_1_1_griewank_function.html#a3ed2aea83c62f374e797ec7f7c274671">gradient</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00026"></a>00026   Matrix <a class="code" href="classoptimization_1_1_griewank_function.html#a066c84f147693e692f239b54bfa3a097">hessian</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00027"></a><a class="code" href="classoptimization_1_1_griewank_function.html#aae88f6d0fd73fddf8b2dcc3f0365aa88">00027</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_griewank_function.html#aae88f6d0fd73fddf8b2dcc3f0365aa88">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GriewankFunction&quot;</span>; }
+<a name="l00028"></a>00028 };
+<a name="l00029"></a>00029 }
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TEST_UNCONSTRAINED_GRIEWANK_FUNCTION_GRIEWANK_FUNCTION_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

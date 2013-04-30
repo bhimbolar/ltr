@@ -12,10 +12,10 @@
 <area shape="rect" href="$classltr_1_1_serializable_functor.html" title="ltr::SerializableFunctor\&lt; TValue \&gt;" alt="" coords="172,816,385,843"/>
 <area shape="rect" href="$classltr_1_1utility_1_1_neighbor_weighter.html" title="ltr::utility::NeighborWeighter" alt="" coords="188,943,369,969"/>
 <area shape="rect" href="$classltr_1_1_serializable_functor.html" title="ltr::SerializableFunctor\&lt; double \&gt;" alt="" coords="172,1095,385,1121"/>
-<area shape="rect" href="$classltr_1_1_euclidean_metric.html" title="ltr::EuclideanMetric" alt="" coords="500,5,633,32"/>
-<area shape="rect" href="$classltr_1_1_manhattan_metric.html" title="ltr::ManhattanMetric" alt="" coords="499,56,635,83"/>
-<area shape="rect" href="$classltr_1_1_fisher_discriminant.html" title="probability density estimator that uses Fisher Linear Discriminant approach" alt="" coords="493,107,640,133"/>
-<area shape="rect" href="$classltr_1_1_non_linear_discriminant.html" title="probability density estimator that cannot be represented as linear separator" alt="" coords="481,157,652,184"/>
+<area shape="rect" href="$classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects." alt="" coords="500,5,633,32"/>
+<area shape="rect" href="$classltr_1_1_manhattan_metric.html" title="Manhattan metric on two objects." alt="" coords="499,56,635,83"/>
+<area shape="rect" href="$classltr_1_1_fisher_discriminant.html" title="Probability density estimator that uses Fisher Linear Discriminant approach." alt="" coords="493,107,640,133"/>
+<area shape="rect" href="$classltr_1_1_non_linear_discriminant.html" title="Probability density estimator that cannot be represented as linear separator." alt="" coords="481,157,652,184"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_fake_condition.html" title="ltr::decision_tree::FakeCondition" alt="" coords="463,208,671,235"/>
 <area shape="rect" href="$classltr_1_1decision__tree_1_1_threshold_condition.html" title="ltr::decision_tree::ThresholdCondition" alt="" coords="449,259,684,285"/>
 <area shape="rect" href="$classltr_1_1_fake_feature_converter.html" title="ltr::FakeFeatureConverter" alt="" coords="483,309,651,336"/>

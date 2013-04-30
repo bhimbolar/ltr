@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_g3_set.html" title="optimization::G3Set" alt="" coords="17,80,153,107"/>
+<area shape="rect" href="$classoptimization_1_1_g3_set.html" title="Class for G1 set in ." alt="" coords="17,229,153,256"/>
+<area shape="rect" href="$classoptimization_1_1_set.html" title="Interface class for sets in ." alt="" coords="25,80,145,107"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="45,5,125,32"/>
 </map>

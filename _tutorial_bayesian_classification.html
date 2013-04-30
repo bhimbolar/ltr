@@ -97,9 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><ul><li class="level2"><a href="#DensityEstimatorsList">List of all density estimation learners</a></li>
-</ul>
-<li class="level1"><a href="#TutorialBayesianClassificator">Bayesian Classification</a></li>
+<ul><li class="level1"><a href="#TutorialBayesianClassificator">Bayesian Classification</a></li>
 </ul>
 </div>
 <div class="textblock"><p>Bayesian classifiers are simple classification algorithms, that assign the label of max posteriori probability. To learn more visit <a href="http://en.wikipedia.org/wiki/Bayesian_inference">http://en.wikipedia.org/wiki/Bayesian_inference</a>.</p>
@@ -122,7 +120,7 @@ Bayesian Classification</h2>
 <ul>
 <li>choose estimation algorithm </li>
 <li>according to chosen algorothm, declare either <a class="el" href="classltr_1_1_fisher_discriminant_learner.html">FisherDiscriminantLearner</a> or <a class="el" href="classltr_1_1_normal_naive_bayes_learner.html">NormalNaiveBayesLearner</a> or <a class="el" href="classltr_1_1_quadratic_discriminant_learner.html">QuadraticDiscriminantLearner</a> </li>
-<li>learn the declared classifier on some <a class="el" href="classltr_1_1_data_set.html">DataSet</a> with ::learn() method </li>
+<li>learn the declared classifier on some <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a> with ::learn() method </li>
 <li>generate classifier with ::make() method</li>
 </ul>
 <table class="doxtable">
@@ -145,10 +143,10 @@ Bayesian Classification</h2>
 <span class="keyword">using</span> std::endl;
 
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html">ltr::DataSet</a>;
+<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_bayesian_scorer.html">ltr::BayesianScorer</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_bayesian_learner.html">ltr::BayesianLearner</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_fisher_discriminant.html" title="probability density estimator that uses Fisher Linear Discriminant approach">ltr::FisherDiscriminant</a>;
+<span class="keyword">using</span> <a class="code" href="classltr_1_1_fisher_discriminant.html" title="Probability density estimator that uses Fisher Linear Discriminant approach.">ltr::FisherDiscriminant</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_fisher_discriminant_learner.html">ltr::FisherDiscriminantLearner</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_fisher_discriminant_density_learner.html" title="Probability density learner that uses Fisher discriminant to generate probability density estimator...">ltr::FisherDiscriminantDensityLearner</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_base_probability_density_learner.html" title="Simple interface of the probability density estimation learner.">ltr::BaseProbabilityDensityLearner</a>;
@@ -185,7 +183,7 @@ Bayesian Classification</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:35 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

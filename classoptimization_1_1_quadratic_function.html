@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,12 +107,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::QuadraticFunction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for quadratic functions in \(R^n\).  
+ <a href="classoptimization_1_1_quadratic_function.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="quadratic__function_8h_source.html">quadratic_function.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -120,24 +125,55 @@ Inheritance diagram for optimization::QuadraticFunction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptimization_1_1_quadratic_function__inherit__graph.png" border="0" usemap="#optimization_1_1_quadratic_function_inherit__map" alt="Inheritance graph"/></div>
 <map name="optimization_1_1_quadratic_function_inherit__map" id="optimization_1_1_quadratic_function_inherit__map">
-<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="5,155,261,181"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="21,80,245,107"/><area shape="rect" href="classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="59,5,208,32"/></map>
+<area shape="rect" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="5,229,261,256"/><area shape="rect" href="classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="21,155,245,181"/><area shape="rect" href="classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="59,80,208,107"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_quadratic_function-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7ee6b1311d5d08729181871c48b15be5"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="classoptimization_1_1_quadratic_function.html">QuadraticFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a7ee6b1311d5d08729181871c48b15be5">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6135b3aae73269f7b8068f4f5de3036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#ae6135b3aae73269f7b8068f4f5de3036">QuadraticFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
-<tr class="memitem:ac0523d98784000df146d2f0ea39fcf3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#ac0523d98784000df146d2f0ea39fcf3c">QuadraticFunction</a> (<a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> a)</td></tr>
+<tr class="memitem:acfbd59540c801b88ec813f53bc9b26e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#acfbd59540c801b88ec813f53bc9b26e6">QuadraticFunction</a> (const Matrix &amp;quadratic, const Vector &amp;linear, double shift)</td></tr>
 <tr class="memitem:a4bf7e34fc82ae29e155d98c8656837b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a4bf7e34fc82ae29e155d98c8656837b1">~QuadraticFunction</a> ()</td></tr>
-<tr class="memitem:a3b25803210b32a79dc4991d38bc907b6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a3b25803210b32a79dc4991d38bc907b6">value</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:a613432aac002aa336e7bab550fe9892e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a613432aac002aa336e7bab550fe9892e">hessian</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:a952292f1dbd87fc9959bf4c0157bee08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a952292f1dbd87fc9959bf4c0157bee08">gradient</a> (const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:af8fbb00513dcd05ef0409df08f1b46cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#af8fbb00513dcd05ef0409df08f1b46cb">GET_SET</a> (<a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>, a)</td></tr>
+<tr class="memitem:aee203744efe2452556943c8d3d8916c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#aee203744efe2452556943c8d3d8916c4">GET_SET</a> (Matrix, quadratic)</td></tr>
+<tr class="memitem:ab2a618cf7a62a4a6f0eb30d4c54fb234"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#ab2a618cf7a62a4a6f0eb30d4c54fb234">GET_SET</a> (Vector, linear)</td></tr>
+<tr class="memitem:a08047c78056d451ae4a42e90023fabce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a08047c78056d451ae4a42e90023fabce">GET_SET</a> (double, shift)</td></tr>
+<tr class="memitem:ac9539b1e10981073cd94251e7d7364b9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#ac9539b1e10981073cd94251e7d7364b9">getDefaultAlias</a> () const </td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2f661273ddd5321d3c970356fb0b8271"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a2f661273ddd5321d3c970356fb0b8271">computeValueImpl</a> (const Point &amp;point) const </td></tr>
+<tr class="memitem:a253fb1ade660da135b713c4190dee0ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a253fb1ade660da135b713c4190dee0ea">computeGradientImpl</a> (const Point &amp;point, Vector *gradient) const </td></tr>
+<tr class="memitem:aa35293496bc2b4d2a612ec4f8dcee5ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#aa35293496bc2b4d2a612ec4f8dcee5ca">computeHessianImpl</a> (const Point &amp;point, Matrix *hessian) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a08419075555da69c4889a904cb738240"><td class="memItemLeft" align="right" valign="top"><a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a08419075555da69c4889a904cb738240">a_</a></td></tr>
+<tr class="memitem:ad2e8db1055f9735a37c1eca8074d264f"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#ad2e8db1055f9735a37c1eca8074d264f">quadratic_</a></td></tr>
+<tr class="memitem:aa9908618c43326d364518e9d486b093e"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#aa9908618c43326d364518e9d486b093e">linear_</a></td></tr>
+<tr class="memitem:a26c93c148924083030fb6ee2ca30e678"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_quadratic_function.html#a26c93c148924083030fb6ee2ca30e678">shift_</a></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Class for quadratic functions in \(R^n\). </p>
+<p>\(f(\overrightarrow{x}) = \overrightarrow{x}^T A \overrightarrow{x} + B^T \overrightarrow{x} + C\) </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a7ee6b1311d5d08729181871c48b15be5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classoptimization_1_1_quadratic_function.html">QuadraticFunction</a>&gt; <a class="el" href="classoptimization_1_1_quadratic_function.html#a7ee6b1311d5d08729181871c48b15be5">optimization::QuadraticFunction::Ptr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae6135b3aae73269f7b8068f4f5de3036"></a>
 <div class="memitem">
@@ -156,16 +192,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac0523d98784000df146d2f0ea39fcf3c"></a>
+<a class="anchor" id="acfbd59540c801b88ec813f53bc9b26e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classoptimization_1_1_quadratic_function.html#ae6135b3aae73269f7b8068f4f5de3036">optimization::QuadraticFunction::QuadraticFunction</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
+          <td class="paramname"><em>quadratic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
+          <td class="paramname"><em>linear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>shift</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -190,20 +242,100 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af8fbb00513dcd05ef0409df08f1b46cb"></a>
+<a class="anchor" id="a253fb1ade660da135b713c4190dee0ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_quadratic_function.html#af8fbb00513dcd05ef0409df08f1b46cb">optimization::QuadraticFunction::GET_SET</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_quadratic_function.html#a253fb1ade660da135b713c4190dee0ea">optimization::QuadraticFunction::computeGradientImpl</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>&#160;</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector *&#160;</td>
+          <td class="paramname"><em>gradient</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeGradient method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a9a3c5ca6bffdaf363816645c14e655c2">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa35293496bc2b4d2a612ec4f8dcee5ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_quadratic_function.html#aa35293496bc2b4d2a612ec4f8dcee5ca">optimization::QuadraticFunction::computeHessianImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix *&#160;</td>
+          <td class="paramname"><em>hessian</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeHessian method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#acd3cdf4b3480335c2d45a63d454af7dd">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f661273ddd5321d3c970356fb0b8271"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_quadratic_function.html#a2f661273ddd5321d3c970356fb0b8271">optimization::QuadraticFunction::computeValueImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Point &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const<code> [private, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Implementation of computeValue method. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a3ddcb5b7913fd3a54e38bbcca07c82d1">optimization::TwiceDifferentiableFunction</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee203744efe2452556943c8d3d8916c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_quadratic_function.html#aee203744efe2452556943c8d3d8916c4">optimization::QuadraticFunction::GET_SET</a> </td>
+          <td>(</td>
+          <td class="paramtype">Matrix&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">a&#160;</td>
+          <td class="paramtype">quadratic&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -217,75 +349,118 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a952292f1dbd87fc9959bf4c0157bee08"></a>
+<a class="anchor" id="ab2a618cf7a62a4a6f0eb30d4c54fb234"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> <a class="el" href="classoptimization_1_1_quadratic_function.html#a952292f1dbd87fc9959bf4c0157bee08">optimization::QuadraticFunction::gradient</a> </td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_quadratic_function.html#aee203744efe2452556943c8d3d8916c4">optimization::QuadraticFunction::GET_SET</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td class="paramtype">Vector&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">linear&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#af20876299401708200ce06a58d444861">optimization::TwiceDifferentiableFunction</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a613432aac002aa336e7bab550fe9892e"></a>
+<a class="anchor" id="a08047c78056d451ae4a42e90023fabce"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> <a class="el" href="classoptimization_1_1_quadratic_function.html#a613432aac002aa336e7bab550fe9892e">optimization::QuadraticFunction::hessian</a> </td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_quadratic_function.html#aee203744efe2452556943c8d3d8916c4">optimization::QuadraticFunction::GET_SET</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>get second derivative in given point </p>
-
-<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a72fb9ad2d9d87492335875206139bb8e">optimization::TwiceDifferentiableFunction</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3b25803210b32a79dc4991d38bc907b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="classoptimization_1_1_quadratic_function.html#a3b25803210b32a79dc4991d38bc907b6">optimization::QuadraticFunction::value</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="and__criterion__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">shift&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Implements <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1bd37a4fd5ceb02ba2289d967ae3fb24">optimization::TwiceDifferentiableFunction</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ac9539b1e10981073cd94251e7d7364b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classoptimization_1_1_quadratic_function.html#ac9539b1e10981073cd94251e7d7364b9">optimization::QuadraticFunction::getDefaultAlias</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a88c2156fac2279debe27bf3ba7b2bc8b">optimization::TwiceDifferentiableFunction</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a08419075555da69c4889a904cb738240"></a>
+<a class="anchor" id="aa9908618c43326d364518e9d486b093e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="and__criterion__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> <a class="el" href="classoptimization_1_1_quadratic_function.html#a08419075555da69c4889a904cb738240">optimization::QuadraticFunction::a_</a><code> [private]</code></td>
+          <td class="memname">Vector <a class="el" href="classoptimization_1_1_quadratic_function.html#aa9908618c43326d364518e9d486b093e">optimization::QuadraticFunction::linear_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Matrix of linear coefficients \( B \). </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2e8db1055f9735a37c1eca8074d264f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix <a class="el" href="classoptimization_1_1_quadratic_function.html#ad2e8db1055f9735a37c1eca8074d264f">optimization::QuadraticFunction::quadratic_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Matrix of quadratic coefficients \( A \). </p>
+
+</div>
+</div>
+<a class="anchor" id="a26c93c148924083030fb6ee2ca30e678"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_quadratic_function.html#a26c93c148924083030fb6ee2ca30e678">optimization::QuadraticFunction::shift_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Shift term \( C \). </p>
 
 </div>
 </div>
@@ -297,7 +472,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 5 2013 23:52:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

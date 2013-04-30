@@ -125,7 +125,7 @@ How to register new class</h2>
 <tr>
 <td>REGISTER_PAIRWISE </td><td>Registers class with pairwise approach (<a class="el" href="classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet...">ObjectPair</a> elements) </td></tr>
 <tr>
-<td>REGISTER_LISTWISE </td><td>Registers class with listwise approach (<a class="el" href="classltr_1_1_object_list.html">ObjectList</a> elements) </td></tr>
+<td>REGISTER_LISTWISE </td><td>Registers class with listwise approach (<a class="el" href="classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet...">ObjectList</a> elements) </td></tr>
 <tr>
 <td>REGISTER_EVERY_WISE </td><td>Registers class with every approach </td></tr>
 </table>
@@ -135,19 +135,19 @@ How to register new class</h2>
 <a class="code" href="registration_8h.html#ad2dd648fcda882a00f56d26b113c0365">REGISTER_POINTWISE</a>(Learner, LinearLearner);
 </pre></div><h2><a class="anchor" id="HowItWorks"></a>
 How LTR Client works</h2>
-<p>The main class of client is <a class="el" href="class_ltr_client.html">LtrClient</a>.</p>
+<p>The main class of client is <a class="el" href="class_ltr_client.html" title="Performs all the application actions.">LtrClient</a>.</p>
 <p>It parses config with the help of <a class="el" href="class_config_parser.html">ConfigParser</a>.</p>
-<p>If <a class="el" href="class_ltr_client.html">LtrClient</a> doesn't find any errors in the config, it creates all objects that were requested in config and starts to process the experiment.</p>
+<p>If <a class="el" href="class_ltr_client.html" title="Performs all the application actions.">LtrClient</a> doesn't find any errors in the config, it creates all objects that were requested in config and starts to process the experiment.</p>
 <h3><a class="anchor" id="Factory"></a>
 Factory</h3>
 <p>First of all there is a <a class="el" href="class_factory.html">Factory</a> object. In the beggining of work it registers all classes according to register.h file.</p>
 <p>Registration of new class creates a pointer to the Creator with recieved template parameters (Base class and derived class) and adds this pointer to the hashtable.</p>
 <p>Creator is simple class that has only one method - Creator::create.</p>
-<p>When <a class="el" href="class_ltr_client.html">LtrClient</a> needs to create some object declared in the config, it calls Creator::create method.</p>
+<p>When <a class="el" href="class_ltr_client.html" title="Performs all the application actions.">LtrClient</a> needs to create some object declared in the config, it calls Creator::create method.</p>
 <p>This method returns requested object casted to boost::any.</p>
 <h3><a class="anchor" id="ConfigParser"></a>
 Config Parser</h3>
-<p><a class="el" href="class_ltr_client.html">LtrClient</a> contains <a class="el" href="class_config_parser.html">ConfigParser</a> object. This object parses recieved XML config file. The parsing occurs with the help of TinyXML library.</p>
+<p><a class="el" href="class_ltr_client.html" title="Performs all the application actions.">LtrClient</a> contains <a class="el" href="class_config_parser.html">ConfigParser</a> object. This object parses recieved XML config file. The parsing occurs with the help of TinyXML library.</p>
 <p>During the config processing, <a class="el" href="class_config_parser.html">ConfigParser</a> calls different parsers depending on detected tags.</p>
 <table class="doxtable">
 <tr>
@@ -179,7 +179,7 @@ Config Parser</h3>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:13 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

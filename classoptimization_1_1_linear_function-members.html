@@ -112,9 +112,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 This is the complete list of members for <a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a>, including all inherited members.<table>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_aliaser.html#aed83636a00a3f2a239e3c798f06c6b70">alias</a>() const </td><td><a class="el" href="classltr_1_1_aliaser.html">ltr::Aliaser</a></td><td><code> [inline, virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#aecffa021b19190539a1e8a7590cec769">computeGradient</a>(const Point &amp;point, Vector *gradient) const </td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#a8fa5a482a128fb7d4613b8b5d5d264b9">computeHessian</a>(const Point &amp;point, Matrix *hessian) const </td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#aa1897d0e226f078670dc00efd7d2285d">computeValue</a>(const Point &amp;point) const </td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_differentiable_function.html#a7a4b21a2a1d1c64b190833686820a8a7">computeGradient</a>(const Point &amp;point, Vector *gradient) const </td><td><a class="el" href="classoptimization_1_1_differentiable_function.html">optimization::DifferentiableFunction</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#a27a6a5dc9b255d28356afb3922012ff5">computeGradientImpl</a>(const Point &amp;point, Vector *gradient) const </td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [private, virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a871398ee011ae9cbceedeb53526ec9d0">computeHessian</a>(const Point &amp;point, Matrix *hessian) const </td><td><a class="el" href="classoptimization_1_1_twice_differentiable_function.html">optimization::TwiceDifferentiableFunction</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#aee2abfb10b32ec14bb7d46e1e51a6205">computeHessianImpl</a>(const Point &amp;point, Matrix *hessian) const </td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [private, virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_function.html#ae5ee8c331f8e6aa7e8ddd086c774500c">computeValue</a>(const Point &amp;point) const </td><td><a class="el" href="classoptimization_1_1_function.html">optimization::Function</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#aa2d612fbce9a4ed8b56f624e6a0ed685">computeValueImpl</a>(const Point &amp;point) const </td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [private, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classoptimization_1_1_differentiable_function.html#a5db8154663f0fb05305b39e7d181823e">DifferentiableFunction</a>(int dimension)</td><td><a class="el" href="classoptimization_1_1_differentiable_function.html">optimization::DifferentiableFunction</a></td><td><code> [inline, explicit]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>() const </td><td><a class="el" href="classoptimization_1_1_function.html">optimization::Function</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db">factor_</a></td><td><a class="el" href="classoptimization_1_1_linear_function.html">optimization::LinearFunction</a></td><td><code> [private]</code></td></tr>
@@ -138,7 +141,7 @@ This is the complete list of members for <a class="el" href="classoptimization_1
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

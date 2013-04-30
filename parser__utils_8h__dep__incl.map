@@ -1,5 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" href="$parse__arff_8cc.html" title="ltr/data/utility/parsers/parse_arff.cc" alt="" coords="5,80,227,107"/>
-<area shape="rect" href="$parser__utils_8cc.html" title="ltr/data/utility/parsers/parser_utils.cc" alt="" coords="251,80,483,107"/>
-<area shape="rect" href="$parser__utils__unittest_8cc.html" title="ltr/data/utility/parsers/parser_utils_unittest.cc" alt="" coords="507,80,789,107"/>
+<area shape="rect" href="$parse__dsv_8cc.html" title="ltr/data/utility/parsers/parse_dsv.cc" alt="" coords="251,80,472,107"/>
+<area shape="rect" href="$parser__utils_8cc.html" title="ltr/data/utility/parsers/parser_utils.cc" alt="" coords="496,80,728,107"/>
+<area shape="rect" href="$parser__utils__unittest_8cc.html" title="ltr/data/utility/parsers/parser_utils_unittest.cc" alt="" coords="752,80,1035,107"/>
 </map>

@@ -120,7 +120,7 @@ FeatureConverter</h2>
 <li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const Object &amp;input, Object *output) </a> - convert one object </li>
 <li><a class="el" href="classltr_1_1_feature_converter.html#a70f27b5df60d7c3bc6bc2cb0e62173d6">apply(const DataSet&lt;TElement&gt; &amp;input, DataSet&lt;TElement&gt; *output) </a> - convert whole dataset</li>
 </ul>
-<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via via <a class="el" href="">addFeatureConverterLearner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
+<p>If you want to add a kind of features preprocessing in training of your <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> you should add corresponding <a class="el" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">FeatureConverterLearner</a> via <a class="el" href="classltr_1_1_learner.html#a0ddc20f3a14fded8873f813c7581ea11">set_feature_converter_learner() </a> method of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.</p>
 <p>After learning on converted data <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> can be applied only to objects which features are preprocessed the same way. For this reason FeatureConverters used in <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> should be also serialized in C++ code during <a class="el" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> serialization.</p>
 <h2><a class="anchor" id="FeatureConverterList"></a>
 List of all FeatureConverters</h2>
@@ -141,6 +141,8 @@ List of all FeatureConverters</h2>
 <td><a class="el" href="classltr_1_1_nominal_to_bool_converter.html" title="Converts nominal features to boolean.">NominalToBoolConverter</a> </td><td>Converts nominal features to boolean, and move they to the end of features list </td></tr>
 <tr>
 <td><a class="el" href="classltr_1_1_remove_nominal_converter.html" title="Remove all nominal features.">RemoveNominalConverter</a> </td><td>Removes all nominal features </td></tr>
+<tr>
+<td><a class="el" href="classltr_1_1_linear_converter.html" title="Perform linear transformation of dataset.">LinearConverter</a> </td><td>Performs linear transformation Ax + b, where x is vector of features </td></tr>
 </table>
 <table  class="example">
 <tr>
@@ -158,7 +160,7 @@ List of all FeatureConverters</h2>
 <span class="keyword">using</span> std::endl;
 
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html">ltr::DataSet</a>;
+<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">ltr::FeatureConverter</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_feature_normalizer_learner.html" title="Independently normalize each feature component to the specified range.">ltr::FeatureNormalizerLearner</a>;
 
@@ -226,7 +228,7 @@ FeatureSamplerLearner</h3>
 <span class="keyword">using</span> std::endl;
 
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
-<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html">ltr::DataSet</a>;
+<span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">ltr::FeatureConverter</a>;
 <span class="keyword">using</span> <a class="code" href="classltr_1_1_feature_sampler_learner.html" title="Produces FeatureSampler with specified indices.">ltr::FeatureSamplerLearner</a>;
 
@@ -282,7 +284,7 @@ After:
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:13 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

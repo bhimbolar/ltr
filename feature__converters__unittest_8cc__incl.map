@@ -20,6 +20,7 @@
 <area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="2101,677,2149,704"/>
 <area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="2173,677,2264,704"/>
 <area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="2288,677,2421,704"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1856,752,1995,779"/>
 <area shape="rect" href="$object__list_8h.html" title="ltr/data/object_list.h" alt="" coords="1089,379,1225,405"/>
 <area shape="rect" href="$object__pair_8h.html" title="ltr/data/object_pair.h" alt="" coords="1300,379,1439,405"/>
 <area shape="rect" href="$per__object__accessor_8h.html" title="ltr/data/per_object_accessor.h" alt="" coords="1197,304,1392,331"/>

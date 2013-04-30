@@ -1,4 +1,5 @@
 <map id="G" name="G">
 <area shape="rect" href="$feature__converters__learner__unittest_8cc.html" title="ltr/feature_converters/feature_converters_learner_unittest.cc" alt="" coords="5,80,368,107"/>
-<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="392,80,659,107"/>
+<area shape="rect" href="$pca__learner_8cc.html" title="ltr/feature_converters/pca_learner.cc" alt="" coords="392,80,621,107"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="645,80,912,107"/>
 </map>

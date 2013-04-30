@@ -115,6 +115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Implements ObliviousTree splitting aplorithm.  
+ <a href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="oblivious__tree__splitter_8h_source.html">oblivious_tree_splitter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ltr::decision_tree::ObliviousTreeSplitter:</div>
@@ -140,7 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8861bdf41f82b525e6cdc75f6e162de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#ad8861bdf41f82b525e6cdc75f6e162de">findBestThresholdWithQualityByFeature</a> (const vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; &amp;layer, vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_threshold.html">Threshold</a> &gt; &amp;thresholds, int feature_index, double *layer_split_quality) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>splitting aplorithm. Checks all the possible features and determines the one that has the highest layer quality. For continious features try all possible thresholds between two adjacent values of a feature. </p>
+<div class="textblock"><p>Implements ObliviousTree splitting aplorithm. </p>
+<p>Checks all the possible features and determines the one that has the highest layer quality. For continious features try all possible thresholds between two adjacent values of a feature. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="aff5d46cdddf282b7b2918e920af01d65"></a>
 <div class="memitem">
@@ -287,7 +291,7 @@ Public Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:15 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

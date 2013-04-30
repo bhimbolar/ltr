@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="optimization::SphereSet" alt="" coords="5,5,165,32"/>
+<area shape="rect" href="$classoptimization_1_1_sphere_set.html" title="Implements sphere of a given radius with center in a given point." alt="" coords="5,155,165,181"/>
+<area shape="rect" href="$classoptimization_1_1_set.html" title="Interface class for sets in ." alt="" coords="25,80,145,107"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="45,5,125,32"/>
 </map>

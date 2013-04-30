@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="optimization::TwiceDifferentiableFunction" alt="" coords="5,229,261,256"/>
-<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="optimization::DifferentiableFunction" alt="" coords="21,155,245,181"/>
-<area shape="rect" href="$classoptimization_1_1_function.html" title="optimization::Function" alt="" coords="59,80,208,107"/>
+<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="5,229,261,256"/>
+<area shape="rect" href="$classoptimization_1_1_differentiable_function.html" title="Abstract class for defining differentiable functions in ." alt="" coords="21,155,245,181"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="59,80,208,107"/>
 <area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="93,5,173,32"/>
 </map>

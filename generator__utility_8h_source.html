@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012 
 <a name="l00013"></a>00013 <span class="keyword">using</span> std::string;
 <a name="l00014"></a>00014 
-<a name="l00015"></a>00015 <span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html">ltr::DataSet</a>;
+<a name="l00015"></a>00015 <span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
 <a name="l00016"></a>00016 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
 <a name="l00017"></a>00017 <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">ltr::Learner</a>;
 <a name="l00018"></a>00018 <span class="keyword">using</span> <a class="code" href="classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter.">ltr::FeatureConverterLearner</a>;
@@ -135,14 +135,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00058"></a>00058     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#a5a882ed5ce2a82805ff82457f9f9e425" title="Adds includes to unittests code.">addIncludes</a>();
 <a name="l00062"></a>00062     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#ac5df05b18aee755f227770767c7b7bac" title="Adds service class for unittest code.">addFixture</a>();
 <a name="l00069"></a>00069     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#a55f0004c961b293803351944afceb5a7" title="Adds checking labels function.">addCheckLabelsFunction</a>();
-<a name="l00076"></a>00076     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#a6cde5baf79908253e459d7647b366369" title="Adds checking features function.">addCheckFeaturesFunction</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;Object&gt;</a>&amp; processed_data);
+<a name="l00076"></a>00076     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#a6cde5baf79908253e459d7647b366369" title="Adds checking features function.">addCheckFeaturesFunction</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;Object&gt;</a>&amp; processed_data);
 <a name="l00081"></a>00081     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#af9334f3fa15225df88983c6ddadfccd4" title="Adds begin comment of the block.">addBeginBlockComment</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; message);
 <a name="l00086"></a>00086     <span class="keywordtype">void</span> <a class="code" href="classserialization__test_1_1_generator.html#ae044ba419fb333e0185f6f594c9eb89e" title="Adds end comment of the block.">addEndBlockComment</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; message);
 <a name="l00087"></a>00087 
 <a name="l00091"></a><a class="code" href="classserialization__test_1_1_generator.html#a3927231007c72201db5395fdc4092e92">00091</a>     std::stringstream <a class="code" href="classserialization__test_1_1_generator.html#a3927231007c72201db5395fdc4092e92">tester_code</a>;
 <a name="l00095"></a><a class="code" href="classserialization__test_1_1_generator.html#a5797d464e4538bf5a7f2a2410bb694b8">00095</a>     <span class="keywordtype">int</span> <a class="code" href="classserialization__test_1_1_generator.html#a5797d464e4538bf5a7f2a2410bb694b8">serializating_object_number</a>;
-<a name="l00099"></a><a class="code" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">00099</a>     <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;Object&gt;</a> <a class="code" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">train_data</a>;
-<a name="l00103"></a><a class="code" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">00103</a>     <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;Object&gt;</a> <a class="code" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">test_data</a>;
+<a name="l00099"></a><a class="code" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">00099</a>     <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;Object&gt;</a> <a class="code" href="classserialization__test_1_1_generator.html#a9e74592c514718d77d93e1047fca86c4">train_data</a>;
+<a name="l00103"></a><a class="code" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">00103</a>     <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;Object&gt;</a> <a class="code" href="classserialization__test_1_1_generator.html#a03b27fc6492798907a4a251da96abab2">test_data</a>;
 <a name="l00104"></a>00104   };
 <a name="l00105"></a>00105 };
 <a name="l00106"></a>00106 
@@ -151,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:34 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

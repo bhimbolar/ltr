@@ -115,6 +115,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Euclidean metric on two objects.  
+ <a href="classltr_1_1_euclidean_metric.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="euclidean__metric_8h_source.html">euclidean_metric.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ltr::EuclideanMetric:</div>
@@ -142,7 +145,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9449d232d1dda75430e9c0972c74421f"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_euclidean_metric.html#a9449d232d1dda75430e9c0972c74421f">getDefaultAlias</a> () const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Euclidean metric on two objects </p>
+<div class="textblock"><p>Euclidean metric on two objects. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a1e3119c6b6786a1f5d9449e0bb3bbed4"></a>
 <div class="memitem">
@@ -154,6 +157,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
 
 <p>Reimplemented from <a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">ltr::BaseMetric</a>.</p>
 
@@ -221,7 +225,8 @@ Private Member Functions</h2></td></tr>
 <p>Value of metric(distance between objects) </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs</td><td>and rhs - elements to calculate measure on </td></tr>
+    <tr><td class="paramname">lhs</td><td>is a first element to calculate measure on </td></tr>
+    <tr><td class="paramname">rhs</td><td>is a second element to calculate measure on </td></tr>
   </table>
   </dd>
 </dl>
@@ -244,10 +249,10 @@ Private Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>the function generates code for the metric as cpp code function </p>
+<p>The function generates code for the metric as cpp code function.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">class_name</td><td>the name for the class that would be created. </td></tr>
+    <tr><td class="paramname">function_name</td><td>is the name of this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,7 +287,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:14 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:37 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

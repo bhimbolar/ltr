@@ -114,42 +114,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <span class="keyword">namespace </span>ltr {
 <a name="l00012"></a>00012 <span class="keyword">namespace </span>io_utility {
-<a name="l00021"></a>00021 <span class="keywordtype">int</span> findFirstUnscreened(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
-<a name="l00022"></a>00022                         <span class="keywordtype">char</span> symbol,
-<a name="l00023"></a>00023                         <span class="keywordtype">int</span> start_pos = 0,
-<a name="l00024"></a>00024                         <span class="keywordtype">char</span> escape=<span class="charliteral">&#39;\\&#39;</span>);
-<a name="l00025"></a>00025 
-<a name="l00033"></a>00033 <span class="keywordtype">void</span> screenSpecialChars(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
-<a name="l00034"></a>00034                         <span class="keywordtype">string</span>* result,
-<a name="l00035"></a>00035                         <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; need_escape = <span class="stringliteral">&quot;&#39;\&quot;\n\\&quot;</span>,
-<a name="l00036"></a>00036                         <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
-<a name="l00037"></a>00037 
-<a name="l00044"></a>00044 <span class="keywordtype">void</span> unscreenSpecialChars(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
-<a name="l00045"></a>00045                           <span class="keywordtype">string</span>* result,
-<a name="l00046"></a>00046                           <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
-<a name="l00047"></a>00047 
-<a name="l00058"></a>00058 <span class="keywordtype">void</span> applyQuoting(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
-<a name="l00059"></a>00059                   <span class="keywordtype">string</span>* result,
-<a name="l00060"></a>00060                   <span class="keywordtype">char</span> left_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
-<a name="l00061"></a>00061                   <span class="keywordtype">char</span> right_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
-<a name="l00062"></a>00062                   <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; need_quoting = <span class="stringliteral">&quot;&#39;\&quot; \t\n\\&quot;</span>,
-<a name="l00063"></a>00063                   <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; need_escape = <span class="stringliteral">&quot;&#39;\&quot;\n\\&quot;</span>,
-<a name="l00064"></a>00064                   <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
-<a name="l00065"></a>00065 
-<a name="l00075"></a>00075 <span class="keywordtype">void</span> escapeSplit(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
-<a name="l00076"></a>00076                  vector&lt;string&gt;* result,
-<a name="l00077"></a>00077                  <span class="keywordtype">char</span> delim = <span class="charliteral">&#39;,&#39;</span>,
-<a name="l00078"></a>00078                  <span class="keywordtype">char</span> left_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
-<a name="l00079"></a>00079                  <span class="keywordtype">char</span> right_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
-<a name="l00080"></a>00080                  <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
-<a name="l00081"></a>00081 };
-<a name="l00082"></a>00082 };
-<a name="l00083"></a>00083 <span class="preprocessor">#endif  // LTR_DATA_UTILITY_PARSERS_PARSER_UTILS_H_</span>
+<a name="l00022"></a>00022 <span class="keywordtype">int</span> findFirstUnscreened(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
+<a name="l00023"></a>00023                         <span class="keywordtype">char</span> symbol,
+<a name="l00024"></a>00024                         <span class="keywordtype">int</span> start_pos = 0,
+<a name="l00025"></a>00025                         <span class="keywordtype">char</span> escape=<span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00026"></a>00026 
+<a name="l00035"></a>00035 <span class="keywordtype">void</span> screenSpecialChars(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
+<a name="l00036"></a>00036                         <span class="keywordtype">string</span>* result,
+<a name="l00037"></a>00037                         <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; need_escape = <span class="stringliteral">&quot;&#39;\&quot;\n\\&quot;</span>,
+<a name="l00038"></a>00038                         <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00039"></a>00039 
+<a name="l00047"></a>00047 <span class="keywordtype">void</span> unscreenSpecialChars(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
+<a name="l00048"></a>00048                           <span class="keywordtype">string</span>* result,
+<a name="l00049"></a>00049                           <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00050"></a>00050 
+<a name="l00062"></a>00062 <span class="keywordtype">void</span> applyQuoting(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
+<a name="l00063"></a>00063                   <span class="keywordtype">string</span>* result,
+<a name="l00064"></a>00064                   <span class="keywordtype">char</span> left_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
+<a name="l00065"></a>00065                   <span class="keywordtype">char</span> right_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
+<a name="l00066"></a>00066                   <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; need_quoting = <span class="stringliteral">&quot;&#39;\&quot; \t\n\\&quot;</span>,
+<a name="l00067"></a>00067                   <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; need_escape = <span class="stringliteral">&quot;&#39;\&quot;\n\\&quot;</span>,
+<a name="l00068"></a>00068                   <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00069"></a>00069 
+<a name="l00080"></a>00080 <span class="keywordtype">void</span> escapeSplit(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; str,
+<a name="l00081"></a>00081                  vector&lt;string&gt;* result,
+<a name="l00082"></a>00082                  <span class="keywordtype">char</span> delim = <span class="charliteral">&#39;,&#39;</span>,
+<a name="l00083"></a>00083                  <span class="keywordtype">char</span> left_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
+<a name="l00084"></a>00084                  <span class="keywordtype">char</span> right_quote = <span class="charliteral">&#39;&quot;&#39;</span>,
+<a name="l00085"></a>00085                  <span class="keywordtype">char</span> escape_char = <span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00086"></a>00086 };
+<a name="l00087"></a>00087 };
+<a name="l00088"></a>00088 <span class="preprocessor">#endif  // LTR_DATA_UTILITY_PARSERS_PARSER_UTILS_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['naiveiniter',['NaiveIniter',['../classoptimization_1_1_naive_initer.html',1,'optimization']]],
   ['namevalue',['NameValue',['../structltr_1_1_parameters_container_1_1_name_value.html',1,'ltr::ParametersContainer']]],
   ['nantoaverageconverterlearner',['NanToAverageConverterLearner',['../classltr_1_1_nan_to_average_converter_learner.html',1,'ltr']]],
   ['nantoneutralconverter',['NanToNeutralConverter',['../classltr_1_1_nan_to_neutral_converter.html',1,'ltr']]],
@@ -14,5 +15,6 @@ var searchData=
   ['normaldistribution',['NormalDistribution',['../class_random_lib_1_1_normal_distribution.html',1,'RandomLib']]],
   ['normalizedmeasure',['NormalizedMeasure',['../classltr_1_1_normalized_measure.html',1,'ltr']]],
   ['normalnaivebayesdensitylearner',['NormalNaiveBayesDensityLearner',['../classltr_1_1_normal_naive_bayes_density_learner.html',1,'ltr']]],
-  ['normalnaivebayeslearner',['NormalNaiveBayesLearner',['../classltr_1_1_normal_naive_bayes_learner.html',1,'ltr']]]
+  ['normalnaivebayeslearner',['NormalNaiveBayesLearner',['../classltr_1_1_normal_naive_bayes_learner.html',1,'ltr']]],
+  ['numberofcomponentsrule',['NumberOfComponentsRule',['../classltr_1_1_number_of_components_rule.html',1,'ltr']]]
 ];

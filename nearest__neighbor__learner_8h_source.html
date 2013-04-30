@@ -125,13 +125,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00021"></a>00021 <span class="keyword">using</span> <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">ltr::NNScorer</a>;
 <a name="l00022"></a>00022 <span class="keyword">using</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ltr::ParametersContainer</a>;
 <a name="l00023"></a>00023 <span class="keyword">using</span> <a class="code" href="classltr_1_1utility_1_1_neighbor_weighter.html">ltr::utility::NeighborWeighter</a>;
-<a name="l00024"></a>00024 <span class="keyword">using</span> <a class="code" href="classltr_1_1_euclidean_metric.html">ltr::EuclideanMetric</a>;
+<a name="l00024"></a>00024 <span class="keyword">using</span> <a class="code" href="classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects.">ltr::EuclideanMetric</a>;
 <a name="l00025"></a>00025 <span class="keyword">using</span> <a class="code" href="classltr_1_1utility_1_1_inverse_linear_distance.html">ltr::utility::InverseLinearDistance</a>;
 <a name="l00026"></a>00026 <span class="keyword">using</span> <a class="code" href="classltr_1_1_vote_predictions_aggregator.html">ltr::VotePredictionsAggregator</a>;
 <a name="l00027"></a>00027 
 <a name="l00028"></a>00028 <span class="keyword">namespace </span>ltr {
 <a name="l00035"></a>00035 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00036"></a><a class="code" href="classltr_1_1_n_n_learner.html">00036</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_n_n_learner.html" title="NNLearner Implements nearest neighbor approach.">NNLearner</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_learner.html">BaseLearner</a>&lt;TElement, NNScorer&gt; {
+<a name="l00036"></a><a class="code" href="classltr_1_1_n_n_learner.html">00036</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_n_n_learner.html" title="Implements nearest neighbor approach.">NNLearner</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_learner.html">BaseLearner</a>&lt;TElement, NNScorer&gt; {
 <a name="l00037"></a>00037  <span class="keyword">public</span>:
 <a name="l00038"></a><a class="code" href="classltr_1_1_n_n_learner.html#adf1b277ccabe21f8f45a7b56405cb1d4">00038</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;NNLearner&gt;</a> <a class="code" href="classltr_1_1_n_n_learner.html#adf1b277ccabe21f8f45a7b56405cb1d4">Ptr</a>;
 <a name="l00039"></a>00039 
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00047"></a>00047       parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;number_of_neighbors_to_process&quot;</span>);
 <a name="l00048"></a>00048   }
 <a name="l00049"></a>00049 
-<a name="l00050"></a><a class="code" href="classltr_1_1_n_n_learner.html#a4ed872d7d00323506714757ae21348f3">00050</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_n_n_learner.html#a5b384693ae842cf557bd7931db41e9b2">NNLearner</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseMetric::Ptr</a> metric = <span class="keyword">new</span> <a class="code" href="classltr_1_1_euclidean_metric.html">EuclideanMetric</a>(),
+<a name="l00050"></a><a class="code" href="classltr_1_1_n_n_learner.html#a4ed872d7d00323506714757ae21348f3">00050</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_n_n_learner.html#a5b384693ae842cf557bd7931db41e9b2">NNLearner</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseMetric::Ptr</a> metric = <span class="keyword">new</span> <a class="code" href="classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects.">EuclideanMetric</a>(),
 <a name="l00051"></a>00051             NeighborWeighter::Ptr neighbor_weighter = <span class="keyword">new</span> <a class="code" href="classltr_1_1utility_1_1_inverse_linear_distance.html">InverseLinearDistance</a>(),
 <a name="l00052"></a>00052             <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PredictionsAggregator::Ptr</a> predictions_aggregator = <span class="keyword">new</span> <a class="code" href="classltr_1_1_vote_predictions_aggregator.html">VotePredictionsAggregator</a>(),
 <a name="l00053"></a>00053             <span class="keywordtype">int</span> number_of_neighbors_to_process = 3) :
@@ -161,47 +161,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00063"></a>00063   <a class="code" href="classltr_1_1_n_n_learner.html#adacb6910817da6061923033ab4e4ce5c">GET_SET</a>(<span class="keywordtype">int</span>, number_of_neighbors_to_process);
 <a name="l00064"></a>00064 
 <a name="l00065"></a>00065  <span class="keyword">private</span>:
-<a name="l00066"></a>00066   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; data, <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a>* scorer);
-<a name="l00067"></a><a class="code" href="classltr_1_1_n_n_learner.html#ac636de242234dcc5f4eb9294a92cf990">00067</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_n_n_learner.html#ac636de242234dcc5f4eb9294a92cf990">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;NearestNeighborLearner&quot;</span>;}
-<a name="l00068"></a>00068 
-<a name="l00069"></a><a class="code" href="classltr_1_1_n_n_learner.html#a0b2c5fcbbcaa12d369fad1319a7a88d2">00069</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseMetric::Ptr</a> <a class="code" href="classltr_1_1_n_n_learner.html#a0b2c5fcbbcaa12d369fad1319a7a88d2">metric_</a>;
-<a name="l00070"></a><a class="code" href="classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe">00070</a>   NeighborWeighter::Ptr <a class="code" href="classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe">neighbor_weighter_</a>;
-<a name="l00071"></a><a class="code" href="classltr_1_1_n_n_learner.html#a402e043b158f8e653c12c48e5682e754">00071</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PredictionsAggregator::Ptr</a> <a class="code" href="classltr_1_1_n_n_learner.html#a402e043b158f8e653c12c48e5682e754">predictions_aggregator_</a>;
-<a name="l00072"></a><a class="code" href="classltr_1_1_n_n_learner.html#a507aa3536c5e9455bf8f79070ec450be">00072</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_n_n_learner.html#a507aa3536c5e9455bf8f79070ec450be">number_of_neighbors_to_process_</a>;
-<a name="l00073"></a>00073 };
+<a name="l00072"></a>00072   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data, <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a>* scorer);
+<a name="l00073"></a><a class="code" href="classltr_1_1_n_n_learner.html#ac636de242234dcc5f4eb9294a92cf990">00073</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_n_n_learner.html#ac636de242234dcc5f4eb9294a92cf990">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;NearestNeighborLearner&quot;</span>;}
 <a name="l00074"></a>00074 
-<a name="l00078"></a>00078 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00079"></a><a class="code" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">00079</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">NNLearner&lt;TElement&gt;::learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;TElement&gt;</a>&amp; data,
-<a name="l00080"></a>00080                                     <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a>* scorer) {
-<a name="l00081"></a>00081   rInfo(<span class="stringliteral">&quot;Learning started&quot;</span>);
-<a name="l00082"></a>00082   <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;Object&gt;</a> object_data;
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> element_index = 0;
-<a name="l00085"></a>00085        element_index &lt; data.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>();
-<a name="l00086"></a>00086        ++element_index) {
-<a name="l00087"></a>00087     <a class="code" href="classltr_1_1_per_object_accessor.html">PerObjectAccessor&lt;const TElement&gt;</a>
-<a name="l00088"></a>00088       per_object_accessor(&amp;data[element_index]);
-<a name="l00089"></a>00089     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> object_index = 0;
-<a name="l00090"></a>00090          object_index &lt; per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#a55ebbb7e8a85f3ec37fd9d2bdfb91ffb">object_count</a>();
-<a name="l00091"></a>00091          ++object_index) {
-<a name="l00092"></a>00092        object_data.<a class="code" href="classltr_1_1_data_set.html#addb95d8ff26575686ddc3d0f845b6d32">add</a>(per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(object_index));
-<a name="l00093"></a>00093     }
-<a name="l00094"></a>00094   }
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096   *scorer =  <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a>(metric_,
-<a name="l00097"></a>00097                       object_data,
-<a name="l00098"></a>00098                       neighbor_weighter_,
-<a name="l00099"></a>00099                       predictions_aggregator_,
-<a name="l00100"></a>00100                       number_of_neighbors_to_process_);
-<a name="l00101"></a>00101 }
-<a name="l00102"></a>00102 };
-<a name="l00103"></a>00103 
-<a name="l00104"></a>00104 <span class="preprocessor">#endif  // LTR_LEARNERS_NEAREST_NEIGHBOR_LEARNER_NEAREST_NEIGHBOR_LEARNER_H_</span>
+<a name="l00075"></a><a class="code" href="classltr_1_1_n_n_learner.html#a0b2c5fcbbcaa12d369fad1319a7a88d2">00075</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseMetric::Ptr</a> <a class="code" href="classltr_1_1_n_n_learner.html#a0b2c5fcbbcaa12d369fad1319a7a88d2">metric_</a>;
+<a name="l00076"></a><a class="code" href="classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe">00076</a>   NeighborWeighter::Ptr <a class="code" href="classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe">neighbor_weighter_</a>;
+<a name="l00077"></a><a class="code" href="classltr_1_1_n_n_learner.html#a402e043b158f8e653c12c48e5682e754">00077</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PredictionsAggregator::Ptr</a> <a class="code" href="classltr_1_1_n_n_learner.html#a402e043b158f8e653c12c48e5682e754">predictions_aggregator_</a>;
+<a name="l00078"></a><a class="code" href="classltr_1_1_n_n_learner.html#a507aa3536c5e9455bf8f79070ec450be">00078</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_n_n_learner.html#a507aa3536c5e9455bf8f79070ec450be">number_of_neighbors_to_process_</a>;
+<a name="l00079"></a>00079 };
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00082"></a><a class="code" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">00082</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">NNLearner&lt;TElement&gt;::learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data,
+<a name="l00083"></a>00083                                     <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a>* scorer) {
+<a name="l00084"></a>00084   rInfo(<span class="stringliteral">&quot;Learning started&quot;</span>);
+<a name="l00085"></a>00085   <a class="code" href="classltr_1_1_data_set.html">DataSet&lt;Object&gt;</a> object_data;
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> element_index = 0;
+<a name="l00088"></a>00088        element_index &lt; data.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>();
+<a name="l00089"></a>00089        ++element_index) {
+<a name="l00090"></a>00090     <a class="code" href="classltr_1_1_per_object_accessor.html">PerObjectAccessor&lt;const TElement&gt;</a>
+<a name="l00091"></a>00091       per_object_accessor(&amp;data[element_index]);
+<a name="l00092"></a>00092     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> object_index = 0;
+<a name="l00093"></a>00093          object_index &lt; per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#a55ebbb7e8a85f3ec37fd9d2bdfb91ffb">object_count</a>();
+<a name="l00094"></a>00094          ++object_index) {
+<a name="l00095"></a>00095        object_data.<a class="code" href="classltr_1_1_data_set.html#addb95d8ff26575686ddc3d0f845b6d32">add</a>(per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(object_index));
+<a name="l00096"></a>00096     }
+<a name="l00097"></a>00097   }
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099   *scorer =  <a class="code" href="classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator...">NNScorer</a>(metric_,
+<a name="l00100"></a>00100                       object_data,
+<a name="l00101"></a>00101                       neighbor_weighter_,
+<a name="l00102"></a>00102                       predictions_aggregator_,
+<a name="l00103"></a>00103                       number_of_neighbors_to_process_);
+<a name="l00104"></a>00104 }
+<a name="l00105"></a>00105 };
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 <span class="preprocessor">#endif  // LTR_LEARNERS_NEAREST_NEIGHBOR_LEARNER_NEAREST_NEIGHBOR_LEARNER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

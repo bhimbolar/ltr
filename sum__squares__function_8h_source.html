@@ -111,25 +111,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="twice__differentiable__function_8h.html">ltr/optimization/functions/twice_differentiable_function.h</a>&quot;</span>
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="keyword">namespace </span>optimization {
-<a name="l00016"></a>00016 <span class="keyword">class </span>SumSquaresFunction : <span class="keyword">public</span> TwiceDifferentiableFunction {
-<a name="l00017"></a>00017  <span class="keyword">public</span>:
-<a name="l00018"></a>00018   <span class="keyword">explicit</span> SumSquaresFunction(<span class="keywordtype">int</span> dimension)
-<a name="l00019"></a>00019     : TwiceDifferentiableFunction(dimension) { }
-<a name="l00020"></a>00020   ~SumSquaresFunction() { }
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022   <span class="keywordtype">double</span> value(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00023"></a>00023   Matrix hessian(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00024"></a>00024   Vector gradient(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00025"></a>00025   <span class="keywordtype">string</span> getDefaultAlias()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;SumSquaresFunction&quot;</span>; }
-<a name="l00026"></a>00026 };
-<a name="l00027"></a>00027 }
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TEST_UNCONSTRAINED_SUM_SQUARES_FUNCTION_SUM_SQUARES_FUNCTION_H_</span>
+<a name="l00017"></a><a class="code" href="classoptimization_1_1_sum_squares_function.html">00017</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_sum_squares_function.html" title="Class for Sum Squares function in . , minimum at .">SumSquaresFunction</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a> {
+<a name="l00018"></a>00018  <span class="keyword">public</span>:
+<a name="l00019"></a><a class="code" href="classoptimization_1_1_sum_squares_function.html#a89f96e7eef48936ae9302e9829fa32c9">00019</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_sum_squares_function.html#a89f96e7eef48936ae9302e9829fa32c9">SumSquaresFunction</a>(<span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)
+<a name="l00020"></a>00020     : <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a>(dimension) { }
+<a name="l00021"></a><a class="code" href="classoptimization_1_1_sum_squares_function.html#a9ddc7e74cfcf87183bbee2332e577bd8">00021</a>   <a class="code" href="classoptimization_1_1_sum_squares_function.html#a9ddc7e74cfcf87183bbee2332e577bd8">~SumSquaresFunction</a>() { }
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_sum_squares_function.html#ababe1c9be5b90698a36a43b9b85aa01a">value</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00024"></a>00024   Matrix <a class="code" href="classoptimization_1_1_sum_squares_function.html#a811dd4e5a20a7906f60c38d36ef1514b">hessian</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00025"></a>00025   Vector <a class="code" href="classoptimization_1_1_sum_squares_function.html#a74fb7fc73cd708bc799327a71e60888b">gradient</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
+<a name="l00026"></a><a class="code" href="classoptimization_1_1_sum_squares_function.html#a6654f916ecd63c3a4f3f2c595cedc584">00026</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_sum_squares_function.html#a6654f916ecd63c3a4f3f2c595cedc584">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;SumSquaresFunction&quot;</span>; }
+<a name="l00027"></a>00027 };
+<a name="l00028"></a>00028 }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_FUNCTIONS_TEST_UNCONSTRAINED_SUM_SQUARES_FUNCTION_SUM_SQUARES_FUNCTION_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2013 11:02:09 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 30 2013 15:11:33 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
