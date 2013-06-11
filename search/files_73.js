@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['safe_5fmap_2ehpp',['safe_map.hpp',['../safe__map_8hpp.html',1,'']]],
+  ['safe_5fmap_5funittest_2ecc',['safe_map_unittest.cc',['../safe__map__unittest_8cc.html',1,'']]],
+  ['safe_5fset_2ehpp',['safe_set.hpp',['../safe__set_8hpp.html',1,'']]],
+  ['safe_5fset_5funittest_2ecc',['safe_set_unittest.cc',['../safe__set__unittest_8cc.html',1,'']]],
   ['same_5flabel_5fstop_5fcriteria_2ecc',['same_label_stop_criteria.cc',['../same__label__stop__criteria_8cc.html',1,'']]],
   ['same_5flabel_5fstop_5fcriteria_2eh',['same_label_stop_criteria.h',['../same__label__stop__criteria_8h.html',1,'']]],
   ['save_5fpredictions_5funittest_2ecc',['save_predictions_unittest.cc',['../save__predictions__unittest_8cc.html',1,'']]],
@@ -23,9 +27,12 @@ var searchData=
   ['splitter_2eh',['splitter.h',['../splitter_8h.html',1,'']]],
   ['splitter_5funittest_2eh',['splitter_unittest.h',['../splitter__unittest_8h.html',1,'']]],
   ['squared_5ferror_2eh',['squared_error.h',['../squared__error_8h.html',1,'']]],
+  ['stand_5falone_5fobject_5frepresentation_2ecc',['stand_alone_object_representation.cc',['../stand__alone__object__representation_8cc.html',1,'']]],
+  ['stand_5falone_5fobject_5frepresentation_2eh',['stand_alone_object_representation.h',['../stand__alone__object__representation_8h.html',1,'']]],
   ['stand_5ffunctions_5funittest_2ecc',['stand_functions_unittest.cc',['../stand__functions__unittest_8cc.html',1,'']]],
   ['statistics_5fcalculation_2eh',['statistics_calculation.h',['../statistics__calculation_8h.html',1,'']]],
   ['stop_5fcriteria_5funittest_2ecc',['stop_criteria_unittest.cc',['../stop__criteria__unittest_8cc.html',1,'']]],
+  ['stop_5fcriterion_2eh',['stop_criterion.h',['../stop__criterion_8h.html',1,'']]],
   ['stop_5fsplitting_5fcriteria_2eh',['stop_splitting_criteria.h',['../stop__splitting__criteria_8h.html',1,'']]],
   ['string_5futils_2ecc',['string_utils.cc',['../string__utils_8cc.html',1,'']]],
   ['string_5futils_2eh',['string_utils.h',['../string__utils_8h.html',1,'']]],

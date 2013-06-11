@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="5,80,328,107"/>
-<area shape="rect" href="$vote__aggregator_8cc.html" title="ltr/optimization/stop_criteria/vote_aggregator.cc" alt="" coords="352,80,645,107"/>
+<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="5,80,352,107"/>
+<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="123,155,445,181"/>
+<area shape="rect" href="$vote__aggregator_8cc.html" title="ltr/optimization/stop_criteria/vote_aggregator.cc" alt="" coords="427,80,720,107"/>
 </map>

@@ -16,9 +16,9 @@ var searchData=
   ['singular_5fvalues_5f',['singular_values_',['../classltr_1_1_p_c_a_learner.html#a7842cfd901f04cf1f004193319044a23',1,'ltr::PCALearner']]],
   ['size',['size',['../structltr_1_1utility_1_1_dimension_size.html#aa28ff716ca31557c6404621f51c2e734',1,'ltr::utility::DimensionSize']]],
   ['sizeval',['sizeVal',['../struct_size_over_index.html#a397c8cada8056e0e3506c9e6e7ffacf3',1,'SizeOverIndex']]],
-  ['source',['source',['../classltr_1_1utility_1_1bad__lexical__cast.html#a588c672db5fe7fa76eb7e1080b9e69a8',1,'ltr::utility::bad_lexical_cast']]],
   ['splitter',['splitter',['../struct_crossvalidation_launch_info.html#a21ee79a41098bf23fa2e506a43ef3f04',1,'CrossvalidationLaunchInfo']]],
   ['splitter_5f',['splitter_',['../classltr_1_1cv_1_1_cross_validator.html#a48580310e51d887b7e4e8212aa2de4ec',1,'ltr::cv::CrossValidator::splitter_()'],['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a66a8a2d7ede496a36fbb9c49c93ce73e',1,'ltr::decision_tree::DecisionTreeLearner::splitter_()']]],
+  ['start_5fline_5findex',['start_line_index',['../structltr_1_1_element_bounds.html#ac3d8e6f1f945a0b92c8797606d5eee7c',1,'ltr::ElementBounds']]],
   ['stop_5fsplitting_5fcriteria_5f',['stop_splitting_criteria_',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a83843087eaca77581709a289fffb22ea',1,'ltr::decision_tree::DecisionTreeLearner']]],
   ['svm_5farff_5ftest_5ffile_5fname',['svm_arff_test_file_name',['../class_i_o_utility_test.html#a4891e6fabad40165060e7327cd3f8ad2',1,'IOUtilityTest']]]
 ];

@@ -11,6 +11,8 @@ var searchData=
   ['fakesplitter',['FakeSplitter',['../classltr_1_1decision__tree_1_1_fake_splitter.html',1,'ltr::decision_tree']]],
   ['featureconverter',['FeatureConverter',['../classltr_1_1_feature_converter.html',1,'ltr']]],
   ['featureconverterlearner',['FeatureConverterLearner',['../classltr_1_1_feature_converter_learner.html',1,'ltr']]],
+  ['featureconverterlearner_3c_20object_20_3e',['FeatureConverterLearner< Object >',['../classltr_1_1_feature_converter_learner.html',1,'ltr']]],
+  ['featureconverterlearner_3c_20objecttype_20_3e',['FeatureConverterLearner< ObjectType >',['../classltr_1_1_feature_converter_learner.html',1,'ltr']]],
   ['featureconverterslearnertest',['FeatureConvertersLearnerTest',['../class_feature_converters_learner_test.html',1,'']]],
   ['featureinfo',['FeatureInfo',['../classltr_1_1_feature_info.html',1,'ltr']]],
   ['featurenormalizerlearner',['FeatureNormalizerLearner',['../classltr_1_1_feature_normalizer_learner.html',1,'ltr']]],

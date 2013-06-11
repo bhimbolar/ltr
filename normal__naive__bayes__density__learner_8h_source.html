@@ -116,56 +116,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
 <a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="statistics__calculation_8h.html">ltr/utility/statistics_calculation.h</a>&quot;</span>
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016 <span class="keyword">using</span> <a class="code" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">ltr::BaseProbabilityDensityEstimator</a>;
-<a name="l00017"></a>00017 <span class="keyword">using</span> <a class="code" href="classltr_1_1_non_linear_discriminant_density_learner.html" title="Interface of discriminants that can not be converted to linear separators.">ltr::NonLinearDiscriminantDensityLearner</a>;
-<a name="l00018"></a>00018 <span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
-<a name="l00019"></a>00019 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
-<a name="l00020"></a>00020 <span class="keyword">using</span> ltr::LabelToCovarianceMatrix;
-<a name="l00021"></a>00021 <span class="keyword">using</span> ltr::utility::CalculateFeaturesVariance;
-<a name="l00022"></a>00022 <span class="keyword">using</span> ltr::utility::doubleVectorXdMap;
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="keyword">namespace </span>ltr {
-<a name="l00029"></a>00029 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00030"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html">00030</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html" title="Probability density learner that uses Normal Naive Bayesian approach to generate probability density ...">NormalNaiveBayesDensityLearner</a>
-<a name="l00031"></a>00031   : <span class="keyword">public</span> <a class="code" href="classltr_1_1_non_linear_discriminant_density_learner.html" title="Interface of discriminants that can not be converted to linear separators.">NonLinearDiscriminantDensityLearner</a>&lt;TElement&gt; {
-<a name="l00032"></a>00032  <span class="keyword">public</span>:
-<a name="l00033"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#aeb59786cd990a7bf960c957076631695">00033</a>   <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#aeb59786cd990a7bf960c957076631695">NormalNaiveBayesDensityLearner</a>() {
-<a name="l00034"></a>00034   }
-<a name="l00035"></a>00035 
-<a name="l00036"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a3b9b5286885204b99867ed5725eb4d6d">00036</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#aeb59786cd990a7bf960c957076631695">NormalNaiveBayesDensityLearner</a>(
-<a name="l00037"></a>00037     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
-<a name="l00038"></a>00038   }
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040  <span class="keyword">private</span>:
-<a name="l00045"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a8065c1fa8b83608f062ae547f1597c49">00045</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a8065c1fa8b83608f062ae547f1597c49" title="Function calculates the variance of every class from the training data set.">calculateVariance</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
-<a name="l00046"></a>00046                          doubleVectorXdMap* result) {
-<a name="l00047"></a>00047     vector&lt;DataSet&lt;Object&gt; &gt; splitted_data;
-<a name="l00048"></a>00048     SplitDataSetByActualLabel(data_set, &amp;splitted_data);
-<a name="l00049"></a>00049     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> subset_index = 0;
-<a name="l00050"></a>00050          subset_index &lt; splitted_data.size();
-<a name="l00051"></a>00051          ++subset_index) {
-<a name="l00052"></a>00052       vector&lt;double&gt; variance;
-<a name="l00053"></a>00053       CalculateFeaturesVariance(splitted_data[subset_index], &amp;variance);
-<a name="l00054"></a>00054       <span class="keywordtype">double</span> label = splitted_data[subset_index][0].actual_label();
-<a name="l00055"></a>00055       (*result)[label] = StdVectorToEigenVector(variance);
-<a name="l00056"></a>00056     }
-<a name="l00057"></a>00057   }
-<a name="l00058"></a>00058 
-<a name="l00059"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a5947efd1a94e75d3f26b86c9538bf934">00059</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a5947efd1a94e75d3f26b86c9538bf934">calculateCovarianceMatrix</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
-<a name="l00060"></a>00060                                          LabelToCovarianceMatrix* result) {
-<a name="l00061"></a>00061     LabelToMean mean;
-<a name="l00062"></a>00062     doubleVectorXdMap variance;
-<a name="l00063"></a>00063     this-&gt;<a class="code" href="classltr_1_1_non_linear_discriminant_density_learner.html#a6898774867867869f8b2bdc046b19e4f">calculateMean</a>(data_set, &amp;mean);
-<a name="l00064"></a>00064     <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a8065c1fa8b83608f062ae547f1597c49" title="Function calculates the variance of every class from the training data set.">calculateVariance</a>(data_set, &amp;variance);
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066     <span class="keywordflow">for</span> (doubleVectorXdMap::iterator variance_iterator = variance.begin();
-<a name="l00067"></a>00067          variance_iterator != variance.end();
-<a name="l00068"></a>00068          ++variance_iterator) {
-<a name="l00069"></a>00069       <span class="keywordtype">double</span> label = variance_iterator-&gt;first;
-<a name="l00070"></a>00070       <span class="keywordtype">int</span> <a class="code" href="feature__converters__learner__unittest_8cc.html#a4f3057e2cb77f06001fd8855ac7f8f68">features_count</a> = variance_iterator-&gt;second.size();
-<a name="l00071"></a>00071       (*result)[label] = MatrixXd(features_count, features_count);
-<a name="l00072"></a>00072       InitEigenMatrix(&amp;(*result)[label]);
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="typedefs_8h.html">ltr/utility/typedefs.h</a>&quot;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="keyword">using</span> <a class="code" href="classltr_1_1_base_probability_density_estimator.html" title="Simple interface of the probability density estimator.">ltr::BaseProbabilityDensityEstimator</a>;
+<a name="l00018"></a>00018 <span class="keyword">using</span> <a class="code" href="classltr_1_1_non_linear_discriminant_density_learner.html" title="Interface of discriminants that can not be converted to linear separators.">ltr::NonLinearDiscriminantDensityLearner</a>;
+<a name="l00019"></a>00019 <span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
+<a name="l00020"></a>00020 <span class="keyword">using</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>;
+<a name="l00021"></a>00021 <span class="keyword">using</span> ltr::LabelToCovarianceMatrix;
+<a name="l00022"></a>00022 <span class="keyword">using</span> ltr::utility::CalculateFeaturesVariance;
+<a name="l00023"></a>00023 <span class="keyword">using</span> ltr::utility::doubleVectorXdMap;
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">namespace </span>ltr {
+<a name="l00030"></a>00030 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00031"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html">00031</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html" title="Probability density learner that uses Normal Naive Bayesian approach to generate probability density ...">NormalNaiveBayesDensityLearner</a>
+<a name="l00032"></a>00032   : <span class="keyword">public</span> <a class="code" href="classltr_1_1_non_linear_discriminant_density_learner.html" title="Interface of discriminants that can not be converted to linear separators.">NonLinearDiscriminantDensityLearner</a>&lt;TElement&gt; {
+<a name="l00033"></a>00033  <span class="keyword">public</span>:
+<a name="l00034"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#aeb59786cd990a7bf960c957076631695">00034</a>   <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#aeb59786cd990a7bf960c957076631695">NormalNaiveBayesDensityLearner</a>() {
+<a name="l00035"></a>00035   }
+<a name="l00036"></a>00036 
+<a name="l00037"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a3b9b5286885204b99867ed5725eb4d6d">00037</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#aeb59786cd990a7bf960c957076631695">NormalNaiveBayesDensityLearner</a>(
+<a name="l00038"></a>00038     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
+<a name="l00039"></a>00039   }
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041  <span class="keyword">private</span>:
+<a name="l00046"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a8065c1fa8b83608f062ae547f1597c49">00046</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a8065c1fa8b83608f062ae547f1597c49" title="Function calculates the variance of every class from the training data set.">calculateVariance</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
+<a name="l00047"></a>00047                          doubleVectorXdMap* result) {
+<a name="l00048"></a>00048     vector&lt;DataSet&lt;Object&gt; &gt; splitted_data;
+<a name="l00049"></a>00049     SplitDataSetByActualLabel(data_set, &amp;splitted_data);
+<a name="l00050"></a>00050     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> subset_index = 0;
+<a name="l00051"></a>00051          subset_index &lt; splitted_data.size();
+<a name="l00052"></a>00052          ++subset_index) {
+<a name="l00053"></a>00053       VectorXd variance;
+<a name="l00054"></a>00054       CalculateFeaturesVariance(splitted_data[subset_index], &amp;variance);
+<a name="l00055"></a>00055       <span class="keywordtype">double</span> label = splitted_data[subset_index][0].actual_label();
+<a name="l00056"></a>00056       (*result)[label] = variance;
+<a name="l00057"></a>00057     }
+<a name="l00058"></a>00058   }
+<a name="l00059"></a>00059 
+<a name="l00060"></a><a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a5947efd1a94e75d3f26b86c9538bf934">00060</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a5947efd1a94e75d3f26b86c9538bf934">calculateCovarianceMatrix</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
+<a name="l00061"></a>00061                                          LabelToCovarianceMatrix* result) {
+<a name="l00062"></a>00062     LabelToMean mean;
+<a name="l00063"></a>00063     doubleVectorXdMap variance;
+<a name="l00064"></a>00064     this-&gt;<a class="code" href="classltr_1_1_non_linear_discriminant_density_learner.html#a6898774867867869f8b2bdc046b19e4f">calculateMean</a>(data_set, &amp;mean);
+<a name="l00065"></a>00065     <a class="code" href="classltr_1_1_normal_naive_bayes_density_learner.html#a8065c1fa8b83608f062ae547f1597c49" title="Function calculates the variance of every class from the training data set.">calculateVariance</a>(data_set, &amp;variance);
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067     <span class="keywordflow">for</span> (doubleVectorXdMap::iterator variance_iterator = variance.begin();
+<a name="l00068"></a>00068          variance_iterator != variance.end();
+<a name="l00069"></a>00069          ++variance_iterator) {
+<a name="l00070"></a>00070       <span class="keywordtype">double</span> label = variance_iterator-&gt;first;
+<a name="l00071"></a>00071       <span class="keywordtype">int</span> <a class="code" href="feature__converters__learner__unittest_8cc.html#a4f3057e2cb77f06001fd8855ac7f8f68">features_count</a> = variance_iterator-&gt;second.size();
+<a name="l00072"></a>00072       (*result)[label] = MatrixXd::Zero(features_count, features_count);
 <a name="l00073"></a>00073 
 <a name="l00074"></a>00074       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> feature_index = 0;
 <a name="l00075"></a>00075            feature_index &lt; <a class="code" href="feature__converters__learner__unittest_8cc.html#a4f3057e2cb77f06001fd8855ac7f8f68">features_count</a>;
@@ -183,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:52 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

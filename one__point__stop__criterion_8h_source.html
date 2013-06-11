@@ -108,45 +108,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_OPTIMIZATION_STOP_CRITERIA_ONE_POINT_STOP_CRITERION_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;Eigen/Core&quot;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;contrib/include_Eigen.h&quot;</span>
 <a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="aliaser_8h.html">ltr/interfaces/aliaser.h</a>&quot;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
 <a name="l00011"></a>00011 
 <a name="l00012"></a>00012 <span class="keyword">namespace </span>optimization {
 <a name="l00013"></a>00013 <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>;
-<a name="l00020"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html">00020</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">ltr::Aliaser</a> {
-<a name="l00021"></a>00021  <span class="keyword">public</span>:
-<a name="l00022"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">00022</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; OnePointStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">Ptr</a>;
-<a name="l00023"></a>00023 
-<a name="l00024"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a486fee513be8c3005f62ee9f5a0abb5b">00024</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a486fee513be8c3005f62ee9f5a0abb5b">OnePointStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>)
-<a name="l00025"></a>00025       : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#ac2e1ebb08bb868402cd99fd2783c875f">function_</a>(function),
-<a name="l00026"></a>00026         <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">is_true_</a>(false) { }
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a43647ac15227d2d55c311cb1627e6d83">00028</a>   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a43647ac15227d2d55c311cb1627e6d83">~OnePointStopCriterion</a>() { }
+<a name="l00022"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html">00022</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">ltr::Aliaser</a> {
+<a name="l00023"></a>00023  <span class="keyword">public</span>:
+<a name="l00024"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">00024</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; OnePointStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">Ptr</a>;
+<a name="l00025"></a>00025 
+<a name="l00026"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a486fee513be8c3005f62ee9f5a0abb5b">00026</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a486fee513be8c3005f62ee9f5a0abb5b">OnePointStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>)
+<a name="l00027"></a>00027       : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#ac2e1ebb08bb868402cd99fd2783c875f">function_</a>(function),
+<a name="l00028"></a>00028         <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">is_true_</a>(false) { }
 <a name="l00029"></a>00029 
-<a name="l00033"></a>00033   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#af4671c51ae69a7469673edb388083727">init</a>(<span class="keyword">const</span> Point&amp; point) = 0;
-<a name="l00037"></a>00037   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a799030796ffc493cbf317b4e65aa8c10">update</a>(<span class="keyword">const</span> Point&amp; point) = 0;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keyword">typename</span> TFunction::Ptr, <span class="keyword">function</span>);
-<a name="l00040"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a53a3ec800dcfc8dc7e39ce5755867d3a">00040</a>   <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a53a3ec800dcfc8dc7e39ce5755867d3a">isTrue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">is_true_</a>; }
-<a name="l00041"></a>00041   <span class="keyword">virtual</span> <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#aa257a2793a0e9a5c101db68f6956b57f">clone</a>() <span class="keyword">const</span> = 0;
-<a name="l00042"></a>00042 
-<a name="l00043"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a675f60f679b846500c20d0a377854297">00043</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a675f60f679b846500c20d0a377854297">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;OnePointStopCriterion&quot;</span>; }
-<a name="l00044"></a>00044  <span class="keyword">protected</span>:
-<a name="l00045"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#ac2e1ebb08bb868402cd99fd2783c875f">00045</a>   <span class="keyword">typename</span> TFunction::Ptr <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#ac2e1ebb08bb868402cd99fd2783c875f">function_</a>;
-<a name="l00046"></a>00046   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a22c867c10cd41c107a683190c944bab4">SET</a>(<span class="keywordtype">bool</span>, is_true);
-<a name="l00047"></a>00047  <span class="keyword">private</span>:
-<a name="l00052"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">00052</a>   <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">is_true_</a>;
-<a name="l00053"></a>00053 };
-<a name="l00054"></a>00054 }
-<a name="l00055"></a>00055 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_ONE_POINT_STOP_CRITERION_H_</span>
-<a name="l00056"></a>00056 <span class="preprocessor"></span>
+<a name="l00030"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a43647ac15227d2d55c311cb1627e6d83">00030</a>   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a43647ac15227d2d55c311cb1627e6d83">~OnePointStopCriterion</a>() { }
+<a name="l00031"></a>00031 
+<a name="l00035"></a>00035   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#af4671c51ae69a7469673edb388083727">init</a>(<span class="keyword">const</span> Point&amp; point) = 0;
+<a name="l00039"></a>00039   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a799030796ffc493cbf317b4e65aa8c10">update</a>(<span class="keyword">const</span> Point&amp; point) = 0;
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keyword">typename</span> TFunction::Ptr, <span class="keyword">function</span>);
+<a name="l00042"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a53a3ec800dcfc8dc7e39ce5755867d3a">00042</a>   <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a53a3ec800dcfc8dc7e39ce5755867d3a">isTrue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">is_true_</a>; }
+<a name="l00043"></a>00043   <span class="keyword">virtual</span> <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#aa257a2793a0e9a5c101db68f6956b57f">clone</a>() <span class="keyword">const</span> = 0;
+<a name="l00044"></a>00044 
+<a name="l00045"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a675f60f679b846500c20d0a377854297">00045</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a675f60f679b846500c20d0a377854297">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;OnePointStopCriterion&quot;</span>; }
+<a name="l00046"></a>00046  <span class="keyword">protected</span>:
+<a name="l00047"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#ac2e1ebb08bb868402cd99fd2783c875f">00047</a>   <span class="keyword">typename</span> TFunction::Ptr <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#ac2e1ebb08bb868402cd99fd2783c875f">function_</a>;
+<a name="l00048"></a>00048   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a22c867c10cd41c107a683190c944bab4">SET</a>(<span class="keywordtype">bool</span>, is_true);
+<a name="l00049"></a>00049  <span class="keyword">private</span>:
+<a name="l00054"></a><a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">00054</a>   <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547">is_true_</a>;
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 }
+<a name="l00057"></a>00057 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_ONE_POINT_STOP_CRITERION_H_</span>
+<a name="l00058"></a>00058 <span class="preprocessor"></span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:05 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:52 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

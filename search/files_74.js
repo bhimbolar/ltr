@@ -24,5 +24,6 @@ var searchData=
   ['two_5fclass_5factual_5flabel_5fconverter_2eh',['two_class_actual_label_converter.h',['../two__class__actual__label__converter_8h.html',1,'']]],
   ['two_5fclass_5factual_5flabel_5fconverter_5funittest_2ecc',['two_class_actual_label_converter_unittest.cc',['../two__class__actual__label__converter__unittest_8cc.html',1,'']]],
   ['two_5fclass_5fpredicted_5flabel_5fconverter_2eh',['two_class_predicted_label_converter.h',['../two__class__predicted__label__converter_8h.html',1,'']]],
-  ['two_5fclass_5fpredicted_5flabel_5fconverter_5funittest_2ecc',['two_class_predicted_label_converter_unittest.cc',['../two__class__predicted__label__converter__unittest_8cc.html',1,'']]]
+  ['two_5fclass_5fpredicted_5flabel_5fconverter_5funittest_2ecc',['two_class_predicted_label_converter_unittest.cc',['../two__class__predicted__label__converter__unittest_8cc.html',1,'']]],
+  ['typedefs_2eh',['typedefs.h',['../typedefs_8h.html',1,'']]]
 ];

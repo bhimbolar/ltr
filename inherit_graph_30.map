@@ -1,7 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" href="$classltr_1_1io__utility_1_1_parser.html" title="This class allows to parse strings into Objects and serialize Objects into strings." alt="" coords="7,81,140,108"/>
-<area shape="rect" href="$classltr_1_1io__utility_1_1_a_r_f_f_parser.html" title="Parse ARFF format (http://www.cs.waikato.ac.nz/ml/weka/arff.html)" alt="" coords="195,5,363,32"/>
-<area shape="rect" href="$classltr_1_1io__utility_1_1_d_s_v_parser.html" title="Parse DSV format (http://en.wikipedia.org/wiki/Delimiter&#45;separated_values) We don&#39;t support double qu..." alt="" coords="199,56,359,83"/>
-<area shape="rect" href="$classltr_1_1io__utility_1_1_s_v_m_parser.html" title="Parse SVM light format (http://svmlight.joachims.org/)" alt="" coords="197,107,360,133"/>
-<area shape="rect" href="$classltr_1_1io__utility_1_1_yandex_parser.html" title="Parse Yandex Mathematics 2009 format (http://imat2009.yandex.ru/datasets)" alt="" coords="191,157,367,184"/>
+<area shape="rect" href="$structltr_1_1_distance_to_neighbor.html" title="ltr::DistanceToNeighbor" alt="" coords="7,5,161,32"/>
 </map>

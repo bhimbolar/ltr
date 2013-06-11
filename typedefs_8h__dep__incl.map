@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$normal__naive__bayes__density__learner_8h.html" title="ltr/density_estimators/normal_naive_bayes_density_learner.h" alt="" coords="377,80,751,107"/>
+<area shape="rect" href="$density__estimators__scorers__unittests_8cc.html" title="ltr/density_estimators/density_estimators_scorers_unittests.cc" alt="" coords="775,80,1159,107"/>
+<area shape="rect" href="$fisher__discriminant_8cc.html" title="ltr/density_estimators/fisher_discriminant.cc" alt="" coords="1183,80,1457,107"/>
+<area shape="rect" href="$non__linear__discriminant_8cc.html" title="ltr/density_estimators/non_linear_discriminant.cc" alt="" coords="1481,80,1785,107"/>
+<area shape="rect" href="$density__estimators__learners__unittests_8cc.html" title="ltr/density_estimators/density_estimators_learners_unittests.cc" alt="" coords="5,155,392,181"/>
+<area shape="rect" href="$bayesian__learner_8h.html" title="ltr/learners/bayesian_learner/bayesian_learner.h" alt="" coords="416,155,712,181"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="709,229,859,256"/>
+<area shape="rect" href="$bayesian__learner__unittest_8cc.html" title="ltr/learners/bayesian_learner/bayesian_learner_unittest.cc" alt="" coords="40,229,395,256"/>
+<area shape="rect" href="$generator_8cc.html" title="ltr/serialization_test/generator/generator.cc" alt="" coords="419,229,685,256"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="724,304,844,331"/>
+</map>

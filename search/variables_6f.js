@@ -6,6 +6,7 @@ var searchData=
   ['object4',['object4',['../class_pointwise_measures_test.html#a0c008475453f4be4fef06cd643bc3461',1,'PointwiseMeasuresTest']]],
   ['object5',['object5',['../class_pointwise_measures_test.html#ac52f9685618558626be7b7ee10fdc72f',1,'PointwiseMeasuresTest']]],
   ['object_5finfos_5f',['object_infos_',['../class_config_parser.html#afe0dd3d3c81b0e3a50c9c2a7548ee52e',1,'ConfigParser']]],
+  ['object_5fline_5findex_5f',['object_line_index_',['../classltr_1_1_data_set_object_iterator.html#adfb05816a8af8a4b8713a3f6ac802300',1,'ltr::DataSetObjectIterator::object_line_index_()'],['../classltr_1_1_const_data_set_object_iterator.html#acd470ea74171755495155e377dbfd5a3',1,'ltr::ConstDataSetObjectIterator::object_line_index_()']]],
   ['object_5fname_5f',['object_name_',['../class_object_info.html#a68810e39a37792a34043eb447eb52e89',1,'ObjectInfo']]],
   ['object_5fpair1',['object_pair1',['../class_pairwise_measures_test.html#a5efbf92bc7d591aa391bc6a4292dcf2d',1,'PairwiseMeasuresTest']]],
   ['object_5fpair2',['object_pair2',['../class_pairwise_measures_test.html#a58dd2a934c4817cb6b4d56f00e7b374d',1,'PairwiseMeasuresTest']]],
@@ -13,5 +14,7 @@ var searchData=
   ['object_5ftype_5f',['object_type_',['../class_object_info.html#a66ba3b7921a5237b7b0378e246f9279b',1,'ObjectInfo']]],
   ['objects_5f',['objects_',['../classltr_1_1_object_list.html#ac869fd4e16cb3d469e2ddbc734b669c9',1,'ltr::ObjectList']]],
   ['olist',['olist',['../class_listwise_measures_test.html#a7c55df26954229012aa949c7d05a2dc9',1,'ListwiseMeasuresTest']]],
-  ['olist2',['olist2',['../class_listwise_measures_test.html#ac9dd429d5cbaa8f9c8fbe3139f8a1319',1,'ListwiseMeasuresTest']]]
+  ['olist2',['olist2',['../class_listwise_measures_test.html#ac9dd429d5cbaa8f9c8fbe3139f8a1319',1,'ListwiseMeasuresTest']]],
+  ['one_5fpoint_5fstop_5fcriteria_5f',['one_point_stop_criteria_',['../classoptimization_1_1_per_point_stop_criterion.html#a06b6d85f0ab29d8559525924cd282b15',1,'optimization::PerPointStopCriterion']]],
+  ['one_5fpoint_5fstop_5fcriterion_5f',['one_point_stop_criterion_',['../classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043',1,'optimization::PerPointStopCriterion']]]
 ];

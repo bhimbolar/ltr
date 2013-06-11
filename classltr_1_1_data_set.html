@@ -110,7 +110,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
 <div class="title">ltr::DataSet&lt; TElement &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -135,6 +136,16 @@ Public Types</h2></td></tr>
 <tr class="memitem:a39572627b0bef56071c46c5d789feba7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classltr_1_1_data_set.html">DataSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a39572627b0bef56071c46c5d789feba7">Ptr</a></td></tr>
+<tr class="memitem:a13777dc166a9376ba4977a248974bb94"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classltr_1_1_data_set_object_iterator.html">DataSetObjectIterator</a><br class="typebreak"/>
+&lt; TElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a13777dc166a9376ba4977a248974bb94">object_iterator</a></td></tr>
+<tr class="memitem:ac9ec5b543bfe4054dc7afc1d26a58df6"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1_const_data_set_object_iterator.html">ConstDataSetObjectIterator</a><br class="typebreak"/>
+&lt; TElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#ac9ec5b543bfe4054dc7afc1d26a58df6">const_object_iterator</a></td></tr>
+<tr class="memitem:a687783b05e473f7417b6a0ee8609d246"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classltr_1_1_data_set_element_iterator.html">DataSetElementIterator</a><br class="typebreak"/>
+&lt; TElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a687783b05e473f7417b6a0ee8609d246">element_iterator</a></td></tr>
+<tr class="memitem:a9d7f4d8fe9c71e783abe473aeae0c8e3"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="classltr_1_1_const_data_set_element_iterator.html">ConstDataSetElementIterator</a><br class="typebreak"/>
+&lt; TElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a9d7f4d8fe9c71e783abe473aeae0c8e3">const_element_iterator</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6120e1e838c45f02bf123c40488a5d07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a6120e1e838c45f02bf123c40488a5d07">DataSet</a> (const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;<a class="el" href="classltr_1_1_data_set.html#a6b173f125c05565128da0ab8486b2e5c">feature_info</a>=<a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>(), const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;<a class="el" href="classltr_1_1_data_set.html#afa305902fa6c5ea6a81f974d3a5aedf5">label_info</a>=<a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a>())</td></tr>
@@ -144,7 +155,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa305902fa6c5ea6a81f974d3a5aedf5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#afa305902fa6c5ea6a81f974d3a5aedf5">label_info</a> () const </td></tr>
 <tr class="memitem:a4f77be1abc05571677646dbe70123732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a4f77be1abc05571677646dbe70123732">set_label_info</a> (const <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &amp;<a class="el" href="classltr_1_1_data_set.html#afa305902fa6c5ea6a81f974d3a5aedf5">label_info</a>)</td></tr>
 <tr class="memitem:a4794cca524a7da383c45afbb1cdec2ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a> () const </td></tr>
-<tr class="memitem:a21d150613486a6473d4444add71f3255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">DataSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a21d150613486a6473d4444add71f3255">operator&lt;&lt;</a> (const TElement &amp;element)</td></tr>
+<tr class="memitem:a21d150613486a6473d4444add71f3255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a21d150613486a6473d4444add71f3255">operator&lt;&lt;</a> (const TElement &amp;element)</td></tr>
 <tr class="memitem:addb95d8ff26575686ddc3d0f845b6d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#addb95d8ff26575686ddc3d0f845b6d32">add</a> (const TElement &amp;element)</td></tr>
 <tr class="memitem:a01a3fe8f84d88f1d8c7cc36f38a93479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a01a3fe8f84d88f1d8c7cc36f38a93479">add</a> (const TElement &amp;element, double weight)</td></tr>
 <tr class="memitem:a41227a53bcb0914f9ff3558987c39bce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a> () const </td></tr>
@@ -159,18 +170,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2868844fcf27979623e388ad9785a3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#af2868844fcf27979623e388ad9785a3a">deepCopy</a> () const </td></tr>
 <tr class="memitem:aa8ebcb36995ad8f83d2e08463ac4ee77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#aa8ebcb36995ad8f83d2e08463ac4ee77">lightSubset</a> (const vector&lt; int &gt; &amp;indices) const </td></tr>
 <tr class="memitem:a37827958f5e0ca3222db5be5018dea21"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a37827958f5e0ca3222db5be5018dea21">toString</a> () const </td></tr>
+<tr class="memitem:a59c4d8e04a27e6d4411dff8578f9104e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#a13777dc166a9376ba4977a248974bb94">object_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a59c4d8e04a27e6d4411dff8578f9104e">object_begin</a> ()</td></tr>
+<tr class="memitem:ad340fffbb06ced505cd3503799633c7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#a13777dc166a9376ba4977a248974bb94">object_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#ad340fffbb06ced505cd3503799633c7e">object_end</a> ()</td></tr>
+<tr class="memitem:a5b51c86e74c3c1d7065ba3ccf5b980e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#ac9ec5b543bfe4054dc7afc1d26a58df6">const_object_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a5b51c86e74c3c1d7065ba3ccf5b980e2">object_begin</a> () const </td></tr>
+<tr class="memitem:ab2afcc630d4f00bc6b1e514cab4779be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#ac9ec5b543bfe4054dc7afc1d26a58df6">const_object_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#ab2afcc630d4f00bc6b1e514cab4779be">object_end</a> () const </td></tr>
+<tr class="memitem:ab30904d3abf748d9d540dec37ea4e41b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#a687783b05e473f7417b6a0ee8609d246">element_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#ab30904d3abf748d9d540dec37ea4e41b">element_begin</a> ()</td></tr>
+<tr class="memitem:af34203cbfcac23db8f758989a5d8f3f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#a687783b05e473f7417b6a0ee8609d246">element_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#af34203cbfcac23db8f758989a5d8f3f2">element_end</a> ()</td></tr>
+<tr class="memitem:a2d3cb27a18b8497a6b2fa575c915cc5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#a9d7f4d8fe9c71e783abe473aeae0c8e3">const_element_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a2d3cb27a18b8497a6b2fa575c915cc5c">element_begin</a> () const </td></tr>
+<tr class="memitem:a83722b23c82fcaf5e31695853e5c9ce3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_data_set.html#a9d7f4d8fe9c71e783abe473aeae0c8e3">const_element_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a83722b23c82fcaf5e31695853e5c9ce3">element_end</a> () const </td></tr>
+<tr class="memitem:acf99b446552828599e2affd2cf355762"><td class="memItemLeft" align="right" valign="top">const MatrixXd &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#acf99b446552828599e2affd2cf355762">get_features_matrix</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a650e506095d0217ae5cd7d27d335ceac"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a650e506095d0217ae5cd7d27d335ceac">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae8c87a9884b3d5a1ae4de14bed27046c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; vector&lt; TElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#ae8c87a9884b3d5a1ae4de14bed27046c">elements_</a></td></tr>
-<tr class="memitem:a3d7127b144e7b2b3815636a95a5c22e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">FeatureInfo::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a3d7127b144e7b2b3815636a95a5c22e4">feature_info_</a></td></tr>
 <tr class="memitem:afd95a51afb92e10e0b644128e76518be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="structltr_1_1_one_feature_info.html">LabelInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#afd95a51afb92e10e0b644128e76518be">label_info_</a></td></tr>
-<tr class="memitem:aee6835ad051b537d83bca52b0225b753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#aee6835ad051b537d83bca52b0225b753">weights_</a></td></tr>
+<tr class="memitem:accb78fb8375f997d33e4e3c2a8ec11fc"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#accb78fb8375f997d33e4e3c2a8ec11fc">weights_</a></td></tr>
+<tr class="memitem:a6f9251f3bedb81ce8b78bc55748ef029"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structltr_1_1_element_bounds.html">ElementBounds</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a6f9251f3bedb81ce8b78bc55748ef029">element_bounds_</a></td></tr>
+<tr class="memitem:aa14aab56cd6e18575fa97bfc341a6e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="classltr_1_1_inner_representation.html">InnerRepresentation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#aa14aab56cd6e18575fa97bfc341a6e79">inner_representation_</a></td></tr>
+<tr class="memitem:abf816a9788d10bf821bcb88ab48c1947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#abf816a9788d10bf821bcb88ab48c1947">feature_info_</a></td></tr>
+<tr class="memitem:a10422f64fbb7d067d0985b12d5be7a52"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt; TElement &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a10422f64fbb7d067d0985b12d5be7a52">element_vector_</a></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8efbe15bd60922286108b9224c099cb6"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a8efbe15bd60922286108b9224c099cb6">DataSetObjectIterator&lt; TElement &gt;</a></td></tr>
+<tr class="memitem:af6dfd3ec051f168e929ccdfaa49157a7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#af6dfd3ec051f168e929ccdfaa49157a7">ConstDataSetObjectIterator&lt; TElement &gt;</a></td></tr>
+<tr class="memitem:a447173114cc31f994875a13a8bce7a9b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a447173114cc31f994875a13a8bce7a9b">DataSetElementIterator&lt; TElement &gt;</a></td></tr>
+<tr class="memitem:a0834670b582756d40e572ed0c8d4a350"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_data_set.html#a0834670b582756d40e572ed0c8d4a350">ConstDataSetElementIterator&lt; TElement &gt;</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TElement&gt;<br/>
@@ -184,6 +210,68 @@ class ltr::DataSet&lt; TElement &gt;</h3>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a9d7f4d8fe9c71e783abe473aeae0c8e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1_const_data_set_element_iterator.html">ConstDataSetElementIterator</a>&lt;TElement&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a9d7f4d8fe9c71e783abe473aeae0c8e3">const_element_iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9ec5b543bfe4054dc7afc1d26a58df6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1_const_data_set_object_iterator.html">ConstDataSetObjectIterator</a>&lt;TElement&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ac9ec5b543bfe4054dc7afc1d26a58df6">const_object_iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a687783b05e473f7417b6a0ee8609d246"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1_data_set_element_iterator.html">DataSetElementIterator</a>&lt;TElement&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a687783b05e473f7417b6a0ee8609d246">element_iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Iterator over elements of <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a13777dc166a9376ba4977a248974bb94"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classltr_1_1_data_set_object_iterator.html">DataSetObjectIterator</a>&lt;TElement&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a13777dc166a9376ba4977a248974bb94">object_iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Iterator over all objects in <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a> </p>
+
+</div>
+</div>
 <a class="anchor" id="a39572627b0bef56071c46c5d789feba7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -247,7 +335,7 @@ template&lt;typename TElement &gt; </div>
           <td class="memname"><a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::~<a class="el" href="classltr_1_1_data_set.html">DataSet</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -267,7 +355,7 @@ template&lt;typename TElement&gt; </div>
           <td>(</td>
           <td class="paramtype">const TElement &amp;&#160;</td>
           <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -297,7 +385,7 @@ template&lt;typename TElement&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -317,7 +405,7 @@ template&lt;typename TElement &gt; </div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>element_index</em></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -337,7 +425,7 @@ template&lt;typename TElement &gt; </div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>element_index</em></td><td>)</td>
-          <td></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -356,7 +444,7 @@ template&lt;typename TElement &gt; </div>
           <td class="memname">void <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#aac34ecb57f749c0c4659d903a7eeb0cc">clear</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -375,12 +463,88 @@ template&lt;typename TElement &gt; </div>
           <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#af2868844fcf27979623e388ad9785a3a">deepCopy</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Creates a new <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a> containing the copies of the elements in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab30904d3abf748d9d540dec37ea4e41b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a687783b05e473f7417b6a0ee8609d246">element_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ab30904d3abf748d9d540dec37ea4e41b">element_begin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Start of non-constant iterator over elements in data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d3cb27a18b8497a6b2fa575c915cc5c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a9d7f4d8fe9c71e783abe473aeae0c8e3">const_element_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ab30904d3abf748d9d540dec37ea4e41b">element_begin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Start of constant iterator over elements in data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="af34203cbfcac23db8f758989a5d8f3f2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a687783b05e473f7417b6a0ee8609d246">element_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#af34203cbfcac23db8f758989a5d8f3f2">element_end</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>End of non-constant iterator over elements in data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="a83722b23c82fcaf5e31695853e5c9ce3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a9d7f4d8fe9c71e783abe473aeae0c8e3">const_element_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#af34203cbfcac23db8f758989a5d8f3f2">element_end</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>End of constant iterator over elements in data set. </p>
 
 </div>
 </div>
@@ -433,12 +597,31 @@ template&lt;typename TElement &gt; </div>
           <td class="memname">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a6b173f125c05565128da0ab8486b2e5c">feature_info</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Returns <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a>, objects with the same <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> are allowed to be stored in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="acf99b446552828599e2affd2cf355762"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const MatrixXd &amp; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#acf99b446552828599e2affd2cf355762">get_features_matrix</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Const access to whole feature matrix from inner representation </p>
 
 </div>
 </div>
@@ -457,7 +640,7 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Returns default alias of class </p>
+<p>Returns default alias of class. </p>
 
 <p>Implements <a class="el" href="classltr_1_1_aliaser.html#ad724414573ec5df2cc00bb5aaa57e9d0">ltr::Aliaser</a>.</p>
 
@@ -474,7 +657,7 @@ template&lt;typename TElement &gt; </div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>element_index</em></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -518,13 +701,89 @@ template&lt;typename TElement &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates new <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>, which contains easy copies of elements with given indexes (easy means that they share objects' resources: feature vectors, objects' meat information).</p>
+<p>Creates new <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>, which contains easy copies of elements with given indices (easy means that they share objects' resources: feature vectors, objects' meat information).</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">indices</td><td>the indices of elements from data based on those the subset is build. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a59c4d8e04a27e6d4411dff8578f9104e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a13777dc166a9376ba4977a248974bb94">object_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a59c4d8e04a27e6d4411dff8578f9104e">object_begin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Start of non-constant iterator over objects in data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b51c86e74c3c1d7065ba3ccf5b980e2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ac9ec5b543bfe4054dc7afc1d26a58df6">const_object_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a59c4d8e04a27e6d4411dff8578f9104e">object_begin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Start of constant iterator over objects in data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad340fffbb06ced505cd3503799633c7e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a13777dc166a9376ba4977a248974bb94">object_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ad340fffbb06ced505cd3503799633c7e">object_end</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>End of non-constant iterator over objects in data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab2afcc630d4f00bc6b1e514cab4779be"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ac9ec5b543bfe4054dc7afc1d26a58df6">const_object_iterator</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ad340fffbb06ced505cd3503799633c7e">object_end</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>End of constant iterator over objects in data set. </p>
 
 </div>
 </div>
@@ -559,7 +818,7 @@ template&lt;typename TElement &gt; </div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>element_index</em></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -579,7 +838,7 @@ template&lt;typename TElement &gt; </div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>element_index</em></td><td>)</td>
-          <td></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -599,7 +858,7 @@ template&lt;typename TElement &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>feature_info</em></td><td>)</td>
-          <td></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -649,7 +908,7 @@ template&lt;typename TElement &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -675,7 +934,7 @@ template&lt;typename TElement &gt; </div>
           <td class="memname">int <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -694,7 +953,7 @@ template&lt;typename TElement &gt; </div>
           <td class="memname">string <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a37827958f5e0ca3222db5be5018dea21">toString</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td> const<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -705,36 +964,128 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ae8c87a9884b3d5a1ae4de14bed27046c"></a>
+<hr/><h2>Friends And Related Function Documentation</h2>
+<a class="anchor" id="a0834670b582756d40e572ed0c8d4a350"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;vector&lt;TElement&gt; &gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#ae8c87a9884b3d5a1ae4de14bed27046c">elements_</a><code> [private]</code></td>
+          <td class="memname">friend class <a class="el" href="classltr_1_1_const_data_set_element_iterator.html">ConstDataSetElementIterator</a>&lt; TElement &gt;<code> [friend]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Shared pointer to the actual vector, in which the elements are stored. </p>
 
 </div>
 </div>
-<a class="anchor" id="a3d7127b144e7b2b3815636a95a5c22e4"></a>
+<a class="anchor" id="af6dfd3ec051f168e929ccdfaa49157a7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">FeatureInfo::Ptr</a> <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a3d7127b144e7b2b3815636a95a5c22e4">feature_info_</a><code> [private]</code></td>
+          <td class="memname">friend class <a class="el" href="classltr_1_1_const_data_set_object_iterator.html">ConstDataSetObjectIterator</a>&lt; TElement &gt;<code> [friend]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The information about objects that are stored in the <a class="el" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a447173114cc31f994875a13a8bce7a9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classltr_1_1_data_set_element_iterator.html">DataSetElementIterator</a>&lt; TElement &gt;<code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8efbe15bd60922286108b9224c099cb6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classltr_1_1_data_set_object_iterator.html">DataSetObjectIterator</a>&lt; TElement &gt;<code> [friend]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a6f9251f3bedb81ce8b78bc55748ef029"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structltr_1_1_element_bounds.html">ElementBounds</a>&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a6f9251f3bedb81ce8b78bc55748ef029">element_bounds_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Each element has its objects in the matrix ob lines, defined by this bounds. </p>
+
+</div>
+</div>
+<a class="anchor" id="a10422f64fbb7d067d0985b12d5be7a52"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt;TElement&gt; &gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#a10422f64fbb7d067d0985b12d5be7a52">element_vector_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Vector of elements of the data set. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf816a9788d10bf821bcb88ab48c1947"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt;<a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#abf816a9788d10bf821bcb88ab48c1947">feature_info_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa14aab56cd6e18575fa97bfc341a6e79"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TElement&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr</a>&lt;<a class="el" href="classltr_1_1_inner_representation.html">InnerRepresentation</a>&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#aa14aab56cd6e18575fa97bfc341a6e79">inner_representation_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Representation for objects storage. </p>
 
 </div>
 </div>
@@ -750,18 +1101,18 @@ template&lt;typename TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Information about label value type </p>
+<p>Information about label value type. </p>
 
 </div>
 </div>
-<a class="anchor" id="aee6835ad051b537d83bca52b0225b753"></a>
+<a class="anchor" id="accb78fb8375f997d33e4e3c2a8ec11fc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;vector&lt;double&gt; &gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#aee6835ad051b537d83bca52b0225b753">weights_</a><code> [private]</code></td>
+          <td class="memname">vector&lt;double&gt; <a class="el" href="classltr_1_1_data_set.html">ltr::DataSet</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_data_set.html#accb78fb8375f997d33e4e3c2a8ec11fc">weights_</a><code> [mutable, private]</code></td>
         </tr>
       </table>
 </div>
@@ -777,7 +1128,7 @@ template&lt;typename TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:55 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

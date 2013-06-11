@@ -119,14 +119,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="keyword">namespace </span>utility {
 <a name="l00022"></a>00022 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
 <a name="l00023"></a>00023 <span class="keywordtype">void</span> getFeaturesMinMaxValues(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; dataset,
-<a name="l00024"></a>00024                              vector&lt;double&gt;* min_features_values,
-<a name="l00025"></a>00025                              vector&lt;double&gt;* max_features_values);
+<a name="l00024"></a>00024                              VectorXd* min_features_values,
+<a name="l00025"></a>00025                              VectorXd* max_features_values);
 <a name="l00026"></a>00026 
 <a name="l00032"></a>00032 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
 <a name="l00033"></a>00033 <span class="keywordtype">void</span> getFeaturesAverageValues(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; dataset,
-<a name="l00034"></a>00034                               vector&lt;double&gt;* average_values) {
+<a name="l00034"></a>00034                               VectorXd* average_values) {
 <a name="l00035"></a>00035   average_values-&gt;resize(dataset.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>());
-<a name="l00036"></a>00036   fill(average_values-&gt;begin(), average_values-&gt;end(), 0);
+<a name="l00036"></a>00036   average_values-&gt;setConstant(0);
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038   <span class="keywordflow">if</span> ((<span class="keywordtype">int</span>)dataset.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>() == 0) {
 <a name="l00039"></a>00039     <span class="keywordflow">return</span>;
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00050"></a>00050       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> feature_index = 0;
 <a name="l00051"></a>00051            feature_index &lt; (int)dataset.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>();
 <a name="l00052"></a>00052            ++feature_index) {
-<a name="l00053"></a>00053         average_values-&gt;at(feature_index) +=
+<a name="l00053"></a>00053         average_values-&gt;operator()(feature_index) +=
 <a name="l00054"></a>00054             per_object_accessor.object(object_index)[feature_index];
 <a name="l00055"></a>00055       }
 <a name="l00056"></a>00056     }
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00059"></a>00059   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> feature_index = 0;
 <a name="l00060"></a>00060        feature_index &lt; (int)dataset.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>();
 <a name="l00061"></a>00061        ++feature_index) {
-<a name="l00062"></a>00062     average_values-&gt;at(feature_index) /= (int)dataset.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>();
+<a name="l00062"></a>00062     average_values-&gt;operator()(feature_index) /= (<span class="keywordtype">int</span>)dataset.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>();
 <a name="l00063"></a>00063   }
 <a name="l00064"></a>00064 }
 <a name="l00065"></a>00065 
@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:52 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

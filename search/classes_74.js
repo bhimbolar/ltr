@@ -2,6 +2,7 @@ var searchData=
 [
   ['t',['T',['../class_t.html',1,'']]],
   ['taghandler',['TagHandler',['../class_tag_handler.html',1,'']]],
+  ['testprintable',['TestPrintable',['../class_test_printable.html',1,'']]],
   ['threshold',['Threshold',['../structltr_1_1decision__tree_1_1_threshold.html',1,'ltr::decision_tree']]],
   ['thresholdcondition',['ThresholdCondition',['../classltr_1_1decision__tree_1_1_threshold_condition.html',1,'ltr::decision_tree']]],
   ['tkfoldsimplesplitter',['TKFoldSimpleSplitter',['../classltr_1_1cv_1_1_t_k_fold_simple_splitter.html',1,'ltr::cv']]],

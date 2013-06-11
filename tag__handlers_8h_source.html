@@ -110,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;map&gt;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="lexical__cast_8h.html">ltr/utility/boost/lexical_cast.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="lexical__cast_8hpp.html">ltr/utility/boost/lexical_cast.hpp</a>&quot;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="string__utils_8h.html">ltr/utility/boost/string_utils.h</a>&quot;</span>
 <a name="l00011"></a>00011 
 <a name="l00012"></a>00012 <span class="keyword">using</span> std::cout;
@@ -146,9 +146,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00042"></a>00042 
 <a name="l00047"></a><a class="code" href="class_tag_handler.html">00047</a> <span class="keyword">class </span><a class="code" href="class_tag_handler.html">TagHandler</a> {
 <a name="l00048"></a>00048  <span class="keyword">public</span>:
-<a name="l00053"></a><a class="code" href="class_tag_handler.html#ada4b255f1b3d294a88f8bdfe56f1c39d">00053</a>   <span class="keyword">explicit</span> <a class="code" href="class_tag_handler.html#ada4b255f1b3d294a88f8bdfe56f1c39d">TagHandler</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* configuratorInstance)
-<a name="l00054"></a>00054     : <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>(configuratorInstance) {}
-<a name="l00058"></a><a class="code" href="class_tag_handler.html#a200c03d9cec7220b8161e7f9318e1186">00058</a>   <span class="keyword">virtual</span> <a class="code" href="class_tag_handler.html#a200c03d9cec7220b8161e7f9318e1186">~TagHandler</a>() {}
+<a name="l00052"></a><a class="code" href="class_tag_handler.html#ada4b255f1b3d294a88f8bdfe56f1c39d">00052</a>   <span class="keyword">explicit</span> <a class="code" href="class_tag_handler.html#ada4b255f1b3d294a88f8bdfe56f1c39d">TagHandler</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* configuratorInstance)
+<a name="l00053"></a>00053     : <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>(configuratorInstance) {}
+<a name="l00057"></a><a class="code" href="class_tag_handler.html#a200c03d9cec7220b8161e7f9318e1186">00057</a>   <span class="keyword">virtual</span> <a class="code" href="class_tag_handler.html#a200c03d9cec7220b8161e7f9318e1186">~TagHandler</a>() {}
 <a name="l00063"></a>00063   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_tag_handler.html#a4a4db153b75fb8ba9550c7aed6ea6156">operator()</a>(TiXmlElement* xmlElement) = 0;
 <a name="l00064"></a>00064  <span class="keyword">protected</span>:
 <a name="l00065"></a><a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">00065</a>   <a class="code" href="class_config_parser.html">ConfigParser</a>* <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>;
@@ -156,48 +156,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00067"></a>00067 
 <a name="l00068"></a><a class="code" href="tag__handlers_8h.html#a5cbdcc67a1b65693208c98829bdad17d">00068</a> <span class="keyword">typedef</span> std::map&lt;string, TagHandler*&gt; <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>;
 <a name="l00069"></a>00069 
-<a name="l00078"></a><a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">00078</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<span class="keyword">const</span> <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>&amp; parsers,
-<a name="l00079"></a>00079                                 TiXmlNode* xmlNode,
-<a name="l00080"></a>00080                                 <a class="code" href="class_tag_handler.html">TagHandler</a>* on_unknown_token = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {
-<a name="l00081"></a>00081   <span class="keywordflow">for</span> (; xmlNode; xmlNode = xmlNode-&gt;NextSibling()) {
-<a name="l00082"></a>00082     <span class="keywordflow">if</span> (xmlNode-&gt;Type() != TiXmlNode::TINYXML_ELEMENT) {
-<a name="l00083"></a>00083       <span class="keywordflow">continue</span>;
-<a name="l00084"></a>00084     }
-<a name="l00085"></a>00085 
-<a name="l00086"></a>00086     TiXmlElement* element = xmlNode-&gt;ToElement();
-<a name="l00087"></a>00087     <span class="keywordflow">if</span> (!element) {
-<a name="l00088"></a>00088       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;can not convert node to element&quot;</span>);
-<a name="l00089"></a>00089     }
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091     <span class="keyword">const</span> TagHandlers::const_iterator it = parsers.find(xmlNode-&gt;Value());
-<a name="l00092"></a>00092     <span class="keywordflow">if</span> (it == parsers.end()) {
-<a name="l00093"></a>00093       <span class="keywordflow">if</span> (on_unknown_token) {
-<a name="l00094"></a>00094         (*on_unknown_token)(element);
-<a name="l00095"></a>00095       } <span class="keywordflow">else</span> {
-<a name="l00096"></a>00096         <span class="keywordflow">throw</span> logic_error(<span class="keywordtype">string</span>(<span class="stringliteral">&quot;Unknown token Value: &quot;</span>) +
-<a name="l00097"></a>00097                           xmlNode-&gt;Value() + <span class="stringliteral">&quot;, Type: &quot;</span> +
-<a name="l00098"></a>00098                           ltr::utility::lexical_cast&lt;<span class="keywordtype">string</span>&gt;(xmlNode-&gt;Type()) +
-<a name="l00099"></a>00099                           <span class="stringliteral">&quot;\n&quot;</span>);
-<a name="l00100"></a>00100       }
-<a name="l00101"></a>00101     } <span class="keywordflow">else</span> {
-<a name="l00102"></a>00102       (*it-&gt;second)(element);
-<a name="l00103"></a>00103     }
-<a name="l00104"></a>00104   }
-<a name="l00105"></a>00105 }
-<a name="l00106"></a>00106 <span class="comment">// =============================== Config parsing ============================</span>
-<a name="l00107"></a>00107 
-<a name="l00112"></a><a class="code" href="class_on_config_parser.html">00112</a> <span class="keyword">class </span><a class="code" href="class_on_config_parser.html">OnConfigParser</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00113"></a>00113  <span class="keyword">public</span>:
-<a name="l00114"></a><a class="code" href="class_on_config_parser.html#a50d993d85a0d4ee7346476e94a393019">00114</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_config_parser.html#a50d993d85a0d4ee7346476e94a393019">OnConfigParser</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) { }
-<a name="l00115"></a><a class="code" href="class_on_config_parser.html#ab6a38c0263ac25352bd254024afd0777">00115</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_config_parser.html#ab6a38c0263ac25352bd254024afd0777">operator()</a>(TiXmlElement* element) {
-<a name="l00116"></a>00116     rInfo(<span class="stringliteral">&quot;TOnConfigExecutor&quot;</span>);
-<a name="l00117"></a>00117   }  <span class="comment">// We already read it</span>
-<a name="l00118"></a>00118 };
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120 <span class="comment">// =============================== Data parsing ==============================</span>
-<a name="l00121"></a>00121 
-<a name="l00125"></a><a class="code" href="class_t_on_data_tag.html">00125</a> <span class="keyword">class </span><a class="code" href="class_t_on_data_tag.html">TOnDataTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00126"></a>00126  <span class="keyword">public</span>:
+<a name="l00079"></a><a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">00079</a> <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<span class="keyword">const</span> <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>&amp; parsers,
+<a name="l00080"></a>00080                                 TiXmlNode* xmlNode,
+<a name="l00081"></a>00081                                 <a class="code" href="class_tag_handler.html">TagHandler</a>* on_unknown_token = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {
+<a name="l00082"></a>00082   <span class="keywordflow">for</span> (; xmlNode; xmlNode = xmlNode-&gt;NextSibling()) {
+<a name="l00083"></a>00083     <span class="keywordflow">if</span> (xmlNode-&gt;Type() != TiXmlNode::TINYXML_ELEMENT) {
+<a name="l00084"></a>00084       <span class="keywordflow">continue</span>;
+<a name="l00085"></a>00085     }
+<a name="l00086"></a>00086 
+<a name="l00087"></a>00087     TiXmlElement* element = xmlNode-&gt;ToElement();
+<a name="l00088"></a>00088     <span class="keywordflow">if</span> (!element) {
+<a name="l00089"></a>00089       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;can not convert node to element&quot;</span>);
+<a name="l00090"></a>00090     }
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092     <span class="keyword">const</span> TagHandlers::const_iterator it = parsers.find(xmlNode-&gt;Value());
+<a name="l00093"></a>00093     <span class="keywordflow">if</span> (it == parsers.end()) {
+<a name="l00094"></a>00094       <span class="keywordflow">if</span> (on_unknown_token) {
+<a name="l00095"></a>00095         (*on_unknown_token)(element);
+<a name="l00096"></a>00096       } <span class="keywordflow">else</span> {
+<a name="l00097"></a>00097         <span class="keywordflow">throw</span> logic_error(<span class="keywordtype">string</span>(<span class="stringliteral">&quot;Unknown token Value: &quot;</span>) +
+<a name="l00098"></a>00098                           xmlNode-&gt;Value() + <span class="stringliteral">&quot;, Type: &quot;</span> +
+<a name="l00099"></a>00099                           ltr::utility::lexical_cast&lt;<span class="keywordtype">string</span>&gt;(xmlNode-&gt;Type()) +
+<a name="l00100"></a>00100                           <span class="stringliteral">&quot;\n&quot;</span>);
+<a name="l00101"></a>00101       }
+<a name="l00102"></a>00102     } <span class="keywordflow">else</span> {
+<a name="l00103"></a>00103       (*it-&gt;second)(element);
+<a name="l00104"></a>00104     }
+<a name="l00105"></a>00105   }
+<a name="l00106"></a>00106 }
+<a name="l00107"></a>00107 <span class="comment">// =============================== Config parsing ============================</span>
+<a name="l00108"></a>00108 
+<a name="l00113"></a><a class="code" href="class_on_config_parser.html">00113</a> <span class="keyword">class </span><a class="code" href="class_on_config_parser.html">OnConfigParser</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00114"></a>00114  <span class="keyword">public</span>:
+<a name="l00115"></a><a class="code" href="class_on_config_parser.html#a50d993d85a0d4ee7346476e94a393019">00115</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_config_parser.html#a50d993d85a0d4ee7346476e94a393019">OnConfigParser</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) { }
+<a name="l00116"></a><a class="code" href="class_on_config_parser.html#ab6a38c0263ac25352bd254024afd0777">00116</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_config_parser.html#ab6a38c0263ac25352bd254024afd0777">operator()</a>(TiXmlElement* element) {
+<a name="l00117"></a>00117     rInfo(<span class="stringliteral">&quot;TOnConfigExecutor&quot;</span>);
+<a name="l00118"></a>00118   }  <span class="comment">// We already read it</span>
+<a name="l00119"></a>00119 };
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 <span class="comment">// =============================== Data parsing ==============================</span>
+<a name="l00122"></a>00122 
+<a name="l00126"></a><a class="code" href="class_t_on_data_tag.html">00126</a> <span class="keyword">class </span><a class="code" href="class_t_on_data_tag.html">TOnDataTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00127"></a>00127  <span class="keyword">public</span>:
 <a name="l00131"></a><a class="code" href="class_t_on_data_tag.html#a0766b2d4b7ca14051e86ecdafbce9e6d">00131</a>   <span class="keyword">explicit</span> <a class="code" href="class_t_on_data_tag.html#a0766b2d4b7ca14051e86ecdafbce9e6d">TOnDataTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) { }
 <a name="l00132"></a><a class="code" href="class_t_on_data_tag.html#a1704644180d7a011004718643b4bf81c">00132</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_t_on_data_tag.html#a1704644180d7a011004718643b4bf81c">operator()</a>(TiXmlElement* element) {
 <a name="l00133"></a>00133     rInfo(<span class="stringliteral">&quot;TOnDataExecutor&quot;</span>);
@@ -237,12 +237,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00167"></a>00167 
 <a name="l00173"></a><a class="code" href="class_t_on_parameter_tag.html">00173</a> <span class="keyword">class </span><a class="code" href="class_t_on_parameter_tag.html">TOnParameterTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
 <a name="l00174"></a>00174  <span class="keyword">public</span>:
-<a name="l00180"></a><a class="code" href="class_t_on_parameter_tag.html#ac12e36b6f3601e0a4473818ad548f8b4">00180</a>   <span class="keyword">explicit</span> <a class="code" href="class_t_on_parameter_tag.html#ac12e36b6f3601e0a4473818ad548f8b4">TOnParameterTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
-<a name="l00181"></a>00181     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00182"></a>00182     , <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
-<a name="l00189"></a><a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">00189</a>   <span class="keywordtype">void</span> <a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(<a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ltr::ParametersContainer</a>* cont) {
-<a name="l00190"></a>00190     <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a> = cont;
-<a name="l00191"></a>00191   }
+<a name="l00179"></a><a class="code" href="class_t_on_parameter_tag.html#ac12e36b6f3601e0a4473818ad548f8b4">00179</a>   <span class="keyword">explicit</span> <a class="code" href="class_t_on_parameter_tag.html#ac12e36b6f3601e0a4473818ad548f8b4">TOnParameterTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
+<a name="l00180"></a>00180     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
+<a name="l00181"></a>00181     , <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
+<a name="l00188"></a><a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">00188</a>   <span class="keywordtype">void</span> <a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(<a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ltr::ParametersContainer</a>* cont) {
+<a name="l00189"></a>00189     <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a> = cont;
+<a name="l00190"></a>00190   }
 <a name="l00198"></a><a class="code" href="class_t_on_parameter_tag.html#af7eaef3f686507dc9012b2996f2aeed8">00198</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_t_on_parameter_tag.html#af7eaef3f686507dc9012b2996f2aeed8">operator()</a>(TiXmlElement* element) {
 <a name="l00199"></a>00199     rInfo(<span class="stringliteral">&quot;TOnParametersExecutor&quot;</span>);
 <a name="l00200"></a>00200 
@@ -281,7 +281,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00244"></a><a class="code" href="class_t_on_parameter_tag.html#a9e2ba0a3cf39346172f95ff3458c0572">00244</a>   <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_t_on_parameter_tag.html#a9e2ba0a3cf39346172f95ff3458c0572">toInt</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
 <a name="l00245"></a>00245     <span class="keywordflow">try</span> {
 <a name="l00246"></a>00246       <span class="keywordflow">return</span> ltr::utility::lexical_cast&lt;<span class="keywordtype">int</span>&gt;(value);
-<a name="l00247"></a>00247     } <span class="keywordflow">catch</span>(<a class="code" href="classltr_1_1utility_1_1bad__lexical__cast.html">ltr::utility::bad_lexical_cast</a>&amp;) {
+<a name="l00247"></a>00247     } <span class="keywordflow">catch</span> (invalid_argument&amp;) {
 <a name="l00248"></a>00248       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;can not convert &quot;</span> + value + <span class="stringliteral">&quot; to int&quot;</span>);
 <a name="l00249"></a>00249     }
 <a name="l00250"></a>00250   }
@@ -289,7 +289,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00258"></a><a class="code" href="class_t_on_parameter_tag.html#ae9d56b7a9cc6c2d7e266cf0f1a12c9c3">00258</a>   <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_t_on_parameter_tag.html#ae9d56b7a9cc6c2d7e266cf0f1a12c9c3">toDouble</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
 <a name="l00259"></a>00259     <span class="keywordflow">try</span> {
 <a name="l00260"></a>00260       <span class="keywordflow">return</span> ltr::utility::lexical_cast&lt;<span class="keywordtype">double</span>&gt;(value);
-<a name="l00261"></a>00261     } <span class="keywordflow">catch</span>(<a class="code" href="classltr_1_1utility_1_1bad__lexical__cast.html">ltr::utility::bad_lexical_cast</a>&amp;) {
+<a name="l00261"></a>00261     } <span class="keywordflow">catch</span> (invalid_argument&amp;) {
 <a name="l00262"></a>00262       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;can not convert &quot;</span> + value + <span class="stringliteral">&quot; to double&quot;</span>);
 <a name="l00263"></a>00263     }
 <a name="l00264"></a>00264   }
@@ -315,308 +315,310 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00290"></a>00290       <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>-&gt;<a class="code" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">AddNew</a>(name, <a class="code" href="dependency__resolving__factory_8cc.html#ac97ee1dc1188eb7ac5fefd5ede57329a">ObjectDependency</a>(value));
 <a name="l00291"></a>00291       rInfo(<span class="stringliteral">&quot;TOnParametersExecutor: Added TXmlTokenDependency %s %s\n&quot;</span>,
 <a name="l00292"></a>00292            name.c_str(), value.c_str());
-<a name="l00293"></a>00293     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type.substr(0, 6) == <span class="stringliteral">&quot;vector&quot;</span>) {   <span class="comment">//TODO: rewrite using split</span>
-<a name="l00294"></a>00294       <span class="keywordtype">int</span> space_pos = type.find_last_of(<span class="stringliteral">&quot;\t ,&quot;</span>);
-<a name="l00295"></a>00295       <span class="keywordtype">string</span> subtype = type.substr(space_pos + 1);
-<a name="l00296"></a>00296       rInfo(<span class="stringliteral">&quot;Parsing vector of %s&quot;</span>, subtype.c_str());
-<a name="l00297"></a>00297       <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>-&gt;<a class="code" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">AddNew</a>(name, value);
-<a name="l00298"></a>00298     } <span class="keywordflow">else</span> {
-<a name="l00299"></a>00299       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;Adding &#39;&quot;</span> + type +
-<a name="l00300"></a>00300                           <span class="stringliteral">&quot;&#39; is not implemented yet...&quot;</span>);
-<a name="l00301"></a>00301     }
-<a name="l00302"></a>00302   }
-<a name="l00303"></a>00303 
-<a name="l00310"></a><a class="code" href="class_t_on_parameter_tag.html#a8d1c076171dc5f660d88db30e37fe83d">00310</a>   <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_t_on_parameter_tag.html#a8d1c076171dc5f660d88db30e37fe83d">guessType</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
-<a name="l00311"></a>00311     <span class="keyword">const</span> <span class="keywordtype">int</span> pos_of_space = value.find_first_of(<span class="stringliteral">&quot;\t ,&quot;</span>);
-<a name="l00312"></a>00312     rInfo(<span class="stringliteral">&quot;TOnParametersExecutor: guessing type of %s %d\n&quot;</span>,
-<a name="l00313"></a>00313          value.c_str(), pos_of_space);
-<a name="l00314"></a>00314 
-<a name="l00315"></a>00315     <span class="keywordflow">if</span> (pos_of_space != string::npos) {  <span class="comment">// some kind of vector</span>
-<a name="l00316"></a>00316       <span class="keyword">const</span> <span class="keywordtype">string</span> first_element = value.substr(0, pos_of_space);
-<a name="l00317"></a>00317       <span class="comment">// TODO(dimanne) check type of other elements and promote it if needed</span>
-<a name="l00318"></a>00318       <span class="keywordflow">return</span> <span class="stringliteral">&quot;vector of &quot;</span> + <a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">guessTypeOfOneElement</a>(first_element);
-<a name="l00319"></a>00319     }
-<a name="l00320"></a>00320     <span class="keywordflow">return</span> <a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">guessTypeOfOneElement</a>(value);
-<a name="l00321"></a>00321   }
-<a name="l00322"></a>00322 
-<a name="l00329"></a><a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">00329</a>   <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">guessTypeOfOneElement</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
-<a name="l00330"></a>00330     <span class="keywordflow">if</span> (iequals(value, <span class="stringliteral">&quot;true&quot;</span>) || iequals(value, <span class="stringliteral">&quot;false&quot;</span>)) {
-<a name="l00331"></a>00331       <span class="keywordflow">return</span> <span class="stringliteral">&quot;bool&quot;</span>;
-<a name="l00332"></a>00332     }
-<a name="l00333"></a>00333 
-<a name="l00334"></a>00334     <span class="keyword">const</span> string::size_type pos_of_decimal_point = value.find(<span class="charliteral">&#39;.&#39;</span>);
-<a name="l00335"></a>00335     <span class="keywordflow">if</span> (pos_of_decimal_point != string::npos) {
-<a name="l00336"></a>00336       <span class="keywordflow">try</span> {
-<a name="l00337"></a>00337         ltr::utility::lexical_cast&lt;<span class="keywordtype">double</span>&gt;(value);
-<a name="l00338"></a>00338       } <span class="keywordflow">catch</span>(<a class="code" href="classltr_1_1utility_1_1bad__lexical__cast.html">ltr::utility::bad_lexical_cast</a>&amp;) {
-<a name="l00339"></a>00339         <span class="keywordflow">return</span> <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">XML_TOKEN_DEPENDENCY_TYPE</a>;
-<a name="l00340"></a>00340       }
-<a name="l00341"></a>00341       <span class="keywordflow">return</span> <span class="stringliteral">&quot;double&quot;</span>;
-<a name="l00342"></a>00342     }
-<a name="l00343"></a>00343 
-<a name="l00344"></a>00344     <span class="keywordflow">try</span> {
-<a name="l00345"></a>00345       ltr::utility::lexical_cast&lt;<span class="keywordtype">int</span>&gt;(value);
-<a name="l00346"></a>00346     } <span class="keywordflow">catch</span>(<a class="code" href="classltr_1_1utility_1_1bad__lexical__cast.html">ltr::utility::bad_lexical_cast</a>&amp;) {
-<a name="l00347"></a>00347       <span class="keywordflow">return</span> <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">XML_TOKEN_DEPENDENCY_TYPE</a>;
-<a name="l00348"></a>00348     }
-<a name="l00349"></a>00349     <span class="keywordflow">return</span> <span class="stringliteral">&quot;int&quot;</span>;
-<a name="l00350"></a>00350   }
-<a name="l00351"></a><a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">00351</a>   <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ltr::ParametersContainer</a>* <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>;
-<a name="l00352"></a>00352 };
-<a name="l00353"></a>00353 
-<a name="l00354"></a>00354 <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">TOnParameterTag::XML_TOKEN_DEPENDENCY_TYPE</a> =
-<a name="l00355"></a>00355     <span class="stringliteral">&quot;TXmlTokenDependency&quot;</span>;
-<a name="l00356"></a>00356 
-<a name="l00362"></a><a class="code" href="class_on_general_parameterized.html">00362</a> <span class="keyword">class </span><a class="code" href="class_on_general_parameterized.html">OnGeneralParameterized</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00363"></a>00363  <span class="keyword">public</span>:
+<a name="l00293"></a>00293     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type.substr(0, 6) == <span class="stringliteral">&quot;vector&quot;</span>) {
+<a name="l00294"></a>00294         <span class="comment">// TODO(skyhawk): rewrite using split</span>
+<a name="l00295"></a>00295       <span class="keywordtype">int</span> space_pos = type.find_last_of(<span class="stringliteral">&quot;\t ,&quot;</span>);
+<a name="l00296"></a>00296       <span class="keywordtype">string</span> subtype = type.substr(space_pos + 1);
+<a name="l00297"></a>00297       rInfo(<span class="stringliteral">&quot;Parsing vector of %s&quot;</span>, subtype.c_str());
+<a name="l00298"></a>00298       <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>-&gt;<a class="code" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">AddNew</a>(name, value);
+<a name="l00299"></a>00299     } <span class="keywordflow">else</span> {
+<a name="l00300"></a>00300       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;Adding &#39;&quot;</span> + type +
+<a name="l00301"></a>00301                           <span class="stringliteral">&quot;&#39; is not implemented yet...&quot;</span>);
+<a name="l00302"></a>00302     }
+<a name="l00303"></a>00303   }
+<a name="l00304"></a>00304 
+<a name="l00311"></a><a class="code" href="class_t_on_parameter_tag.html#a8d1c076171dc5f660d88db30e37fe83d">00311</a>   <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_t_on_parameter_tag.html#a8d1c076171dc5f660d88db30e37fe83d">guessType</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
+<a name="l00312"></a>00312     <span class="keyword">const</span> <span class="keywordtype">int</span> pos_of_space = value.find_first_of(<span class="stringliteral">&quot;\t ,&quot;</span>);
+<a name="l00313"></a>00313     rInfo(<span class="stringliteral">&quot;TOnParametersExecutor: guessing type of %s %d\n&quot;</span>,
+<a name="l00314"></a>00314          value.c_str(), pos_of_space);
+<a name="l00315"></a>00315 
+<a name="l00316"></a>00316     <span class="keywordflow">if</span> (pos_of_space != string::npos) {  <span class="comment">// some kind of vector</span>
+<a name="l00317"></a>00317       <span class="keyword">const</span> <span class="keywordtype">string</span> first_element = value.substr(0, pos_of_space);
+<a name="l00318"></a>00318       <span class="comment">// TODO(dimanne) check type of other elements and promote it if needed</span>
+<a name="l00319"></a>00319       <span class="keywordflow">return</span> <span class="stringliteral">&quot;vector of &quot;</span> + <a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">guessTypeOfOneElement</a>(first_element);
+<a name="l00320"></a>00320     }
+<a name="l00321"></a>00321     <span class="keywordflow">return</span> <a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">guessTypeOfOneElement</a>(value);
+<a name="l00322"></a>00322   }
+<a name="l00323"></a>00323 
+<a name="l00330"></a><a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">00330</a>   <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_t_on_parameter_tag.html#ad1ccbe4d670fc9c68d7d75066b20882b">guessTypeOfOneElement</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; value) {
+<a name="l00331"></a>00331     <span class="keywordflow">if</span> (iequals(value, <span class="stringliteral">&quot;true&quot;</span>) || iequals(value, <span class="stringliteral">&quot;false&quot;</span>)) {
+<a name="l00332"></a>00332       <span class="keywordflow">return</span> <span class="stringliteral">&quot;bool&quot;</span>;
+<a name="l00333"></a>00333     }
+<a name="l00334"></a>00334 
+<a name="l00335"></a>00335     <span class="keyword">const</span> string::size_type pos_of_decimal_point = value.find(<span class="charliteral">&#39;.&#39;</span>);
+<a name="l00336"></a>00336     <span class="keywordflow">if</span> (pos_of_decimal_point != string::npos) {
+<a name="l00337"></a>00337       <span class="keywordflow">try</span> {
+<a name="l00338"></a>00338         ltr::utility::lexical_cast&lt;<span class="keywordtype">double</span>&gt;(value);
+<a name="l00339"></a>00339       } <span class="keywordflow">catch</span> (invalid_argument&amp;) {
+<a name="l00340"></a>00340         <span class="keywordflow">return</span> <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">XML_TOKEN_DEPENDENCY_TYPE</a>;
+<a name="l00341"></a>00341       }
+<a name="l00342"></a>00342       <span class="keywordflow">return</span> <span class="stringliteral">&quot;double&quot;</span>;
+<a name="l00343"></a>00343     }
+<a name="l00344"></a>00344 
+<a name="l00345"></a>00345     <span class="keywordflow">try</span> {
+<a name="l00346"></a>00346       ltr::utility::lexical_cast&lt;<span class="keywordtype">int</span>&gt;(value);
+<a name="l00347"></a>00347     } <span class="keywordflow">catch</span> (invalid_argument&amp;) {
+<a name="l00348"></a>00348       <span class="keywordflow">return</span> <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">XML_TOKEN_DEPENDENCY_TYPE</a>;
+<a name="l00349"></a>00349     }
+<a name="l00350"></a>00350     <span class="keywordflow">return</span> <span class="stringliteral">&quot;int&quot;</span>;
+<a name="l00351"></a>00351   }
+<a name="l00352"></a><a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">00352</a>   <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ltr::ParametersContainer</a>* <a class="code" href="class_t_on_parameter_tag.html#a7b067a093ff13157493c0858e3cf895c">container</a>;
+<a name="l00353"></a>00353 };
+<a name="l00354"></a>00354 
+<a name="l00355"></a>00355 <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_t_on_parameter_tag.html#a88720c11d271956f591029695ee89c8e">TOnParameterTag::XML_TOKEN_DEPENDENCY_TYPE</a> =
+<a name="l00356"></a>00356     <span class="stringliteral">&quot;TXmlTokenDependency&quot;</span>;
+<a name="l00357"></a>00357 
+<a name="l00363"></a><a class="code" href="class_on_general_parameterized.html">00363</a> <span class="keyword">class </span><a class="code" href="class_on_general_parameterized.html">OnGeneralParameterized</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00364"></a>00364  <span class="keyword">public</span>:
 <a name="l00368"></a><a class="code" href="class_on_general_parameterized.html#a2b87d4ed6a3eed8dfbd3d40a4258410f">00368</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_general_parameterized.html#a2b87d4ed6a3eed8dfbd3d40a4258410f">OnGeneralParameterized</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
 <a name="l00369"></a>00369     <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a> = <span class="keyword">new</span> <a class="code" href="class_t_on_parameter_tag.html">TOnParameterTag</a>(impl);
 <a name="l00370"></a>00370   }
 <a name="l00374"></a><a class="code" href="class_on_general_parameterized.html#aae3e19853d1fd5268ebe293dab3acd79">00374</a>   <a class="code" href="class_on_general_parameterized.html#aae3e19853d1fd5268ebe293dab3acd79">~OnGeneralParameterized</a>() {
 <a name="l00375"></a>00375     <span class="keyword">delete</span> <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>;
 <a name="l00376"></a>00376   }
-<a name="l00382"></a><a class="code" href="class_on_general_parameterized.html#a326923cff6fb88776ddf3d9bdd1d8827">00382</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_general_parameterized.html#a326923cff6fb88776ddf3d9bdd1d8827">operator()</a>(TiXmlElement* element) {
-<a name="l00383"></a>00383     rInfo(<span class="stringliteral">&quot;TOnGeneralXmlToken\n&quot;</span>);
-<a name="l00384"></a>00384 
-<a name="l00385"></a>00385     <span class="keyword">const</span> <span class="keywordtype">char</span>* name = element-&gt;Attribute(NAME_ATTR);
-<a name="l00386"></a>00386     <a class="code" href="class_object_info.html">ObjectInfo</a>&amp; info = ltr::utility::SafeInsert(<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a9e43849bfd8640526976086647f2a9a0">objectInfos</a>(),
-<a name="l00387"></a>00387                                                       name);
-<a name="l00388"></a>00388     <span class="keyword">const</span> <span class="keywordtype">char</span>* type = element-&gt;Attribute(TYPE_ATTR);
-<a name="l00389"></a>00389     <span class="keywordflow">if</span> (!type) {
-<a name="l00390"></a>00390       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;no &#39;type&#39; attribute&quot;</span>);
-<a name="l00391"></a>00391     }
-<a name="l00392"></a>00392 
-<a name="l00393"></a>00393     <span class="keyword">const</span> <span class="keywordtype">char</span>* approach = element-&gt;Attribute(APPROACH_ATTR);
-<a name="l00394"></a>00394     <span class="keywordflow">if</span> (!approach) {
-<a name="l00395"></a>00395       rWarning(<span class="stringliteral">&quot;No approach defined for &#39;%s&#39;. Trying to define automatically.&quot;</span>, name);
-<a name="l00396"></a>00396       approach = <span class="stringliteral">&quot;&quot;</span>;
-<a name="l00397"></a>00397     }
-<a name="l00398"></a>00398     <span class="keyword">const</span> <span class="keywordtype">char</span>* tag_name = element-&gt;Value();
-<a name="l00399"></a>00399     <span class="keywordflow">if</span> (!tag_name) {
-<a name="l00400"></a>00400       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;no tag name&quot;</span>);
-<a name="l00401"></a>00401     }
-<a name="l00402"></a>00402 
-<a name="l00403"></a>00403     info.<a class="code" href="class_object_info.html#a8d76b72265745d63856cb51bdacaa693">tag_name_</a> = tag_name;
-<a name="l00404"></a>00404     info.<a class="code" href="class_object_info.html#a68810e39a37792a34043eb447eb52e89">object_name_</a> = name;
-<a name="l00405"></a>00405     info.<a class="code" href="class_object_info.html#a66ba3b7921a5237b7b0378e246f9279b">object_type_</a> = type;
-<a name="l00406"></a>00406     info.<a class="code" href="class_object_info.html#a789fecf7d41b264846532245f8a905cf">approach_</a> = approach;
-<a name="l00407"></a>00407 
-<a name="l00408"></a>00408     <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>-&gt;<a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(&amp;info.<a class="code" href="class_object_info.html#a7c061806b439cccbaca7c0f406357d7c">parameters_</a>);
-<a name="l00409"></a>00409     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>(),
-<a name="l00410"></a>00410                  element-&gt;FirstChildElement(),
-<a name="l00411"></a>00411                  <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>);
-<a name="l00412"></a>00412   }
-<a name="l00413"></a>00413 
-<a name="l00414"></a>00414  <span class="keyword">private</span>:
-<a name="l00415"></a><a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">00415</a>   <a class="code" href="class_t_on_parameter_tag.html">TOnParameterTag</a>* <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>;
-<a name="l00416"></a>00416 };
-<a name="l00417"></a>00417 
-<a name="l00418"></a>00418 <span class="comment">//============================= Launch parsing =================================</span>
+<a name="l00383"></a><a class="code" href="class_on_general_parameterized.html#a326923cff6fb88776ddf3d9bdd1d8827">00383</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_general_parameterized.html#a326923cff6fb88776ddf3d9bdd1d8827">operator()</a>(TiXmlElement* element) {
+<a name="l00384"></a>00384     rInfo(<span class="stringliteral">&quot;TOnGeneralXmlToken\n&quot;</span>);
+<a name="l00385"></a>00385 
+<a name="l00386"></a>00386     <span class="keyword">const</span> <span class="keywordtype">char</span>* name = element-&gt;Attribute(NAME_ATTR);
+<a name="l00387"></a>00387     <a class="code" href="class_object_info.html">ObjectInfo</a>&amp; info = ltr::utility::SafeInsert(<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a9e43849bfd8640526976086647f2a9a0">objectInfos</a>(),
+<a name="l00388"></a>00388                                                       name);
+<a name="l00389"></a>00389     <span class="keyword">const</span> <span class="keywordtype">char</span>* type = element-&gt;Attribute(TYPE_ATTR);
+<a name="l00390"></a>00390     <span class="keywordflow">if</span> (!type) {
+<a name="l00391"></a>00391       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;no &#39;type&#39; attribute&quot;</span>);
+<a name="l00392"></a>00392     }
+<a name="l00393"></a>00393 
+<a name="l00394"></a>00394     <span class="keyword">const</span> <span class="keywordtype">char</span>* approach = element-&gt;Attribute(APPROACH_ATTR);
+<a name="l00395"></a>00395     <span class="keywordflow">if</span> (!approach) {
+<a name="l00396"></a>00396       rWarning(<span class="stringliteral">&quot;No approach defined for &#39;%s&#39;. Trying to define automatically.&quot;</span>,
+<a name="l00397"></a>00397                name);
+<a name="l00398"></a>00398       approach = <span class="stringliteral">&quot;&quot;</span>;
+<a name="l00399"></a>00399     }
+<a name="l00400"></a>00400     <span class="keyword">const</span> <span class="keywordtype">char</span>* tag_name = element-&gt;Value();
+<a name="l00401"></a>00401     <span class="keywordflow">if</span> (!tag_name) {
+<a name="l00402"></a>00402       <span class="keywordflow">throw</span> logic_error(<span class="stringliteral">&quot;no tag name&quot;</span>);
+<a name="l00403"></a>00403     }
+<a name="l00404"></a>00404 
+<a name="l00405"></a>00405     info.<a class="code" href="class_object_info.html#a8d76b72265745d63856cb51bdacaa693">tag_name_</a> = tag_name;
+<a name="l00406"></a>00406     info.<a class="code" href="class_object_info.html#a68810e39a37792a34043eb447eb52e89">object_name_</a> = name;
+<a name="l00407"></a>00407     info.<a class="code" href="class_object_info.html#a66ba3b7921a5237b7b0378e246f9279b">object_type_</a> = type;
+<a name="l00408"></a>00408     info.<a class="code" href="class_object_info.html#a789fecf7d41b264846532245f8a905cf">approach_</a> = approach;
+<a name="l00409"></a>00409 
+<a name="l00410"></a>00410     <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>-&gt;<a class="code" href="class_t_on_parameter_tag.html#ab2e9929405d00e17941e63232ac6396c">setContainer</a>(&amp;info.<a class="code" href="class_object_info.html#a7c061806b439cccbaca7c0f406357d7c">parameters_</a>);
+<a name="l00411"></a>00411     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a>(),
+<a name="l00412"></a>00412                  element-&gt;FirstChildElement(),
+<a name="l00413"></a>00413                  <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>);
+<a name="l00414"></a>00414   }
+<a name="l00415"></a>00415 
+<a name="l00416"></a>00416  <span class="keyword">private</span>:
+<a name="l00417"></a><a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">00417</a>   <a class="code" href="class_t_on_parameter_tag.html">TOnParameterTag</a>* <a class="code" href="class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb">parameters_executor</a>;
+<a name="l00418"></a>00418 };
 <a name="l00419"></a>00419 
-<a name="l00425"></a><a class="code" href="class_on_c_v_learner_tag.html">00425</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00426"></a>00426   <span class="keyword">public</span>:
-<a name="l00431"></a><a class="code" href="class_on_c_v_learner_tag.html#a39a551957dedc2f60466906e41d34d08">00431</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_learner_tag.html#a39a551957dedc2f60466906e41d34d08">OnCVLearnerTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00432"></a>00432     <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a> = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
-<a name="l00433"></a>00433   }
-<a name="l00437"></a><a class="code" href="class_on_c_v_learner_tag.html#a557df2a78f4126e6d33a152b3f3af2ab">00437</a>   <a class="code" href="class_on_c_v_learner_tag.html#a557df2a78f4126e6d33a152b3f3af2ab">~OnCVLearnerTag</a>() { }
-<a name="l00438"></a><a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">00438</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* ti) {
-<a name="l00439"></a>00439     <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a> = ti;
-<a name="l00440"></a>00440   }
-<a name="l00441"></a>00441 
-<a name="l00447"></a><a class="code" href="class_on_c_v_learner_tag.html#a9d36a546d0537f3d7c53314c1c122e15">00447</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_learner_tag.html#a9d36a546d0537f3d7c53314c1c122e15">operator()</a>(TiXmlElement* element) {
-<a name="l00448"></a>00448     rInfo(<span class="stringliteral">&quot;TOnCVLearnerExecutor\n&quot;</span>);
-<a name="l00449"></a>00449     assert(<a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a>);
-<a name="l00450"></a>00450     ltr::utility::SafeInsert(<a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a>-&gt;<a class="code" href="struct_crossvalidation_launch_info.html#a1fa1f60692b0d3426d295f748b7a000c">learners</a>, element-&gt;GetText());
-<a name="l00451"></a>00451   }
-<a name="l00452"></a>00452 
-<a name="l00453"></a>00453  <span class="keyword">private</span>:
-<a name="l00454"></a><a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">00454</a>   <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a>;
-<a name="l00455"></a>00455 };
-<a name="l00456"></a>00456 
-<a name="l00461"></a><a class="code" href="class_on_c_v_measure_tag.html">00461</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00462"></a>00462  <span class="keyword">public</span>:
-<a name="l00468"></a><a class="code" href="class_on_c_v_measure_tag.html#a4f619a590f408595cd67331c0b3fb90f">00468</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_measure_tag.html#a4f619a590f408595cd67331c0b3fb90f">OnCVMeasureTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00469"></a>00469     <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a> = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
-<a name="l00470"></a>00470   }
-<a name="l00474"></a><a class="code" href="class_on_c_v_measure_tag.html#aa7c781875372d4d086c9bff0b71910df">00474</a>   <a class="code" href="class_on_c_v_measure_tag.html#aa7c781875372d4d086c9bff0b71910df">~OnCVMeasureTag</a>() { }
-<a name="l00475"></a><a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">00475</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* ti) {
-<a name="l00476"></a>00476     <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a> = ti;
-<a name="l00477"></a>00477   }
-<a name="l00478"></a>00478 
-<a name="l00484"></a><a class="code" href="class_on_c_v_measure_tag.html#a8dcf41f369e478c677cea96d64b22946">00484</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_measure_tag.html#a8dcf41f369e478c677cea96d64b22946">operator()</a>(TiXmlElement* element) {
-<a name="l00485"></a>00485     rInfo(<span class="stringliteral">&quot;TOnCVMeasureExecutor&quot;</span>);
-<a name="l00486"></a>00486     assert(<a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a>);
-<a name="l00487"></a>00487     ltr::utility::SafeInsert(<a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a>-&gt;<a class="code" href="struct_crossvalidation_launch_info.html#a16f59e6fd569336dc5937d1511df5013">measures</a>, element-&gt;GetText());
-<a name="l00488"></a>00488   }
-<a name="l00489"></a>00489 
-<a name="l00490"></a>00490  <span class="keyword">private</span>:
-<a name="l00491"></a><a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">00491</a>   <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a>;
-<a name="l00492"></a>00492 };
-<a name="l00493"></a>00493 
-<a name="l00498"></a><a class="code" href="class_on_c_v_data_tag.html">00498</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_data_tag.html">OnCVDataTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00499"></a>00499  <span class="keyword">public</span>:
-<a name="l00505"></a><a class="code" href="class_on_c_v_data_tag.html#a393eec26f60593db70eeb2b27cd57b47">00505</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_data_tag.html#a393eec26f60593db70eeb2b27cd57b47">OnCVDataTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
-<a name="l00506"></a>00506     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00507"></a>00507     , <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
-<a name="l00511"></a><a class="code" href="class_on_c_v_data_tag.html#a2e8761b9d245cc256ce2e0543078eafe">00511</a>   <a class="code" href="class_on_c_v_data_tag.html#a2e8761b9d245cc256ce2e0543078eafe">~OnCVDataTag</a>() {}
-<a name="l00512"></a><a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">00512</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* trainInfo) {
-<a name="l00513"></a>00513     <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a> = trainInfo;
-<a name="l00514"></a>00514   }
-<a name="l00515"></a>00515 
-<a name="l00521"></a><a class="code" href="class_on_c_v_data_tag.html#aa3b0c0bbbef71b6062403917536ea149">00521</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_data_tag.html#aa3b0c0bbbef71b6062403917536ea149">operator() </a>(TiXmlElement* element) {
-<a name="l00522"></a>00522     rInfo(<span class="stringliteral">&quot;TOnCVDataExecutor\n&quot;</span>);
-<a name="l00523"></a>00523     assert(<a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>);
-<a name="l00524"></a>00524     ltr::utility::SafeInsert(<a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>-&gt;<a class="code" href="struct_crossvalidation_launch_info.html#a090084180d71b0b0bbe86d64e941ce1c">datas</a>, element-&gt;GetText());
-<a name="l00525"></a>00525   }
-<a name="l00526"></a>00526 
-<a name="l00527"></a>00527  <span class="keyword">private</span>:
-<a name="l00528"></a><a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">00528</a>   <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>;
-<a name="l00529"></a>00529 };
-<a name="l00530"></a>00530 
-<a name="l00536"></a><a class="code" href="class_on_crossvalidation_tag.html">00536</a> <span class="keyword">class </span><a class="code" href="class_on_crossvalidation_tag.html">OnCrossvalidationTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00537"></a>00537  <span class="keyword">public</span>:
-<a name="l00543"></a><a class="code" href="class_on_crossvalidation_tag.html#a693e6b0bc86c3cc9fb3a0ec5cf00c496">00543</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_crossvalidation_tag.html#a693e6b0bc86c3cc9fb3a0ec5cf00c496">OnCrossvalidationTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl):
-<a name="l00544"></a>00544     <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00545"></a>00545     <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>[LEARNER] = <a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">learner_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>(impl);
-<a name="l00546"></a>00546     <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>[MEASURE] = <a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">measure_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>(impl);
-<a name="l00547"></a>00547     <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>[DATA] = <a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">data_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_c_v_data_tag.html">OnCVDataTag</a>(impl);
-<a name="l00548"></a>00548   }
-<a name="l00552"></a><a class="code" href="class_on_crossvalidation_tag.html#a83d8687dab9a8dc68eaa8747a9fca203">00552</a>   <a class="code" href="class_on_crossvalidation_tag.html#a83d8687dab9a8dc68eaa8747a9fca203">~OnCrossvalidationTag</a>() {
-<a name="l00553"></a>00553     <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(&amp;<a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>);
-<a name="l00554"></a>00554   }
-<a name="l00560"></a><a class="code" href="class_on_crossvalidation_tag.html#aa9cb54e7fcafb12230953cfe73b83ea3">00560</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_crossvalidation_tag.html#aa9cb54e7fcafb12230953cfe73b83ea3">operator()</a>(TiXmlElement* element) {
-<a name="l00561"></a>00561     rInfo(<span class="stringliteral">&quot;TOnCrossvalidationExecutor\n&quot;</span>);
-<a name="l00562"></a>00562 
-<a name="l00563"></a>00563     <span class="keyword">const</span> <span class="keywordtype">char</span>* fold = element-&gt;Attribute(FOLD_ATTR);
-<a name="l00564"></a>00564     <span class="keywordflow">if</span> (!fold) {
-<a name="l00565"></a>00565         rError(<span class="stringliteral">&quot;Failed: &lt;crossvalidation&gt; with no fold&quot;</span>);
-<a name="l00566"></a>00566         <span class="keywordflow">return</span>;
-<a name="l00567"></a>00567     }
-<a name="l00568"></a>00568 
-<a name="l00569"></a>00569     <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> new_fold_info(fold);
-<a name="l00570"></a>00570     <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold] = new_fold_info;
-<a name="l00571"></a>00571     <a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">learner_executor</a>-&gt;<a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">setInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold]);
-<a name="l00572"></a>00572     <a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">measure_executor</a>-&gt;<a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">setInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold]);
-<a name="l00573"></a>00573     <a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">data_executor</a>-&gt;<a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">setInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold]);
-<a name="l00574"></a>00574     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>, element-&gt;FirstChildElement());
-<a name="l00575"></a>00575   }
-<a name="l00576"></a>00576 
-<a name="l00577"></a>00577  <span class="keyword">private</span>:
-<a name="l00578"></a><a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">00578</a>   <a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>* <a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">learner_executor</a>;
-<a name="l00579"></a><a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">00579</a>   <a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>* <a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">measure_executor</a>;
-<a name="l00580"></a><a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">00580</a>   <a class="code" href="class_on_c_v_data_tag.html">OnCVDataTag</a>* <a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">data_executor</a>;
-<a name="l00581"></a><a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">00581</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>;
-<a name="l00582"></a>00582 };
-<a name="l00583"></a>00583 
-<a name="l00588"></a><a class="code" href="class_on_predict_tag.html">00588</a> <span class="keyword">class </span><a class="code" href="class_on_predict_tag.html">OnPredictTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00589"></a>00589   <span class="keyword">public</span>:
-<a name="l00595"></a><a class="code" href="class_on_predict_tag.html#a9ce38798bdfc8c1ea41fbb2d66c15de7">00595</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_predict_tag.html#a9ce38798bdfc8c1ea41fbb2d66c15de7">OnPredictTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
-<a name="l00596"></a>00596     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00597"></a>00597     , <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
-<a name="l00601"></a><a class="code" href="class_on_predict_tag.html#a520a0592a093f658822f1888d640ae24">00601</a>   <a class="code" href="class_on_predict_tag.html#a520a0592a093f658822f1888d640ae24">~OnPredictTag</a>() {}
-<a name="l00602"></a><a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">00602</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">setTrainInfo</a>(<a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* trainInfo) {
-<a name="l00603"></a>00603     <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a> = trainInfo;
-<a name="l00604"></a>00604   }
-<a name="l00610"></a><a class="code" href="class_on_predict_tag.html#ac7311de13612c27c88b4ffaf7a56d62a">00610</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_predict_tag.html#ac7311de13612c27c88b4ffaf7a56d62a">operator() </a>(TiXmlElement* element) {
-<a name="l00611"></a>00611     rInfo(<span class="stringliteral">&quot;TOnPredictExecutor\n&quot;</span>);
-<a name="l00612"></a>00612     assert(<a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>);
-<a name="l00613"></a>00613     ltr::utility::SafeInsert(<a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>-&gt;<a class="code" href="struct_train_launch_info.html#ad895734e65e13e518d2b5be774f290bc">predicts</a>, element-&gt;GetText());
-<a name="l00614"></a>00614   }
-<a name="l00615"></a>00615 
-<a name="l00616"></a>00616  <span class="keyword">private</span>:
-<a name="l00617"></a><a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">00617</a>   <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>;
-<a name="l00618"></a>00618 };
-<a name="l00619"></a>00619 
-<a name="l00624"></a><a class="code" href="class_on_cpp_gen_tag.html">00624</a> <span class="keyword">class </span><a class="code" href="class_on_cpp_gen_tag.html">OnCppGenTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00625"></a>00625   <span class="keyword">public</span>:
-<a name="l00631"></a><a class="code" href="class_on_cpp_gen_tag.html#a7649a16ead8cf06731e1cca1eab4328f">00631</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_cpp_gen_tag.html#a7649a16ead8cf06731e1cca1eab4328f">OnCppGenTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
-<a name="l00632"></a>00632     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
-<a name="l00633"></a>00633     , <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
-<a name="l00637"></a><a class="code" href="class_on_cpp_gen_tag.html#a52c47f692cb4852b4fb6fd7e003ccb3d">00637</a>   <a class="code" href="class_on_cpp_gen_tag.html#a52c47f692cb4852b4fb6fd7e003ccb3d">~OnCppGenTag</a>() {}
-<a name="l00638"></a><a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">00638</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">setTrainInfo</a>(<a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* trainInfo) {
-<a name="l00639"></a>00639     <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a> = trainInfo;
-<a name="l00640"></a>00640   }
-<a name="l00646"></a><a class="code" href="class_on_cpp_gen_tag.html#acd9e9c89d8445b6bf169c420570418b1">00646</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_cpp_gen_tag.html#acd9e9c89d8445b6bf169c420570418b1">operator() </a>(TiXmlElement* element) {
-<a name="l00647"></a>00647     assert(<a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>);
-<a name="l00648"></a>00648     <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>-&gt;<a class="code" href="struct_train_launch_info.html#a03c66a0954eb95fade9ab361509b5840">gen_cpp</a> = <span class="keyword">true</span>;
-<a name="l00649"></a>00649   }
-<a name="l00650"></a>00650 
-<a name="l00651"></a>00651  <span class="keyword">private</span>:
-<a name="l00652"></a><a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">00652</a>   <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>;
-<a name="l00653"></a>00653 };
-<a name="l00654"></a>00654 
-<a name="l00659"></a><a class="code" href="class_on_train_tag.html">00659</a> <span class="keyword">class </span><a class="code" href="class_on_train_tag.html">OnTrainTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00660"></a>00660  <span class="keyword">public</span>:
-<a name="l00666"></a><a class="code" href="class_on_train_tag.html#adb5b74d293e968d1a4509d627ca7273a">00666</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_train_tag.html#adb5b74d293e968d1a4509d627ca7273a">OnTrainTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00667"></a>00667     <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a> =  <span class="keyword">new</span> <a class="code" href="class_on_cpp_gen_tag.html">OnCppGenTag</a>(impl);
-<a name="l00668"></a>00668     <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_predict_tag.html">OnPredictTag</a>(impl);
-<a name="l00669"></a>00669     <a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>[CPP_GEN] = <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a>;
-<a name="l00670"></a>00670     <a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>[PREDICT] = <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a>;
-<a name="l00671"></a>00671   }
-<a name="l00675"></a><a class="code" href="class_on_train_tag.html#a381e6c89a8ceb34d6c9a64fc3e4e0545">00675</a>   <a class="code" href="class_on_train_tag.html#a381e6c89a8ceb34d6c9a64fc3e4e0545">~OnTrainTag</a>() {
-<a name="l00676"></a>00676     <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(&amp;<a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>);
-<a name="l00677"></a>00677   }
-<a name="l00678"></a>00678 
-<a name="l00684"></a><a class="code" href="class_on_train_tag.html#a95bd6ccae4fcc83081bcc1bd394d223f">00684</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_train_tag.html#a95bd6ccae4fcc83081bcc1bd394d223f">operator() </a>(TiXmlElement* element) {
-<a name="l00685"></a>00685     rInfo(<span class="stringliteral">&quot;TOnTrainExecutor\n&quot;</span>);
-<a name="l00686"></a>00686     <span class="keyword">const</span> <span class="keywordtype">char</span>* name = element-&gt;Attribute(<span class="stringliteral">&quot;name&quot;</span>);
-<a name="l00687"></a>00687     <span class="keyword">const</span> <span class="keywordtype">char</span>* data = element-&gt;Attribute(<span class="stringliteral">&quot;data&quot;</span>);
-<a name="l00688"></a>00688     <span class="keyword">const</span> <span class="keywordtype">char</span>* learner = element-&gt;Attribute(<span class="stringliteral">&quot;learner&quot;</span>);
-<a name="l00689"></a>00689 
-<a name="l00690"></a>00690     <span class="keywordflow">if</span> (!name) {
-<a name="l00691"></a>00691         rError(<span class="stringliteral">&quot;Failed: &lt;train&gt; without name attribute&quot;</span>);
-<a name="l00692"></a>00692         <span class="keywordflow">return</span>;
-<a name="l00693"></a>00693     }
-<a name="l00694"></a>00694     <span class="keywordflow">if</span> (!data) {
-<a name="l00695"></a>00695         rError(<span class="stringliteral">&quot;Failed: &lt;train&gt; without data attribute&quot;</span>);
-<a name="l00696"></a>00696         <span class="keywordflow">return</span>;
-<a name="l00697"></a>00697     }
-<a name="l00698"></a>00698     <span class="keywordflow">if</span> (!learner) {
-<a name="l00699"></a>00699         rError(<span class="stringliteral">&quot;Failed: &lt;train&gt; without learner attribute&quot;</span>);
-<a name="l00700"></a>00700         <span class="keywordflow">return</span>;
-<a name="l00701"></a>00701     }
-<a name="l00702"></a>00702     <span class="keywordflow">if</span> (<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>().find(name) != <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>().end()) {
-<a name="l00703"></a>00703         rError(<span class="stringliteral">&quot;Failed: dublicate train name &quot;</span>);
-<a name="l00704"></a>00704         <span class="keywordflow">return</span>;
-<a name="l00705"></a>00705     }
-<a name="l00706"></a>00706 
-<a name="l00707"></a>00707     <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a> new_train_info(name, data, learner);
-<a name="l00708"></a>00708     <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>()[name] = new_train_info;
-<a name="l00709"></a>00709 
-<a name="l00710"></a>00710     <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a>-&gt;<a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">setTrainInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>()[name]);
-<a name="l00711"></a>00711     <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a>-&gt;<a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">setTrainInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>()[name]);
-<a name="l00712"></a>00712     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>, element-&gt;FirstChildElement());
-<a name="l00713"></a>00713   }
-<a name="l00714"></a>00714 
-<a name="l00715"></a>00715  <span class="keyword">private</span>:
-<a name="l00716"></a><a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">00716</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>;
-<a name="l00717"></a><a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">00717</a>   <a class="code" href="class_on_cpp_gen_tag.html">OnCppGenTag</a>* <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a>;
-<a name="l00718"></a><a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">00718</a>   <a class="code" href="class_on_predict_tag.html">OnPredictTag</a>* <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a>;
-<a name="l00719"></a>00719 };
-<a name="l00720"></a>00720 
-<a name="l00725"></a><a class="code" href="class_on_launch_tag.html">00725</a> <span class="keyword">class </span><a class="code" href="class_on_launch_tag.html">OnLaunchTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
-<a name="l00726"></a>00726  <span class="keyword">public</span>:
-<a name="l00732"></a><a class="code" href="class_on_launch_tag.html#aab295a948f5b435f0a64fae989764694">00732</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_launch_tag.html#aab295a948f5b435f0a64fae989764694">OnLaunchTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
-<a name="l00733"></a>00733     <a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>[TRAIN] = <span class="keyword">new</span> <a class="code" href="class_on_train_tag.html">OnTrainTag</a>(impl);
-<a name="l00734"></a>00734     <a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>[CROSSVALIDATION] = <span class="keyword">new</span> <a class="code" href="class_on_crossvalidation_tag.html">OnCrossvalidationTag</a>(impl);
-<a name="l00735"></a>00735   }
-<a name="l00739"></a><a class="code" href="class_on_launch_tag.html#a98bc06a74f6a8fb5abd9e8a7e5ef8c1f">00739</a>   <a class="code" href="class_on_launch_tag.html#a98bc06a74f6a8fb5abd9e8a7e5ef8c1f">~OnLaunchTag</a>() { <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(&amp;<a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>); }
-<a name="l00740"></a>00740 
-<a name="l00745"></a><a class="code" href="class_on_launch_tag.html#a947d6cefba951d461b63f2239ff70bd5">00745</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_launch_tag.html#a947d6cefba951d461b63f2239ff70bd5">operator() </a>(TiXmlElement* element) {
-<a name="l00746"></a>00746     rInfo(<span class="stringliteral">&quot;TOnLaunchExecutor\n&quot;</span>);
-<a name="l00747"></a>00747     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>, element-&gt;FirstChildElement());
-<a name="l00748"></a>00748   }
-<a name="l00749"></a>00749 
-<a name="l00750"></a>00750  <span class="keyword">private</span>:
-<a name="l00751"></a><a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">00751</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>;
-<a name="l00752"></a>00752 };
-<a name="l00753"></a>00753 
-<a name="l00754"></a>00754 <span class="preprocessor">#endif  // LTR_CLIENT_UTILITY_TAG_HANDLERS_H_</span>
+<a name="l00420"></a>00420 <span class="comment">//============================= Launch parsing =================================</span>
+<a name="l00421"></a>00421 
+<a name="l00427"></a><a class="code" href="class_on_c_v_learner_tag.html">00427</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00428"></a>00428   <span class="keyword">public</span>:
+<a name="l00432"></a><a class="code" href="class_on_c_v_learner_tag.html#a39a551957dedc2f60466906e41d34d08">00432</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_learner_tag.html#a39a551957dedc2f60466906e41d34d08">OnCVLearnerTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
+<a name="l00433"></a>00433     <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a> = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
+<a name="l00434"></a>00434   }
+<a name="l00438"></a><a class="code" href="class_on_c_v_learner_tag.html#a557df2a78f4126e6d33a152b3f3af2ab">00438</a>   <a class="code" href="class_on_c_v_learner_tag.html#a557df2a78f4126e6d33a152b3f3af2ab">~OnCVLearnerTag</a>() { }
+<a name="l00439"></a><a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">00439</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* ti) {
+<a name="l00440"></a>00440     <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a> = ti;
+<a name="l00441"></a>00441   }
+<a name="l00442"></a>00442 
+<a name="l00449"></a><a class="code" href="class_on_c_v_learner_tag.html#a9d36a546d0537f3d7c53314c1c122e15">00449</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_learner_tag.html#a9d36a546d0537f3d7c53314c1c122e15">operator()</a>(TiXmlElement* element) {
+<a name="l00450"></a>00450     rInfo(<span class="stringliteral">&quot;TOnCVLearnerExecutor\n&quot;</span>);
+<a name="l00451"></a>00451     assert(<a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a>);
+<a name="l00452"></a>00452     ltr::utility::SafeInsert(<a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a>-&gt;<a class="code" href="struct_crossvalidation_launch_info.html#a1fa1f60692b0d3426d295f748b7a000c">learners</a>, element-&gt;GetText());
+<a name="l00453"></a>00453   }
+<a name="l00454"></a>00454 
+<a name="l00455"></a>00455  <span class="keyword">private</span>:
+<a name="l00456"></a><a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">00456</a>   <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* <a class="code" href="class_on_c_v_learner_tag.html#a71277edfaec763f0b59cff5c643d2c4e">info</a>;
+<a name="l00457"></a>00457 };
+<a name="l00458"></a>00458 
+<a name="l00463"></a><a class="code" href="class_on_c_v_measure_tag.html">00463</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00464"></a>00464  <span class="keyword">public</span>:
+<a name="l00469"></a><a class="code" href="class_on_c_v_measure_tag.html#a4f619a590f408595cd67331c0b3fb90f">00469</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_measure_tag.html#a4f619a590f408595cd67331c0b3fb90f">OnCVMeasureTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
+<a name="l00470"></a>00470     <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a> = <a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;
+<a name="l00471"></a>00471   }
+<a name="l00475"></a><a class="code" href="class_on_c_v_measure_tag.html#aa7c781875372d4d086c9bff0b71910df">00475</a>   <a class="code" href="class_on_c_v_measure_tag.html#aa7c781875372d4d086c9bff0b71910df">~OnCVMeasureTag</a>() { }
+<a name="l00476"></a><a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">00476</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* ti) {
+<a name="l00477"></a>00477     <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a> = ti;
+<a name="l00478"></a>00478   }
+<a name="l00479"></a>00479 
+<a name="l00486"></a><a class="code" href="class_on_c_v_measure_tag.html#a8dcf41f369e478c677cea96d64b22946">00486</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_measure_tag.html#a8dcf41f369e478c677cea96d64b22946">operator()</a>(TiXmlElement* element) {
+<a name="l00487"></a>00487     rInfo(<span class="stringliteral">&quot;TOnCVMeasureExecutor&quot;</span>);
+<a name="l00488"></a>00488     assert(<a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a>);
+<a name="l00489"></a>00489     ltr::utility::SafeInsert(<a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a>-&gt;<a class="code" href="struct_crossvalidation_launch_info.html#a16f59e6fd569336dc5937d1511df5013">measures</a>, element-&gt;GetText());
+<a name="l00490"></a>00490   }
+<a name="l00491"></a>00491 
+<a name="l00492"></a>00492  <span class="keyword">private</span>:
+<a name="l00493"></a><a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">00493</a>   <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* <a class="code" href="class_on_c_v_measure_tag.html#acc5ed04e35e0167a1acbc43bb197646f">info</a>;
+<a name="l00494"></a>00494 };
+<a name="l00495"></a>00495 
+<a name="l00500"></a><a class="code" href="class_on_c_v_data_tag.html">00500</a> <span class="keyword">class </span><a class="code" href="class_on_c_v_data_tag.html">OnCVDataTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00501"></a>00501  <span class="keyword">public</span>:
+<a name="l00506"></a><a class="code" href="class_on_c_v_data_tag.html#a393eec26f60593db70eeb2b27cd57b47">00506</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_c_v_data_tag.html#a393eec26f60593db70eeb2b27cd57b47">OnCVDataTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
+<a name="l00507"></a>00507     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
+<a name="l00508"></a>00508     , <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
+<a name="l00512"></a><a class="code" href="class_on_c_v_data_tag.html#a2e8761b9d245cc256ce2e0543078eafe">00512</a>   <a class="code" href="class_on_c_v_data_tag.html#a2e8761b9d245cc256ce2e0543078eafe">~OnCVDataTag</a>() {}
+<a name="l00513"></a><a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">00513</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">setInfo</a>(<a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* trainInfo) {
+<a name="l00514"></a>00514     <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a> = trainInfo;
+<a name="l00515"></a>00515   }
+<a name="l00516"></a>00516 
+<a name="l00523"></a><a class="code" href="class_on_c_v_data_tag.html#aa3b0c0bbbef71b6062403917536ea149">00523</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_c_v_data_tag.html#aa3b0c0bbbef71b6062403917536ea149">operator() </a>(TiXmlElement* element) {
+<a name="l00524"></a>00524     rInfo(<span class="stringliteral">&quot;TOnCVDataExecutor\n&quot;</span>);
+<a name="l00525"></a>00525     assert(<a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>);
+<a name="l00526"></a>00526     ltr::utility::SafeInsert(<a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>-&gt;<a class="code" href="struct_crossvalidation_launch_info.html#a090084180d71b0b0bbe86d64e941ce1c">datas</a>, element-&gt;GetText());
+<a name="l00527"></a>00527   }
+<a name="l00528"></a>00528 
+<a name="l00529"></a>00529  <span class="keyword">private</span>:
+<a name="l00530"></a><a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">00530</a>   <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>* <a class="code" href="class_on_c_v_data_tag.html#aefef5d83bc77536bef6dfd1dac6b231c">info</a>;
+<a name="l00531"></a>00531 };
+<a name="l00532"></a>00532 
+<a name="l00538"></a><a class="code" href="class_on_crossvalidation_tag.html">00538</a> <span class="keyword">class </span><a class="code" href="class_on_crossvalidation_tag.html">OnCrossvalidationTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00539"></a>00539  <span class="keyword">public</span>:
+<a name="l00544"></a><a class="code" href="class_on_crossvalidation_tag.html#a693e6b0bc86c3cc9fb3a0ec5cf00c496">00544</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_crossvalidation_tag.html#a693e6b0bc86c3cc9fb3a0ec5cf00c496">OnCrossvalidationTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl):
+<a name="l00545"></a>00545     <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
+<a name="l00546"></a>00546     <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>[LEARNER] = <a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">learner_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>(impl);
+<a name="l00547"></a>00547     <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>[MEASURE] = <a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">measure_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>(impl);
+<a name="l00548"></a>00548     <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>[DATA] = <a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">data_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_c_v_data_tag.html">OnCVDataTag</a>(impl);
+<a name="l00549"></a>00549   }
+<a name="l00553"></a><a class="code" href="class_on_crossvalidation_tag.html#a83d8687dab9a8dc68eaa8747a9fca203">00553</a>   <a class="code" href="class_on_crossvalidation_tag.html#a83d8687dab9a8dc68eaa8747a9fca203">~OnCrossvalidationTag</a>() {
+<a name="l00554"></a>00554     <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(&amp;<a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>);
+<a name="l00555"></a>00555   }
+<a name="l00562"></a><a class="code" href="class_on_crossvalidation_tag.html#aa9cb54e7fcafb12230953cfe73b83ea3">00562</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_crossvalidation_tag.html#aa9cb54e7fcafb12230953cfe73b83ea3">operator()</a>(TiXmlElement* element) {
+<a name="l00563"></a>00563     rInfo(<span class="stringliteral">&quot;TOnCrossvalidationExecutor\n&quot;</span>);
+<a name="l00564"></a>00564 
+<a name="l00565"></a>00565     <span class="keyword">const</span> <span class="keywordtype">char</span>* fold = element-&gt;Attribute(FOLD_ATTR);
+<a name="l00566"></a>00566     <span class="keywordflow">if</span> (!fold) {
+<a name="l00567"></a>00567         rError(<span class="stringliteral">&quot;Failed: &lt;crossvalidation&gt; with no fold&quot;</span>);
+<a name="l00568"></a>00568         <span class="keywordflow">return</span>;
+<a name="l00569"></a>00569     }
+<a name="l00570"></a>00570 
+<a name="l00571"></a>00571     <a class="code" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> new_fold_info(fold);
+<a name="l00572"></a>00572     <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold] = new_fold_info;
+<a name="l00573"></a>00573     <a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">learner_executor</a>-&gt;<a class="code" href="class_on_c_v_learner_tag.html#a9336fb798506efdc8ba7e4430ad6c631">setInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold]);
+<a name="l00574"></a>00574     <a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">measure_executor</a>-&gt;<a class="code" href="class_on_c_v_measure_tag.html#a125f8eaa99f3659b219de1879c937464">setInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold]);
+<a name="l00575"></a>00575     <a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">data_executor</a>-&gt;<a class="code" href="class_on_c_v_data_tag.html#a935eb904930bb73a6b4b6f19184335d0">setInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a66b22d54d102fd6c48386917b1abfaab">crossvalidationInfos</a>()[fold]);
+<a name="l00576"></a>00576     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>, element-&gt;FirstChildElement());
+<a name="l00577"></a>00577   }
+<a name="l00578"></a>00578 
+<a name="l00579"></a>00579  <span class="keyword">private</span>:
+<a name="l00580"></a><a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">00580</a>   <a class="code" href="class_on_c_v_learner_tag.html">OnCVLearnerTag</a>* <a class="code" href="class_on_crossvalidation_tag.html#aca46097bfc370ad86ae8db73fe40eac6">learner_executor</a>;
+<a name="l00581"></a><a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">00581</a>   <a class="code" href="class_on_c_v_measure_tag.html">OnCVMeasureTag</a>* <a class="code" href="class_on_crossvalidation_tag.html#a59c11fddb0debddb056b788d99e7f899">measure_executor</a>;
+<a name="l00582"></a><a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">00582</a>   <a class="code" href="class_on_c_v_data_tag.html">OnCVDataTag</a>* <a class="code" href="class_on_crossvalidation_tag.html#a801b458c74953940b08a520834c62467">data_executor</a>;
+<a name="l00583"></a><a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">00583</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_on_crossvalidation_tag.html#a6f5fc958a690aa19dec4b56fad9ff66a">handlers_</a>;
+<a name="l00584"></a>00584 };
+<a name="l00585"></a>00585 
+<a name="l00590"></a><a class="code" href="class_on_predict_tag.html">00590</a> <span class="keyword">class </span><a class="code" href="class_on_predict_tag.html">OnPredictTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00591"></a>00591   <span class="keyword">public</span>:
+<a name="l00597"></a><a class="code" href="class_on_predict_tag.html#a9ce38798bdfc8c1ea41fbb2d66c15de7">00597</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_predict_tag.html#a9ce38798bdfc8c1ea41fbb2d66c15de7">OnPredictTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
+<a name="l00598"></a>00598     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
+<a name="l00599"></a>00599     , <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
+<a name="l00603"></a><a class="code" href="class_on_predict_tag.html#a520a0592a093f658822f1888d640ae24">00603</a>   <a class="code" href="class_on_predict_tag.html#a520a0592a093f658822f1888d640ae24">~OnPredictTag</a>() {}
+<a name="l00604"></a><a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">00604</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">setTrainInfo</a>(<a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* trainInfo) {
+<a name="l00605"></a>00605     <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a> = trainInfo;
+<a name="l00606"></a>00606   }
+<a name="l00613"></a><a class="code" href="class_on_predict_tag.html#ac7311de13612c27c88b4ffaf7a56d62a">00613</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_predict_tag.html#ac7311de13612c27c88b4ffaf7a56d62a">operator() </a>(TiXmlElement* element) {
+<a name="l00614"></a>00614     rInfo(<span class="stringliteral">&quot;TOnPredictExecutor\n&quot;</span>);
+<a name="l00615"></a>00615     assert(<a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>);
+<a name="l00616"></a>00616     ltr::utility::SafeInsert(<a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>-&gt;<a class="code" href="struct_train_launch_info.html#ad895734e65e13e518d2b5be774f290bc">predicts</a>, element-&gt;GetText());
+<a name="l00617"></a>00617   }
+<a name="l00618"></a>00618 
+<a name="l00619"></a>00619  <span class="keyword">private</span>:
+<a name="l00620"></a><a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">00620</a>   <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* <a class="code" href="class_on_predict_tag.html#a104351a65eef1b85e3e1a80d6f674fd9">info</a>;
+<a name="l00621"></a>00621 };
+<a name="l00622"></a>00622 
+<a name="l00627"></a><a class="code" href="class_on_cpp_gen_tag.html">00627</a> <span class="keyword">class </span><a class="code" href="class_on_cpp_gen_tag.html">OnCppGenTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00628"></a>00628   <span class="keyword">public</span>:
+<a name="l00632"></a><a class="code" href="class_on_cpp_gen_tag.html#a7649a16ead8cf06731e1cca1eab4328f">00632</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_cpp_gen_tag.html#a7649a16ead8cf06731e1cca1eab4328f">OnCppGenTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl)
+<a name="l00633"></a>00633     : <a class="code" href="class_tag_handler.html">TagHandler</a>(impl)
+<a name="l00634"></a>00634     , <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>(<a class="code" href="_smart_pointers_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {}
+<a name="l00638"></a><a class="code" href="class_on_cpp_gen_tag.html#a52c47f692cb4852b4fb6fd7e003ccb3d">00638</a>   <a class="code" href="class_on_cpp_gen_tag.html#a52c47f692cb4852b4fb6fd7e003ccb3d">~OnCppGenTag</a>() {}
+<a name="l00639"></a><a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">00639</a>   <span class="keywordtype">void</span> <a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">setTrainInfo</a>(<a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* trainInfo) {
+<a name="l00640"></a>00640     <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a> = trainInfo;
+<a name="l00641"></a>00641   }
+<a name="l00645"></a><a class="code" href="class_on_cpp_gen_tag.html#acd9e9c89d8445b6bf169c420570418b1">00645</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_cpp_gen_tag.html#acd9e9c89d8445b6bf169c420570418b1">operator() </a>(TiXmlElement* element) {
+<a name="l00646"></a>00646     assert(<a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>);
+<a name="l00647"></a>00647     <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>-&gt;<a class="code" href="struct_train_launch_info.html#a03c66a0954eb95fade9ab361509b5840">gen_cpp</a> = <span class="keyword">true</span>;
+<a name="l00648"></a>00648   }
+<a name="l00649"></a>00649 
+<a name="l00650"></a>00650  <span class="keyword">private</span>:
+<a name="l00651"></a><a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">00651</a>   <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a>* <a class="code" href="class_on_cpp_gen_tag.html#ac3df7381974bf1a5e5e5e6fedd65bb9b">info</a>;
+<a name="l00652"></a>00652 };
+<a name="l00653"></a>00653 
+<a name="l00658"></a><a class="code" href="class_on_train_tag.html">00658</a> <span class="keyword">class </span><a class="code" href="class_on_train_tag.html">OnTrainTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00659"></a>00659  <span class="keyword">public</span>:
+<a name="l00664"></a><a class="code" href="class_on_train_tag.html#adb5b74d293e968d1a4509d627ca7273a">00664</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_train_tag.html#adb5b74d293e968d1a4509d627ca7273a">OnTrainTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
+<a name="l00665"></a>00665     <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a> =  <span class="keyword">new</span> <a class="code" href="class_on_cpp_gen_tag.html">OnCppGenTag</a>(impl);
+<a name="l00666"></a>00666     <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a> = <span class="keyword">new</span> <a class="code" href="class_on_predict_tag.html">OnPredictTag</a>(impl);
+<a name="l00667"></a>00667     <a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>[CPP_GEN] = <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a>;
+<a name="l00668"></a>00668     <a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>[PREDICT] = <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a>;
+<a name="l00669"></a>00669   }
+<a name="l00673"></a><a class="code" href="class_on_train_tag.html#a381e6c89a8ceb34d6c9a64fc3e4e0545">00673</a>   <a class="code" href="class_on_train_tag.html#a381e6c89a8ceb34d6c9a64fc3e4e0545">~OnTrainTag</a>() {
+<a name="l00674"></a>00674     <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(&amp;<a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>);
+<a name="l00675"></a>00675   }
+<a name="l00676"></a>00676 
+<a name="l00683"></a><a class="code" href="class_on_train_tag.html#a95bd6ccae4fcc83081bcc1bd394d223f">00683</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_train_tag.html#a95bd6ccae4fcc83081bcc1bd394d223f">operator() </a>(TiXmlElement* element) {
+<a name="l00684"></a>00684     rInfo(<span class="stringliteral">&quot;TOnTrainExecutor\n&quot;</span>);
+<a name="l00685"></a>00685     <span class="keyword">const</span> <span class="keywordtype">char</span>* name = element-&gt;Attribute(<span class="stringliteral">&quot;name&quot;</span>);
+<a name="l00686"></a>00686     <span class="keyword">const</span> <span class="keywordtype">char</span>* data = element-&gt;Attribute(<span class="stringliteral">&quot;data&quot;</span>);
+<a name="l00687"></a>00687     <span class="keyword">const</span> <span class="keywordtype">char</span>* learner = element-&gt;Attribute(<span class="stringliteral">&quot;learner&quot;</span>);
+<a name="l00688"></a>00688 
+<a name="l00689"></a>00689     <span class="keywordflow">if</span> (!name) {
+<a name="l00690"></a>00690         rError(<span class="stringliteral">&quot;Failed: &lt;train&gt; without name attribute&quot;</span>);
+<a name="l00691"></a>00691         <span class="keywordflow">return</span>;
+<a name="l00692"></a>00692     }
+<a name="l00693"></a>00693     <span class="keywordflow">if</span> (!data) {
+<a name="l00694"></a>00694         rError(<span class="stringliteral">&quot;Failed: &lt;train&gt; without data attribute&quot;</span>);
+<a name="l00695"></a>00695         <span class="keywordflow">return</span>;
+<a name="l00696"></a>00696     }
+<a name="l00697"></a>00697     <span class="keywordflow">if</span> (!learner) {
+<a name="l00698"></a>00698         rError(<span class="stringliteral">&quot;Failed: &lt;train&gt; without learner attribute&quot;</span>);
+<a name="l00699"></a>00699         <span class="keywordflow">return</span>;
+<a name="l00700"></a>00700     }
+<a name="l00701"></a>00701     <span class="keywordflow">if</span> (<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>().find(name) != <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>().end()) {
+<a name="l00702"></a>00702         rError(<span class="stringliteral">&quot;Failed: dublicate train name &quot;</span>);
+<a name="l00703"></a>00703         <span class="keywordflow">return</span>;
+<a name="l00704"></a>00704     }
+<a name="l00705"></a>00705 
+<a name="l00706"></a>00706     <a class="code" href="struct_train_launch_info.html">TrainLaunchInfo</a> new_train_info(name, data, learner);
+<a name="l00707"></a>00707     <a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>()[name] = new_train_info;
+<a name="l00708"></a>00708 
+<a name="l00709"></a>00709     <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a>-&gt;<a class="code" href="class_on_cpp_gen_tag.html#af22a56d95b0315ffb9d60a15221c0bc0">setTrainInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>()[name]);
+<a name="l00710"></a>00710     <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a>-&gt;<a class="code" href="class_on_predict_tag.html#a3bbd943ef35cb3dae6645e5151441233">setTrainInfo</a>(&amp;<a class="code" href="class_tag_handler.html#ab41f9e8948fa77da12112facc958e5cb">d</a>-&gt;<a class="code" href="class_config_parser.html#a3f040b80962532fe29f56a43ca55e0c0">trainInfos</a>()[name]);
+<a name="l00711"></a>00711     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>, element-&gt;FirstChildElement());
+<a name="l00712"></a>00712   }
+<a name="l00713"></a>00713 
+<a name="l00714"></a>00714  <span class="keyword">private</span>:
+<a name="l00715"></a><a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">00715</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_on_train_tag.html#a4b8c2f74c3b23b187b8df3b2614763ba">handlers_</a>;
+<a name="l00716"></a><a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">00716</a>   <a class="code" href="class_on_cpp_gen_tag.html">OnCppGenTag</a>* <a class="code" href="class_on_train_tag.html#ab99ca4e2af0dd5d0df9a1fb05f7f041e">cpp_gen_executor</a>;
+<a name="l00717"></a><a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">00717</a>   <a class="code" href="class_on_predict_tag.html">OnPredictTag</a>* <a class="code" href="class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081">predict_executor</a>;
+<a name="l00718"></a>00718 };
+<a name="l00719"></a>00719 
+<a name="l00724"></a><a class="code" href="class_on_launch_tag.html">00724</a> <span class="keyword">class </span><a class="code" href="class_on_launch_tag.html">OnLaunchTag</a>: <span class="keyword">public</span> <a class="code" href="class_tag_handler.html">TagHandler</a> {
+<a name="l00725"></a>00725  <span class="keyword">public</span>:
+<a name="l00730"></a><a class="code" href="class_on_launch_tag.html#aab295a948f5b435f0a64fae989764694">00730</a>   <span class="keyword">explicit</span> <a class="code" href="class_on_launch_tag.html#aab295a948f5b435f0a64fae989764694">OnLaunchTag</a>(<a class="code" href="class_config_parser.html">ConfigParser</a>* impl): <a class="code" href="class_tag_handler.html">TagHandler</a>(impl) {
+<a name="l00731"></a>00731     <a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>[TRAIN] = <span class="keyword">new</span> <a class="code" href="class_on_train_tag.html">OnTrainTag</a>(impl);
+<a name="l00732"></a>00732     <a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>[CROSSVALIDATION] = <span class="keyword">new</span> <a class="code" href="class_on_crossvalidation_tag.html">OnCrossvalidationTag</a>(impl);
+<a name="l00733"></a>00733   }
+<a name="l00737"></a><a class="code" href="class_on_launch_tag.html#a98bc06a74f6a8fb5abd9e8a7e5ef8c1f">00737</a>   <a class="code" href="class_on_launch_tag.html#a98bc06a74f6a8fb5abd9e8a7e5ef8c1f">~OnLaunchTag</a>() { <a class="code" href="common__utility_8h.html#aba9c3e190ea76811364a8b9af4b5e438">DeleteAllFromMap</a>(&amp;<a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>); }
+<a name="l00738"></a>00738 
+<a name="l00744"></a><a class="code" href="class_on_launch_tag.html#a947d6cefba951d461b63f2239ff70bd5">00744</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_on_launch_tag.html#a947d6cefba951d461b63f2239ff70bd5">operator() </a>(TiXmlElement* element) {
+<a name="l00745"></a>00745     rInfo(<span class="stringliteral">&quot;TOnLaunchExecutor\n&quot;</span>);
+<a name="l00746"></a>00746     <a class="code" href="tag__handlers_8h.html#a0bc92e7d51a37cbd67c4ea37b1447318">GenericParse</a>(<a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>, element-&gt;FirstChildElement());
+<a name="l00747"></a>00747   }
+<a name="l00748"></a>00748 
+<a name="l00749"></a>00749  <span class="keyword">private</span>:
+<a name="l00750"></a><a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">00750</a>   <a class="code" href="configurator_8h.html#a89118a56eb6da0cc513c2204ea73ad3e">TagHandlers</a> <a class="code" href="class_on_launch_tag.html#a47cf1bad1a1de0f01531649462c7c277">handlers_</a>;
+<a name="l00751"></a>00751 };
+<a name="l00752"></a>00752 
+<a name="l00753"></a>00753 <span class="preprocessor">#endif  // LTR_CLIENT_UTILITY_TAG_HANDLERS_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:06 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:53 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -4,6 +4,7 @@ var searchData=
   ['objectinfo',['ObjectInfo',['../class_object_info.html',1,'']]],
   ['objectlist',['ObjectList',['../classltr_1_1_object_list.html',1,'ltr']]],
   ['objectpair',['ObjectPair',['../classltr_1_1_object_pair.html',1,'ltr']]],
+  ['objectrepresentation',['ObjectRepresentation',['../classltr_1_1_object_representation.html',1,'ltr']]],
   ['oblivioustreesplitter',['ObliviousTreeSplitter',['../classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html',1,'ltr::decision_tree']]],
   ['onconfigparser',['OnConfigParser',['../class_on_config_parser.html',1,'']]],
   ['oncppgentag',['OnCppGenTag',['../class_on_cpp_gen_tag.html',1,'']]],

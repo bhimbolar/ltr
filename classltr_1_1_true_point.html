@@ -189,7 +189,7 @@ Private Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Returns the best measure's possible value or ltr::Inf if unlimited </p>
 
-<p>Implements <a class="el" href="classltr_1_1_measure.html#aeeac4a5ebcd5047e046aa8a980b385d5">ltr::Measure&lt; TElement &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_measure.html#aeeac4a5ebcd5047e046aa8a980b385d5">ltr::Measure&lt; Object &gt;</a>.</p>
 
 </div>
 </div>
@@ -201,12 +201,21 @@ Private Member Functions</h2></td></tr>
           <td class="memname">double <a class="el" href="classltr_1_1_true_point.html#a8d6b73526ca2c7d9642bbbdaeb08b826">ltr::TruePoint::get_measure</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
-          <td class="paramname"><em>object</em></td><td>)</td>
-          <td> const<code> [inline, private]</code></td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td> const<code> [inline, private, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Implementation. Returns value of measure(quality of algorithm) </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>- element(single object, pair or list) for counting measure on </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classltr_1_1_measure.html#a8eaa7b5cb779a05a4881e523b0456580">ltr::Measure&lt; Object &gt;</a>.</p>
 
 </div>
 </div>
@@ -261,7 +270,7 @@ Private Member Functions</h2></td></tr>
 <div class="memdoc">
 <p>Returns the worst measure's possible value or -ltr::Inf if unlimited </p>
 
-<p>Implements <a class="el" href="classltr_1_1_measure.html#a9395f3dc60d3076df37c166372c852cc">ltr::Measure&lt; TElement &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_measure.html#a9395f3dc60d3076df37c166372c852cc">ltr::Measure&lt; Object &gt;</a>.</p>
 
 </div>
 </div>
@@ -272,7 +281,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:56 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

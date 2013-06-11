@@ -13,6 +13,7 @@ var searchData=
   ['perobjectaccessor_3c_20object_20_3e',['PerObjectAccessor< Object >',['../classltr_1_1_per_object_accessor_3_01_object_01_4.html',1,'ltr']]],
   ['perobjectaccessor_3c_20objectlist_20_3e',['PerObjectAccessor< ObjectList >',['../classltr_1_1_per_object_accessor_3_01_object_list_01_4.html',1,'ltr']]],
   ['perobjectaccessor_3c_20objectpair_20_3e',['PerObjectAccessor< ObjectPair >',['../classltr_1_1_per_object_accessor_3_01_object_pair_01_4.html',1,'ltr']]],
+  ['perpointstopcriterion',['PerPointStopCriterion',['../classoptimization_1_1_per_point_stop_criterion.html',1,'optimization']]],
   ['pfound',['PFound',['../classltr_1_1_p_found.html',1,'ltr']]],
   ['placeholder',['PlaceHolder',['../classltr_1_1utility_1_1_any_1_1_place_holder.html',1,'ltr::utility::Any']]],
   ['pointwisemeasurestest',['PointwiseMeasuresTest',['../class_pointwise_measures_test.html',1,'']]],

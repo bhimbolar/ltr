@@ -137,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00036"></a>00036 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
 <a name="l00037"></a><a class="code" href="classltr_1_1_nan_to_average_converter_learner.html#a305ea89ec963faf5f2d2a4f6a61fcfc5">00037</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_nan_to_average_converter_learner.html#a305ea89ec963faf5f2d2a4f6a61fcfc5" title="Learn input dataset and train feature converter.">NanToAverageConverterLearner&lt;TElement&gt;::learnImpl</a>(
 <a name="l00038"></a>00038   <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set, <a class="code" href="classltr_1_1_nan_to_neutral_converter.html" title="Converts NaN features to average values.">NanToNeutralConverter</a>* feature_converter) {
-<a name="l00039"></a>00039     vector&lt;double&gt; average_features_values(data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>());
+<a name="l00039"></a>00039     VectorXd average_features_values(data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>());
 <a name="l00040"></a>00040 
 <a name="l00041"></a>00041     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> feature_index = 0;
 <a name="l00042"></a>00042          feature_index &lt; (int)data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>(); ++feature_index) {
@@ -161,7 +161,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00060"></a>00060     }
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062     <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a> average_features_object;
-<a name="l00063"></a>00063     average_features_object.<a class="code" href="classltr_1_1_object.html#a7003e54ec457dde67737bfb1a8f37a23">features</a>() = average_features_values;
+<a name="l00063"></a>00063     average_features_object.<a class="code" href="classltr_1_1_object.html#a7099dd57d2e74357be7f0bdacc93ec5a">set_eigen_features</a>(average_features_values);
 <a name="l00064"></a>00064     feature_converter-&gt;set_neutral_object(average_features_object);
 <a name="l00065"></a>00065 }
 <a name="l00066"></a>00066 
@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:04 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:52 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

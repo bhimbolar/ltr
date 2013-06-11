@@ -7,7 +7,6 @@ var searchData=
   ['ada_5fboost_5flearner_2eh',['ada_boost_learner.h',['../ada__boost__learner_8h.html',1,'']]],
   ['ada_5frank_5fcomposition_5fscorer_5fweights_5fupdater_2eh',['ada_rank_composition_scorer_weights_updater.h',['../ada__rank__composition__scorer__weights__updater_8h.html',1,'']]],
   ['ada_5frank_5fdata_5fset_5fweights_5fupdater_2eh',['ada_rank_data_set_weights_updater.h',['../ada__rank__data__set__weights__updater_8h.html',1,'']]],
-  ['ada_5frank_5flc_5fscorer_5fweights_5fupdater_2eh',['ada_rank_lc_scorer_weights_updater.h',['../ada__rank__lc__scorer__weights__updater_8h.html',1,'']]],
   ['aliaser_2eh',['aliaser.h',['../aliaser_8h.html',1,'']]],
   ['aliaser_5funittest_2ecc',['aliaser_unittest.cc',['../aliaser__unittest_8cc.html',1,'']]],
   ['and_5for_5fstop_5fcriteria_2ehpp',['and_or_stop_criteria.hpp',['../and__or__stop__criteria_8hpp.html',1,'']]],

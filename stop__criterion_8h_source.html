@@ -102,31 +102,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ltr/optimization/stop_criteria/stop_criterion.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="stop__criterion_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// Copyright 2012 Yandex</span>
+<a href="stop__criterion_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// copyright 2013 Yandex</span>
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_OPTIMIZATION_STOP_CRITERIA_STOP_CRITERION_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_OPTIMIZATION_STOP_CRITERIA_STOP_CRITERION_H_</span>
-<a name="l00005"></a>00005 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="state_8h.html">ltr/optimization/stop_criteria/state.h</a>&quot;</span>
-<a name="l00006"></a>00006 
-<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
-<a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="keyword">namespace </span>optimization {
-<a name="l00010"></a><a class="code" href="classoptimization_1_1_stop_criterion.html">00010</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> {
-<a name="l00011"></a>00011  <span class="keyword">public</span>:
-<a name="l00012"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#a40bc7d28e534d746f1b0c9860ba56682">00012</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;StopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_stop_criterion.html#a40bc7d28e534d746f1b0c9860ba56682">Ptr</a>;
-<a name="l00013"></a>00013 
-<a name="l00014"></a>00014   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#ac748248fb65756487cd6e0735c516494">isTrue</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_state.html">State</a>&amp; current_state,
-<a name="l00015"></a>00015                       <span class="keyword">const</span> <a class="code" href="classoptimization_1_1_state.html">State</a>&amp; previous_state = <a class="code" href="classoptimization_1_1_state.html">State</a>()) <span class="keyword">const</span> = 0;
-<a name="l00016"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#a975f8229644021e6b342cf1210c4db1f">00016</a>   <span class="keyword">virtual</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#a975f8229644021e6b342cf1210c4db1f">~StopCriterion</a>() { }
-<a name="l00017"></a>00017 };
-<a name="l00018"></a>00018 }
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_STOP_CRITERION_H_</span>
+<a name="l00005"></a>00005 <span class="preprocessor"></span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="aliaser_8h.html">ltr/interfaces/aliaser.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="population_8h.html">ltr/optimization/population_initers/population.h</a>&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="keyword">namespace </span>optimization {
+<a name="l00018"></a>00018 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00019"></a><a class="code" href="classoptimization_1_1_stop_criterion.html">00019</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_stop_criterion.html" title="Class for test population via.">StopCriterion</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">ltr::Aliaser</a> {
+<a name="l00020"></a>00020  <span class="keyword">public</span>:
+<a name="l00021"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#aa93264859c4bf4d298061f57f09d3885">00021</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#aa93264859c4bf4d298061f57f09d3885">StopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>)
+<a name="l00022"></a>00022       : <a class="code" href="classoptimization_1_1_stop_criterion.html#a70e32c7f2aefe0c922a8b90da85ba008">function_</a>(function) { }
+<a name="l00023"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#a5f5f49f22c6bdcd6245fffcbc696caef">00023</a>   <a class="code" href="classoptimization_1_1_stop_criterion.html#a5f5f49f22c6bdcd6245fffcbc696caef">~StopCriterion</a>() { }
+<a name="l00024"></a>00024 
+<a name="l00025"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#a099003349b28dc0b526b2be5ea39fd58">00025</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;StopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_stop_criterion.html#a099003349b28dc0b526b2be5ea39fd58">Ptr</a>;
+<a name="l00029"></a>00029   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#a2ceb2cd39dc862acf10c6afd935415fa">init</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population) = 0;
+<a name="l00033"></a>00033   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#a632b5261ce1daf2eebb604edcf77e08d">update</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population) = 0;
+<a name="l00037"></a>00037   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#a726ee81ef16dc8709775df0cd54a0a29">isTrue</a>() = 0;
+<a name="l00038"></a>00038 
+<a name="l00039"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#a7cca681d18684ce24fbe65ce80d65706">00039</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_stop_criterion.html#a7cca681d18684ce24fbe65ce80d65706">getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00040"></a>00040     <span class="keywordflow">return</span> <span class="stringliteral">&quot;StopCriterion&quot;</span>;
+<a name="l00041"></a>00041   }
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043  <span class="keyword">private</span>:
+<a name="l00044"></a><a class="code" href="classoptimization_1_1_stop_criterion.html#a70e32c7f2aefe0c922a8b90da85ba008">00044</a>   <span class="keyword">typename</span> TFunction::Ptr <a class="code" href="classoptimization_1_1_stop_criterion.html#a70e32c7f2aefe0c922a8b90da85ba008">function_</a>;
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 }
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_STOP_CRITERION_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 3 2013 00:07:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:52 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

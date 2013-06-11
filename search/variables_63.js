@@ -17,5 +17,6 @@ var searchData=
   ['crossvalidation_5finfos_5f',['crossvalidation_infos_',['../class_config_parser.html#a6c72dbfc0e7490821a8099e021a200aa',1,'ConfigParser']]],
   ['current_5fargument_5f',['current_argument_',['../classoptimization_1_1_delta_argument_stop_criterion.html#af733d586608ec15bc50117c87802cade',1,'optimization::DeltaArgumentStopCriterion']]],
   ['current_5fiteration_5f',['current_iteration_',['../classoptimization_1_1_iteration_count_stop_criterion.html#ab2db13eeb029f6308848165fdd7094a9',1,'optimization::IterationCountStopCriterion']]],
+  ['current_5fobject_5f',['current_object_',['../classltr_1_1_data_set_object_iterator.html#aa5bf88e5b514e2db8a2877b154cac71d',1,'ltr::DataSetObjectIterator::current_object_()'],['../classltr_1_1_const_data_set_object_iterator.html#a97ff07fd709217b6d959e8120ab680c4',1,'ltr::ConstDataSetObjectIterator::current_object_()']]],
   ['current_5fvalue_5f',['current_value_',['../classoptimization_1_1_delta_function_stop_criterion.html#acb9921934714a8830aea80e96d7c30d0',1,'optimization::DeltaFunctionStopCriterion']]]
 ];

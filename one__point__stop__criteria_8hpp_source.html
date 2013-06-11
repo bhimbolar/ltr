@@ -107,201 +107,203 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_OPTIMIZATION_STOP_CRITERIA_ITERATION_STOP_CRITERIA_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_OPTIMIZATION_STOP_CRITERIA_ITERATION_STOP_CRITERIA_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="numerical_8h.html">ltr/utility/numerical.h</a>&quot;</span>
-<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="one__point__stop__criterion_8h.html">ltr/optimization/stop_criteria/one_point_stop_criterion.h</a>&quot;</span>
-<a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="keyword">namespace </span>optimization {
-<a name="l00012"></a>00012 <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>;
-<a name="l00013"></a>00013 <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>;
-<a name="l00014"></a>00014 <span class="keyword">typedef</span> Eigen::MatrixXd <a class="code" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>;
-<a name="l00025"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html">00025</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html" title="Class for test iteration of point from population.">IterationCountStopCriterion</a>
-<a name="l00026"></a>00026   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
-<a name="l00027"></a>00027  <span class="keyword">public</span>:
-<a name="l00028"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a1daf36c1ebaffcda1ce6c499e4e94192">00028</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; IterationCountStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a1daf36c1ebaffcda1ce6c499e4e94192">Ptr</a>;
-<a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9a82997f9668ddd822a0ec1be9c29923">00030</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9a82997f9668ddd822a0ec1be9c29923">IterationCountStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00031"></a>00031                                        <span class="keywordtype">int</span> max_iteration = 1000)
-<a name="l00032"></a>00032     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
-<a name="l00033"></a>00033       <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5273bbb54874d5e1686acc247888f20d">max_iteration_</a>(max_iteration) { }
-<a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a106ee4fef5578d88958f2c824d0f342b">00035</a>   <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a106ee4fef5578d88958f2c824d0f342b">~IterationCountStopCriterion</a>() { }
-<a name="l00036"></a>00036 
-<a name="l00040"></a>00040   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9bd4c80f1336cb9674b9b11d260d89d8">init</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00044"></a>00044   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a6a7895b569c4ea7aab5074024f5139f9">update</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">int</span>, max_iteration)
-<a name="l00047"></a>00047   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">int</span>, current_iteration)
-<a name="l00048"></a>00048 
-<a name="l00049"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5e03a7ea2634aed63779edef6196b7b1">00049</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5e03a7ea2634aed63779edef6196b7b1">getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00050"></a>00050    <span class="keywordflow">return</span> <span class="stringliteral">&quot;IterationCountStopCriterion&quot;</span>;
-<a name="l00051"></a>00051   }
-<a name="l00055"></a>00055   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#abcfe9255f150b9c29fb744e7566726be">clone</a>() <span class="keyword">const</span>;
-<a name="l00056"></a>00056  <span class="keyword">private</span>:
-<a name="l00057"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5273bbb54874d5e1686acc247888f20d">00057</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5273bbb54874d5e1686acc247888f20d">max_iteration_</a>;
-<a name="l00058"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#ab2db13eeb029f6308848165fdd7094a9">00058</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#ab2db13eeb029f6308848165fdd7094a9">current_iteration_</a>;
-<a name="l00059"></a>00059 };
-<a name="l00060"></a>00060 
-<a name="l00071"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html">00071</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html" title="Class for test delta function of point from population.">DeltaFunctionStopCriterion</a>
-<a name="l00072"></a>00072   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
-<a name="l00073"></a>00073  <span class="keyword">public</span>:
-<a name="l00074"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a78745a7c3c69bf66e93bc0ed9e71355f">00074</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; DeltaFunctionStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a78745a7c3c69bf66e93bc0ed9e71355f">Ptr</a>;
-<a name="l00075"></a>00075 
-<a name="l00076"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4a9de5a26732a039a5639911e0d9bdf6">00076</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4a9de5a26732a039a5639911e0d9bdf6">DeltaFunctionStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00077"></a>00077                                       <span class="keywordtype">double</span> min_delta = 0.01)
-<a name="l00078"></a>00078     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
-<a name="l00079"></a>00079       <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a086d3203aa21b7edb0c8a366f04fc1ca">min_delta_</a>(min_delta) { }
-<a name="l00080"></a>00080 
-<a name="l00081"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a08494e685c96179b4dee1db698eb57a8">00081</a>   <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a08494e685c96179b4dee1db698eb57a8">~DeltaFunctionStopCriterion</a>() { }
-<a name="l00082"></a>00082 
-<a name="l00086"></a>00086   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">init</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00090"></a>00090   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">update</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092   <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4594e707753c939e68d463bf54e86cfa">GET_SET</a>(<span class="keywordtype">double</span>, current_value);
-<a name="l00093"></a>00093   <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4594e707753c939e68d463bf54e86cfa">GET_SET</a>(<span class="keywordtype">double</span>, min_delta);
-<a name="l00094"></a>00094 
-<a name="l00095"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a8cd433cd4e540cc29bac3cd8f07aba9f">00095</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a8cd433cd4e540cc29bac3cd8f07aba9f">getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00096"></a>00096     <span class="keywordflow">return</span> <span class="stringliteral">&quot;DeltaFunctionStopCriterion&quot;</span>;
-<a name="l00097"></a>00097   }
-<a name="l00101"></a>00101   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a049711c44b164965079b376e075cd333">clone</a>() <span class="keyword">const</span>;
-<a name="l00102"></a>00102  <span class="keyword">private</span>:
-<a name="l00103"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#acb9921934714a8830aea80e96d7c30d0">00103</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#acb9921934714a8830aea80e96d7c30d0">current_value_</a>;
-<a name="l00104"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a086d3203aa21b7edb0c8a366f04fc1ca">00104</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a086d3203aa21b7edb0c8a366f04fc1ca">min_delta_</a>;
-<a name="l00105"></a>00105 };
-<a name="l00106"></a>00106 
-<a name="l00117"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html">00117</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html" title="Class for test delta argument of point from population.">DeltaArgumentStopCriterion</a>
-<a name="l00118"></a>00118   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
-<a name="l00119"></a>00119  <span class="keyword">public</span>:
-<a name="l00120"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#aaca959ea5adad6ed0fe1024e13b7c5f4">00120</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DeltaArgumentStopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#aaca959ea5adad6ed0fe1024e13b7c5f4">Ptr</a>;
-<a name="l00121"></a>00121 
-<a name="l00122"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#ad9a193a39709c7e8eb4f1e9abf28aa8a">00122</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#ad9a193a39709c7e8eb4f1e9abf28aa8a">DeltaArgumentStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00123"></a>00123                                       <span class="keywordtype">double</span> min_delta = 0.01)
-<a name="l00124"></a>00124     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
-<a name="l00125"></a>00125       <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a318edf353f0f4d8f4371a77ae9e0e077">min_delta_</a>(min_delta) { }
-<a name="l00126"></a>00126 
-<a name="l00127"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a2535bd07ca79cf37131190142e1f966a">00127</a>   <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a2535bd07ca79cf37131190142e1f966a">~DeltaArgumentStopCriterion</a>() { }
-<a name="l00128"></a>00128 
-<a name="l00132"></a>00132   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#adafdf1a82660bebd59c417c8156dae74">init</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00136"></a>00136   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abb4a53d2dd56574e5ad618a46a8e092f">update</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00137"></a>00137 
-<a name="l00138"></a>00138   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(Point, current_argument)
-<a name="l00139"></a>00139   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">double</span>, min_delta)
-<a name="l00140"></a>00140 
-<a name="l00141"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abef67976123b1b89c4ac737241986209">00141</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abef67976123b1b89c4ac737241986209">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DeltaArgumentStopCriterion&quot;</span>; }
-<a name="l00145"></a>00145   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abaef91badffe9340e82a598d61c1cd99">clone</a>() <span class="keyword">const</span>;
-<a name="l00146"></a>00146  <span class="keyword">private</span>:
-<a name="l00147"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#af733d586608ec15bc50117c87802cade">00147</a>   Point <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#af733d586608ec15bc50117c87802cade">current_argument_</a>;
-<a name="l00148"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a318edf353f0f4d8f4371a77ae9e0e077">00148</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a318edf353f0f4d8f4371a77ae9e0e077">min_delta_</a>;
-<a name="l00149"></a>00149 };
-<a name="l00150"></a>00150 
-<a name="l00162"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html">00162</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html" title="Class for test gradient of function in current point from population.">GradientMagnitudeStopCriterion</a>
-<a name="l00163"></a>00163   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
-<a name="l00164"></a>00164  <span class="keyword">public</span>:
-<a name="l00165"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aac2545f741b6bc4c6a43bb067f254d11">00165</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;GradientMagnitudeStopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aac2545f741b6bc4c6a43bb067f254d11">Ptr</a>;
-<a name="l00166"></a>00166 
-<a name="l00167"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#af268bc59cf6a61216f69dc4ddce68480">00167</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#af268bc59cf6a61216f69dc4ddce68480">GradientMagnitudeStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00168"></a>00168                                           <span class="keywordtype">double</span> min_gradient = 0.01)
-<a name="l00169"></a>00169     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
-<a name="l00170"></a>00170       <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a3203047c1ca107da1099f8d3673872bf">min_gradient_</a>(min_gradient) { }
-<a name="l00171"></a>00171 
-<a name="l00172"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aa8c1656673ef87127b851e36345822d3">00172</a>   <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aa8c1656673ef87127b851e36345822d3">~GradientMagnitudeStopCriterion</a>() { }
-<a name="l00173"></a>00173 
-<a name="l00177"></a>00177   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aeae255025f36a868775960da0290bc79">init</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00181"></a>00181   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#ab1bf6ac5138e7ba59226c774b25f9561">update</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00182"></a>00182 
-<a name="l00183"></a>00183   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">double</span>, min_gradient)
-<a name="l00184"></a>00184 
-<a name="l00185"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a41ca95b2cc291758661585d732032388">00185</a>   string <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a41ca95b2cc291758661585d732032388">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GradientMagnitudeStopCriterion&quot;</span>; }
-<a name="l00189"></a>00189   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a789db9247d359aea79686fd3e86b81b6">clone</a>() <span class="keyword">const</span>;
-<a name="l00190"></a>00190  <span class="keyword">private</span>:
-<a name="l00191"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a3203047c1ca107da1099f8d3673872bf">00191</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a3203047c1ca107da1099f8d3673872bf">min_gradient_</a>;
-<a name="l00192"></a>00192 };
-<a name="l00193"></a>00193 <span class="comment">//  template realizaation</span>
-<a name="l00194"></a>00194 
-<a name="l00195"></a>00195 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00196"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9bd4c80f1336cb9674b9b11d260d89d8">00196</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9bd4c80f1336cb9674b9b11d260d89d8">IterationCountStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00197"></a>00197   current_iteration_ = 0;
-<a name="l00198"></a>00198 }
-<a name="l00199"></a>00199 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00200"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a6a7895b569c4ea7aab5074024f5139f9">00200</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a6a7895b569c4ea7aab5074024f5139f9">IterationCountStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00201"></a>00201   current_iteration_++;  
-<a name="l00202"></a>00202   this-&gt;set_is_true(current_iteration_ &gt;= max_iteration_);
-<a name="l00203"></a>00203 }
-<a name="l00204"></a>00204 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00205"></a>00205 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a>
-<a name="l00206"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#abcfe9255f150b9c29fb744e7566726be">00206</a>     <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#abcfe9255f150b9c29fb744e7566726be">IterationCountStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
-<a name="l00207"></a>00207   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">IterationCountStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00208"></a>00208     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html" title="Class for test iteration of point from population.">IterationCountStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_,
-<a name="l00209"></a>00209                                                max_iteration_);
-<a name="l00210"></a>00210   stop_criterion-&gt;set_current_iteration(this-&gt;current_iteration());
-<a name="l00211"></a>00211   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
-<a name="l00212"></a>00212   <span class="keywordflow">return</span> stop_criterion;
-<a name="l00213"></a>00213 }
-<a name="l00214"></a>00214 
-<a name="l00215"></a>00215 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00216"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">00216</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">DeltaFunctionStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00217"></a>00217   current_value_ = this-&gt;function_-&gt;computeValue(point);
-<a name="l00218"></a>00218 }
-<a name="l00219"></a>00219 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00220"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">00220</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">DeltaFunctionStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00221"></a>00221   <span class="keywordtype">double</span> new_value = this-&gt;function_-&gt;computeValue(point);
-<a name="l00222"></a>00222   this-&gt;set_is_true(fabs(current_value_ - new_value) &lt; min_delta_);
-<a name="l00223"></a>00223   current_value_ = this-&gt;function_-&gt;computeValue(point);
-<a name="l00224"></a>00224 }
-<a name="l00225"></a>00225 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00226"></a>00226 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> 
-<a name="l00227"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a049711c44b164965079b376e075cd333">00227</a>     <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a049711c44b164965079b376e075cd333">DeltaFunctionStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
-<a name="l00228"></a>00228   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">DeltaFunctionStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00229"></a>00229     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html" title="Class for test delta function of point from population.">DeltaFunctionStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_, min_delta_);
-<a name="l00230"></a>00230   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
-<a name="l00231"></a>00231   stop_criterion-&gt;set_current_value(current_value());
-<a name="l00232"></a>00232   <span class="keywordflow">return</span> stop_criterion;
-<a name="l00233"></a>00233 }
-<a name="l00234"></a>00234 
-<a name="l00235"></a>00235 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00236"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#adafdf1a82660bebd59c417c8156dae74">00236</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#adafdf1a82660bebd59c417c8156dae74">DeltaArgumentStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00237"></a>00237   current_argument_ = point;
-<a name="l00238"></a>00238 }
-<a name="l00239"></a>00239 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00240"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abb4a53d2dd56574e5ad618a46a8e092f">00240</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abb4a53d2dd56574e5ad618a46a8e092f">DeltaArgumentStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00241"></a>00241   this-&gt;set_is_true((current_argument_ - point).norm() &lt; min_delta_);
-<a name="l00242"></a>00242   current_argument_ = point;
-<a name="l00243"></a>00243 }
-<a name="l00244"></a>00244 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00245"></a>00245 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> 
-<a name="l00246"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abaef91badffe9340e82a598d61c1cd99">00246</a>     <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abaef91badffe9340e82a598d61c1cd99">DeltaArgumentStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
-<a name="l00247"></a>00247   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">DeltaArgumentStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00248"></a>00248     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html" title="Class for test delta argument of point from population.">DeltaArgumentStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_, min_delta_);
-<a name="l00249"></a>00249   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
-<a name="l00250"></a>00250   stop_criterion-&gt;set_current_argument(this-&gt;current_argument());
-<a name="l00251"></a>00251   <span class="keywordflow">return</span> stop_criterion;
-<a name="l00252"></a>00252 }
-<a name="l00253"></a>00253 
-<a name="l00254"></a>00254 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00255"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aeae255025f36a868775960da0290bc79">00255</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aeae255025f36a868775960da0290bc79">GradientMagnitudeStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) { }
-<a name="l00256"></a>00256 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00257"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#ab1bf6ac5138e7ba59226c774b25f9561">00257</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#ab1bf6ac5138e7ba59226c774b25f9561">GradientMagnitudeStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00258"></a>00258   Vector gradient;
-<a name="l00259"></a>00259   this-&gt;function_-&gt;computeGradient(point, &amp;gradient);
-<a name="l00260"></a>00260   this-&gt;set_is_true(gradient.norm() &lt; min_gradient_);
-<a name="l00261"></a>00261 }
-<a name="l00262"></a>00262 
-<a name="l00263"></a>00263 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00264"></a>00264 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> 
-<a name="l00265"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a789db9247d359aea79686fd3e86b81b6">00265</a>     <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a789db9247d359aea79686fd3e86b81b6">GradientMagnitudeStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
-<a name="l00266"></a>00266     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GradientMagnitudeStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00267"></a>00267       <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html" title="Class for test gradient of function in current point from population.">GradientMagnitudeStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_, min_gradient_);
-<a name="l00268"></a>00268     stop_criterion-&gt;set_is_true(this-&gt;isTrue());
-<a name="l00269"></a>00269     <span class="keywordflow">return</span> stop_criterion;
-<a name="l00270"></a>00270   }
-<a name="l00271"></a>00271 }
-<a name="l00272"></a>00272 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_ITERATION_STOP_CRITERIA_H_</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="numerical_8h.html">ltr/utility/numerical.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="one__point__stop__criterion_8h.html">ltr/optimization/stop_criteria/one_point_stop_criterion.h</a>&quot;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">namespace </span>optimization {
+<a name="l00013"></a>00013 <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>;
+<a name="l00014"></a>00014 <span class="keyword">typedef</span> Eigen::VectorXd <a class="code" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>;
+<a name="l00015"></a>00015 <span class="keyword">typedef</span> Eigen::MatrixXd <a class="code" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>;
+<a name="l00026"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html">00026</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html" title="Class for test iteration of point from population.">IterationCountStopCriterion</a>
+<a name="l00027"></a>00027   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
+<a name="l00028"></a>00028  <span class="keyword">public</span>:
+<a name="l00029"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a1daf36c1ebaffcda1ce6c499e4e94192">00029</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; IterationCountStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a1daf36c1ebaffcda1ce6c499e4e94192">Ptr</a>;  <span class="comment">// NOLINT</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9a82997f9668ddd822a0ec1be9c29923">00031</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9a82997f9668ddd822a0ec1be9c29923">IterationCountStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00032"></a>00032                                        <span class="keywordtype">int</span> max_iteration = 1000)
+<a name="l00033"></a>00033     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
+<a name="l00034"></a>00034       <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5273bbb54874d5e1686acc247888f20d">max_iteration_</a>(max_iteration) { }
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a106ee4fef5578d88958f2c824d0f342b">00036</a>   <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a106ee4fef5578d88958f2c824d0f342b">~IterationCountStopCriterion</a>() { }
+<a name="l00037"></a>00037 
+<a name="l00041"></a>00041   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9bd4c80f1336cb9674b9b11d260d89d8">init</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00045"></a>00045   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a6a7895b569c4ea7aab5074024f5139f9">update</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">int</span>, max_iteration)
+<a name="l00048"></a>00048   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">int</span>, current_iteration)
+<a name="l00049"></a>00049 
+<a name="l00050"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5e03a7ea2634aed63779edef6196b7b1">00050</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5e03a7ea2634aed63779edef6196b7b1">getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00051"></a>00051     <span class="keywordflow">return</span> <span class="stringliteral">&quot;IterationCountStopCriterion&quot;</span>;
+<a name="l00052"></a>00052   }
+<a name="l00056"></a>00056   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#abcfe9255f150b9c29fb744e7566726be">clone</a>() <span class="keyword">const</span>;
+<a name="l00057"></a>00057  <span class="keyword">private</span>:
+<a name="l00058"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5273bbb54874d5e1686acc247888f20d">00058</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a5273bbb54874d5e1686acc247888f20d">max_iteration_</a>;
+<a name="l00059"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#ab2db13eeb029f6308848165fdd7094a9">00059</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#ab2db13eeb029f6308848165fdd7094a9">current_iteration_</a>;
+<a name="l00060"></a>00060 };
+<a name="l00061"></a>00061 
+<a name="l00072"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html">00072</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html" title="Class for test delta function of point from population.">DeltaFunctionStopCriterion</a>
+<a name="l00073"></a>00073   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
+<a name="l00074"></a>00074  <span class="keyword">public</span>:
+<a name="l00075"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a78745a7c3c69bf66e93bc0ed9e71355f">00075</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; DeltaFunctionStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a78745a7c3c69bf66e93bc0ed9e71355f">Ptr</a>;
+<a name="l00076"></a>00076 
+<a name="l00077"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4a9de5a26732a039a5639911e0d9bdf6">00077</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4a9de5a26732a039a5639911e0d9bdf6">DeltaFunctionStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00078"></a>00078                                       <span class="keywordtype">double</span> min_delta = 0.01)
+<a name="l00079"></a>00079     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
+<a name="l00080"></a>00080       <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a086d3203aa21b7edb0c8a366f04fc1ca">min_delta_</a>(min_delta) { }
+<a name="l00081"></a>00081 
+<a name="l00082"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a08494e685c96179b4dee1db698eb57a8">00082</a>   <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a08494e685c96179b4dee1db698eb57a8">~DeltaFunctionStopCriterion</a>() { }
+<a name="l00083"></a>00083 
+<a name="l00087"></a>00087   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">init</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00091"></a>00091   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">update</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093   <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4594e707753c939e68d463bf54e86cfa">GET_SET</a>(<span class="keywordtype">double</span>, current_value);
+<a name="l00094"></a>00094   <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a4594e707753c939e68d463bf54e86cfa">GET_SET</a>(<span class="keywordtype">double</span>, min_delta);
+<a name="l00095"></a>00095 
+<a name="l00096"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a8cd433cd4e540cc29bac3cd8f07aba9f">00096</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a8cd433cd4e540cc29bac3cd8f07aba9f">getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00097"></a>00097     <span class="keywordflow">return</span> <span class="stringliteral">&quot;DeltaFunctionStopCriterion&quot;</span>;
+<a name="l00098"></a>00098   }
+<a name="l00102"></a>00102   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a049711c44b164965079b376e075cd333">clone</a>() <span class="keyword">const</span>;
+<a name="l00103"></a>00103  <span class="keyword">private</span>:
+<a name="l00104"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#acb9921934714a8830aea80e96d7c30d0">00104</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#acb9921934714a8830aea80e96d7c30d0">current_value_</a>;
+<a name="l00105"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a086d3203aa21b7edb0c8a366f04fc1ca">00105</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a086d3203aa21b7edb0c8a366f04fc1ca">min_delta_</a>;
+<a name="l00106"></a>00106 };
+<a name="l00107"></a>00107 
+<a name="l00118"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html">00118</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html" title="Class for test delta argument of point from population.">DeltaArgumentStopCriterion</a>
+<a name="l00119"></a>00119   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
+<a name="l00120"></a>00120  <span class="keyword">public</span>:
+<a name="l00121"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#aaca959ea5adad6ed0fe1024e13b7c5f4">00121</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DeltaArgumentStopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#aaca959ea5adad6ed0fe1024e13b7c5f4">Ptr</a>;
+<a name="l00122"></a>00122 
+<a name="l00123"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#ad9a193a39709c7e8eb4f1e9abf28aa8a">00123</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#ad9a193a39709c7e8eb4f1e9abf28aa8a">DeltaArgumentStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00124"></a>00124                                       <span class="keywordtype">double</span> min_delta = 0.01)
+<a name="l00125"></a>00125     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
+<a name="l00126"></a>00126       <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a318edf353f0f4d8f4371a77ae9e0e077">min_delta_</a>(min_delta) { }
+<a name="l00127"></a>00127 
+<a name="l00128"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a2535bd07ca79cf37131190142e1f966a">00128</a>   <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a2535bd07ca79cf37131190142e1f966a">~DeltaArgumentStopCriterion</a>() { }
+<a name="l00129"></a>00129 
+<a name="l00133"></a>00133   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#adafdf1a82660bebd59c417c8156dae74">init</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00137"></a>00137   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abb4a53d2dd56574e5ad618a46a8e092f">update</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00138"></a>00138 
+<a name="l00139"></a>00139   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(Point, current_argument)
+<a name="l00140"></a>00140   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">double</span>, min_delta)
+<a name="l00141"></a>00141 
+<a name="l00142"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abef67976123b1b89c4ac737241986209">00142</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abef67976123b1b89c4ac737241986209">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;DeltaArgumentStopCriterion&quot;</span>; }
+<a name="l00146"></a>00146   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abaef91badffe9340e82a598d61c1cd99">clone</a>() <span class="keyword">const</span>;
+<a name="l00147"></a>00147  <span class="keyword">private</span>:
+<a name="l00148"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#af733d586608ec15bc50117c87802cade">00148</a>   Point <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#af733d586608ec15bc50117c87802cade">current_argument_</a>;
+<a name="l00149"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a318edf353f0f4d8f4371a77ae9e0e077">00149</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#a318edf353f0f4d8f4371a77ae9e0e077">min_delta_</a>;
+<a name="l00150"></a>00150 };
+<a name="l00151"></a>00151 
+<a name="l00163"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html">00163</a> <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt; <span class="keyword">class </span><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html" title="Class for test gradient of function in current point from population.">GradientMagnitudeStopCriterion</a>
+<a name="l00164"></a>00164   : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt; {
+<a name="l00165"></a>00165  <span class="keyword">public</span>:
+<a name="l00166"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aac2545f741b6bc4c6a43bb067f254d11">00166</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;GradientMagnitudeStopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aac2545f741b6bc4c6a43bb067f254d11">Ptr</a>;
+<a name="l00167"></a>00167 
+<a name="l00168"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#af268bc59cf6a61216f69dc4ddce68480">00168</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#af268bc59cf6a61216f69dc4ddce68480">GradientMagnitudeStopCriterion</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00169"></a>00169                                           <span class="keywordtype">double</span> min_gradient = 0.01)
+<a name="l00170"></a>00170     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
+<a name="l00171"></a>00171       <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a3203047c1ca107da1099f8d3673872bf">min_gradient_</a>(min_gradient) { }
+<a name="l00172"></a>00172 
+<a name="l00173"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aa8c1656673ef87127b851e36345822d3">00173</a>   <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aa8c1656673ef87127b851e36345822d3">~GradientMagnitudeStopCriterion</a>() { }
+<a name="l00174"></a>00174 
+<a name="l00178"></a>00178   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aeae255025f36a868775960da0290bc79">init</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00182"></a>00182   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#ab1bf6ac5138e7ba59226c774b25f9561">update</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184   <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html#a71f9400b2890932019387c8f83852360">GET_SET</a>(<span class="keywordtype">double</span>, min_gradient)
+<a name="l00185"></a>00185 
+<a name="l00186"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a41ca95b2cc291758661585d732032388">00186</a>   string <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a41ca95b2cc291758661585d732032388">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;GradientMagnitudeStopCriterion&quot;</span>; }
+<a name="l00190"></a>00190   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a789db9247d359aea79686fd3e86b81b6">clone</a>() <span class="keyword">const</span>;
+<a name="l00191"></a>00191  <span class="keyword">private</span>:
+<a name="l00192"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a3203047c1ca107da1099f8d3673872bf">00192</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a3203047c1ca107da1099f8d3673872bf">min_gradient_</a>;
+<a name="l00193"></a>00193 };
+<a name="l00194"></a>00194 <span class="comment">//  template realizaation</span>
+<a name="l00195"></a>00195 
+<a name="l00196"></a>00196 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00197"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9bd4c80f1336cb9674b9b11d260d89d8">00197</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a9bd4c80f1336cb9674b9b11d260d89d8">IterationCountStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00198"></a>00198   current_iteration_ = 0;
+<a name="l00199"></a>00199 }
+<a name="l00200"></a>00200 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00201"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a6a7895b569c4ea7aab5074024f5139f9">00201</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#a6a7895b569c4ea7aab5074024f5139f9">IterationCountStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00202"></a>00202   ++current_iteration_;
+<a name="l00203"></a>00203   this-&gt;set_is_true(current_iteration_ &gt;= max_iteration_);
+<a name="l00204"></a>00204 }
+<a name="l00205"></a>00205 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00206"></a>00206 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a>
+<a name="l00207"></a><a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#abcfe9255f150b9c29fb744e7566726be">00207</a>     <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html#abcfe9255f150b9c29fb744e7566726be">IterationCountStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
+<a name="l00208"></a>00208   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">IterationCountStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
+<a name="l00209"></a>00209     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_iteration_count_stop_criterion.html" title="Class for test iteration of point from population.">IterationCountStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_,
+<a name="l00210"></a>00210                                                max_iteration_);
+<a name="l00211"></a>00211   stop_criterion-&gt;set_current_iteration(this-&gt;current_iteration());
+<a name="l00212"></a>00212   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
+<a name="l00213"></a>00213   <span class="keywordflow">return</span> stop_criterion;
+<a name="l00214"></a>00214 }
+<a name="l00215"></a>00215 
+<a name="l00216"></a>00216 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00217"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">00217</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">DeltaFunctionStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00218"></a>00218   current_value_ = this-&gt;function_-&gt;computeValue(point);
+<a name="l00219"></a>00219 }
+<a name="l00220"></a>00220 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00221"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">00221</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">DeltaFunctionStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00222"></a>00222   <span class="keywordtype">double</span> new_value = this-&gt;function_-&gt;computeValue(point);
+<a name="l00223"></a>00223   this-&gt;set_is_true(fabs(current_value_ - new_value) &lt; min_delta_);
+<a name="l00224"></a>00224   current_value_ = this-&gt;function_-&gt;computeValue(point);
+<a name="l00225"></a>00225 }
+<a name="l00226"></a>00226 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00227"></a>00227 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a>
+<a name="l00228"></a><a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a049711c44b164965079b376e075cd333">00228</a>     <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html#a049711c44b164965079b376e075cd333">DeltaFunctionStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
+<a name="l00229"></a>00229   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">DeltaFunctionStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
+<a name="l00230"></a>00230     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_delta_function_stop_criterion.html" title="Class for test delta function of point from population.">DeltaFunctionStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_, min_delta_);
+<a name="l00231"></a>00231   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
+<a name="l00232"></a>00232   stop_criterion-&gt;set_current_value(current_value());
+<a name="l00233"></a>00233   <span class="keywordflow">return</span> stop_criterion;
+<a name="l00234"></a>00234 }
+<a name="l00235"></a>00235 
+<a name="l00236"></a>00236 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00237"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#adafdf1a82660bebd59c417c8156dae74">00237</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#adafdf1a82660bebd59c417c8156dae74">DeltaArgumentStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00238"></a>00238   current_argument_ = point;
+<a name="l00239"></a>00239 }
+<a name="l00240"></a>00240 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00241"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abb4a53d2dd56574e5ad618a46a8e092f">00241</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abb4a53d2dd56574e5ad618a46a8e092f">DeltaArgumentStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00242"></a>00242   this-&gt;set_is_true((current_argument_ - point).norm() &lt; min_delta_);
+<a name="l00243"></a>00243   current_argument_ = point;
+<a name="l00244"></a>00244 }
+<a name="l00245"></a>00245 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00246"></a>00246 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a>
+<a name="l00247"></a><a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abaef91badffe9340e82a598d61c1cd99">00247</a>     <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html#abaef91badffe9340e82a598d61c1cd99">DeltaArgumentStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
+<a name="l00248"></a>00248   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">DeltaArgumentStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
+<a name="l00249"></a>00249     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_delta_argument_stop_criterion.html" title="Class for test delta argument of point from population.">DeltaArgumentStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_, min_delta_);
+<a name="l00250"></a>00250   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
+<a name="l00251"></a>00251   stop_criterion-&gt;set_current_argument(this-&gt;current_argument());
+<a name="l00252"></a>00252   <span class="keywordflow">return</span> stop_criterion;
+<a name="l00253"></a>00253 }
+<a name="l00254"></a>00254 
+<a name="l00255"></a>00255 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00256"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aeae255025f36a868775960da0290bc79">00256</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aeae255025f36a868775960da0290bc79">GradientMagnitudeStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) { }
+<a name="l00257"></a>00257 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00258"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#ab1bf6ac5138e7ba59226c774b25f9561">00258</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#ab1bf6ac5138e7ba59226c774b25f9561">GradientMagnitudeStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00259"></a>00259   Vector gradient;
+<a name="l00260"></a>00260   this-&gt;function_-&gt;computeGradient(point, &amp;gradient);
+<a name="l00261"></a>00261   this-&gt;set_is_true(gradient.norm() &lt; min_gradient_);
+<a name="l00262"></a>00262 }
+<a name="l00263"></a>00263 
+<a name="l00264"></a>00264 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00265"></a>00265 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a>
+<a name="l00266"></a><a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a789db9247d359aea79686fd3e86b81b6">00266</a>     <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#a789db9247d359aea79686fd3e86b81b6">GradientMagnitudeStopCriterion&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
+<a name="l00267"></a>00267     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GradientMagnitudeStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
+<a name="l00268"></a>00268       <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html" title="Class for test gradient of function in current point from population.">GradientMagnitudeStopCriterion&lt;TFunction&gt;</a>(this-&gt;function_,
+<a name="l00269"></a>00269                                                     min_gradient_);
+<a name="l00270"></a>00270     stop_criterion-&gt;set_is_true(this-&gt;isTrue());
+<a name="l00271"></a>00271     <span class="keywordflow">return</span> stop_criterion;
+<a name="l00272"></a>00272   }
+<a name="l00273"></a>00273 }
+<a name="l00274"></a>00274 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_ITERATION_STOP_CRITERIA_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:05 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:52 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

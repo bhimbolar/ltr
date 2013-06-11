@@ -131,9 +131,8 @@ Features</h3>
 <p>You can operate with features using this functions: </p>
 <ul>
 <li><a class="el" href="classltr_1_1_object.html#aa841806e10832406a57c2bd83541b112">feature_count() </a> - returns number of features </li>
-<li><a class="el" href="classltr_1_1_object.html#ad63a366eb15a0f202578d408b5b4ebb5">features() </a> - returns vector of features </li>
 <li><a class="el" href="classltr_1_1_object.html#a1d6226a913a20dac3902b5f59a945b75">operator[](int i)</a>, <a class="el" href="classltr_1_1_object.html#a3907e628402d0119b9c7f8c26ea64445">at(int i)</a> - access to the i'th feature of the object </li>
-<li><a class="el" href="classltr_1_1_object.html#a031df6a2aee6d15b9f82446c7a296f7d">Object::operator&lt;&lt;(double value)</a> - adds new feature to the object</li>
+<li><a class="el" href="classltr_1_1_object.html#ae7fa43034b8967137e4979c722547de7">Object::operator&lt;&lt;(double value)</a> - adds new feature to the object</li>
 </ul>
 <table class="doxtable">
 <tr>
@@ -164,23 +163,20 @@ Features</h3>
   cout &lt;&lt; <span class="stringliteral">&quot;obj[0] = &quot;</span>  &lt;&lt; obj[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>          <span class="comment">// Two ways to get the feature value.</span>
        &lt;&lt; <span class="stringliteral">&quot;obj.at(1) = &quot;</span>  &lt;&lt; obj.at(1) &lt;&lt; endl;   <span class="comment">//</span>
 
-  vector&lt;double&gt; new_features;
-  new_features.push_back(1);
-  new_features.push_back(5.0);
-  new_features.push_back(2);
+  Eigen::VectorXd new_features(3);
+  new_features &lt;&lt; 1, 5.0, 2;
 
-  obj.features() = new_features;  <span class="comment">// You can also set all objects features at once.</span>
+  obj.set_eigen_features(new_features);  <span class="comment">// You can also set all objects features at once.</span>
   cout &lt;&lt; <span class="stringliteral">&quot;obj = &quot;</span> &lt;&lt; obj;
-
   <span class="keywordflow">return</span> 0;
 }
 
-</pre></div> </td><td><div class="fragment"><pre class="fragment">obj = [1.10, 45.30, 1000000.00]{nan, nan}
+</pre></div> </td><td><div class="fragment"><pre class="fragment">obj = [1.10, 45.30, 1000000.00]{0.00, 0.00}
 obj.feature_count() = 3
 feature was added
 obj.feature_count() = 4
 obj[0] = 1.1, obj.at(1) = 45.3
-obj = [1.00, 5.00, 2.00]{nan, nan}
+obj = [1.00, 5.00, 2.00]{0.00, 0.00}
 </pre></div> </td></tr>
 </table>
 <h3><a class="anchor" id="TutorialDataObjectLabels"></a>
@@ -264,7 +260,7 @@ Copying objects</h3>
 }
 
 </pre></div> </td><td><div class="fragment"><pre class="fragment">4
--1
+4
 
 -1
 -1
@@ -302,7 +298,7 @@ ObjectPair</h2>
   <span class="keywordflow">return</span> 0;
 }
 
-</pre></div> </td><td><div class="fragment"><pre class="fragment">pair = ([1.00, 2.00, 3.00, 4.00]{nan, nan}, [4.00, 6.00, 7.00, 8.00]{nan, nan})
+</pre></div> </td><td><div class="fragment"><pre class="fragment">pair = ([1.00, 2.00, 3.00, 4.00]{0.00, 0.00}, [4.00, 6.00, 7.00, 8.00]{0.00, 0.00})
 </pre></div> </td></tr>
 </table>
 <h2><a class="anchor" id="TutorialDataObjectList"></a>
@@ -444,18 +440,18 @@ Basic operations</h3>
 }
 
 </pre></div> </td><td><div class="fragment"><pre class="fragment">data = 
-[12.00, 54.11]{nan, nan}
-[1.30, 4.15]{nan, nan}
-[10.30, 14.30]{nan, nan}
-[19.00, 47.50]{nan, nan}
+[12.00, 54.11]{0.00, 0.00}
+[1.30, 4.15]{0.00, 0.00}
+[10.30, 14.30]{0.00, 0.00}
+[19.00, 47.50]{0.00, 0.00}
 
 data.size() = 4
-data[0] = [12.00, 54.11]{nan, nan}
-data.at(1) = [1.30, 4.15]{nan, nan}
+data[0] = [12.00, 54.11]{0.00, 0.00}
+data.at(1) = [1.30, 4.15]{0.00, 0.00}
 data.getWeight(2) = 2.12
 data.getWeight(2) = 0.01
 called data.erase(1)
-data[1] = [10.30, 14.30]{nan, nan}
+data[1] = [1.30, 4.15]{0.00, 0.00}
 called data.clear()
 data.size() = 0
 </pre></div> </td></tr>
@@ -525,7 +521,7 @@ Feature info</h3>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 11 2013 16:14:07 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 11 2013 22:43:54 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
