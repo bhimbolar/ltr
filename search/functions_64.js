@@ -26,7 +26,6 @@ var searchData=
   ['dependency_5finfos',['dependency_infos',['../class_object_info.html#ab8363d9c0d264a7ba4bb76da47fa3c20',1,'ObjectInfo']]],
   ['dependencyresolvingfactory',['DependencyResolvingFactory',['../class_dependency_resolving_factory.html#a0771acd8b9e7ebc5e010fbc0e51ee6f7',1,'DependencyResolvingFactory']]],
   ['differentiablefunction',['DifferentiableFunction',['../classoptimization_1_1_differentiable_function.html#a5db8154663f0fb05305b39e7d181823e',1,'optimization::DifferentiableFunction']]],
-  ['digit',['Digit',['../class_random_lib_1_1_random_number.html#ae825e96d5a17fdbfcb919b2640034698',1,'RandomLib::RandomNumber']]],
   ['dimension',['dimension',['../classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88',1,'optimization::Function']]],
   ['dimensions_5fcount',['dimensions_count',['../classltr_1_1utility_1_1_multi_array.html#a648e28abef5cd411a3d8f8ba509ecbb9',1,'ltr::utility::MultiArray::dimensions_count()'],['../classltr_1_1utility_1_1_multi_array_3_01_t_00_011_01_4.html#a31c57d0c0e46c15a07ec8af8372a41c3',1,'ltr::utility::MultiArray&lt; T, 1 &gt;::dimensions_count()']]],
   ['distance',['distance',['../classltr_1_1_euclidean_metric.html#aef1868bbd4ecc6b7acb0f99743d9190b',1,'ltr::EuclideanMetric::distance()'],['../classltr_1_1_manhattan_metric.html#a7b017140a044b9527fbd3870212dcf52',1,'ltr::ManhattanMetric::distance()'],['../classltr_1_1_base_metric.html#a354a6dec54b3b4a798d88cdb91037c13',1,'ltr::BaseMetric::distance()'],['../tester_8cc.html#ad5ee61e39011a1bb01b5dd9297c6c46a',1,'distance():&#160;tester.cc']]],

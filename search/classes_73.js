@@ -11,7 +11,6 @@ var searchData=
   ['serializablefunctor_3c_20double_20_3e',['SerializableFunctor< double >',['../classltr_1_1_serializable_functor.html',1,'ltr']]],
   ['serializationtest',['SerializationTest',['../class_serialization_test.html',1,'']]],
   ['set',['Set',['../classoptimization_1_1_set.html',1,'optimization']]],
-  ['sfmt19937',['SFMT19937',['../class_random_lib_1_1_s_f_m_t19937.html',1,'RandomLib']]],
   ['shared_5fptr',['shared_ptr',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20basemetric_20_3e',['shared_ptr< BaseMetric >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20baseprobabilitydensityestimator_20_3e',['shared_ptr< BaseProbabilityDensityEstimator >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],

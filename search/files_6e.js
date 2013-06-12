@@ -23,7 +23,6 @@ var searchData=
   ['non_5flinear_5fdiscriminant_2eh',['non_linear_discriminant.h',['../non__linear__discriminant_8h.html',1,'']]],
   ['non_5flinear_5fdiscriminant_5fdensity_5flearner_2eh',['non_linear_discriminant_density_learner.h',['../non__linear__discriminant__density__learner_8h.html',1,'']]],
   ['normal_5fnaive_5fbayes_5fdensity_5flearner_2eh',['normal_naive_bayes_density_learner.h',['../normal__naive__bayes__density__learner_8h.html',1,'']]],
-  ['normaldistribution_2ehpp',['NormalDistribution.hpp',['../_normal_distribution_8hpp.html',1,'']]],
   ['normalized_5fmeasure_2eh',['normalized_measure.h',['../normalized__measure_8h.html',1,'']]],
   ['numerical_2ecc',['numerical.cc',['../numerical_8cc.html',1,'']]],
   ['numerical_2eh',['numerical.h',['../numerical_8h.html',1,'']]],

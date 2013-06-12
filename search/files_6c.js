@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['leadingzeros_2ehpp',['LeadingZeros.hpp',['../_leading_zeros_8hpp.html',1,'']]],
   ['leaf_5fgenerator_2eh',['leaf_generator.h',['../leaf__generator_8h.html',1,'']]],
   ['leaf_5fvertex_2ecc',['leaf_vertex.cc',['../leaf__vertex_8cc.html',1,'']]],
   ['leaf_5fvertex_2eh',['leaf_vertex.h',['../leaf__vertex_8h.html',1,'']]],

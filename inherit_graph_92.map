@@ -1,3 +1,15 @@
 <map id="G" name="G">
-<area shape="rect" href="$class_random_lib_1_1_mixer_s_f_m_t.html" title="The SFMT mixing functionality." alt="" coords="7,5,167,32"/>
+<area shape="rect" href="$class_tag_handler.html" title="TagHandler" alt="" coords="5,284,91,311"/>
+<area shape="rect" href="$class_on_config_parser.html" title="OnConfigParser" alt="" coords="167,5,279,32"/>
+<area shape="rect" href="$class_on_cpp_gen_tag.html" title="OnCppGenTag" alt="" coords="171,56,275,83"/>
+<area shape="rect" href="$class_on_crossvalidation_tag.html" title="OnCrossvalidationTag" alt="" coords="151,107,295,133"/>
+<area shape="rect" href="$class_on_c_v_data_tag.html" title="OnCVDataTag" alt="" coords="171,157,275,184"/>
+<area shape="rect" href="$class_on_c_v_learner_tag.html" title="OnCVLearnerTag" alt="" coords="163,208,283,235"/>
+<area shape="rect" href="$class_on_c_v_measure_tag.html" title="OnCVMeasureTag" alt="" coords="160,259,285,285"/>
+<area shape="rect" href="$class_on_general_parameterized.html" title="OnGeneralParameterized" alt="" coords="139,309,307,336"/>
+<area shape="rect" href="$class_on_launch_tag.html" title="OnLaunchTag" alt="" coords="173,360,272,387"/>
+<area shape="rect" href="$class_on_predict_tag.html" title="OnPredictTag" alt="" coords="173,411,272,437"/>
+<area shape="rect" href="$class_on_train_tag.html" title="OnTrainTag" alt="" coords="180,461,265,488"/>
+<area shape="rect" href="$class_t_on_data_tag.html" title="TOnDataTag" alt="" coords="177,512,268,539"/>
+<area shape="rect" href="$class_t_on_parameter_tag.html" title="TOnParameterTag" alt="" coords="160,563,285,589"/>
 </map>

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['a',['a',['../class_random_lib_1_1_mixer_m_t1.html#af45fa00edc995c0e2bc6a1c688aa1b20',1,'RandomLib::MixerMT1::a()'],['../class_random_lib_1_1_mixer_s_f_m_t.html#a52723553fef0375bb3d964b8ef0112c7',1,'RandomLib::MixerSFMT::a()']]],
-  ['a0',['a0',['../class_random_lib_1_1_mixer_m_t0.html#a1be2264e5eb57e7bf50119ddf11aa3d9',1,'RandomLib::MixerMT0']]],
-  ['a1',['a1',['../class_random_lib_1_1_mixer_m_t0.html#a4a152c74e2bfb10599261a90ba9dea88',1,'RandomLib::MixerMT0']]],
   ['a_5f',['A_',['../classoptimization_1_1_polyhedron_set.html#a536cef09250e5d15f2a666e836db566b',1,'optimization::PolyhedronSet']]],
   ['actual',['actual',['../structltr_1_1utility_1_1_predicted_and_actual_labels.html#a8af6e9b9c52480dbeee2e067605032af',1,'ltr::utility::PredictedAndActualLabels']]],
   ['actual_5flabel_5f',['actual_label_',['../classltr_1_1_stand_alone_object_representation.html#a5f349686a8c11b38477f47fcea9aeb18',1,'ltr::StandAloneObjectRepresentation']]],
@@ -10,7 +7,6 @@ var searchData=
   ['aggregator_5f',['aggregator_',['../classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4',1,'optimization::PerPointStopCriterion']]],
   ['aggregator_5fthreshold_5f',['aggregator_threshold_',['../classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10',1,'optimization::PerPointStopCriterion']]],
   ['alias_5f',['alias_',['../classltr_1_1_aliaser.html#a9c486841d743e0ce390b512efc2dd7b9',1,'ltr::Aliaser']]],
-  ['alloc_5fincr',['alloc_incr',['../class_random_lib_1_1_exponential_prob.html#a22bd6f2f2871bc966100e7b8922ca141',1,'RandomLib::ExponentialProb']]],
   ['approach',['approach',['../struct_data_info.html#a9ee5044c93902ac46dec7878f1474999',1,'DataInfo']]],
   ['approach_5f',['approach_',['../class_object_info.html#a789fecf7d41b264846532245f8a905cf',1,'ObjectInfo']]],
   ['arff_5farff_5ftest_5ffile_5fname',['arff_arff_test_file_name',['../class_i_o_utility_test.html#a236192e1e2316b1a834daac692690548',1,'IOUtilityTest']]],

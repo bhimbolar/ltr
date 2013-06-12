@@ -2,7 +2,6 @@ var searchData=
 [
   ['labelstatistic',['LabelStatistic',['../structltr_1_1utility_1_1_label_statistic.html',1,'ltr::utility']]],
   ['labelstatisticcomputer',['LabelStatisticComputer',['../classltr_1_1utility_1_1_label_statistic_computer.html',1,'ltr::utility']]],
-  ['leadingzeros',['LeadingZeros',['../class_random_lib_1_1_leading_zeros.html',1,'RandomLib']]],
   ['leafgenerator',['LeafGenerator',['../classltr_1_1decision__tree_1_1_leaf_generator.html',1,'ltr::decision_tree']]],
   ['leafvertex',['LeafVertex',['../classltr_1_1decision__tree_1_1_leaf_vertex.html',1,'ltr::decision_tree']]],
   ['learner',['Learner',['../classltr_1_1_learner.html',1,'ltr']]],
