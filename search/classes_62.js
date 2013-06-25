@@ -25,6 +25,7 @@ var searchData=
   ['basemetric',['BaseMetric',['../classltr_1_1_base_metric.html',1,'ltr']]],
   ['basendcg',['BaseNDCG',['../classltr_1_1_base_n_d_c_g.html',1,'ltr']]],
   ['basepopulationhandler',['BasePopulationHandler',['../classltr_1_1gp_1_1_base_population_handler.html',1,'ltr::gp']]],
+  ['basepopulationinfo',['BasePopulationInfo',['../classoptimization_1_1_base_population_info.html',1,'optimization']]],
   ['baseprobabilitydensityestimator',['BaseProbabilityDensityEstimator',['../classltr_1_1_base_probability_density_estimator.html',1,'ltr']]],
   ['baseprobabilitydensitylearner',['BaseProbabilityDensityLearner',['../classltr_1_1_base_probability_density_learner.html',1,'ltr']]],
   ['baseprobabilitydensitylearner_3c_20telement_2c_20fisherdiscriminant_20_3e',['BaseProbabilityDensityLearner< TElement, FisherDiscriminant >',['../classltr_1_1_base_probability_density_learner.html',1,'ltr']]],
@@ -38,5 +39,6 @@ var searchData=
   ['bestfeaturelearner',['BestFeatureLearner',['../classltr_1_1_best_feature_learner.html',1,'ltr']]],
   ['binaryclassificationaccuracy',['BinaryClassificationAccuracy',['../classltr_1_1_binary_classification_accuracy.html',1,'ltr']]],
   ['binaryclassificationmargin',['BinaryClassificationMargin',['../classltr_1_1_binary_classification_margin.html',1,'ltr']]],
-  ['brokenstickrule',['BrokenStickRule',['../classltr_1_1_broken_stick_rule.html',1,'ltr']]]
+  ['brokenstickrule',['BrokenStickRule',['../classltr_1_1_broken_stick_rule.html',1,'ltr']]],
+  ['bruteforcestepcalculator',['BruteForceStepCalculator',['../classoptimization_1_1_brute_force_step_calculator.html',1,'optimization']]]
 ];

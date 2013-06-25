@@ -50,5 +50,9 @@ var searchData=
   ['dependency_5fresolving_5ffactory_2eh',['dependency_resolving_factory.h',['../dependency__resolving__factory_8h.html',1,'']]],
   ['differentiable_5ffunction_2ecc',['differentiable_function.cc',['../differentiable__function_8cc.html',1,'']]],
   ['differentiable_5ffunction_2eh',['differentiable_function.h',['../differentiable__function_8h.html',1,'']]],
+  ['directed_5fupdater_2ehpp',['directed_updater.hpp',['../directed__updater_8hpp.html',1,'']]],
+  ['directed_5fupdaters_2ehpp',['directed_updaters.hpp',['../directed__updaters_8hpp.html',1,'']]],
+  ['direction_5fcalculator_2ehpp',['direction_calculator.hpp',['../direction__calculator_8hpp.html',1,'']]],
+  ['direction_5fcalculators_2ehpp',['direction_calculators.hpp',['../direction__calculators_8hpp.html',1,'']]],
   ['doc_5fcontents_2edox',['doc_contents.dox',['../doc__contents_8dox.html',1,'']]]
 ];

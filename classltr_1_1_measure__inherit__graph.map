@@ -11,7 +11,9 @@
 <area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="416,461,651,488"/>
 <area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="449,512,617,539"/>
 <area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="427,563,640,589"/>
-<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="28,233,108,260"/>
-<area shape="rect" href="$classltr_1_1_parameterized.html" title="ltr::Parameterized" alt="" coords="7,284,129,311"/>
-<area shape="rect" href="$classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="23,335,113,361"/>
+<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError\&lt; Object \&gt;" alt="" coords="444,613,623,640"/>
+<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint\&lt; Object \&gt;" alt="" coords="455,664,612,691"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="28,284,108,311"/>
+<area shape="rect" href="$classltr_1_1_parameterized.html" title="ltr::Parameterized" alt="" coords="7,335,129,361"/>
+<area shape="rect" href="$classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="23,385,113,412"/>
 </map>

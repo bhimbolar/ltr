@@ -1,6 +1,7 @@
 <map id="G" name="G">
-<area shape="rect" href="$and__or__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/and_or_stop_criteria.hpp" alt="" coords="5,80,333,107"/>
-<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="313,155,636,181"/>
-<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="408,80,752,107"/>
-<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="776,80,1123,107"/>
+<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="5,80,349,107"/>
+<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="491,155,813,181"/>
+<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="373,80,720,107"/>
+<area shape="rect" href="$and__or__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/and_or_stop_criteria.hpp" alt="" coords="795,80,1123,107"/>
+<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="9,155,356,181"/>
 </map>

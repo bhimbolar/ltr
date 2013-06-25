@@ -137,7 +137,7 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classoptimization_1_1_polyhedron_set.html">PolyhedronSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#ab748f25b9f374020c474b0bb6d38e599">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9cd1e78168823a75650f0672d8df409"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#ab9cd1e78168823a75650f0672d8df409">PolyhedronSet</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> &amp;a, const <a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> &amp;b, double <a class="el" href="numerical__unittest_8cc.html#a4f214e901f7e6a79fe34cb2cdc0b071e">precision</a>=0.01)</td></tr>
+<tr class="memitem:ab9cd1e78168823a75650f0672d8df409"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#ab9cd1e78168823a75650f0672d8df409">PolyhedronSet</a> (const Matrix &amp;a, const Vector &amp;b, double <a class="el" href="numerical__unittest_8cc.html#a4f214e901f7e6a79fe34cb2cdc0b071e">precision</a>=0.01)</td></tr>
 <tr class="memitem:acb4f9f482b325654d82f6bdaaacb02c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#acb4f9f482b325654d82f6bdaaacb02c6">~PolyhedronSet</a> ()</td></tr>
 <tr class="memitem:a3ea2ef8f57b63feb4fcbd3828e7b1828"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a3ea2ef8f57b63feb4fcbd3828e7b1828">isInside</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
 <tr class="memitem:a973ebb3127ae51085b4c9291e9463fbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a973ebb3127ae51085b4c9291e9463fbb">computeProjection</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *projection) const </td></tr>
@@ -151,8 +151,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a23f158891d01c1613d847af32e17b669"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a23f158891d01c1613d847af32e17b669">computeMargin</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, int plane_id) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a536cef09250e5d15f2a666e836db566b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a536cef09250e5d15f2a666e836db566b">A_</a></td></tr>
-<tr class="memitem:afa8c31039e988a8f19d0cc7213fc352d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#afa8c31039e988a8f19d0cc7213fc352d">b_</a></td></tr>
+<tr class="memitem:a536cef09250e5d15f2a666e836db566b"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a536cef09250e5d15f2a666e836db566b">A_</a></td></tr>
+<tr class="memitem:afa8c31039e988a8f19d0cc7213fc352d"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#afa8c31039e988a8f19d0cc7213fc352d">b_</a></td></tr>
 <tr class="memitem:a74feb283b4069d783ab41e87db5f771b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_polyhedron_set.html#a74feb283b4069d783ab41e87db5f771b">precision_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -183,13 +183,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classoptimization_1_1_polyhedron_set.html#ab9cd1e78168823a75650f0672d8df409">optimization::PolyhedronSet::PolyhedronSet</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> &amp;&#160;</td>
+          <td class="paramtype">const Matrix &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> &amp;&#160;</td>
+          <td class="paramtype">const Vector &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -438,7 +438,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> <a class="el" href="classoptimization_1_1_polyhedron_set.html#a536cef09250e5d15f2a666e836db566b">optimization::PolyhedronSet::A_</a><code> [private]</code></td>
+          <td class="memname">Matrix <a class="el" href="classoptimization_1_1_polyhedron_set.html#a536cef09250e5d15f2a666e836db566b">optimization::PolyhedronSet::A_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -451,7 +451,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> <a class="el" href="classoptimization_1_1_polyhedron_set.html#afa8c31039e988a8f19d0cc7213fc352d">optimization::PolyhedronSet::b_</a><code> [private]</code></td>
+          <td class="memname">Vector <a class="el" href="classoptimization_1_1_polyhedron_set.html#afa8c31039e988a8f19d0cc7213fc352d">optimization::PolyhedronSet::b_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -481,7 +481,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

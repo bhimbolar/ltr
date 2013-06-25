@@ -109,8 +109,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::PerPointStopCriterion&lt; TFunction &gt; Class Template Reference</div>  </div>
@@ -133,35 +131,28 @@ Inheritance diagram for optimization::PerPointStopCriterion&lt; TFunction &gt;:<
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a45ff2d492b5d770771290c08e43ea9c6"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classoptimization_1_1_population_info.html">PopulationInfo</a><br class="typebreak"/>
+&lt; <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
+&lt; TFunction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a45ff2d492b5d770771290c08e43ea9c6">StopCriterionInfo</a></td></tr>
 <tr class="memitem:a33970912c1b36776003316337287af82"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">PerPointStopCriterion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adfcdb2f5808aaaf835e13cd6c88edcb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#adfcdb2f5808aaaf835e13cd6c88edcb2">PerPointStopCriterion</a> (typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> one_point_stop_criterion)</td></tr>
+<tr class="memitem:ad7545e3ec6413ab8279694eec59f46ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ad7545e3ec6413ab8279694eec59f46ea">PerPointStopCriterion</a> (typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> one_point_stop_criterion_sample)</td></tr>
 <tr class="memitem:a604a2147bec781b8814bfc5b1e73be96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96">~PerPointStopCriterion</a> ()</td></tr>
-<tr class="memitem:a0f29f77d6e2a0a6f660f70fdf1bb2b3b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a0f29f77d6e2a0a6f660f70fdf1bb2b3b">init</a> (const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;population)</td></tr>
+<tr class="memitem:ae9b18a533b8bfd45a966c7c8dc488bee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population)</td></tr>
 <tr class="memitem:ac6ba52c5a1835699bc3f98d7bd03e281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">update</a> (const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;population)</td></tr>
 <tr class="memitem:a474401df2d8ad67664b7c120e21d8da9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">isTrue</a> ()</td></tr>
+<tr class="memitem:aab1917ee47108768ae5db2dbdbb3cea4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">set_function</a> (typename TFunction::Ptr <a class="el" href="classoptimization_1_1_stop_criterion.html#a7b7fcaa5d3f8d6518271493d5c718c40">function</a>)</td></tr>
 <tr class="memitem:a51c230e96e145935e9b45a685891ba87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a51c230e96e145935e9b45a685891ba87">GET_SET</a> (double, aggregator_threshold)</td></tr>
 <tr class="memitem:a4f3bbf10a8a377480c7a9b166a4fb097"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">getDefaultAlias</a> () const </td></tr>
-<tr><td colspan="2"><h2><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a49fcf7e2e3ffc3b2a8eb2f190ea103a4"><td class="memItemLeft" align="right" valign="top">typedef map&lt; PointId, typename <br class="typebreak"/>
-<a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
-&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a49fcf7e2e3ffc3b2a8eb2f190ea103a4">Iterator</a></td></tr>
-<tr><td colspan="2"><h2><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9049f224c090390fe51a66736dfeb913"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a9049f224c090390fe51a66736dfeb913">addOnePointStopCriterion</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, PointId point_id)</td></tr>
-<tr class="memitem:a3955a00f5e4beac82621e5848ef83b9e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a3955a00f5e4beac82621e5848ef83b9e">removeOnePointStopCriterion</a> (PointId point_id)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a06b6d85f0ab29d8559525924cd282b15"><td class="memItemLeft" align="right" valign="top">map&lt; PointId, typename <br class="typebreak"/>
-<a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
-&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a06b6d85f0ab29d8559525924cd282b15">one_point_stop_criteria_</a></td></tr>
+<tr class="memitem:a6121f6cb804563ddecb5bf1dd3a1fb64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
+&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a6121f6cb804563ddecb5bf1dd3a1fb64">one_point_stop_criterion_sample_</a></td></tr>
+<tr class="memitem:aafe4332b028f3d1aa224ecb3ded41532"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_population_info.html#a979868226793a3a1df74b77ea280baf7">StopCriterionInfo::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aafe4332b028f3d1aa224ecb3ded41532">stop_criterion_info_</a></td></tr>
 <tr class="memitem:a779a2aa5e983ee5a69173696400f0bd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_vote_aggregator.html">VoteAggregator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4">aggregator_</a></td></tr>
-<tr class="memitem:a78256c3054a52176e53e06eb324bf043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a><br class="typebreak"/>
-&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043">one_point_stop_criterion_</a></td></tr>
 <tr class="memitem:a1b496a8427e72154e0d3ba6ac153ec10"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10">aggregator_threshold_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -178,21 +169,6 @@ class optimization::PerPointStopCriterion&lt; TFunction &gt;</h3>
 </dl>
 <dl class="section see"><dt>See also:</dt><dd><a class="el" href="classoptimization_1_1_stop_criterion.html" title="Class for test population via.">StopCriterion</a>, <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>, <a class="el" href="classoptimization_1_1_vote_aggregator.html" title="Aggregator which returns true if part of true answers from one point stop criteria more than minimal_...">VoteAggregator</a>. </dd></dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a49fcf7e2e3ffc3b2a8eb2f190ea103a4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef map&lt;PointId, typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> &gt;::iterator <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a49fcf7e2e3ffc3b2a8eb2f190ea103a4">Iterator</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a33970912c1b36776003316337287af82"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,8 +186,23 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a45ff2d492b5d770771290c08e43ea9c6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classoptimization_1_1_population_info.html">PopulationInfo</a>&lt;<a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt; &gt; <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a45ff2d492b5d770771290c08e43ea9c6">StopCriterionInfo</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adfcdb2f5808aaaf835e13cd6c88edcb2"></a>
+<a class="anchor" id="ad7545e3ec6413ab8279694eec59f46ea"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -221,8 +212,8 @@ template&lt;class TFunction &gt; </div>
           <td class="memname"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">PerPointStopCriterion</a> </td>
           <td>(</td>
           <td class="paramtype">typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a>&#160;</td>
-          <td class="paramname"><em>one_point_stop_criterion</em></td><td>)</td>
-          <td><code> [inline, explicit]</code></td>
+          <td class="paramname"><em>one_point_stop_criterion_sample</em></td><td>)</td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -249,36 +240,6 @@ template&lt;class TFunction &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9049f224c090390fe51a66736dfeb913"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a9049f224c090390fe51a66736dfeb913">addOnePointStopCriterion</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PointId&#160;</td>
-          <td class="paramname"><em>point_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [private, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Add <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a> to point with point_id. </p>
-
-</div>
-</div>
 <a class="anchor" id="a51c230e96e145935e9b45a685891ba87"></a>
 <div class="memitem">
 <div class="memproto">
@@ -328,16 +289,16 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0f29f77d6e2a0a6f660f70fdf1bb2b3b"></a>
+<a class="anchor" id="ae9b18a533b8bfd45a966c7c8dc488bee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a0f29f77d6e2a0a6f660f70fdf1bb2b3b">init</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">init</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classoptimization_1_1_population.html">Population</a> *&#160;</td>
           <td class="paramname"><em>population</em></td><td>)</td>
           <td><code> [virtual]</code></td>
         </tr>
@@ -346,7 +307,7 @@ template&lt;class TFunction &gt; </div>
 <div class="memdoc">
 <p>Init data for future test of population. </p>
 
-<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a2ceb2cd39dc862acf10c6afd935415fa">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a58983c2c4607d609190d9ff187a021aa">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -372,23 +333,24 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3955a00f5e4beac82621e5848ef83b9e"></a>
+<a class="anchor" id="aab1917ee47108768ae5db2dbdbb3cea4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a3955a00f5e4beac82621e5848ef83b9e">removeOnePointStopCriterion</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">set_function</a> </td>
           <td>(</td>
-          <td class="paramtype">PointId&#160;</td>
-          <td class="paramname"><em>point_id</em></td><td>)</td>
-          <td><code> [private, virtual]</code></td>
+          <td class="paramtype">typename TFunction::Ptr&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Remove <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a> to point with point_id. </p>
+
+<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a862b875dc4c89755807eb61f9b904933">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -409,7 +371,6 @@ template&lt;class TFunction &gt; </div>
 </div>
 <div class="memdoc">
 <p>Update data for future test of population. </p>
-<p>Deleting old stopcriteria, adding new stopcriteria for new points in population via 2 iterators like in merge-step in merge-sort.</p>
 
 <p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a632b5261ce1daf2eebb604edcf77e08d">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
 
@@ -446,33 +407,35 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a06b6d85f0ab29d8559525924cd282b15"></a>
+<a class="anchor" id="a6121f6cb804563ddecb5bf1dd3a1fb64"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">map&lt;PointId, typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> &gt; <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a06b6d85f0ab29d8559525924cd282b15">one_point_stop_criteria_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a6121f6cb804563ddecb5bf1dd3a1fb64">one_point_stop_criterion_sample_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Sample of one point stop criterion for per point stop criterion. </p>
 
 </div>
 </div>
-<a class="anchor" id="a78256c3054a52176e53e06eb324bf043"></a>
+<a class="anchor" id="aafe4332b028f3d1aa224ecb3ded41532"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt;TFunction&gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043">one_point_stop_criterion_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classoptimization_1_1_population_info.html#a979868226793a3a1df74b77ea280baf7">StopCriterionInfo::Ptr</a> <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aafe4332b028f3d1aa224ecb3ded41532">stop_criterion_info_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p><a class="el" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a> info for per point stop criterion. </p>
 
 </div>
 </div>
@@ -483,7 +446,7 @@ template&lt;class TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

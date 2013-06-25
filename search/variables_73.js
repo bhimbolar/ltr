@@ -1,6 +1,7 @@
 var searchData=
 [
   ['safe_5fdivision_5feps',['SAFE_DIVISION_EPS',['../classltr_1_1gp_1_1_divide.html#a9f5fcc0de3e8a77c3309e3714f102720',1,'ltr::gp::Divide']]],
+  ['sample_5finfo_5f',['sample_info_',['../classoptimization_1_1_population_info.html#adec58a2381760a9232c56deb98d67560',1,'optimization::PopulationInfo']]],
   ['sampling_5ffraction_5f',['sampling_fraction_',['../classltr_1_1_data_random_sampler.html#ac8d0130d365e2199cfca49cdcf236f01',1,'ltr::DataRandomSampler::sampling_fraction_()'],['../classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb',1,'ltr::FeatureRandomSamplerLearner::sampling_fraction_()']]],
   ['score_5ffor_5frelevant_5f',['score_for_relevant_',['../classltr_1_1_average_precision.html#a4cf18194ab55221c71018d0820f96850',1,'ltr::AveragePrecision::score_for_relevant_()'],['../classltr_1_1_reciprocal_rank.html#a9302798aa17ea6b39aded265df6d1d0f',1,'ltr::ReciprocalRank::score_for_relevant_()']]],
   ['score_5fvalue_5f',['score_value_',['../classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8',1,'ltr::FakeScorer']]],
@@ -12,6 +13,7 @@ var searchData=
   ['self_5f',['self_',['../class_factory.html#a820e8b9987d55a4d291c3460f753213f',1,'Factory']]],
   ['serializated_5flabels',['serializated_labels',['../class_serialization_test.html#a6e4bde44114e72282e704b8b0f68c12c',1,'SerializationTest']]],
   ['serializating_5fobject_5fnumber',['serializating_object_number',['../classserialization__test_1_1_generator.html#a5797d464e4538bf5a7f2a2410bb694b8',1,'serialization_test::Generator']]],
+  ['set_5f',['set_',['../classoptimization_1_1_one_point_updater.html#a1f1484865527a29a4dfcc3ef26e2a33d',1,'optimization::OnePointUpdater::set_()'],['../classoptimization_1_1_population_updater.html#a1dba412a6654b083cc515ce522a05331',1,'optimization::PopulationUpdater::set_()']]],
   ['shift_5f',['shift_',['../classltr_1_1_linear_converter.html#a388327d1dca7e952c307058a2b47e7e4',1,'ltr::LinearConverter::shift_()'],['../classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c',1,'ltr::PerFeatureLinearConverter::shift_()'],['../classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2',1,'optimization::LinearFunction::shift_()'],['../classoptimization_1_1_quadratic_function.html#a26c93c148924083030fb6ee2ca30e678',1,'optimization::QuadraticFunction::shift_()'],['../classoptimization_1_1_linear_inequality_set.html#a603194ab3eea9566b15ed38dbebf2bc3',1,'optimization::LinearInequalitySet::shift_()']]],
   ['singular_5fvalues_5f',['singular_values_',['../classltr_1_1_p_c_a_learner.html#a7842cfd901f04cf1f004193319044a23',1,'ltr::PCALearner']]],
   ['size',['size',['../structltr_1_1utility_1_1_dimension_size.html#aa28ff716ca31557c6404621f51c2e734',1,'ltr::utility::DimensionSize']]],
@@ -19,6 +21,10 @@ var searchData=
   ['splitter',['splitter',['../struct_crossvalidation_launch_info.html#a21ee79a41098bf23fa2e506a43ef3f04',1,'CrossvalidationLaunchInfo']]],
   ['splitter_5f',['splitter_',['../classltr_1_1cv_1_1_cross_validator.html#a48580310e51d887b7e4e8212aa2de4ec',1,'ltr::cv::CrossValidator::splitter_()'],['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a66a8a2d7ede496a36fbb9c49c93ce73e',1,'ltr::decision_tree::DecisionTreeLearner::splitter_()']]],
   ['start_5fline_5findex',['start_line_index',['../structltr_1_1_element_bounds.html#ac3d8e6f1f945a0b92c8797606d5eee7c',1,'ltr::ElementBounds']]],
+  ['step_5f',['step_',['../classoptimization_1_1_constant_step_calculator.html#a2f53afc678b1e9199b182c61b427b61f',1,'optimization::ConstantStepCalculator']]],
+  ['step_5fdirection_5fcalculator_5f',['step_direction_calculator_',['../classoptimization_1_1_directed_updater.html#a8fa8de57cd4f6acc7ea7e5167850e042',1,'optimization::DirectedUpdater']]],
+  ['step_5fsize_5fcalculator_5f',['step_size_calculator_',['../classoptimization_1_1_directed_updater.html#aac2f106d9f0b3cf0ac20b7cd3ec19ed3',1,'optimization::DirectedUpdater::step_size_calculator_()'],['../classoptimization_1_1_conjugate_direction_calculator.html#a9ead7d29655580f0cd7493dd5a7e6dfe',1,'optimization::ConjugateDirectionCalculator::step_size_calculator_()']]],
+  ['stop_5fcriterion_5finfo_5f',['stop_criterion_info_',['../classoptimization_1_1_per_point_stop_criterion.html#aafe4332b028f3d1aa224ecb3ded41532',1,'optimization::PerPointStopCriterion']]],
   ['stop_5fsplitting_5fcriteria_5f',['stop_splitting_criteria_',['../classltr_1_1decision__tree_1_1_decision_tree_learner.html#a83843087eaca77581709a289fffb22ea',1,'ltr::decision_tree::DecisionTreeLearner']]],
   ['svm_5farff_5ftest_5ffile_5fname',['svm_arff_test_file_name',['../class_i_o_utility_test.html#a4891e6fabad40165060e7327cd3f8ad2',1,'IOUtilityTest']]]
 ];

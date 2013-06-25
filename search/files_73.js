@@ -31,6 +31,8 @@ var searchData=
   ['stand_5falone_5fobject_5frepresentation_2eh',['stand_alone_object_representation.h',['../stand__alone__object__representation_8h.html',1,'']]],
   ['stand_5ffunctions_5funittest_2ecc',['stand_functions_unittest.cc',['../stand__functions__unittest_8cc.html',1,'']]],
   ['statistics_5fcalculation_2eh',['statistics_calculation.h',['../statistics__calculation_8h.html',1,'']]],
+  ['step_5fsize_5fcalculator_2ehpp',['step_size_calculator.hpp',['../step__size__calculator_8hpp.html',1,'']]],
+  ['step_5fsize_5fcalculators_2ehpp',['step_size_calculators.hpp',['../step__size__calculators_8hpp.html',1,'']]],
   ['stop_5fcriteria_5funittest_2ecc',['stop_criteria_unittest.cc',['../stop__criteria__unittest_8cc.html',1,'']]],
   ['stop_5fcriterion_2eh',['stop_criterion.h',['../stop__criterion_8h.html',1,'']]],
   ['stop_5fsplitting_5fcriteria_2eh',['stop_splitting_criteria.h',['../stop__splitting__criteria_8h.html',1,'']]],

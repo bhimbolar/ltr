@@ -138,19 +138,19 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a36dff8aac802dcd94e9588953c7ecf1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a36dff8aac802dcd94e9588953c7ecf1f">LinearFunction</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
-<tr class="memitem:abcd5568695c4bf8b3349f58cca8541aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#abcd5568695c4bf8b3349f58cca8541aa">LinearFunction</a> (<a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> factor, double shift=0.0)</td></tr>
+<tr class="memitem:abcd5568695c4bf8b3349f58cca8541aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#abcd5568695c4bf8b3349f58cca8541aa">LinearFunction</a> (Vector factor, double shift=0.0)</td></tr>
 <tr class="memitem:a08b92636394978f23e95e9ea4d75e17d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a08b92636394978f23e95e9ea4d75e17d">~LinearFunction</a> ()</td></tr>
-<tr class="memitem:ae05e6d610fead5af2f12625b2e536260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#ae05e6d610fead5af2f12625b2e536260">GET_SET</a> (<a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>, factor)</td></tr>
+<tr class="memitem:ae05e6d610fead5af2f12625b2e536260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#ae05e6d610fead5af2f12625b2e536260">GET_SET</a> (Vector, factor)</td></tr>
 <tr class="memitem:a662b243e5128a1e83bd329a0951f0090"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a662b243e5128a1e83bd329a0951f0090">GET_SET</a> (double, shift)</td></tr>
 <tr class="memitem:a9c4d8e8d0908ddf091cf955b83688725"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a9c4d8e8d0908ddf091cf955b83688725">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aa2d612fbce9a4ed8b56f624e6a0ed685"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aa2d612fbce9a4ed8b56f624e6a0ed685">computeValueImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:a27a6a5dc9b255d28356afb3922012ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a27a6a5dc9b255d28356afb3922012ff5">computeGradientImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *gradient) const </td></tr>
-<tr class="memitem:aee2abfb10b32ec14bb7d46e1e51a6205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aee2abfb10b32ec14bb7d46e1e51a6205">computeHessianImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> *hessian) const </td></tr>
+<tr class="memitem:a27a6a5dc9b255d28356afb3922012ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a27a6a5dc9b255d28356afb3922012ff5">computeGradientImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, Vector *gradient) const </td></tr>
+<tr class="memitem:aee2abfb10b32ec14bb7d46e1e51a6205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#aee2abfb10b32ec14bb7d46e1e51a6205">computeHessianImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, Matrix *hessian) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7847ab42ce1099f90e887d33c3d564db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db">factor_</a></td></tr>
+<tr class="memitem:a7847ab42ce1099f90e887d33c3d564db"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db">factor_</a></td></tr>
 <tr class="memitem:a95d367a7115b949996a34b92165e06a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2">shift_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classoptimization_1_1_linear_function.html#a36dff8aac802dcd94e9588953c7ecf1f">optimization::LinearFunction::LinearFunction</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&#160;</td>
+          <td class="paramtype">Vector&#160;</td>
           <td class="paramname"><em>factor</em>, </td>
         </tr>
         <tr>
@@ -248,7 +248,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> *&#160;</td>
+          <td class="paramtype">Vector *&#160;</td>
           <td class="paramname"><em>gradient</em>&#160;</td>
         </tr>
         <tr>
@@ -278,7 +278,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#adfecb398197e2c871cba88a5f9f3c5fe">Matrix</a> *&#160;</td>
+          <td class="paramtype">Matrix *&#160;</td>
           <td class="paramname"><em>hessian</em>&#160;</td>
         </tr>
         <tr>
@@ -322,7 +322,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classoptimization_1_1_linear_function.html#ae05e6d610fead5af2f12625b2e536260">optimization::LinearFunction::GET_SET</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a>&#160;</td>
+          <td class="paramtype">Vector&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -393,7 +393,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stop__criteria__unittest_8cc.html#a467058aaad9b15e09ee331f21e2b2e56">Vector</a> <a class="el" href="classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db">optimization::LinearFunction::factor_</a><code> [private]</code></td>
+          <td class="memname">Vector <a class="el" href="classoptimization_1_1_linear_function.html#a7847ab42ce1099f90e887d33c3d564db">optimization::LinearFunction::factor_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -424,7 +424,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

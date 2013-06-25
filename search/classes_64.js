@@ -33,6 +33,7 @@ var searchData=
   ['differentiablefunction',['DifferentiableFunction',['../classoptimization_1_1_differentiable_function.html',1,'optimization']]],
   ['dimensionmetainfo',['DimensionMetaInfo',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html',1,'ltr::utility::MultiTable']]],
   ['dimensionsize',['DimensionSize',['../structltr_1_1utility_1_1_dimension_size.html',1,'ltr::utility']]],
+  ['directedupdater',['DirectedUpdater',['../classoptimization_1_1_directed_updater.html',1,'optimization']]],
   ['distancetoneighbor',['DistanceToNeighbor',['../structltr_1_1_distance_to_neighbor.html',1,'ltr']]],
   ['divide',['Divide',['../classltr_1_1gp_1_1_divide.html',1,'ltr::gp']]],
   ['doublelesscomparator',['DoubleLessComparator',['../classltr_1_1utility_1_1_double_less_comparator.html',1,'ltr::utility']]],

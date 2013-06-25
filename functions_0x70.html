@@ -200,7 +200,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classltr_1_1_per_object_accessor_3_01const_01_object_01_4.html#a7543e4dffee4b3ab8e01d9570606d192">ltr::PerObjectAccessor&lt; const Object &gt;</a>
 </li>
 <li>PerPointStopCriterion()
-: <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#adfcdb2f5808aaaf835e13cd6c88edcb2">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>
+: <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ad7545e3ec6413ab8279694eec59f46ea">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>
+</li>
+<li>PerPointUpdater()
+: <a class="el" href="classoptimization_1_1_per_point_updater.html#aa08131e2c85c16fe55b6cec068abbc1b">optimization::PerPointUpdater&lt; TFunction &gt;</a>
 </li>
 <li>PFound()
 : <a class="el" href="classltr_1_1_p_found.html#aa5b6303fae8b089c864f3976edc87c33">ltr::PFound</a>
@@ -226,8 +229,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>population_handler_
 : <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a78dc1ced8977eb7b36e3a2101755ef4a">ltr::gp::GPLearner&lt; TElement &gt;</a>
 </li>
+<li>population_info_
+: <a class="el" href="classoptimization_1_1_population.html#ad3e3edf2349b5741e474133a31c4f6ce">optimization::Population</a>
+</li>
 <li>population_size_
 : <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#aeabfbab990765e8b846145540c6efaaf">ltr::gp::GPLearner&lt; TElement &gt;</a>
+</li>
+<li>PopulationInfo()
+: <a class="el" href="classoptimization_1_1_population_info.html#a444312a033414eff7fab0cbffac9d76b">optimization::PopulationInfo&lt; TInfo &gt;</a>
 </li>
 <li>populationInit()
 : <a class="el" href="classoptimization_1_1_naive_initer.html#a73df7095ef209141b75aa52e0c889d16">optimization::NaiveIniter</a>
@@ -235,6 +244,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>PopulationIniter()
 : <a class="el" href="classoptimization_1_1_population_initer.html#aa1cae15e2ed1ea3d423e7098246c4f9f">optimization::PopulationIniter</a>
+</li>
+<li>PopulationUpdater()
+: <a class="el" href="classoptimization_1_1_population_updater.html#aaf95f4abd0c47585b402336c2afc46f3">optimization::PopulationUpdater&lt; TFunction &gt;</a>
 </li>
 <li>positive_normal_
 : <a class="el" href="classoptimization_1_1_linear_inequality_set.html#a38034e8880ffa4eb0586c4a11f73d994">optimization::LinearInequalitySet</a>
@@ -258,10 +270,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="structltr_1_1utility_1_1_predicted_and_actual_labels.html#aed445c05e64cae71203ea2d26225b6ab">ltr::utility::PredictedAndActualLabels</a>
 </li>
 <li>predicted_label()
-: <a class="el" href="classltr_1_1_data_set_object_representation.html#aaf0cc903951820e424324fce369a524c">ltr::DataSetObjectRepresentation</a>
-, <a class="el" href="classltr_1_1_object.html#aee9e5793f44f5f6de8fa347544cbbc4b">ltr::Object</a>
-, <a class="el" href="classltr_1_1_object_representation.html#aec0934e25b42422c6135b9a999f41088">ltr::ObjectRepresentation</a>
+: <a class="el" href="classltr_1_1_object_representation.html#aec0934e25b42422c6135b9a999f41088">ltr::ObjectRepresentation</a>
 , <a class="el" href="classltr_1_1_stand_alone_object_representation.html#ae21b9d7b45d1e6b1357db4a8b0d39ba7">ltr::StandAloneObjectRepresentation</a>
+, <a class="el" href="classltr_1_1_data_set_object_representation.html#aaf0cc903951820e424324fce369a524c">ltr::DataSetObjectRepresentation</a>
+, <a class="el" href="classltr_1_1_object.html#aee9e5793f44f5f6de8fa347544cbbc4b">ltr::Object</a>
 </li>
 <li>predicted_label_
 : <a class="el" href="classltr_1_1_stand_alone_object_representation.html#a2115f6522438c68eb32ec641dc1b3a81">ltr::StandAloneObjectRepresentation</a>
@@ -281,6 +293,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classltr_1_1_data_set_object_representation.html#a57e1c21b78a53233da1dc385922934c1">ltr::DataSetObjectRepresentation</a>
 , <a class="el" href="classltr_1_1_object.html#aa0c6cda7f08af02c983bf59d0518ad26">ltr::Object</a>
 </li>
+<li>previous_direction_
+: <a class="el" href="classoptimization_1_1_conjugate_direction_calculator.html#a8a88e9bebf931ca3bf2432ec3302675b">optimization::ConjugateDirectionCalculator&lt; TFunction &gt;</a>
+</li>
 <li>print2DTable()
 : <a class="el" href="classltr_1_1utility_1_1_multi_table.html#aa035b20a4f52250e2dbb84aa374ec67f">ltr::utility::MultiTable&lt; T, N &gt;</a>
 </li>
@@ -297,133 +312,145 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classoptimization_1_1_polyhedron_set.html#a95fba50f3299385ede7b588c5818cede">optimization::PolyhedronSet</a>
 </li>
 <li>Ptr
-: <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a9b35387037a2fca3fcd3eca2e6ba6b9f">ltr::decision_tree::DecisionTreeLearner&lt; TElement &gt;</a>
+: <a class="el" href="classltr_1_1decision__tree_1_1_stop_splitting_criteria.html#a0bd445ed491d1445990a61928d9d679b">ltr::decision_tree::StopSplittingCriteria</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html#aa7939a01352c3257a7f27fdf8941bc2a">ltr::decision_tree::SameLabelStopSplittingCriteria</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#ab331ca425e65796aca38ae8749e24c40">ltr::decision_tree::DecisionVertex</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">ltr::decision_tree::ObliviousTreeSplitter</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_leaf_vertex.html#a60192c20ec8a46c1769244fdb3303437">ltr::decision_tree::LeafVertex</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html#a1655b0e95f8747f5918aaef47e26e73e">ltr::decision_tree::LeafGenerator</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html#a6545bb7e4760e596d8241363e7091fbd">ltr::decision_tree::ID3Splitter</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a9b35387037a2fca3fcd3eca2e6ba6b9f">ltr::decision_tree::DecisionTreeLearner&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#ae9ec583b18efb77c5f13257cb97867f7">ltr::decision_tree::DecisionTree</a>
 , <a class="el" href="classltr_1_1decision__tree_1_1_threshold_condition.html#afdcb926786cd75ef0c5f20e457b2b82b">ltr::decision_tree::ThresholdCondition</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_fake_condition.html#aebe79c6ec2aede041280a2153653f160">ltr::decision_tree::FakeCondition</a>
+, <a class="el" href="classltr_1_1_normalized_measure.html#af15fca36d1a94f1630b7e43a551c5a02">ltr::NormalizedMeasure&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1decision__tree_1_1_condition.html#acb531deb9f0323ae4aadff82d0faf8ba">ltr::decision_tree::Condition</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html#a6545bb7e4760e596d8241363e7091fbd">ltr::decision_tree::ID3Splitter</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_same_label_stop_splitting_criteria.html#aa7939a01352c3257a7f27fdf8941bc2a">ltr::decision_tree::SameLabelStopSplittingCriteria</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">ltr::decision_tree::BaseSplitter</a>
+, <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#ab9bb64336eb169d5f8218f92651a2806">ltr::composition::FakeDataSetWeightsUpdater&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">ltr::composition::DataSetWeightsUpdater&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html#a584caf25452095d9e1e4a3f9b7847d56">ltr::composition::FakeCompositionScorerWeightsUpdater&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html#aef89515889dff7a993c51bef45aadaf0">ltr::composition::CompositionScorerWeightsUpdater&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">ltr::composition::CompositionLearner&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_quadratic_function.html#a7ee6b1311d5d08729181871c48b15be5">optimization::QuadraticFunction</a>
+, <a class="el" href="classoptimization_1_1_g3_function.html#a9de9cde08e04b235fd56d8103d3f9d93">optimization::G3Function</a>
 , <a class="el" href="classltr_1_1composition_1_1_average_composition_scorer_weights_updater.html#aca832b1aa9935ac1e7198289559436d8">ltr::composition::AverageCompositionScorerWeightsUpdater&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a69e5aaa65757a7476246c510bf2bb483">ltr::gp::GPLearner&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">ltr::composition::CompositionLearner&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#abb4df31f08cfc9e8d2c7a02f0a5a30c9">ltr::composition::AdaRankDataSetWeightsUpdater&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1composition_1_1_ada_rank_scorer_weights_updater.html#aba5b983aa2dc55f7fb3ef611e57175e3">ltr::composition::AdaRankScorerWeightsUpdater&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1composition_1_1_ada_boost_learner.html#a4998b25cdefd7e6cc08ede1ae10b9a30">ltr::composition::AdaBoostLearner</a>
 , <a class="el" href="classltr_1_1composition_1_1_ada_boost_data_set_weights_updater.html#a7110bd58e92dd4be7a5fbd5890913ad3">ltr::composition::AdaBoostDataSetWeightsUpdater&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">ltr::BestFeatureLearner&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_quadratic_discriminant_learner.html#a9b9536fecb30ba5eb3fe0349e11675f3">ltr::QuadraticDiscriminantLearner&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_normal_naive_bayes_learner.html#ad095e3ea9b4d5acf1411c572bd762139">ltr::NormalNaiveBayesLearner&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_fisher_discriminant_learner.html#a1af45da93b71b0597b6c6097563e83a0">ltr::FisherDiscriminantLearner&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html#aef89515889dff7a993c51bef45aadaf0">ltr::composition::CompositionScorerWeightsUpdater&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">ltr::BayesianLearner&lt; TElement, TDensityLearner &gt;</a>
 , <a class="el" href="classltr_1_1_serializable_functor.html#a079765aa058496c753107dc98a9b1acd">ltr::SerializableFunctor&lt; TValue &gt;</a>
-, <a class="el" href="classoptimization_1_1_g3_function.html#a9de9cde08e04b235fd56d8103d3f9d93">optimization::G3Function</a>
+, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">ltr::Serializable</a>
 , <a class="el" href="classltr_1_1_functor.html#a9670bf35b8b72a1c895e6bcecc33d373">ltr::Functor&lt; TValue &gt;</a>
 , <a class="el" href="classltr_1_1_remove_nominal_converter.html#a54c14c5bb7feca9100f2b7105e34d90c">ltr::RemoveNominalConverter</a>
 , <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a19e19b0b07999a773e0ad35f83d6e4a8">ltr::PerFeatureLinearConverter</a>
-, <a class="el" href="classltr_1_1_p_c_a_learner.html#a695d4157b380efb752be364a5e54556c">ltr::PCALearner&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_nominal_to_bool_converter.html#a00f8809a807ec8d154e73d50c6e955c7">ltr::NominalToBoolConverter</a>
+, <a class="el" href="classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html#a584caf25452095d9e1e4a3f9b7847d56">ltr::composition::FakeCompositionScorerWeightsUpdater&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_brute_force_step_calculator.html#a32f9cebd31f5ea773ee8c7bd6fad5029">optimization::BruteForceStepCalculator&lt; TFunction &gt;</a>
 , <a class="el" href="classltr_1_1_nan_to_neutral_converter.html#a71f551d9d145eb81d323ac9f9326bfe4">ltr::NanToNeutralConverter</a>
 , <a class="el" href="classltr_1_1_linear_converter.html#a2d9214c11c311c4ff6570e00b157535e">ltr::LinearConverter</a>
-, <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#ab9bb64336eb169d5f8218f92651a2806">ltr::composition::FakeDataSetWeightsUpdater&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1_feature_sampler_learner.html#af1b3a2402af1b73171ea4d997845bce6">ltr::FeatureSamplerLearner&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_feature_sampler.html#a62c8126bba0996784b6ae827db3fc363">ltr::FeatureSampler</a>
 , <a class="el" href="classltr_1_1_feature_random_sampler_learner.html#a1567bbdd4e70daacdad7a7e604d27f00">ltr::FeatureRandomSamplerLearner&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_feature_normalizer_learner.html#abc879460e656b6c22b6feafd74045acc">ltr::FeatureNormalizerLearner&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">ltr::decision_tree::BaseSplitter</a>
-, <a class="el" href="classltr_1_1_feature_converter_learner.html#a322b5a18eef1103c64df834021f6dcf9">ltr::FeatureConverterLearner&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a3f52fbaf8d964cf6bd699b1e99916ffd">ltr::gp::GPScorer</a>
+, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, TFeatureConverter &gt;</a>
+, <a class="el" href="classoptimization_1_1_vote_aggregator.html#a3f5c3cd69a8a8c5a779ccff88e0de769">optimization::VoteAggregator</a>
+, <a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">ltr::FeatureConverter</a>
 , <a class="el" href="classltr_1_1_fake_feature_converter_learner.html#a56955fbc295ce6375453a4069aedcfbb">ltr::FakeFeatureConverterLearner&lt; TElement &gt;</a>
-, <a class="el" href="classoptimization_1_1_population.html#a6128263117480ac57d80fe39668d63ca">optimization::Population</a>
+, <a class="el" href="classltr_1_1_fake_feature_converter.html#a5d977a44d9a69c4b9d0349e4f0a82da8">ltr::FakeFeatureConverter</a>
 , <a class="el" href="classltr_1_1_base_probability_density_learner.html#a789c84e06354bcd3a411810a54912b83">ltr::BaseProbabilityDensityLearner&lt; TElement, TEstimator &gt;</a>
 , <a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">ltr::BaseProbabilityDensityEstimator</a>
 , <a class="el" href="classltr_1_1_fake_preprocessor.html#af16a641afd505e2e6c381c60fd720e93">ltr::FakePreprocessor&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_data_sampler.html#a8b33035cb9c8d19473aa93469f2f7cfa">ltr::DataSampler&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_data_random_sampler.html#a42ecbf20bb863ae1a1d262e8291ddd5d">ltr::DataRandomSampler&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>
 , <a class="el" href="classltr_1_1_data_preprocessor.html#a1070c68120238cc6c9ad184ebe53d931">ltr::DataPreprocessor&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1io__utility_1_1_parser.html#a367191bad23e46fb8f7e13e7801cd0db">ltr::io_utility::Parser</a>
-, <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>
+, <a class="el" href="classltr_1_1utility_1_1_list_to_pair_convertion_strategy.html#a0fa154e4afb2f034b4c0d8f53af5132a">ltr::utility::ListToPairConvertionStrategy</a>
 , <a class="el" href="classltr_1_1_stand_alone_object_representation.html#a7d518ebc3c8747886cd0e6abde5c74f6">ltr::StandAloneObjectRepresentation</a>
 , <a class="el" href="classltr_1_1_object_representation.html#a70d594e280d646c9a448a2747eba2736">ltr::ObjectRepresentation</a>
 , <a class="el" href="classltr_1_1_object_pair.html#af188859236fd3ae3f5e410f02f0822b1">ltr::ObjectPair</a>
-, <a class="el" href="classoptimization_1_1_sphere_set.html#ae8cd7e4104aee302b35498a3ef66d8a0">optimization::SphereSet</a>
-, <a class="el" href="classltr_1_1_object.html#a6258057d750f6a383828d9c81ee968db">ltr::Object</a>
+, <a class="el" href="classltr_1_1_object_list.html#a6d7b532952e55280b26e0a583b862793">ltr::ObjectList</a>
+, <a class="el" href="classoptimization_1_1_per_point_updater.html#ade1e71a9c9fd3e2d02d287ec94c29d71">optimization::PerPointUpdater&lt; TFunction &gt;</a>
 , <a class="el" href="classltr_1_1_inner_representation.html#a0cf218f10bd352e507f149d1cef9f796">ltr::InnerRepresentation</a>
 , <a class="el" href="classltr_1_1_feature_info.html#aece18cac4516d4c321f05a33b958c361">ltr::FeatureInfo</a>
-, <a class="el" href="classoptimization_1_1_naive_initer.html#a50542742c6c5a39746b47dc9bcd07c65">optimization::NaiveIniter</a>
-, <a class="el" href="classltr_1_1_data_set.html#a39572627b0bef56071c46c5d789feba7">ltr::DataSet&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1_data_set_object_representation.html#ac618ed15beb143495c25d3c60f3b99c7">ltr::DataSetObjectRepresentation</a>
+, <a class="el" href="classoptimization_1_1_population_info.html#a979868226793a3a1df74b77ea280baf7">optimization::PopulationInfo&lt; TInfo &gt;</a>
 , <a class="el" href="classltr_1_1cv_1_1_t_k_fold_simple_splitter.html#ae2f6d94f15276275fed06bc0759aa7ed">ltr::cv::TKFoldSimpleSplitter&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1cv_1_1_splitter.html#a7fb90bec8eb865b5c1142e17185861fa">ltr::cv::Splitter&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1cv_1_1_leave_one_out_splitter.html#acbeb43403114a68060ec6bebfd78c27f">ltr::cv::LeaveOneOutSplitter&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1cv_1_1_k_fold_simple_splitter.html#a06a1709d0a5911988c87b2d6c24fe0d3">ltr::cv::KFoldSimpleSplitter&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">ltr::BaseMetric</a>
+, <a class="el" href="classltr_1_1gp_1_1_base_population_handler.html#a82461f8cc707f155738a99a45c3cd0cb">ltr::gp::BasePopulationHandler</a>
+, <a class="el" href="classoptimization_1_1_stop_criterion.html#a099003349b28dc0b526b2be5ea39fd58">optimization::StopCriterion&lt; TFunction &gt;</a>
+, <a class="el" href="classoptimization_1_1_delta_argument_stop_criterion.html#aaca959ea5adad6ed0fe1024e13b7c5f4">optimization::DeltaArgumentStopCriterion&lt; TFunction &gt;</a>
+, <a class="el" href="classltr_1_1utility_1_1_neighbor_weighter.html#a3701181fec9480ff815f882ec85c6770">ltr::utility::NeighborWeighter</a>
+, <a class="el" href="classltr_1_1_measure.html#a6a7879699e2e550f40ecae5cb3f1397d">ltr::Measure&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">ltr::Scorer</a>
 , <a class="el" href="classoptimization_1_1_g1_function.html#a4aaf8b8983d761daad49fb941c02e3b1">optimization::G1Function</a>
-, <a class="el" href="classoptimization_1_1_vote_aggregator.html#a3f5c3cd69a8a8c5a779ccff88e0de769">optimization::VoteAggregator</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_leaf_vertex.html#a60192c20ec8a46c1769244fdb3303437">ltr::decision_tree::LeafVertex</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_data_size_stop_splitting_criteria.html#a4454f7e45be56e04a9a70ac9bef4932f">ltr::decision_tree::DataSizeStopSplittingCriteria</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html#aade54e2e96aa3892df5d27cfea0463b9">ltr::decision_tree::MostCommonLabelLeafGenerator</a>
 , <a class="el" href="classltr_1_1_predictions_aggregator.html#af8d97497d4797ed3608314a21dce0bf0">ltr::PredictionsAggregator</a>
 , <a class="el" href="classoptimization_1_1_iteration_count_stop_criterion.html#a1daf36c1ebaffcda1ce6c499e4e94192">optimization::IterationCountStopCriterion&lt; TFunction &gt;</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_stop_splitting_criteria.html#a0bd445ed491d1445990a61928d9d679b">ltr::decision_tree::StopSplittingCriteria</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_leaf_generator.html#a1655b0e95f8747f5918aaef47e26e73e">ltr::decision_tree::LeafGenerator</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_most_common_label_leaf_generator.html#aade54e2e96aa3892df5d27cfea0463b9">ltr::decision_tree::MostCommonLabelLeafGenerator</a>
+, <a class="el" href="classltr_1_1_euclidean_metric.html#a1e3119c6b6786a1f5d9449e0bb3bbed4">ltr::EuclideanMetric</a>
+, <a class="el" href="classoptimization_1_1_linear_function.html#aeda1882d0cf2b12dc8f5f06040b4244f">optimization::LinearFunction</a>
+, <a class="el" href="classltr_1_1decision__tree_1_1_fake_condition.html#aebe79c6ec2aede041280a2153653f160">ltr::decision_tree::FakeCondition</a>
 , <a class="el" href="classoptimization_1_1_easom_function.html#aa10ba9f677e45c610d86168a7d1293bb">optimization::EasomFunction</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#ab331ca425e65796aca38ae8749e24c40">ltr::decision_tree::DecisionVertex</a>
-, <a class="el" href="classltr_1_1_n_n_learner.html#adf1b277ccabe21f8f45a7b56405cb1d4">ltr::NNLearner&lt; TElement &gt;</a>
-, <a class="el" href="classoptimization_1_1_griewank_function.html#ade8cc7c667a5e9852a629a93f644ede3">optimization::GriewankFunction</a>
-, <a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#abb4df31f08cfc9e8d2c7a02f0a5a30c9">ltr::composition::AdaRankDataSetWeightsUpdater&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_one_feature_scorer.html#ac8ba587531266eac095014350e584bc7">ltr::OneFeatureScorer</a>
 , <a class="el" href="classltr_1_1_manhattan_metric.html#ab4b55ff86bdfacf9bd50d3d282c57955">ltr::ManhattanMetric</a>
+, <a class="el" href="classoptimization_1_1_base_population_info.html#a7de37c0361006320586e421027528990">optimization::BasePopulationInfo</a>
+, <a class="el" href="classoptimization_1_1_griewank_function.html#ade8cc7c667a5e9852a629a93f644ede3">optimization::GriewankFunction</a>
+, <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>
+, <a class="el" href="classltr_1_1_fisher_discriminant_learner.html#a1af45da93b71b0597b6c6097563e83a0">ltr::FisherDiscriminantLearner&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_directed_updater.html#a83388ec99d7baabe1321f352bcd65f36">optimization::DirectedUpdater&lt; TFunction &gt;</a>
 , <a class="el" href="classltr_1_1_n_n_scorer.html#ac163ca6ae34f91d46a502bdb584a4222">ltr::NNScorer</a>
 , <a class="el" href="classoptimization_1_1_rosenbrock_function.html#afb63be40cf6683cbe2d4592febaee26e">optimization::RosenbrockFunction</a>
-, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">ltr::Serializable</a>
-, <a class="el" href="classoptimization_1_1_linear_function.html#aeda1882d0cf2b12dc8f5f06040b4244f">optimization::LinearFunction</a>
+, <a class="el" href="classltr_1_1_p_c_a_learner.html#a695d4157b380efb752be364a5e54556c">ltr::PCALearner&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_one_point_updater.html#a5235d18bd077e03286b64959903a81bc">optimization::OnePointUpdater&lt; TFunction &gt;</a>
 , <a class="el" href="classltr_1_1_parameters_container.html#abaf8b021f41c41c82a5dca537e45ac2f">ltr::ParametersContainer</a>
 , <a class="el" href="classoptimization_1_1_trid_function.html#a036c32eb2a70ec77eba64df3f40efbc4">optimization::TridFunction</a>
-, <a class="el" href="classltr_1_1_feature_sampler_learner.html#af1b3a2402af1b73171ea4d997845bce6">ltr::FeatureSamplerLearner&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a3f52fbaf8d964cf6bd699b1e99916ffd">ltr::gp::GPScorer</a>
 , <a class="el" href="classoptimization_1_1_gradient_magnitude_stop_criterion.html#aac2545f741b6bc4c6a43bb067f254d11">optimization::GradientMagnitudeStopCriterion&lt; TFunction &gt;</a>
-, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, TFeatureConverter &gt;</a>
-, <a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">ltr::FeatureConverter</a>
+, <a class="el" href="class_factory_1_1_abstract_creator.html#a06cb8fc5017b6f129a394de297cd158a">Factory::AbstractCreator</a>
 , <a class="el" href="classltr_1_1_linear_scorer.html#a3bee2cb6087d7113fef872613acb84d8">ltr::LinearScorer</a>
+, <a class="el" href="classltr_1_1_data_random_sampler.html#a42ecbf20bb863ae1a1d262e8291ddd5d">ltr::DataRandomSampler&lt; TElement &gt;</a>
 , <a class="el" href="classoptimization_1_1_polyhedron_set.html#ab748f25b9f374020c474b0bb6d38e599">optimization::PolyhedronSet</a>
 , <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_scorer.html#a99c29891ec5a0d70f2792fd2cb0d147e">ltr::decision_tree::DecisionTreeScorer</a>
 , <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html#a7bd94a555cf1cc95ca14af65b0047e6a">ltr::composition::CompositionScorer</a>
-, <a class="el" href="classltr_1_1utility_1_1_list_to_pair_convertion_strategy.html#a0fa154e4afb2f034b4c0d8f53af5132a">ltr::utility::ListToPairConvertionStrategy</a>
+, <a class="el" href="classltr_1_1_object.html#a6258057d750f6a383828d9c81ee968db">ltr::Object</a>
 , <a class="el" href="classoptimization_1_1_or.html#a686eca0d0ebb8e3d511b605d09f7e92b">optimization::Or&lt; TFunction &gt;</a>
-, <a class="el" href="classltr_1_1_object_list.html#a6d7b532952e55280b26e0a583b862793">ltr::ObjectList</a>
+, <a class="el" href="classltr_1_1_data_set.html#a39572627b0bef56071c46c5d789feba7">ltr::DataSet&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1_fake_scorer.html#a11a35ae014b5d3986aab80654147e5a3">ltr::FakeScorer</a>
-, <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">optimization::TwiceDifferentiableFunction</a>
-, <a class="el" href="classoptimization_1_1_stop_criterion.html#a099003349b28dc0b526b2be5ea39fd58">optimization::StopCriterion&lt; TFunction &gt;</a>
-, <a class="el" href="classltr_1_1utility_1_1_neighbor_weighter.html#a3701181fec9480ff815f882ec85c6770">ltr::utility::NeighborWeighter</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">ltr::decision_tree::ObliviousTreeSplitter</a>
-, <a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a78745a7c3c69bf66e93bc0ed9e71355f">optimization::DeltaFunctionStopCriterion&lt; TFunction &gt;</a>
+, <a class="el" href="classltr_1_1cv_1_1_k_fold_simple_splitter.html#a06a1709d0a5911988c87b2d6c24fe0d3">ltr::cv::KFoldSimpleSplitter&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1gp_1_1_base_g_p_operation.html#a6585fd3396bb9feff509b6cfc5109779">ltr::gp::BaseGPOperation</a>
+, <a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">ltr::Learner&lt; TElement &gt;</a>
 , <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">ltr::decision_tree::Vertex</a>
-, <a class="el" href="classltr_1_1decision__tree_1_1_data_size_stop_splitting_criteria.html#a4454f7e45be56e04a9a70ac9bef4932f">ltr::decision_tree::DataSizeStopSplittingCriteria</a>
-, <a class="el" href="classoptimization_1_1_delta_argument_stop_criterion.html#aaca959ea5adad6ed0fe1024e13b7c5f4">optimization::DeltaArgumentStopCriterion&lt; TFunction &gt;</a>
-, <a class="el" href="classoptimization_1_1_population_initer.html#a8e89a477d30d57b46f70f334aa3e297c">optimization::PopulationIniter</a>
 , <a class="el" href="classltr_1_1_linear_learner.html#a927c3ac5dbbba0bf5b9c87224270e463">ltr::LinearLearner&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_measure.html#a6a7879699e2e550f40ecae5cb3f1397d">ltr::Measure&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_euclidean_metric.html#a1e3119c6b6786a1f5d9449e0bb3bbed4">ltr::EuclideanMetric</a>
-, <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#aaec52b35e2013bad694371183b2fa106">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>
-, <a class="el" href="classoptimization_1_1_function.html#ac5a993200e288e8b65cbff3d85d2d320">optimization::Function</a>
-, <a class="el" href="classoptimization_1_1_quadratic_function.html#a7ee6b1311d5d08729181871c48b15be5">optimization::QuadraticFunction</a>
-, <a class="el" href="class_factory_1_1_abstract_creator.html#a06cb8fc5017b6f129a394de297cd158a">Factory::AbstractCreator</a>
-, <a class="el" href="classltr_1_1_fake_feature_converter.html#a5d977a44d9a69c4b9d0349e4f0a82da8">ltr::FakeFeatureConverter</a>
+, <a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a78745a7c3c69bf66e93bc0ed9e71355f">optimization::DeltaFunctionStopCriterion&lt; TFunction &gt;</a>
+, <a class="el" href="classltr_1_1_n_n_learner.html#adf1b277ccabe21f8f45a7b56405cb1d4">ltr::NNLearner&lt; TElement &gt;</a>
+, <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a69e5aaa65757a7476246c510bf2bb483">ltr::gp::GPLearner&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_constant_step_calculator.html#a4286cdace3f491e950672ef54bf41247">optimization::ConstantStepCalculator&lt; TFunction &gt;</a>
+, <a class="el" href="classoptimization_1_1_population.html#a6128263117480ac57d80fe39668d63ca">optimization::Population</a>
+, <a class="el" href="classltr_1_1_one_feature_scorer.html#ac8ba587531266eac095014350e584bc7">ltr::OneFeatureScorer</a>
+, <a class="el" href="classoptimization_1_1_population_initer.html#a8e89a477d30d57b46f70f334aa3e297c">optimization::PopulationIniter</a>
+, <a class="el" href="classltr_1_1_nominal_to_bool_converter.html#a00f8809a807ec8d154e73d50c6e955c7">ltr::NominalToBoolConverter</a>
+, <a class="el" href="classoptimization_1_1_conjugate_direction_calculator.html#a78bc05bbbba24f3555334596b0a4c9c5">optimization::ConjugateDirectionCalculator&lt; TFunction &gt;</a>
+, <a class="el" href="classltr_1_1_feature_converter_learner.html#a322b5a18eef1103c64df834021f6dcf9">ltr::FeatureConverterLearner&lt; TElement &gt;</a>
+, <a class="el" href="classoptimization_1_1_step_size_calculator.html#a275cc3b580ee1f9ddbee33d9a950fe66">optimization::StepSizeCalculator&lt; TFunction &gt;</a>
+, <a class="el" href="classoptimization_1_1_sum_squares_function.html#a71894ef7a385924370fce297a8bab5d7">optimization::SumSquaresFunction</a>
 , <a class="el" href="classoptimization_1_1_linear_inequality_set.html#a39cd21ad85d24833673f9bca9ac08b17">optimization::LinearInequalitySet</a>
 , <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">optimization::Set</a>
+, <a class="el" href="classoptimization_1_1_sphere_set.html#ae8cd7e4104aee302b35498a3ef66d8a0">optimization::SphereSet</a>
 , <a class="el" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">ltr::BayesianScorer</a>
-, <a class="el" href="classltr_1_1_data_set_object_representation.html#ac618ed15beb143495c25d3c60f3b99c7">ltr::DataSetObjectRepresentation</a>
 , <a class="el" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">optimization::And&lt; TFunction &gt;</a>
 , <a class="el" href="classoptimization_1_1_ball_set.html#a2825d3e444eca0a46e04e70a235bbec2">optimization::BallSet</a>
-, <a class="el" href="classltr_1_1gp_1_1_base_g_p_operation.html#a6585fd3396bb9feff509b6cfc5109779">ltr::gp::BaseGPOperation</a>
-, <a class="el" href="classltr_1_1_base_metric.html#a7751f645bf03ede5679c0b7c15d3f2aa">ltr::BaseMetric</a>
-, <a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">ltr::Learner&lt; TElement &gt;</a>
-, <a class="el" href="classltr_1_1_normalized_measure.html#af15fca36d1a94f1630b7e43a551c5a02">ltr::NormalizedMeasure&lt; TElement &gt;</a>
-, <a class="el" href="classoptimization_1_1_sum_squares_function.html#a71894ef7a385924370fce297a8bab5d7">optimization::SumSquaresFunction</a>
 , <a class="el" href="classoptimization_1_1_differentiable_function.html#abd570e96a5c97168b4f6f22ad61223b4">optimization::DifferentiableFunction</a>
-, <a class="el" href="classltr_1_1gp_1_1_base_population_handler.html#a82461f8cc707f155738a99a45c3cd0cb">ltr::gp::BasePopulationHandler</a>
+, <a class="el" href="classoptimization_1_1_step_direction_calculator.html#a4511a80b61f8807b866c7929ca20e61f">optimization::StepDirectionCalculator&lt; TFunction &gt;</a>
+, <a class="el" href="classoptimization_1_1_twice_differentiable_function.html#a1486e5028dcd5dbc392d19e97d82a37a">optimization::TwiceDifferentiableFunction</a>
+, <a class="el" href="classoptimization_1_1_naive_initer.html#a50542742c6c5a39746b47dc9bcd07c65">optimization::NaiveIniter</a>
+, <a class="el" href="classoptimization_1_1_population_updater.html#a8c09ed1e00a0448bf54e682ef91e7f09">optimization::PopulationUpdater&lt; TFunction &gt;</a>
+, <a class="el" href="classoptimization_1_1_gradient_direction_calculator.html#a1acf35166b038b4b5c91f17411c9a996">optimization::GradientDirectionCalculator&lt; TFunction &gt;</a>
+, <a class="el" href="classoptimization_1_1_function.html#ac5a993200e288e8b65cbff3d85d2d320">optimization::Function</a>
 </li>
 <li>PtrRefCounter()
-: <a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a19df48a3979695ed990ef3a4962519e0">ReferenceCountedSmartPointer::PtrRefCounter</a>
+: <a class="el" href="class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a872523fa5ddd635953ad5d5706006b62">ReferenceCountedSmartPointer::PtrRefCounter</a>
 </li>
 <li>puppyPrimitiveHandleToPSerializable()
 : <a class="el" href="classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41">ltr::gp::GPScorer</a>
@@ -445,7 +472,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

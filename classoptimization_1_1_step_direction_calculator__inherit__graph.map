@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classoptimization_1_1_conjugate_direction_calculator.html" title="Class for calculate conjugate gradient direction from given point to minimize given function..." alt="" coords="500,5,847,32"/>
+<area shape="rect" href="$classoptimization_1_1_gradient_direction_calculator.html" title="Class for calculate gradient direction from given point to minimize given function." alt="" coords="504,56,843,83"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,31,85,57"/>
+</map>

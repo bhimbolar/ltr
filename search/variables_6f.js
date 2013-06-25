@@ -15,6 +15,7 @@ var searchData=
   ['objects_5f',['objects_',['../classltr_1_1_object_list.html#ac869fd4e16cb3d469e2ddbc734b669c9',1,'ltr::ObjectList']]],
   ['olist',['olist',['../class_listwise_measures_test.html#a7c55df26954229012aa949c7d05a2dc9',1,'ListwiseMeasuresTest']]],
   ['olist2',['olist2',['../class_listwise_measures_test.html#ac9dd429d5cbaa8f9c8fbe3139f8a1319',1,'ListwiseMeasuresTest']]],
-  ['one_5fpoint_5fstop_5fcriteria_5f',['one_point_stop_criteria_',['../classoptimization_1_1_per_point_stop_criterion.html#a06b6d85f0ab29d8559525924cd282b15',1,'optimization::PerPointStopCriterion']]],
-  ['one_5fpoint_5fstop_5fcriterion_5f',['one_point_stop_criterion_',['../classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043',1,'optimization::PerPointStopCriterion']]]
+  ['one_5fpoint_5fstop_5fcriterion_5fsample_5f',['one_point_stop_criterion_sample_',['../classoptimization_1_1_per_point_stop_criterion.html#a6121f6cb804563ddecb5bf1dd3a1fb64',1,'optimization::PerPointStopCriterion']]],
+  ['one_5fpoint_5fupdater_5fsample_5f',['one_point_updater_sample_',['../classoptimization_1_1_per_point_updater.html#a2143c9f6d2f406ea1580b1bfb625baeb',1,'optimization::PerPointUpdater']]],
+  ['one_5fpoint_5fupdaters_5finfo_5f',['one_point_updaters_info_',['../classoptimization_1_1_per_point_updater.html#a823f13719aa0326f2a3c95a496f7b254',1,'optimization::PerPointUpdater']]]
 ];

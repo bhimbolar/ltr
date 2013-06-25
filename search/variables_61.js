@@ -7,6 +7,7 @@ var searchData=
   ['aggregator_5f',['aggregator_',['../classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4',1,'optimization::PerPointStopCriterion']]],
   ['aggregator_5fthreshold_5f',['aggregator_threshold_',['../classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10',1,'optimization::PerPointStopCriterion']]],
   ['alias_5f',['alias_',['../classltr_1_1_aliaser.html#a9c486841d743e0ce390b512efc2dd7b9',1,'ltr::Aliaser']]],
+  ['antigradient_5f',['antigradient_',['../classoptimization_1_1_conjugate_direction_calculator.html#af6a0918b95e3349846d3fbeb89a8aaa0',1,'optimization::ConjugateDirectionCalculator']]],
   ['approach',['approach',['../struct_data_info.html#a9ee5044c93902ac46dec7878f1474999',1,'DataInfo']]],
   ['approach_5f',['approach_',['../class_object_info.html#a789fecf7d41b264846532245f8a905cf',1,'ObjectInfo']]],
   ['arff_5farff_5ftest_5ffile_5fname',['arff_arff_test_file_name',['../class_i_o_utility_test.html#a236192e1e2316b1a834daac692690548',1,'IOUtilityTest']]],

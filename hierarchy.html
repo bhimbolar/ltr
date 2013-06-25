@@ -262,6 +262,8 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1_normalized_measure.html">ltr::NormalizedMeasure&lt; TElement &gt;</a></li>
 <li><a class="el" href="classltr_1_1_p_found.html">ltr::PFound</a></li>
 <li><a class="el" href="classltr_1_1_reciprocal_rank.html">ltr::ReciprocalRank</a></li>
+<li><a class="el" href="classltr_1_1_squared_error.html">ltr::SquaredError</a></li>
+<li><a class="el" href="classltr_1_1_true_point.html">ltr::TruePoint</a></li>
 </ul>
 </li>
 <li><a class="el" href="classltr_1_1_scorer.html">ltr::Scorer</a><ul>
@@ -275,11 +277,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1_one_feature_scorer.html">ltr::OneFeatureScorer</a></li>
 </ul>
 </li>
-<li><a class="el" href="classltr_1_1_measure.html">ltr::Measure&lt; Object &gt;</a><ul>
-<li><a class="el" href="classltr_1_1_squared_error.html">ltr::SquaredError</a></li>
-<li><a class="el" href="classltr_1_1_true_point.html">ltr::TruePoint</a></li>
-</ul>
-</li>
+<li><a class="el" href="classltr_1_1_measure.html">ltr::Measure&lt; Object &gt;</a></li>
 <li><a class="el" href="classoptimization_1_1_function.html">optimization::Function</a><ul>
 <li><a class="el" href="classoptimization_1_1_differentiable_function.html">optimization::DifferentiableFunction</a><ul>
 <li><a class="el" href="classoptimization_1_1_twice_differentiable_function.html">optimization::TwiceDifferentiableFunction</a><ul>
@@ -313,9 +311,22 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classoptimization_1_1_or.html">optimization::Or&lt; TFunction &gt;</a></li>
 </ul>
 </li>
+<li><a class="el" href="classoptimization_1_1_one_point_updater.html">optimization::OnePointUpdater&lt; TFunction &gt;</a><ul>
+<li><a class="el" href="classoptimization_1_1_directed_updater.html">optimization::DirectedUpdater&lt; TFunction &gt;</a><ul>
+<li><a class="el" href="classoptimization_1_1_conjugate_gradient_updater.html">optimization::ConjugateGradientUpdater&lt; TFunction &gt;</a></li>
+<li><a class="el" href="classoptimization_1_1_fixed_step_gradient_updater.html">optimization::FixedStepGradientUpdater&lt; TFunction &gt;</a></li>
+<li><a class="el" href="classoptimization_1_1_steepest_gradient_updater.html">optimization::SteepestGradientUpdater&lt; TFunction &gt;</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="el" href="classoptimization_1_1_population.html">optimization::Population</a></li>
 <li><a class="el" href="classoptimization_1_1_population_initer.html">optimization::PopulationIniter</a><ul>
 <li><a class="el" href="classoptimization_1_1_naive_initer.html">optimization::NaiveIniter</a></li>
+</ul>
+</li>
+<li><a class="el" href="classoptimization_1_1_population_updater.html">optimization::PopulationUpdater&lt; TFunction &gt;</a><ul>
+<li><a class="el" href="classoptimization_1_1_per_point_updater.html">optimization::PerPointUpdater&lt; TFunction &gt;</a></li>
 </ul>
 </li>
 <li><a class="el" href="classoptimization_1_1_set.html">optimization::Set</a><ul>
@@ -330,6 +341,16 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classoptimization_1_1_g3_set.html">optimization::G3Set</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="el" href="classoptimization_1_1_step_direction_calculator.html">optimization::StepDirectionCalculator&lt; TFunction &gt;</a><ul>
+<li><a class="el" href="classoptimization_1_1_conjugate_direction_calculator.html">optimization::ConjugateDirectionCalculator&lt; TFunction &gt;</a></li>
+<li><a class="el" href="classoptimization_1_1_gradient_direction_calculator.html">optimization::GradientDirectionCalculator&lt; TFunction &gt;</a></li>
+</ul>
+</li>
+<li><a class="el" href="classoptimization_1_1_step_size_calculator.html">optimization::StepSizeCalculator&lt; TFunction &gt;</a><ul>
+<li><a class="el" href="classoptimization_1_1_brute_force_step_calculator.html">optimization::BruteForceStepCalculator&lt; TFunction &gt;</a></li>
+<li><a class="el" href="classoptimization_1_1_constant_step_calculator.html">optimization::ConstantStepCalculator&lt; TFunction &gt;</a></li>
 </ul>
 </li>
 <li><a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion&lt; TFunction &gt;</a><ul>
@@ -352,6 +373,10 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <li><a class="el" href="classltr_1_1gp_1_1_if_then_func.html">ltr::gp::IfThenFunc</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_multiply.html">ltr::gp::Multiply</a></li>
 <li><a class="el" href="classltr_1_1gp_1_1_subtract.html">ltr::gp::Subtract</a></li>
+</ul>
+</li>
+<li><a class="el" href="classoptimization_1_1_base_population_info.html">optimization::BasePopulationInfo</a><ul>
+<li><a class="el" href="classoptimization_1_1_population_info.html">optimization::PopulationInfo&lt; TInfo &gt;</a></li>
 </ul>
 </li>
 <li><a class="el" href="class_composition_learner_test.html">CompositionLearnerTest</a></li>
@@ -620,7 +645,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

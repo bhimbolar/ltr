@@ -119,16 +119,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00026"></a>00026  <span class="keyword">public</span>:
 <a name="l00027"></a><a class="code" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">00027</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;And&gt;</a> <a class="code" href="classoptimization_1_1_and.html#ae1a429521146c589ad91c2618ecf99d0">Ptr</a>;
 <a name="l00028"></a>00028 
-<a name="l00029"></a>00029   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_and.html#a2997c7718fb4597602e18064703c0f91">And</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00030"></a>00030                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
-<a name="l00031"></a>00031                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second);
-<a name="l00032"></a><a class="code" href="classoptimization_1_1_and.html#a1fd4052448713858b57b842cda567292">00032</a>   <a class="code" href="classoptimization_1_1_and.html#a1fd4052448713858b57b842cda567292">~And</a>() { }
-<a name="l00033"></a>00033 
-<a name="l00037"></a>00037   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">init</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00041"></a>00041   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">update</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">getDefaultAlias</a>() <span class="keyword">const</span>;
-<a name="l00047"></a>00047   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">clone</a>() <span class="keyword">const</span>;
+<a name="l00029"></a>00029   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_and.html#a96ad9ac0e35e2db9ed6986659c46e49e">And</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
+<a name="l00030"></a>00030                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second);
+<a name="l00031"></a><a class="code" href="classoptimization_1_1_and.html#a1fd4052448713858b57b842cda567292">00031</a>   <a class="code" href="classoptimization_1_1_and.html#a1fd4052448713858b57b842cda567292">~And</a>() { }
+<a name="l00032"></a>00032 
+<a name="l00036"></a>00036   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">init</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00040"></a>00040   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">update</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00046"></a>00046   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">clone</a>() <span class="keyword">const</span>;
+<a name="l00047"></a>00047   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a4aeeb61292bbd43043bde95c930a9445">set_function</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>);
 <a name="l00048"></a>00048  <span class="keyword">private</span>:
 <a name="l00049"></a><a class="code" href="classoptimization_1_1_and.html#a89be42e884e96f813470f13f1e79fbc7">00049</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_and.html#a89be42e884e96f813470f13f1e79fbc7">first_</a>;
 <a name="l00050"></a><a class="code" href="classoptimization_1_1_and.html#a07d4f7ae64e5494a6868ee6cf4b6fc66">00050</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_and.html#a07d4f7ae64e5494a6868ee6cf4b6fc66">second_</a>;
@@ -139,16 +139,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00064"></a>00064  <span class="keyword">public</span>:
 <a name="l00065"></a><a class="code" href="classoptimization_1_1_or.html#a686eca0d0ebb8e3d511b605d09f7e92b">00065</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;Or&gt;</a> <a class="code" href="classoptimization_1_1_or.html#a686eca0d0ebb8e3d511b605d09f7e92b">Ptr</a>;
 <a name="l00066"></a>00066 
-<a name="l00067"></a>00067   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_or.html#a6c9e1ce429baf79c5e1aac84d5185878">Or</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00068"></a>00068               <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
-<a name="l00069"></a>00069               <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second);
-<a name="l00070"></a><a class="code" href="classoptimization_1_1_or.html#a0efc4c49a5b077465fd3c15d4ab4f976">00070</a>   <a class="code" href="classoptimization_1_1_or.html#a0efc4c49a5b077465fd3c15d4ab4f976">~Or</a>() { }
-<a name="l00071"></a>00071 
-<a name="l00075"></a>00075   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#a1ab8b8ecd59edf05a01d89b9b1456200">init</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00079"></a>00079   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#aebe36b80ff6994fd1481f1b8b26081d1">update</a>(<span class="keyword">const</span> Point&amp; point);
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_or.html#a2898675f30c954601a51abcbbc54dbc8">getDefaultAlias</a>() <span class="keyword">const</span>;
-<a name="l00082"></a>00082 
+<a name="l00067"></a>00067   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_or.html#a6cf0fe8a0a55bc886ce6c9b2084396d9">Or</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
+<a name="l00068"></a>00068               <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second);
+<a name="l00069"></a><a class="code" href="classoptimization_1_1_or.html#a0efc4c49a5b077465fd3c15d4ab4f976">00069</a>   <a class="code" href="classoptimization_1_1_or.html#a0efc4c49a5b077465fd3c15d4ab4f976">~Or</a>() { }
+<a name="l00070"></a>00070 
+<a name="l00074"></a>00074   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#a1ab8b8ecd59edf05a01d89b9b1456200">init</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00078"></a>00078   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#aebe36b80ff6994fd1481f1b8b26081d1">update</a>(<span class="keyword">const</span> Point&amp; point);
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_or.html#a2898675f30c954601a51abcbbc54dbc8">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#ac80014ec67bb48c0b9475c8859eeb796">set_function</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>);
 <a name="l00083"></a>00083   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_or.html#aa75c8a6e05c925dcfb0394f2a19e6460">clone</a>() <span class="keyword">const</span>;
 <a name="l00084"></a>00084  <span class="keyword">private</span>:
 <a name="l00085"></a><a class="code" href="classoptimization_1_1_or.html#afa527dc910d76e78bbfd60eed31a08d7">00085</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_or.html#afa527dc910d76e78bbfd60eed31a08d7">first_</a>;
@@ -158,81 +158,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00089"></a>00089 <span class="comment">//  template realization</span>
 <a name="l00090"></a>00090 
 <a name="l00091"></a>00091 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00092"></a><a class="code" href="classoptimization_1_1_and.html#a2997c7718fb4597602e18064703c0f91">00092</a> <a class="code" href="classoptimization_1_1_and.html#a2997c7718fb4597602e18064703c0f91">And&lt;TFunction&gt;::And</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00093"></a>00093                     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
-<a name="l00094"></a>00094                     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second)
-<a name="l00095"></a>00095     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
-<a name="l00096"></a>00096       first_(first),
-<a name="l00097"></a>00097       second_(second) {
-<a name="l00098"></a>00098   <a class="code" href="classoptimization_1_1_and.html#a89be42e884e96f813470f13f1e79fbc7">first_</a>-&gt;set_function(<span class="keyword">function</span>);
-<a name="l00099"></a>00099   <a class="code" href="classoptimization_1_1_and.html#a07d4f7ae64e5494a6868ee6cf4b6fc66">second_</a>-&gt;set_function(<span class="keyword">function</span>);
-<a name="l00100"></a>00100 }
-<a name="l00101"></a>00101 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00102"></a><a class="code" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">00102</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">And&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00103"></a>00103   first_-&gt;init(point);
-<a name="l00104"></a>00104   second_-&gt;init(point);
-<a name="l00105"></a>00105 }
-<a name="l00106"></a>00106 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00107"></a><a class="code" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">00107</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">And&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00108"></a>00108   first_-&gt;update(point);
-<a name="l00109"></a>00109   second_-&gt;update(point);
-<a name="l00110"></a>00110   this-&gt;set_is_true(first_-&gt;isTrue() &amp;&amp; second_-&gt;isTrue());
+<a name="l00092"></a><a class="code" href="classoptimization_1_1_and.html#a96ad9ac0e35e2db9ed6986659c46e49e">00092</a> <a class="code" href="classoptimization_1_1_and.html#a96ad9ac0e35e2db9ed6986659c46e49e">And&lt;TFunction&gt;::And</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
+<a name="l00093"></a>00093                     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second)
+<a name="l00094"></a>00094     : first_(first),
+<a name="l00095"></a>00095       second_(second) {
+<a name="l00096"></a>00096 }
+<a name="l00097"></a>00097 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00098"></a><a class="code" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">00098</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a2e5f83c65ee3196e9994d4eba0c127bc">And&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00099"></a>00099   first_-&gt;init(point);
+<a name="l00100"></a>00100   second_-&gt;init(point);
+<a name="l00101"></a>00101 }
+<a name="l00102"></a>00102 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00103"></a><a class="code" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">00103</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a65027fbc1d81f24302ff862c5140bd17">And&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00104"></a>00104   first_-&gt;update(point);
+<a name="l00105"></a>00105   second_-&gt;update(point);
+<a name="l00106"></a>00106   this-&gt;set_is_true(first_-&gt;isTrue() &amp;&amp; second_-&gt;isTrue());
+<a name="l00107"></a>00107 }
+<a name="l00108"></a>00108 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00109"></a><a class="code" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">00109</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">And&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00110"></a>00110   <span class="keywordflow">return</span> first_-&gt;alias() + <span class="stringliteral">&quot;_&amp;&amp;_&quot;</span> + second_-&gt;alias();
 <a name="l00111"></a>00111 }
 <a name="l00112"></a>00112 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00113"></a><a class="code" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">00113</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_and.html#a2f368707cad7cd9be8c6e177bce4c96f">And&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00114"></a>00114   <span class="keywordflow">return</span> first_-&gt;alias() + <span class="stringliteral">&quot;_&amp;&amp;_&quot;</span> + second_-&gt;alias();
-<a name="l00115"></a>00115 }
-<a name="l00116"></a>00116 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00117"></a><a class="code" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">00117</a> <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">And&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
-<a name="l00118"></a>00118   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">And&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00119"></a>00119     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_and.html" title="Class for test 2 stop criteria in current point from population.">And&lt;TFunction&gt;</a>(this-&gt;function_,
-<a name="l00120"></a>00120                        first_-&gt;clone(),
-<a name="l00121"></a>00121                        second_-&gt;clone());
-<a name="l00122"></a>00122   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
-<a name="l00123"></a>00123   <span class="keywordflow">return</span> stop_criterion;
-<a name="l00124"></a>00124 }
-<a name="l00125"></a>00125 
+<a name="l00113"></a><a class="code" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">00113</a> <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_and.html#a0ec91f83d94b42d6649db0d9d92d4029">And&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
+<a name="l00114"></a>00114   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">And&lt;TFunction&gt;::Ptr</a> stop_criterion =
+<a name="l00115"></a>00115     <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_and.html" title="Class for test 2 stop criteria in current point from population.">And&lt;TFunction&gt;</a>(first_-&gt;clone(),
+<a name="l00116"></a>00116                        second_-&gt;clone());
+<a name="l00117"></a>00117   stop_criterion-&gt;set_function(this-&gt;<span class="keyword">function</span>());
+<a name="l00118"></a>00118   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
+<a name="l00119"></a>00119   <span class="keywordflow">return</span> stop_criterion;
+<a name="l00120"></a>00120 }
+<a name="l00121"></a>00121 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00122"></a><a class="code" href="classoptimization_1_1_and.html#a4aeeb61292bbd43043bde95c930a9445">00122</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_and.html#a4aeeb61292bbd43043bde95c930a9445">And&lt;TFunction&gt;::set_function</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>) {
+<a name="l00123"></a>00123   first_-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00124"></a>00124   second_-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00125"></a>00125 }
 <a name="l00126"></a>00126 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00127"></a><a class="code" href="classoptimization_1_1_or.html#a6c9e1ce429baf79c5e1aac84d5185878">00127</a> <a class="code" href="classoptimization_1_1_or.html#a6c9e1ce429baf79c5e1aac84d5185878">Or&lt;TFunction&gt;::Or</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00128"></a>00128                   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
-<a name="l00129"></a>00129                   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second)
-<a name="l00130"></a>00130     : <a class="code" href="classoptimization_1_1_one_point_stop_criterion.html" title="Abtract class for test one point from population independently on other points.">OnePointStopCriterion</a>&lt;TFunction&gt;(function),
-<a name="l00131"></a>00131       first_(first),
-<a name="l00132"></a>00132       second_(second) {
-<a name="l00133"></a>00133   <a class="code" href="classoptimization_1_1_or.html#afa527dc910d76e78bbfd60eed31a08d7">first_</a>-&gt;set_function(<span class="keyword">function</span>);
-<a name="l00134"></a>00134   <a class="code" href="classoptimization_1_1_or.html#a9ed4f0ced8bc5670988cf1c822740a41">second_</a>-&gt;set_function(<span class="keyword">function</span>);
-<a name="l00135"></a>00135 }
-<a name="l00136"></a>00136 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00137"></a><a class="code" href="classoptimization_1_1_or.html#a1ab8b8ecd59edf05a01d89b9b1456200">00137</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#a1ab8b8ecd59edf05a01d89b9b1456200">Or&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00138"></a>00138   first_-&gt;init(point);
-<a name="l00139"></a>00139   second_-&gt;init(point);
-<a name="l00140"></a>00140 }
-<a name="l00141"></a>00141 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00142"></a><a class="code" href="classoptimization_1_1_or.html#aebe36b80ff6994fd1481f1b8b26081d1">00142</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#aebe36b80ff6994fd1481f1b8b26081d1">Or&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
-<a name="l00143"></a>00143   first_-&gt;update(point);
-<a name="l00144"></a>00144   second_-&gt;update(point);
-<a name="l00145"></a>00145   this-&gt;set_is_true(first_-&gt;isTrue() || second_-&gt;isTrue());
+<a name="l00127"></a><a class="code" href="classoptimization_1_1_or.html#a6cf0fe8a0a55bc886ce6c9b2084396d9">00127</a> <a class="code" href="classoptimization_1_1_or.html#a6cf0fe8a0a55bc886ce6c9b2084396d9">Or&lt;TFunction&gt;::Or</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> first,
+<a name="l00128"></a>00128                   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> second)
+<a name="l00129"></a>00129     : first_(first),
+<a name="l00130"></a>00130       second_(second) {
+<a name="l00131"></a>00131 }
+<a name="l00132"></a>00132 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00133"></a><a class="code" href="classoptimization_1_1_or.html#a1ab8b8ecd59edf05a01d89b9b1456200">00133</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#a1ab8b8ecd59edf05a01d89b9b1456200">Or&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00134"></a>00134   first_-&gt;init(point);
+<a name="l00135"></a>00135   second_-&gt;init(point);
+<a name="l00136"></a>00136 }
+<a name="l00137"></a>00137 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00138"></a><a class="code" href="classoptimization_1_1_or.html#aebe36b80ff6994fd1481f1b8b26081d1">00138</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#aebe36b80ff6994fd1481f1b8b26081d1">Or&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> Point&amp; point) {
+<a name="l00139"></a>00139   first_-&gt;update(point);
+<a name="l00140"></a>00140   second_-&gt;update(point);
+<a name="l00141"></a>00141   this-&gt;set_is_true(first_-&gt;isTrue() || second_-&gt;isTrue());
+<a name="l00142"></a>00142 }
+<a name="l00143"></a>00143 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00144"></a><a class="code" href="classoptimization_1_1_or.html#a2898675f30c954601a51abcbbc54dbc8">00144</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_or.html#a2898675f30c954601a51abcbbc54dbc8">Or&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00145"></a>00145   <span class="keywordflow">return</span> first_-&gt;alias() + <span class="stringliteral">&quot;_||_&quot;</span> + second_-&gt;alias();
 <a name="l00146"></a>00146 }
 <a name="l00147"></a>00147 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00148"></a><a class="code" href="classoptimization_1_1_or.html#a2898675f30c954601a51abcbbc54dbc8">00148</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_or.html#a2898675f30c954601a51abcbbc54dbc8">Or&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00149"></a>00149   <span class="keywordflow">return</span> first_-&gt;alias() + <span class="stringliteral">&quot;_||_&quot;</span> + second_-&gt;alias();
-<a name="l00150"></a>00150 }
-<a name="l00151"></a>00151 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00152"></a><a class="code" href="classoptimization_1_1_or.html#aa75c8a6e05c925dcfb0394f2a19e6460">00152</a> <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_or.html#aa75c8a6e05c925dcfb0394f2a19e6460">Or&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
-<a name="l00153"></a>00153   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Or&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00154"></a>00154     <span class="keyword">new</span>  <a class="code" href="classoptimization_1_1_or.html" title="Class for test 2 stop criteria in current point from population.">Or&lt;TFunction&gt;</a>(this-&gt;function_,
-<a name="l00155"></a>00155                        first_-&gt;clone(),
-<a name="l00156"></a>00156                        second_-&gt;clone());
-<a name="l00157"></a>00157   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
-<a name="l00158"></a>00158   <span class="keywordflow">return</span> stop_criterion;
-<a name="l00159"></a>00159 }
+<a name="l00148"></a><a class="code" href="classoptimization_1_1_or.html#aa75c8a6e05c925dcfb0394f2a19e6460">00148</a> <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_or.html#aa75c8a6e05c925dcfb0394f2a19e6460">Or&lt;TFunction&gt;::clone</a>()<span class="keyword"> const </span>{
+<a name="l00149"></a>00149   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Or&lt;TFunction&gt;::Ptr</a> stop_criterion =
+<a name="l00150"></a>00150     <span class="keyword">new</span>  <a class="code" href="classoptimization_1_1_or.html" title="Class for test 2 stop criteria in current point from population.">Or&lt;TFunction&gt;</a>(first_-&gt;clone(),
+<a name="l00151"></a>00151                        second_-&gt;clone());
+<a name="l00152"></a>00152   stop_criterion-&gt;set_function(this-&gt;<span class="keyword">function</span>());
+<a name="l00153"></a>00153   stop_criterion-&gt;set_is_true(this-&gt;isTrue());
+<a name="l00154"></a>00154   <span class="keywordflow">return</span> stop_criterion;
+<a name="l00155"></a>00155 }
+<a name="l00156"></a>00156 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00157"></a><a class="code" href="classoptimization_1_1_or.html#ac80014ec67bb48c0b9475c8859eeb796">00157</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_or.html#ac80014ec67bb48c0b9475c8859eeb796">Or&lt;TFunction&gt;::set_function</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>) {
+<a name="l00158"></a>00158   first_-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00159"></a>00159   second_-&gt;set_function(<span class="keyword">function</span>);
 <a name="l00160"></a>00160 }
-<a name="l00161"></a>00161 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_AND_OR_STOP_CRITERIA_HPP_</span>
+<a name="l00161"></a>00161 }
+<a name="l00162"></a>00162 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_AND_OR_STOP_CRITERIA_HPP_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:22 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

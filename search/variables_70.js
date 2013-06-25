@@ -3,10 +3,10 @@ var searchData=
   ['p_5fbreak_5f',['p_break_',['../classltr_1_1_p_found.html#a35e893197bc7ced796340b2d21723ff8',1,'ltr::PFound']]],
   ['parameters_5f',['parameters_',['../class_object_info.html#a7c061806b439cccbaca7c0f406357d7c',1,'ObjectInfo']]],
   ['parameters_5fexecutor',['parameters_executor',['../class_on_general_parameterized.html#a8bcbf099a6874c001ebd2068f7e97acb',1,'OnGeneralParameterized']]],
-  ['pi',['PI',['../test__problems__unittest_8cc.html#a952eac791b596a61bba0a133a3bb439f',1,'test_problems_unittest.cc']]],
   ['points_5f',['points_',['../classoptimization_1_1_population.html#a0d78b9c9936085cee66e93761aa3c25e',1,'optimization::Population']]],
   ['population_5f',['population_',['../classltr_1_1gp_1_1_g_p_learner.html#ad3af5d015a092f07e94da48b7b76bf9d',1,'ltr::gp::GPLearner']]],
   ['population_5fhandler_5f',['population_handler_',['../classltr_1_1gp_1_1_g_p_learner.html#a78dc1ced8977eb7b36e3a2101755ef4a',1,'ltr::gp::GPLearner']]],
+  ['population_5finfo_5f',['population_info_',['../classoptimization_1_1_population.html#ad3e3edf2349b5741e474133a31c4f6ce',1,'optimization::Population']]],
   ['population_5fsize_5f',['population_size_',['../classltr_1_1gp_1_1_g_p_learner.html#aeabfbab990765e8b846145540c6efaaf',1,'ltr::gp::GPLearner']]],
   ['positive_5fnormal_5f',['positive_normal_',['../classoptimization_1_1_linear_inequality_set.html#a38034e8880ffa4eb0586c4a11f73d994',1,'optimization::LinearInequalitySet']]],
   ['power_5f',['power_',['../classltr_1_1utility_1_1_inverse_power_distance.html#a95e1845c7fc1ce7195c63988f4113f66',1,'ltr::utility::InversePowerDistance']]],
@@ -19,6 +19,7 @@ var searchData=
   ['predictions_5faggregator_5f',['predictions_aggregator_',['../classltr_1_1_n_n_learner.html#a402e043b158f8e653c12c48e5682e754',1,'ltr::NNLearner::predictions_aggregator_()'],['../classltr_1_1composition_1_1_composition_scorer.html#afff3d49b8e050969747fa4cf9654040b',1,'ltr::composition::CompositionScorer::predictions_aggregator_()'],['../classltr_1_1_n_n_scorer.html#a84583304bc160a9e5ec1bb62b87bbfef',1,'ltr::NNScorer::predictions_aggregator_()']]],
   ['predicts',['predicts',['../struct_train_launch_info.html#ad895734e65e13e518d2b5be774f290bc',1,'TrainLaunchInfo']]],
   ['presentation_5f',['presentation_',['../classltr_1_1_data_set_object_representation.html#a57e1c21b78a53233da1dc385922934c1',1,'ltr::DataSetObjectRepresentation::presentation_()'],['../classltr_1_1_object.html#aa0c6cda7f08af02c983bf59d0518ad26',1,'ltr::Object::presentation_()']]],
+  ['previous_5fdirection_5f',['previous_direction_',['../classoptimization_1_1_conjugate_direction_calculator.html#a8a88e9bebf931ca3bf2432ec3302675b',1,'optimization::ConjugateDirectionCalculator']]],
   ['prior_5fprobability_5f',['prior_probability_',['../classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98',1,'ltr::BayesianScorer']]],
   ['ptr',['Ptr',['../classoptimization_1_1_vote_aggregator.html#a3f5c3cd69a8a8c5a779ccff88e0de769',1,'optimization::VoteAggregator']]]
 ];

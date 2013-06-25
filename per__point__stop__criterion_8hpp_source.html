@@ -112,140 +112,92 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="one__point__stop__criterion_8h.html">ltr/optimization/stop_criteria/one_point_stop_criterion.h</a>&quot;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="stop__criterion_8h.html">ltr/optimization/stop_criteria/stop_criterion.h</a>&quot;</span>
 <a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="vote__aggregator_8h.html">ltr/optimization/stop_criteria/vote_aggregator.h</a>&quot;</span>
-<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="population_8h.html">ltr/optimization/population_initers/population.h</a>&quot;</span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="aliaser_8h.html">ltr/interfaces/aliaser.h</a>&quot;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="unconstrained__functions_8h.html">ltr/optimization/test_problems/unconstrained_functions.h</a>&quot;</span>
-<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
-<a name="l00015"></a>00015 
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="population_8h.html">ltr/optimization/population_info/population.h</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="population__info_8hpp.html">ltr/optimization/population_info/population_info.hpp</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="aliaser_8h.html">ltr/interfaces/aliaser.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="unconstrained__functions_8h.html">ltr/optimization/test_problems/unconstrained_functions.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="keyword">namespace </span>optimization {
 <a name="l00018"></a>00018 <span class="keyword">typedef</span> <span class="keywordtype">int</span> PointId;
 <a name="l00030"></a>00030 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
 <a name="l00031"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html">00031</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html" title="Class for test population via testing all points in population independently.">PerPointStopCriterion</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_stop_criterion.html" title="Class for test population via.">StopCriterion</a>&lt;TFunction&gt; {
 <a name="l00032"></a>00032  <span class="keyword">public</span>:
-<a name="l00033"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#adfcdb2f5808aaaf835e13cd6c88edcb2">00033</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#adfcdb2f5808aaaf835e13cd6c88edcb2">PerPointStopCriterion</a>(
-<a name="l00034"></a>00034       <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> one_point_stop_criterion)
-<a name="l00035"></a>00035       : <a class="code" href="classoptimization_1_1_stop_criterion.html" title="Class for test population via.">StopCriterion</a>&lt;TFunction&gt;(one_point_stop_criterion-&gt;function()),
-<a name="l00036"></a>00036         <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043">one_point_stop_criterion_</a>(one_point_stop_criterion) { }
-<a name="l00037"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96">00037</a>   <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96">~PerPointStopCriterion</a>() { }
-<a name="l00038"></a>00038 
-<a name="l00039"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">00039</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;PerPointStopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a>;
-<a name="l00043"></a>00043   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a0f29f77d6e2a0a6f660f70fdf1bb2b3b">init</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population);
-<a name="l00047"></a>00047   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">update</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population);
-<a name="l00054"></a>00054   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">isTrue</a>();
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056   <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a51c230e96e145935e9b45a685891ba87">GET_SET</a>(<span class="keywordtype">double</span>, aggregator_threshold);
-<a name="l00057"></a>00057   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">getDefaultAlias</a>() <span class="keyword">const</span>;
-<a name="l00058"></a>00058  <span class="keyword">private</span>:
-<a name="l00062"></a>00062   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a9049f224c090390fe51a66736dfeb913">addOnePointStopCriterion</a>(<span class="keyword">const</span> Point&amp; point, PointId point_id);
-<a name="l00066"></a>00066   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a3955a00f5e4beac82621e5848ef83b9e">removeOnePointStopCriterion</a>(PointId point_id);
-<a name="l00067"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a06b6d85f0ab29d8559525924cd282b15">00067</a>   map&lt;PointId, typename OnePointStopCriterion&lt;TFunction&gt;::Ptr &gt; <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a06b6d85f0ab29d8559525924cd282b15">one_point_stop_criteria_</a>;  <span class="comment">// NOLINT</span>
-<a name="l00068"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a49fcf7e2e3ffc3b2a8eb2f190ea103a4">00068</a>   <span class="keyword">typedef</span> <span class="keyword">typename</span> map&lt;PointId, typename OnePointStopCriterion&lt;TFunction&gt;::Ptr &gt;::iterator <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a49fcf7e2e3ffc3b2a8eb2f190ea103a4">Iterator</a>;  <span class="comment">// NOLINT</span>
-<a name="l00069"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4">00069</a>   <a class="code" href="classoptimization_1_1_vote_aggregator.html" title="Aggregator which returns true if part of true answers from one point stop criteria more than minimal_...">VoteAggregator</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4">aggregator_</a>;
-<a name="l00070"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043">00070</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a78256c3054a52176e53e06eb324bf043">one_point_stop_criterion_</a>;
-<a name="l00071"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10">00071</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10">aggregator_threshold_</a>;
-<a name="l00072"></a>00072 };
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 <span class="comment">// template realization</span>
-<a name="l00075"></a>00075 
-<a name="l00076"></a>00076 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00077"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a0f29f77d6e2a0a6f660f70fdf1bb2b3b">00077</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a0f29f77d6e2a0a6f660f70fdf1bb2b3b">PerPointStopCriterion&lt;TFunction&gt;::init</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population) {
-<a name="l00078"></a>00078   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00079"></a>00079     one_point_stop_criterion_-&gt;clone();
-<a name="l00080"></a>00080   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> iterator = population.<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
-<a name="l00081"></a>00081        iterator != population.<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>();
-<a name="l00082"></a>00082        ++iterator) {
-<a name="l00083"></a>00083      stop_criterion-&gt;init(iterator.point());
-<a name="l00084"></a>00084      one_point_stop_criteria_[iterator.point_id()] = stop_criterion-&gt;clone();
-<a name="l00085"></a>00085   }
-<a name="l00086"></a>00086 }
-<a name="l00087"></a>00087 
-<a name="l00088"></a>00088 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00089"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">00089</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">PerPointStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population) {
-<a name="l00094"></a>00094   <a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> population_iterator = population.<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
-<a name="l00095"></a>00095   <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a49fcf7e2e3ffc3b2a8eb2f190ea103a4">Iterator</a> stop_criteria_iterator = one_point_stop_criteria_.begin();
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097   aggregator_.reset();
-<a name="l00098"></a>00098   <span class="keywordflow">while</span> (stop_criteria_iterator != one_point_stop_criteria_.end() &amp;&amp;
-<a name="l00099"></a>00099           population_iterator != population.<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>()) {
-<a name="l00100"></a>00100     PointId stop_criteria_id = stop_criteria_iterator-&gt;first;
-<a name="l00101"></a>00101     PointId point_id = population_iterator.<a class="code" href="classoptimization_1_1_population_1_1_iterator.html#a66b694217721f065a07a80f3f7961b91">point_id</a>();
-<a name="l00102"></a>00102 
-<a name="l00103"></a>00103     <span class="keywordflow">if</span> (stop_criteria_id &lt; point_id) {
-<a name="l00104"></a>00104       <span class="comment">// Delete old points from one_point_stop_criteria_.</span>
-<a name="l00105"></a>00105       ++stop_criteria_iterator;
-<a name="l00106"></a>00106       removeOnePointStopCriterion(stop_criteria_id);
-<a name="l00107"></a>00107     } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (stop_criteria_id == point_id) {
-<a name="l00108"></a>00108       <span class="comment">// Update ordinary points in one_point_stop_criteria_.</span>
-<a name="l00109"></a>00109       one_point_stop_criteria_[stop_criteria_id]-&gt;update(population_iterator.point());  <span class="comment">// NOLINT</span>
-<a name="l00110"></a>00110 
-<a name="l00111"></a>00111       <span class="keywordtype">bool</span> answer = one_point_stop_criteria_[stop_criteria_id]-&gt;isTrue();
-<a name="l00112"></a>00112       aggregator_.push(answer);
-<a name="l00113"></a>00113 
-<a name="l00114"></a>00114       ++population_iterator;
-<a name="l00115"></a>00115       ++stop_criteria_iterator;
-<a name="l00116"></a>00116     } <span class="keywordflow">else</span> {
-<a name="l00117"></a>00117       <span class="comment">// Add new points to one_point_stop_criteria_.</span>
-<a name="l00118"></a>00118       addOnePointStopCriterion(population_iterator.point(), point_id);
+<a name="l00033"></a>00033   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ad7545e3ec6413ab8279694eec59f46ea">PerPointStopCriterion</a>(
+<a name="l00034"></a>00034       <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> one_point_stop_criterion_sample);  <span class="comment">// NOLINT</span>
+<a name="l00035"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96">00035</a>   <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96">~PerPointStopCriterion</a>() { }
+<a name="l00036"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a45ff2d492b5d770771290c08e43ea9c6">00036</a>   <span class="keyword">typedef</span> <a class="code" href="classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc.">PopulationInfo&lt;OnePointStopCriterion&lt;TFunction&gt;</a> &gt; <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a45ff2d492b5d770771290c08e43ea9c6">StopCriterionInfo</a>;  <span class="comment">// NOLINT</span>
+<a name="l00037"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">00037</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;PerPointStopCriterion&gt;</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a>;
+<a name="l00041"></a>00041   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">init</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population);
+<a name="l00045"></a>00045   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">update</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population);
+<a name="l00052"></a>00052   <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">isTrue</a>();
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">set_function</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>);
+<a name="l00055"></a>00055   <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a51c230e96e145935e9b45a685891ba87">GET_SET</a>(<span class="keywordtype">double</span>, aggregator_threshold);
+<a name="l00056"></a>00056   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00057"></a>00057  <span class="keyword">private</span>:
+<a name="l00061"></a>00061   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a>
+<a name="l00062"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a6121f6cb804563ddecb5bf1dd3a1fb64">00062</a>     <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a6121f6cb804563ddecb5bf1dd3a1fb64">one_point_stop_criterion_sample_</a>;
+<a name="l00066"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#aafe4332b028f3d1aa224ecb3ded41532">00066</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterionInfo::Ptr</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#aafe4332b028f3d1aa224ecb3ded41532">stop_criterion_info_</a>;
+<a name="l00067"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4">00067</a>   <a class="code" href="classoptimization_1_1_vote_aggregator.html" title="Aggregator which returns true if part of true answers from one point stop criteria more than minimal_...">VoteAggregator</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a779a2aa5e983ee5a69173696400f0bd4">aggregator_</a>;
+<a name="l00068"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10">00068</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10">aggregator_threshold_</a>;
+<a name="l00069"></a>00069 };
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="comment">// template realization</span>
+<a name="l00072"></a>00072 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00073"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ad7545e3ec6413ab8279694eec59f46ea">00073</a> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ad7545e3ec6413ab8279694eec59f46ea">PerPointStopCriterion&lt;TFunction&gt;::PerPointStopCriterion</a>(
+<a name="l00074"></a>00074       <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> one_point_stop_criterion_sample)  <span class="comment">// NOLINT</span>
+<a name="l00075"></a>00075       : one_point_stop_criterion_sample_(one_point_stop_criterion_sample),
+<a name="l00076"></a>00076         aggregator_threshold_(1.0) { }
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00079"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">00079</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">PerPointStopCriterion&lt;TFunction&gt;::init</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population) {
+<a name="l00080"></a>00080   stop_criterion_info_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc.">StopCriterionInfo</a>(
+<a name="l00081"></a>00081       population,
+<a name="l00082"></a>00082       one_point_stop_criterion_sample_);
+<a name="l00083"></a>00083 }
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00086"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">00086</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">PerPointStopCriterion&lt;TFunction&gt;::update</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>&amp; population) {
+<a name="l00087"></a>00087   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population.<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
+<a name="l00088"></a>00088        it != population.<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>();
+<a name="l00089"></a>00089        ++it) {
+<a name="l00090"></a>00090     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> one_point_stop_criterion =
+<a name="l00091"></a>00091       stop_criterion_info_-&gt;getInfoById(it.point_id());
+<a name="l00092"></a>00092     one_point_stop_criterion-&gt;update(it.point());
+<a name="l00093"></a>00093   }
+<a name="l00094"></a>00094 }
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00097"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">00097</a> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">PerPointStopCriterion&lt;TFunction&gt;::isTrue</a>() {
+<a name="l00098"></a>00098   aggregator_.reset();
+<a name="l00099"></a>00099   <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code" href="classoptimization_1_1_population_info.html#a455f1c2ff50925f30f329b0b8bbbf227">StopCriterionInfo::Iterator</a> it = stop_criterion_info_-&gt;begin();
+<a name="l00100"></a>00100        it != stop_criterion_info_-&gt;end();
+<a name="l00101"></a>00101        ++it) {
+<a name="l00102"></a>00102     aggregator_.push(it-&gt;second-&gt;isTrue());
+<a name="l00103"></a>00103   }
+<a name="l00104"></a>00104   <span class="keywordflow">return</span> aggregator_.isTrue(aggregator_threshold_);
+<a name="l00105"></a>00105 }
+<a name="l00106"></a>00106 
+<a name="l00107"></a>00107 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00108"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">00108</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">PerPointStopCriterion&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00109"></a>00109   <span class="keywordflow">return</span> <span class="stringliteral">&quot;PerPointStopCriterion_with_&quot;</span> +
+<a name="l00110"></a>00110     one_point_stop_criterion_sample_-&gt;alias();
+<a name="l00111"></a>00111 }
+<a name="l00112"></a>00112 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00113"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">00113</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">PerPointStopCriterion&lt;TFunction&gt;::set_function</a>(
+<a name="l00114"></a>00114     <span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>) {
+<a name="l00115"></a>00115   one_point_stop_criterion_sample_-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00116"></a>00116   this-&gt;function_ = <span class="keyword">function</span>;
+<a name="l00117"></a>00117 }
+<a name="l00118"></a>00118 }
 <a name="l00119"></a>00119 
-<a name="l00120"></a>00120       <span class="keywordtype">bool</span> answer = one_point_stop_criteria_[point_id]-&gt;isTrue();
-<a name="l00121"></a>00121       aggregator_.push(answer);
-<a name="l00122"></a>00122 
-<a name="l00123"></a>00123       ++population_iterator;
-<a name="l00124"></a>00124     }
-<a name="l00125"></a>00125   }
-<a name="l00126"></a>00126 
-<a name="l00127"></a>00127   <span class="keywordflow">if</span> (stop_criteria_iterator == one_point_stop_criteria_.end()) {
-<a name="l00128"></a>00128     <span class="comment">// add points</span>
-<a name="l00129"></a>00129     <span class="keywordflow">while</span> (population_iterator != population.<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>()) {
-<a name="l00130"></a>00130       PointId point_id = population_iterator.point_id();
-<a name="l00131"></a>00131       addOnePointStopCriterion(population_iterator.point(), point_id);
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133       <span class="keywordtype">bool</span> answer = one_point_stop_criteria_[point_id]-&gt;isTrue();
-<a name="l00134"></a>00134       aggregator_.push(answer);
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136       ++population_iterator;
-<a name="l00137"></a>00137     }
-<a name="l00138"></a>00138   } <span class="keywordflow">else</span> {
-<a name="l00139"></a>00139     <span class="comment">// delete points</span>
-<a name="l00140"></a>00140     <span class="keywordflow">while</span> (stop_criteria_iterator != one_point_stop_criteria_.end()) {
-<a name="l00141"></a>00141       one_point_stop_criteria_.erase(
-<a name="l00142"></a>00142           (++stop_criteria_iterator)-&gt;first);
-<a name="l00143"></a>00143     }
-<a name="l00144"></a>00144   }
-<a name="l00145"></a>00145 }
-<a name="l00146"></a>00146 
-<a name="l00147"></a>00147 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00148"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">00148</a> <span class="keywordtype">bool</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">PerPointStopCriterion&lt;TFunction&gt;::isTrue</a>() {
-<a name="l00149"></a>00149   <span class="keywordflow">return</span> aggregator_.isTrue(aggregator_threshold_);
-<a name="l00150"></a>00150 }
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00153"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a9049f224c090390fe51a66736dfeb913">00153</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a9049f224c090390fe51a66736dfeb913">PerPointStopCriterion&lt;TFunction&gt;::addOnePointStopCriterion</a>(<span class="keyword">const</span> Point&amp; point,  <span class="comment">// NOLINT</span>
-<a name="l00154"></a>00154                                                                 PointId point_id) {  <span class="comment">// NOLINT</span>
-<a name="l00155"></a>00155   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">OnePointStopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion =
-<a name="l00156"></a>00156     one_point_stop_criterion_-&gt;clone();
-<a name="l00157"></a>00157   stop_criterion-&gt;init(point);
-<a name="l00158"></a>00158   one_point_stop_criteria_[point_id] = stop_criterion;
-<a name="l00159"></a>00159 }
-<a name="l00160"></a>00160 
-<a name="l00161"></a>00161 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00162"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a3955a00f5e4beac82621e5848ef83b9e">00162</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a3955a00f5e4beac82621e5848ef83b9e">PerPointStopCriterion&lt;TFunction&gt;::removeOnePointStopCriterion</a>(PointId point_id) {  <span class="comment">// NOLINT</span>
-<a name="l00163"></a>00163   one_point_stop_criteria_.erase(point_id);
-<a name="l00164"></a>00164 }
-<a name="l00165"></a>00165 
-<a name="l00166"></a>00166 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
-<a name="l00167"></a><a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">00167</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">PerPointStopCriterion&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00168"></a>00168   <span class="keywordflow">return</span> <span class="stringliteral">&quot;PerPointStopCriterion_with_&quot;</span> + one_point_stop_criterion_-&gt;alias();
-<a name="l00169"></a>00169 }
-<a name="l00170"></a>00170 }
-<a name="l00171"></a>00171 
-<a name="l00172"></a>00172 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_PER_POINT_STOP_CRITERION_HPP_</span>
+<a name="l00120"></a>00120 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_STOP_CRITERIA_PER_POINT_STOP_CRITERION_HPP_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:22 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

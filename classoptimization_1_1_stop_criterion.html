@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::StopCriterion&lt; TFunction &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -136,14 +136,16 @@ Public Types</h2></td></tr>
 &lt; <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a099003349b28dc0b526b2be5ea39fd58">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa93264859c4bf4d298061f57f09d3885"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#aa93264859c4bf4d298061f57f09d3885">StopCriterion</a> (typename TFunction::Ptr function)</td></tr>
+<tr class="memitem:aa17014136127a9be0d199b881e877b2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#aa17014136127a9be0d199b881e877b2a">StopCriterion</a> ()</td></tr>
 <tr class="memitem:a5f5f49f22c6bdcd6245fffcbc696caef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a5f5f49f22c6bdcd6245fffcbc696caef">~StopCriterion</a> ()</td></tr>
-<tr class="memitem:a2ceb2cd39dc862acf10c6afd935415fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a2ceb2cd39dc862acf10c6afd935415fa">init</a> (const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;population)=0</td></tr>
+<tr class="memitem:a58983c2c4607d609190d9ff187a021aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a58983c2c4607d609190d9ff187a021aa">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population)=0</td></tr>
 <tr class="memitem:a632b5261ce1daf2eebb604edcf77e08d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a632b5261ce1daf2eebb604edcf77e08d">update</a> (const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;population)=0</td></tr>
 <tr class="memitem:a726ee81ef16dc8709775df0cd54a0a29"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a726ee81ef16dc8709775df0cd54a0a29">isTrue</a> ()=0</td></tr>
+<tr class="memitem:a862b875dc4c89755807eb61f9b904933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a862b875dc4c89755807eb61f9b904933">set_function</a> (typename TFunction::Ptr <a class="el" href="classoptimization_1_1_stop_criterion.html#a7b7fcaa5d3f8d6518271493d5c718c40">function</a>)=0</td></tr>
+<tr class="memitem:a7b7fcaa5d3f8d6518271493d5c718c40"><td class="memItemLeft" align="right" valign="top">virtual TFunction::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a7b7fcaa5d3f8d6518271493d5c718c40">function</a> ()</td></tr>
 <tr class="memitem:a7cca681d18684ce24fbe65ce80d65706"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a7cca681d18684ce24fbe65ce80d65706">getDefaultAlias</a> () const </td></tr>
-<tr><td colspan="2"><h2><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a70e32c7f2aefe0c922a8b90da85ba008"><td class="memItemLeft" align="right" valign="top">TFunction::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_stop_criterion.html#a70e32c7f2aefe0c922a8b90da85ba008">function_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -177,7 +179,7 @@ template&lt;class TFunction &gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa93264859c4bf4d298061f57f09d3885"></a>
+<a class="anchor" id="aa17014136127a9be0d199b881e877b2a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -186,8 +188,7 @@ template&lt;class TFunction &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a> </td>
           <td>(</td>
-          <td class="paramtype">typename TFunction::Ptr&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td><code> [inline, explicit]</code></td>
         </tr>
       </table>
@@ -215,6 +216,24 @@ template&lt;class TFunction &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a7b7fcaa5d3f8d6518271493d5c718c40"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual TFunction::Ptr <a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html#a7b7fcaa5d3f8d6518271493d5c718c40">function</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7cca681d18684ce24fbe65ce80d65706"></a>
 <div class="memitem">
 <div class="memproto">
@@ -237,16 +256,16 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2ceb2cd39dc862acf10c6afd935415fa"></a>
+<a class="anchor" id="a58983c2c4607d609190d9ff187a021aa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html#a2ceb2cd39dc862acf10c6afd935415fa">init</a> </td>
+          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html#a58983c2c4607d609190d9ff187a021aa">init</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classoptimization_1_1_population.html">Population</a> *&#160;</td>
           <td class="paramname"><em>population</em></td><td>)</td>
           <td><code> [pure virtual]</code></td>
         </tr>
@@ -255,7 +274,7 @@ template&lt;class TFunction &gt; </div>
 <div class="memdoc">
 <p>Init data for future test of population. </p>
 
-<p>Implemented in <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a0f29f77d6e2a0a6f660f70fdf1bb2b3b">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -277,6 +296,27 @@ template&lt;class TFunction &gt; </div>
 <p>Is this stop criterion true. </p>
 
 <p>Implemented in <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a862b875dc4c89755807eb61f9b904933"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html#a862b875dc4c89755807eb61f9b904933">set_function</a> </td>
+          <td>(</td>
+          <td class="paramtype">typename TFunction::Ptr&#160;</td>
+          <td class="paramname"><em>function</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implemented in <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">optimization::PerPointStopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -310,7 +350,7 @@ template&lt;class TFunction &gt; </div>
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">TFunction::Ptr <a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html#a70e32c7f2aefe0c922a8b90da85ba008">function_</a><code> [private]</code></td>
+          <td class="memname">TFunction::Ptr <a class="el" href="classoptimization_1_1_stop_criterion.html">optimization::StopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_stop_criterion.html#a70e32c7f2aefe0c922a8b90da85ba008">function_</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -325,7 +365,7 @@ template&lt;class TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 15:53:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 16:39:27 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

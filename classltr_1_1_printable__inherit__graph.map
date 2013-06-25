@@ -10,20 +10,20 @@
 <area shape="rect" href="$classltr_1_1_data_set.html" title="Template class that implements DataSet." alt="" coords="200,512,365,539"/>
 <area shape="rect" href="$classltr_1_1_feature_converter.html" title="A base class for feature converters." alt="" coords="213,563,352,589"/>
 <area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="153,867,412,893"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="199,1297,367,1324"/>
-<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="244,1348,321,1375"/>
-<area shape="rect" href="$classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet..." alt="" coords="233,1399,332,1425"/>
-<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="232,1449,333,1476"/>
-<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="201,1500,364,1527"/>
-<area shape="rect" href="$classltr_1_1_scorer.html" title="Class that can for every object evaluate a value &#45; its rank, or score." alt="" coords="244,1677,321,1704"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="191,1728,375,1755"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_safe_map.html" title="std::map with some safe methods." alt="" coords="187,1779,379,1805"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_safe_set.html" title="Set with some safe methods." alt="" coords="205,1829,360,1856"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="207,1880,359,1907"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="193,1931,372,1957"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; double, 4 \&gt;" alt="" coords="176,1981,389,2008"/>
-<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="187,2032,379,2059"/>
-<area shape="rect" href="$class_test_printable.html" title="TestPrintable" alt="" coords="235,2083,331,2109"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="199,1323,367,1349"/>
+<area shape="rect" href="$classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa..." alt="" coords="244,1373,321,1400"/>
+<area shape="rect" href="$classltr_1_1_object_list.html" title="The class stores a number of objects. The container for number of objects, can be stored in DataSet..." alt="" coords="233,1424,332,1451"/>
+<area shape="rect" href="$classltr_1_1_object_pair.html" title="The class stores a pair of two objects. The container for two objects, can be stored in DataSet..." alt="" coords="232,1475,333,1501"/>
+<area shape="rect" href="$classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD&#45;type parameters and u..." alt="" coords="201,1525,364,1552"/>
+<area shape="rect" href="$classltr_1_1_scorer.html" title="Class that can for every object evaluate a value &#45; its rank, or score." alt="" coords="244,1576,321,1603"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; T, N \&gt;" alt="" coords="191,1627,375,1653"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_safe_map.html" title="std::map with some safe methods." alt="" coords="187,1677,379,1704"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_safe_set.html" title="Set with some safe methods." alt="" coords="205,1728,360,1755"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="207,1779,359,1805"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="193,1829,372,1856"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_multi_table.html" title="ltr::utility::MultiTable\&lt; double, 4 \&gt;" alt="" coords="176,1880,389,1907"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="187,1931,379,1957"/>
+<area shape="rect" href="$class_test_printable.html" title="TestPrintable" alt="" coords="235,1981,331,2008"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_k_fold_simple_splitter.html" title="ltr::cv::KFoldSimpleSplitter\&lt; TElement \&gt;" alt="" coords="556,5,809,32"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_leave_one_out_splitter.html" title="Splits leaving only one test object." alt="" coords="553,56,812,83"/>
 <area shape="rect" href="$classltr_1_1cv_1_1_t_k_fold_simple_splitter.html" title="ltr::cv::TKFoldSimpleSplitter\&lt; TElement \&gt;" alt="" coords="552,107,813,133"/>
@@ -66,14 +66,14 @@
 <area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="565,1525,800,1552"/>
 <area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="599,1576,767,1603"/>
 <area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="576,1627,789,1653"/>
-<area shape="rect" href="$classltr_1_1_bayesian_scorer.html" title="ltr::BayesianScorer" alt="" coords="617,1677,748,1704"/>
-<area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer.html" title="ltr::composition::CompositionScorer" alt="" coords="569,1728,796,1755"/>
-<area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree_scorer.html" title="ltr::decision_tree::DecisionTreeScorer" alt="" coords="564,1779,801,1805"/>
-<area shape="rect" href="$classltr_1_1_fake_scorer.html" title="ltr::FakeScorer" alt="" coords="629,1829,736,1856"/>
-<area shape="rect" href="$classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e..." alt="" coords="623,1880,743,1907"/>
-<area shape="rect" href="$classltr_1_1_linear_scorer.html" title="ltr::LinearScorer" alt="" coords="627,1931,739,1957"/>
-<area shape="rect" href="$classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator..." alt="" coords="635,1981,731,2008"/>
-<area shape="rect" href="$classltr_1_1_one_feature_scorer.html" title="ltr::OneFeatureScorer" alt="" coords="609,2032,756,2059"/>
-<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError" alt="" coords="625,2083,740,2109"/>
-<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint" alt="" coords="635,2133,731,2160"/>
+<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError\&lt; Object \&gt;" alt="" coords="593,1677,772,1704"/>
+<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint\&lt; Object \&gt;" alt="" coords="604,1728,761,1755"/>
+<area shape="rect" href="$classltr_1_1_bayesian_scorer.html" title="ltr::BayesianScorer" alt="" coords="617,1779,748,1805"/>
+<area shape="rect" href="$classltr_1_1composition_1_1_composition_scorer.html" title="ltr::composition::CompositionScorer" alt="" coords="569,1829,796,1856"/>
+<area shape="rect" href="$classltr_1_1decision__tree_1_1_decision_tree_scorer.html" title="ltr::decision_tree::DecisionTreeScorer" alt="" coords="564,1880,801,1907"/>
+<area shape="rect" href="$classltr_1_1_fake_scorer.html" title="ltr::FakeScorer" alt="" coords="629,1931,736,1957"/>
+<area shape="rect" href="$classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e..." alt="" coords="623,1981,743,2008"/>
+<area shape="rect" href="$classltr_1_1_linear_scorer.html" title="ltr::LinearScorer" alt="" coords="627,2032,739,2059"/>
+<area shape="rect" href="$classltr_1_1_n_n_scorer.html" title="The class prepresents Scorer for NNLearner. It contains the learning data set, pointers to aggregator..." alt="" coords="635,2083,731,2109"/>
+<area shape="rect" href="$classltr_1_1_one_feature_scorer.html" title="ltr::OneFeatureScorer" alt="" coords="609,2133,756,2160"/>
 </map>
