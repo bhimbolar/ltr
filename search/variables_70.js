@@ -11,7 +11,7 @@ var searchData=
   ['positive_5fnormal_5f',['positive_normal_',['../classoptimization_1_1_linear_inequality_set.html#a38034e8880ffa4eb0586c4a11f73d994',1,'optimization::LinearInequalitySet']]],
   ['power_5f',['power_',['../classltr_1_1utility_1_1_inverse_power_distance.html#a95e1845c7fc1ce7195c63988f4113f66',1,'ltr::utility::InversePowerDistance']]],
   ['precision',['precision',['../classltr_1_1gp_1_1_ephemeral.html#a96e9dca79a6bb4f910bc7873fa8bde2b',1,'ltr::gp::Ephemeral::precision()'],['../numerical__unittest_8cc.html#a4f214e901f7e6a79fe34cb2cdc0b071e',1,'precision():&#160;numerical_unittest.cc']]],
-  ['precision_5f',['precision_',['../classoptimization_1_1_polyhedron_set.html#a74feb283b4069d783ab41e87db5f771b',1,'optimization::PolyhedronSet']]],
+  ['precision_5f',['precision_',['../classoptimization_1_1_polyhedron_set.html#a74feb283b4069d783ab41e87db5f771b',1,'optimization::PolyhedronSet::precision_()'],['../classltr_1_1utility_1_1_lexical_cast_config.html#ae2b8ded1323a63f40a710087da0b18a5',1,'ltr::utility::LexicalCastConfig::precision_()']]],
   ['predict_5fexecutor',['predict_executor',['../class_on_train_tag.html#ab552c611a6a1b7823ced91e2ec55a081',1,'OnTrainTag']]],
   ['predicted',['predicted',['../structltr_1_1utility_1_1_predicted_and_actual_labels.html#aed445c05e64cae71203ea2d26225b6ab',1,'ltr::utility::PredictedAndActualLabels']]],
   ['predicted_5flabel_5f',['predicted_label_',['../classltr_1_1_stand_alone_object_representation.html#a2115f6522438c68eb32ec641dc1b3a81',1,'ltr::StandAloneObjectRepresentation']]],

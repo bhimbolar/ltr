@@ -267,9 +267,9 @@ Example</h2>
 Linear scorer with coefficients: [10.00, 1.00, 1.00], has no feature converters
 
 <span class="keywordtype">double</span> score(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; features) {
-  <span class="keywordtype">double</span> output = 9.999999999993;
-  output += 0.999999999995 * features[0];
-  output += 1.000000000004 * features[1];
+  <span class="keywordtype">double</span> output = 10;
+  output += 1 * features[0];
+  output += 1 * features[1];
   <span class="keywordflow">return</span> output;
 }
 
@@ -288,7 +288,7 @@ f(x, y) = 10 + 1 * x + 1 * y
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 25 2013 16:39:25 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 25 2013 17:08:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

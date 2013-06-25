@@ -1,20 +1,21 @@
 <map id="G" name="G">
-<area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="1236,80,1556,107"/>
-<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="1245,229,1547,256"/>
-<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1917,80,2056,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="253,304,432,331"/>
-<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="913,155,1084,181"/>
-<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="1301,155,1491,181"/>
-<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="225,379,492,405"/>
+<area shape="rect" href="$predictions__aggregator_8h.html" title="ltr/predictions_aggregators/predictions_aggregator.h" alt="" coords="680,80,1000,107"/>
+<area shape="rect" href="$parameters__container_8h.html" title="ltr/parameters_container/parameters_container.h" alt="" coords="248,229,549,256"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="1961,80,2100,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="364,304,543,331"/>
+<area shape="rect" href="$serializable_8h.html" title="ltr/interfaces/serializable.h" alt="" coords="755,155,925,181"/>
+<area shape="rect" href="$parameterized_8h.html" title="ltr/interfaces/parameterized.h" alt="" coords="399,155,588,181"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="307,379,573,405"/>
 <area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="59,453,221,480"/>
 <area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="517,453,629,480"/>
-<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="861,453,909,480"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="653,453,701,480"/>
 <area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="245,453,336,480"/>
 <area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="360,453,493,480"/>
 <area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="5,528,144,555"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="717,229,861,256"/>
-<area shape="rect" href="$lexical__cast_8hpp.html" title="ltr/utility/boost/lexical_cast.hpp" alt="" coords="899,229,1099,256"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="965,304,1120,331"/>
-<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="557,304,739,331"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="1144,304,1283,331"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="713,229,857,256"/>
+<area shape="rect" href="$lexical__cast_8hpp.html" title="ltr/utility/boost/lexical_cast.hpp" alt="" coords="1028,229,1228,256"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1249,304,1404,331"/>
+<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="1580,304,1761,331"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="668,304,807,331"/>
+<area shape="rect" href="$lexical__cast__config_8hpp.html" title="ltr/utility/boost/lexical_cast_config.hpp" alt="" coords="983,304,1225,331"/>
 </map>

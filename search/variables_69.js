@@ -14,6 +14,7 @@ var searchData=
   ['inner_5frepresentation_5f',['inner_representation_',['../classltr_1_1_data_set.html#aa14aab56cd6e18575fa97bfc341a6e79',1,'ltr::DataSet']]],
   ['input_5ffeature_5finfo_5f',['input_feature_info_',['../classltr_1_1_feature_converter.html#a80d3fcbc090e5777e1244bf272c82fe7',1,'ltr::FeatureConverter']]],
   ['instance',['instance',['../classltr_1_1utility_1_1_multi_table_1_1_iterator.html#a7e2a0c039bc4dd7dcf3a2b2edb511e04',1,'ltr::utility::MultiTable::Iterator']]],
+  ['instance_5f',['instance_',['../classltr_1_1utility_1_1_lexical_cast_config.html#a8eddca949a970b8b092fe889c59587c8',1,'ltr::utility::LexicalCastConfig']]],
   ['is_5ffirst_5fiteration_5f',['is_first_iteration_',['../classoptimization_1_1_conjugate_direction_calculator.html#ab731ac6baeb53e4cca17dd3b890c7a63',1,'optimization::ConjugateDirectionCalculator']]],
   ['is_5ftrue_5f',['is_true_',['../classoptimization_1_1_one_point_stop_criterion.html#a7a04d4923c5b93467d7902362c182547',1,'optimization::OnePointStopCriterion']]],
   ['items_5f',['items_',['../classltr_1_1_vectorized.html#a4d94faf10000eed0e1af0a2eecd75769',1,'ltr::Vectorized']]]

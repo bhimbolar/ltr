@@ -9,6 +9,7 @@ var searchData=
   ['learner_3c_20objecttype_20_3e',['Learner< ObjectType >',['../classltr_1_1_learner.html',1,'ltr']]],
   ['learnerstest',['LearnersTest',['../class_learners_test.html',1,'']]],
   ['leaveoneoutsplitter',['LeaveOneOutSplitter',['../classltr_1_1cv_1_1_leave_one_out_splitter.html',1,'ltr::cv']]],
+  ['lexicalcastconfig',['LexicalCastConfig',['../classltr_1_1utility_1_1_lexical_cast_config.html',1,'ltr::utility']]],
   ['linearcompositiontest',['LinearCompositionTest',['../class_linear_composition_test.html',1,'']]],
   ['linearconverter',['LinearConverter',['../classltr_1_1_linear_converter.html',1,'ltr']]],
   ['linearfunction',['LinearFunction',['../classoptimization_1_1_linear_function.html',1,'optimization']]],
