@@ -2,6 +2,7 @@ var searchData=
 [
   ['center_5f',['center_',['../classoptimization_1_1_ball_set.html#a59132065b28296268910d131006553e8',1,'optimization::BallSet::center_()'],['../classoptimization_1_1_sphere_set.html#a0e7cce7f887bfcb1ea1c30494db2dc33',1,'optimization::SphereSet::center_()']]],
   ['childrens_5f',['childrens_',['../classltr_1_1decision__tree_1_1_vertex.html#aa50005c75a5e02f361e11e63f5ceac94',1,'ltr::decision_tree::Vertex']]],
+  ['col_5fspacing',['COL_SPACING',['../classltr_1_1utility_1_1_multi_table.html#a6f4acf232ab2c2c14664d3f7ede3e307',1,'ltr::utility::MultiTable']]],
   ['components_5fcount_5f',['components_count_',['../classltr_1_1_fixed_number_of_components_rule.html#a618856e6ea4e0bf4916057ce6f10fbc1',1,'ltr::FixedNumberOfComponentsRule']]],
   ['composition_5fscorer_5fweights_5fupdater_5f',['composition_scorer_weights_updater_',['../classltr_1_1composition_1_1_composition_learner.html#a4536acc974099207e1f5712267eab00a',1,'ltr::composition::CompositionLearner']]],
   ['conditions_5f',['conditions_',['../classltr_1_1decision__tree_1_1_vertex.html#a76262f0fe077477f13e92562cc83ba63',1,'ltr::decision_tree::Vertex']]],
