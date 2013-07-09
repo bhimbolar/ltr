@@ -1,6 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$classltr_1_1_number_of_components_rule.html" title="Strategy for calculating number of principal components to be used." alt="" coords="5,56,203,83"/>
-<area shape="rect" href="$classltr_1_1_broken_stick_rule.html" title="Broken stick rule for optimal number of principal components calculation." alt="" coords="297,5,433,32"/>
-<area shape="rect" href="$classltr_1_1_fixed_number_of_components_rule.html" title="Number of components rule which returns fixed number, given from constructor of this class..." alt="" coords="251,56,480,83"/>
-<area shape="rect" href="$classltr_1_1_kaiser_rule.html" title="Kaiser rule for optimal number of principal components calculation." alt="" coords="313,107,417,133"/>
+<area shape="rect" href="$classltr_1_1_object_representation.html" title="ltr::ObjectRepresentation" alt="" coords="5,31,171,57"/>
+<area shape="rect" href="$classltr_1_1_data_set_object_representation.html" title="Class for presenting column in the matrix as an object." alt="" coords="229,5,440,32"/>
+<area shape="rect" href="$classltr_1_1_stand_alone_object_representation.html" title="class for presenting Eigen::VectorXd as an object." alt="" coords="219,56,451,83"/>
 </map>

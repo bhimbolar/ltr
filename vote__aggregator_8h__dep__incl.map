@@ -1,6 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="153,80,500,107"/>
-<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="376,155,699,181"/>
-<area shape="rect" href="$vote__aggregator_8cc.html" title="ltr/optimization/stop_criteria/vote_aggregator.cc" alt="" coords="575,80,868,107"/>
+<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="671,80,1017,107"/>
+<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="992,155,1315,181"/>
+<area shape="rect" href="$vote__aggregator_8cc.html" title="ltr/optimization/stop_criteria/vote_aggregator.cc" alt="" coords="1141,80,1435,107"/>
 <area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="5,155,352,181"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="376,155,696,181"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="720,155,968,181"/>
 </map>

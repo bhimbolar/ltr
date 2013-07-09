@@ -157,7 +157,9 @@ RSM</h3>
 <tr>
 <th>Example: Random Subspace Method </th><th>Output:</th></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">// NOLINT</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
@@ -177,49 +179,54 @@ RSM</h3>
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
   srand(14);
 
-  DataSet&lt;Object&gt; dataset(3); <span class="comment">// dataset with 3 features</span>
-  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; ++i) { <span class="comment">// 20 elements</span>
+  DataSet&lt;Object&gt; dataset(3);  <span class="comment">// dataset with 3 features</span>
+  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; ++i) {  <span class="comment">// 20 elements</span>
     Object current;
-    current &lt;&lt; rand() &lt;&lt; rand() &lt;&lt; rand(); <span class="comment">// random features</span>
-    current.set_actual_label(rand()); <span class="comment">// random labels</span>
+    current &lt;&lt; rand() &lt;&lt; rand() &lt;&lt; rand();  <span class="comment">// random features // NOLINT</span>
+    current.set_actual_label(rand());  <span class="comment">// random labels // NOLINT</span>
     dataset &lt;&lt; current;
   }
 
   <span class="comment">// by default composition learner is linear</span>
-  CompositionLearner&lt;Object&gt; linear_composition_learner;
+  CompositionLearner&lt;Object&gt;::Ptr linear_composition_learner(
+      <span class="keyword">new</span> CompositionLearner&lt;Object&gt;);
 
-  <a class="code" href="classltr_1_1_measure.html#a6a7879699e2e550f40ecae5cb3f1397d">AbsError::Ptr</a> abs_error(<span class="keyword">new</span> AbsError); <span class="comment">// ::Ptr means a shared pointer wherever in LTR</span>
+  AbsError::Ptr abs_error(<span class="keyword">new</span> AbsError);  <span class="comment">//</span>
+  <span class="comment">// ::Ptr means a shared pointer wherever in LTR</span>
 
-  FeatureRandomSamplerLearner&lt;Object&gt;::Ptr rsm(<span class="keyword">new</span> FeatureRandomSamplerLearner&lt;Object&gt;);
-  BestFeatureLearner&lt;Object&gt;::Ptr best_feature_learner(<span class="keyword">new</span> BestFeatureLearner&lt;Object&gt;(abs_error));
+  FeatureRandomSamplerLearner&lt;Object&gt;::Ptr rsm(
+      <span class="keyword">new</span> FeatureRandomSamplerLearner&lt;Object&gt;);
+  BestFeatureLearner&lt;Object&gt;::Ptr best_feature_learner(
+      <span class="keyword">new</span> BestFeatureLearner&lt;Object&gt;(abs_error));
   best_feature_learner-&gt;add_feature_converter_learner(rsm);
 
-  linear_composition_learner.set_weak_learner(best_feature_learner);
+  linear_composition_learner-&gt;set_weak_learner(best_feature_learner);
 
-  linear_composition_learner.learn(dataset);
-  CompositionScorer::Ptr linear_composition_scorer = linear_composition_learner.makeSpecific();
+  linear_composition_learner-&gt;learn(dataset);
+  CompositionScorer::Ptr linear_composition_scorer =
+    linear_composition_learner-&gt;makeSpecific();
 
   std::cout &lt;&lt; *linear_composition_scorer;
 }
 </pre></div> </td><td><div class="fragment"><pre class="fragment">CompositionScorer, including:
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [1] [1]
-  Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [2] [1]
+[0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
 [0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [2] [1]
+[0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
 [0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [2] [1]
+[0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [2] [1]
+[0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [2] [1]
+[0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
-[0] Feature sampler with indices: [1] [1]
+[0] Feature sampler with indices: [0] [1]
+  Scorer, which takes feature no. 0, initially applies 1 feature converters:
+[0] Feature sampler with indices: [0] [1]
   Scorer, which takes feature no. 0, initially applies 1 feature converters:
 [0] Feature sampler with indices: [0] [1]
 , has no feature converters
@@ -230,8 +237,8 @@ Classic AdaBoost</h3>
 <p>This example represents a classic AdaBoost composition algorithm (see <a href="http://www.robots.ox.ac.uk/~az/lectures/cv/adaboost_matas.pdf">http://www.robots.ox.ac.uk/~az/lectures/cv/adaboost_matas.pdf</a>) on the best feature learner.</p>
 <div class="fragment"><pre class="fragment">CompositionLearner&lt;Object, LinearCompositionScorer&gt; linear_composition_learner(5); <span class="comment">// 5 is the nunber of iterations</span>
 
-<a class="code" href="classltr_1_1_measure.html#a6a7879699e2e550f40ecae5cb3f1397d">BinaryClassificationMargin::Ptr</a> binary_classification_margin(<span class="keyword">new</span> BinaryClassificationMargin);
-<a class="code" href="classltr_1_1_measure.html#a6a7879699e2e550f40ecae5cb3f1397d">BinaryClassificationAccuracy::Ptr</a> binary_classification_accuracy(<span class="keyword">new</span> BinaryClassificationAccuracy);
+BinaryClassificationMargin::Ptr binary_classification_margin(<span class="keyword">new</span> BinaryClassificationMargin);
+BinaryClassificationAccuracy::Ptr binary_classification_accuracy(<span class="keyword">new</span> BinaryClassificationAccuracy);
 
 AdaRankScorerWeightsUpdater&lt;Object, LinearCompositionScorer&gt;::Ptr
   ada_rank_scorer_weights_updater(<span class="keyword">new</span> AdaRankScorerWeightsUpdater&lt;Object, LinearCompositionScorer&gt;);
@@ -253,7 +260,7 @@ std::cout &lt;&lt; *linear_composition_scorer;
 </pre></div><p>Also, the very same thing can be done in a shorter way:</p>
 <div class="fragment"><pre class="fragment">AdaBoostLearner ada_learner(5);
 
-<a class="code" href="classltr_1_1_measure.html#a6a7879699e2e550f40ecae5cb3f1397d">BinaryClassificationAccuracy::Ptr</a> binary_classification_accuracy(<span class="keyword">new</span> BinaryClassificationAccuracy);
+BinaryClassificationAccuracy::Ptr binary_classification_accuracy(<span class="keyword">new</span> BinaryClassificationAccuracy);
 BestFeatureLearner&lt;Object&gt;::Ptr bf_learner(<span class="keyword">new</span> BestFeatureLearner&lt;Object&gt;(binary_classification_accuracy));
 ada_learner.set_weak_learner(bf_learner);
 
@@ -265,7 +272,7 @@ std::cout &lt;&lt; *ada_scorer;
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

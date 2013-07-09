@@ -1,5 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" href="$classltr_1_1_object_representation.html" title="ltr::ObjectRepresentation" alt="" coords="5,31,171,57"/>
-<area shape="rect" href="$classltr_1_1_data_set_object_representation.html" title="Class for presenting column in the matrix as an object." alt="" coords="229,5,440,32"/>
-<area shape="rect" href="$classltr_1_1_stand_alone_object_representation.html" title="class for presenting Eigen::VectorXd as an object." alt="" coords="219,56,451,83"/>
+<area shape="rect" href="$structltr_1_1_one_feature_info.html" title="ltr::OneFeatureInfo" alt="" coords="5,5,133,32"/>
 </map>

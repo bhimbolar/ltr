@@ -132,16 +132,12 @@ Inheritance diagram for ltr::FeatureConverter:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac7e70cea2b5abeb4011ae543afe871cd"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_feature_converter.html">FeatureConverter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">Ptr</a></td></tr>
 <tr class="memitem:a004ebddba27b5b4b9f4a53552ca29fac"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; const <a class="el" href="classltr_1_1_feature_converter.html">FeatureConverter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter.html#a004ebddba27b5b4b9f4a53552ca29fac">ConstPtr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32d28d9da573bd6c361836ab89026935"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter.html#a32d28d9da573bd6c361836ab89026935">FeatureConverter</a> (const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;input_feature_info=<a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>())</td></tr>
-<tr class="memitem:af6a63ecc2b0cd26e0684fab48f2db9e1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter.html#af6a63ecc2b0cd26e0684fab48f2db9e1">~FeatureConverter</a> ()</td></tr>
 <tr class="memitem:a01be2fe42ca3a56aedd626b713f5882d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter.html#a01be2fe42ca3a56aedd626b713f5882d">GET_SET</a> (<a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>, input_feature_info)</td></tr>
 <tr class="memitem:ab09d9fb6c21d9b4bec42229c8fbf0bac"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter.html#ab09d9fb6c21d9b4bec42229c8fbf0bac">convertFeatureInfo</a> () const =0</td></tr>
 <tr class="memitem:a70f27b5df60d7c3bc6bc2cb0e62173d6"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
@@ -176,24 +172,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac7e70cea2b5abeb4011ae543afe871cd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_feature_converter.html">FeatureConverter</a>&gt; <a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">ltr::FeatureConverter::Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">ltr::Serializable</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classltr_1_1_feature_sampler.html#a62c8126bba0996784b6ae827db3fc363">ltr::FeatureSampler</a>, <a class="el" href="classltr_1_1_nan_to_neutral_converter.html#a71f551d9d145eb81d323ac9f9326bfe4">ltr::NanToNeutralConverter</a>, <a class="el" href="classltr_1_1_fake_feature_converter.html#a5d977a44d9a69c4b9d0349e4f0a82da8">ltr::FakeFeatureConverter</a>, <a class="el" href="classltr_1_1_linear_converter.html#a2d9214c11c311c4ff6570e00b157535e">ltr::LinearConverter</a>, <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a19e19b0b07999a773e0ad35f83d6e4a8">ltr::PerFeatureLinearConverter</a>, <a class="el" href="classltr_1_1_remove_nominal_converter.html#a54c14c5bb7feca9100f2b7105e34d90c">ltr::RemoveNominalConverter</a>, and <a class="el" href="classltr_1_1_nominal_to_bool_converter.html#a00f8809a807ec8d154e73d50c6e955c7">ltr::NominalToBoolConverter</a>.</p>
-
-</div>
-</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a32d28d9da573bd6c361836ab89026935"></a>
 <div class="memitem">
@@ -205,22 +183,6 @@ Private Member Functions</h2></td></tr>
           <td class="paramtype">const <a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>input_feature_info</em> = <code><a class="el" href="classltr_1_1_feature_info.html">FeatureInfo</a>()</code></td><td>)</td>
           <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af6a63ecc2b0cd26e0684fab48f2db9e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classltr_1_1_feature_converter.html#af6a63ecc2b0cd26e0684fab48f2db9e1">ltr::FeatureConverter::~FeatureConverter</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -345,7 +307,7 @@ template&lt;class TElement &gt; </div>
 <div class="memdoc">
 <p>Fills output_feature_info_ (<a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a> may have another <a class="el" href="classltr_1_1_feature_info.html" title="Class is storing info about all features.">FeatureInfo</a> after convertion, e.g. <a class="el" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a> may change the number of <a class="el" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a> features) </p>
 
-<p>Implemented in <a class="el" href="classltr_1_1_feature_sampler.html#abaa848809a9077c861a2469c15650154">ltr::FeatureSampler</a>, <a class="el" href="classltr_1_1_nan_to_neutral_converter.html#acd1fadc4a6ff7ce2b32457f9b744a486">ltr::NanToNeutralConverter</a>, <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a7d30c566b50b7ef5ebae8c110dbc231d">ltr::PerFeatureLinearConverter</a>, <a class="el" href="classltr_1_1_linear_converter.html#a8e40692dc8e8e0863c08243972ce5f16">ltr::LinearConverter</a>, <a class="el" href="classltr_1_1_fake_feature_converter.html#a5ba3cd7cffd751d87aa97698c0196c6d">ltr::FakeFeatureConverter</a>, <a class="el" href="classltr_1_1_remove_nominal_converter.html#ac9d16ac27574fb77abef1bfa7641c45b">ltr::RemoveNominalConverter</a>, and <a class="el" href="classltr_1_1_nominal_to_bool_converter.html#ad6b5c0151bee5498be79db4c7b03c0ba">ltr::NominalToBoolConverter</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1_feature_sampler.html#abaa848809a9077c861a2469c15650154">ltr::FeatureSampler</a>, <a class="el" href="classltr_1_1_nan_to_neutral_converter.html#acd1fadc4a6ff7ce2b32457f9b744a486">ltr::NanToNeutralConverter</a>, <a class="el" href="classltr_1_1_per_feature_linear_converter.html#a7d30c566b50b7ef5ebae8c110dbc231d">ltr::PerFeatureLinearConverter</a>, <a class="el" href="classltr_1_1_linear_converter.html#a8e40692dc8e8e0863c08243972ce5f16">ltr::LinearConverter</a>, <a class="el" href="classltr_1_1_fake_feature_converter.html#a5ba3cd7cffd751d87aa97698c0196c6d">ltr::FakeFeatureConverter</a>, <a class="el" href="classltr_1_1_nominal_to_bool_converter.html#ad6b5c0151bee5498be79db4c7b03c0ba">ltr::NominalToBoolConverter</a>, and <a class="el" href="classltr_1_1_remove_nominal_converter.html#ac9d16ac27574fb77abef1bfa7641c45b">ltr::RemoveNominalConverter</a>.</p>
 
 </div>
 </div>
@@ -399,7 +361,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

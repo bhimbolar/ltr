@@ -1,12 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="269,80,408,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="752,80,931,107"/>
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="552,80,707,107"/>
-<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="731,155,997,181"/>
-<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="868,229,1031,256"/>
-<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="1055,229,1167,256"/>
-<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="501,229,549,256"/>
-<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="596,229,687,256"/>
-<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="711,229,844,256"/>
-<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="945,304,1084,331"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="269,80,424,107"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="499,80,637,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="867,80,1045,107"/>
+<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="661,80,843,107"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="899,155,1165,181"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="1137,229,1300,256"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="657,229,769,256"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="1065,229,1113,256"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="793,229,884,256"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="908,229,1041,256"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1084,304,1223,331"/>
 </map>

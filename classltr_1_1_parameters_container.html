@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This class is a storage for parameters of different types. Is able to store POD-type parameters and user-defined-type parameters. This class is needed for unified initialization in ltr-client.  
+<p>This class is a storage for parameters of different types. Is able to store POD-type parameters and user-defined-type parameters. This class is needed for unified initialization in ltr-client. Class is case-insensetive of parameters names.  
  <a href="classltr_1_1_parameters_container.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="parameters__container_8h_source.html">parameters_container.h</a>&gt;</code></p>
@@ -154,19 +154,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7bff3f01d7982293b9e6dc56094b0f76"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a7bff3f01d7982293b9e6dc56094b0f76"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a7bff3f01d7982293b9e6dc56094b0f76">TypeCoincides</a> (const string &amp;name) const </td></tr>
 <tr class="memitem:af139d2fa19cbfa50f304add4991ff7bd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af139d2fa19cbfa50f304add4991ff7bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;default_value=<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()) const   throw (std::logic_error, std::bad_cast)</td></tr>
+<tr class="memitem:af139d2fa19cbfa50f304add4991ff7bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;default_value=<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()) const   throw (logic_error, std::bad_cast)</td></tr>
 <tr class="memitem:a1b6e9bc457217679ddbc2951a8d3344e"><td class="memTemplParams" colspan="2">template&lt;class StoredType , class DesiredType &gt; </td></tr>
-<tr class="memitem:a1b6e9bc457217679ddbc2951a8d3344e"><td class="memTemplItemLeft" align="right" valign="top">DesiredType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a1b6e9bc457217679ddbc2951a8d3344e">Get</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;default_value=<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()) const   throw (std::logic_error, std::bad_cast)</td></tr>
+<tr class="memitem:a1b6e9bc457217679ddbc2951a8d3344e"><td class="memTemplItemLeft" align="right" valign="top">DesiredType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a1b6e9bc457217679ddbc2951a8d3344e">Get</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;default_value=<a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>()) const   throw (logic_error, std::bad_cast)</td></tr>
 <tr class="memitem:a212f4cd40b985af6f9856b65a7e9dd0d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a212f4cd40b985af6f9856b65a7e9dd0d"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a212f4cd40b985af6f9856b65a7e9dd0d">GetRef</a> (const string &amp;name) const   throw (std::logic_error, std::bad_cast)</td></tr>
+<tr class="memitem:a212f4cd40b985af6f9856b65a7e9dd0d"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a212f4cd40b985af6f9856b65a7e9dd0d">GetRef</a> (const string &amp;name) const   throw (logic_error, std::bad_cast)</td></tr>
 <tr class="memitem:ab921a364a7dde6a74b5d1e2d5b9aba35"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ab921a364a7dde6a74b5d1e2d5b9aba35"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#ab921a364a7dde6a74b5d1e2d5b9aba35">GetRef</a> (const string &amp;name)  throw (std::logic_error, std::bad_cast)</td></tr>
+<tr class="memitem:ab921a364a7dde6a74b5d1e2d5b9aba35"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#ab921a364a7dde6a74b5d1e2d5b9aba35">GetRef</a> (const string &amp;name)  throw (logic_error, std::bad_cast)</td></tr>
 <tr class="memitem:a2ea0584d0073539ad91e8776bcd77061"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a2ea0584d0073539ad91e8776bcd77061"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a2ea0584d0073539ad91e8776bcd77061">Set</a> (const string &amp;name, const <a class="el" href="class_t.html">T</a> &amp;value)</td></tr>
 <tr class="memitem:adaf35329749be3276c57b5d86d98f882"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:adaf35329749be3276c57b5d86d98f882"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#adaf35329749be3276c57b5d86d98f882">SetExisting</a> (const string &amp;name, const <a class="el" href="class_t.html">T</a> &amp;value)</td></tr>
-<tr class="memitem:a967fc26a16188f62d248f3b1fcc58c53"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a967fc26a16188f62d248f3b1fcc58c53"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">AddNew</a> (const string &amp;name, const <a class="el" href="class_t.html">T</a> &amp;value)</td></tr>
+<tr class="memitem:afe543c324e85c90c0211ec17e2d1fb86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#afe543c324e85c90c0211ec17e2d1fb86">AddNew</a> (const string &amp;name, const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;value)</td></tr>
 <tr class="memitem:aa877a13d34401ea1eb893df31eac30e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#aa877a13d34401ea1eb893df31eac30e5">Copy</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:a032525c1ed8a27955469ab3b3c7e027d"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#a032525c1ed8a27955469ab3b3c7e027d">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -174,7 +173,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abe5e46b18d41154112ceb25e67030c17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_parameters_container.html#aabdb4cfd8a572994eed4ff4791c65477">StringAnyHash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17">name_value_hash_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>This class is a storage for parameters of different types. Is able to store POD-type parameters and user-defined-type parameters. This class is needed for unified initialization in ltr-client. </p>
+<div class="textblock"><p>This class is a storage for parameters of different types. Is able to store POD-type parameters and user-defined-type parameters. This class is needed for unified initialization in ltr-client. Class is case-insensetive of parameters names. </p>
 <dl class="section see"><dt>See also:</dt><dd><a class="el" href="classltr_1_1_parameterized.html">Parameterized</a> </dd></dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="abaf8b021f41c41c82a5dca537e45ac2f"></a>
@@ -238,14 +237,12 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a967fc26a16188f62d248f3b1fcc58c53"></a>
+<a class="anchor" id="afe543c324e85c90c0211ec17e2d1fb86"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_parameters_container.html#a967fc26a16188f62d248f3b1fcc58c53">ltr::ParametersContainer::AddNew</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_parameters_container.html#afe543c324e85c90c0211ec17e2d1fb86">ltr::ParametersContainer::AddNew</a> </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -253,7 +250,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_t.html">T</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1utility_1_1_any.html">Any</a> &amp;&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -264,11 +261,11 @@ template&lt;class T &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<p>Adds new parameter with given name and value. Throws if container already has such parameter name. </p>
+<p>Adds new parameter with given name and value. Throws if container already has such parameter name.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>- name of parameter to add </td></tr>
-    <tr><td class="paramname">value</td><td>- value to add </td></tr>
+    <tr><td class="paramname">value</td><td>- value to add. </td></tr>
   </table>
   </dd>
 </dl>
@@ -400,7 +397,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
+          <td></td><td> const  throw (logic_error, std::bad_cast)<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -430,7 +427,7 @@ template&lt;class StoredType , class DesiredType &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
+          <td></td><td> const  throw (logic_error, std::bad_cast)<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -450,7 +447,7 @@ template&lt;class T &gt; </div>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
+          <td> const  throw (logic_error, std::bad_cast)<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -470,7 +467,7 @@ template&lt;class T &gt; </div>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
-          <td>  throw (std::logic_error, std::bad_cast)<code> [inline]</code></td>
+          <td>  throw (logic_error, std::bad_cast)<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -652,7 +649,7 @@ template&lt;class T &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

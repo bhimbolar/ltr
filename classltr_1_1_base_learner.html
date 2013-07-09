@@ -129,24 +129,44 @@ Inheritance diagram for ltr::BaseLearner&lt; TElement, TScorer &gt;:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a59d97bb35c49fc80bf97afe317bd7a44"><td class="memItemLeft" align="right" valign="top">TScorer::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific</a> () const </td></tr>
+<tr class="memitem:a35b7b90ec6464d531d65270bd62520cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a35b7b90ec6464d531d65270bd62520cf">BaseLearner</a> ()</td></tr>
 <tr class="memitem:ac3d0c4dcc5cab22301dc63dca1c12a7a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Scorer::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">make</a> () const </td></tr>
 <tr class="memitem:aded87586e62aff293f7365f59fda237d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d">learn</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, bool check_parameters=true)</td></tr>
 <tr class="memdesc:aded87586e62aff293f7365f59fda237d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learns input dataset.  <a href="#aded87586e62aff293f7365f59fda237d"></a><br/></td></tr>
-<tr class="memitem:a1163855bba1ad4ddcb9c7dbe4cd55708"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer</a> (const TScorer &amp;scorer)</td></tr>
+<tr class="memitem:add05623c994774e683a7f1fd84354d81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#add05623c994774e683a7f1fd84354d81">setInitialScorer</a> (const typename TScorer::Ptr &amp;scorer)</td></tr>
 <tr class="memitem:a880848cde9fbbf6c02a0cabfa2edbdd8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">setDefaultScorer</a> ()</td></tr>
 <tr class="memitem:a33d3d382583186aae6497ba9ad818abf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">reset</a> ()</td></tr>
 <tr class="memdesc:a33d3d382583186aae6497ba9ad818abf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset internal state of <a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>.  <a href="#a33d3d382583186aae6497ba9ad818abf"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a9e56d63388d331e61e7f2045279c39ba"><td class="memItemLeft" align="right" valign="top">TScorer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a9e56d63388d331e61e7f2045279c39ba">scorer_</a></td></tr>
+<tr class="memitem:a52e1a969a2b6add80dd3ef320a915280"><td class="memItemLeft" align="right" valign="top">TScorer::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a52e1a969a2b6add80dd3ef320a915280">scorer_</a></td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a2f326d82c3f867cbd6a6599dbcc67c1d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#a2f326d82c3f867cbd6a6599dbcc67c1d">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, TScorer *scorer)=0</td></tr>
-<tr class="memdesc:a2f326d82c3f867cbd6a6599dbcc67c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a2f326d82c3f867cbd6a6599dbcc67c1d"></a><br/></td></tr>
+<tr class="memitem:aa8db56b1192fabebd895fd6efdf664a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_learner.html#aa8db56b1192fabebd895fd6efdf664a3">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, typename TScorer::Ptr *scorer)=0</td></tr>
+<tr class="memdesc:aa8db56b1192fabebd895fd6efdf664a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#aa8db56b1192fabebd895fd6efdf664a3"></a><br/></td></tr>
 </table>
 <h3>template&lt;class TElement, class TScorer&gt;<br/>
  class ltr::BaseLearner&lt; TElement, TScorer &gt;</h3>
 
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a35b7b90ec6464d531d65270bd62520cf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TElement, class TScorer&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html">BaseLearner</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="aded87586e62aff293f7365f59fda237d"></a>
 <div class="memitem">
@@ -188,14 +208,14 @@ template&lt;class TElement, class TScorer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2f326d82c3f867cbd6a6599dbcc67c1d"></a>
+<a class="anchor" id="aa8db56b1192fabebd895fd6efdf664a3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement, class TScorer&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html#a2f326d82c3f867cbd6a6599dbcc67c1d">learnImpl</a> </td>
+          <td class="memname">virtual void <a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html#aa8db56b1192fabebd895fd6efdf664a3">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -203,7 +223,7 @@ template&lt;class TElement, class TScorer&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TScorer *&#160;</td>
+          <td class="paramtype">typename TScorer::Ptr *&#160;</td>
           <td class="paramname"><em>scorer</em>&#160;</td>
         </tr>
         <tr>
@@ -224,7 +244,7 @@ template&lt;class TElement, class TScorer&gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1_n_n_learner.html#afff033674fc281ff4949666964dd41fe">ltr::NNLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_best_feature_learner.html#a738190c01c49b5755dca6eb354786e48">ltr::BestFeatureLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a932ba6524c478f1f809db8deaa16c8ff">ltr::BayesianLearner&lt; TElement, TDensityLearner &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a932ba6524c478f1f809db8deaa16c8ff">ltr::BayesianLearner&lt; TElement, QuadraticDiscriminantDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a932ba6524c478f1f809db8deaa16c8ff">ltr::BayesianLearner&lt; TElement, NormalNaiveBayesDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a932ba6524c478f1f809db8deaa16c8ff">ltr::BayesianLearner&lt; TElement, FisherDiscriminantDensityLearner&lt; TElement &gt; &gt;</a>, and <a class="el" href="classltr_1_1_linear_learner.html#a7405a1d7182af8dac58f2969e9ec716a">ltr::LinearLearner&lt; TElement &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1_n_n_learner.html#a32f27cba2601e34be04497b5f4001ae6">ltr::NNLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_best_feature_learner.html#a93dbded4e36672938c9878e34102e657">ltr::BestFeatureLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a58ab446638d8d91c01450cb490579e1d">ltr::BayesianLearner&lt; TElement, TDensityLearner &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a58ab446638d8d91c01450cb490579e1d">ltr::BayesianLearner&lt; TElement, QuadraticDiscriminantDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a58ab446638d8d91c01450cb490579e1d">ltr::BayesianLearner&lt; TElement, NormalNaiveBayesDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#a58ab446638d8d91c01450cb490579e1d">ltr::BayesianLearner&lt; TElement, FisherDiscriminantDensityLearner&lt; TElement &gt; &gt;</a>, and <a class="el" href="classltr_1_1_linear_learner.html#a7a473bbad5d42b5c8073282acd347d1c">ltr::LinearLearner&lt; TElement &gt;</a>.</p>
 
 </div>
 </div>
@@ -314,16 +334,16 @@ template&lt;class TElement , class TScorer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1163855bba1ad4ddcb9c7dbe4cd55708"></a>
+<a class="anchor" id="add05623c994774e683a7f1fd84354d81"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement , class TScorer&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html#add05623c994774e683a7f1fd84354d81">setInitialScorer</a> </td>
           <td>(</td>
-          <td class="paramtype">const TScorer &amp;&#160;</td>
+          <td class="paramtype">const typename TScorer::Ptr &amp;&#160;</td>
           <td class="paramname"><em>scorer</em></td><td>)</td>
           <td><code> [virtual]</code></td>
         </tr>
@@ -331,19 +351,17 @@ template&lt;class TElement , class TScorer&gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classltr_1_1_linear_learner.html#ad45e9de823cccf54587abfeaa0a4cca0">ltr::LinearLearner&lt; TElement &gt;</a>.</p>
-
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a9e56d63388d331e61e7f2045279c39ba"></a>
+<a class="anchor" id="a52e1a969a2b6add80dd3ef320a915280"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement, class TScorer&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">TScorer <a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html#a9e56d63388d331e61e7f2045279c39ba">scorer_</a><code> [protected]</code></td>
+          <td class="memname">TScorer::Ptr <a class="el" href="classltr_1_1_base_learner.html">ltr::BaseLearner</a>&lt; TElement, TScorer &gt;::<a class="el" href="classltr_1_1_base_learner.html#a52e1a969a2b6add80dd3ef320a915280">scorer_</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -358,7 +376,7 @@ template&lt;class TElement, class TScorer&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

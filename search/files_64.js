@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data_5finfo_2ecc',['data_info.cc',['../data__info_8cc.html',1,'']]],
   ['data_5finfo_2eh',['data_info.h',['../data__info_8h.html',1,'']]],
   ['data_5fpreprocessor_2eh',['data_preprocessor.h',['../data__preprocessor_8h.html',1,'']]],
   ['data_5fpreprocessors_5ftutorial_2edox',['data_preprocessors_tutorial.dox',['../data__preprocessors__tutorial_8dox.html',1,'']]],

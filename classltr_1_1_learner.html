@@ -131,18 +131,15 @@ Inheritance diagram for ltr::Learner&lt; TElement &gt;:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5a92bfb8da2c470c4ea075e19fc92d66"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_learner.html">Learner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a></td></tr>
 <tr class="memitem:a00d24bbd2e3a8f607b273b88a935cab9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="classltr_1_1_learner.html">Learner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#a00d24bbd2e3a8f607b273b88a935cab9">BasePtr</a></td></tr>
 <tr class="memitem:a2e3142c4175334efde39c5d0dbbbbf53"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; typename <br class="typebreak"/>
 <a class="el" href="classltr_1_1_feature_converter_learner.html">FeatureConverterLearner</a><br class="typebreak"/>
-&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#a2e3142c4175334efde39c5d0dbbbbf53">FeatureConverterLearnerArray</a></td></tr>
+&lt; TElement &gt;::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#a2e3142c4175334efde39c5d0dbbbbf53">FeatureConverterLearnerArray</a></td></tr>
 <tr class="memitem:a3991273e3814d2c82558b991bf40c6e6"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; typename <br class="typebreak"/>
 <a class="el" href="classltr_1_1_data_preprocessor.html">DataPreprocessor</a>&lt; TElement &gt;<br class="typebreak"/>
-::<a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#a3991273e3814d2c82558b991bf40c6e6">DataPreprocessorArray</a></td></tr>
+::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#a3991273e3814d2c82558b991bf40c6e6">DataPreprocessorArray</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa01fe19a1467913c0df36a4fdd213c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_learner.html#aaa01fe19a1467913c0df36a4fdd213c6">learn</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, bool check_parameters=true)=0</td></tr>
@@ -189,7 +186,7 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef vector&lt;typename <a class="el" href="classltr_1_1_data_preprocessor.html">DataPreprocessor</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a>&gt; <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a3991273e3814d2c82558b991bf40c6e6">DataPreprocessorArray</a></td>
+          <td class="memname">typedef vector&lt;typename <a class="el" href="classltr_1_1_data_preprocessor.html">DataPreprocessor</a>&lt;TElement&gt;::Ptr&gt; <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a3991273e3814d2c82558b991bf40c6e6">DataPreprocessorArray</a></td>
         </tr>
       </table>
 </div>
@@ -204,28 +201,11 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef vector&lt;typename <a class="el" href="classltr_1_1_feature_converter_learner.html">FeatureConverterLearner</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a>&gt; <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a2e3142c4175334efde39c5d0dbbbbf53">FeatureConverterLearnerArray</a></td>
+          <td class="memname">typedef vector&lt;typename <a class="el" href="classltr_1_1_feature_converter_learner.html">FeatureConverterLearner</a>&lt;TElement&gt;::Ptr&gt; <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a2e3142c4175334efde39c5d0dbbbbf53">FeatureConverterLearnerArray</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5a92bfb8da2c470c4ea075e19fc92d66"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_learner.html">Learner</a>&gt; <a class="el" href="classltr_1_1_learner.html">ltr::Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classltr_1_1_quadratic_discriminant_learner.html#a9b9536fecb30ba5eb3fe0349e11675f3">ltr::QuadraticDiscriminantLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_normal_naive_bayes_learner.html#ad095e3ea9b4d5acf1411c572bd762139">ltr::NormalNaiveBayesLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_fisher_discriminant_learner.html#a1af45da93b71b0597b6c6097563e83a0">ltr::FisherDiscriminantLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">ltr::composition::CompositionLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">ltr::composition::CompositionLearner&lt; Object &gt;</a>, <a class="el" href="classltr_1_1gp_1_1_g_p_learner.html#a69e5aaa65757a7476246c510bf2bb483">ltr::gp::GPLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html#a9b35387037a2fca3fcd3eca2e6ba6b9f">ltr::decision_tree::DecisionTreeLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_n_n_learner.html#adf1b277ccabe21f8f45a7b56405cb1d4">ltr::NNLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">ltr::BayesianLearner&lt; TElement, TDensityLearner &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">ltr::BayesianLearner&lt; TElement, QuadraticDiscriminantDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">ltr::BayesianLearner&lt; TElement, NormalNaiveBayesDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">ltr::BayesianLearner&lt; TElement, FisherDiscriminantDensityLearner&lt; TElement &gt; &gt;</a>, <a class="el" href="classltr_1_1composition_1_1_ada_boost_learner.html#a4998b25cdefd7e6cc08ede1ae10b9a30">ltr::composition::AdaBoostLearner</a>, <a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">ltr::BestFeatureLearner&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1_linear_learner.html#a927c3ac5dbbba0bf5b9c87224270e463">ltr::LinearLearner&lt; TElement &gt;</a>.</p>
 
 </div>
 </div>
@@ -454,7 +434,7 @@ template&lt;class TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,13 +1,13 @@
 <map id="G" name="G">
-<area shape="rect" href="$vote__aggregator_8h.html" title="ltr/optimization/stop_criteria/vote_aggregator.h" alt="" coords="141,80,429,107"/>
-<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="289,155,468,181"/>
-<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="121,155,265,181"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="496,155,621,181"/>
-<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="240,229,507,256"/>
-<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="27,304,189,331"/>
-<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="213,304,325,331"/>
-<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="349,304,397,331"/>
-<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="421,304,512,331"/>
-<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="536,304,669,331"/>
-<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="104,379,243,405"/>
+<area shape="rect" href="$vote__aggregator_8h.html" title="ltr/optimization/stop_criteria/vote_aggregator.h" alt="" coords="185,80,473,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="284,229,463,256"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="203,155,347,181"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="441,155,567,181"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="240,304,507,331"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="27,379,189,405"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="213,379,325,405"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="349,379,397,405"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="421,379,512,405"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="536,379,669,405"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="104,453,243,480"/>
 </map>

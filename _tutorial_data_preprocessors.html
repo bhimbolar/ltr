@@ -109,7 +109,9 @@ DataPreprocessor</h2>
 <tr>
 <th>Example: Preprocessing data </th><th>Output:</th></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// NOLINT</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
@@ -143,16 +145,15 @@ DataPreprocessor</h2>
   data.add(object2);
   data.add(object3);
 
-  DataSampler&lt;Object&gt; data_sampler;
-  data_sampler.set_indices(indices);
-  data_sampler.apply(data, &amp;preprocessed_data);
+  DataSampler&lt;Object&gt;::Ptr data_sampler(<span class="keyword">new</span> DataSampler&lt;Object&gt;);
+  data_sampler-&gt;set_indices(indices);
+  data_sampler-&gt;apply(data, &amp;preprocessed_data);
 
   cout &lt;&lt; <span class="stringliteral">&quot;Before:&quot;</span> &lt;&lt; endl &lt;&lt; data &lt;&lt; endl;
   cout &lt;&lt; <span class="stringliteral">&quot;After:&quot;</span> &lt;&lt; endl &lt;&lt; preprocessed_data &lt;&lt; endl;
 
   <span class="keywordflow">return</span> 0;
 }
-
 </pre></div> </td><td><div class="fragment"><pre class="fragment">Before:
 [5.23, 1.53, -5.38]{0.00, 0.00}
 [2.21, -1.23, 0.32]{0.00, 0.00}
@@ -190,7 +191,7 @@ List of all DataPrepocessors</h2>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

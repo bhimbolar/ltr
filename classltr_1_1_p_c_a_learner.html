@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
@@ -130,11 +129,6 @@ Inheritance diagram for ltr::PCALearner&lt; TElement &gt;:</div>
 
 <p><a href="classltr_1_1_p_c_a_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a695d4157b380efb752be364a5e54556c"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_p_c_a_learner.html">PCALearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_p_c_a_learner.html#a695d4157b380efb752be364a5e54556c">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aea902d0399f725edac6564b90dc132e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_p_c_a_learner.html#aea902d0399f725edac6564b90dc132e3">PCALearner</a> ()</td></tr>
@@ -144,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed627223a33cb2c374b6a5947382afa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_p_c_a_learner.html#aed627223a33cb2c374b6a5947382afa7">setNumberOfComponentsRule</a> (<a class="el" href="classltr_1_1_number_of_components_rule.html">NumberOfComponentsRule</a> *rule)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a30dfc6104e7d7125bacffddc8ed9c4c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_p_c_a_learner.html#a30dfc6104e7d7125bacffddc8ed9c4c5">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_linear_converter.html">LinearConverter</a> *linear_converter)</td></tr>
-<tr class="memdesc:a30dfc6104e7d7125bacffddc8ed9c4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#a30dfc6104e7d7125bacffddc8ed9c4c5"></a><br/></td></tr>
+<tr class="memitem:a5094a0cd80962268fb2b0e83b98c322f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_p_c_a_learner.html#a5094a0cd80962268fb2b0e83b98c322f">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">LinearConverter::Ptr</a> *linear_converter)</td></tr>
+<tr class="memdesc:a5094a0cd80962268fb2b0e83b98c322f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#a5094a0cd80962268fb2b0e83b98c322f"></a><br/></td></tr>
 <tr class="memitem:a6957d5e1d4f32de67666312cdfa0d730"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_p_c_a_learner.html#a6957d5e1d4f32de67666312cdfa0d730">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -158,25 +152,7 @@ Private Attributes</h2></td></tr>
 class ltr::PCALearner&lt; TElement &gt;</h3>
 
 <p><a class="el" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a> for principal components analisys feature converter. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a695d4157b380efb752be364a5e54556c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_p_c_a_learner.html">PCALearner</a>&gt; <a class="el" href="classltr_1_1_p_c_a_learner.html">ltr::PCALearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_converter_learner.html#a322b5a18eef1103c64df834021f6dcf9">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, LinearConverter &gt;</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aea902d0399f725edac6564b90dc132e3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -235,14 +211,14 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a30dfc6104e7d7125bacffddc8ed9c4c5"></a>
+<a class="anchor" id="a5094a0cd80962268fb2b0e83b98c322f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_p_c_a_learner.html">ltr::PCALearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_p_c_a_learner.html#a30dfc6104e7d7125bacffddc8ed9c4c5">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_p_c_a_learner.html">ltr::PCALearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_p_c_a_learner.html#a5094a0cd80962268fb2b0e83b98c322f">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -250,7 +226,7 @@ template&lt;typename TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_linear_converter.html">LinearConverter</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">LinearConverter::Ptr</a> *&#160;</td>
           <td class="paramname"><em>feature_converter</em>&#160;</td>
         </tr>
         <tr>
@@ -271,7 +247,7 @@ template&lt;typename TElement &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a3a939e1ff6c61008e63e6182bba31226">ltr::BaseFeatureConverterLearner&lt; TElement, LinearConverter &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a7b3803b834ee079f9e24cf5ea4c6673f">ltr::BaseFeatureConverterLearner&lt; TElement, LinearConverter &gt;</a>.</p>
 
 </div>
 </div>
@@ -373,7 +349,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

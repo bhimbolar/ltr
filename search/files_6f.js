@@ -2,6 +2,8 @@ var searchData=
 [
   ['object_2ecc',['object.cc',['../object_8cc.html',1,'']]],
   ['object_2eh',['object.h',['../object_8h.html',1,'']]],
+  ['object_5finfo_2ecc',['object_info.cc',['../object__info_8cc.html',1,'']]],
+  ['object_5finfo_2eh',['object_info.h',['../object__info_8h.html',1,'']]],
   ['object_5flist_2ecc',['object_list.cc',['../object__list_8cc.html',1,'']]],
   ['object_5flist_2eh',['object_list.h',['../object__list_8h.html',1,'']]],
   ['object_5flist_5funittest_2ecc',['object_list_unittest.cc',['../object__list__unittest_8cc.html',1,'']]],

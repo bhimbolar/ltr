@@ -107,62 +107,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_LEARNERS_COMPOSITION_LEARNER_DATA_SET_WEIGHTS_UPDATER_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_LEARNERS_COMPOSITION_LEARNER_DATA_SET_WEIGHTS_UPDATER_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;string&gt;</span>
-<a name="l00009"></a>00009 
-<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="measure_8h.html">ltr/measures/measure.h</a>&quot;</span>
-<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="composition__scorer_8h.html">ltr/scorers/composition_scorers/composition_scorer.h</a>&quot;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="aliaser_8h.html">ltr/interfaces/aliaser.h</a>&quot;</span>
-<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="parameterized_8h.html">ltr/interfaces/parameterized.h</a>&quot;</span>
-<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="printable_8h.html">ltr/interfaces/printable.h</a>&quot;</span>
-<a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="keyword">using</span> std::string;
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="keyword">using</span> <a class="code" href="classltr_1_1_measure.html">ltr::Measure</a>;
-<a name="l00020"></a>00020 <span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022 <span class="keyword">namespace </span>ltr {
-<a name="l00023"></a>00023 <span class="keyword">namespace </span>composition {
-<a name="l00032"></a>00032 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00033"></a><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">00033</a> <span class="keyword">class </span><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">Aliaser</a>, <span class="keyword">public</span> <a class="code" href="classltr_1_1_parameterized.html">Parameterized</a> {
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="measure_8h.html">ltr/measures/measure.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="composition__scorer_8h.html">ltr/scorers/composition_scorers/composition_scorer.h</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="aliaser_8h.html">ltr/interfaces/aliaser.h</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="parameterized_8h.html">ltr/interfaces/parameterized.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="printable_8h.html">ltr/interfaces/printable.h</a>&quot;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="keyword">using</span> std::string;
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="keyword">using</span> <a class="code" href="classltr_1_1_measure.html">ltr::Measure</a>;
+<a name="l00019"></a>00019 <span class="keyword">using</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">ltr::DataSet</a>;
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021 <span class="keyword">namespace </span>ltr {
+<a name="l00022"></a>00022 <span class="keyword">namespace </span>composition {
+<a name="l00031"></a>00031 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00032"></a><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">00032</a> <span class="keyword">class </span><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">Aliaser</a>, <span class="keyword">public</span> <a class="code" href="classltr_1_1_parameterized.html">Parameterized</a> {
+<a name="l00033"></a>00033   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>)
 <a name="l00034"></a>00034  <span class="keyword">public</span>:
-<a name="l00035"></a><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">00035</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DataSetWeightsUpdater&gt;</a> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a>;
-<a name="l00036"></a>00036 
-<a name="l00043"></a>00043   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a5392b16f357ac577d7313142423c8c5a">updateWeights</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* data,
-<a name="l00044"></a>00044       <span class="keyword">const</span> <a class="code" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a>&amp; composition_scorer) <span class="keyword">const</span> = 0;
-<a name="l00050"></a>00050   <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a26fea9ece91c84af17ed56c3292c7fbe">SET</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a>, measure);
-<a name="l00051"></a>00051  <span class="keyword">protected</span>:
-<a name="l00052"></a><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">00052</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">measure_</a>;
-<a name="l00053"></a>00053 };
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 
-<a name="l00059"></a>00059 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00060"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">00060</a> <span class="keyword">class </span><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt;TElement&gt; {
-<a name="l00061"></a>00061  <span class="keyword">public</span>:
-<a name="l00062"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#ab9bb64336eb169d5f8218f92651a2806">00062</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;FakeDataSetWeightsUpdater&gt;</a> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#ab9bb64336eb169d5f8218f92651a2806">Ptr</a>;
-<a name="l00063"></a>00063 
-<a name="l00067"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#afb31b61c70e2d93d03a92f227580fc7a">00067</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#afb31b61c70e2d93d03a92f227580fc7a">FakeDataSetWeightsUpdater</a>(
-<a name="l00068"></a>00068       <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters = <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>()) {
-<a name="l00069"></a>00069   }
-<a name="l00070"></a>00070 
-<a name="l00071"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a4f3c4aaed2000ffe081d9dafd57ecd12">00071</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a4f3c4aaed2000ffe081d9dafd57ecd12">updateWeights</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* data,
-<a name="l00072"></a>00072       <span class="keyword">const</span> <a class="code" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a>&amp; composition_scorer)<span class="keyword"> const </span>{
-<a name="l00073"></a>00073     <span class="comment">// doing nothing</span>
-<a name="l00074"></a>00074   }
-<a name="l00075"></a>00075  <span class="keyword">private</span>:
-<a name="l00076"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a7392a4adcbeec09e6fe9de01fd05e0b2">00076</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a7392a4adcbeec09e6fe9de01fd05e0b2">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;FakeDataSetWieghtsUpdater&quot;</span>;}
-<a name="l00077"></a>00077 };
-<a name="l00078"></a>00078 };
-<a name="l00079"></a>00079 };
-<a name="l00080"></a>00080 
-<a name="l00081"></a>00081 <span class="preprocessor">#endif  // LTR_LEARNERS_COMPOSITION_LEARNER_DATA_SET_WEIGHTS_UPDATER_H_</span>
+<a name="l00041"></a>00041   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#ae4fac8b56ad144a2faa77269735741f6">updateWeights</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* data,
+<a name="l00042"></a>00042       <span class="keyword">const</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">CompositionScorer::Ptr</a>&amp; composition_scorer) <span class="keyword">const</span> = 0;
+<a name="l00048"></a>00048   <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a26fea9ece91c84af17ed56c3292c7fbe">SET</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1_measure.html">Measure&lt;TElement&gt;::Ptr</a>, measure);
+<a name="l00049"></a>00049  <span class="keyword">protected</span>:
+<a name="l00050"></a><a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">00050</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1_measure.html">Measure&lt;TElement&gt;::Ptr</a> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">measure_</a>;
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 
+<a name="l00057"></a>00057 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00058"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">00058</a> <span class="keyword">class </span><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt;TElement&gt; {
+<a name="l00059"></a>00059   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a>)
+<a name="l00060"></a>00060  <span class="keyword">public</span>:
+<a name="l00064"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#afb31b61c70e2d93d03a92f227580fc7a">00064</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#afb31b61c70e2d93d03a92f227580fc7a">FakeDataSetWeightsUpdater</a>(
+<a name="l00065"></a>00065       <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters = <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>()) {
+<a name="l00066"></a>00066   }
+<a name="l00067"></a>00067 
+<a name="l00068"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a1f5e7d9443cdab04d0832a8a569ecf50">00068</a>   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a1f5e7d9443cdab04d0832a8a569ecf50">updateWeights</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* data,
+<a name="l00069"></a>00069       <span class="keyword">const</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">CompositionScorer::Ptr</a>&amp; composition_scorer)<span class="keyword"> const </span>{
+<a name="l00070"></a>00070     <span class="comment">// doing nothing</span>
+<a name="l00071"></a>00071   }
+<a name="l00072"></a>00072  <span class="keyword">private</span>:
+<a name="l00073"></a><a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a7392a4adcbeec09e6fe9de01fd05e0b2">00073</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a7392a4adcbeec09e6fe9de01fd05e0b2">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;FakeDataSetWieghtsUpdater&quot;</span>;}
+<a name="l00074"></a>00074 };
+<a name="l00075"></a>00075 };
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <span class="preprocessor">#endif  // LTR_LEARNERS_COMPOSITION_LEARNER_DATA_SET_WEIGHTS_UPDATER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

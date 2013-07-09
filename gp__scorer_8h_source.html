@@ -133,48 +133,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a>00029 <span class="keyword">namespace </span>gp {
 <a name="l00030"></a>00030 <span class="keyword">typedef</span> vector&lt;Puppy::Tree&gt; <a class="code" href="gp__scorer__unittest_8cc.html#aa35de4547f062f398ff600ba8fd6b109">Population</a>;
 <a name="l00035"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html">00035</a> <span class="keyword">class </span><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> {
-<a name="l00036"></a>00036  <span class="keyword">public</span>:
-<a name="l00037"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a35ec9882c03c6d05288af9166017266a">00037</a>   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a35ec9882c03c6d05288af9166017266a">GPScorer</a>() {}
-<a name="l00041"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a3f52fbaf8d964cf6bd699b1e99916ffd">00041</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; GPScorer &gt;</a> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a3f52fbaf8d964cf6bd699b1e99916ffd">Ptr</a>;
-<a name="l00051"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a3e39a8cc17a1eaafba6f070265aa70a3">00051</a>   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a35ec9882c03c6d05288af9166017266a">GPScorer</a>(<span class="keyword">const</span> Puppy::Tree&amp; best_tree,
-<a name="l00052"></a>00052            <span class="keyword">const</span> Puppy::Context&amp; context,
-<a name="l00053"></a>00053            <span class="keywordtype">int</span> feature_count,
-<a name="l00054"></a>00054            <span class="keyword">const</span> FeatureConverterArray&amp; feature_converters =
-<a name="l00055"></a>00055            FeatureConverterArray())
-<a name="l00056"></a>00056   : <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a>(feature_converters),
-<a name="l00057"></a>00057   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a>(best_tree),
-<a name="l00058"></a>00058   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">context_</a>(context),
-<a name="l00059"></a>00059   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">feature_count_</a>(feature_count) {}
-<a name="l00060"></a>00060 
-<a name="l00066"></a>00066   <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00067"></a>00067   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#aaa403753df80c67d96d2b7a00ad60785">markDataSet</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data) <span class="keyword">const</span>;
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069  <span class="keyword">private</span>:
-<a name="l00074"></a>00074   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#ae7a215aa17547cfebebcab2510496e47">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
-<a name="l00079"></a>00079   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a409bc72542984c5f434b0a83dc158ecd">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00080"></a>00080 
-<a name="l00081"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9928466e778407a02b7a5ffe369b262b">00081</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9928466e778407a02b7a5ffe369b262b">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;GPScorer&quot;</span>;}
-<a name="l00087"></a>00087   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#aeb723138916328fa469ae2bdf87ff285">setContextToObject</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
-<a name="l00093"></a>00093   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#addb777dca33c7de60578b00d3e16aba5">writeTreeAsStringOfCppCalls</a>(std::ostream&amp; output, <span class="keywordtype">int</span> node_index) <span class="keyword">const</span>; <span class="comment">// NOLINT</span>
-<a name="l00100"></a>00100 <span class="comment"></span>  <span class="keyword">const</span> <a class="code" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ...">Serializable</a>* <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41">puppyPrimitiveHandleToPSerializable</a>(
-<a name="l00101"></a>00101     <span class="keyword">const</span> Puppy::PrimitiveHandle puppy_primitive) <span class="keyword">const</span>;
-<a name="l00105"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">00105</a>   <span class="keyword">mutable</span> Puppy::Tree <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a>;
-<a name="l00110"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">00110</a>   <span class="keyword">mutable</span> Puppy::Context <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">context_</a>;
-<a name="l00114"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">00114</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">feature_count_</a>;
-<a name="l00115"></a>00115 
-<a name="l00116"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#ad536776a426bc390bf6c4332a7788ed5">00116</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#ad536776a426bc390bf6c4332a7788ed5">toStringImpl</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;Genetic programming scorer&quot;</span>;}
-<a name="l00117"></a>00117 
-<a name="l00122"></a>00122   <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00123"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a681344cf5346016ecbb7ed53bbc50580">00123</a>   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner</a>;
-<a name="l00124"></a>00124 };
-<a name="l00125"></a>00125 };
-<a name="l00126"></a>00126 };
-<a name="l00127"></a>00127 <span class="preprocessor">#endif  // LTR_SCORERS_GP_SCORER_H_</span>
+<a name="l00036"></a>00036   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>)
+<a name="l00037"></a>00037  <span class="keyword">public</span>:
+<a name="l00038"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a35ec9882c03c6d05288af9166017266a">00038</a>   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a35ec9882c03c6d05288af9166017266a">GPScorer</a>() {}
+<a name="l00048"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a3e39a8cc17a1eaafba6f070265aa70a3">00048</a>   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a35ec9882c03c6d05288af9166017266a">GPScorer</a>(<span class="keyword">const</span> Puppy::Tree&amp; best_tree,
+<a name="l00049"></a>00049            <span class="keyword">const</span> Puppy::Context&amp; context,
+<a name="l00050"></a>00050            <span class="keywordtype">int</span> feature_count,
+<a name="l00051"></a>00051            <span class="keyword">const</span> FeatureConverterArray&amp; feature_converters =
+<a name="l00052"></a>00052            FeatureConverterArray())
+<a name="l00053"></a>00053   : <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a>(feature_converters),
+<a name="l00054"></a>00054   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a>(best_tree),
+<a name="l00055"></a>00055   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">context_</a>(context),
+<a name="l00056"></a>00056   <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">feature_count_</a>(feature_count) {}
+<a name="l00057"></a>00057 
+<a name="l00063"></a>00063   <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00064"></a>00064   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#aaa403753df80c67d96d2b7a00ad60785">markDataSet</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data) <span class="keyword">const</span>;
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066  <span class="keyword">private</span>:
+<a name="l00071"></a>00071   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#ae7a215aa17547cfebebcab2510496e47">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
+<a name="l00076"></a>00076   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a409bc72542984c5f434b0a83dc158ecd">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00077"></a>00077 
+<a name="l00078"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9928466e778407a02b7a5ffe369b262b">00078</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9928466e778407a02b7a5ffe369b262b">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;GPScorer&quot;</span>;}
+<a name="l00084"></a>00084   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#aeb723138916328fa469ae2bdf87ff285">setContextToObject</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
+<a name="l00090"></a>00090   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#addb777dca33c7de60578b00d3e16aba5">writeTreeAsStringOfCppCalls</a>(std::ostream&amp; output, <span class="keywordtype">int</span> node_index) <span class="keyword">const</span>; <span class="comment">// NOLINT</span>
+<a name="l00097"></a>00097 <span class="comment"></span>  <span class="keyword">const</span> <a class="code" href="classltr_1_1_serializable.html" title="The interface class for objects, that can be serialized. That means that a cpp code for those can be ...">Serializable</a>* <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41">puppyPrimitiveHandleToPSerializable</a>(
+<a name="l00098"></a>00098     <span class="keyword">const</span> Puppy::PrimitiveHandle puppy_primitive) <span class="keyword">const</span>;
+<a name="l00102"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">00102</a>   <span class="keyword">mutable</span> Puppy::Tree <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a>;
+<a name="l00107"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">00107</a>   <span class="keyword">mutable</span> Puppy::Context <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">context_</a>;
+<a name="l00111"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">00111</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">feature_count_</a>;
+<a name="l00112"></a>00112 
+<a name="l00113"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#ad536776a426bc390bf6c4332a7788ed5">00113</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#ad536776a426bc390bf6c4332a7788ed5">toStringImpl</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;Genetic programming scorer&quot;</span>;}
+<a name="l00114"></a>00114 
+<a name="l00119"></a>00119   <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00120"></a><a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a681344cf5346016ecbb7ed53bbc50580">00120</a>   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner</a>;
+<a name="l00121"></a>00121 };
+<a name="l00122"></a>00122 };
+<a name="l00123"></a>00123 };
+<a name="l00124"></a>00124 <span class="preprocessor">#endif  // LTR_SCORERS_GP_SCORER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

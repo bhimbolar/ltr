@@ -118,6 +118,7 @@ This is the complete list of members for <a class="el" href="classltr_1_1decisio
   <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#a1712dce0db191dc73e9c503edb7713a7">getDefaultAlias</a>() const </td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td><code> [private, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#acb7ccda5e232cd9605c5f0e7d4e53838">getDefaultSerializableObjectName</a>() const </td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#a29d6f52ea16a24699a475580731697b6">getId</a>() const </td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#a48081a8a2c38d12eb28ce7382b0b06e4">ltr::utility::shared_ptr&lt; DecisionTree &gt;</a> class</td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td><code> [friend]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_functor.html#a4b3ce2ce024276ad4153ded1b6e645c2">operator()</a>(const Object &amp;obj) const</td><td><a class="el" href="classltr_1_1_functor.html">ltr::Functor&lt; double &gt;</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#ae9ec583b18efb77c5f13257cb97867f7">Ptr</a> typedef</td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">root_</a></td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td><code> [private]</code></td></tr>
@@ -125,7 +126,7 @@ This is the complete list of members for <a class="el" href="classltr_1_1decisio
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#aa18e214bf605b5c7fbf64b5fcf0e769e">Serializable</a>(const Serializable &amp;)</td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#aa3958c5809d56979c671599090a03f5f">setRoot</a>(Vertex::Ptr root)</td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#a85029212f8d61b80ad8c5fc626f5fc2b">value</a>(const Object &amp;object) const </td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6f9275985711fea5fdae39a6864b30d5">~DecisionTree</a>()</td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6f9275985711fea5fdae39a6864b30d5">~DecisionTree</a>()</td><td><a class="el" href="classltr_1_1decision__tree_1_1_decision_tree.html">ltr::decision_tree::DecisionTree</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_functor.html#ad31b6ad8473cb140fd2c0bcf57183305">~Functor</a>()</td><td><a class="el" href="classltr_1_1_functor.html">ltr::Functor&lt; double &gt;</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable.html#a349045b3809e5f938aed014292f822d5">~Serializable</a>()</td><td><a class="el" href="classltr_1_1_serializable.html">ltr::Serializable</a></td><td><code> [inline, virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classltr_1_1_serializable_functor.html#a2bb293fedefc98125a07f2e5a788d81a">~SerializableFunctor</a>()</td><td><a class="el" href="classltr_1_1_serializable_functor.html">ltr::SerializableFunctor&lt; double &gt;</a></td><td><code> [inline, virtual]</code></td></tr>
@@ -133,7 +134,7 @@ This is the complete list of members for <a class="el" href="classltr_1_1decisio
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

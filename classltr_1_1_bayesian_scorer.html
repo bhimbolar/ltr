@@ -130,13 +130,10 @@ Inheritance diagram for ltr::BayesianScorer:</div>
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:acad1fb0deb71f25aae22cbaa2ee17390"><td class="memItemLeft" align="right" valign="top">typedef map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a></td></tr>
-<tr class="memitem:a1c3a08a77793d261814d83c0802a5f99"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d1959f8244fe425eb195af62a81070c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a3d1959f8244fe425eb195af62a81070c">BayesianScorer</a> ()</td></tr>
-<tr class="memitem:ad40a6792755c9937ae473b241f3f2777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#ad40a6792755c9937ae473b241f3f2777">BayesianScorer</a> (const <a class="el" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a> &amp;prior_probability, <a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a> estimator)</td></tr>
+<tr class="memitem:ad40a6792755c9937ae473b241f3f2777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#ad40a6792755c9937ae473b241f3f2777">BayesianScorer</a> (const <a class="el" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a> &amp;prior_probability, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BaseProbabilityDensityEstimator::Ptr</a> estimator)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af637086a95b8ed3e37e429b49f19d749"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#af637086a95b8ed3e37e429b49f19d749">scoreImpl</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object) const </td></tr>
@@ -146,7 +143,7 @@ Private Member Functions</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa4fec48d0c1fca0cf7aeb4b4790ced98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_bayesian_scorer.html#acad1fb0deb71f25aae22cbaa2ee17390">LabelToPriorProbability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#aa4fec48d0c1fca0cf7aeb4b4790ced98">prior_probability_</a></td></tr>
-<tr class="memitem:a81b897eba98e7726c0781af0c631568a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">estimator_</a></td></tr>
+<tr class="memitem:a81b897eba98e7726c0781af0c631568a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BaseProbabilityDensityEstimator::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">estimator_</a></td></tr>
 </table>
 <hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="acad1fb0deb71f25aae22cbaa2ee17390"></a>
@@ -159,22 +156,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1c3a08a77793d261814d83c0802a5f99"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a>&gt; <a class="el" href="classltr_1_1_bayesian_scorer.html#a1c3a08a77793d261814d83c0802a5f99">ltr::BayesianScorer::Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">ltr::Scorer</a>.</p>
 
 </div>
 </div>
@@ -208,7 +189,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BaseProbabilityDensityEstimator::Ptr</a>&#160;</td>
           <td class="paramname"><em>estimator</em>&#160;</td>
         </tr>
         <tr>
@@ -303,7 +284,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a> <a class="el" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">ltr::BayesianScorer::estimator_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BaseProbabilityDensityEstimator::Ptr</a> <a class="el" href="classltr_1_1_bayesian_scorer.html#a81b897eba98e7726c0781af0c631568a">ltr::BayesianScorer::estimator_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -332,7 +313,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -108,7 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
@@ -127,43 +126,20 @@ Inheritance diagram for ltr::composition::DataSetWeightsUpdater&lt; TElement &gt
 
 <p><a href="classltr_1_1composition_1_1_data_set_weights_updater-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a011449df2db36a40a39a3e46be1abe4c"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5392b16f357ac577d7313142423c8c5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a5392b16f357ac577d7313142423c8c5a">updateWeights</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; *data, const <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a> &amp;composition_scorer) const =0</td></tr>
-<tr class="memitem:a26fea9ece91c84af17ed56c3292c7fbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a26fea9ece91c84af17ed56c3292c7fbe">SET</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a>, measure)</td></tr>
+<tr class="memitem:ae4fac8b56ad144a2faa77269735741f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#ae4fac8b56ad144a2faa77269735741f6">updateWeights</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; *data, const <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">CompositionScorer::Ptr</a> &amp;composition_scorer) const =0</td></tr>
+<tr class="memitem:a26fea9ece91c84af17ed56c3292c7fbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a26fea9ece91c84af17ed56c3292c7fbe">SET</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr, measure)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a945021202710c15f8362c688bd2e259b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">measure_</a></td></tr>
+<tr class="memitem:a945021202710c15f8362c688bd2e259b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">measure_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class TElement&gt;<br/>
 class ltr::composition::DataSetWeightsUpdater&lt; TElement &gt;</h3>
 
 <p>Is a parameter for composition learner. Implements a strategy of updating dataset's element's weights while adding a new scorer to composition scorer. The idea is to increase weights of "hard" elements with bad measure values and decrease weights of "easy" elements with good measure values. Thus next scorer in composition could be learned primary on bad elements and level the limitations of previous scorers </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a011449df2db36a40a39a3e46be1abe4c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&gt; <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#ab9bb64336eb169d5f8218f92651a2806">ltr::composition::FakeDataSetWeightsUpdater&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1composition_1_1_ada_boost_data_set_weights_updater.html#a7110bd58e92dd4be7a5fbd5890913ad3">ltr::composition::AdaBoostDataSetWeightsUpdater&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#abb4df31f08cfc9e8d2c7a02f0a5a30c9">ltr::composition::AdaRankDataSetWeightsUpdater&lt; TElement &gt;</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
+</div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a26fea9ece91c84af17ed56c3292c7fbe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +149,7 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a26fea9ece91c84af17ed56c3292c7fbe">SET</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -194,14 +170,14 @@ template&lt;class TElement&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5392b16f357ac577d7313142423c8c5a"></a>
+<a class="anchor" id="ae4fac8b56ad144a2faa77269735741f6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a5392b16f357ac577d7313142423c8c5a">updateWeights</a> </td>
+          <td class="memname">virtual void <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#ae4fac8b56ad144a2faa77269735741f6">updateWeights</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -209,7 +185,7 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">CompositionScorer::Ptr</a> &amp;&#160;</td>
           <td class="paramname"><em>composition_scorer</em>&#160;</td>
         </tr>
         <tr>
@@ -229,7 +205,7 @@ template&lt;class TElement&gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a4f3c4aaed2000ffe081d9dafd57ecd12">ltr::composition::FakeDataSetWeightsUpdater&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#a1485a6c82f6cb372122e4563a0ef8e91">ltr::composition::AdaRankDataSetWeightsUpdater&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1composition_1_1_ada_boost_data_set_weights_updater.html#a247f3d9b9e46755b1855cdba15e77670">ltr::composition::AdaBoostDataSetWeightsUpdater&lt; TElement &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html#a1f5e7d9443cdab04d0832a8a569ecf50">ltr::composition::FakeDataSetWeightsUpdater&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1composition_1_1_ada_rank_data_set_weights_updater.html#a21cb52ece6b86668967f18a0b4003c01">ltr::composition::AdaRankDataSetWeightsUpdater&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1composition_1_1_ada_boost_data_set_weights_updater.html#afbcb274bcff3b0e163c6bb6c51832615">ltr::composition::AdaBoostDataSetWeightsUpdater&lt; TElement &gt;</a>.</p>
 
 </div>
 </div>
@@ -241,7 +217,7 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a011449df2db36a40a39a3e46be1abe4c">Ptr</a> <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">measure_</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt;TElement&gt;::Ptr <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">ltr::composition::DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html#a945021202710c15f8362c688bd2e259b">measure_</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -256,7 +232,7 @@ template&lt;class TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

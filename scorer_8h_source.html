@@ -127,68 +127,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00026"></a>00026  <span class="keyword">public</span>:
 <a name="l00027"></a><a class="code" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">00027</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;Scorer&gt;</a> <a class="code" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Ptr</a>;
 <a name="l00028"></a><a class="code" href="classltr_1_1_scorer.html#ae13d9b31c6e72177b8c77c3e861dc298">00028</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;Scorer&gt;</a> <a class="code" href="classltr_1_1_scorer.html#ae13d9b31c6e72177b8c77c3e861dc298">BasePtr</a>;
-<a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="classltr_1_1_scorer.html#a2a344b1a0e9033bf83aa1fbbdc2a6831">00030</a>   <a class="code" href="classltr_1_1_scorer.html#a2a344b1a0e9033bf83aa1fbbdc2a6831">Scorer</a>(<span class="keyword">const</span> FeatureConverterArray&amp;
-<a name="l00031"></a>00031             feature_converter = FeatureConverterArray()):
-<a name="l00032"></a>00032         <a class="code" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">feature_converter_</a>(feature_converter) {}
-<a name="l00033"></a>00033 
-<a name="l00034"></a><a class="code" href="classltr_1_1_scorer.html#ae5e5abf6e74b3c208cdf1632a912adab">00034</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_scorer.html#ae5e5abf6e74b3c208cdf1632a912adab">value</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>)<span class="keyword"> const </span>{
-<a name="l00035"></a>00035     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(<span class="keywordtype">object</span>);
-<a name="l00036"></a>00036   }
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040   <a class="code" href="classltr_1_1_scorer.html#a63134654dd5f53f29068c190ca9dbd2a">GET_SET_VECTOR_OF_PTR</a>(<a class="code" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a>, feature_converter);
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042   <span class="keyword">using</span> <a class="code" href="classltr_1_1_serializable_functor.html">SerializableFunctor&lt;double&gt;::generateCppCode</a>;
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00047"></a>00047   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; elements) <span class="keyword">const</span>;
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00050"></a>00050   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(<span class="keyword">const</span> TElement&amp; element) <span class="keyword">const</span>;
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#a2307b9593c7dcf5984dc6b26c0de9a06">generateLocalClassName</a>(<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;
-<a name="l00053"></a>00053 
-<a name="l00054"></a><a class="code" href="classltr_1_1_scorer.html#a80d2af3991cb44f54ed25b6866aad7f3">00054</a>   <span class="keyword">virtual</span> <a class="code" href="classltr_1_1_scorer.html#a80d2af3991cb44f54ed25b6866aad7f3">~Scorer</a>() {}
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#a8969d43c152f33bf2d4b0f335c996af2">toString</a>() <span class="keyword">const</span>;
-<a name="l00057"></a>00057  <span class="keyword">private</span>:
-<a name="l00058"></a>00058   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_scorer.html#a88297dede592d7ea9715dd77c13c5c8b">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj) <span class="keyword">const</span> = 0;
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#a6c14f5d0ac144cfb6569a6fa6e7b2eac">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span> = 0;
-<a name="l00061"></a>00061 
-<a name="l00062"></a><a class="code" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">00062</a>   FeatureConverterArray <a class="code" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">feature_converter_</a>;
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#aa48452aaa1e7a0c9e86fb9f036b52c0e">toStringImpl</a>() <span class="keyword">const</span>;
-<a name="l00065"></a>00065 };
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00068"></a><a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">00068</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">Scorer::predict</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; elements)<span class="keyword"> const </span>{
-<a name="l00069"></a>00069   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; elements.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>(); ++i) {
-<a name="l00070"></a>00070     <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(elements[i]);
-<a name="l00071"></a>00071   }
-<a name="l00072"></a>00072 }
-<a name="l00073"></a>00073 
-<a name="l00074"></a>00074 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00075"></a><a class="code" href="classltr_1_1_scorer.html#af4d65b8f11ef506ebec36207f64d34d5">00075</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">Scorer::predict</a>(<span class="keyword">const</span> TElement&amp; element)<span class="keyword"> const </span>{
-<a name="l00076"></a>00076   <a class="code" href="classltr_1_1_per_object_accessor.html">PerObjectAccessor&lt;const TElement&gt;</a> per_object_accessor(&amp;element);
-<a name="l00077"></a>00077   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> object_index = 0;
-<a name="l00078"></a>00078        object_index &lt; (int)per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#a55ebbb7e8a85f3ec37fd9d2bdfb91ffb">object_count</a>();
-<a name="l00079"></a>00079        ++object_index) {
-<a name="l00080"></a>00080     per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(object_index).<a class="code" href="classltr_1_1_object.html#afbd9fc1ec44e857e07c735f69c0971f9">set_predicted_label</a>(
-<a name="l00081"></a>00081       <a class="code" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(object_index)));
-<a name="l00082"></a>00082   }
+<a name="l00029"></a><a class="code" href="classltr_1_1_scorer.html#af782746baa55d6b17ae82e227653a073">00029</a>   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a>&gt;;
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="classltr_1_1_scorer.html#a2a344b1a0e9033bf83aa1fbbdc2a6831">00031</a>   <a class="code" href="classltr_1_1_scorer.html#a2a344b1a0e9033bf83aa1fbbdc2a6831">Scorer</a>(<span class="keyword">const</span> FeatureConverterArray&amp;
+<a name="l00032"></a>00032             feature_converter = FeatureConverterArray()):
+<a name="l00033"></a>00033         <a class="code" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">feature_converter_</a>(feature_converter) {}
+<a name="l00034"></a>00034 
+<a name="l00035"></a><a class="code" href="classltr_1_1_scorer.html#ae5e5abf6e74b3c208cdf1632a912adab">00035</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_scorer.html#ae5e5abf6e74b3c208cdf1632a912adab">value</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>)<span class="keyword"> const </span>{
+<a name="l00036"></a>00036     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(<span class="keywordtype">object</span>);
+<a name="l00037"></a>00037   }
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041   <a class="code" href="classltr_1_1_scorer.html#a63134654dd5f53f29068c190ca9dbd2a">GET_SET_VECTOR_OF_PTR</a>(<a class="code" href="classltr_1_1_feature_converter.html" title="A base class for feature converters.">FeatureConverter</a>, feature_converter);
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043   <span class="keyword">using</span> <a class="code" href="classltr_1_1_serializable_functor.html">SerializableFunctor&lt;double&gt;::generateCppCode</a>;
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00048"></a>00048   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; elements) <span class="keyword">const</span>;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050   <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00051"></a>00051   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(<span class="keyword">const</span> TElement&amp; element) <span class="keyword">const</span>;
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#a2307b9593c7dcf5984dc6b26c0de9a06">generateLocalClassName</a>(<span class="keywordtype">size_t</span> index) <span class="keyword">const</span>;
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#a8969d43c152f33bf2d4b0f335c996af2">toString</a>() <span class="keyword">const</span>;
+<a name="l00056"></a>00056  <span class="keyword">private</span>:
+<a name="l00057"></a>00057   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_scorer.html#a88297dede592d7ea9715dd77c13c5c8b">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj) <span class="keyword">const</span> = 0;
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#a6c14f5d0ac144cfb6569a6fa6e7b2eac">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span> = 0;
+<a name="l00060"></a>00060 
+<a name="l00061"></a><a class="code" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">00061</a>   FeatureConverterArray <a class="code" href="classltr_1_1_scorer.html#aa38de14d7a4f25acd3d95acce4a794eb">feature_converter_</a>;
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_scorer.html#aa48452aaa1e7a0c9e86fb9f036b52c0e">toStringImpl</a>() <span class="keyword">const</span>;
+<a name="l00064"></a>00064 };
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00067"></a><a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">00067</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">Scorer::predict</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; elements)<span class="keyword"> const </span>{
+<a name="l00068"></a>00068   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; elements.<a class="code" href="classltr_1_1_data_set.html#a41227a53bcb0914f9ff3558987c39bce">size</a>(); ++i) {
+<a name="l00069"></a>00069     <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(elements[i]);
+<a name="l00070"></a>00070   }
+<a name="l00071"></a>00071 }
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00074"></a><a class="code" href="classltr_1_1_scorer.html#af4d65b8f11ef506ebec36207f64d34d5">00074</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">Scorer::predict</a>(<span class="keyword">const</span> TElement&amp; element)<span class="keyword"> const </span>{
+<a name="l00075"></a>00075   <a class="code" href="classltr_1_1_per_object_accessor.html">PerObjectAccessor&lt;const TElement&gt;</a> per_object_accessor(&amp;element);
+<a name="l00076"></a>00076   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> object_index = 0;
+<a name="l00077"></a>00077        object_index &lt; (int)per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#a55ebbb7e8a85f3ec37fd9d2bdfb91ffb">object_count</a>();
+<a name="l00078"></a>00078        ++object_index) {
+<a name="l00079"></a>00079     per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(object_index).<a class="code" href="classltr_1_1_object.html#afbd9fc1ec44e857e07c735f69c0971f9">set_predicted_label</a>(
+<a name="l00080"></a>00080       <a class="code" href="classltr_1_1_scorer.html#a9b1ae9fe92df2609ed852b5062cff78f">score</a>(per_object_accessor.<a class="code" href="classltr_1_1_per_object_accessor.html#ac2eec239870a4ebf1f0a2a7388162fc5">object</a>(object_index)));
+<a name="l00081"></a>00081   }
+<a name="l00082"></a>00082 }
 <a name="l00083"></a>00083 }
-<a name="l00084"></a>00084 }
-<a name="l00085"></a>00085 <span class="preprocessor">#endif  // LTR_SCORERS_SCORER_H_</span>
+<a name="l00084"></a>00084 <span class="preprocessor">#endif  // LTR_SCORERS_SCORER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

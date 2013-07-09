@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
@@ -130,11 +129,6 @@ Inheritance diagram for ltr::FeatureNormalizerLearner&lt; TElement &gt;:</div>
 
 <p><a href="classltr_1_1_feature_normalizer_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:abc879460e656b6c22b6feafd74045acc"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_feature_normalizer_learner.html">FeatureNormalizerLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#abc879460e656b6c22b6feafd74045acc">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acc00ff8e8fd1c355d347a0abdc933431"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#acc00ff8e8fd1c355d347a0abdc933431">FeatureNormalizerLearner</a> (double min=0.0, double max=1.0)</td></tr>
@@ -146,8 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a30f063b10419be63ee00ab5455e54510"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#a30f063b10419be63ee00ab5455e54510">GET_SET</a> (double, max)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:af039d615387e3fdd46c17b3541dc44c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#af039d615387e3fdd46c17b3541dc44c6">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_per_feature_linear_converter.html">PerFeatureLinearConverter</a> *per_feature_linear_converter)</td></tr>
-<tr class="memdesc:af039d615387e3fdd46c17b3541dc44c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#af039d615387e3fdd46c17b3541dc44c6"></a><br/></td></tr>
+<tr class="memitem:af0badeb561f44cb28fbc367878511bf9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#af0badeb561f44cb28fbc367878511bf9">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">PerFeatureLinearConverter::Ptr</a> *per_feature_linear_converter)</td></tr>
+<tr class="memdesc:af0badeb561f44cb28fbc367878511bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#af0badeb561f44cb28fbc367878511bf9"></a><br/></td></tr>
 <tr class="memitem:a58cc2dd8dfee93ae48cc3dada0bbe5c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#a58cc2dd8dfee93ae48cc3dada0bbe5c0">setParametersImpl</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:acee9ddb30aa48ae8ee885310d75a5f30"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_normalizer_learner.html#acee9ddb30aa48ae8ee885310d75a5f30">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -167,25 +161,7 @@ class ltr::FeatureNormalizerLearner&lt; TElement &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="abc879460e656b6c22b6feafd74045acc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_feature_normalizer_learner.html">FeatureNormalizerLearner</a>&gt; <a class="el" href="classltr_1_1_feature_normalizer_learner.html">ltr::FeatureNormalizerLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_converter_learner.html#a322b5a18eef1103c64df834021f6dcf9">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, PerFeatureLinearConverter &gt;</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="acc00ff8e8fd1c355d347a0abdc933431"></a>
 <div class="memitem">
 <div class="memproto">
@@ -341,14 +317,14 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af039d615387e3fdd46c17b3541dc44c6"></a>
+<a class="anchor" id="af0badeb561f44cb28fbc367878511bf9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_feature_normalizer_learner.html">ltr::FeatureNormalizerLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_normalizer_learner.html#af039d615387e3fdd46c17b3541dc44c6">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_feature_normalizer_learner.html">ltr::FeatureNormalizerLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_normalizer_learner.html#af0badeb561f44cb28fbc367878511bf9">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -356,7 +332,7 @@ template&lt;typename TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_per_feature_linear_converter.html">PerFeatureLinearConverter</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">PerFeatureLinearConverter::Ptr</a> *&#160;</td>
           <td class="paramname"><em>feature_converter</em>&#160;</td>
         </tr>
         <tr>
@@ -377,7 +353,7 @@ template&lt;typename TElement &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a3a939e1ff6c61008e63e6182bba31226">ltr::BaseFeatureConverterLearner&lt; TElement, PerFeatureLinearConverter &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a7b3803b834ee079f9e24cf5ea4c6673f">ltr::BaseFeatureConverterLearner&lt; TElement, PerFeatureLinearConverter &gt;</a>.</p>
 
 </div>
 </div>
@@ -482,7 +458,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -137,7 +137,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acde2eff4e3e410e32f753247aa99ba4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter_learner.html#acde2eff4e3e410e32f753247aa99ba4a">learn</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, bool check_parameters=true)=0</td></tr>
 <tr class="memdesc:acde2eff4e3e410e32f753247aa99ba4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learns input dataset.  <a href="#acde2eff4e3e410e32f753247aa99ba4a"></a><br/></td></tr>
-<tr class="memitem:a0211512ff69ab37206e2c774135c115f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">FeatureConverter::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter_learner.html#a0211512ff69ab37206e2c774135c115f">make</a> () const =0</td></tr>
+<tr class="memitem:a0211512ff69ab37206e2c774135c115f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FeatureConverter::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_converter_learner.html#a0211512ff69ab37206e2c774135c115f">make</a> () const =0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class TElement&gt;<br/>
@@ -161,8 +161,6 @@ template&lt;class TElement&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, TFeatureConverter &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, LinearConverter &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, FeatureSampler &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, NominalToBoolConverter &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, RemoveNominalConverter &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, NanToNeutralConverter &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, PerFeatureLinearConverter &gt;</a>, <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, FakeFeatureConverter &gt;</a>, <a class="el" href="classltr_1_1_p_c_a_learner.html#a695d4157b380efb752be364a5e54556c">ltr::PCALearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_feature_random_sampler_learner.html#a1567bbdd4e70daacdad7a7e604d27f00">ltr::FeatureRandomSamplerLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_feature_normalizer_learner.html#abc879460e656b6c22b6feafd74045acc">ltr::FeatureNormalizerLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_feature_sampler_learner.html#af1b3a2402af1b73171ea4d997845bce6">ltr::FeatureSamplerLearner&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1_fake_feature_converter_learner.html#a56955fbc295ce6375453a4069aedcfbb">ltr::FakeFeatureConverterLearner&lt; TElement &gt;</a>.</p>
 
 </div>
 </div>
@@ -214,7 +212,7 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">FeatureConverter::Ptr</a> <a class="el" href="classltr_1_1_feature_converter_learner.html">ltr::FeatureConverterLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_converter_learner.html#a0211512ff69ab37206e2c774135c115f">make</a> </td>
+          <td class="memname">virtual <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FeatureConverter::Ptr</a> <a class="el" href="classltr_1_1_feature_converter_learner.html">ltr::FeatureConverterLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_converter_learner.html#a0211512ff69ab37206e2c774135c115f">make</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [pure virtual]</code></td>
@@ -236,7 +234,7 @@ template&lt;class TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

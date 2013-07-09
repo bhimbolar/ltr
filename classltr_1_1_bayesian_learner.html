@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
@@ -127,19 +126,14 @@ Inheritance diagram for ltr::BayesianLearner&lt; TElement, TDensityLearner &gt;:
 
 <p><a href="classltr_1_1_bayesian_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aaffc0d290ec56bb9dae529e7d9faab04"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_bayesian_learner.html">BayesianLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5e4cdda824b0d54c219ba7a08193689"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_learner.html#ad5e4cdda824b0d54c219ba7a08193689">BayesianLearner</a> ()</td></tr>
 <tr class="memitem:ae18f4b94a4b08e5b6372afb510034437"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_learner.html#ae18f4b94a4b08e5b6372afb510034437">BayesianLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a932ba6524c478f1f809db8deaa16c8ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_learner.html#a932ba6524c478f1f809db8deaa16c8ff">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, <a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> *scorer)</td></tr>
-<tr class="memdesc:a932ba6524c478f1f809db8deaa16c8ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a932ba6524c478f1f809db8deaa16c8ff"></a><br/></td></tr>
+<tr class="memitem:a58ab446638d8d91c01450cb490579e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_learner.html#a58ab446638d8d91c01450cb490579e1d">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, typename <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BayesianScorer::Ptr</a> *scorer)</td></tr>
+<tr class="memdesc:a58ab446638d8d91c01450cb490579e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a58ab446638d8d91c01450cb490579e1d"></a><br/></td></tr>
 <tr class="memitem:af0d5a82196ff732323250fcab80c9907"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_bayesian_learner.html#af0d5a82196ff732323250fcab80c9907">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -148,26 +142,6 @@ Private Attributes</h2></td></tr>
 <h3>template&lt;class TElement, class TDensityLearner&gt;<br/>
  class ltr::BayesianLearner&lt; TElement, TDensityLearner &gt;</h3>
 
-<hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="aaffc0d290ec56bb9dae529e7d9faab04"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement, class TDensityLearner&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_bayesian_learner.html">BayesianLearner</a>&gt; <a class="el" href="classltr_1_1_bayesian_learner.html">ltr::BayesianLearner</a>&lt; TElement, TDensityLearner &gt;::<a class="el" href="classltr_1_1_bayesian_learner.html#aaffc0d290ec56bb9dae529e7d9faab04">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">ltr::Learner&lt; TElement &gt;</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classltr_1_1_quadratic_discriminant_learner.html#a9b9536fecb30ba5eb3fe0349e11675f3">ltr::QuadraticDiscriminantLearner&lt; TElement &gt;</a>, <a class="el" href="classltr_1_1_normal_naive_bayes_learner.html#ad095e3ea9b4d5acf1411c572bd762139">ltr::NormalNaiveBayesLearner&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1_fisher_discriminant_learner.html#a1af45da93b71b0597b6c6097563e83a0">ltr::FisherDiscriminantLearner&lt; TElement &gt;</a>.</p>
-
-</div>
-</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad5e4cdda824b0d54c219ba7a08193689"></a>
 <div class="memitem">
@@ -227,14 +201,14 @@ template&lt;class TElement, class TDensityLearner&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a932ba6524c478f1f809db8deaa16c8ff"></a>
+<a class="anchor" id="a58ab446638d8d91c01450cb490579e1d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement, class TDensityLearner &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_bayesian_learner.html">ltr::BayesianLearner</a>&lt; TElement, TDensityLearner &gt;::<a class="el" href="classltr_1_1_bayesian_learner.html#a932ba6524c478f1f809db8deaa16c8ff">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_bayesian_learner.html">ltr::BayesianLearner</a>&lt; TElement, TDensityLearner &gt;::<a class="el" href="classltr_1_1_bayesian_learner.html#a58ab446638d8d91c01450cb490579e1d">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -242,7 +216,7 @@ template&lt;class TElement, class TDensityLearner &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_bayesian_scorer.html">BayesianScorer</a> *&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BayesianScorer::Ptr</a> *&#160;</td>
           <td class="paramname"><em>scorer</em>&#160;</td>
         </tr>
         <tr>
@@ -263,7 +237,7 @@ template&lt;class TElement, class TDensityLearner &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_learner.html#a2f326d82c3f867cbd6a6599dbcc67c1d">ltr::BaseLearner&lt; TElement, BayesianScorer &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_learner.html#aa8db56b1192fabebd895fd6efdf664a3">ltr::BaseLearner&lt; TElement, BayesianScorer &gt;</a>.</p>
 
 </div>
 </div>
@@ -290,7 +264,7 @@ template&lt;class TElement, class TDensityLearner&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

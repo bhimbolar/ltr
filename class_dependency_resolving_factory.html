@@ -116,40 +116,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0771acd8b9e7ebc5e010fbc0e51ee6f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a0771acd8b9e7ebc5e010fbc0e51ee6f7">DependencyResolvingFactory</a> (const <a class="el" href="class_config_parser.html">ConfigParser</a> &amp;configurator)</td></tr>
+<tr class="memitem:afa21bfe5c33ffdf4c70f01e70209fc21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#afa21bfe5c33ffdf4c70f01e70209fc21">DependencyResolvingFactory</a> ()</td></tr>
 <tr class="memitem:a4daaa0125601a7891e0df4f02c6e7940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a4daaa0125601a7891e0df4f02c6e7940">checkCircularDependencyAbsence</a> () const </td></tr>
 <tr class="memitem:aacb76c72026ccf0ff8ffa4115f27c1fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_any.html">Any</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#aacb76c72026ccf0ff8ffa4115f27c1fb">Create</a> (const string &amp;name) const </td></tr>
 <tr class="memitem:af09ca363d32f61a3289327e58cf0198b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#af09ca363d32f61a3289327e58cf0198b">Create</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters) const </td></tr>
-<tr class="memitem:a8cfd08bd17d8c2b0bb0403f157ee3b04"><td class="memTemplParams" colspan="2">template&lt;typename RequestedType &gt; </td></tr>
-<tr class="memitem:a8cfd08bd17d8c2b0bb0403f157ee3b04"><td class="memTemplItemLeft" align="right" valign="top">RequestedType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a8cfd08bd17d8c2b0bb0403f157ee3b04">CreateObject</a> (const string &amp;object_name) const </td></tr>
+<tr class="memitem:ae5477b5b654f7d15d0f27a662e247e5f"><td class="memTemplParams" colspan="2">template&lt;typename RequestedType &gt; </td></tr>
+<tr class="memitem:ae5477b5b654f7d15d0f27a662e247e5f"><td class="memTemplItemLeft" align="right" valign="top">RequestedType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#ae5477b5b654f7d15d0f27a662e247e5f">CreateObject</a> (const string &amp;object_name, const string &amp;type_name)</td></tr>
+<tr class="memitem:a7254e11c84a644901bf09ef242642211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a7254e11c84a644901bf09ef242642211">init</a> (const Configuration::Ptr configuration)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a993b8883c311e90c941b167b274cea6d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a993b8883c311e90c941b167b274cea6d">getObjectAlias</a> (const <a class="el" href="class_object_info.html">ObjectInfo</a> &amp;object_info)</td></tr>
+<tr class="memitem:ab8333c81bed8b4444bdd8c20c2daf592"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#ab8333c81bed8b4444bdd8c20c2daf592">getObjectAlias</a> (const ObjectInfo::Ptr object_info)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a5ffbb064999fad8ffb0d9c4d97f490d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a5ffbb064999fad8ffb0d9c4d97f490d1">tryBuildingObjectCreationChain</a> (const <a class="el" href="class_object_info.html">ObjectInfo</a> *object_info, <a class="el" href="parameterized__info_8h.html#aaf3b6a2c2a36439977fd2b1c7c60e4b7">ObjectInfosList</a> *info_queue, <a class="el" href="parameterized__info_8h.html#aaf3b6a2c2a36439977fd2b1c7c60e4b7">ObjectInfosList</a> *circularity_check_queue) const </td></tr>
+<tr class="memitem:a33f4b16ee1a257b9dfbb1ebfe890a2c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a33f4b16ee1a257b9dfbb1ebfe890a2c1">tryBuildingObjectCreationChain</a> (const ObjectInfo::Ptr object_info, <a class="el" href="object__info_8h.html#a908fa520050b2fab4f1add2c03e4ad0b">ObjectInfosList</a> *info_queue, <a class="el" href="object__info_8h.html#a908fa520050b2fab4f1add2c03e4ad0b">ObjectInfosList</a> *circularity_check_queue) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5036a4146fcb594bab0bfa3d1442c152"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_config_parser.html">ConfigParser</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a5036a4146fcb594bab0bfa3d1442c152">configurator_</a></td></tr>
+<tr class="memitem:a61abecc68d4681c0db38ea538a04a8e6"><td class="memItemLeft" align="right" valign="top">Configuration::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dependency_resolving_factory.html#a61abecc68d4681c0db38ea538a04a8e6">configuration_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Manages object creation and checks for circular dependencies </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0771acd8b9e7ebc5e010fbc0e51ee6f7"></a>
+<a class="anchor" id="afa21bfe5c33ffdf4c70f01e70209fc21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_dependency_resolving_factory.html#a0771acd8b9e7ebc5e010fbc0e51ee6f7">DependencyResolvingFactory::DependencyResolvingFactory</a> </td>
+          <td class="memname"><a class="el" href="class_dependency_resolving_factory.html#afa21bfe5c33ffdf4c70f01e70209fc21">DependencyResolvingFactory::DependencyResolvingFactory</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_config_parser.html">ConfigParser</a> &amp;&#160;</td>
-          <td class="paramname"><em>configurator</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Constructor for <a class="el" href="class_dependency_resolving_factory.html">DependencyResolvingFactory</a> </p>
 
 </div>
 </div>
@@ -219,40 +218,51 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8cfd08bd17d8c2b0bb0403f157ee3b04"></a>
+<a class="anchor" id="ae5477b5b654f7d15d0f27a662e247e5f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename RequestedType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">RequestedType <a class="el" href="class_dependency_resolving_factory.html#a8cfd08bd17d8c2b0bb0403f157ee3b04">DependencyResolvingFactory::CreateObject</a> </td>
+          <td class="memname">RequestedType <a class="el" href="class_dependency_resolving_factory.html#ae5477b5b654f7d15d0f27a662e247e5f">DependencyResolvingFactory::CreateObject</a> </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>object_name</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>object_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>type_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Creates an object, declared in config </p>
+<p>Creates an object, declared in config</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">object_name</td><td>- string with the object name </td></tr>
+    <tr><td class="paramname">type_name</td><td>- name of the requested type for checking tags </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a993b8883c311e90c941b167b274cea6d"></a>
+<a class="anchor" id="ab8333c81bed8b4444bdd8c20c2daf592"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="class_dependency_resolving_factory.html#a993b8883c311e90c941b167b274cea6d">DependencyResolvingFactory::getObjectAlias</a> </td>
+          <td class="memname">string <a class="el" href="class_dependency_resolving_factory.html#ab8333c81bed8b4444bdd8c20c2daf592">DependencyResolvingFactory::getObjectAlias</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_object_info.html">ObjectInfo</a> &amp;&#160;</td>
+          <td class="paramtype">const ObjectInfo::Ptr&#160;</td>
           <td class="paramname"><em>object_info</em></td><td>)</td>
           <td><code> [static, protected]</code></td>
         </tr>
@@ -269,26 +279,50 @@ template&lt;typename RequestedType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5ffbb064999fad8ffb0d9c4d97f490d1"></a>
+<a class="anchor" id="a7254e11c84a644901bf09ef242642211"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_dependency_resolving_factory.html#a5ffbb064999fad8ffb0d9c4d97f490d1">DependencyResolvingFactory::tryBuildingObjectCreationChain</a> </td>
+          <td class="memname">void <a class="el" href="class_dependency_resolving_factory.html#a7254e11c84a644901bf09ef242642211">DependencyResolvingFactory::init</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_object_info.html">ObjectInfo</a> *&#160;</td>
+          <td class="paramtype">const Configuration::Ptr&#160;</td>
+          <td class="paramname"><em>configuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initializes factory by given configuration.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configuration</td><td>- initializing configuration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a33f4b16ee1a257b9dfbb1ebfe890a2c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_dependency_resolving_factory.html#a33f4b16ee1a257b9dfbb1ebfe890a2c1">DependencyResolvingFactory::tryBuildingObjectCreationChain</a> </td>
+          <td>(</td>
+          <td class="paramtype">const ObjectInfo::Ptr&#160;</td>
           <td class="paramname"><em>object_info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="parameterized__info_8h.html#aaf3b6a2c2a36439977fd2b1c7c60e4b7">ObjectInfosList</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="object__info_8h.html#a908fa520050b2fab4f1add2c03e4ad0b">ObjectInfosList</a> *&#160;</td>
           <td class="paramname"><em>info_queue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="parameterized__info_8h.html#aaf3b6a2c2a36439977fd2b1c7c60e4b7">ObjectInfosList</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="object__info_8h.html#a908fa520050b2fab4f1add2c03e4ad0b">ObjectInfosList</a> *&#160;</td>
           <td class="paramname"><em>circularity_check_queue</em>&#160;</td>
         </tr>
         <tr>
@@ -303,12 +337,12 @@ template&lt;typename RequestedType &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a5036a4146fcb594bab0bfa3d1442c152"></a>
+<a class="anchor" id="a61abecc68d4681c0db38ea538a04a8e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_config_parser.html">ConfigParser</a>&amp; <a class="el" href="class_dependency_resolving_factory.html#a5036a4146fcb594bab0bfa3d1442c152">DependencyResolvingFactory::configurator_</a><code> [private]</code></td>
+          <td class="memname">Configuration::Ptr <a class="el" href="class_dependency_resolving_factory.html#a61abecc68d4681c0db38ea538a04a8e6">DependencyResolvingFactory::configuration_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -324,7 +358,7 @@ template&lt;typename RequestedType &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:44 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

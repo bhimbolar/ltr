@@ -1,3 +1,15 @@
 <map id="G" name="G">
-<area shape="rect" href="$safe__map__unittest_8cc.html" title="ltr/utility/safe_map_unittest.cc" alt="" coords="5,80,200,107"/>
+<area shape="rect" href="$safe__map__unittest_8cc.html" title="ltr/utility/safe_map_unittest.cc" alt="" coords="67,80,261,107"/>
+<area shape="rect" href="$object__info_8h.html" title="ltr_client/utility/object_info.h" alt="" coords="285,80,467,107"/>
+<area shape="rect" href="$configuration_8h.html" title="ltr_client/configuration.h" alt="" coords="453,155,611,181"/>
+<area shape="rect" href="$config__parser_8h.html" title="ltr_client/config_parser.h" alt="" coords="453,229,616,256"/>
+<area shape="rect" href="$ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="293,304,427,331"/>
+<area shape="rect" href="$dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="72,229,328,256"/>
+<area shape="rect" href="$object__info_8cc.html" title="ltr_client/utility/object_info.cc" alt="" coords="88,155,277,181"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="712,453,832,480"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="697,379,847,405"/>
+<area shape="rect" href="$config__parser_8cc.html" title="ltr_client/config_parser.cc" alt="" coords="451,304,619,331"/>
+<area shape="rect" href="$config__parser__unittest_8cc.html" title="ltr_client/config_parser_unittest.cc" alt="" coords="643,304,861,331"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="289,379,431,405"/>
+<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="5,304,269,331"/>
 </map>

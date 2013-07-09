@@ -163,7 +163,9 @@ Decision tree learner</h2>
 <tr>
 <th>Example: usage of LTR <a class="el" href="classltr_1_1decision__tree_1_1_decision_tree_learner.html" title="DecisionTreeLearner Builds decision tree for given data.">DecisionTreeLearner</a> </th><th>Output:</th></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// NOLINT</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
@@ -206,14 +208,15 @@ Decision tree learner</h2>
   data.add(point3);
   data.add(point4);
 
-  DecisionTreeLearner&lt;Object&gt; decision_tree_learner(
-    <span class="keyword">new</span> ID3Splitter, <span class="keyword">new</span> MostCommonLabelLeafGenerator);
-  decision_tree_learner.add_stop_splitting_criteria(
+  DecisionTreeLearner&lt;Object&gt;::Ptr decision_tree_learner(
+    <span class="keyword">new</span> DecisionTreeLearner&lt;Object&gt;(<span class="keyword">new</span> ID3Splitter,
+    <span class="keyword">new</span> MostCommonLabelLeafGenerator));
+  decision_tree_learner-&gt;add_stop_splitting_criteria(
     <span class="keyword">new</span> SameLabelStopSplittingCriteria);
 
-  decision_tree_learner.learn(data);
+  decision_tree_learner-&gt;learn(data);
 
-  <a class="code" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Scorer::Ptr</a> decision_tree_scorer = decision_tree_learner.make();
+  <a class="code" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Scorer::Ptr</a> decision_tree_scorer = decision_tree_learner-&gt;make();
 
   Object test_point1;
   test_point1 &lt;&lt; 3 &lt;&lt; 3;
@@ -235,7 +238,7 @@ Second test point label = 2
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

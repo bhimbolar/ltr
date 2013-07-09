@@ -1,8 +1,16 @@
 <map id="G" name="G">
-<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="488,155,643,181"/>
-<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1112,80,1237,107"/>
-<area shape="rect" href="$lexical__cast_8hpp.html" title="ltr/utility/boost/lexical_cast.hpp" alt="" coords="580,80,780,107"/>
-<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="717,155,899,181"/>
-<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="973,155,1112,181"/>
+<area shape="rect" href="$printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="437,155,592,181"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1149,80,1275,107"/>
+<area shape="rect" href="$lexical__cast_8hpp.html" title="ltr/utility/boost/lexical_cast.hpp" alt="" coords="667,80,867,107"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="1288,155,1467,181"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="1163,229,1429,256"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="1393,304,1556,331"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="1257,304,1369,331"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="891,304,939,331"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="985,304,1076,331"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="1100,304,1233,331"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1340,379,1479,405"/>
+<area shape="rect" href="$string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="931,155,1112,181"/>
+<area shape="rect" href="$any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="717,155,856,181"/>
 <area shape="rect" href="$lexical__cast__config_8hpp.html" title="ltr/utility/boost/lexical_cast_config.hpp" alt="" coords="171,155,413,181"/>
 </map>

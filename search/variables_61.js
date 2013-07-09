@@ -8,11 +8,12 @@ var searchData=
   ['aggregator_5fthreshold_5f',['aggregator_threshold_',['../classoptimization_1_1_per_point_stop_criterion.html#a1b496a8427e72154e0d3ba6ac153ec10',1,'optimization::PerPointStopCriterion']]],
   ['alias_5f',['alias_',['../classltr_1_1_aliaser.html#a9c486841d743e0ce390b512efc2dd7b9',1,'ltr::Aliaser']]],
   ['antigradient_5f',['antigradient_',['../classoptimization_1_1_conjugate_direction_calculator.html#af6a0918b95e3349846d3fbeb89a8aaa0',1,'optimization::ConjugateDirectionCalculator']]],
-  ['approach',['approach',['../struct_data_info.html#a9ee5044c93902ac46dec7878f1474999',1,'DataInfo']]],
-  ['approach_5f',['approach_',['../class_object_info.html#a789fecf7d41b264846532245f8a905cf',1,'ObjectInfo']]],
+  ['approach',['approach',['../struct_data_info.html#a9ee5044c93902ac46dec7878f1474999',1,'DataInfo::approach()'],['../struct_object_info.html#aecdb078fb04f112329a0d128cee5e24e',1,'ObjectInfo::approach()']]],
+  ['approach_5fattr',['APPROACH_ATTR',['../config__constants_8h.html#ac484f6ec65148b76245e33253043794e',1,'config_constants.h']]],
   ['arff_5farff_5ftest_5ffile_5fname',['arff_arff_test_file_name',['../class_i_o_utility_test.html#a236192e1e2316b1a834daac692690548',1,'IOUtilityTest']]],
   ['arff_5finput_5ftest_5ffile_5fname',['arff_input_test_file_name',['../class_i_o_utility_test.html#a4833558f12ba8e85e6763132bf2a8a9e',1,'IOUtilityTest']]],
   ['arff_5foutput_5ftest_5ffile_5fname',['arff_output_test_file_name',['../class_i_o_utility_test.html#a0ba943931ac862f05972f5f0ff679190',1,'IOUtilityTest']]],
+  ['argmin',['argmin',['../classoptimization_1_1_solution.html#ab451c3e6e733ae7fcee694e4201b64c0',1,'optimization::Solution']]],
   ['axis_5flabel',['axis_label',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#a13cb394122f6e00c6e080e6368e7841a',1,'ltr::utility::MultiTable::DimensionMetaInfo']]],
   ['axis_5fticks_5flabels',['axis_ticks_labels',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#ac8fd51be980f7a725202ebc6f4c49f77',1,'ltr::utility::MultiTable::DimensionMetaInfo']]]
 ];

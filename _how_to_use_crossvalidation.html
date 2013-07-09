@@ -150,7 +150,9 @@ Cross-validation</h2>
 <tr>
 <th>Code: </th><th>Output:</th></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">// NOLINT</span>
 <span class="preprocessor">#include &lt;vector&gt;</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="leave__one__out__splitter_8h.html">ltr/crossvalidation/leave_one_out_splitter.h</a>&quot;</span>
@@ -167,10 +169,10 @@ Cross-validation</h2>
 <span class="keyword">using</span> std::vector;
 <span class="keyword">using</span> std::endl;
 
-<span class="keyword">using namespace </span>ltr;
-<span class="keyword">using namespace </span>ltr::cv;
-<span class="keyword">using namespace </span>ltr::gp;
-<span class="keyword">using namespace </span>ltr::io_utility;
+<span class="keyword">using namespace </span>ltr;  <span class="comment">// NOLINT</span>
+<span class="keyword">using namespace </span>ltr::cv;  <span class="comment">// NOLINT</span>
+<span class="keyword">using namespace </span>ltr::gp;  <span class="comment">// NOLINT</span>
+<span class="keyword">using namespace </span>ltr::io_utility;  <span class="comment">// NOLINT</span>
 
 <span class="keywordtype">int</span> <a class="code" href="generator_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>() {
   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;ObjectList&gt;</a> test_data = loadDataSet&lt;ObjectList&gt;(
@@ -178,15 +180,15 @@ Cross-validation</h2>
   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;ObjectList&gt;</a> train_data = loadDataSet&lt;ObjectList&gt;(
           <span class="stringliteral">&quot;data/imat2009/imat2009_learning_small.txt&quot;</span>, <span class="stringliteral">&quot;Yandex&quot;</span>);
 
-  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_one(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_d_c_g.html">DCG</a>());
-  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_two(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_n_d_c_g.html">NDCG</a>());
+  <a class="code" href="classltr_1_1_measure.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_one(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_d_c_g.html">DCG</a>());
+  <a class="code" href="classltr_1_1_measure.html">Measure&lt;ObjectList&gt;::Ptr</a> measure_two(<span class="keyword">new</span> <a class="code" href="classltr_1_1_base_n_d_c_g.html">NDCG</a>());
 
-  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BestFeatureLearner&lt;ObjectList&gt;::Ptr</a> learner_one =
+  <a class="code" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner&lt;ObjectList&gt;::Ptr</a> learner_one =
       <span class="keyword">new</span> <a class="code" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner&lt;ObjectList&gt;</a>(measure_one);
-  learner_one-&gt;learn(train_data);
-  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GPLearner&lt;ObjectList&gt;::Ptr</a> learner_two =
+  learner_one-&gt;<a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn</a>(train_data);
+  <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner&lt;ObjectList&gt;::Ptr</a> learner_two =
       <span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner&lt;ObjectList&gt;</a>(measure_one);
-  learner_two-&gt;learn(train_data);
+  learner_two-&gt;<a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn</a>(train_data);
 
   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">LeaveOneOutSplitter&lt;ObjectList&gt;::Ptr</a> splitter=
       <span class="keyword">new</span> <a class="code" href="classltr_1_1cv_1_1_leave_one_out_splitter.html" title="Splits leaving only one test object.">LeaveOneOutSplitter&lt;ObjectList&gt;</a>();
@@ -216,7 +218,7 @@ NDCG     1                  0.75
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

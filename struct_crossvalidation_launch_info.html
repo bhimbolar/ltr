@@ -108,23 +108,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Contains the information about the crossvalidation launch, including the leaners vector, measures vector, datasets vector and the splitter. Must be used by shared_ptr only.  
+ <a href="struct_crossvalidation_launch_info.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="crossvalidation__launch__info_8h_source.html">crossvalidation_launch_info.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for CrossvalidationLaunchInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_crossvalidation_launch_info__inherit__graph.png" border="0" usemap="#_crossvalidation_launch_info_inherit__map" alt="Inheritance graph"/></div>
+<map name="_crossvalidation_launch_info_inherit__map" id="_crossvalidation_launch_info_inherit__map">
+<area shape="rect" href="classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="45,5,136,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="struct_crossvalidation_launch_info-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1768df876ca94ad838c0e47cbfb3faf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a1768df876ca94ad838c0e47cbfb3faf6">ALLOW_SHARED_PTR_ONLY_CREATION</a> (<a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>)</td></tr>
+<tr class="memitem:a6b2bafd6707783c5aae82514255bd2be"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a6b2bafd6707783c5aae82514255bd2be">toString</a> () const </td></tr>
 <tr class="memitem:a7d18a0ee5f9aab382388996e6b20abdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a7d18a0ee5f9aab382388996e6b20abdd">CrossvalidationLaunchInfo</a> ()</td></tr>
 <tr class="memitem:a6e037225d377bc369756f8ae2a338c8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a6e037225d377bc369756f8ae2a338c8e">CrossvalidationLaunchInfo</a> (const string &amp;fold_)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a21ee79a41098bf23fa2e506a43ef3f04"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a21ee79a41098bf23fa2e506a43ef3f04">splitter</a></td></tr>
-<tr class="memitem:a1fa1f60692b0d3426d295f748b7a000c"><td class="memItemLeft" align="right" valign="top">set&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a1fa1f60692b0d3426d295f748b7a000c">learners</a></td></tr>
-<tr class="memitem:a16f59e6fd569336dc5937d1511df5013"><td class="memItemLeft" align="right" valign="top">set&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a16f59e6fd569336dc5937d1511df5013">measures</a></td></tr>
-<tr class="memitem:a090084180d71b0b0bbe86d64e941ce1c"><td class="memItemLeft" align="right" valign="top">set&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a090084180d71b0b0bbe86d64e941ce1c">datas</a></td></tr>
+<tr class="memitem:a196cdf32f2ccb4e6bfc30939f17ec4f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#a196cdf32f2ccb4e6bfc30939f17ec4f2">learners</a></td></tr>
+<tr class="memitem:aaa1ae3562910ee7f62535142c0598a1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#aaa1ae3562910ee7f62535142c0598a1e">measures</a></td></tr>
+<tr class="memitem:aa31b1beb8d8510d5003c72f5be8a7c1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_crossvalidation_launch_info.html#aa31b1beb8d8510d5003c72f5be8a7c1e">datas</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Contains the information about the crossvalidation launch, including the leaners vector, measures vector, datasets vector and the splitter </p>
+<div class="textblock"><p>Contains the information about the crossvalidation launch, including the leaners vector, measures vector, datasets vector and the splitter. Must be used by shared_ptr only. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7d18a0ee5f9aab382388996e6b20abdd"></a>
 <div class="memitem">
@@ -139,6 +151,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Basic constructor </p>
 
 </div>
 </div>
@@ -156,7 +169,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Basic constructor. </p>
+<p>Basic constructor.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">fold_</td><td>- splitter fold </td></tr>
@@ -166,43 +179,82 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a1768df876ca94ad838c0e47cbfb3faf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_crossvalidation_launch_info.html#a1768df876ca94ad838c0e47cbfb3faf6">CrossvalidationLaunchInfo::ALLOW_SHARED_PTR_ONLY_CREATION</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b2bafd6707783c5aae82514255bd2be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="struct_crossvalidation_launch_info.html#a6b2bafd6707783c5aae82514255bd2be">CrossvalidationLaunchInfo::toString</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a090084180d71b0b0bbe86d64e941ce1c"></a>
+<a class="anchor" id="aa31b1beb8d8510d5003c72f5be8a7c1e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">set&lt;string&gt; <a class="el" href="struct_crossvalidation_launch_info.html#a090084180d71b0b0bbe86d64e941ce1c">CrossvalidationLaunchInfo::datas</a></td>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt;string&gt; <a class="el" href="struct_crossvalidation_launch_info.html#aa31b1beb8d8510d5003c72f5be8a7c1e">CrossvalidationLaunchInfo::datas</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set of names of using datasets. </p>
 
 </div>
 </div>
-<a class="anchor" id="a1fa1f60692b0d3426d295f748b7a000c"></a>
+<a class="anchor" id="a196cdf32f2ccb4e6bfc30939f17ec4f2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">set&lt;string&gt; <a class="el" href="struct_crossvalidation_launch_info.html#a1fa1f60692b0d3426d295f748b7a000c">CrossvalidationLaunchInfo::learners</a></td>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt;string&gt; <a class="el" href="struct_crossvalidation_launch_info.html#a196cdf32f2ccb4e6bfc30939f17ec4f2">CrossvalidationLaunchInfo::learners</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set of names of using learners. </p>
 
 </div>
 </div>
-<a class="anchor" id="a16f59e6fd569336dc5937d1511df5013"></a>
+<a class="anchor" id="aaa1ae3562910ee7f62535142c0598a1e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">set&lt;string&gt; <a class="el" href="struct_crossvalidation_launch_info.html#a16f59e6fd569336dc5937d1511df5013">CrossvalidationLaunchInfo::measures</a></td>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt;string&gt; <a class="el" href="struct_crossvalidation_launch_info.html#aaa1ae3562910ee7f62535142c0598a1e">CrossvalidationLaunchInfo::measures</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set of names of using measures. </p>
 
 </div>
 </div>
@@ -216,6 +268,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Splitter fold </p>
 
 </div>
 </div>
@@ -226,7 +279,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:44 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

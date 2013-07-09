@@ -132,8 +132,8 @@ Inheritance diagram for ltr::NanToZeroConverterLearner&lt; TElement &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0f01baa113ec93098b728bb7e56b455"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#ac0f01baa113ec93098b728bb7e56b455">NanToZeroConverterLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:a17244897bfdcd30b7d94fe98935d15e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#a17244897bfdcd30b7d94fe98935d15e2">NanToZeroConverterLearner</a> ()</td></tr>
-<tr class="memitem:a7299136818e5d34e5e3849f3be81cf3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#a7299136818e5d34e5e3849f3be81cf3c">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_nan_to_neutral_converter.html">NanToNeutralConverter</a> *feature_converter)</td></tr>
-<tr class="memdesc:a7299136818e5d34e5e3849f3be81cf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#a7299136818e5d34e5e3849f3be81cf3c"></a><br/></td></tr>
+<tr class="memitem:aa4a00574cd121541c55cf07074dd39c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#aa4a00574cd121541c55cf07074dd39c2">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">NanToNeutralConverter::Ptr</a> *feature_converter)</td></tr>
+<tr class="memdesc:aa4a00574cd121541c55cf07074dd39c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#aa4a00574cd121541c55cf07074dd39c2"></a><br/></td></tr>
 <tr class="memitem:a5ccf40507dea350e08cfff340ec6a4b1"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#a5ccf40507dea350e08cfff340ec6a4b1">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -203,14 +203,14 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7299136818e5d34e5e3849f3be81cf3c"></a>
+<a class="anchor" id="aa4a00574cd121541c55cf07074dd39c2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html">ltr::NanToZeroConverterLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#a7299136818e5d34e5e3849f3be81cf3c">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html">ltr::NanToZeroConverterLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_nan_to_zero_converter_learner.html#aa4a00574cd121541c55cf07074dd39c2">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -218,7 +218,7 @@ template&lt;typename TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_nan_to_neutral_converter.html">NanToNeutralConverter</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">NanToNeutralConverter::Ptr</a> *&#160;</td>
           <td class="paramname"><em>feature_converter</em>&#160;</td>
         </tr>
         <tr>
@@ -239,7 +239,7 @@ template&lt;typename TElement &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a3a939e1ff6c61008e63e6182bba31226">ltr::BaseFeatureConverterLearner&lt; TElement, NanToNeutralConverter &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a7b3803b834ee079f9e24cf5ea4c6673f">ltr::BaseFeatureConverterLearner&lt; TElement, NanToNeutralConverter &gt;</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ template&lt;typename TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

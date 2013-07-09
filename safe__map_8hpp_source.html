@@ -162,15 +162,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00090"></a>00090           &lt;&lt; lexical_cast&lt;<span class="keywordtype">string</span>&gt;(it-&gt;second) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
 <a name="l00091"></a>00091     <span class="keywordflow">return</span> out.str();
 <a name="l00092"></a>00092   }
-<a name="l00093"></a>00093 };
-<a name="l00094"></a>00094 };
-<a name="l00095"></a>00095 };
-<a name="l00096"></a>00096 <span class="preprocessor">#endif  // LTR_UTILITY_SAFE_MAP_HPP_</span>
+<a name="l00093"></a>00093 
+<a name="l00101"></a><a class="code" href="classltr_1_1utility_1_1_safe_map.html#ae1c32b7f5b510479af34984c11f44d7d">00101</a>   <span class="keyword">const</span> <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_safe_map.html#ae1c32b7f5b510479af34984c11f44d7d">safeAt</a>(<span class="keyword">const</span> Key&amp; key)<span class="keyword"> const </span>{
+<a name="l00102"></a>00102     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1utility_1_1_safe_map.html#a06011f02211c23a2b15797b33643b59a">safeFind</a>(key)-&gt;second;
+<a name="l00103"></a>00103   }
+<a name="l00104"></a>00104 
+<a name="l00112"></a><a class="code" href="classltr_1_1utility_1_1_safe_map.html#adab8a614f72980543795cbed319410f2">00112</a>   <a class="code" href="class_t.html">T</a>&amp; <a class="code" href="classltr_1_1utility_1_1_safe_map.html#adab8a614f72980543795cbed319410f2">safeAt</a>(<span class="keyword">const</span> Key&amp; key) {
+<a name="l00113"></a>00113     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1utility_1_1_safe_map.html#a06011f02211c23a2b15797b33643b59a">safeFind</a>(key)-&gt;second;
+<a name="l00114"></a>00114   }
+<a name="l00115"></a>00115 };
+<a name="l00116"></a>00116 };
+<a name="l00117"></a>00117 };
+<a name="l00118"></a>00118 <span class="preprocessor">#endif  // LTR_UTILITY_SAFE_MAP_HPP_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

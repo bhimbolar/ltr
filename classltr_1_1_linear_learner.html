@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
@@ -126,11 +125,6 @@ Inheritance diagram for ltr::LinearLearner&lt; TElement &gt;:</div>
 
 <p><a href="classltr_1_1_linear_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a927c3ac5dbbba0bf5b9c87224270e463"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_linear_learner.html">LinearLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_learner.html#a927c3ac5dbbba0bf5b9c87224270e463">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e7f5ac33a5284b2c032cb3586b6db78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_learner.html#a8e7f5ac33a5284b2c032cb3586b6db78">LinearLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
@@ -140,31 +134,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad45e9de823cccf54587abfeaa0a4cca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_learner.html#ad45e9de823cccf54587abfeaa0a4cca0">setInitialScorer</a> (const <a class="el" href="classltr_1_1_linear_scorer.html">LinearScorer</a> &amp;scorer)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7405a1d7182af8dac58f2969e9ec716a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_learner.html#a7405a1d7182af8dac58f2969e9ec716a">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, <a class="el" href="classltr_1_1_linear_scorer.html">LinearScorer</a> *scorer)</td></tr>
-<tr class="memdesc:a7405a1d7182af8dac58f2969e9ec716a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a7405a1d7182af8dac58f2969e9ec716a"></a><br/></td></tr>
+<tr class="memitem:a7a473bbad5d42b5c8073282acd347d1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_learner.html#a7a473bbad5d42b5c8073282acd347d1c">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, typename <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">LinearScorer::Ptr</a> *scorer)</td></tr>
+<tr class="memdesc:a7a473bbad5d42b5c8073282acd347d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a7a473bbad5d42b5c8073282acd347d1c"></a><br/></td></tr>
 <tr class="memitem:a0ed0e0c96be62507737c6296fa24dfdd"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_linear_learner.html#a0ed0e0c96be62507737c6296fa24dfdd">getDefaultAlias</a> () const </td></tr>
 </table>
 <h3>template&lt;class TElement&gt;<br/>
  class ltr::LinearLearner&lt; TElement &gt;</h3>
 
-<hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a927c3ac5dbbba0bf5b9c87224270e463"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_linear_learner.html">LinearLearner</a>&gt; <a class="el" href="classltr_1_1_linear_learner.html">ltr::LinearLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">ltr::Learner&lt; TElement &gt;</a>.</p>
-
-</div>
-</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8e7f5ac33a5284b2c032cb3586b6db78"></a>
 <div class="memitem">
@@ -224,14 +200,14 @@ template&lt;class TElement&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7405a1d7182af8dac58f2969e9ec716a"></a>
+<a class="anchor" id="a7a473bbad5d42b5c8073282acd347d1c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_linear_learner.html">ltr::LinearLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_linear_learner.html#a7405a1d7182af8dac58f2969e9ec716a">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_linear_learner.html">ltr::LinearLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_linear_learner.html#a7a473bbad5d42b5c8073282acd347d1c">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -239,7 +215,7 @@ template&lt;class TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_linear_scorer.html">LinearScorer</a> *&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">LinearScorer::Ptr</a> *&#160;</td>
           <td class="paramname"><em>scorer</em>&#160;</td>
         </tr>
         <tr>
@@ -260,7 +236,7 @@ template&lt;class TElement &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_learner.html#a2f326d82c3f867cbd6a6599dbcc67c1d">ltr::BaseLearner&lt; TElement, LinearScorer &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_learner.html#aa8db56b1192fabebd895fd6efdf664a3">ltr::BaseLearner&lt; TElement, LinearScorer &gt;</a>.</p>
 
 </div>
 </div>
@@ -297,13 +273,11 @@ template&lt;class TElement&gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_linear_scorer.html">LinearScorer</a> &amp;&#160;</td>
           <td class="paramname"><em>scorer</em></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">ltr::BaseLearner&lt; TElement, LinearScorer &gt;</a>.</p>
 
 </div>
 </div>
@@ -314,7 +288,7 @@ template&lt;class TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

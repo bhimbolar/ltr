@@ -99,25 +99,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">ltr_client/utility/train_launch_info.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br/>
-<code>#include &lt;set&gt;</code><br/>
+<code>#include &quot;<a class="el" href="printable_8h_source.html">ltr/interfaces/printable.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="safe__set_8hpp_source.html">ltr/utility/safe_set.hpp</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for train_launch_info.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="train__launch__info_8h__incl.png" border="0" usemap="#ltr__client_2utility_2train__launch__info_8h" alt=""/></div>
+<map name="ltr__client_2utility_2train__launch__info_8h" id="ltr__client_2utility_2train__launch__info_8h">
+<area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="1248,229,1403,256"/><area shape="rect" href="safe__set_8hpp.html" title="ltr/utility/safe_set.hpp" alt="" coords="1109,80,1253,107"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="196,155,321,181"/><area shape="rect" href="lexical__cast_8hpp.html" title="ltr/utility/boost/lexical_cast.hpp" alt="" coords="829,155,1029,181"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="5,229,184,256"/><area shape="rect" href="_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="64,304,331,331"/><area shape="rect" href="_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="667,379,829,405"/><area shape="rect" href="_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="37,379,149,405"/><area shape="rect" href="_ptr_8h.html" title="Ptr.h" alt="" coords="173,379,221,405"/><area shape="rect" href="_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="245,379,336,405"/><area shape="rect" href="_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="360,379,493,405"/><area shape="rect" href="_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="613,453,752,480"/><area shape="rect" href="string__utils_8h.html" title="ltr/utility/boost/string_utils.h" alt="" coords="360,229,541,256"/><area shape="rect" href="any_8h.html" title="ltr/utility/boost/any.h" alt="" coords="616,229,755,256"/><area shape="rect" href="lexical__cast__config_8hpp.html" title="ltr/utility/boost/lexical_cast_config.hpp" alt="" coords="880,229,1123,256"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="train__launch__info_8h__dep__incl.png" border="0" usemap="#ltr__client_2utility_2train__launch__info_8hdep" alt=""/></div>
 <map name="ltr__client_2utility_2train__launch__info_8hdep" id="ltr__client_2utility_2train__launch__info_8hdep">
-<area shape="rect" href="configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="459,80,611,107"/><area shape="rect" href="train__launch__info_8cc.html" title="ltr_client/utility/train_launch_info.cc" alt="" coords="748,155,972,181"/><area shape="rect" href="configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="513,155,673,181"/><area shape="rect" href="dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="132,155,388,181"/><area shape="rect" href="ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="305,229,439,256"/><area shape="rect" href="ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="52,304,193,331"/><area shape="rect" href="main_8cc.html" title="ltr_client/main.cc" alt="" coords="420,379,540,405"/><area shape="rect" href="registration_8h.html" title="ltr_client/registration.h" alt="" coords="405,304,555,331"/><area shape="rect" href="dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="17,229,281,256"/></map>
+<area shape="rect" href="configuration_8h.html" title="ltr_client/configuration.h" alt="" coords="400,80,557,107"/><area shape="rect" href="config__parser_8h.html" title="ltr_client/config_parser.h" alt="" coords="253,155,416,181"/><area shape="rect" href="ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="491,229,624,256"/><area shape="rect" href="main_8cc.html" title="ltr_client/main.cc" alt="" coords="671,379,791,405"/><area shape="rect" href="registration_8h.html" title="ltr_client/registration.h" alt="" coords="379,304,528,331"/><area shape="rect" href="dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="541,155,797,181"/><area shape="rect" href="config__parser_8cc.html" title="ltr_client/config_parser.cc" alt="" coords="5,229,173,256"/><area shape="rect" href="config__parser__unittest_8cc.html" title="ltr_client/config_parser_unittest.cc" alt="" coords="197,229,416,256"/><area shape="rect" href="ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="552,304,693,331"/><area shape="rect" href="dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="648,229,912,256"/></map>
 </div>
 </div>
 <p><a href="train__launch__info_8h_source.html">Go to the source code of this file.</a></p>
@@ -125,41 +127,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a577204f8789ba12eff787e3aeb8cb5d2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="train__launch__info_8h.html#a577204f8789ba12eff787e3aeb8cb5d2">ToString</a> (const <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> &amp;Info)</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all the information about the train launch, including name, data iinformation and learner information. Also it contains the flag that defines if the library will generate the C++ code or not.  <a href="struct_train_launch_info.html#details">More...</a><br/></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a577204f8789ba12eff787e3aeb8cb5d2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="train__launch__info_8h.html#a577204f8789ba12eff787e3aeb8cb5d2">ToString</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>Info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Converts <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> to string </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Info</td><td>- TrinLaunchInfo to convert </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>string with all the information about <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,4 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" href="$per__point__updater_8hpp.html" title="ltr/optimization/population_updaters/per_point_updater.hpp" alt="" coords="5,80,363,107"/>
-<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="11,155,357,181"/>
+<area shape="rect" href="$per__point__updater_8hpp.html" title="ltr/optimization/population_updaters/per_point_updater.hpp" alt="" coords="223,80,580,107"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solver/solver.h" alt="" coords="616,80,808,107"/>
+<area shape="rect" href="$solver__benchmark_8h.html" title="ltr/optimization/solver/solver_benchmark.h" alt="" coords="749,155,1011,181"/>
+<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="5,155,352,181"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="552,229,872,256"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="427,155,675,181"/>
 </map>

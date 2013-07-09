@@ -1,8 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="264,80,480,107"/>
-<area shape="rect" href="$multitable__unittest_8cc.html" title="ltr/utility/multitable_unittest.cc" alt="" coords="504,80,699,107"/>
+<area shape="rect" href="$crossvalidator_8h.html" title="ltr/crossvalidation/crossvalidator.h" alt="" coords="305,80,521,107"/>
+<area shape="rect" href="$solver__benchmark_8h.html" title="ltr/optimization/solver/solver_benchmark.h" alt="" coords="628,80,889,107"/>
+<area shape="rect" href="$multitable__unittest_8cc.html" title="ltr/utility/multitable_unittest.cc" alt="" coords="913,80,1108,107"/>
 <area shape="rect" href="$crossvalidator__unittest_8cc.html" title="ltr/crossvalidation/crossvalidator_unittest.cc" alt="" coords="5,155,277,181"/>
 <area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="301,155,443,181"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="467,155,616,181"/>
 <area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="481,229,601,256"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="640,155,960,181"/>
 </map>

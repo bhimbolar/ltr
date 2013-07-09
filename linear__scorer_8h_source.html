@@ -117,32 +117,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00013"></a>00013 
 <a name="l00014"></a>00014 <span class="keyword">namespace </span>ltr {
 <a name="l00015"></a><a class="code" href="classltr_1_1_linear_scorer.html">00015</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_linear_scorer.html">LinearScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> {
-<a name="l00016"></a>00016  <span class="keyword">public</span>:
-<a name="l00017"></a><a class="code" href="classltr_1_1_linear_scorer.html#a3bee2cb6087d7113fef872613acb84d8">00017</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;LinearScorer&gt;</a> <a class="code" href="classltr_1_1_linear_scorer.html#a3bee2cb6087d7113fef872613acb84d8">Ptr</a>;
-<a name="l00018"></a>00018 
-<a name="l00019"></a><a class="code" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">00019</a>   <a class="code" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">LinearScorer</a>() {}
-<a name="l00020"></a><a class="code" href="classltr_1_1_linear_scorer.html#a8d6aa05494811a624157d6b909ceaf36">00020</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">LinearScorer</a>(<span class="keyword">const</span> vector&lt;double&gt;&amp; weights)
-<a name="l00021"></a>00021   : <a class="code" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">weight_</a>(weights) {}
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023   <a class="code" href="classltr_1_1_linear_scorer.html#a3e161d2c2cd4de563e21791b1eeaa285">GET_SET_VECTOR</a>(<span class="keywordtype">double</span>, weight);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025  <span class="keyword">private</span>:
-<a name="l00026"></a>00026   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_linear_scorer.html#ac3389371efd0d0ffa38d4df8661c8fde">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj) <span class="keyword">const</span>;
-<a name="l00027"></a>00027   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_linear_scorer.html#a60e4d590056ef89637767479c6f74fe7">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00028"></a><a class="code" href="classltr_1_1_linear_scorer.html#a1b40ecd38225b6d08524d30b164ecf4a">00028</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_linear_scorer.html#a1b40ecd38225b6d08524d30b164ecf4a">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;LinearScorer&quot;</span>;}
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_linear_scorer.html#aedbbd81634c7049f76585e7bb0d84723">toStringImpl</a>() <span class="keyword">const</span>;
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">00032</a>   vector&lt;double&gt; <a class="code" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">weight_</a>;
+<a name="l00016"></a>00016   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_linear_scorer.html">LinearScorer</a>)
+<a name="l00017"></a>00017  <span class="keyword">public</span>:
+<a name="l00018"></a><a class="code" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">00018</a>   <a class="code" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">LinearScorer</a>() {}
+<a name="l00019"></a><a class="code" href="classltr_1_1_linear_scorer.html#a8d6aa05494811a624157d6b909ceaf36">00019</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_linear_scorer.html#a1a4ebe64622188990196ed1741e63824">LinearScorer</a>(<span class="keyword">const</span> vector&lt;double&gt;&amp; weights)
+<a name="l00020"></a>00020   : <a class="code" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">weight_</a>(weights) {}
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022   <a class="code" href="classltr_1_1_linear_scorer.html#a3e161d2c2cd4de563e21791b1eeaa285">GET_SET_VECTOR</a>(<span class="keywordtype">double</span>, weight);
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024  <span class="keyword">private</span>:
+<a name="l00025"></a>00025   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_linear_scorer.html#ac3389371efd0d0ffa38d4df8661c8fde">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj) <span class="keyword">const</span>;
+<a name="l00026"></a>00026   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_linear_scorer.html#a60e4d590056ef89637767479c6f74fe7">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00027"></a><a class="code" href="classltr_1_1_linear_scorer.html#a1b40ecd38225b6d08524d30b164ecf4a">00027</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_linear_scorer.html#a1b40ecd38225b6d08524d30b164ecf4a">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;LinearScorer&quot;</span>;}
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_linear_scorer.html#aedbbd81634c7049f76585e7bb0d84723">toStringImpl</a>() <span class="keyword">const</span>;
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">00031</a>   vector&lt;double&gt; <a class="code" href="classltr_1_1_linear_scorer.html#abfbc27d35986c4a86f089da9ca40ab21">weight_</a>;
+<a name="l00032"></a>00032 };
 <a name="l00033"></a>00033 };
-<a name="l00034"></a>00034 };
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 <span class="preprocessor">#endif  // LTR_SCORERS_LINEAR_SCORER_H_</span>
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="preprocessor">#endif  // LTR_SCORERS_LINEAR_SCORER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,4 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$directed__updaters_8hpp.html" title="ltr/optimization/population_updaters/directed_updaters.hpp" alt="" coords="5,80,363,107"/>
-<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="119,155,465,181"/>
+<area shape="rect" href="$directed__updaters_8hpp.html" title="ltr/optimization/population_updaters/directed_updaters.hpp" alt="" coords="321,80,679,107"/>
+<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="5,155,352,181"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="376,155,696,181"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="720,155,968,181"/>
 </map>

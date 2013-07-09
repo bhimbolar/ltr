@@ -148,7 +148,9 @@ List of all FeatureConverters</h2>
 <tr>
 <td>Example: learn converter and convert features. </td></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">// NOLINT</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
@@ -179,12 +181,13 @@ List of all FeatureConverters</h2>
   data.add(object2);
   data.add(object3);
 
-  FeatureNormalizerLearner&lt;Object&gt; feature_normalizer_learner;
-  feature_normalizer_learner.set_min(-1.0);
-  feature_normalizer_learner.set_max(1.0);
-  feature_normalizer_learner.learn(data);
+  FeatureNormalizerLearner&lt;Object&gt;::Ptr feature_normalizer_learner(
+      <span class="keyword">new</span> FeatureNormalizerLearner&lt;Object&gt;);
+  feature_normalizer_learner-&gt;set_min(-1.0);
+  feature_normalizer_learner-&gt;set_max(1.0);
+  feature_normalizer_learner-&gt;learn(data);
 
-  <a class="code" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">FeatureConverter::Ptr</a> converter = feature_normalizer_learner.make();
+  <a class="code" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FeatureConverter::Ptr</a> converter = feature_normalizer_learner-&gt;make();
   converter-&gt;apply(data, &amp;converted_data);
 
   cout &lt;&lt; <span class="stringliteral">&quot;Before:&quot;</span> &lt;&lt; endl &lt;&lt; data &lt;&lt; endl;
@@ -192,7 +195,6 @@ List of all FeatureConverters</h2>
 
   <span class="keywordflow">return</span> 0;
 }
-
 </pre></div>  </td></tr>
 <tr>
 <td>Output: </td></tr>
@@ -216,7 +218,9 @@ FeatureSamplerLearner</h3>
 <tr>
 <td>Example: learn converter and convert features. </td></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// NOLINT</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">ltr/data/object.h</a>&quot;</span>
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
@@ -251,10 +255,11 @@ FeatureSamplerLearner</h3>
   data.add(object2);
   data.add(object3);
 
-  FeatureSamplerLearner&lt;Object&gt; feature_sampler_learner;
-  feature_sampler_learner.set_indices(indices);
-  feature_sampler_learner.learn(data);
-  <a class="code" href="classltr_1_1_feature_converter.html#ac7e70cea2b5abeb4011ae543afe871cd">FeatureConverter::Ptr</a> converter = feature_sampler_learner.make();
+  FeatureSamplerLearner&lt;Object&gt;::Ptr feature_sampler_learner(
+      <span class="keyword">new</span> FeatureSamplerLearner&lt;Object&gt;);
+  feature_sampler_learner-&gt;set_indices(indices);
+  feature_sampler_learner-&gt;learn(data);
+  <a class="code" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FeatureConverter::Ptr</a> converter = feature_sampler_learner-&gt;make();
 
   converter-&gt;apply(data, &amp;converted_data);
 
@@ -263,7 +268,6 @@ FeatureSamplerLearner</h3>
 
   <span class="keywordflow">return</span> 0;
 }
-
 </pre></div>  </td></tr>
 <tr>
 <td>Output: </td></tr>
@@ -284,7 +288,7 @@ After:
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:44 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

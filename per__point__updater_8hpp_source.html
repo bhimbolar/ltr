@@ -143,10 +143,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00062"></a><a class="code" href="classoptimization_1_1_per_point_updater.html#a742b5226591697c87e279e372be3ba13">00062</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_per_point_updater.html#a742b5226591697c87e279e372be3ba13">PerPointUpdater&lt;TFunction&gt;::init</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population,
 <a name="l00063"></a>00063                                       <span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
 <a name="l00064"></a>00064                                       <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>) {
-<a name="l00065"></a>00065   one_point_updaters_info_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc.">OnePointUpdaterInfo</a>(population,
-<a name="l00066"></a>00066                                   one_point_updater_sample_);
-<a name="l00067"></a>00067   this-&gt;set_set(<span class="keyword">set</span>);
-<a name="l00068"></a>00068   this-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00065"></a>00065   this-&gt;set_set(<span class="keyword">set</span>);
+<a name="l00066"></a>00066   this-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00067"></a>00067   one_point_updaters_info_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc.">OnePointUpdaterInfo</a>(population,
+<a name="l00068"></a>00068                                   one_point_updater_sample_);
 <a name="l00069"></a>00069 }
 <a name="l00070"></a>00070 
 <a name="l00071"></a>00071 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TFunction&gt;
@@ -184,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

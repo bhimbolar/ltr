@@ -140,8 +140,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00044"></a><a class="code" href="classltr_1_1_learner.html">00044</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_reporter.html">Reporter</a>,
 <a name="l00045"></a>00045                 <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">Aliaser</a>,
 <a name="l00046"></a>00046                 <span class="keyword">public</span> <a class="code" href="classltr_1_1_parameterized.html">Parameterized</a> {
-<a name="l00047"></a>00047  <span class="keyword">public</span>:
-<a name="l00048"></a><a class="code" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">00048</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;Learner&gt;</a> <a class="code" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">Ptr</a>;
+<a name="l00047"></a>00047   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>)
+<a name="l00048"></a>00048  <span class="keyword">public</span>:
 <a name="l00049"></a><a class="code" href="classltr_1_1_learner.html#a00d24bbd2e3a8f607b273b88a935cab9">00049</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;Learner&gt;</a> <a class="code" href="classltr_1_1_learner.html#a00d24bbd2e3a8f607b273b88a935cab9">BasePtr</a>;
 <a name="l00050"></a>00050 
 <a name="l00051"></a>00051   <span class="keyword">typedef</span> vector&lt;typename FeatureConverterLearner&lt;TElement&gt;::Ptr&gt;
@@ -170,95 +170,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
 <a name="l00088"></a><a class="code" href="classltr_1_1_base_learner.html">00088</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_base_learner.html">BaseLearner</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner</a>&lt;TElement&gt; {
-<a name="l00089"></a>00089  <span class="keyword">public</span>:
-<a name="l00094"></a>00094   <span class="keyword">typename</span> TScorer::Ptr <a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific</a>() <span class="keyword">const</span>;
-<a name="l00095"></a>00095   <span class="keyword">virtual</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Scorer::Ptr</a> <a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">make</a>() <span class="keyword">const</span>;
-<a name="l00096"></a>00096   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
-<a name="l00097"></a>00097                      <span class="keywordtype">bool</span> check_parameters = <span class="keyword">true</span>);
-<a name="l00098"></a>00098   <span class="comment">// \TODO ? We don&#39;t need it in base class as not all Learners support it</span>
-<a name="l00099"></a>00099   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer</a>(<span class="keyword">const</span> TScorer&amp; scorer);
-<a name="l00100"></a>00100   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">setDefaultScorer</a>();
-<a name="l00101"></a>00101   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf" title="Reset internal state of Learner.">reset</a>();
-<a name="l00102"></a>00102  <span class="keyword">private</span>:
-<a name="l00108"></a>00108   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a2f326d82c3f867cbd6a6599dbcc67c1d" title="Learn input dataset and train scorer.">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
-<a name="l00109"></a>00109                          TScorer* scorer) = 0;
-<a name="l00110"></a>00110 
-<a name="l00111"></a>00111   <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::data_preprocessor_</a>;
+<a name="l00089"></a>00089   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_base_learner.html">BaseLearner</a>)
+<a name="l00090"></a>00090  <span class="keyword">public</span>:
+<a name="l00095"></a>00095   <span class="keyword">typename</span> TScorer::Ptr <a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific</a>() <span class="keyword">const</span>;
+<a name="l00096"></a><a class="code" href="classltr_1_1_base_learner.html#a35b7b90ec6464d531d65270bd62520cf">00096</a>   <a class="code" href="classltr_1_1_base_learner.html#a35b7b90ec6464d531d65270bd62520cf">BaseLearner</a>() : <a class="code" href="classltr_1_1_base_learner.html#a52e1a969a2b6add80dd3ef320a915280">scorer_</a>(new TScorer) {}
+<a name="l00097"></a>00097   <span class="keyword">virtual</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Scorer::Ptr</a> <a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">make</a>() <span class="keyword">const</span>;
+<a name="l00098"></a>00098   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
+<a name="l00099"></a>00099                      <span class="keywordtype">bool</span> check_parameters = <span class="keyword">true</span>);
+<a name="l00100"></a>00100   <span class="comment">// \TODO ? We don&#39;t need it in base class as not all Learners support it</span>
+<a name="l00101"></a>00101   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#add05623c994774e683a7f1fd84354d81">setInitialScorer</a>(<span class="keyword">const</span> <span class="keyword">typename</span> TScorer::Ptr&amp; scorer);
+<a name="l00102"></a>00102   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">setDefaultScorer</a>();
+<a name="l00103"></a>00103   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf" title="Reset internal state of Learner.">reset</a>();
+<a name="l00104"></a>00104  <span class="keyword">private</span>:
+<a name="l00110"></a>00110   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#aa8db56b1192fabebd895fd6efdf664a3" title="Learn input dataset and train scorer.">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
+<a name="l00111"></a>00111                          <span class="keyword">typename</span> TScorer::Ptr* scorer) = 0;
 <a name="l00112"></a>00112 
-<a name="l00113"></a>00113   <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::feature_converter_</a>;
-<a name="l00114"></a>00114   <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::feature_converter_learner_</a>;
-<a name="l00115"></a>00115 
-<a name="l00116"></a>00116  <span class="keyword">protected</span>:
-<a name="l00117"></a><a class="code" href="classltr_1_1_base_learner.html#a9e56d63388d331e61e7f2045279c39ba">00117</a>   TScorer <a class="code" href="classltr_1_1_base_learner.html#a9e56d63388d331e61e7f2045279c39ba">scorer_</a>;
-<a name="l00118"></a>00118 };
-<a name="l00119"></a>00119 
-<a name="l00120"></a>00120 <span class="comment">// template realization</span>
+<a name="l00113"></a>00113   <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::data_preprocessor_</a>;
+<a name="l00114"></a>00114 
+<a name="l00115"></a>00115   <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::feature_converter_</a>;
+<a name="l00116"></a>00116   <span class="keyword">using</span> <a class="code" href="classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer.">Learner&lt;TElement&gt;::feature_converter_learner_</a>;
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118  <span class="keyword">protected</span>:
+<a name="l00119"></a><a class="code" href="classltr_1_1_base_learner.html#a52e1a969a2b6add80dd3ef320a915280">00119</a>   <span class="keyword">typename</span> TScorer::Ptr <a class="code" href="classltr_1_1_base_learner.html#a52e1a969a2b6add80dd3ef320a915280">scorer_</a>;
+<a name="l00120"></a>00120 };
 <a name="l00121"></a>00121 
-<a name="l00122"></a>00122 <span class="comment">// _________________BaseLearner_______________________</span>
+<a name="l00122"></a>00122 <span class="comment">// template realization</span>
 <a name="l00123"></a>00123 
-<a name="l00124"></a>00124 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
-<a name="l00125"></a><a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">00125</a> <span class="keyword">typename</span> TScorer::Ptr <a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">BaseLearner&lt;TElement, TScorer&gt;::makeSpecific</a>()<span class="keyword"> const </span>{
-<a name="l00126"></a>00126   <span class="keywordflow">return</span> <span class="keyword">typename</span> TScorer::Ptr(
-<a name="l00127"></a>00127       <span class="keyword">new</span> TScorer(scorer_));
-<a name="l00128"></a>00128 }
-<a name="l00129"></a>00129 
-<a name="l00130"></a>00130 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
-<a name="l00131"></a><a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">00131</a> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Scorer::Ptr</a> <a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">BaseLearner&lt;TElement, TScorer&gt;::make</a>()<span class="keyword"> const </span>{
-<a name="l00132"></a>00132   <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Scorer::Ptr</a>(makeSpecific());
-<a name="l00133"></a>00133 }
-<a name="l00134"></a>00134 
-<a name="l00135"></a>00135 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
-<a name="l00136"></a><a class="code" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">00136</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf" title="Reset internal state of Learner.">BaseLearner&lt;TElement, TScorer&gt;::reset</a>() {
-<a name="l00137"></a>00137   setDefaultScorer();
-<a name="l00138"></a>00138 }
-<a name="l00139"></a>00139 
+<a name="l00124"></a>00124 <span class="comment">// _________________BaseLearner_______________________</span>
+<a name="l00125"></a>00125 
+<a name="l00126"></a>00126 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
+<a name="l00127"></a><a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">00127</a> <span class="keyword">typename</span> TScorer::Ptr <a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">BaseLearner&lt;TElement, TScorer&gt;::makeSpecific</a>()<span class="keyword"> const </span>{
+<a name="l00128"></a>00128   <span class="keywordflow">return</span> scorer_;
+<a name="l00129"></a>00129 }
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
+<a name="l00132"></a><a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">00132</a> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Scorer::Ptr</a> <a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">BaseLearner&lt;TElement, TScorer&gt;::make</a>()<span class="keyword"> const </span>{
+<a name="l00133"></a>00133   <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_scorer.html#aacae784a31ce3e3092c24f0d5de7dba4">Scorer::Ptr</a>(makeSpecific());
+<a name="l00134"></a>00134 }
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
+<a name="l00137"></a><a class="code" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">00137</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf" title="Reset internal state of Learner.">BaseLearner&lt;TElement, TScorer&gt;::reset</a>() {
+<a name="l00138"></a>00138   setDefaultScorer();
+<a name="l00139"></a>00139 }
 <a name="l00140"></a>00140 
-<a name="l00141"></a>00141 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
-<a name="l00142"></a><a class="code" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">00142</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">BaseLearner&lt;TElement, TScorer&gt;::setDefaultScorer</a>() {
-<a name="l00143"></a>00143   TScorer scorer;
-<a name="l00144"></a>00144   scorer_ = scorer;
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
+<a name="l00143"></a><a class="code" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">00143</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a880848cde9fbbf6c02a0cabfa2edbdd8">BaseLearner&lt;TElement, TScorer&gt;::setDefaultScorer</a>() {
+<a name="l00144"></a>00144   scorer_ = <span class="keyword">new</span> TScorer;
 <a name="l00145"></a>00145 }
 <a name="l00146"></a>00146 
 <a name="l00147"></a>00147 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
-<a name="l00148"></a><a class="code" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">00148</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">BaseLearner&lt;TElement, TScorer&gt;::setInitialScorer</a>(<span class="keyword">const</span> TScorer&amp; scorer) {
-<a name="l00149"></a>00149   scorer_ = scorer;
-<a name="l00150"></a>00150 }
-<a name="l00151"></a>00151 
-<a name="l00152"></a>00152 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
-<a name="l00153"></a><a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d">00153</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">BaseLearner&lt;TElement, TScorer&gt;::learn</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
-<a name="l00154"></a>00154                                            <span class="keywordtype">bool</span> check_parameters) {
-<a name="l00155"></a>00155   <span class="keywordflow">if</span> (check_parameters) {
-<a name="l00156"></a>00156     this-&gt;checkParameters();
-<a name="l00157"></a>00157   }
-<a name="l00158"></a>00158   setDefaultScorer();
-<a name="l00159"></a>00159 
-<a name="l00160"></a>00160   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a> source_data = data_set.<a class="code" href="classltr_1_1_data_set.html#af2868844fcf27979623e388ad9785a3a">deepCopy</a>();
-<a name="l00161"></a>00161   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a> converted_data;
-<a name="l00162"></a>00162 
-<a name="l00163"></a>00163   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0; index &lt; (int)data_preprocessor_.size(); ++index) {
-<a name="l00164"></a>00164     data_preprocessor_[index]-&gt;apply(source_data, &amp;converted_data);
-<a name="l00165"></a>00165     source_data = converted_data;
-<a name="l00166"></a>00166   }
-<a name="l00167"></a>00167 
-<a name="l00168"></a>00168   feature_converter_.<a class="code" href="classltr_1_1_data_set.html#aac34ecb57f749c0c4659d903a7eeb0cc">clear</a>();
-<a name="l00169"></a>00169   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0;
-<a name="l00170"></a>00170        index &lt; (int)feature_converter_learner_.size(); ++index) {
-<a name="l00171"></a>00171     feature_converter_learner_[index]-&gt;learn(source_data);
-<a name="l00172"></a>00172     feature_converter_.push_back(feature_converter_learner_[index]-&gt;make());
-<a name="l00173"></a>00173     feature_converter_[index]-&gt;apply(source_data, &amp;converted_data);
-<a name="l00174"></a>00174     source_data = converted_data;
-<a name="l00175"></a>00175   }
-<a name="l00176"></a>00176 
-<a name="l00177"></a>00177   learnImpl(source_data, &amp;scorer_);
-<a name="l00178"></a>00178   scorer_.set_feature_converter(feature_converter_);
-<a name="l00179"></a>00179 }
-<a name="l00180"></a>00180 };
-<a name="l00181"></a>00181 <span class="preprocessor">#endif  // LTR_LEARNERS_LEARNER_H_</span>
+<a name="l00148"></a><a class="code" href="classltr_1_1_base_learner.html#add05623c994774e683a7f1fd84354d81">00148</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#add05623c994774e683a7f1fd84354d81">BaseLearner&lt;TElement, TScorer&gt;::setInitialScorer</a>(
+<a name="l00149"></a>00149       <span class="keyword">const</span> <span class="keyword">typename</span> TScorer::Ptr&amp; scorer) {
+<a name="l00150"></a>00150   scorer_ = scorer;
+<a name="l00151"></a>00151 }
+<a name="l00152"></a>00152 
+<a name="l00153"></a>00153 <span class="keyword">template</span>&lt;<span class="keyword">class</span> TElement, <span class="keyword">class</span> TScorer&gt;
+<a name="l00154"></a><a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d">00154</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">BaseLearner&lt;TElement, TScorer&gt;::learn</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
+<a name="l00155"></a>00155                                            <span class="keywordtype">bool</span> check_parameters) {
+<a name="l00156"></a>00156   <span class="keywordflow">if</span> (check_parameters) {
+<a name="l00157"></a>00157     this-&gt;checkParameters();
+<a name="l00158"></a>00158   }
+<a name="l00159"></a>00159   setDefaultScorer();
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a> source_data = data_set.<a class="code" href="classltr_1_1_data_set.html#af2868844fcf27979623e388ad9785a3a">deepCopy</a>();
+<a name="l00162"></a>00162   <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a> converted_data;
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0; index &lt; (int)data_preprocessor_.size(); ++index) {
+<a name="l00165"></a>00165     data_preprocessor_[index]-&gt;apply(source_data, &amp;converted_data);
+<a name="l00166"></a>00166     source_data = converted_data;
+<a name="l00167"></a>00167   }
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169   feature_converter_.<a class="code" href="classltr_1_1_data_set.html#aac34ecb57f749c0c4659d903a7eeb0cc">clear</a>();
+<a name="l00170"></a>00170   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0;
+<a name="l00171"></a>00171        index &lt; (int)feature_converter_learner_.size(); ++index) {
+<a name="l00172"></a>00172     feature_converter_learner_[index]-&gt;learn(source_data);
+<a name="l00173"></a>00173     feature_converter_.push_back(feature_converter_learner_[index]-&gt;make());
+<a name="l00174"></a>00174     feature_converter_[index]-&gt;apply(source_data, &amp;converted_data);
+<a name="l00175"></a>00175     source_data = converted_data;
+<a name="l00176"></a>00176   }
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178   learnImpl(source_data, &amp;scorer_);
+<a name="l00179"></a>00179   scorer_-&gt;set_feature_converter(feature_converter_);
+<a name="l00180"></a>00180 }
+<a name="l00181"></a>00181 };
+<a name="l00182"></a>00182 <span class="preprocessor">#endif  // LTR_LEARNERS_LEARNER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

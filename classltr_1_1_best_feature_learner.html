@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
@@ -127,55 +126,32 @@ Inheritance diagram for ltr::BestFeatureLearner&lt; TElement &gt;:</div>
 
 <p><a href="classltr_1_1_best_feature_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a2915d1f5d42b6471ebea1cb2693ff803"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1afb60193d04f6bbc650a1213deccf0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#a1afb60193d04f6bbc650a1213deccf0d">BestFeatureLearner</a> ()</td></tr>
 <tr class="memitem:ab27ca656d4d04253b4be71f68ea6399f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#ab27ca656d4d04253b4be71f68ea6399f">BestFeatureLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:ade1ed0331398b3fd795583700a5a8a35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#ade1ed0331398b3fd795583700a5a8a35">BestFeatureLearner</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a> pMeasure)</td></tr>
+<tr class="memitem:ade1ed0331398b3fd795583700a5a8a35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#ade1ed0331398b3fd795583700a5a8a35">BestFeatureLearner</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr pMeasure)</td></tr>
 <tr class="memitem:a017acb65a95a6fe7b0cdc33c23a81f2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#a017acb65a95a6fe7b0cdc33c23a81f2f">setDefaultParameters</a> ()</td></tr>
-<tr class="memitem:aa6bcf510aa084cc0586a9450150f5780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#aa6bcf510aa084cc0586a9450150f5780">GET_SET</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a>, measure)</td></tr>
+<tr class="memitem:aa6bcf510aa084cc0586a9450150f5780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#aa6bcf510aa084cc0586a9450150f5780">GET_SET</a> (typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr, measure)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:abd113b4d7f55641cb5ea71e121339739"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#abd113b4d7f55641cb5ea71e121339739">setParametersImpl</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:a738190c01c49b5755dca6eb354786e48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#a738190c01c49b5755dca6eb354786e48">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, <a class="el" href="classltr_1_1_one_feature_scorer.html">OneFeatureScorer</a> *scorer)</td></tr>
-<tr class="memdesc:a738190c01c49b5755dca6eb354786e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a738190c01c49b5755dca6eb354786e48"></a><br/></td></tr>
+<tr class="memitem:a93dbded4e36672938c9878e34102e657"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#a93dbded4e36672938c9878e34102e657">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, typename <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">OneFeatureScorer::Ptr</a> *scorer)</td></tr>
+<tr class="memdesc:a93dbded4e36672938c9878e34102e657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train scorer.  <a href="#a93dbded4e36672938c9878e34102e657"></a><br/></td></tr>
 <tr class="memitem:a29f9eea46b29cebe233b3f8f2de1f9b7"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#a29f9eea46b29cebe233b3f8f2de1f9b7">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:adeb38ae8d2aa9174252740ba233bb805"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#adeb38ae8d2aa9174252740ba233bb805">measure_</a></td></tr>
+<tr class="memitem:adeb38ae8d2aa9174252740ba233bb805"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_best_feature_learner.html#adeb38ae8d2aa9174252740ba233bb805">measure_</a></td></tr>
 </table>
 <h3>template&lt;class TElement&gt;<br/>
  class ltr::BestFeatureLearner&lt; TElement &gt;</h3>
 
-<hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a2915d1f5d42b6471ebea1cb2693ff803"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner</a>&gt; <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">ltr::Learner&lt; TElement &gt;</a>.</p>
-
-</div>
-</div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1afb60193d04f6bbc650a1213deccf0d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner</a> </td>
@@ -193,7 +169,7 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner</a> </td>
@@ -212,12 +188,12 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html">BestFeatureLearner</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname"><em>pMeasure</em></td><td>)</td>
           <td><code> [inline, explicit]</code></td>
         </tr>
@@ -232,12 +208,12 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#aa6bcf510aa084cc0586a9450150f5780">GET_SET</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_measure.html">Measure</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -261,7 +237,7 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">virtual string <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a29f9eea46b29cebe233b3f8f2de1f9b7">getDefaultAlias</a> </td>
@@ -277,14 +253,14 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a738190c01c49b5755dca6eb354786e48"></a>
+<a class="anchor" id="a93dbded4e36672938c9878e34102e657"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a738190c01c49b5755dca6eb354786e48">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a93dbded4e36672938c9878e34102e657">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -292,7 +268,7 @@ template&lt;class TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_one_feature_scorer.html">OneFeatureScorer</a> *&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">OneFeatureScorer::Ptr</a> *&#160;</td>
           <td class="paramname"><em>scorer</em>&#160;</td>
         </tr>
         <tr>
@@ -313,7 +289,7 @@ template&lt;class TElement &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_learner.html#a2f326d82c3f867cbd6a6599dbcc67c1d">ltr::BaseLearner&lt; TElement, OneFeatureScorer &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_learner.html#aa8db56b1192fabebd895fd6efdf664a3">ltr::BaseLearner&lt; TElement, OneFeatureScorer &gt;</a>.</p>
 
 </div>
 </div>
@@ -321,7 +297,7 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a017acb65a95a6fe7b0cdc33c23a81f2f">setDefaultParameters</a> </td>
@@ -343,7 +319,7 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">virtual void <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#abd113b4d7f55641cb5ea71e121339739">setParametersImpl</a> </td>
@@ -365,10 +341,10 @@ template&lt;class TElement &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TElement &gt; </div>
+template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#a2915d1f5d42b6471ebea1cb2693ff803">Ptr</a> <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#adeb38ae8d2aa9174252740ba233bb805">measure_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1_measure.html">Measure</a>&lt;TElement&gt;::Ptr <a class="el" href="classltr_1_1_best_feature_learner.html">ltr::BestFeatureLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_best_feature_learner.html#adeb38ae8d2aa9174252740ba233bb805">measure_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -383,7 +359,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

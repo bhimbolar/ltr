@@ -137,7 +137,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae3f2611741335d7650025b50ad99f96d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#ae3f2611741335d7650025b50ad99f96d">calculateMean</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, LabelToMean *result)</td></tr>
 <tr class="memitem:a709bd2594152baa54b27fc0b0efe634a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#a709bd2594152baa54b27fc0b0efe634a">calculateCovarianceMatrix</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, const LabelToMean &amp;mean, MatrixXd *result)</td></tr>
 <tr class="memitem:af1bfcc1314ae662268e07b1e3d693d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#af1bfcc1314ae662268e07b1e3d693d38">findLinearFactorsAndBiases</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, LabelToLinearFactor *linear_factors, LabelToLinearBias *linear_biases)</td></tr>
-<tr class="memitem:a438d2657547489f38c5c629f3ed0a2c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#a438d2657547489f38c5c629f3ed0a2c3">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_fisher_discriminant.html">FisherDiscriminant</a> *estimator)</td></tr>
+<tr class="memitem:ac5bd82071985b86bdbce867f147174dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#ac5bd82071985b86bdbce867f147174dc">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FisherDiscriminant::Ptr</a> *estimator)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class TElement&gt;<br/>
@@ -286,14 +286,14 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a438d2657547489f38c5c629f3ed0a2c3"></a>
+<a class="anchor" id="ac5bd82071985b86bdbce867f147174dc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html">ltr::FisherDiscriminantDensityLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#a438d2657547489f38c5c629f3ed0a2c3">learnImpl</a> </td>
+          <td class="memname">virtual void <a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html">ltr::FisherDiscriminantDensityLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#ac5bd82071985b86bdbce867f147174dc">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -301,7 +301,7 @@ template&lt;class TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_fisher_discriminant.html">FisherDiscriminant</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FisherDiscriminant::Ptr</a> *&#160;</td>
           <td class="paramname"><em>estimator</em>&#160;</td>
         </tr>
         <tr>
@@ -314,7 +314,7 @@ template&lt;class TElement &gt; </div>
 <div class="memdoc">
 <p>Implementation of the learning of density estimator </p>
 
-<p>Implements <a class="el" href="classltr_1_1_base_probability_density_learner.html#aa6c0e4240735e9392967f219f22200a4">ltr::BaseProbabilityDensityLearner&lt; TElement, FisherDiscriminant &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_probability_density_learner.html#a73cb6910a88c977b5f4a98d3e4aa73ba">ltr::BaseProbabilityDensityLearner&lt; TElement, FisherDiscriminant &gt;</a>.</p>
 
 </div>
 </div>
@@ -325,7 +325,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

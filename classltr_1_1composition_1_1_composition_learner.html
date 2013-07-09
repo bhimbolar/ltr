@@ -108,7 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -132,36 +131,31 @@ Inheritance diagram for ltr::composition::CompositionLearner&lt; TElement &gt;:<
 
 <p><a href="classltr_1_1composition_1_1_composition_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a97b5d4a3e0f3cd7c669014a08d242df6"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">CompositionLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a97e28ff19bcba52cad78aab208195e76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97e28ff19bcba52cad78aab208195e76">CompositionLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:a36b2dba5962a07d90638f40b00a3d250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a36b2dba5962a07d90638f40b00a3d250">CompositionLearner</a> (int number_of_iterations=10, typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> data_set_weights_updater=new <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a>&lt; TElement &gt;, typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> composition_scorer_weights_updater=(new <a class="el" href="classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html">FakeCompositionScorerWeightsUpdater</a>&lt; TElement &gt;()))</td></tr>
+<tr class="memitem:a36b2dba5962a07d90638f40b00a3d250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a36b2dba5962a07d90638f40b00a3d250">CompositionLearner</a> (int number_of_iterations=10, typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::Ptr data_set_weights_updater=new <a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a>&lt; TElement &gt;, typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::Ptr composition_scorer_weights_updater=(new <a class="el" href="classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html">FakeCompositionScorerWeightsUpdater</a>&lt; TElement &gt;()))</td></tr>
 <tr class="memitem:a335a2d91426d082d1a5f0c4663a13259"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a335a2d91426d082d1a5f0c4663a13259">setDefaultScorer</a> ()</td></tr>
 <tr class="memitem:a85b83efeb7d0b53af75c71d3600a2a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a85b83efeb7d0b53af75c71d3600a2a45">setDefaultParameters</a> ()</td></tr>
 <tr class="memitem:a818e7700f7bf7f0da778f37805de8582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a818e7700f7bf7f0da778f37805de8582">checkParameters</a> () const </td></tr>
-<tr class="memitem:a7374dba8e2bb6da5e9b51b25986e6f21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a7374dba8e2bb6da5e9b51b25986e6f21">set_composition_scorer_weights_updater</a> (typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> composition_scorer_weights_updater)</td></tr>
-<tr class="memitem:a1b16f8d1157791df2f382fd2ca49c6a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1b16f8d1157791df2f382fd2ca49c6a4">SET</a> (typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>, data_set_weights_updater)</td></tr>
+<tr class="memitem:a7374dba8e2bb6da5e9b51b25986e6f21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a7374dba8e2bb6da5e9b51b25986e6f21">set_composition_scorer_weights_updater</a> (typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::Ptr composition_scorer_weights_updater)</td></tr>
+<tr class="memitem:a1b16f8d1157791df2f382fd2ca49c6a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1b16f8d1157791df2f382fd2ca49c6a4">SET</a> (typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::Ptr, data_set_weights_updater)</td></tr>
 <tr class="memitem:a1725e3a98eeea599e13f8feaa8a08bfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1725e3a98eeea599e13f8feaa8a08bfc">GET_SET</a> (int, number_of_iterations)</td></tr>
-<tr class="memitem:acab5fde8375d3a8da9c60935ec6be0c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#acab5fde8375d3a8da9c60935ec6be0c8">GET_SET</a> (typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>, weak_learner)</td></tr>
+<tr class="memitem:acab5fde8375d3a8da9c60935ec6be0c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#acab5fde8375d3a8da9c60935ec6be0c8">GET_SET</a> (typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr, weak_learner)</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a28e7e2fca9e9babd80837e2a040e3b51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a28e7e2fca9e9babd80837e2a040e3b51">weak_learner_</a></td></tr>
+<tr class="memitem:a28e7e2fca9e9babd80837e2a040e3b51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a28e7e2fca9e9babd80837e2a040e3b51">weak_learner_</a></td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a854285fd31b2b44481ec6bc6121cfadd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a854285fd31b2b44481ec6bc6121cfadd">setParametersImpl</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:aa1e2b285e7ade03e1df82101ceeea7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#aa1e2b285e7ade03e1df82101ceeea7d2">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, <a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a> *scorer)</td></tr>
+<tr class="memitem:aec59a5add98ab733ea651d56b4a27d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#aec59a5add98ab733ea651d56b4a27d72">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">CompositionScorer::Ptr</a> *scorer)</td></tr>
 <tr class="memitem:ab532cc4313522c5c4d8b8e9c1f65f5ea"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#ab532cc4313522c5c4d8b8e9c1f65f5ea">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4536acc974099207e1f5712267eab00a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a><br class="typebreak"/>
-&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a4536acc974099207e1f5712267eab00a">composition_scorer_weights_updater_</a></td></tr>
+&lt; TElement &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a4536acc974099207e1f5712267eab00a">composition_scorer_weights_updater_</a></td></tr>
 <tr class="memitem:a1e7de81753f65dcdf10c71e6ea78adfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a><br class="typebreak"/>
-&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1e7de81753f65dcdf10c71e6ea78adfd">data_set_weights_updater_</a></td></tr>
+&lt; TElement &gt;::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1e7de81753f65dcdf10c71e6ea78adfd">data_set_weights_updater_</a></td></tr>
 <tr class="memitem:ac3a63f3b5b59cfa3b87db7a908a66b70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html#ac3a63f3b5b59cfa3b87db7a908a66b70">number_of_iterations_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -172,27 +166,7 @@ class ltr::composition::CompositionLearner&lt; TElement &gt;</h3>
 <p>weak learner - learner to be used in producing scorers - elements for composition scorer. Can hold a feature converter inside it (for example, RSM)</p>
 <p><a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a> - a strategy for setting weights to scorers in composition scorer. By default is fake, so every scorer in composition has 1.0 weight</p>
 <p><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a> - a strategy for setting weights for dataset's elements before each weak learner's <a class="el" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn()</a> call. Provides the variability of weak scorers. By default is fake, so dataset weights remain constant </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a97b5d4a3e0f3cd7c669014a08d242df6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1composition_1_1_composition_learner.html">CompositionLearner</a>&gt; <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_learner.html#a5a92bfb8da2c470c4ea075e19fc92d66">ltr::Learner&lt; TElement &gt;</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classltr_1_1composition_1_1_ada_boost_learner.html#a4998b25cdefd7e6cc08ede1ae10b9a30">ltr::composition::AdaBoostLearner</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a97e28ff19bcba52cad78aab208195e76"></a>
 <div class="memitem">
 <div class="memproto">
@@ -233,13 +207,13 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname"><em>data_set_weights_updater</em> = <code>new&#160;<a class="el" href="classltr_1_1composition_1_1_fake_data_set_weights_updater.html">FakeDataSetWeightsUpdater</a>&lt;TElement&gt;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname"><em>composition_scorer_weights_updater</em> = <code>(new&#160;<a class="el" href="classltr_1_1composition_1_1_fake_composition_scorer_weights_updater.html">FakeCompositionScorerWeightsUpdater</a>&lt;TElement&gt;())</code>&#160;</td>
         </tr>
         <tr>
@@ -313,7 +287,7 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1725e3a98eeea599e13f8feaa8a08bfc">GET_SET</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -353,14 +327,14 @@ template&lt;class TElement&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa1e2b285e7ade03e1df82101ceeea7d2"></a>
+<a class="anchor" id="aec59a5add98ab733ea651d56b4a27d72"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#aa1e2b285e7ade03e1df82101ceeea7d2">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#aec59a5add98ab733ea651d56b4a27d72">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -368,7 +342,7 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1composition_1_1_composition_scorer.html">CompositionScorer</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">CompositionScorer::Ptr</a> *&#160;</td>
           <td class="paramname"><em>scorer</em>&#160;</td>
         </tr>
         <tr>
@@ -391,7 +365,7 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1b16f8d1157791df2f382fd2ca49c6a4">SET</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -420,7 +394,7 @@ template&lt;class TElement&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a7374dba8e2bb6da5e9b51b25986e6f21">set_composition_scorer_weights_updater</a> </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname"><em>composition_scorer_weights_updater</em></td><td>)</td>
           <td><code> [inline]</code></td>
         </tr>
@@ -502,7 +476,7 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a4536acc974099207e1f5712267eab00a">composition_scorer_weights_updater_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1composition_1_1_composition_scorer_weights_updater.html">CompositionScorerWeightsUpdater</a>&lt;TElement&gt;::Ptr <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a4536acc974099207e1f5712267eab00a">composition_scorer_weights_updater_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -517,7 +491,7 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1e7de81753f65dcdf10c71e6ea78adfd">data_set_weights_updater_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1composition_1_1_data_set_weights_updater.html">DataSetWeightsUpdater</a>&lt;TElement&gt;::Ptr <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a1e7de81753f65dcdf10c71e6ea78adfd">data_set_weights_updater_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -547,7 +521,7 @@ template&lt;class TElement&gt; </div>
 template&lt;class TElement&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_learner.html">Learner</a>&lt;TElement&gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a97b5d4a3e0f3cd7c669014a08d242df6">Ptr</a> <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a28e7e2fca9e9babd80837e2a040e3b51">weak_learner_</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="classltr_1_1_learner.html">Learner</a>&lt;TElement&gt;::Ptr <a class="el" href="classltr_1_1composition_1_1_composition_learner.html">ltr::composition::CompositionLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1composition_1_1_composition_learner.html#a28e7e2fca9e9babd80837e2a040e3b51">weak_learner_</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -562,7 +536,7 @@ template&lt;class TElement&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

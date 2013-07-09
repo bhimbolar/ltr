@@ -99,24 +99,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">ltr_client/utility/data_info.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br/>
+<code>#include &quot;<a class="el" href="printable_8h_source.html">ltr/interfaces/printable.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ltr/utility/macros.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for data_info.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__info_8h__incl.png" border="0" usemap="#ltr__client_2utility_2data__info_8h" alt=""/></div>
+<map name="ltr__client_2utility_2data__info_8h" id="ltr__client_2utility_2data__info_8h">
+<area shape="rect" href="printable_8h.html" title="ltr/interfaces/printable.h" alt="" coords="113,80,268,107"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="305,80,431,107"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="445,155,624,181"/><area shape="rect" href="_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="401,229,668,256"/><area shape="rect" href="_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="188,304,351,331"/><area shape="rect" href="_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="375,304,487,331"/><area shape="rect" href="_ptr_8h.html" title="Ptr.h" alt="" coords="511,304,559,331"/><area shape="rect" href="_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="583,304,673,331"/><area shape="rect" href="_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="697,304,831,331"/><area shape="rect" href="_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="265,379,404,405"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="data__info_8h__dep__incl.png" border="0" usemap="#ltr__client_2utility_2data__info_8hdep" alt=""/></div>
 <map name="ltr__client_2utility_2data__info_8hdep" id="ltr__client_2utility_2data__info_8hdep">
-<area shape="rect" href="configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="439,80,591,107"/><area shape="rect" href="data__info_8cc.html" title="ltr_client/utility/data_info.cc" alt="" coords="615,80,793,107"/><area shape="rect" href="configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="5,155,165,181"/><area shape="rect" href="dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="387,155,643,181"/><area shape="rect" href="ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="240,229,373,256"/><area shape="rect" href="ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="184,304,325,331"/><area shape="rect" href="main_8cc.html" title="ltr_client/main.cc" alt="" coords="537,379,657,405"/><area shape="rect" href="registration_8h.html" title="ltr_client/registration.h" alt="" coords="523,304,672,331"/><area shape="rect" href="train__launch__info_8cc.html" title="ltr_client/utility/train_launch_info.cc" alt="" coords="787,155,1011,181"/><area shape="rect" href="dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="397,229,661,256"/></map>
+<area shape="rect" href="configuration_8h.html" title="ltr_client/configuration.h" alt="" coords="400,80,557,107"/><area shape="rect" href="config__parser_8h.html" title="ltr_client/config_parser.h" alt="" coords="253,155,416,181"/><area shape="rect" href="ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="491,229,624,256"/><area shape="rect" href="main_8cc.html" title="ltr_client/main.cc" alt="" coords="671,379,791,405"/><area shape="rect" href="registration_8h.html" title="ltr_client/registration.h" alt="" coords="379,304,528,331"/><area shape="rect" href="dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="541,155,797,181"/><area shape="rect" href="config__parser_8cc.html" title="ltr_client/config_parser.cc" alt="" coords="5,229,173,256"/><area shape="rect" href="config__parser__unittest_8cc.html" title="ltr_client/config_parser_unittest.cc" alt="" coords="197,229,416,256"/><area shape="rect" href="ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="552,304,693,331"/><area shape="rect" href="dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="648,229,912,256"/></map>
 </div>
 </div>
 <p><a href="data__info_8h_source.html">Go to the source code of this file.</a></p>
@@ -124,41 +127,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_info.html">DataInfo</a></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a9330e6ea0d0156977ac935541fd5f520"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__info_8h.html#a9330e6ea0d0156977ac935541fd5f520">ToString</a> (const <a class="el" href="struct_data_info.html">DataInfo</a> &amp;Info)</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the information about the dataset as text.  <a href="struct_data_info.html#details">More...</a><br/></td></tr>
 </table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a9330e6ea0d0156977ac935541fd5f520"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string <a class="el" href="train__launch__info_8h.html#a577204f8789ba12eff787e3aeb8cb5d2">ToString</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_data_info.html">DataInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>Info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Converts <a class="el" href="struct_data_info.html">DataInfo</a> object into the printable string </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Info</td><td>- TDataInfo to convert </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns:</dt><dd>converted string </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

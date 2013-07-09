@@ -125,32 +125,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00021"></a>00021 <span class="keyword">namespace </span>ltr {
 <a name="l00022"></a>00022 <span class="keyword">namespace </span>decision_tree {
 <a name="l00026"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html">00026</a> <span class="keyword">class </span><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html">DecisionTree</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_serializable_functor.html">SerializableFunctor</a>&lt;double&gt; {
-<a name="l00027"></a>00027  <span class="keyword">public</span>:
-<a name="l00028"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ae9ec583b18efb77c5f13257cb97867f7">00028</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DecisionTree&gt;</a> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ae9ec583b18efb77c5f13257cb97867f7">Ptr</a>;
-<a name="l00029"></a>00029 
-<a name="l00030"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ad5a440af01c80bc6b7fa010ea63e1024">00030</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ad5a440af01c80bc6b7fa010ea63e1024">DecisionTree</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Vertex::Ptr</a> root)
-<a name="l00031"></a>00031   : <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">root_</a>(root) {}
+<a name="l00027"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a48081a8a2c38d12eb28ce7382b0b06e4">00027</a>   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html">DecisionTree</a>&gt;;
+<a name="l00028"></a>00028  <span class="keyword">public</span>:
+<a name="l00029"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ae9ec583b18efb77c5f13257cb97867f7">00029</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DecisionTree&gt;</a> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ae9ec583b18efb77c5f13257cb97867f7">Ptr</a>;
+<a name="l00030"></a>00030  <span class="keyword">protected</span>:
+<a name="l00031"></a>00031   <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6f9275985711fea5fdae39a6864b30d5">~DecisionTree</a>();
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6f9275985711fea5fdae39a6864b30d5">~DecisionTree</a>();
-<a name="l00038"></a>00038   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a85029212f8d61b80ad8c5fc626f5fc2b">value</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
-<a name="l00043"></a>00043   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#aa3958c5809d56979c671599090a03f5f">setRoot</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Vertex::Ptr</a> root);
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00033"></a>00033  <span class="keyword">public</span>:
+<a name="l00034"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ad5a440af01c80bc6b7fa010ea63e1024">00034</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#ad5a440af01c80bc6b7fa010ea63e1024">DecisionTree</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Vertex::Ptr</a> root)
+<a name="l00035"></a>00035   : <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">root_</a>(root) {}
+<a name="l00040"></a>00040   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a85029212f8d61b80ad8c5fc626f5fc2b">value</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
+<a name="l00045"></a>00045   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#aa3958c5809d56979c671599090a03f5f">setRoot</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Vertex::Ptr</a> root);
 <a name="l00046"></a>00046 
-<a name="l00047"></a>00047  <span class="keyword">private</span>:
-<a name="l00048"></a>00048   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a1712dce0db191dc73e9c503edb7713a7">getDefaultAlias</a>() <span class="keyword">const</span>;
-<a name="l00049"></a>00049 
-<a name="l00050"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">00050</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Vertex::Ptr</a> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">root_</a>;
-<a name="l00051"></a>00051 };
-<a name="l00052"></a>00052 };
+<a name="l00047"></a>00047   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049  <span class="keyword">private</span>:
+<a name="l00050"></a>00050   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a1712dce0db191dc73e9c503edb7713a7">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00051"></a>00051 
+<a name="l00052"></a><a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">00052</a>   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Vertex::Ptr</a> <a class="code" href="classltr_1_1decision__tree_1_1_decision_tree.html#a6aa5624ef27b90bb61c45d4619336e28">root_</a>;
 <a name="l00053"></a>00053 };
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="preprocessor">#endif  // LTR_LEARNERS_DECISION_TREE_DECISION_TREE_H_</span>
+<a name="l00054"></a>00054 };
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057 <span class="preprocessor">#endif  // LTR_LEARNERS_DECISION_TREE_DECISION_TREE_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

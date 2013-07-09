@@ -1,4 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" href="$classltr_1_1utility_1_1_any_1_1_place_holder.html" title="ltr::utility::Any::PlaceHolder" alt="" coords="7,5,185,32"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_any_1_1_holder.html" title="ltr::utility::Any::Holder\&lt; ValueType \&gt;" alt="" coords="235,5,467,32"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_any_caster.html" title="ltr::utility::AnyCaster\&lt; ResultType, SourceType \&gt;" alt="" coords="5,5,312,32"/>
 </map>

@@ -23,12 +23,12 @@
 <area shape="rect" href="$classltr_1_1_feature_converter_learner.html" title="Learns input dataset and produces a FeatureConverter." alt="" coords="268,1475,527,1501"/>
 <area shape="rect" href="$classltr_1_1gp_1_1_base_population_handler.html" title="ltr::gp::BasePopulationHandler" alt="" coords="299,1829,496,1856"/>
 <area shape="rect" href="$classltr_1_1_learner.html" title="Learns input dataset and produces a Scorer." alt="" coords="316,2184,479,2211"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="313,2741,481,2768"/>
-<area shape="rect" href="$classltr_1_1_predictions_aggregator.html" title="ltr::PredictionsAggregator" alt="" coords="313,3172,481,3199"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_neighbor_weighter.html" title="ltr::utility::NeighborWeighter" alt="" coords="307,3223,488,3249"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="321,3273,473,3300"/>
-<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="308,3324,487,3351"/>
-<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="301,3375,493,3401"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; TElement \&gt;" alt="" coords="313,2716,481,2743"/>
+<area shape="rect" href="$classltr_1_1_predictions_aggregator.html" title="ltr::PredictionsAggregator" alt="" coords="313,3147,481,3173"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_neighbor_weighter.html" title="ltr::utility::NeighborWeighter" alt="" coords="307,3197,488,3224"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; Object \&gt;" alt="" coords="321,3248,473,3275"/>
+<area shape="rect" href="$classltr_1_1_measure.html" title="ltr::Measure\&lt; ObjectType \&gt;" alt="" coords="308,3299,487,3325"/>
+<area shape="rect" href="$classltr_1_1cv_1_1_splitter.html" title="ltr::cv::Splitter\&lt; ObjectType \&gt;" alt="" coords="301,3349,493,3376"/>
 <area shape="rect" href="$classltr_1_1_fisher_discriminant_density_learner.html" title="Probability density learner that uses Fisher discriminant to generate probability density estimator..." alt="" coords="731,5,1045,32"/>
 <area shape="rect" href="$classltr_1_1_non_linear_discriminant_density_learner.html" title="Interface of discriminants that can not be converted to linear separators." alt="" coords="720,56,1056,83"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; Object, CompositionScorer \&gt;" alt="" coords="741,157,1035,184"/>
@@ -76,25 +76,25 @@
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="BaseLearner\&lt; TElement, NNScorer \&gt;" alt="" coords="769,2285,1007,2312"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="BaseLearner\&lt; TElement, OneFeatureScorer \&gt;" alt="" coords="744,2336,1032,2363"/>
 <area shape="rect" href="$classltr_1_1_base_learner.html" title="ltr::BaseLearner\&lt; TElement \&gt;" alt="" coords="792,2387,984,2413"/>
-<area shape="rect" href="$classltr_1_1_abs_error.html" title="ltr::AbsError\&lt; Object \&gt;" alt="" coords="812,2437,964,2464"/>
-<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="801,2488,975,2515"/>
-<area shape="rect" href="$classltr_1_1_a_u_c.html" title="ltr::AUC\&lt; Object \&gt;" alt="" coords="824,2539,952,2565"/>
-<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision\&lt; ObjectList \&gt;" alt="" coords="776,2589,1000,2616"/>
-<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; ObjectList \&gt;" alt="" coords="797,2640,979,2667"/>
-<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; ObjectList \&gt;" alt="" coords="793,2691,983,2717"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy\&lt; Object \&gt;" alt="" coords="752,2741,1024,2768"/>
-<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin\&lt; Object \&gt;" alt="" coords="760,2792,1016,2819"/>
-<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR\&lt; ObjectList \&gt;" alt="" coords="807,2843,969,2869"/>
-<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="771,2893,1005,2920"/>
-<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="804,2944,972,2971"/>
-<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="781,2995,995,3021"/>
-<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError\&lt; Object \&gt;" alt="" coords="799,3045,977,3072"/>
-<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint\&lt; Object \&gt;" alt="" coords="809,3096,967,3123"/>
-<area shape="rect" href="$classltr_1_1_average_predictions_aggregator.html" title="ltr::AveragePredictionsAggregator" alt="" coords="781,3147,995,3173"/>
-<area shape="rect" href="$classltr_1_1_max_weight_predictions_aggregator.html" title="ltr::MaxWeightPredictionsAggregator" alt="" coords="771,3197,1005,3224"/>
-<area shape="rect" href="$classltr_1_1_order_statistic_predictions_aggregator.html" title="ltr::OrderStatisticPredictionsAggregator" alt="" coords="764,3248,1012,3275"/>
-<area shape="rect" href="$classltr_1_1_sum_predictions_aggregator.html" title="ltr::SumPredictionsAggregator" alt="" coords="791,3299,985,3325"/>
-<area shape="rect" href="$classltr_1_1_vote_predictions_aggregator.html" title="ltr::VotePredictionsAggregator" alt="" coords="791,3349,985,3376"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_inverse_linear_distance.html" title="ltr::utility::InverseLinearDistance" alt="" coords="785,3400,991,3427"/>
-<area shape="rect" href="$classltr_1_1utility_1_1_inverse_order.html" title="ltr::utility::InverseOrder" alt="" coords="812,3451,964,3477"/>
+<area shape="rect" href="$classltr_1_1_accuracy.html" title="ltr::Accuracy\&lt; TElement \&gt;" alt="" coords="801,2437,975,2464"/>
+<area shape="rect" href="$classltr_1_1_a_u_c.html" title="ltr::AUC\&lt; Object \&gt;" alt="" coords="824,2488,952,2515"/>
+<area shape="rect" href="$classltr_1_1_average_precision.html" title="ltr::AveragePrecision\&lt; ObjectList \&gt;" alt="" coords="776,2539,1000,2565"/>
+<area shape="rect" href="$classltr_1_1_base_d_c_g.html" title="ltr::BaseDCG\&lt; ObjectList \&gt;" alt="" coords="797,2589,979,2616"/>
+<area shape="rect" href="$classltr_1_1_base_n_d_c_g.html" title="ltr::BaseNDCG\&lt; ObjectList \&gt;" alt="" coords="793,2640,983,2667"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_accuracy.html" title="ltr::BinaryClassificationAccuracy\&lt; Object \&gt;" alt="" coords="752,2691,1024,2717"/>
+<area shape="rect" href="$classltr_1_1_binary_classification_margin.html" title="ltr::BinaryClassificationMargin\&lt; Object \&gt;" alt="" coords="760,2741,1016,2768"/>
+<area shape="rect" href="$classltr_1_1_g_m_r_r.html" title="ltr::GMRR\&lt; ObjectList \&gt;" alt="" coords="807,2792,969,2819"/>
+<area shape="rect" href="$classltr_1_1_normalized_measure.html" title="ltr::NormalizedMeasure\&lt; TElement \&gt;" alt="" coords="771,2843,1005,2869"/>
+<area shape="rect" href="$classltr_1_1_p_found.html" title="ltr::PFound\&lt; ObjectList \&gt;" alt="" coords="804,2893,972,2920"/>
+<area shape="rect" href="$classltr_1_1_reciprocal_rank.html" title="ltr::ReciprocalRank\&lt; ObjectList \&gt;" alt="" coords="781,2944,995,2971"/>
+<area shape="rect" href="$classltr_1_1_squared_error.html" title="ltr::SquaredError\&lt; Object \&gt;" alt="" coords="799,2995,977,3021"/>
+<area shape="rect" href="$classltr_1_1_true_point.html" title="ltr::TruePoint\&lt; Object \&gt;" alt="" coords="809,3045,967,3072"/>
+<area shape="rect" href="$classltr_1_1_average_predictions_aggregator.html" title="ltr::AveragePredictionsAggregator" alt="" coords="781,3096,995,3123"/>
+<area shape="rect" href="$classltr_1_1_max_weight_predictions_aggregator.html" title="ltr::MaxWeightPredictionsAggregator" alt="" coords="771,3147,1005,3173"/>
+<area shape="rect" href="$classltr_1_1_order_statistic_predictions_aggregator.html" title="ltr::OrderStatisticPredictionsAggregator" alt="" coords="764,3197,1012,3224"/>
+<area shape="rect" href="$classltr_1_1_sum_predictions_aggregator.html" title="ltr::SumPredictionsAggregator" alt="" coords="791,3248,985,3275"/>
+<area shape="rect" href="$classltr_1_1_vote_predictions_aggregator.html" title="ltr::VotePredictionsAggregator" alt="" coords="791,3299,985,3325"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_inverse_linear_distance.html" title="ltr::utility::InverseLinearDistance" alt="" coords="785,3349,991,3376"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_inverse_order.html" title="ltr::utility::InverseOrder" alt="" coords="812,3400,964,3427"/>
+<area shape="rect" href="$classltr_1_1utility_1_1_inverse_power_distance.html" title="ltr::utility::InversePowerDistance" alt="" coords="785,3451,991,3477"/>
 </map>

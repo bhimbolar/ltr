@@ -108,20 +108,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Contains all the information about the train launch, including name, data iinformation and learner information. Also it contains the flag that defines if the library will generate the C++ code or not.  
+ <a href="struct_train_launch_info.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="train__launch__info_8h_source.html">train_launch_info.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for TrainLaunchInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_train_launch_info__inherit__graph.png" border="0" usemap="#_train_launch_info_inherit__map" alt="Inheritance graph"/></div>
+<map name="_train_launch_info_inherit__map" id="_train_launch_info_inherit__map">
+<area shape="rect" href="classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="16,5,107,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="struct_train_launch_info-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a6f335784fe5a5e830b70c6fc4a98554f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a6f335784fe5a5e830b70c6fc4a98554f">ALLOW_SHARED_PTR_ONLY_CREATION</a> (<a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a>)</td></tr>
 <tr class="memitem:a8af22906b3071dd614a5056bafe1d824"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a8af22906b3071dd614a5056bafe1d824">TrainLaunchInfo</a> ()</td></tr>
-<tr class="memitem:a3a659b2f791902d31007af7a6e568445"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a3a659b2f791902d31007af7a6e568445">TrainLaunchInfo</a> (const string &amp;nm, const string &amp;dt, const string &amp;lr)</td></tr>
+<tr class="memitem:ac7cb9beea3505d041b7b93d22126b898"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#ac7cb9beea3505d041b7b93d22126b898">TrainLaunchInfo</a> (const string &amp;name_, const string &amp;data_, const string &amp;learner_)</td></tr>
+<tr class="memitem:a45ef30a61100a37ddcc397b37fcf2388"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a45ef30a61100a37ddcc397b37fcf2388">toString</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3147e1837745a2fe8f48b1a64e105f18"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a3147e1837745a2fe8f48b1a64e105f18">name</a></td></tr>
 <tr class="memitem:af1db09f48b3bf8f40130751992ef2602"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#af1db09f48b3bf8f40130751992ef2602">data</a></td></tr>
 <tr class="memitem:a6b723431be47811b6da7ba80fd468081"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a6b723431be47811b6da7ba80fd468081">learner</a></td></tr>
-<tr class="memitem:ad895734e65e13e518d2b5be774f290bc"><td class="memItemLeft" align="right" valign="top">std::set&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#ad895734e65e13e518d2b5be774f290bc">predicts</a></td></tr>
+<tr class="memitem:a01fa61a050b3c91c7ff6a44ba142e7bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a01fa61a050b3c91c7ff6a44ba142e7bc">predicts</a></td></tr>
 <tr class="memitem:a03c66a0954eb95fade9ab361509b5840"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_train_launch_info.html#a03c66a0954eb95fade9ab361509b5840">gen_cpp</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -140,10 +152,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Basic constructor </p>
 
 </div>
 </div>
-<a class="anchor" id="a3a659b2f791902d31007af7a6e568445"></a>
+<a class="anchor" id="ac7cb9beea3505d041b7b93d22126b898"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -151,19 +164,19 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="struct_train_launch_info.html#a8af22906b3071dd614a5056bafe1d824">TrainLaunchInfo::TrainLaunchInfo</a> </td>
           <td>(</td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>nm</em>, </td>
+          <td class="paramname"><em>name_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>dt</em>, </td>
+          <td class="paramname"><em>data_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>lr</em>&#160;</td>
+          <td class="paramname"><em>learner_</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -173,6 +186,51 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Basic constructor.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_</td><td>- name of the train launch </td></tr>
+    <tr><td class="paramname">data_</td><td>- dataset to launch train </td></tr>
+    <tr><td class="paramname">learner_</td><td>- learner to launch train </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a6f335784fe5a5e830b70c6fc4a98554f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_train_launch_info.html#a6f335784fe5a5e830b70c6fc4a98554f">TrainLaunchInfo::ALLOW_SHARED_PTR_ONLY_CREATION</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45ef30a61100a37ddcc397b37fcf2388"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="struct_train_launch_info.html#a45ef30a61100a37ddcc397b37fcf2388">TrainLaunchInfo::toString</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
 
 </div>
 </div>
@@ -187,6 +245,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Dataset for train launch </p>
 
 </div>
 </div>
@@ -200,6 +259,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>C++ code generation flag </p>
 
 </div>
 </div>
@@ -213,6 +273,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Learner for train launch </p>
 
 </div>
 </div>
@@ -226,19 +287,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Name of the train launch </p>
 
 </div>
 </div>
-<a class="anchor" id="ad895734e65e13e518d2b5be774f290bc"></a>
+<a class="anchor" id="a01fa61a050b3c91c7ff6a44ba142e7bc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;string&gt; <a class="el" href="struct_train_launch_info.html#ad895734e65e13e518d2b5be774f290bc">TrainLaunchInfo::predicts</a></td>
+          <td class="memname"><a class="el" href="classltr_1_1utility_1_1_safe_set.html">SafeSet</a>&lt;string&gt; <a class="el" href="struct_train_launch_info.html#a01fa61a050b3c91c7ff6a44ba142e7bc">TrainLaunchInfo::predicts</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Datasets to predict </p>
 
 </div>
 </div>
@@ -249,7 +312,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tag_5fhandlers_2ecc',['tag_handlers.cc',['../tag__handlers_8cc.html',1,'']]],
-  ['tag_5fhandlers_2eh',['tag_handlers.h',['../tag__handlers_8h.html',1,'']]],
   ['test_5fproblems_5funittest_2ecc',['test_problems_unittest.cc',['../test__problems__unittest_8cc.html',1,'']]],
   ['tester_2ecc',['tester.cc',['../tester_8cc.html',1,'']]],
   ['tester_5futility_2ecc',['tester_utility.cc',['../tester__utility_8cc.html',1,'']]],
@@ -12,7 +10,6 @@ var searchData=
   ['tk_5ffold_5fsimple_5fsplitter_2eh',['tk_fold_simple_splitter.h',['../tk__fold__simple__splitter_8h.html',1,'']]],
   ['tk_5ffold_5fsimple_5fsplitter_5funittest_2ecc',['tk_fold_simple_splitter_unittest.cc',['../tk__fold__simple__splitter__unittest_8cc.html',1,'']]],
   ['tostring_5funittest_2ecc',['tostring_unittest.cc',['../tostring__unittest_8cc.html',1,'']]],
-  ['train_5flaunch_5finfo_2ecc',['train_launch_info.cc',['../train__launch__info_8cc.html',1,'']]],
   ['train_5flaunch_5finfo_2eh',['train_launch_info.h',['../train__launch__info_8h.html',1,'']]],
   ['trid_5ffunction_2ecc',['trid_function.cc',['../trid__function_8cc.html',1,'']]],
   ['trid_5ffunction_2eh',['trid_function.h',['../trid__function_8h.html',1,'']]],

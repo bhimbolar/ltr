@@ -116,30 +116,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012 
 <a name="l00013"></a>00013 <span class="keyword">namespace </span>ltr {
 <a name="l00017"></a><a class="code" href="classltr_1_1_euclidean_metric.html">00017</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects.">EuclideanMetric</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_metric.html">BaseMetric</a> {
-<a name="l00018"></a>00018  <span class="keyword">public</span>:
-<a name="l00019"></a>00019 
-<a name="l00020"></a><a class="code" href="classltr_1_1_euclidean_metric.html#adfc7e6cb2aff4b766266aaf87fb4aa5c">00020</a>   <a class="code" href="classltr_1_1_euclidean_metric.html#adfc7e6cb2aff4b766266aaf87fb4aa5c">EuclideanMetric</a>() {
-<a name="l00021"></a>00021   }
-<a name="l00022"></a>00022 
-<a name="l00023"></a><a class="code" href="classltr_1_1_euclidean_metric.html#a162a8d10c03081f76990e0e9b5a4d360">00023</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_euclidean_metric.html#a162a8d10c03081f76990e0e9b5a4d360">EuclideanMetric</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
-<a name="l00024"></a>00024   }
-<a name="l00025"></a>00025 
-<a name="l00026"></a><a class="code" href="classltr_1_1_euclidean_metric.html#a1e3119c6b6786a1f5d9449e0bb3bbed4">00026</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;EuclideanMetric&gt;</a> <a class="code" href="classltr_1_1_euclidean_metric.html#a1e3119c6b6786a1f5d9449e0bb3bbed4">Ptr</a>;
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_euclidean_metric.html#aef1868bbd4ecc6b7acb0f99743d9190b">distance</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>&amp; rhs) <span class="keyword">const</span>;
-<a name="l00034"></a>00034   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036  <span class="keyword">private</span>:
-<a name="l00037"></a>00037   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_euclidean_metric.html#a9449d232d1dda75430e9c0972c74421f">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00018"></a>00018   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_euclidean_metric.html" title="Euclidean metric on two objects.">EuclideanMetric</a>)
+<a name="l00019"></a>00019  <span class="keyword">public</span>:
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="classltr_1_1_euclidean_metric.html#adfc7e6cb2aff4b766266aaf87fb4aa5c">00021</a>   <a class="code" href="classltr_1_1_euclidean_metric.html#adfc7e6cb2aff4b766266aaf87fb4aa5c">EuclideanMetric</a>() {
+<a name="l00022"></a>00022   }
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="classltr_1_1_euclidean_metric.html#a162a8d10c03081f76990e0e9b5a4d360">00024</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_euclidean_metric.html#a162a8d10c03081f76990e0e9b5a4d360">EuclideanMetric</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
+<a name="l00025"></a>00025   }
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027   <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_euclidean_metric.html#aef1868bbd4ecc6b7acb0f99743d9190b">distance</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">ltr::Object</a>&amp; rhs) <span class="keyword">const</span>;
+<a name="l00033"></a>00033   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035  <span class="keyword">private</span>:
+<a name="l00036"></a>00036   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_euclidean_metric.html#a9449d232d1dda75430e9c0972c74421f">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00037"></a>00037 };
 <a name="l00038"></a>00038 };
-<a name="l00039"></a>00039 };
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="preprocessor">#endif  // LTR_METRICS_EUCLIDEAN_METRIC_H_</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="preprocessor">#endif  // LTR_METRICS_EUCLIDEAN_METRIC_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" href="$configurator_8h.html" title="ltr_client/configurator.h" alt="" coords="439,80,591,107"/>
-<area shape="rect" href="$crossvalidation__launch__info_8cc.html" title="ltr_client/utility/crossvalidation_launch_info.cc" alt="" coords="615,80,897,107"/>
-<area shape="rect" href="$configurator_8cc.html" title="ltr_client/configurator.cc" alt="" coords="5,155,165,181"/>
-<area shape="rect" href="$dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="387,155,643,181"/>
-<area shape="rect" href="$ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="240,229,373,256"/>
-<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="184,304,325,331"/>
-<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="537,379,657,405"/>
-<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="523,304,672,331"/>
-<area shape="rect" href="$train__launch__info_8cc.html" title="ltr_client/utility/train_launch_info.cc" alt="" coords="787,155,1011,181"/>
-<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="397,229,661,256"/>
+<area shape="rect" href="$configuration_8h.html" title="ltr_client/configuration.h" alt="" coords="400,80,557,107"/>
+<area shape="rect" href="$config__parser_8h.html" title="ltr_client/config_parser.h" alt="" coords="253,155,416,181"/>
+<area shape="rect" href="$ltr__client_8h.html" title="ltr_client/ltr_client.h" alt="" coords="491,229,624,256"/>
+<area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="671,379,791,405"/>
+<area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="379,304,528,331"/>
+<area shape="rect" href="$dependency__resolving__factory_8h.html" title="ltr_client/dependency_resolving_factory.h" alt="" coords="541,155,797,181"/>
+<area shape="rect" href="$config__parser_8cc.html" title="ltr_client/config_parser.cc" alt="" coords="5,229,173,256"/>
+<area shape="rect" href="$config__parser__unittest_8cc.html" title="ltr_client/config_parser_unittest.cc" alt="" coords="197,229,416,256"/>
+<area shape="rect" href="$ltr__client_8cc.html" title="ltr_client/ltr_client.cc" alt="" coords="552,304,693,331"/>
+<area shape="rect" href="$dependency__resolving__factory_8cc.html" title="ltr_client/dependency_resolving_factory.cc" alt="" coords="648,229,912,256"/>
 </map>

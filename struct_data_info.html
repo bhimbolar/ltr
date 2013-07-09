@@ -108,12 +108,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Contains the information about the dataset as text.  
+ <a href="struct_data_info.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="data__info_8h_source.html">data_info.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for DataInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_data_info__inherit__graph.png" border="0" usemap="#_data_info_inherit__map" alt="Inheritance graph"/></div>
+<map name="_data_info_inherit__map" id="_data_info_inherit__map">
+<area shape="rect" href="classltr_1_1_printable.html" title="ltr::Printable" alt="" coords="5,5,96,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="struct_data_info-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a764f3bb96e0e4209e9adc2b5fa4f1b41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_info.html#a764f3bb96e0e4209e9adc2b5fa4f1b41">ALLOW_SHARED_PTR_ONLY_CREATION</a> (<a class="el" href="struct_data_info.html">DataInfo</a>)</td></tr>
+<tr class="memitem:ac2bf676682dabddc112ff66ff2f99f52"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_info.html#ac2bf676682dabddc112ff66ff2f99f52">toString</a> () const </td></tr>
 <tr class="memitem:a1bf2df99d22b1b70f5ff75e9ea922159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_info.html#a1bf2df99d22b1b70f5ff75e9ea922159">DataInfo</a> ()</td></tr>
 <tr class="memitem:ab5678f493aa0d226f66c08767b9072d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_info.html#ab5678f493aa0d226f66c08767b9072d7">DataInfo</a> (const string &amp;name_, const string &amp;approach_, const string &amp;format_, const string &amp;file_name_)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -124,7 +136,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1fb21b4f528cffe8d000d10d3a3f4dc6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data_info.html#a1fb21b4f528cffe8d000d10d3a3f4dc6">file</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Contains the information about the dataset, including name of the dataset, approach in the dataset, the format of the dataset and the file name. </p>
+<div class="textblock"><p>Contains the information about the dataset as text. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1bf2df99d22b1b70f5ff75e9ea922159"></a>
 <div class="memitem">
@@ -139,7 +151,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Basic constructor. </p>
+<p>Basic constructor </p>
 
 </div>
 </div>
@@ -179,7 +191,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Another implementation of the basic constructor. </p>
+<p>Basic constructor.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">name_</td><td>- string containing the name </td></tr>
@@ -189,6 +201,42 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a764f3bb96e0e4209e9adc2b5fa4f1b41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_data_info.html#a764f3bb96e0e4209e9adc2b5fa4f1b41">DataInfo::ALLOW_SHARED_PTR_ONLY_CREATION</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_data_info.html">DataInfo</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2bf676682dabddc112ff66ff2f99f52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="struct_data_info.html#ac2bf676682dabddc112ff66ff2f99f52">DataInfo::toString</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_printable.html#a53fe32bcbdadde7a743c5b4e3eb70adf">ltr::Printable</a>.</p>
 
 </div>
 </div>
@@ -203,6 +251,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Approach of the dataset. </p>
 
 </div>
 </div>
@@ -216,6 +265,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>File that contains dataset. </p>
 
 </div>
 </div>
@@ -229,6 +279,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Format of the dataset. </p>
 
 </div>
 </div>
@@ -242,6 +293,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Name of the dataset. </p>
 
 </div>
 </div>
@@ -252,7 +304,7 @@ Public Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:44 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

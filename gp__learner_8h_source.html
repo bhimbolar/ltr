@@ -143,9 +143,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00039"></a>00039 <span class="keyword">namespace </span>gp {
 <a name="l00045"></a>00045 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
 <a name="l00046"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html">00046</a> <span class="keyword">class </span><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_learner.html">BaseLearner</a>&lt;TElement, GPScorer&gt; {
-<a name="l00047"></a>00047  <span class="keyword">public</span>:
-<a name="l00048"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a69e5aaa65757a7476246c510bf2bb483">00048</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">shared_ptr&lt;GPLearner&gt;</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a69e5aaa65757a7476246c510bf2bb483">Ptr</a>;
-<a name="l00055"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a40b6b29112332b0a55db0e26a1daa64a">00055</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a40b6b29112332b0a55db0e26a1daa64a">GPLearner</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a> measure,
+<a name="l00047"></a>00047   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1gp_1_1_g_p_learner.html" title="Implements genetic programming approach applied to learning to rank.">GPLearner</a>)
+<a name="l00048"></a>00048  <span class="keyword">public</span>:
+<a name="l00055"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a40b6b29112332b0a55db0e26a1daa64a">00055</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a40b6b29112332b0a55db0e26a1daa64a">GPLearner</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1_measure.html">Measure&lt;TElement&gt;::Ptr</a> measure,
 <a name="l00056"></a>00056       <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters)
 <a name="l00057"></a>00057   : <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a47469e1b78a4d88546560f86baa2d0d7">feature_count_</a>(0),
 <a name="l00058"></a>00058     <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a02910a9e020e0ded1fe13e102a2a13d2">measure_</a>(measure) {
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00068"></a>00068     this-&gt;<a class="code" href="classltr_1_1_parameterized.html#ac51c0bca83b15a063f2dbacb15dbe75b">setParameters</a>(parameters);
 <a name="l00069"></a>00069   }
 <a name="l00070"></a>00070 
-<a name="l00071"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a10a7d79a9e1d8b9688c41eee7323b0ce">00071</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a40b6b29112332b0a55db0e26a1daa64a">GPLearner</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a> measure,
+<a name="l00071"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a10a7d79a9e1d8b9688c41eee7323b0ce">00071</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a40b6b29112332b0a55db0e26a1daa64a">GPLearner</a>(<span class="keyword">typename</span> <a class="code" href="classltr_1_1_measure.html">Measure&lt;TElement&gt;::Ptr</a> measure,
 <a name="l00072"></a>00072                      <span class="keywordtype">int</span> population_size = 10,
 <a name="l00073"></a>00073                      <span class="keywordtype">int</span> number_of_generations = 3,
 <a name="l00074"></a>00074                      <span class="keywordtype">int</span> min_init_depth = 2,
@@ -195,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00122"></a>00122   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad16336e406f3495822c268c9a986fe72">addPopulationHandler</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BasePopulationHandler::Ptr</a>
 <a name="l00123"></a>00123                             new_population_handler);
 <a name="l00124"></a>00124 
-<a name="l00125"></a>00125   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa1a2ef4ed703ad99a99157271c4b8fa1">addGPOperation</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseGPOperation::Ptr</a>
+<a name="l00125"></a>00125   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa1a2ef4ed703ad99a99157271c4b8fa1">addGPOperation</a>(BaseGPOperation::Ptr
 <a name="l00126"></a>00126                       new_gp_operation);
 <a name="l00127"></a>00127 
 <a name="l00128"></a>00128   <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a24981a8ee1cdc382171504180e5b2e7d">GET_SET</a>(<span class="keywordtype">int</span>, population_size);
@@ -214,232 +214,233 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00144"></a>00144   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7">initContext</a>();
 <a name="l00148"></a>00148   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a53466308695b1b8ee1ecfe4ccc17d77f">initPopulation</a>();
 <a name="l00153"></a>00153   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a3db132affb2577028cb3068d6c35c936">evaluationStepImpl</a>();
-<a name="l00161"></a>00161   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#af39e7a2381c9aa7c016969d1ec8d05e1">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data, <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>* scorer);
-<a name="l00168"></a>00168   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">evaluatePopulation</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data);
-<a name="l00173"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a47469e1b78a4d88546560f86baa2d0d7">00173</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a47469e1b78a4d88546560f86baa2d0d7">feature_count_</a>;
-<a name="l00174"></a>00174 
-<a name="l00175"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a02910a9e020e0ded1fe13e102a2a13d2">00175</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a02910a9e020e0ded1fe13e102a2a13d2">measure_</a>;
-<a name="l00176"></a>00176 
-<a name="l00177"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aeabfbab990765e8b846145540c6efaaf">00177</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aeabfbab990765e8b846145540c6efaaf">population_size_</a>;
-<a name="l00178"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1dd9f93051cce94bcd9b7ca9216e2f0c">00178</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1dd9f93051cce94bcd9b7ca9216e2f0c">number_of_generations_</a>;
-<a name="l00179"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa46e93178336e33c41f2c028e5def783">00179</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa46e93178336e33c41f2c028e5def783">min_init_depth_</a>;
-<a name="l00180"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a474e960c6e8a105ec8511c0fe7c636cc">00180</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a474e960c6e8a105ec8511c0fe7c636cc">max_init_depth_</a>;
-<a name="l00181"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8494a735b803873759daadb920eea2fa">00181</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8494a735b803873759daadb920eea2fa">init_grow_probability_</a>;
-<a name="l00182"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1f33573d26e6ce1904cb6f753a56281f">00182</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1f33573d26e6ce1904cb6f753a56281f">seed_</a>;
-<a name="l00183"></a>00183 
-<a name="l00184"></a>00184  <span class="keyword">protected</span>:
-<a name="l00189"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad3af5d015a092f07e94da48b7b76bf9d">00189</a>   Population <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad3af5d015a092f07e94da48b7b76bf9d">population_</a>;
-<a name="l00194"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a9560fdb7de56483633e75da676ec67f9">00194</a>   Puppy::Context <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a9560fdb7de56483633e75da676ec67f9">context_</a>;
-<a name="l00198"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1aa2beaa48cecd1765c888760a039c25">00198</a>   Puppy::Tree <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1aa2beaa48cecd1765c888760a039c25">best_tree_</a>;
-<a name="l00199"></a>00199 
-<a name="l00200"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a78dc1ced8977eb7b36e3a2101755ef4a">00200</a>   vector&lt;BasePopulationHandler::Ptr&gt; <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a78dc1ced8977eb7b36e3a2101755ef4a">population_handler_</a>;
-<a name="l00201"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627e13eba25abe4ef7df4843b23a672">00201</a>   vector&lt;BaseGPOperation::Ptr&gt; <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627e13eba25abe4ef7df4843b23a672">gp_operation_</a>;
-<a name="l00202"></a>00202 };
-<a name="l00203"></a>00203 
-<a name="l00204"></a>00204 <span class="comment">// template realizations</span>
-<a name="l00205"></a>00205 
-<a name="l00206"></a>00206 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00207"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a28f83c13cf7ca19ae41a5494754747ef">00207</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a28f83c13cf7ca19ae41a5494754747ef">GPLearner&lt;TElement&gt;::setDefaultParameters</a>() {
-<a name="l00208"></a>00208   population_size_ = 10;
-<a name="l00209"></a>00209   number_of_generations_ = 3;
-<a name="l00210"></a>00210   min_init_depth_ = 2;
-<a name="l00211"></a>00211   max_init_depth_ = 5;
-<a name="l00212"></a>00212   init_grow_probability_ = 0.5;
-<a name="l00213"></a>00213   seed_ = 1;
-<a name="l00214"></a>00214 }
-<a name="l00215"></a>00215 
-<a name="l00216"></a>00216 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00217"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a440a481489f215f82e4ed0f913aaa33f">00217</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a440a481489f215f82e4ed0f913aaa33f">GPLearner&lt;TElement&gt;::checkParameters</a>()<span class="keyword"> const </span>{
-<a name="l00218"></a>00218   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(population_size_ &gt; 0); <span class="comment">// NOLINT</span>
-<a name="l00219"></a>00219   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(number_of_generations_ &gt; 0); <span class="comment">// NOLINT</span>
-<a name="l00220"></a>00220   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(min_init_depth_ &gt; 0); <span class="comment">// NOLINT</span>
-<a name="l00221"></a>00221   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(max_init_depth_ &gt; min_init_depth_ - 1); <span class="comment">// NOLINT</span>
-<a name="l00222"></a>00222   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(0.0 &lt;= init_grow_probability_ &amp;&amp; init_grow_probability_ &lt;= 1.0); <span class="comment">// NOLINT</span>
-<a name="l00223"></a>00223 }
-<a name="l00224"></a>00224 
-<a name="l00225"></a>00225 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00226"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a2be0da657ef689c6082f4bf1c275a4f4">00226</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a2be0da657ef689c6082f4bf1c275a4f4">GPLearner&lt;TElement&gt;::reset</a>() {
-<a name="l00227"></a>00227   this-&gt;initContext();
-<a name="l00228"></a>00228   this-&gt;initPopulation();
-<a name="l00229"></a>00229 }
-<a name="l00230"></a>00230 
-<a name="l00231"></a>00231 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00232"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8d8302590a71dfb805f95266b9455558">00232</a> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8d8302590a71dfb805f95266b9455558">GPLearner&lt;TElement&gt;::toString</a>()<span class="keyword"> const </span>{
-<a name="l00233"></a>00233   stringstream str;
-<a name="l00234"></a>00234   fixed(str);
-<a name="l00235"></a>00235   str.precision(2);
-<a name="l00236"></a>00236   str &lt;&lt; <span class="stringliteral">&quot;Genetic programming learner with parameters: &quot;</span>;
-<a name="l00237"></a>00237   str &lt;&lt; <span class="stringliteral">&quot;population_size = &quot;</span> &lt;&lt; population_size_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
-<a name="l00238"></a>00238   str &lt;&lt; <span class="stringliteral">&quot;number_of_generations = &quot;</span> &lt;&lt; number_of_generations_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
-<a name="l00239"></a>00239   str &lt;&lt; <span class="stringliteral">&quot;min_init_depth = &quot;</span> &lt;&lt; min_init_depth_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
-<a name="l00240"></a>00240   str &lt;&lt; <span class="stringliteral">&quot;max_init_depth = &quot;</span> &lt;&lt; max_init_depth_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
-<a name="l00241"></a>00241   str &lt;&lt; <span class="stringliteral">&quot;init_grow_probability = &quot;</span> &lt;&lt; init_grow_probability_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
-<a name="l00242"></a>00242   str &lt;&lt; <span class="stringliteral">&quot;seed = &quot;</span> &lt;&lt; seed_;
-<a name="l00243"></a>00243   <span class="keywordflow">return</span> str.str();
-<a name="l00244"></a>00244 }
-<a name="l00245"></a>00245 
-<a name="l00246"></a>00246 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00247"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ac0372d7c7b2100b1846cf98035bf836a">00247</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ac0372d7c7b2100b1846cf98035bf836a">GPLearner&lt;TElement&gt;::setInitialScorer</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>&amp; scorer) {
-<a name="l00248"></a>00248   best_tree_ = scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a>;
-<a name="l00249"></a>00249   context_ = scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">context_</a>;
-<a name="l00250"></a>00250   feature_count_ = scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">feature_count_</a>;
-<a name="l00251"></a>00251 }
-<a name="l00252"></a>00252 
-<a name="l00253"></a>00253 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00254"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad16336e406f3495822c268c9a986fe72">00254</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad16336e406f3495822c268c9a986fe72">GPLearner&lt;TElement&gt;::addPopulationHandler</a>(
-<a name="l00255"></a>00255   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BasePopulationHandler::Ptr</a> new_population_handler) {
-<a name="l00256"></a>00256     population_handler_.push_back(new_population_handler);
-<a name="l00257"></a>00257 }
-<a name="l00258"></a>00258 
-<a name="l00259"></a>00259 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00260"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa1a2ef4ed703ad99a99157271c4b8fa1">00260</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa1a2ef4ed703ad99a99157271c4b8fa1">GPLearner&lt;TElement&gt;::addGPOperation</a>(
-<a name="l00261"></a>00261   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BaseGPOperation::Ptr</a> new_gp_operation) {
-<a name="l00262"></a>00262     gp_operation_.push_back(new_gp_operation);
-<a name="l00263"></a>00263 }
-<a name="l00264"></a>00264 
-<a name="l00265"></a>00265 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00266"></a>00266 <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a907aeeea924064e32f917255b5a1fc29">GPLearner&lt;TElement&gt;::</a>
-<a name="l00267"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a907aeeea924064e32f917255b5a1fc29">00267</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a907aeeea924064e32f917255b5a1fc29">  setParametersImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
-<a name="l00268"></a>00268     measure_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Measure&lt;TElement&gt;::Ptr</a>&gt;(<span class="stringliteral">&quot;measure&quot;</span>);
-<a name="l00269"></a>00269     population_size_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;POPULATION_SIZE&quot;</span>, 10);
-<a name="l00270"></a>00270     number_of_generations_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;NUMBER_OF_GENERATIONS&quot;</span>, 3);
-<a name="l00271"></a>00271     min_init_depth_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MIN_INIT_DEPTH&quot;</span>, 2);
-<a name="l00272"></a>00272     max_init_depth_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MAX_INIT_DEPTH&quot;</span>, 5);
-<a name="l00273"></a>00273     init_grow_probability_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;INIT_GROW_PROBABILITY&quot;</span>,
-<a name="l00274"></a>00274                                                     0.5);
-<a name="l00275"></a>00275     seed_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SEED&quot;</span>, 1);
-<a name="l00276"></a>00276     population_handler_ =
-<a name="l00277"></a>00277         parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;vector&lt;BasePopulationHandler::Ptr&gt; &gt;(<span class="stringliteral">&quot;STRATEGIES&quot;</span>,
-<a name="l00278"></a>00278             vector&lt;BasePopulationHandler::Ptr&gt;(0));
-<a name="l00279"></a>00279 }
-<a name="l00280"></a>00280 
-<a name="l00281"></a>00281 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00282"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7">00282</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7">GPLearner&lt;TElement&gt;::initContext</a>() {
-<a name="l00283"></a>00283   Puppy::Context newContext;
-<a name="l00284"></a>00284   context_= newContext;
-<a name="l00285"></a>00285 
-<a name="l00286"></a>00286   context_.mRandom.seed(seed_);
-<a name="l00287"></a>00287 
-<a name="l00288"></a>00288   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> gp_operation_index = 0;
-<a name="l00289"></a>00289        gp_operation_index &lt; (int)gp_operation_.size();
-<a name="l00290"></a>00290        ++gp_operation_index) {
-<a name="l00291"></a>00291     context_.insert(gp_operation_[gp_operation_index].<span class="keyword">get</span>());
-<a name="l00292"></a>00292   }
-<a name="l00293"></a>00293 
-<a name="l00294"></a>00294   <span class="keywordflow">if</span> (gp_operation_.empty()) {
-<a name="l00295"></a>00295     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_add.html" title="The Puppy::Primitive implements addition functor, it is used to build Puppy::trees from...">Add</a>);
-<a name="l00296"></a>00296     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_subtract.html" title="The Puppy::Primitive implements subtraction functor, it is used to build Puppy::trees from...">Subtract</a>);
-<a name="l00297"></a>00297     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_multiply.html" title="The Puppy::Primitive implements multiplication functor, it is used to build Puppy::trees from...">Multiply</a>);
-<a name="l00298"></a>00298     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_divide.html" title="The Puppy::Primitive implements division functor, it is used to build Puppy::trees from...">Divide</a>);
-<a name="l00299"></a>00299   }
-<a name="l00300"></a>00300 
-<a name="l00301"></a>00301   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> feature_index = 0;
-<a name="l00302"></a>00302        feature_index &lt; feature_count_;
-<a name="l00303"></a>00303        ++feature_index) {
-<a name="l00304"></a>00304     <span class="keywordtype">string</span> feature_name = <span class="stringliteral">&quot;feature[&quot;</span>;
-<a name="l00305"></a>00305     feature_name += lexical_cast&lt;<span class="keywordtype">string</span>&gt;(feature_index);
-<a name="l00306"></a>00306     feature_name += <span class="stringliteral">&quot;]&quot;</span>;
-<a name="l00307"></a>00307     context_.insert(<span class="keyword">new</span> Puppy::TokenT&lt;double&gt;(feature_name));
-<a name="l00308"></a>00308   }
-<a name="l00309"></a>00309 }
-<a name="l00310"></a>00310 
-<a name="l00311"></a>00311 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00312"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a53466308695b1b8ee1ecfe4ccc17d77f">00312</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a53466308695b1b8ee1ecfe4ccc17d77f">GPLearner&lt;TElement&gt;::initPopulation</a>() {
-<a name="l00313"></a>00313   population_.clear();
-<a name="l00314"></a>00314 
-<a name="l00315"></a>00315   population_.resize(population_size_);
-<a name="l00316"></a>00316   Puppy::initializePopulation(population_, context_, init_grow_probability_,
-<a name="l00317"></a>00317                               min_init_depth_, max_init_depth_);
-<a name="l00318"></a>00318 }
-<a name="l00319"></a>00319 
-<a name="l00320"></a>00320 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00321"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a3db132affb2577028cb3068d6c35c936">00321</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a3db132affb2577028cb3068d6c35c936">GPLearner&lt;TElement&gt;::evaluationStepImpl</a>() {
-<a name="l00322"></a>00322   <span class="keywordflow">if</span> (population_handler_.empty()) {
-<a name="l00323"></a>00323     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_selection_strategy.html">DefaultSelectionStrategy</a>);
-<a name="l00324"></a>00324     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_crossover_strategy.html">DefaultCrossoverStrategy</a>);
-<a name="l00325"></a>00325     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_mutation_standard_strategy.html">DefaultMutationStandardStrategy</a>);
-<a name="l00326"></a>00326     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_mutation_swap_strategy.html">DefaultMutationSwapStrategy</a>);
-<a name="l00327"></a>00327   }
-<a name="l00328"></a>00328 
-<a name="l00329"></a>00329   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> population_handler_index = 0;
-<a name="l00330"></a>00330        population_handler_index &lt; (int) population_handler_.size();
-<a name="l00331"></a>00331        ++population_handler_index) {
-<a name="l00332"></a>00332     population_handler_[population_handler_index]-&gt;
-<a name="l00333"></a>00333       handlePopulation(population_, context_);
-<a name="l00334"></a>00334   }
-<a name="l00335"></a>00335 }
-<a name="l00336"></a>00336 
-<a name="l00337"></a>00337 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00338"></a>00338 <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#af39e7a2381c9aa7c016969d1ec8d05e1">GPLearner&lt;TElement&gt;::</a>
-<a name="l00339"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#af39e7a2381c9aa7c016969d1ec8d05e1">00339</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#af39e7a2381c9aa7c016969d1ec8d05e1">  learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data, <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>* scorer) {
-<a name="l00340"></a>00340     <span class="keywordflow">if</span> (data.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>() != feature_count_) {
-<a name="l00341"></a>00341       feature_count_ = data.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>();
-<a name="l00342"></a>00342       reset();
-<a name="l00343"></a>00343     }
-<a name="l00344"></a>00344 
-<a name="l00345"></a>00345     rDebug(<span class="stringliteral">&quot;Evaluating data for the first time&quot;</span>);
-<a name="l00346"></a>00346     this-&gt;evaluatePopulation(data);
-<a name="l00347"></a>00347 
-<a name="l00348"></a>00348     rDebug(<span class="stringliteral">&quot;Evolution begins.\n&quot;</span>);
-<a name="l00349"></a>00349     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> generationIdx = 0;
-<a name="l00350"></a>00350          generationIdx &lt; number_of_generations_;
-<a name="l00351"></a>00351          ++generationIdx) {
-<a name="l00352"></a>00352       rDebug(<span class="stringliteral">&quot;Generation %d&quot;</span>, generationIdx);
-<a name="l00353"></a>00353 
-<a name="l00354"></a>00354       rDebug(<span class="stringliteral">&quot;Calling strategy&quot;</span>);
-<a name="l00355"></a>00355       this-&gt;evaluationStepImpl();
-<a name="l00356"></a>00356 
-<a name="l00357"></a>00357       rDebug(<span class="stringliteral">&quot;Evaluation&quot;</span>);
-<a name="l00358"></a>00358       this-&gt;evaluatePopulation(data);
-<a name="l00359"></a>00359 
-<a name="l00360"></a>00360       <span class="keywordtype">int</span> best_tree_index = 0;
-<a name="l00361"></a>00361       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> tree_index = 1;
-<a name="l00362"></a>00362            tree_index &lt; (int)population_.size(); ++tree_index) {
-<a name="l00363"></a>00363         <span class="keywordflow">if</span> (population_[best_tree_index].mFitness &lt;
-<a name="l00364"></a>00364             population_[tree_index].mFitness) {
-<a name="l00365"></a>00365           best_tree_index = tree_index;
-<a name="l00366"></a>00366         }
-<a name="l00367"></a>00367       }
-<a name="l00368"></a>00368 
-<a name="l00369"></a>00369       rDebug(<span class="stringliteral">&quot;The best one is number %d&quot;</span>, best_tree_index);
-<a name="l00370"></a>00370       using ::operator &lt;&lt;;
-<a name="l00371"></a>00371       stringstream log_out;
-<a name="l00372"></a>00372       best_tree_ = population_[best_tree_index];
-<a name="l00373"></a>00373       log_out &lt;&lt; best_tree_ &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>;
-<a name="l00374"></a>00374       log_out &lt;&lt; <span class="stringliteral">&quot;with fitness &quot;</span> &lt;&lt; best_tree_.mFitness;
-<a name="l00375"></a>00375       rDebug(<span class="stringliteral">&quot;%s&quot;</span>, log_out.str().c_str());
-<a name="l00376"></a>00376     }
-<a name="l00377"></a>00377     <span class="comment">// \TODO ? rewrite with setters and getters</span>
-<a name="l00378"></a>00378     *scorer = <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>(best_tree_, context_, feature_count_);
-<a name="l00379"></a>00379 }
-<a name="l00380"></a>00380 
-<a name="l00381"></a>00381 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00382"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">00382</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">GPLearner&lt;TElement&gt;::evaluatePopulation</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data) {
-<a name="l00383"></a>00383   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> tree_index = 0;
-<a name="l00384"></a>00384        tree_index &lt; (int)population_.size(); ++tree_index) {
-<a name="l00385"></a>00385     <span class="keywordflow">if</span> (population_[tree_index].mValid) {
-<a name="l00386"></a>00386       <span class="keywordflow">continue</span>;
-<a name="l00387"></a>00387     }
-<a name="l00388"></a>00388     <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a> gp_scorer(population_[tree_index], context_, feature_count_);
-<a name="l00389"></a>00389 
-<a name="l00390"></a>00390     gp_scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#aaa403753df80c67d96d2b7a00ad60785">markDataSet</a>(data);
-<a name="l00391"></a>00391 
-<a name="l00392"></a>00392     <span class="comment">// This line yields a topic for research. Why so?</span>
-<a name="l00393"></a>00393     <span class="comment">//</span>
-<a name="l00394"></a>00394     <span class="keywordtype">double</span> measureVal = this-&gt;measure_-&gt;average(data);
-<a name="l00395"></a>00395 
-<a name="l00396"></a>00396     population_[tree_index].mFitness = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(measureVal);
-<a name="l00397"></a>00397     population_[tree_index].mValid = <span class="keyword">true</span>;
-<a name="l00398"></a>00398   }
-<a name="l00399"></a>00399 }
-<a name="l00400"></a>00400 };
+<a name="l00161"></a>00161   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627ea8063094eb551ff5c5bb255520f">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data,
+<a name="l00162"></a>00162                  <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GPScorer::Ptr</a>* scorer);
+<a name="l00169"></a>00169   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">evaluatePopulation</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data);
+<a name="l00174"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a47469e1b78a4d88546560f86baa2d0d7">00174</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a47469e1b78a4d88546560f86baa2d0d7">feature_count_</a>;
+<a name="l00175"></a>00175 
+<a name="l00176"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a02910a9e020e0ded1fe13e102a2a13d2">00176</a>   <span class="keyword">typename</span> <a class="code" href="classltr_1_1_measure.html">Measure&lt;TElement&gt;::Ptr</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a02910a9e020e0ded1fe13e102a2a13d2">measure_</a>;
+<a name="l00177"></a>00177 
+<a name="l00178"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aeabfbab990765e8b846145540c6efaaf">00178</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aeabfbab990765e8b846145540c6efaaf">population_size_</a>;
+<a name="l00179"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1dd9f93051cce94bcd9b7ca9216e2f0c">00179</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1dd9f93051cce94bcd9b7ca9216e2f0c">number_of_generations_</a>;
+<a name="l00180"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa46e93178336e33c41f2c028e5def783">00180</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa46e93178336e33c41f2c028e5def783">min_init_depth_</a>;
+<a name="l00181"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a474e960c6e8a105ec8511c0fe7c636cc">00181</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a474e960c6e8a105ec8511c0fe7c636cc">max_init_depth_</a>;
+<a name="l00182"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8494a735b803873759daadb920eea2fa">00182</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8494a735b803873759daadb920eea2fa">init_grow_probability_</a>;
+<a name="l00183"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1f33573d26e6ce1904cb6f753a56281f">00183</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1f33573d26e6ce1904cb6f753a56281f">seed_</a>;
+<a name="l00184"></a>00184 
+<a name="l00185"></a>00185  <span class="keyword">protected</span>:
+<a name="l00190"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad3af5d015a092f07e94da48b7b76bf9d">00190</a>   Population <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad3af5d015a092f07e94da48b7b76bf9d">population_</a>;
+<a name="l00195"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a9560fdb7de56483633e75da676ec67f9">00195</a>   Puppy::Context <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a9560fdb7de56483633e75da676ec67f9">context_</a>;
+<a name="l00199"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1aa2beaa48cecd1765c888760a039c25">00199</a>   Puppy::Tree <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a1aa2beaa48cecd1765c888760a039c25">best_tree_</a>;
+<a name="l00200"></a>00200 
+<a name="l00201"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a78dc1ced8977eb7b36e3a2101755ef4a">00201</a>   vector&lt;BasePopulationHandler::Ptr&gt; <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a78dc1ced8977eb7b36e3a2101755ef4a">population_handler_</a>;
+<a name="l00202"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627e13eba25abe4ef7df4843b23a672">00202</a>   vector&lt;BaseGPOperation::Ptr&gt; <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627e13eba25abe4ef7df4843b23a672">gp_operation_</a>;
+<a name="l00203"></a>00203 };
+<a name="l00204"></a>00204 
+<a name="l00205"></a>00205 <span class="comment">// template realizations</span>
+<a name="l00206"></a>00206 
+<a name="l00207"></a>00207 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00208"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a28f83c13cf7ca19ae41a5494754747ef">00208</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a28f83c13cf7ca19ae41a5494754747ef">GPLearner&lt;TElement&gt;::setDefaultParameters</a>() {
+<a name="l00209"></a>00209   population_size_ = 10;
+<a name="l00210"></a>00210   number_of_generations_ = 3;
+<a name="l00211"></a>00211   min_init_depth_ = 2;
+<a name="l00212"></a>00212   max_init_depth_ = 5;
+<a name="l00213"></a>00213   init_grow_probability_ = 0.5;
+<a name="l00214"></a>00214   seed_ = 1;
+<a name="l00215"></a>00215 }
+<a name="l00216"></a>00216 
+<a name="l00217"></a>00217 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00218"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a440a481489f215f82e4ed0f913aaa33f">00218</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a440a481489f215f82e4ed0f913aaa33f">GPLearner&lt;TElement&gt;::checkParameters</a>()<span class="keyword"> const </span>{
+<a name="l00219"></a>00219   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(population_size_ &gt; 0); <span class="comment">// NOLINT</span>
+<a name="l00220"></a>00220   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(number_of_generations_ &gt; 0); <span class="comment">// NOLINT</span>
+<a name="l00221"></a>00221   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(min_init_depth_ &gt; 0); <span class="comment">// NOLINT</span>
+<a name="l00222"></a>00222   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(max_init_depth_ &gt; min_init_depth_ - 1); <span class="comment">// NOLINT</span>
+<a name="l00223"></a>00223   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(0.0 &lt;= init_grow_probability_ &amp;&amp; init_grow_probability_ &lt;= 1.0); <span class="comment">// NOLINT</span>
+<a name="l00224"></a>00224 }
+<a name="l00225"></a>00225 
+<a name="l00226"></a>00226 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00227"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a2be0da657ef689c6082f4bf1c275a4f4">00227</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a2be0da657ef689c6082f4bf1c275a4f4">GPLearner&lt;TElement&gt;::reset</a>() {
+<a name="l00228"></a>00228   this-&gt;initContext();
+<a name="l00229"></a>00229   this-&gt;initPopulation();
+<a name="l00230"></a>00230 }
+<a name="l00231"></a>00231 
+<a name="l00232"></a>00232 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00233"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8d8302590a71dfb805f95266b9455558">00233</a> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8d8302590a71dfb805f95266b9455558">GPLearner&lt;TElement&gt;::toString</a>()<span class="keyword"> const </span>{
+<a name="l00234"></a>00234   stringstream str;
+<a name="l00235"></a>00235   fixed(str);
+<a name="l00236"></a>00236   str.precision(2);
+<a name="l00237"></a>00237   str &lt;&lt; <span class="stringliteral">&quot;Genetic programming learner with parameters: &quot;</span>;
+<a name="l00238"></a>00238   str &lt;&lt; <span class="stringliteral">&quot;population_size = &quot;</span> &lt;&lt; population_size_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
+<a name="l00239"></a>00239   str &lt;&lt; <span class="stringliteral">&quot;number_of_generations = &quot;</span> &lt;&lt; number_of_generations_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
+<a name="l00240"></a>00240   str &lt;&lt; <span class="stringliteral">&quot;min_init_depth = &quot;</span> &lt;&lt; min_init_depth_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
+<a name="l00241"></a>00241   str &lt;&lt; <span class="stringliteral">&quot;max_init_depth = &quot;</span> &lt;&lt; max_init_depth_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
+<a name="l00242"></a>00242   str &lt;&lt; <span class="stringliteral">&quot;init_grow_probability = &quot;</span> &lt;&lt; init_grow_probability_ &lt;&lt; <span class="stringliteral">&quot;, &quot;</span>;
+<a name="l00243"></a>00243   str &lt;&lt; <span class="stringliteral">&quot;seed = &quot;</span> &lt;&lt; seed_;
+<a name="l00244"></a>00244   <span class="keywordflow">return</span> str.str();
+<a name="l00245"></a>00245 }
+<a name="l00246"></a>00246 
+<a name="l00247"></a>00247 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00248"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ac0372d7c7b2100b1846cf98035bf836a">00248</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ac0372d7c7b2100b1846cf98035bf836a">GPLearner&lt;TElement&gt;::setInitialScorer</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>&amp; scorer) {
+<a name="l00249"></a>00249   best_tree_ = scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#abadf0936536f1506b04aba76b214ca43">best_tree_</a>;
+<a name="l00250"></a>00250   context_ = scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a4c67b70bc848ea5acea900e5945073ef">context_</a>;
+<a name="l00251"></a>00251   feature_count_ = scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#a9a9932c777076ef68ea4893d24346434">feature_count_</a>;
+<a name="l00252"></a>00252 }
+<a name="l00253"></a>00253 
+<a name="l00254"></a>00254 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00255"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad16336e406f3495822c268c9a986fe72">00255</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#ad16336e406f3495822c268c9a986fe72">GPLearner&lt;TElement&gt;::addPopulationHandler</a>(
+<a name="l00256"></a>00256   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">BasePopulationHandler::Ptr</a> new_population_handler) {
+<a name="l00257"></a>00257     population_handler_.push_back(new_population_handler);
+<a name="l00258"></a>00258 }
+<a name="l00259"></a>00259 
+<a name="l00260"></a>00260 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00261"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa1a2ef4ed703ad99a99157271c4b8fa1">00261</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#aa1a2ef4ed703ad99a99157271c4b8fa1">GPLearner&lt;TElement&gt;::addGPOperation</a>(
+<a name="l00262"></a>00262   BaseGPOperation::Ptr new_gp_operation) {
+<a name="l00263"></a>00263     gp_operation_.push_back(new_gp_operation);
+<a name="l00264"></a>00264 }
+<a name="l00265"></a>00265 
+<a name="l00266"></a>00266 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00267"></a>00267 <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a907aeeea924064e32f917255b5a1fc29">GPLearner&lt;TElement&gt;::</a>
+<a name="l00268"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a907aeeea924064e32f917255b5a1fc29">00268</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a907aeeea924064e32f917255b5a1fc29">  setParametersImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
+<a name="l00269"></a>00269     measure_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keyword">typename</span> <a class="code" href="classltr_1_1_measure.html">Measure&lt;TElement&gt;::Ptr</a>&gt;(<span class="stringliteral">&quot;measure&quot;</span>);
+<a name="l00270"></a>00270     population_size_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;POPULATION_SIZE&quot;</span>, 10);
+<a name="l00271"></a>00271     number_of_generations_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;NUMBER_OF_GENERATIONS&quot;</span>, 3);
+<a name="l00272"></a>00272     min_init_depth_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MIN_INIT_DEPTH&quot;</span>, 2);
+<a name="l00273"></a>00273     max_init_depth_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;MAX_INIT_DEPTH&quot;</span>, 5);
+<a name="l00274"></a>00274     init_grow_probability_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;INIT_GROW_PROBABILITY&quot;</span>,
+<a name="l00275"></a>00275                                                     0.5);
+<a name="l00276"></a>00276     seed_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SEED&quot;</span>, 1);
+<a name="l00277"></a>00277     population_handler_ =
+<a name="l00278"></a>00278         parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;vector&lt;BasePopulationHandler::Ptr&gt; &gt;(<span class="stringliteral">&quot;STRATEGIES&quot;</span>,
+<a name="l00279"></a>00279             vector&lt;BasePopulationHandler::Ptr&gt;(0));
+<a name="l00280"></a>00280 }
+<a name="l00281"></a>00281 
+<a name="l00282"></a>00282 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00283"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7">00283</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a8a15a30e9c8e883a5794f44c96fb46a7">GPLearner&lt;TElement&gt;::initContext</a>() {
+<a name="l00284"></a>00284   Puppy::Context newContext;
+<a name="l00285"></a>00285   context_= newContext;
+<a name="l00286"></a>00286 
+<a name="l00287"></a>00287   context_.mRandom.seed(seed_);
+<a name="l00288"></a>00288 
+<a name="l00289"></a>00289   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> gp_operation_index = 0;
+<a name="l00290"></a>00290        gp_operation_index &lt; (int)gp_operation_.size();
+<a name="l00291"></a>00291        ++gp_operation_index) {
+<a name="l00292"></a>00292     context_.insert(gp_operation_[gp_operation_index].<span class="keyword">get</span>());
+<a name="l00293"></a>00293   }
+<a name="l00294"></a>00294 
+<a name="l00295"></a>00295   <span class="keywordflow">if</span> (gp_operation_.empty()) {
+<a name="l00296"></a>00296     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_add.html" title="The Puppy::Primitive implements addition functor, it is used to build Puppy::trees from...">Add</a>);
+<a name="l00297"></a>00297     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_subtract.html" title="The Puppy::Primitive implements subtraction functor, it is used to build Puppy::trees from...">Subtract</a>);
+<a name="l00298"></a>00298     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_multiply.html" title="The Puppy::Primitive implements multiplication functor, it is used to build Puppy::trees from...">Multiply</a>);
+<a name="l00299"></a>00299     context_.insert(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_divide.html" title="The Puppy::Primitive implements division functor, it is used to build Puppy::trees from...">Divide</a>);
+<a name="l00300"></a>00300   }
+<a name="l00301"></a>00301 
+<a name="l00302"></a>00302   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> feature_index = 0;
+<a name="l00303"></a>00303        feature_index &lt; feature_count_;
+<a name="l00304"></a>00304        ++feature_index) {
+<a name="l00305"></a>00305     <span class="keywordtype">string</span> feature_name = <span class="stringliteral">&quot;feature[&quot;</span>;
+<a name="l00306"></a>00306     feature_name += lexical_cast&lt;<span class="keywordtype">string</span>&gt;(feature_index);
+<a name="l00307"></a>00307     feature_name += <span class="stringliteral">&quot;]&quot;</span>;
+<a name="l00308"></a>00308     context_.insert(<span class="keyword">new</span> Puppy::TokenT&lt;double&gt;(feature_name));
+<a name="l00309"></a>00309   }
+<a name="l00310"></a>00310 }
+<a name="l00311"></a>00311 
+<a name="l00312"></a>00312 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00313"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a53466308695b1b8ee1ecfe4ccc17d77f">00313</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a53466308695b1b8ee1ecfe4ccc17d77f">GPLearner&lt;TElement&gt;::initPopulation</a>() {
+<a name="l00314"></a>00314   population_.clear();
+<a name="l00315"></a>00315 
+<a name="l00316"></a>00316   population_.resize(population_size_);
+<a name="l00317"></a>00317   Puppy::initializePopulation(population_, context_, init_grow_probability_,
+<a name="l00318"></a>00318                               min_init_depth_, max_init_depth_);
+<a name="l00319"></a>00319 }
+<a name="l00320"></a>00320 
+<a name="l00321"></a>00321 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00322"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a3db132affb2577028cb3068d6c35c936">00322</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a3db132affb2577028cb3068d6c35c936">GPLearner&lt;TElement&gt;::evaluationStepImpl</a>() {
+<a name="l00323"></a>00323   <span class="keywordflow">if</span> (population_handler_.empty()) {
+<a name="l00324"></a>00324     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_selection_strategy.html">DefaultSelectionStrategy</a>);
+<a name="l00325"></a>00325     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_crossover_strategy.html">DefaultCrossoverStrategy</a>);
+<a name="l00326"></a>00326     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_mutation_standard_strategy.html">DefaultMutationStandardStrategy</a>);
+<a name="l00327"></a>00327     population_handler_.push_back(<span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_default_mutation_swap_strategy.html">DefaultMutationSwapStrategy</a>);
+<a name="l00328"></a>00328   }
+<a name="l00329"></a>00329 
+<a name="l00330"></a>00330   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> population_handler_index = 0;
+<a name="l00331"></a>00331        population_handler_index &lt; (int) population_handler_.size();
+<a name="l00332"></a>00332        ++population_handler_index) {
+<a name="l00333"></a>00333     population_handler_[population_handler_index]-&gt;
+<a name="l00334"></a>00334       handlePopulation(population_, context_);
+<a name="l00335"></a>00335   }
+<a name="l00336"></a>00336 }
+<a name="l00337"></a>00337 
+<a name="l00338"></a>00338 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00339"></a>00339 <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627ea8063094eb551ff5c5bb255520f">GPLearner&lt;TElement&gt;::</a>
+<a name="l00340"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627ea8063094eb551ff5c5bb255520f">00340</a> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4627ea8063094eb551ff5c5bb255520f">  learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data, <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">GPScorer::Ptr</a>* scorer) {
+<a name="l00341"></a>00341     <span class="keywordflow">if</span> (data.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>() != feature_count_) {
+<a name="l00342"></a>00342       feature_count_ = data.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>();
+<a name="l00343"></a>00343       reset();
+<a name="l00344"></a>00344     }
+<a name="l00345"></a>00345 
+<a name="l00346"></a>00346     rDebug(<span class="stringliteral">&quot;Evaluating data for the first time&quot;</span>);
+<a name="l00347"></a>00347     this-&gt;evaluatePopulation(data);
+<a name="l00348"></a>00348 
+<a name="l00349"></a>00349     rDebug(<span class="stringliteral">&quot;Evolution begins.\n&quot;</span>);
+<a name="l00350"></a>00350     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> generationIdx = 0;
+<a name="l00351"></a>00351          generationIdx &lt; number_of_generations_;
+<a name="l00352"></a>00352          ++generationIdx) {
+<a name="l00353"></a>00353       rDebug(<span class="stringliteral">&quot;Generation %d&quot;</span>, generationIdx);
+<a name="l00354"></a>00354 
+<a name="l00355"></a>00355       rDebug(<span class="stringliteral">&quot;Calling strategy&quot;</span>);
+<a name="l00356"></a>00356       this-&gt;evaluationStepImpl();
+<a name="l00357"></a>00357 
+<a name="l00358"></a>00358       rDebug(<span class="stringliteral">&quot;Evaluation&quot;</span>);
+<a name="l00359"></a>00359       this-&gt;evaluatePopulation(data);
+<a name="l00360"></a>00360 
+<a name="l00361"></a>00361       <span class="keywordtype">int</span> best_tree_index = 0;
+<a name="l00362"></a>00362       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> tree_index = 1;
+<a name="l00363"></a>00363            tree_index &lt; (int)population_.size(); ++tree_index) {
+<a name="l00364"></a>00364         <span class="keywordflow">if</span> (population_[best_tree_index].mFitness &lt;
+<a name="l00365"></a>00365             population_[tree_index].mFitness) {
+<a name="l00366"></a>00366           best_tree_index = tree_index;
+<a name="l00367"></a>00367         }
+<a name="l00368"></a>00368       }
+<a name="l00369"></a>00369 
+<a name="l00370"></a>00370       rDebug(<span class="stringliteral">&quot;The best one is number %d&quot;</span>, best_tree_index);
+<a name="l00371"></a>00371       using ::operator &lt;&lt;;
+<a name="l00372"></a>00372       stringstream log_out;
+<a name="l00373"></a>00373       best_tree_ = population_[best_tree_index];
+<a name="l00374"></a>00374       log_out &lt;&lt; best_tree_ &lt;&lt; <span class="stringliteral">&quot; | &quot;</span>;
+<a name="l00375"></a>00375       log_out &lt;&lt; <span class="stringliteral">&quot;with fitness &quot;</span> &lt;&lt; best_tree_.mFitness;
+<a name="l00376"></a>00376       rDebug(<span class="stringliteral">&quot;%s&quot;</span>, log_out.str().c_str());
+<a name="l00377"></a>00377     }
+<a name="l00378"></a>00378     <span class="comment">// \TODO ? rewrite with setters and getters</span>
+<a name="l00379"></a>00379     *scorer = <span class="keyword">new</span> <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a>(best_tree_, context_, feature_count_);
+<a name="l00380"></a>00380 }
+<a name="l00381"></a>00381 
+<a name="l00382"></a>00382 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00383"></a><a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">00383</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1gp_1_1_g_p_learner.html#a4711875bc272b7054a364e59fc5b26df">GPLearner&lt;TElement&gt;::evaluatePopulation</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data) {
+<a name="l00384"></a>00384   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> tree_index = 0;
+<a name="l00385"></a>00385        tree_index &lt; (int)population_.size(); ++tree_index) {
+<a name="l00386"></a>00386     <span class="keywordflow">if</span> (population_[tree_index].mValid) {
+<a name="l00387"></a>00387       <span class="keywordflow">continue</span>;
+<a name="l00388"></a>00388     }
+<a name="l00389"></a>00389     <a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html" title="The class prepresent Scorer for GPLearner. It contains the last population of genetic programming&#39;s e...">GPScorer</a> gp_scorer(population_[tree_index], context_, feature_count_);
+<a name="l00390"></a>00390 
+<a name="l00391"></a>00391     gp_scorer.<a class="code" href="classltr_1_1gp_1_1_g_p_scorer.html#aaa403753df80c67d96d2b7a00ad60785">markDataSet</a>(data);
+<a name="l00392"></a>00392 
+<a name="l00393"></a>00393     <span class="comment">// This line yields a topic for research. Why so?</span>
+<a name="l00394"></a>00394     <span class="comment">//</span>
+<a name="l00395"></a>00395     <span class="keywordtype">double</span> measureVal = this-&gt;measure_-&gt;average(data);
+<a name="l00396"></a>00396 
+<a name="l00397"></a>00397     population_[tree_index].mFitness = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(measureVal);
+<a name="l00398"></a>00398     population_[tree_index].mValid = <span class="keyword">true</span>;
+<a name="l00399"></a>00399   }
+<a name="l00400"></a>00400 }
 <a name="l00401"></a>00401 };
-<a name="l00402"></a>00402 <span class="preprocessor">#endif  // LTR_LEARNERS_GP_LEARNER_GP_LEARNER_H_</span>
+<a name="l00402"></a>00402 };
+<a name="l00403"></a>00403 <span class="preprocessor">#endif  // LTR_LEARNERS_GP_LEARNER_GP_LEARNER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

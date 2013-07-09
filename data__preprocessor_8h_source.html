@@ -126,36 +126,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a><a class="code" href="classltr_1_1_data_preprocessor.html">00032</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors.">DataPreprocessor</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_parameterized.html">Parameterized</a>,
 <a name="l00033"></a>00033                          <span class="keyword">public</span> <a class="code" href="classltr_1_1_printable.html">Printable</a>,
 <a name="l00034"></a>00034                          <span class="keyword">public</span> <a class="code" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias.">Aliaser</a> {
-<a name="l00035"></a>00035  <span class="keyword">public</span>:
-<a name="l00036"></a><a class="code" href="classltr_1_1_data_preprocessor.html#a30075ec759d9a1fb0ac1d3ca4cf51231">00036</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DataPreprocessor&gt;</a> <a class="code" href="classltr_1_1_data_preprocessor.html#a30075ec759d9a1fb0ac1d3ca4cf51231">BasePtr</a>;
-<a name="l00037"></a><a class="code" href="classltr_1_1_data_preprocessor.html#a1070c68120238cc6c9ad184ebe53d931">00037</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DataPreprocessor&gt;</a> <a class="code" href="classltr_1_1_data_preprocessor.html#a1070c68120238cc6c9ad184ebe53d931">Ptr</a>;
-<a name="l00038"></a><a class="code" href="classltr_1_1_data_preprocessor.html#a605b610cca3149ce32223819963e6253">00038</a>   <span class="keyword">virtual</span> <a class="code" href="classltr_1_1_data_preprocessor.html#a605b610cca3149ce32223819963e6253">~DataPreprocessor</a>() {}
-<a name="l00045"></a>00045   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_preprocessor.html#a993ca1979bb2db285b2b561d79078a02">apply</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; input,
-<a name="l00046"></a>00046                    <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* output,
-<a name="l00047"></a>00047              <span class="keywordtype">bool</span> check_parameters = <span class="keyword">true</span>) <span class="keyword">const</span>;
-<a name="l00048"></a>00048  <span class="keyword">private</span>:
-<a name="l00049"></a>00049   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_preprocessor.html#aa976e79d7b7f69da6ea0b636e761a351">applyImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; input,
-<a name="l00050"></a>00050                                <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* output) <span class="keyword">const</span> = 0;
-<a name="l00051"></a>00051 };
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="comment">// template realization</span>
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00056"></a><a class="code" href="classltr_1_1_data_preprocessor.html#a993ca1979bb2db285b2b561d79078a02">00056</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_preprocessor.html#a993ca1979bb2db285b2b561d79078a02">DataPreprocessor&lt;TElement&gt;::apply</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; input,
-<a name="l00057"></a>00057                                              <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* output,
-<a name="l00058"></a>00058                                        <span class="keywordtype">bool</span> check_parameters)<span class="keyword"> const </span>{
-<a name="l00059"></a>00059   <span class="keywordflow">if</span> (check_parameters) {
-<a name="l00060"></a>00060     checkParameters();
-<a name="l00061"></a>00061   }
-<a name="l00062"></a>00062   applyImpl(input, output);
-<a name="l00063"></a>00063 }
-<a name="l00064"></a>00064 };
-<a name="l00065"></a>00065 <span class="preprocessor">#endif  // LTR_DATA_PREPROCESSORS_DATA_PREPROCESSOR_H_</span>
+<a name="l00035"></a>00035   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_data_preprocessor.html" title="A base class for data preprocessors.">DataPreprocessor</a>)
+<a name="l00036"></a>00036  <span class="keyword">public</span>:
+<a name="l00037"></a><a class="code" href="classltr_1_1_data_preprocessor.html#a30075ec759d9a1fb0ac1d3ca4cf51231">00037</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;DataPreprocessor&gt;</a> <a class="code" href="classltr_1_1_data_preprocessor.html#a30075ec759d9a1fb0ac1d3ca4cf51231">BasePtr</a>;
+<a name="l00044"></a>00044   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_preprocessor.html#a993ca1979bb2db285b2b561d79078a02">apply</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; input,
+<a name="l00045"></a>00045                    <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* output,
+<a name="l00046"></a>00046              <span class="keywordtype">bool</span> check_parameters = <span class="keyword">true</span>) <span class="keyword">const</span>;
+<a name="l00047"></a>00047  <span class="keyword">private</span>:
+<a name="l00048"></a>00048   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_preprocessor.html#aa976e79d7b7f69da6ea0b636e761a351">applyImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; input,
+<a name="l00049"></a>00049                                <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* output) <span class="keyword">const</span> = 0;
+<a name="l00050"></a>00050 };
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="comment">// template realization</span>
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00055"></a><a class="code" href="classltr_1_1_data_preprocessor.html#a993ca1979bb2db285b2b561d79078a02">00055</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_data_preprocessor.html#a993ca1979bb2db285b2b561d79078a02">DataPreprocessor&lt;TElement&gt;::apply</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; input,
+<a name="l00056"></a>00056                                              <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>* output,
+<a name="l00057"></a>00057                                        <span class="keywordtype">bool</span> check_parameters)<span class="keyword"> const </span>{
+<a name="l00058"></a>00058   <span class="keywordflow">if</span> (check_parameters) {
+<a name="l00059"></a>00059     checkParameters();
+<a name="l00060"></a>00060   }
+<a name="l00061"></a>00061   applyImpl(input, output);
+<a name="l00062"></a>00062 }
+<a name="l00063"></a>00063 };
+<a name="l00064"></a>00064 <span class="preprocessor">#endif  // LTR_DATA_PREPROCESSORS_DATA_PREPROCESSOR_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:38 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

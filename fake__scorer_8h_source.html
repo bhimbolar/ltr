@@ -118,43 +118,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 
 <a name="l00015"></a>00015 <span class="keyword">namespace </span>ltr {
 <a name="l00019"></a><a class="code" href="classltr_1_1_fake_scorer.html">00019</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_fake_scorer.html">FakeScorer</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a> {
-<a name="l00020"></a>00020   <span class="keyword">public</span>:
-<a name="l00021"></a><a class="code" href="classltr_1_1_fake_scorer.html#a11a35ae014b5d3986aab80654147e5a3">00021</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt; FakeScorer &gt;</a> <a class="code" href="classltr_1_1_fake_scorer.html#a11a35ae014b5d3986aab80654147e5a3">Ptr</a>;
-<a name="l00022"></a>00022 
-<a name="l00023"></a><a class="code" href="classltr_1_1_fake_scorer.html#a66857412071e4629c8ad5f5d7d6192e0">00023</a>   <a class="code" href="classltr_1_1_fake_scorer.html#a66857412071e4629c8ad5f5d7d6192e0">FakeScorer</a>(<span class="keywordtype">double</span> scoreValue = 0.0,
-<a name="l00024"></a>00024       <span class="keyword">const</span> FeatureConverterArray&amp; feature_converters = FeatureConverterArray())
-<a name="l00025"></a>00025   : <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a>(feature_converters), <a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>(scoreValue) {}
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027   <span class="keyword">private</span>:
-<a name="l00028"></a><a class="code" href="classltr_1_1_fake_scorer.html#a6c1e8fc43080361f5b38cbafb2355f6e">00028</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_fake_scorer.html#a6c1e8fc43080361f5b38cbafb2355f6e">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj)<span class="keyword"> const </span>{
-<a name="l00029"></a>00029     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>;
-<a name="l00030"></a>00030   }
-<a name="l00031"></a>00031 
-<a name="l00032"></a><a class="code" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">00032</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name)<span class="keyword"> const </span>{
-<a name="l00033"></a>00033     stringstream code;
-<a name="l00034"></a>00034     code
-<a name="l00035"></a>00035       &lt;&lt; <span class="stringliteral">&quot;inline double &quot;</span> &lt;&lt; function_name
-<a name="l00036"></a>00036         &lt;&lt; <span class="stringliteral">&quot;(const std::vector&lt;double&gt;&amp; features) { return &quot;</span>
-<a name="l00037"></a>00037         &lt;&lt; ltr::utility::lexical_cast&lt;<span class="keywordtype">string</span>&gt;(<a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>) &lt;&lt; <span class="stringliteral">&quot;; }\n&quot;</span>;
-<a name="l00038"></a>00038     <span class="keywordflow">return</span> code.str();
-<a name="l00039"></a>00039   }
-<a name="l00040"></a><a class="code" href="classltr_1_1_fake_scorer.html#accae086e274be012f83714e37043dcc6">00040</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_fake_scorer.html#accae086e274be012f83714e37043dcc6">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;FakeScorer&quot;</span>;}
-<a name="l00041"></a>00041 
-<a name="l00042"></a><a class="code" href="classltr_1_1_fake_scorer.html#a7420db4d4d1aedf9d11c1ae215ee7164">00042</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_fake_scorer.html#a7420db4d4d1aedf9d11c1ae215ee7164">toStringImpl</a>()<span class="keyword"> const </span>{
-<a name="l00043"></a>00043     <span class="keywordflow">return</span> <span class="stringliteral">&quot;All scores are constant (&quot;</span> +
-<a name="l00044"></a>00044     ltr::utility::lexical_cast&lt;std::string&gt;(<a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>) + <span class="stringliteral">&quot;)&quot;</span>;
-<a name="l00045"></a>00045   }
-<a name="l00046"></a>00046 
-<a name="l00047"></a><a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">00047</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>;
-<a name="l00048"></a>00048 };
-<a name="l00049"></a>00049 }
-<a name="l00050"></a>00050 
-<a name="l00051"></a>00051 <span class="preprocessor">#endif  // LTR_SCORERS_FAKE_SCORER_H_</span>
+<a name="l00020"></a>00020   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_fake_scorer.html">FakeScorer</a>)
+<a name="l00021"></a>00021  <span class="keyword">public</span>:
+<a name="l00022"></a><a class="code" href="classltr_1_1_fake_scorer.html#a66857412071e4629c8ad5f5d7d6192e0">00022</a>   <a class="code" href="classltr_1_1_fake_scorer.html#a66857412071e4629c8ad5f5d7d6192e0">FakeScorer</a>(<span class="keywordtype">double</span> scoreValue = 0.0,
+<a name="l00023"></a>00023       <span class="keyword">const</span> FeatureConverterArray&amp; feature_converters = FeatureConverterArray())
+<a name="l00024"></a>00024   : <a class="code" href="classltr_1_1_scorer.html" title="Class that can for every object evaluate a value - its rank, or score.">Scorer</a>(feature_converters), <a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>(scoreValue) {}
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026   <span class="keyword">private</span>:
+<a name="l00027"></a><a class="code" href="classltr_1_1_fake_scorer.html#a6c1e8fc43080361f5b38cbafb2355f6e">00027</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_fake_scorer.html#a6c1e8fc43080361f5b38cbafb2355f6e">scoreImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; obj)<span class="keyword"> const </span>{
+<a name="l00028"></a>00028     <span class="keywordflow">return</span> <a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>;
+<a name="l00029"></a>00029   }
+<a name="l00030"></a>00030 
+<a name="l00031"></a><a class="code" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">00031</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_fake_scorer.html#afe60b2d1393c3a3d81a7fd238276e5d1">generateCppCodeImpl</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name)<span class="keyword"> const </span>{
+<a name="l00032"></a>00032     stringstream code;
+<a name="l00033"></a>00033     code
+<a name="l00034"></a>00034       &lt;&lt; <span class="stringliteral">&quot;inline double &quot;</span> &lt;&lt; function_name
+<a name="l00035"></a>00035         &lt;&lt; <span class="stringliteral">&quot;(const std::vector&lt;double&gt;&amp; features) { return &quot;</span>
+<a name="l00036"></a>00036         &lt;&lt; ltr::utility::lexical_cast&lt;<span class="keywordtype">string</span>&gt;(<a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>) &lt;&lt; <span class="stringliteral">&quot;; }\n&quot;</span>;
+<a name="l00037"></a>00037     <span class="keywordflow">return</span> code.str();
+<a name="l00038"></a>00038   }
+<a name="l00039"></a><a class="code" href="classltr_1_1_fake_scorer.html#accae086e274be012f83714e37043dcc6">00039</a>   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_fake_scorer.html#accae086e274be012f83714e37043dcc6">getDefaultAlias</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <span class="stringliteral">&quot;FakeScorer&quot;</span>;}
+<a name="l00040"></a>00040 
+<a name="l00041"></a><a class="code" href="classltr_1_1_fake_scorer.html#a7420db4d4d1aedf9d11c1ae215ee7164">00041</a>   <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_fake_scorer.html#a7420db4d4d1aedf9d11c1ae215ee7164">toStringImpl</a>()<span class="keyword"> const </span>{
+<a name="l00042"></a>00042     <span class="keywordflow">return</span> <span class="stringliteral">&quot;All scores are constant (&quot;</span> +
+<a name="l00043"></a>00043     ltr::utility::lexical_cast&lt;std::string&gt;(<a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>) + <span class="stringliteral">&quot;)&quot;</span>;
+<a name="l00044"></a>00044   }
+<a name="l00045"></a>00045 
+<a name="l00046"></a><a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">00046</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8">score_value_</a>;
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 }
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 <span class="preprocessor">#endif  // LTR_SCORERS_FAKE_SCORER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

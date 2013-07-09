@@ -128,13 +128,14 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a878e5db0d93ce5fcc9736c0dabab6465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a878e5db0d93ce5fcc9736c0dabab6465">addToReport</a> (const string &amp;text)</td></tr>
-<tr class="memitem:a49a54ece3c6e7ded521259df0380929c"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
-<tr class="memitem:a49a54ece3c6e7ded521259df0380929c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a49a54ece3c6e7ded521259df0380929c">launchTrainImpl</a> (typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr learner, const <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> &amp;train_info)</td></tr>
-<tr class="memitem:a470b938f48a83dac3b51c17fb152f980"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
-<tr class="memitem:a470b938f48a83dac3b51c17fb152f980"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a470b938f48a83dac3b51c17fb152f980">launchCrossvalidationImpl</a> (const <a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> &amp;crossvalidation_info)</td></tr>
+<tr class="memitem:ab610587c63f42174dd02971caf593b40"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
+<tr class="memitem:ab610587c63f42174dd02971caf593b40"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#ab610587c63f42174dd02971caf593b40">launchTrainImpl</a> (typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr learner, const TrainLaunchInfo::Ptr train_info)</td></tr>
+<tr class="memitem:a6960269c00948b51e7ba4336e0273d17"><td class="memTemplParams" colspan="2">template&lt;class TElement &gt; </td></tr>
+<tr class="memitem:a6960269c00948b51e7ba4336e0273d17"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a6960269c00948b51e7ba4336e0273d17">launchCrossvalidationImpl</a> (const CrossvalidationLaunchInfo::Ptr crossvalidation_info)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a30d1b6863d7b1a66a13a5ad00d35fdb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_parser.html">ConfigParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">configurator_</a></td></tr>
+<tr class="memitem:afdbc62f16c07be7a814722bdbbffe73e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config_parser.html">ConfigParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#afdbc62f16c07be7a814722bdbbffe73e">config_parser_</a></td></tr>
+<tr class="memitem:a2ed27962ef933384433759a0bf356b41"><td class="memItemLeft" align="right" valign="top">Configuration::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a2ed27962ef933384433759a0bf356b41">configuration_</a></td></tr>
 <tr class="memitem:ad6404364284326f2d211bc0f80623cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dependency_resolving_factory.html">DependencyResolvingFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#ad6404364284326f2d211bc0f80623cdf">factory_</a></td></tr>
 <tr class="memitem:a41767edc9dcad68197a066cfa2f81661"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ltr_client.html#a41767edc9dcad68197a066cfa2f81661">report_body_</a></td></tr>
 </table>
@@ -258,16 +259,16 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a470b938f48a83dac3b51c17fb152f980"></a>
+<a class="anchor" id="a6960269c00948b51e7ba4336e0273d17"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_ltr_client.html#a470b938f48a83dac3b51c17fb152f980">LtrClient::launchCrossvalidationImpl</a> </td>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#a6960269c00948b51e7ba4336e0273d17">LtrClient::launchCrossvalidationImpl</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_crossvalidation_launch_info.html">CrossvalidationLaunchInfo</a> &amp;&#160;</td>
+          <td class="paramtype">const CrossvalidationLaunchInfo::Ptr&#160;</td>
           <td class="paramname"><em>crossvalidation_info</em></td><td>)</td>
           <td><code> [private]</code></td>
         </tr>
@@ -294,14 +295,14 @@ template&lt;class TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a49a54ece3c6e7ded521259df0380929c"></a>
+<a class="anchor" id="ab610587c63f42174dd02971caf593b40"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_ltr_client.html#a49a54ece3c6e7ded521259df0380929c">LtrClient::launchTrainImpl</a> </td>
+          <td class="memname">void <a class="el" href="class_ltr_client.html#ab610587c63f42174dd02971caf593b40">LtrClient::launchTrainImpl</a> </td>
           <td>(</td>
           <td class="paramtype">typename <a class="el" href="classltr_1_1_learner.html">Learner</a>&lt; TElement &gt;::Ptr&#160;</td>
           <td class="paramname"><em>learner</em>, </td>
@@ -309,7 +310,7 @@ template&lt;class TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_train_launch_info.html">TrainLaunchInfo</a> &amp;&#160;</td>
+          <td class="paramtype">const TrainLaunchInfo::Ptr&#160;</td>
           <td class="paramname"><em>train_info</em>&#160;</td>
         </tr>
         <tr>
@@ -348,12 +349,25 @@ template&lt;class TElement &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a30d1b6863d7b1a66a13a5ad00d35fdb4"></a>
+<a class="anchor" id="afdbc62f16c07be7a814722bdbbffe73e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_config_parser.html">ConfigParser</a> <a class="el" href="class_ltr_client.html#a30d1b6863d7b1a66a13a5ad00d35fdb4">LtrClient::configurator_</a><code> [private]</code></td>
+          <td class="memname"><a class="el" href="class_config_parser.html">ConfigParser</a> <a class="el" href="class_ltr_client.html#afdbc62f16c07be7a814722bdbbffe73e">LtrClient::config_parser_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ed27962ef933384433759a0bf356b41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Configuration::Ptr <a class="el" href="class_ltr_client.html#a2ed27962ef933384433759a0bf356b41">LtrClient::configuration_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -395,7 +409,7 @@ template&lt;class TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

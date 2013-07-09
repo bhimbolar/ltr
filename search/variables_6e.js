@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['name',['name',['../structltr_1_1_parameters_container_1_1_name_value.html#a3a88c91d3dcacac92849824d627b01f9',1,'ltr::ParametersContainer::NameValue::name()'],['../struct_data_info.html#a22a091fa0d51d2e09afb25c7d7de436e',1,'DataInfo::name()'],['../struct_train_launch_info.html#a3147e1837745a2fe8f48b1a64e105f18',1,'TrainLaunchInfo::name()']]],
+  ['name',['name',['../structltr_1_1_parameters_container_1_1_name_value.html#a3a88c91d3dcacac92849824d627b01f9',1,'ltr::ParametersContainer::NameValue::name()'],['../struct_data_info.html#a22a091fa0d51d2e09afb25c7d7de436e',1,'DataInfo::name()'],['../struct_object_info.html#a20fc8975c73106f3be3fcf96766ffa93',1,'ObjectInfo::name()'],['../struct_train_launch_info.html#a3147e1837745a2fe8f48b1a64e105f18',1,'TrainLaunchInfo::name()']]],
   ['name_5f',['name_',['../structltr_1_1_one_feature_info.html#ac4adeaa16870777c4b848375fdb2d606',1,'ltr::OneFeatureInfo']]],
+  ['name_5fattr',['NAME_ATTR',['../config__constants_8h.html#a12fca0daaace6f421c3287a441b3bfdc',1,'config_constants.h']]],
   ['name_5fcreators_5f',['name_creators_',['../class_factory.html#a0f677e278f374d35a789c7f2a8642a13',1,'Factory']]],
   ['name_5fstorage',['name_storage',['../registration_8h.html#a40f74be00c63c4b72d18afcf409f2a2c',1,'registration.h']]],
   ['name_5fvalue_5fhash_5f',['name_value_hash_',['../classltr_1_1_parameters_container.html#abe5e46b18d41154112ceb25e67030c17',1,'ltr::ParametersContainer']]],
   ['neighbor_5fid',['neighbor_id',['../structltr_1_1_distance_to_neighbor.html#a5d3581ace1f31d882bb075849fce12e5',1,'ltr::DistanceToNeighbor']]],
   ['neighbor_5fweighter_5f',['neighbor_weighter_',['../classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe',1,'ltr::NNLearner::neighbor_weighter_()'],['../classltr_1_1_n_n_scorer.html#a71b6a1957dbdca6d099a58a1118724a4',1,'ltr::NNScorer::neighbor_weighter_()']]],
+  ['neighbour_5fweighter',['NEIGHBOUR_WEIGHTER',['../config__constants_8h.html#a31ee90169f0600e6afbd0e704a09cd53',1,'config_constants.h']]],
   ['neutral_5fobject_5f',['neutral_object_',['../classltr_1_1_nan_to_neutral_converter.html#a9d9ce0f41c3945213c030d2478d9d118',1,'ltr::NanToNeutralConverter']]],
+  ['num_5fiter',['num_iter',['../classoptimization_1_1_solution.html#aff7b3a1bdf1054a7bb9c72a0c3e5a008',1,'optimization::Solution']]],
   ['number_5fof_5fgenerations_5f',['number_of_generations_',['../classltr_1_1gp_1_1_g_p_learner.html#a1dd9f93051cce94bcd9b7ca9216e2f0c',1,'ltr::gp::GPLearner']]],
   ['number_5fof_5fiterations_5f',['number_of_iterations_',['../classltr_1_1composition_1_1_composition_learner.html#ac3a63f3b5b59cfa3b87db7a908a66b70',1,'ltr::composition::CompositionLearner']]],
   ['number_5fof_5fneighbors_5fto_5fprocess_5f',['number_of_neighbors_to_process_',['../classltr_1_1_n_n_learner.html#a507aa3536c5e9455bf8f79070ec450be',1,'ltr::NNLearner::number_of_neighbors_to_process_()'],['../classltr_1_1_n_n_scorer.html#a0e3baf4051ea38014c0422a1f89fb937',1,'ltr::NNScorer::number_of_neighbors_to_process_()']]],

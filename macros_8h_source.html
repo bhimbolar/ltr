@@ -110,99 +110,104 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00006"></a>00006 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00007"></a>00007 <span class="preprocessor">#include &lt;stdexcept&gt;</span>
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="keyword">using</span> std::vector;
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="shared__ptr_8h.html">ltr/utility/boost/shared_ptr.h</a>&quot;</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="keyword">namespace </span>ltr {
-<a name="l00015"></a><a class="code" href="macros_8h.html#a3ca0bbeba42e6c0a557d976571d5d1e0">00015</a> <span class="preprocessor">#define SET(type, name) \</span>
-<a name="l00016"></a>00016 <span class="preprocessor">  void set_##name(const type&amp; name) { \</span>
-<a name="l00017"></a>00017 <span class="preprocessor">    name##_ = name; \</span>
-<a name="l00018"></a>00018 <span class="preprocessor">  }</span>
-<a name="l00019"></a>00019 <span class="preprocessor"></span>
-<a name="l00023"></a><a class="code" href="macros_8h.html#a349075e98439c0ddd76af74f4fc6dc1c">00023</a> <span class="preprocessor">#define GET(type, name) \</span>
-<a name="l00024"></a>00024 <span class="preprocessor">  type name() const { \</span>
-<a name="l00025"></a>00025 <span class="preprocessor">    return name##_; \</span>
-<a name="l00026"></a>00026 <span class="preprocessor">  }</span>
-<a name="l00027"></a>00027 <span class="preprocessor"></span>
-<a name="l00031"></a><a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">00031</a> <span class="preprocessor">#define GET_SET(type, name) \</span>
-<a name="l00032"></a>00032 <span class="preprocessor">  GET(type, name) \</span>
-<a name="l00033"></a>00033 <span class="preprocessor">  SET(type, name)</span>
-<a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00038"></a><a class="code" href="macros_8h.html#a4637a66a2b3f63f961fd9e4ea6666bcd">00038</a> <span class="preprocessor">#define GET_VECTOR(type, name) \</span>
-<a name="l00039"></a>00039 <span class="preprocessor">  vector&lt;type&gt; name() const { \</span>
-<a name="l00040"></a>00040 <span class="preprocessor">    return name##_; \</span>
-<a name="l00041"></a>00041 <span class="preprocessor">  } \</span>
-<a name="l00042"></a>00042 <span class="preprocessor">  std::size_t name##_count() const { \</span>
-<a name="l00043"></a>00043 <span class="preprocessor">    return name##_.size(); \</span>
-<a name="l00044"></a>00044 <span class="preprocessor">  } \</span>
-<a name="l00045"></a>00045 <span class="preprocessor">  const type&amp; name(int index) const { \</span>
-<a name="l00046"></a>00046 <span class="preprocessor">    return name##_.at(index); \</span>
-<a name="l00047"></a>00047 <span class="preprocessor">  }</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span>
-<a name="l00052"></a><a class="code" href="macros_8h.html#a72e83be90e65bc87d436626f47c54ba9">00052</a> <span class="preprocessor">#define GET_SET_VECTOR(type, name) \</span>
-<a name="l00053"></a>00053 <span class="preprocessor">  GET_VECTOR(type, name); \</span>
-<a name="l00054"></a>00054 <span class="preprocessor">  void set_##name(const vector&lt;type&gt;&amp; name) { \</span>
-<a name="l00055"></a>00055 <span class="preprocessor">    name##_ = name; \</span>
-<a name="l00056"></a>00056 <span class="preprocessor">  } \</span>
-<a name="l00057"></a>00057 <span class="preprocessor">  void add_##name(const type&amp; value) { \</span>
-<a name="l00058"></a>00058 <span class="preprocessor">    name##_.push_back(value); \</span>
-<a name="l00059"></a>00059 <span class="preprocessor">  } \</span>
-<a name="l00060"></a>00060 <span class="preprocessor">  type&amp; name(int index) { \</span>
-<a name="l00061"></a>00061 <span class="preprocessor">    return name##_.at(index); \</span>
-<a name="l00062"></a>00062 <span class="preprocessor">  } \</span>
-<a name="l00063"></a>00063 <span class="preprocessor">  void set_##name(int index, const type &amp;value) { \</span>
-<a name="l00064"></a>00064 <span class="preprocessor">    name##_.at(index) = value; \</span>
-<a name="l00065"></a>00065 <span class="preprocessor">  }</span>
-<a name="l00066"></a>00066 <span class="preprocessor"></span>
-<a name="l00070"></a><a class="code" href="macros_8h.html#a57b5ea894b56a92a65028b9e774b1eba">00070</a> <span class="preprocessor">#define GET_SET_VECTOR_OF_PTR(type, name) \</span>
-<a name="l00071"></a>00071 <span class="preprocessor">  void set_##name(const vector&lt;ltr::utility::shared_ptr&lt;type&gt; &gt;&amp; name) { \</span>
-<a name="l00072"></a>00072 <span class="preprocessor">    name##_ = name; \</span>
-<a name="l00073"></a>00073 <span class="preprocessor">  } \</span>
-<a name="l00074"></a>00074 <span class="preprocessor">  vector&lt;ltr::utility::shared_ptr&lt;type&gt; &gt; name() const { \</span>
-<a name="l00075"></a>00075 <span class="preprocessor">    return name##_; \</span>
-<a name="l00076"></a>00076 <span class="preprocessor">  } \</span>
-<a name="l00077"></a>00077 <span class="preprocessor">  void add_##name(const ltr::utility::shared_ptr&lt;type&gt; value) { \</span>
-<a name="l00078"></a>00078 <span class="preprocessor">    name##_.push_back(value); \</span>
-<a name="l00079"></a>00079 <span class="preprocessor">  } \</span>
-<a name="l00080"></a>00080 <span class="preprocessor">  int name##_count() const { \</span>
-<a name="l00081"></a>00081 <span class="preprocessor">    return name##_.size(); \</span>
-<a name="l00082"></a>00082 <span class="preprocessor">  } \</span>
-<a name="l00083"></a>00083 <span class="preprocessor">  const type&amp; name(int index) const { \</span>
-<a name="l00084"></a>00084 <span class="preprocessor">    return *(name##_.at(index)); \</span>
-<a name="l00085"></a>00085 <span class="preprocessor">  } \</span>
-<a name="l00086"></a>00086 <span class="preprocessor">  type&amp; name(int index) { \</span>
-<a name="l00087"></a>00087 <span class="preprocessor">    return *(name##_.at(index)); \</span>
-<a name="l00088"></a>00088 <span class="preprocessor">  } \</span>
-<a name="l00089"></a>00089 <span class="preprocessor">  ltr::utility::shared_ptr&lt;type&gt; name##_ptr(int index) const { \</span>
-<a name="l00090"></a>00090 <span class="preprocessor">    return name##_.at(index); \</span>
-<a name="l00091"></a>00091 <span class="preprocessor">  } \</span>
-<a name="l00092"></a>00092 <span class="preprocessor">  ltr::utility::shared_ptr&lt;type&gt; name##_ptr(int index) { \</span>
-<a name="l00093"></a>00093 <span class="preprocessor">    return name##_.at(index); \</span>
-<a name="l00094"></a>00094 <span class="preprocessor">  }</span>
-<a name="l00095"></a>00095 <span class="preprocessor"></span>
-<a name="l00099"></a><a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">00099</a> <span class="preprocessor">#define CHECK(expression) \</span>
-<a name="l00100"></a>00100 <span class="preprocessor">  if (!(expression)) { \</span>
-<a name="l00101"></a>00101 <span class="preprocessor">    throw std::logic_error(&quot;Expected: &quot; #expression); \</span>
-<a name="l00102"></a>00102 <span class="preprocessor">  }</span>
-<a name="l00103"></a>00103 <span class="preprocessor"></span>
-<a name="l00107"></a><a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">00107</a> <span class="preprocessor">#define CHECK_MSG(expression, message) \</span>
-<a name="l00108"></a>00108 <span class="preprocessor">  if (!(expression)) { \</span>
-<a name="l00109"></a>00109 <span class="preprocessor">    throw std::logic_error(message); \</span>
-<a name="l00110"></a>00110 <span class="preprocessor">  }</span>
-<a name="l00111"></a>00111 <span class="preprocessor"></span>
-<a name="l00120"></a><a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">00120</a> <span class="preprocessor">#define ALLOW_SHARED_PTR_ONLY_CREATION(class_name) \</span>
-<a name="l00121"></a>00121 <span class="preprocessor">public: \</span>
-<a name="l00122"></a>00122 <span class="preprocessor">  typedef ltr::utility::shared_ptr&lt; class_name &gt; Ptr; \</span>
-<a name="l00123"></a>00123 <span class="preprocessor">protected: \</span>
-<a name="l00124"></a>00124 <span class="preprocessor">  virtual ~class_name() {} \</span>
-<a name="l00125"></a>00125 <span class="preprocessor">  friend class ltr::utility::shared_ptr&lt; class_name &gt;;</span>
-<a name="l00126"></a>00126 <span class="preprocessor"></span>}
-<a name="l00127"></a>00127 
-<a name="l00128"></a>00128 <span class="preprocessor">#endif  // LTR_UTILITY_MACROS_H_</span>
+<a name="l00011"></a>00011 <span class="keyword">using</span> std::vector;
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="keyword">namespace </span>ltr {
+<a name="l00017"></a><a class="code" href="macros_8h.html#a3ca0bbeba42e6c0a557d976571d5d1e0">00017</a> <span class="preprocessor">#define SET(type, name) \</span>
+<a name="l00018"></a>00018 <span class="preprocessor">  void set_##name(const type&amp; name) { \</span>
+<a name="l00019"></a>00019 <span class="preprocessor">    name##_ = name; \</span>
+<a name="l00020"></a>00020 <span class="preprocessor">  }</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00025"></a><a class="code" href="macros_8h.html#a349075e98439c0ddd76af74f4fc6dc1c">00025</a> <span class="preprocessor">#define GET(type, name) \</span>
+<a name="l00026"></a>00026 <span class="preprocessor">  type name() const { \</span>
+<a name="l00027"></a>00027 <span class="preprocessor">    return name##_; \</span>
+<a name="l00028"></a>00028 <span class="preprocessor">  }</span>
+<a name="l00029"></a>00029 <span class="preprocessor"></span>
+<a name="l00033"></a><a class="code" href="macros_8h.html#a3280142b05be1e8b1e8e816fcbfebb3f">00033</a> <span class="preprocessor">#define GET_SET(type, name) \</span>
+<a name="l00034"></a>00034 <span class="preprocessor">  GET(type, name) \</span>
+<a name="l00035"></a>00035 <span class="preprocessor">  SET(type, name)</span>
+<a name="l00036"></a>00036 <span class="preprocessor"></span>
+<a name="l00040"></a><a class="code" href="macros_8h.html#a4637a66a2b3f63f961fd9e4ea6666bcd">00040</a> <span class="preprocessor">#define GET_VECTOR(type, name) \</span>
+<a name="l00041"></a>00041 <span class="preprocessor">  vector&lt;type&gt; name() const { \</span>
+<a name="l00042"></a>00042 <span class="preprocessor">    return name##_; \</span>
+<a name="l00043"></a>00043 <span class="preprocessor">  } \</span>
+<a name="l00044"></a>00044 <span class="preprocessor">  std::size_t name##_count() const { \</span>
+<a name="l00045"></a>00045 <span class="preprocessor">    return name##_.size(); \</span>
+<a name="l00046"></a>00046 <span class="preprocessor">  } \</span>
+<a name="l00047"></a>00047 <span class="preprocessor">  const type&amp; name(int index) const { \</span>
+<a name="l00048"></a>00048 <span class="preprocessor">    return name##_.at(index); \</span>
+<a name="l00049"></a>00049 <span class="preprocessor">  }</span>
+<a name="l00050"></a>00050 <span class="preprocessor"></span>
+<a name="l00054"></a><a class="code" href="macros_8h.html#a72e83be90e65bc87d436626f47c54ba9">00054</a> <span class="preprocessor">#define GET_SET_VECTOR(type, name) \</span>
+<a name="l00055"></a>00055 <span class="preprocessor">  GET_VECTOR(type, name); \</span>
+<a name="l00056"></a>00056 <span class="preprocessor">  void set_##name(const vector&lt;type&gt;&amp; name) { \</span>
+<a name="l00057"></a>00057 <span class="preprocessor">    name##_ = name; \</span>
+<a name="l00058"></a>00058 <span class="preprocessor">  } \</span>
+<a name="l00059"></a>00059 <span class="preprocessor">  void add_##name(const type&amp; value) { \</span>
+<a name="l00060"></a>00060 <span class="preprocessor">    name##_.push_back(value); \</span>
+<a name="l00061"></a>00061 <span class="preprocessor">  } \</span>
+<a name="l00062"></a>00062 <span class="preprocessor">  type&amp; name(int index) { \</span>
+<a name="l00063"></a>00063 <span class="preprocessor">    return name##_.at(index); \</span>
+<a name="l00064"></a>00064 <span class="preprocessor">  } \</span>
+<a name="l00065"></a>00065 <span class="preprocessor">  void set_##name(int index, const type &amp;value) { \</span>
+<a name="l00066"></a>00066 <span class="preprocessor">    name##_.at(index) = value; \</span>
+<a name="l00067"></a>00067 <span class="preprocessor">  }</span>
+<a name="l00068"></a>00068 <span class="preprocessor"></span>
+<a name="l00072"></a><a class="code" href="macros_8h.html#a57b5ea894b56a92a65028b9e774b1eba">00072</a> <span class="preprocessor">#define GET_SET_VECTOR_OF_PTR(type, name) \</span>
+<a name="l00073"></a>00073 <span class="preprocessor">  void set_##name(const vector&lt;ltr::utility::shared_ptr&lt;type&gt; &gt;&amp; name) { \</span>
+<a name="l00074"></a>00074 <span class="preprocessor">    name##_ = name; \</span>
+<a name="l00075"></a>00075 <span class="preprocessor">  } \</span>
+<a name="l00076"></a>00076 <span class="preprocessor">  vector&lt;ltr::utility::shared_ptr&lt;type&gt; &gt; name() const { \</span>
+<a name="l00077"></a>00077 <span class="preprocessor">    return name##_; \</span>
+<a name="l00078"></a>00078 <span class="preprocessor">  } \</span>
+<a name="l00079"></a>00079 <span class="preprocessor">  void add_##name(const ltr::utility::shared_ptr&lt;type&gt; value) { \</span>
+<a name="l00080"></a>00080 <span class="preprocessor">    name##_.push_back(value); \</span>
+<a name="l00081"></a>00081 <span class="preprocessor">  } \</span>
+<a name="l00082"></a>00082 <span class="preprocessor">  int name##_count() const { \</span>
+<a name="l00083"></a>00083 <span class="preprocessor">    return name##_.size(); \</span>
+<a name="l00084"></a>00084 <span class="preprocessor">  } \</span>
+<a name="l00085"></a>00085 <span class="preprocessor">  const type&amp; name(int index) const { \</span>
+<a name="l00086"></a>00086 <span class="preprocessor">    return *(name##_.at(index)); \</span>
+<a name="l00087"></a>00087 <span class="preprocessor">  } \</span>
+<a name="l00088"></a>00088 <span class="preprocessor">  type&amp; name(int index) { \</span>
+<a name="l00089"></a>00089 <span class="preprocessor">    return *(name##_.at(index)); \</span>
+<a name="l00090"></a>00090 <span class="preprocessor">  } \</span>
+<a name="l00091"></a>00091 <span class="preprocessor">  ltr::utility::shared_ptr&lt;type&gt; name##_ptr(int index) const { \</span>
+<a name="l00092"></a>00092 <span class="preprocessor">    return name##_.at(index); \</span>
+<a name="l00093"></a>00093 <span class="preprocessor">  } \</span>
+<a name="l00094"></a>00094 <span class="preprocessor">  ltr::utility::shared_ptr&lt;type&gt; name##_ptr(int index) { \</span>
+<a name="l00095"></a>00095 <span class="preprocessor">    return name##_.at(index); \</span>
+<a name="l00096"></a>00096 <span class="preprocessor">  }</span>
+<a name="l00097"></a>00097 <span class="preprocessor"></span>
+<a name="l00101"></a><a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">00101</a> <span class="preprocessor">#define CHECK(expression) \</span>
+<a name="l00102"></a>00102 <span class="preprocessor">  if (!(expression)) { \</span>
+<a name="l00103"></a>00103 <span class="preprocessor">    throw std::logic_error(&quot;Expected: &quot; #expression); \</span>
+<a name="l00104"></a>00104 <span class="preprocessor">  }</span>
+<a name="l00105"></a>00105 <span class="preprocessor"></span>
+<a name="l00109"></a><a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">00109</a> <span class="preprocessor">#define CHECK_MSG(expression, message) \</span>
+<a name="l00110"></a>00110 <span class="preprocessor">  if (!(expression)) { \</span>
+<a name="l00111"></a>00111 <span class="preprocessor">    throw std::logic_error(message); \</span>
+<a name="l00112"></a>00112 <span class="preprocessor">  }</span>
+<a name="l00113"></a>00113 <span class="preprocessor"></span>
+<a name="l00117"></a><a class="code" href="macros_8h.html#a54b4a23953fc7a4f455e4fc47e05c215">00117</a> <span class="preprocessor">#define CHECK_GE(a, b) \</span>
+<a name="l00118"></a>00118 <span class="preprocessor">  CHECK((a) &gt;= (b))</span>
+<a name="l00119"></a>00119 <span class="preprocessor"></span>
+<a name="l00128"></a><a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">00128</a> <span class="preprocessor">#define ALLOW_SHARED_PTR_ONLY_CREATION(class_name) \</span>
+<a name="l00129"></a>00129 <span class="preprocessor">public: \</span>
+<a name="l00130"></a>00130 <span class="preprocessor">  typedef ltr::utility::shared_ptr&lt; class_name &gt; Ptr; \</span>
+<a name="l00131"></a>00131 <span class="preprocessor">protected: \</span>
+<a name="l00132"></a>00132 <span class="preprocessor">  virtual ~class_name() {} \</span>
+<a name="l00133"></a>00133 <span class="preprocessor">  friend class ltr::utility::shared_ptr&lt; class_name &gt;;</span>
+<a name="l00134"></a>00134 <span class="preprocessor"></span>}
+<a name="l00135"></a>00135 
+<a name="l00136"></a>00136 <span class="preprocessor">#endif  // LTR_UTILITY_MACROS_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

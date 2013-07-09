@@ -108,7 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
@@ -127,62 +126,20 @@ Inheritance diagram for ltr::decision_tree::Vertex:</div>
 
 <p><a href="classltr_1_1decision__tree_1_1_vertex-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:affda369e847a4ee07bf2423aa4e7297b"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html">Vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a681d8b97e78c6346905be6f92908be38"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a681d8b97e78c6346905be6f92908be38">~Vertex</a> ()</td></tr>
-<tr class="memitem:a869a2414ea50533358cfb0468960ac92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a869a2414ea50533358cfb0468960ac92">addChild</a> (<a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Vertex::Ptr</a> child, <a class="el" href="classltr_1_1decision__tree_1_1_condition.html#acb531deb9f0323ae4aadff82d0faf8ba">Condition::Ptr</a> condition)</td></tr>
+<tr class="memitem:a869a2414ea50533358cfb0468960ac92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a869a2414ea50533358cfb0468960ac92">addChild</a> (<a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Vertex::Ptr</a> child, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Condition::Ptr</a> condition)</td></tr>
 <tr class="memitem:a3f62f0e202f180ecdf2979e6dcd7414e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a3f62f0e202f180ecdf2979e6dcd7414e">hasChild</a> () const </td></tr>
 <tr class="memitem:aef7085a52bb8e4bbe59da949e557038b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#aef7085a52bb8e4bbe59da949e557038b">value</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object) const =0</td></tr>
 <tr class="memitem:aed9e9a336d12fc87b861237d6bff4fff"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#aed9e9a336d12fc87b861237d6bff4fff">generateCppCodeWithId</a> (const string &amp;function_name) const =0</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa50005c75a5e02f361e11e63f5ceac94"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Vertex::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#aa50005c75a5e02f361e11e63f5ceac94">childrens_</a></td></tr>
-<tr class="memitem:a76262f0fe077477f13e92562cc83ba63"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classltr_1_1decision__tree_1_1_condition.html#acb531deb9f0323ae4aadff82d0faf8ba">Condition::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a76262f0fe077477f13e92562cc83ba63">conditions_</a></td></tr>
+<tr class="memitem:aa50005c75a5e02f361e11e63f5ceac94"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Vertex::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#aa50005c75a5e02f361e11e63f5ceac94">childrens_</a></td></tr>
+<tr class="memitem:a76262f0fe077477f13e92562cc83ba63"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Condition::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a76262f0fe077477f13e92562cc83ba63">conditions_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html">Vertex</a> is a node in the decision tree. It has pointers to all children and conditions of transition to each children. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="affda369e847a4ee07bf2423aa4e7297b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1decision__tree_1_1_vertex.html">Vertex</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">ltr::decision_tree::Vertex::Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_serializable_functor.html#a079765aa058496c753107dc98a9b1acd">ltr::SerializableFunctor&lt; double &gt;</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#ab331ca425e65796aca38ae8749e24c40">ltr::decision_tree::DecisionVertex</a>, and <a class="el" href="classltr_1_1decision__tree_1_1_leaf_vertex.html#a60192c20ec8a46c1769244fdb3303437">ltr::decision_tree::LeafVertex</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a681d8b97e78c6346905be6f92908be38"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a681d8b97e78c6346905be6f92908be38">ltr::decision_tree::Vertex::~Vertex</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
+</div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a869a2414ea50533358cfb0468960ac92"></a>
 <div class="memitem">
 <div class="memproto">
@@ -190,13 +147,13 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a869a2414ea50533358cfb0468960ac92">ltr::decision_tree::Vertex::addChild</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Vertex::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Vertex::Ptr</a>&#160;</td>
           <td class="paramname"><em>child</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1decision__tree_1_1_condition.html#acb531deb9f0323ae4aadff82d0faf8ba">Condition::Ptr</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Condition::Ptr</a>&#160;</td>
           <td class="paramname"><em>condition</em>&#160;</td>
         </tr>
         <tr>
@@ -282,7 +239,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Vertex::Ptr</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#aa50005c75a5e02f361e11e63f5ceac94">ltr::decision_tree::Vertex::childrens_</a><code> [protected]</code></td>
+          <td class="memname">vector&lt;<a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Vertex::Ptr</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#aa50005c75a5e02f361e11e63f5ceac94">ltr::decision_tree::Vertex::childrens_</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -295,7 +252,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt;<a class="el" href="classltr_1_1decision__tree_1_1_condition.html#acb531deb9f0323ae4aadff82d0faf8ba">Condition::Ptr</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a76262f0fe077477f13e92562cc83ba63">ltr::decision_tree::Vertex::conditions_</a><code> [protected]</code></td>
+          <td class="memname">vector&lt;<a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Condition::Ptr</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#a76262f0fe077477f13e92562cc83ba63">ltr::decision_tree::Vertex::conditions_</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -311,7 +268,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

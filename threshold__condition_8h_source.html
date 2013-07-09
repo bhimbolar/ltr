@@ -120,36 +120,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 <span class="comment"> * half-interval (left_feature_value_bound_; right_feature_value_bound_].</span>
 <a name="l00017"></a>00017 <span class="comment"> */</span>
 <a name="l00018"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html">00018</a> <span class="keyword">class </span><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html">ThresholdCondition</a> : <span class="keyword">public</span> <a class="code" href="classltr_1_1decision__tree_1_1_condition.html">Condition</a> {
-<a name="l00019"></a>00019  <span class="keyword">public</span>:
-<a name="l00020"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#afdcb926786cd75ef0c5f20e457b2b82b">00020</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;ThresholdCondition&gt;</a> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#afdcb926786cd75ef0c5f20e457b2b82b">Ptr</a>;
-<a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#af866735852d795de4f12fa04550b7a1f">00022</a>   <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#af866735852d795de4f12fa04550b7a1f">ThresholdCondition</a>(<span class="keywordtype">int</span> feature_index,
-<a name="l00023"></a>00023                      <span class="keywordtype">double</span> left_feature_value_bound,
-<a name="l00024"></a>00024                      <span class="keywordtype">double</span> right_feature_value_bound)
-<a name="l00025"></a>00025   : <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#abce7c27c47ff03031cc3b0f7c2a1b134">feature_index_</a>(feature_index),
-<a name="l00026"></a>00026     <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf">left_feature_value_bound_</a>(left_feature_value_bound),
-<a name="l00027"></a>00027     <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a7d3c445eec2775996a061e7196769e11">right_feature_value_bound_</a>(right_feature_value_bound) {}
-<a name="l00028"></a>00028   <span class="comment">/*</span>
-<a name="l00029"></a>00029 <span class="comment">   * Return 1 if object feature belongs to half-interval and 0 otherwise.</span>
-<a name="l00030"></a>00030 <span class="comment">   */</span>
-<a name="l00031"></a>00031   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a935bf94cff91a0dea15d317953ca7dba">value</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035  <span class="keyword">private</span>:
-<a name="l00036"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#abce7c27c47ff03031cc3b0f7c2a1b134">00036</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#abce7c27c47ff03031cc3b0f7c2a1b134">feature_index_</a>;
-<a name="l00037"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf">00037</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf">left_feature_value_bound_</a>;
-<a name="l00038"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a7d3c445eec2775996a061e7196769e11">00038</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a7d3c445eec2775996a061e7196769e11">right_feature_value_bound_</a>;
+<a name="l00019"></a>00019   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html">ThresholdCondition</a>)
+<a name="l00020"></a>00020  <span class="keyword">public</span>:
+<a name="l00021"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#af866735852d795de4f12fa04550b7a1f">00021</a>   <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#af866735852d795de4f12fa04550b7a1f">ThresholdCondition</a>(<span class="keywordtype">int</span> feature_index,
+<a name="l00022"></a>00022                      <span class="keywordtype">double</span> left_feature_value_bound,
+<a name="l00023"></a>00023                      <span class="keywordtype">double</span> right_feature_value_bound)
+<a name="l00024"></a>00024   : <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#abce7c27c47ff03031cc3b0f7c2a1b134">feature_index_</a>(feature_index),
+<a name="l00025"></a>00025     <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf">left_feature_value_bound_</a>(left_feature_value_bound),
+<a name="l00026"></a>00026     <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a7d3c445eec2775996a061e7196769e11">right_feature_value_bound_</a>(right_feature_value_bound) {}
+<a name="l00027"></a>00027   <span class="comment">/*</span>
+<a name="l00028"></a>00028 <span class="comment">   * Return 1 if object feature belongs to half-interval and 0 otherwise.</span>
+<a name="l00029"></a>00029 <span class="comment">   */</span>
+<a name="l00030"></a>00030   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a935bf94cff91a0dea15d317953ca7dba">value</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_object.html" title="Base class for storing information in a Dataset. An object consist of feature vector and meta informa...">Object</a>&amp; <span class="keywordtype">object</span>) <span class="keyword">const</span>;
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_serializable.html#a3cad891b5a7669724e1e7b69c1268dab">generateCppCode</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; function_name) <span class="keyword">const</span>;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034  <span class="keyword">private</span>:
+<a name="l00035"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#abce7c27c47ff03031cc3b0f7c2a1b134">00035</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#abce7c27c47ff03031cc3b0f7c2a1b134">feature_index_</a>;
+<a name="l00036"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf">00036</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a60ecd3e221d0231ba56fc756239689bf">left_feature_value_bound_</a>;
+<a name="l00037"></a><a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a7d3c445eec2775996a061e7196769e11">00037</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1decision__tree_1_1_threshold_condition.html#a7d3c445eec2775996a061e7196769e11">right_feature_value_bound_</a>;
+<a name="l00038"></a>00038 };
 <a name="l00039"></a>00039 };
 <a name="l00040"></a>00040 };
-<a name="l00041"></a>00041 };
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif  // LTR_LEARNERS_DECISION_TREE_CONDITION_THRESHOLD_CONDITION_H_</span>
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="preprocessor">#endif  // LTR_LEARNERS_DECISION_TREE_CONDITION_THRESHOLD_CONDITION_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

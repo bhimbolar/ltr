@@ -108,7 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
@@ -127,11 +126,6 @@ Inheritance diagram for ltr::decision_tree::DecisionVertex:</div>
 
 <p><a href="classltr_1_1decision__tree_1_1_decision_vertex-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ab331ca425e65796aca38ae8749e24c40"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html">DecisionVertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#ab331ca425e65796aca38ae8749e24c40">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b26be2dda793f764779895cdc2410dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a7b26be2dda793f764779895cdc2410dd">DecisionVertex</a> ()</td></tr>
@@ -140,30 +134,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e54b0d9eeb00fae155b61ff2ba9c0b4"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a0e54b0d9eeb00fae155b61ff2ba9c0b4">generateCppCodeWithId</a> (const string &amp;function_name) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a4e99d87abcf2ab16ec14e09ddc8c514e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Vertex::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a4e99d87abcf2ab16ec14e09ddc8c514e">findBestChild</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object) const </td></tr>
+<tr class="memitem:a4e99d87abcf2ab16ec14e09ddc8c514e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Vertex::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a4e99d87abcf2ab16ec14e09ddc8c514e">findBestChild</a> (const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;object) const </td></tr>
 <tr class="memitem:a30ad699bfd5718ce2b7efab51759aa34"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a30ad699bfd5718ce2b7efab51759aa34">generateCppCodeImpl</a> (const string &amp;function_name, bool add_id) const </td></tr>
 <tr class="memitem:a72011aa096298f18bae95ddd95e05d72"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a72011aa096298f18bae95ddd95e05d72">getDefaultAlias</a> () const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html">DecisionVertex</a> is a node, which returns value of the child with the greatest condition value. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ab331ca425e65796aca38ae8749e24c40"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html">DecisionVertex</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#ab331ca425e65796aca38ae8749e24c40">ltr::decision_tree::DecisionVertex::Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Boost shared pointer to the <a class="el" href="classltr_1_1_functor.html" title="Base class for all functors on Object.">Functor</a>. </p>
-
-<p>Reimplemented from <a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">ltr::decision_tree::Vertex</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7b26be2dda793f764779895cdc2410dd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +163,7 @@ Private Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1decision__tree_1_1_vertex.html#affda369e847a4ee07bf2423aa4e7297b">Vertex::Ptr</a> <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a4e99d87abcf2ab16ec14e09ddc8c514e">ltr::decision_tree::DecisionVertex::findBestChild</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">Vertex::Ptr</a> <a class="el" href="classltr_1_1decision__tree_1_1_decision_vertex.html#a4e99d87abcf2ab16ec14e09ddc8c514e">ltr::decision_tree::DecisionVertex::findBestChild</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_object.html">Object</a> &amp;&#160;</td>
           <td class="paramname"><em>object</em></td><td>)</td>
@@ -314,7 +291,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

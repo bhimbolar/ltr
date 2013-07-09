@@ -108,7 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a>  </div>
@@ -128,14 +127,8 @@ Inheritance diagram for ltr::decision_tree::BaseSplitter:</div>
 
 <p><a href="classltr_1_1decision__tree_1_1_base_splitter-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ae19e3dd9f262e0664098049d19c4a7d3"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html">BaseSplitter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5875e78728b160c42debe02d37ca787a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#a5875e78728b160c42debe02d37ca787a">~BaseSplitter</a> ()</td></tr>
 <tr class="memitem:adf7d58eced35c33da70fbc877909640b"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#adf7d58eced35c33da70fbc877909640b">toString</a> () const =0</td></tr>
 <tr class="memitem:ae5e3acb0cf4fbd66e047b7e513dd602c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae5e3acb0cf4fbd66e047b7e513dd602c">generateNextLayer</a> (const vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; &amp;layer, vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; *next_layer) const =0</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
@@ -147,39 +140,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ae78cc013d6b729d6d0c218561d636ef0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae78cc013d6b729d6d0c218561d636ef0">splitVertex</a> (const <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &amp;vertex, const <a class="el" href="structltr_1_1decision__tree_1_1_threshold.html">Threshold</a> &amp;threshold, vector&lt; <a class="el" href="structltr_1_1decision__tree_1_1_vertex_with_data.html">VertexWithData</a> &gt; *children) const </td></tr>
 <tr class="memitem:adbca32db27d693cdd994ed5579424032"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#adbca32db27d693cdd994ed5579424032">computeQuality</a> (const <a class="el" href="classltr_1_1utility_1_1_label_statistic_computer.html">LabelStatisticComputer</a> &amp;all_label_stat_computer, const <a class="el" href="classltr_1_1utility_1_1_label_statistic_computer.html">LabelStatisticComputer</a> &amp;first_part_computer, const <a class="el" href="classltr_1_1utility_1_1_label_statistic_computer.html">LabelStatisticComputer</a> &amp;second_part_computer) const </td></tr>
 </table>
-<hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="ae19e3dd9f262e0664098049d19c4a7d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html">BaseSplitter</a>&gt; <a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#ae19e3dd9f262e0664098049d19c4a7d3">ltr::decision_tree::BaseSplitter::Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classltr_1_1decision__tree_1_1_i_d3_splitter.html#a6545bb7e4760e596d8241363e7091fbd">ltr::decision_tree::ID3Splitter</a>, and <a class="el" href="classltr_1_1decision__tree_1_1_oblivious_tree_splitter.html#aff5d46cdddf282b7b2918e920af01d65">ltr::decision_tree::ObliviousTreeSplitter</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5875e78728b160c42debe02d37ca787a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classltr_1_1decision__tree_1_1_base_splitter.html#a5875e78728b160c42debe02d37ca787a">ltr::decision_tree::BaseSplitter::~BaseSplitter</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="adbca32db27d693cdd994ed5579424032"></a>
 <div class="memitem">
@@ -375,7 +335,7 @@ Private Member Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:46 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:42 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

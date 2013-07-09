@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
@@ -130,48 +129,26 @@ Inheritance diagram for ltr::BaseProbabilityDensityLearner&lt; TElement, TEstima
 
 <p><a href="classltr_1_1_base_probability_density_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a789c84e06354bcd3a411810a54912b83"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_base_probability_density_learner.html">BaseProbabilityDensityLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a789c84e06354bcd3a411810a54912b83">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cfb029592a21a22b4c031cbd4decda9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a9cfb029592a21a22b4c031cbd4decda9">BaseProbabilityDensityLearner</a> ()</td></tr>
 <tr class="memitem:a9a97ff3a7105df6f559e38c4bea773dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a9a97ff3a7105df6f559e38c4bea773dd">BaseProbabilityDensityLearner</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
-<tr class="memitem:a72c78c7495f3c6fee192e3d76a152bcd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a72c78c7495f3c6fee192e3d76a152bcd">~BaseProbabilityDensityLearner</a> ()</td></tr>
 <tr class="memitem:abe832c7282eff263ad1e3e4f5e8f0a3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#abe832c7282eff263ad1e3e4f5e8f0a3f">learn</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set)</td></tr>
 <tr class="memitem:a9afc72a29be8c763a9388a5d4ea23a97"><td class="memItemLeft" align="right" valign="top">TEstimator::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a9afc72a29be8c763a9388a5d4ea23a97">makeSpecific</a> () const </td></tr>
-<tr class="memitem:a8f3c649e927f790da732dc9483872de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a8f3c649e927f790da732dc9483872de5">make</a> () const </td></tr>
+<tr class="memitem:a8f3c649e927f790da732dc9483872de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BaseProbabilityDensityEstimator::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a8f3c649e927f790da732dc9483872de5">make</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aa6c0e4240735e9392967f219f22200a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#aa6c0e4240735e9392967f219f22200a4">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, TEstimator *estimator)=0</td></tr>
+<tr class="memitem:a73cb6910a88c977b5f4a98d3e4aa73ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a73cb6910a88c977b5f4a98d3e4aa73ba">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, typename TEstimator::Ptr *estimator)=0</td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3c944a73cf831bafe0bf7b867ea7ceee"><td class="memItemLeft" align="right" valign="top">TEstimator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#a3c944a73cf831bafe0bf7b867ea7ceee">estimator_</a></td></tr>
+<tr class="memitem:af6be1ab9fe4e2026cf3902a6be3860fa"><td class="memItemLeft" align="right" valign="top">TEstimator::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_base_probability_density_learner.html#af6be1ab9fe4e2026cf3902a6be3860fa">estimator_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class TElement, class TEstimator&gt;<br/>
 class ltr::BaseProbabilityDensityLearner&lt; TElement, TEstimator &gt;</h3>
 
 <p>Simple interface of the probability density estimation learner. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a789c84e06354bcd3a411810a54912b83"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement, class TEstimator&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_base_probability_density_learner.html">BaseProbabilityDensityLearner</a>&gt; <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#a789c84e06354bcd3a411810a54912b83">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9cfb029592a21a22b4c031cbd4decda9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -209,24 +186,6 @@ template&lt;class TElement, class TEstimator&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a72c78c7495f3c6fee192e3d76a152bcd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TElement, class TEstimator&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::~<a class="el" href="classltr_1_1_base_probability_density_learner.html">BaseProbabilityDensityLearner</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="abe832c7282eff263ad1e3e4f5e8f0a3f"></a>
 <div class="memitem">
@@ -247,14 +206,14 @@ template&lt;class TElement, class TEstimator&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa6c0e4240735e9392967f219f22200a4"></a>
+<a class="anchor" id="a73cb6910a88c977b5f4a98d3e4aa73ba"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement, class TEstimator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#aa6c0e4240735e9392967f219f22200a4">learnImpl</a> </td>
+          <td class="memname">virtual void <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#a73cb6910a88c977b5f4a98d3e4aa73ba">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -262,7 +221,7 @@ template&lt;class TElement, class TEstimator&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TEstimator *&#160;</td>
+          <td class="paramtype">typename TEstimator::Ptr *&#160;</td>
           <td class="paramname"><em>estimator</em>&#160;</td>
         </tr>
         <tr>
@@ -282,7 +241,7 @@ template&lt;class TElement, class TEstimator&gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#a438d2657547489f38c5c629f3ed0a2c3">ltr::FisherDiscriminantDensityLearner&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1_non_linear_discriminant_density_learner.html#a5fae6c6094b0130a85ce1e34a4e84701">ltr::NonLinearDiscriminantDensityLearner&lt; TElement &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classltr_1_1_fisher_discriminant_density_learner.html#ac5bd82071985b86bdbce867f147174dc">ltr::FisherDiscriminantDensityLearner&lt; TElement &gt;</a>, and <a class="el" href="classltr_1_1_non_linear_discriminant_density_learner.html#ad845442e1795223a9c656643bd8768ea">ltr::NonLinearDiscriminantDensityLearner&lt; TElement &gt;</a>.</p>
 
 </div>
 </div>
@@ -293,7 +252,7 @@ template&lt;class TElement, class TEstimator&gt; </div>
 template&lt;class TElement, class TEstimator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classltr_1_1_base_probability_density_estimator.html#a9e9ec6fd2e86873f29d07afbad7ad37a">BaseProbabilityDensityEstimator::Ptr</a> <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#a8f3c649e927f790da732dc9483872de5">make</a> </td>
+          <td class="memname"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">BaseProbabilityDensityEstimator::Ptr</a> <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#a8f3c649e927f790da732dc9483872de5">make</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -323,14 +282,14 @@ template&lt;class TElement, class TEstimator&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a3c944a73cf831bafe0bf7b867ea7ceee"></a>
+<a class="anchor" id="af6be1ab9fe4e2026cf3902a6be3860fa"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TElement, class TEstimator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">TEstimator <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#a3c944a73cf831bafe0bf7b867ea7ceee">estimator_</a><code> [private]</code></td>
+          <td class="memname">TEstimator::Ptr <a class="el" href="classltr_1_1_base_probability_density_learner.html">ltr::BaseProbabilityDensityLearner</a>&lt; TElement, TEstimator &gt;::<a class="el" href="classltr_1_1_base_probability_density_learner.html#af6be1ab9fe4e2026cf3902a6be3860fa">estimator_</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -345,7 +304,7 @@ template&lt;class TElement, class TEstimator&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

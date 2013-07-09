@@ -9,6 +9,7 @@ var searchData=
   ['concretetestclass',['ConcreteTestClass',['../class_concrete_test_class.html',1,'']]],
   ['condition',['Condition',['../classltr_1_1decision__tree_1_1_condition.html',1,'ltr::decision_tree']]],
   ['configparser',['ConfigParser',['../class_config_parser.html',1,'']]],
+  ['configuration',['Configuration',['../struct_configuration.html',1,'']]],
   ['conjugatedirectioncalculator',['ConjugateDirectionCalculator',['../classoptimization_1_1_conjugate_direction_calculator.html',1,'optimization']]],
   ['conjugategradientupdater',['ConjugateGradientUpdater',['../classoptimization_1_1_conjugate_gradient_updater.html',1,'optimization']]],
   ['constantstepcalculator',['ConstantStepCalculator',['../classoptimization_1_1_constant_step_calculator.html',1,'optimization']]],

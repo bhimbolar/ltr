@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
@@ -130,11 +129,6 @@ Inheritance diagram for ltr::FeatureSamplerLearner&lt; TElement &gt;:</div>
 
 <p><a href="classltr_1_1_feature_sampler_learner-members.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:af1b3a2402af1b73171ea4d997845bce6"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="classltr_1_1_feature_sampler_learner.html">FeatureSamplerLearner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#af1b3a2402af1b73171ea4d997845bce6">Ptr</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad74dddac1c26a10b518af8f9a0d85f89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#ad74dddac1c26a10b518af8f9a0d85f89">FeatureSamplerLearner</a> (IndicesPtr indices=IndicesPtr(new Indices))</td></tr>
@@ -145,8 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fbd97815b2da2aed89c0abff3735f65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#a7fbd97815b2da2aed89c0abff3735f65">GET_SET</a> (IndicesPtr, indices)</td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a75a7c4f4e7515a1fd967cc8ba4e935c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#a75a7c4f4e7515a1fd967cc8ba4e935c5">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_feature_sampler.html">FeatureSampler</a> *feature_sampler)</td></tr>
-<tr class="memdesc:a75a7c4f4e7515a1fd967cc8ba4e935c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#a75a7c4f4e7515a1fd967cc8ba4e935c5"></a><br/></td></tr>
+<tr class="memitem:aa080e378cdb2cc398fb87e40a3c97de6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#aa080e378cdb2cc398fb87e40a3c97de6">learnImpl</a> (const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;data_set, <a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FeatureSampler::Ptr</a> *feature_sampler)</td></tr>
+<tr class="memdesc:aa080e378cdb2cc398fb87e40a3c97de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Learn input dataset and train feature converter.  <a href="#aa080e378cdb2cc398fb87e40a3c97de6"></a><br/></td></tr>
 <tr class="memitem:a2d3ccb5ba2f2fc347144d1a330db2733"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#a2d3ccb5ba2f2fc347144d1a330db2733">setParametersImpl</a> (const <a class="el" href="classltr_1_1_parameters_container.html">ParametersContainer</a> &amp;parameters)</td></tr>
 <tr class="memitem:a286ecf8aff9ae54eeee6bea8e388b455"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1_feature_sampler_learner.html#a286ecf8aff9ae54eeee6bea8e388b455">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -164,25 +158,7 @@ class ltr::FeatureSamplerLearner&lt; TElement &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="af1b3a2402af1b73171ea4d997845bce6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TElement &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr</a>&lt;<a class="el" href="classltr_1_1_feature_sampler_learner.html">FeatureSamplerLearner</a>&gt; <a class="el" href="classltr_1_1_feature_sampler_learner.html">ltr::FeatureSamplerLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_converter_learner.html#a322b5a18eef1103c64df834021f6dcf9">Ptr</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classltr_1_1_base_feature_converter_learner.html#af5c2b0f652f049e03a5df10bb544684e">ltr::BaseFeatureConverterLearner&lt; TElement, FeatureSampler &gt;</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad74dddac1c26a10b518af8f9a0d85f89"></a>
 <div class="memitem">
 <div class="memproto">
@@ -298,14 +274,14 @@ template&lt;typename TElement &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a75a7c4f4e7515a1fd967cc8ba4e935c5"></a>
+<a class="anchor" id="aa080e378cdb2cc398fb87e40a3c97de6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TElement &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classltr_1_1_feature_sampler_learner.html">ltr::FeatureSamplerLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_sampler_learner.html#a75a7c4f4e7515a1fd967cc8ba4e935c5">learnImpl</a> </td>
+          <td class="memname">void <a class="el" href="classltr_1_1_feature_sampler_learner.html">ltr::FeatureSamplerLearner</a>&lt; TElement &gt;::<a class="el" href="classltr_1_1_feature_sampler_learner.html#aa080e378cdb2cc398fb87e40a3c97de6">learnImpl</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classltr_1_1_data_set.html">DataSet</a>&lt; TElement &gt; &amp;&#160;</td>
           <td class="paramname"><em>data_set</em>, </td>
@@ -313,7 +289,7 @@ template&lt;typename TElement &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classltr_1_1_feature_sampler.html">FeatureSampler</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classltr_1_1_serializable.html#a6b066bfa0f7837be5cd735f64a527449">FeatureSampler::Ptr</a> *&#160;</td>
           <td class="paramname"><em>feature_converter</em>&#160;</td>
         </tr>
         <tr>
@@ -334,7 +310,7 @@ template&lt;typename TElement &gt; </div>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a3a939e1ff6c61008e63e6182bba31226">ltr::BaseFeatureConverterLearner&lt; TElement, FeatureSampler &gt;</a>.</p>
+<p>Implements <a class="el" href="classltr_1_1_base_feature_converter_learner.html#a7b3803b834ee079f9e24cf5ea4c6673f">ltr::BaseFeatureConverterLearner&lt; TElement, FeatureSampler &gt;</a>.</p>
 
 </div>
 </div>
@@ -424,7 +400,7 @@ template&lt;typename TElement &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:41 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

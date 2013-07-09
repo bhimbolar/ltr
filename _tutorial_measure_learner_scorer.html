@@ -128,7 +128,7 @@ Introduction</h2>
 <tr>
 <td>Regression </td><td>Pointwise </td><td>\( score \in \mathbb{R} \) </td><td><a class="el" href="classltr_1_1_abs_error.html">AbsError</a>, <a class="el" href="classltr_1_1_squared_error.html">SquaredError</a>, <a class="el" href="classltr_1_1_true_point.html">TruePoint</a> </td></tr>
 <tr>
-<td>Ranking </td><td>{Point, Pair, List}wise </td><td>sort by \( score \) </td><td><a class="el" href="">DCG </a>, <a class="el" href="">NDCG </a>, <a class="el" href="classltr_1_1_g_m_r_r.html">GMRR </a>, <a class="el" href="classltr_1_1_p_found.html">PFound</a>, <a class="el" href="classltr_1_1_reciprocal_rank.html">ReciprocalRank</a> </td></tr>
+<td>Ranking </td><td>{Point, Pair, List}wise </td><td>sort by \( score \) </td><td><a class="el" href="classltr_1_1_base_d_c_g.html">BaseDCG </a>, <a class="el" href="classltr_1_1_base_n_d_c_g.html">BaseNDCG </a>, <a class="el" href="classltr_1_1_g_m_r_r.html">GMRR </a>, <a class="el" href="classltr_1_1_p_found.html">PFound</a>, <a class="el" href="classltr_1_1_reciprocal_rank.html">ReciprocalRank</a> </td></tr>
 </table>
 <h2><a class="anchor" id="Learner"></a>
 Learner</h2>
@@ -136,7 +136,7 @@ Learner</h2>
 <ul>
 <li><a class="el" href="classltr_1_1_learner.html#aaa01fe19a1467913c0df36a4fdd213c6">learn </a> - learn the train data</li>
 <li><a class="el" href="classltr_1_1_learner.html#a597e9bfbc0e1bb388eeac58dc160685d">make </a>, <a class="el" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific </a> - return the pointer to a new scorer, see the example below to understand the difference</li>
-<li><a class="el" href="classltr_1_1_base_learner.html#a1163855bba1ad4ddcb9c7dbe4cd55708">setInitialScorer </a> - set the initial approximation of a scorer</li>
+<li><a class="el" href="classltr_1_1_base_learner.html#add05623c994774e683a7f1fd84354d81">setInitialScorer </a> - set the initial approximation of a scorer</li>
 <li><a class="el" href="classltr_1_1_base_learner.html#a33d3d382583186aae6497ba9ad818abf">reset </a> - reset a current state of the learner</li>
 <li><a class="el" href="classltr_1_1_learner.html#aeb070480758feabd335eeb00afc82344">set_data_preprocessor </a> - add data preprocessor, see <a class="el" href="_tutorial_data_preprocessors.html">Data preprocessors</a></li>
 <li><a class="el" href="classltr_1_1_learner.html#a0ddc20f3a14fded8873f813c7581ea11">set_feature_converter_learner </a> - add feature converter learner, see <a class="el" href="_tutorial_feature_converters.html">Feature converters</a></li>
@@ -185,9 +185,9 @@ Measure</h2>
 <tr>
 <td><a class="el" href="classltr_1_1_binary_classification_accuracy.html">BinaryClassificationAccuracy</a> </td><td><a href="http://en.wikipedia.org/wiki/Accuracy_and_precision">http://en.wikipedia.org/wiki/Accuracy_and_precision</a> </td></tr>
 <tr>
-<td><a class="el" href="">DCG </a> </td><td><a href="http://en.wikipedia.org/wiki/Discounted_Cumulative_Gain">http://en.wikipedia.org/wiki/Discounted_Cumulative_Gain</a> </td></tr>
+<td><a class="el" href="classltr_1_1_base_d_c_g.html">BaseDCG </a> </td><td><a href="http://en.wikipedia.org/wiki/Discounted_Cumulative_Gain">http://en.wikipedia.org/wiki/Discounted_Cumulative_Gain</a> </td></tr>
 <tr>
-<td><a class="el" href="">NDCG </a> </td><td><a href="http://en.wikipedia.org/wiki/NDCG">http://en.wikipedia.org/wiki/NDCG</a> </td></tr>
+<td><a class="el" href="classltr_1_1_base_n_d_c_g.html">BaseNDCG </a> </td><td><a href="http://en.wikipedia.org/wiki/NDCG">http://en.wikipedia.org/wiki/NDCG</a> </td></tr>
 <tr>
 <td><a class="el" href="classltr_1_1_g_m_r_r.html">GMRR </a> </td><td>Desc </td></tr>
 <tr>
@@ -205,7 +205,9 @@ Example</h2>
 <tr>
 <th>Example: Operating with learners and scorers </th><th>Output:</th></tr>
 <tr>
-<td><div class="fragment"><pre class="fragment"><span class="preprocessor">#include &lt;iostream&gt;</span>
+<td><div class="fragment"><pre class="fragment"><span class="comment">// Copyright 2012 Yandex</span>
+
+<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// NOLINT</span>
 <span class="preprocessor">#include &lt;vector&gt;</span>
 
 <span class="preprocessor">#include &quot;<a class="code" href="data__set_8h.html">ltr/data/data_set.h</a>&quot;</span>
@@ -233,25 +235,28 @@ Example</h2>
   data.<a class="code" href="classltr_1_1_data_set.html#addb95d8ff26575686ddc3d0f845b6d32">add</a>(object3);
   cout &lt;&lt; <span class="stringliteral">&quot;Train data:\n&quot;</span> &lt;&lt; data &lt;&lt; endl;
 
-  <a class="code" href="classltr_1_1_linear_learner.html">ltr::LinearLearner&lt;Object&gt;</a> learner;    <span class="comment">// learn linear regression</span>
-  learner.<a class="code" href="classltr_1_1_base_learner.html#aded87586e62aff293f7365f59fda237d" title="Learns input dataset.">learn</a>(data);
+  <a class="code" href="classltr_1_1_linear_learner.html">ltr::LinearLearner&lt;Object&gt;::Ptr</a> learner(
+    <span class="keyword">new</span> <a class="code" href="classltr_1_1_linear_learner.html">ltr::LinearLearner&lt;Object&gt;</a>);  <span class="comment">// learn linear regression</span>
+  learner-&gt;learn(data);
 
-  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::Scorer::Ptr</a> scorer = learner.<a class="code" href="classltr_1_1_base_learner.html#ac3d0c4dcc5cab22301dc63dca1c12a7a">make</a>();           <span class="comment">// make scorer</span>
-  cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#a8969d43c152f33bf2d4b0f335c996af2">toString</a>() &lt;&lt; endl;                 <span class="comment">// human-readable representation of scorer</span>
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::Scorer::Ptr</a> scorer = learner-&gt;make();  <span class="comment">// make scorer</span>
+  cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#a8969d43c152f33bf2d4b0f335c996af2">toString</a>() &lt;&lt; endl;  <span class="comment">// human-readable</span>
+                                       <span class="comment">// representation of scorer</span>
   cout &lt;&lt; endl;
-  cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#afb5985591e1c30774cb4487ba4288965">generateCppCode</a>(<span class="stringliteral">&quot;score&quot;</span>) &lt;&lt; endl;   <span class="comment">// serialize scorer to cpp code</span>
+  cout &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#afb5985591e1c30774cb4487ba4288965">generateCppCode</a>(<span class="stringliteral">&quot;score&quot;</span>) &lt;&lt; endl;  <span class="comment">//</span>
+  <span class="comment">// serialize scorer to cpp code</span>
 
   cout &lt;&lt; <span class="stringliteral">&quot;score of object1 = &quot;</span> &lt;&lt; scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#ae5e5abf6e74b3c208cdf1632a912adab">value</a>(object1)
        &lt;&lt; endl;
-  scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(data);                                  <span class="comment">// compute predicted labels</span>
+  scorer-&gt;<a class="code" href="classltr_1_1_scorer.html#ab1377230385c8a4d3ad36ffdb18e278c">predict</a>(data);  <span class="comment">// compute predicted labels</span>
   cout &lt;&lt; <span class="stringliteral">&quot;\nPredicted train data:\n&quot;</span> &lt;&lt; data;
 
-  <a class="code" href="classltr_1_1_abs_error.html">ltr::AbsError</a> abs_error;                                <span class="comment">// test quality</span>
+  <a class="code" href="classltr_1_1_abs_error.html">ltr::AbsError</a> abs_error;  <span class="comment">// test quality</span>
   cout &lt;&lt; <span class="stringliteral">&quot;\nAbsError(data) = &quot;</span> &lt;&lt; abs_error(data)
        &lt;&lt; endl;
 
   <span class="comment">// use makeSpecific if you want to analyze result scorer in details</span>
-  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::LinearScorer::Ptr</a> linear_scorer = learner.<a class="code" href="classltr_1_1_base_learner.html#a59d97bb35c49fc80bf97afe317bd7a44">makeSpecific</a>();
+  <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::LinearScorer::Ptr</a> linear_scorer = learner-&gt;makeSpecific();
   cout &lt;&lt; <span class="stringliteral">&quot;f(x, y) = &quot;</span> &lt;&lt; linear_scorer-&gt;weight(0)
        &lt;&lt; <span class="stringliteral">&quot; + &quot;</span>  &lt;&lt; linear_scorer-&gt;weight(1) &lt;&lt; <span class="stringliteral">&quot; * x&quot;</span>
        &lt;&lt; <span class="stringliteral">&quot; + &quot;</span>  &lt;&lt; linear_scorer-&gt;weight(2) &lt;&lt; <span class="stringliteral">&quot; * y&quot;</span>
@@ -288,7 +293,7 @@ f(x, y) = 10 + 1 * x + 1 * y
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:44 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:40 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

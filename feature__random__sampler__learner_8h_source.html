@@ -133,104 +133,103 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00034"></a>00034 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
 <a name="l00035"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html">00035</a> <span class="keyword">class </span><a class="code" href="classltr_1_1_feature_random_sampler_learner.html" title="Produces FeatureSampler with random indices.">FeatureRandomSamplerLearner</a>
 <a name="l00036"></a>00036     : <span class="keyword">public</span> <a class="code" href="classltr_1_1_base_feature_converter_learner.html" title="A base class for FeatureConverter learners.">BaseFeatureConverterLearner</a>&lt;TElement, FeatureSampler&gt; {
-<a name="l00037"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a5fe2e2796a8be43176a45dd60fe71d7d">00037</a>   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classltr_1_1_feature_sampler.html" title="Samples features with specified indices.">FeatureSampler</a>;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039  <span class="keyword">public</span>:
-<a name="l00040"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a1567bbdd4e70daacdad7a7e604d27f00">00040</a>   <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">ltr::utility::shared_ptr&lt;FeatureRandomSamplerLearner&gt;</a> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a1567bbdd4e70daacdad7a7e604d27f00">Ptr</a>;
-<a name="l00045"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">00045</a>   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">FeatureRandomSamplerLearner</a>(<span class="keywordtype">double</span> sampling_fraction = 0.3,
-<a name="l00046"></a>00046                                        <span class="keywordtype">int</span> seed = 42)
-<a name="l00047"></a>00047   : <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb">sampling_fraction_</a>(sampling_fraction),
-<a name="l00048"></a>00048     <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5">seed_</a>(seed) {}
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">FeatureRandomSamplerLearner</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters);
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a9e9e62a6ed33235763744e274bf84e68">setDefaultParameters</a>();
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a8e55d9b7d00c9397df5571153020f818">checkParameters</a>() <span class="keyword">const</span>;
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a2cd4017a2db730edb199a6853390c05c">toString</a>() <span class="keyword">const</span>;
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058   <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#adf009b1bd96db20062fddf8c9992b0c4">GET_SET</a>(<span class="keywordtype">double</span>, sampling_fraction);
-<a name="l00059"></a>00059   <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#abcecabf0a9d37cd77d0b195a54275095">GET</a>(<span class="keywordtype">int</span>, seed);
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad4c817a9dff194230f636d1f90c993fb">set_seed</a>(<span class="keywordtype">int</span> seed);
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063  <span class="keyword">private</span>:
-<a name="l00064"></a>00064   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a085e91d0865ab38688f13b92c6c30382" title="Learn input dataset and train feature converter.">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
-<a name="l00065"></a>00065                          <a class="code" href="classltr_1_1_feature_sampler.html" title="Samples features with specified indices.">FeatureSampler</a>* feature_sampler);
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#af92606eeb9f89595f00217785fbdaf9b">setParametersImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters);
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ae80fdd2058c53b28ab4229b18ce725c0">getDefaultAlias</a>() <span class="keyword">const</span>;
-<a name="l00070"></a>00070 
-<a name="l00071"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb">00071</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb">sampling_fraction_</a>;
-<a name="l00072"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5">00072</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5">seed_</a>;
-<a name="l00073"></a>00073 };
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075 <span class="comment">// template realizations</span>
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00078"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#aca30a1fcb65a2e15f9f7fcd941c2ce77">00078</a> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">FeatureRandomSamplerLearner&lt;TElement&gt;::FeatureRandomSamplerLearner</a>(
-<a name="l00079"></a>00079     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
-<a name="l00080"></a>00080   this-&gt;setParameters(parameters);
-<a name="l00081"></a>00081 }
-<a name="l00082"></a>00082 
-<a name="l00083"></a>00083 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00084"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a9e9e62a6ed33235763744e274bf84e68">00084</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a9e9e62a6ed33235763744e274bf84e68">FeatureRandomSamplerLearner&lt;TElement&gt;::setDefaultParameters</a>() {
-<a name="l00085"></a>00085   sampling_fraction_ = 0.3;
-<a name="l00086"></a>00086   set_seed(42);
-<a name="l00087"></a>00087 }
-<a name="l00088"></a>00088 
-<a name="l00089"></a>00089 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00090"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a8e55d9b7d00c9397df5571153020f818">00090</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a8e55d9b7d00c9397df5571153020f818">FeatureRandomSamplerLearner&lt;TElement&gt;::checkParameters</a>()<span class="keyword"> const </span>{
-<a name="l00091"></a>00091   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(sampling_fraction_ &gt; 0. &amp;&amp; sampling_fraction_ &lt;= 1.);
-<a name="l00092"></a>00092   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(seed_ &gt;= 0);
-<a name="l00093"></a>00093 }
-<a name="l00094"></a>00094 
-<a name="l00095"></a>00095 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00096"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a2cd4017a2db730edb199a6853390c05c">00096</a> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a2cd4017a2db730edb199a6853390c05c">FeatureRandomSamplerLearner&lt;TElement&gt;::toString</a>()<span class="keyword"> const </span>{
-<a name="l00097"></a>00097   std::stringstream str;
-<a name="l00098"></a>00098   std::fixed(str);
-<a name="l00099"></a>00099   str.precision(2);
-<a name="l00100"></a>00100   str &lt;&lt; <span class="stringliteral">&quot;FeatureRandomSamplerLearner: sampling_fraction = &quot;</span>;
-<a name="l00101"></a>00101   str &lt;&lt; sampling_fraction_ &lt;&lt; <span class="stringliteral">&quot;, seed = &quot;</span> &lt;&lt; seed_;
-<a name="l00102"></a>00102   <span class="keywordflow">return</span> str.str();
-<a name="l00103"></a>00103 }
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00106"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad4c817a9dff194230f636d1f90c993fb">00106</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad4c817a9dff194230f636d1f90c993fb">FeatureRandomSamplerLearner&lt;TElement&gt;::set_seed</a>(<span class="keywordtype">int</span> seed) {
-<a name="l00107"></a>00107   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(seed &gt;= 0);
-<a name="l00108"></a>00108   seed_ = seed;
-<a name="l00109"></a>00109   randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a4095051b4e9702c2524271e6c9147619">setSeed</a>(seed);
-<a name="l00110"></a>00110 }
-<a name="l00111"></a>00111 
-<a name="l00112"></a>00112 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
-<a name="l00113"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a085e91d0865ab38688f13b92c6c30382">00113</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a085e91d0865ab38688f13b92c6c30382" title="Learn input dataset and train feature converter.">FeatureRandomSamplerLearner&lt;TElement&gt;::learnImpl</a>(
-<a name="l00114"></a>00114     <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set, <a class="code" href="classltr_1_1_feature_sampler.html" title="Samples features with specified indices.">FeatureSampler</a>* feature_sampler) {
-<a name="l00115"></a>00115   <span class="keywordtype">int</span> sample_size = (int)ceil(data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>() * sampling_fraction_);
-<a name="l00116"></a>00116   Indices indices;
-<a name="l00117"></a>00117   getRandomIndices(&amp;indices, data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>(), sample_size);
-<a name="l00118"></a>00118   feature_sampler-&gt;<a class="code" href="classltr_1_1_feature_sampler.html#a449a093d38aaf5b7aa1338e93633cd7d">set_indices</a>(indices);
-<a name="l00119"></a>00119 }
-<a name="l00120"></a>00120 
-<a name="l00121"></a>00121 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00122"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#af92606eeb9f89595f00217785fbdaf9b">00122</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#af92606eeb9f89595f00217785fbdaf9b">FeatureRandomSamplerLearner&lt;TElement&gt;::setParametersImpl</a>(
-<a name="l00123"></a>00123     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
-<a name="l00124"></a>00124   sampling_fraction_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;SAMPLING_FRACTION&quot;</span>);
-<a name="l00125"></a>00125   set_seed(parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SEED&quot;</span>));
-<a name="l00126"></a>00126 }
-<a name="l00127"></a>00127 
-<a name="l00128"></a>00128 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
-<a name="l00129"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ae80fdd2058c53b28ab4229b18ce725c0">00129</a> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ae80fdd2058c53b28ab4229b18ce725c0">FeatureRandomSamplerLearner&lt;TElement&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00130"></a>00130   <span class="keywordflow">return</span> <span class="stringliteral">&quot;FeatureRandomSamplerLearner&quot;</span>;
-<a name="l00131"></a>00131 }
-<a name="l00132"></a>00132 };
-<a name="l00133"></a>00133 <span class="preprocessor">#endif  // LTR_FEATURE_CONVERTERS_FEATURE_RANDOM_SAMPLER_LEARNER_H_</span>
+<a name="l00037"></a>00037   <a class="code" href="macros_8h.html#a767014c1d7ea12f6f45b805194f9cd85">ALLOW_SHARED_PTR_ONLY_CREATION</a>(<a class="code" href="classltr_1_1_feature_random_sampler_learner.html" title="Produces FeatureSampler with random indices.">FeatureRandomSamplerLearner</a>)
+<a name="l00038"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a5fe2e2796a8be43176a45dd60fe71d7d">00038</a>   friend class <a class="code" href="classltr_1_1_feature_sampler.html" title="Samples features with specified indices.">FeatureSampler</a>;
+<a name="l00039"></a>00039  public:
+<a name="l00044"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">00044</a>   explicit <a class="code" href="classltr_1_1_feature_random_sampler_learner.html" title="Produces FeatureSampler with random indices.">FeatureRandomSamplerLearner</a>(<span class="keywordtype">double</span> sampling_fraction = 0.3,
+<a name="l00045"></a>00045                                        <span class="keywordtype">int</span> seed = 42)
+<a name="l00046"></a>00046   : <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb">sampling_fraction_</a>(sampling_fraction),
+<a name="l00047"></a>00047     <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5">seed_</a>(seed) {}
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049   <span class="keyword">explicit</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">FeatureRandomSamplerLearner</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters);
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a9e9e62a6ed33235763744e274bf84e68">setDefaultParameters</a>();
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a8e55d9b7d00c9397df5571153020f818">checkParameters</a>() <span class="keyword">const</span>;
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a2cd4017a2db730edb199a6853390c05c">toString</a>() <span class="keyword">const</span>;
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057   <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#adf009b1bd96db20062fddf8c9992b0c4">GET_SET</a>(<span class="keywordtype">double</span>, sampling_fraction);
+<a name="l00058"></a>00058   <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#abcecabf0a9d37cd77d0b195a54275095">GET</a>(<span class="keywordtype">int</span>, seed);
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060   <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad4c817a9dff194230f636d1f90c993fb">set_seed</a>(<span class="keywordtype">int</span> seed);
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062  <span class="keyword">private</span>:
+<a name="l00063"></a>00063   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ac77e7a8fa8af86695711f5a2773d9317" title="Learn input dataset and train feature converter.">learnImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set,
+<a name="l00064"></a>00064                          <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">FeatureSampler::Ptr</a>* feature_sampler);
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#af92606eeb9f89595f00217785fbdaf9b">setParametersImpl</a>(<span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters);
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ae80fdd2058c53b28ab4229b18ce725c0">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00069"></a>00069 
+<a name="l00070"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb">00070</a>   <span class="keywordtype">double</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb">sampling_fraction_</a>;
+<a name="l00071"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5">00071</a>   <span class="keywordtype">int</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a179a1c8d7dba939f181e1c384f9e9ba5">seed_</a>;
+<a name="l00072"></a>00072 };
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="comment">// template realizations</span>
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00077"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#aca30a1fcb65a2e15f9f7fcd941c2ce77">00077</a> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a23c96501b5b879e4c0b271800e3eb0f5">FeatureRandomSamplerLearner&lt;TElement&gt;::FeatureRandomSamplerLearner</a>(
+<a name="l00078"></a>00078     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
+<a name="l00079"></a>00079   this-&gt;setParameters(parameters);
+<a name="l00080"></a>00080 }
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00083"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a9e9e62a6ed33235763744e274bf84e68">00083</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a9e9e62a6ed33235763744e274bf84e68">FeatureRandomSamplerLearner&lt;TElement&gt;::setDefaultParameters</a>() {
+<a name="l00084"></a>00084   sampling_fraction_ = 0.3;
+<a name="l00085"></a>00085   set_seed(42);
+<a name="l00086"></a>00086 }
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00089"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a8e55d9b7d00c9397df5571153020f818">00089</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a8e55d9b7d00c9397df5571153020f818">FeatureRandomSamplerLearner&lt;TElement&gt;::checkParameters</a>()<span class="keyword"> const </span>{
+<a name="l00090"></a>00090   <a class="code" href="macros_8h.html#a7b0a4b3c393708bef4a73475d5c2656c">CHECK</a>(sampling_fraction_ &gt; 0. &amp;&amp; sampling_fraction_ &lt;= 1.);
+<a name="l00091"></a>00091   <a class="code" href="macros_8h.html#a54b4a23953fc7a4f455e4fc47e05c215">CHECK_GE</a>(seed_, 0);
+<a name="l00092"></a>00092 }
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00095"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a2cd4017a2db730edb199a6853390c05c">00095</a> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#a2cd4017a2db730edb199a6853390c05c">FeatureRandomSamplerLearner&lt;TElement&gt;::toString</a>()<span class="keyword"> const </span>{
+<a name="l00096"></a>00096   std::stringstream str;
+<a name="l00097"></a>00097   std::fixed(str);
+<a name="l00098"></a>00098   str.precision(2);
+<a name="l00099"></a>00099   str &lt;&lt; <span class="stringliteral">&quot;FeatureRandomSamplerLearner: sampling_fraction = &quot;</span>;
+<a name="l00100"></a>00100   str &lt;&lt; sampling_fraction_ &lt;&lt; <span class="stringliteral">&quot;, seed = &quot;</span> &lt;&lt; seed_;
+<a name="l00101"></a>00101   <span class="keywordflow">return</span> str.str();
+<a name="l00102"></a>00102 }
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00105"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad4c817a9dff194230f636d1f90c993fb">00105</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ad4c817a9dff194230f636d1f90c993fb">FeatureRandomSamplerLearner&lt;TElement&gt;::set_seed</a>(<span class="keywordtype">int</span> seed) {
+<a name="l00106"></a>00106   <a class="code" href="macros_8h.html#a54b4a23953fc7a4f455e4fc47e05c215">CHECK_GE</a>(seed, 0);
+<a name="l00107"></a>00107   seed_ = seed;
+<a name="l00108"></a>00108   randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a4095051b4e9702c2524271e6c9147619">setSeed</a>(seed);
+<a name="l00109"></a>00109 }
+<a name="l00110"></a>00110 
+<a name="l00111"></a>00111 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElement&gt;
+<a name="l00112"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ac77e7a8fa8af86695711f5a2773d9317">00112</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ac77e7a8fa8af86695711f5a2773d9317" title="Learn input dataset and train feature converter.">FeatureRandomSamplerLearner&lt;TElement&gt;::learnImpl</a>(
+<a name="l00113"></a>00113     <span class="keyword">const</span> <a class="code" href="classltr_1_1_data_set.html" title="Template class that implements DataSet.">DataSet&lt;TElement&gt;</a>&amp; data_set, <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">FeatureSampler::Ptr</a>* feature_sampler) {
+<a name="l00114"></a>00114   <span class="keywordtype">int</span> sample_size = (int)ceil(data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>() * sampling_fraction_);
+<a name="l00115"></a>00115   Indices indices;
+<a name="l00116"></a>00116   getRandomIndices(&amp;indices, data_set.<a class="code" href="classltr_1_1_data_set.html#a4794cca524a7da383c45afbb1cdec2ef">feature_count</a>(), sample_size);
+<a name="l00117"></a>00117   (*feature_sampler)-&gt;set_indices(indices);
+<a name="l00118"></a>00118 }
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00121"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#af92606eeb9f89595f00217785fbdaf9b">00121</a> <span class="keywordtype">void</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#af92606eeb9f89595f00217785fbdaf9b">FeatureRandomSamplerLearner&lt;TElement&gt;::setParametersImpl</a>(
+<a name="l00122"></a>00122     <span class="keyword">const</span> <a class="code" href="classltr_1_1_parameters_container.html" title="This class is a storage for parameters of different types. Is able to store POD-type parameters and u...">ParametersContainer</a>&amp; parameters) {
+<a name="l00123"></a>00123   sampling_fraction_ = parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">double</span>&gt;(<span class="stringliteral">&quot;SAMPLING_FRACTION&quot;</span>);
+<a name="l00124"></a>00124   set_seed(parameters.<a class="code" href="classltr_1_1_parameters_container.html#af139d2fa19cbfa50f304add4991ff7bd">Get</a>&lt;<span class="keywordtype">int</span>&gt;(<span class="stringliteral">&quot;SEED&quot;</span>));
+<a name="l00125"></a>00125 }
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TElement&gt;
+<a name="l00128"></a><a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ae80fdd2058c53b28ab4229b18ce725c0">00128</a> <span class="keywordtype">string</span> <a class="code" href="classltr_1_1_feature_random_sampler_learner.html#ae80fdd2058c53b28ab4229b18ce725c0">FeatureRandomSamplerLearner&lt;TElement&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00129"></a>00129   <span class="keywordflow">return</span> <span class="stringliteral">&quot;FeatureRandomSamplerLearner&quot;</span>;
+<a name="l00130"></a>00130 }
+<a name="l00131"></a>00131 };
+<a name="l00132"></a>00132 <span class="preprocessor">#endif  // LTR_FEATURE_CONVERTERS_FEATURE_RANDOM_SAMPLER_LEARNER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 2 2013 13:23:39 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
