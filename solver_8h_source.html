@@ -107,95 +107,96 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_OPTIMIZATION_SOLVER_SOLVER_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_OPTIMIZATION_SOLVER_SOLVER_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;limits&gt;</span>
-<a name="l00007"></a>00007 
-<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
-<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="function_8h.html">ltr/optimization/functions/function.h</a>&quot;</span>
-<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="set_8h.html">ltr/optimization/sets/set.h</a>&quot;</span>
-<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="population__initer_8h.html">ltr/optimization/population_initers/population_initer.h</a>&quot;</span>
-<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="population__updater_8h.html">ltr/optimization/population_updaters/population_updater.h</a>&quot;</span>
-<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="population_8h.html">ltr/optimization/population_info/population.h</a>&quot;</span>
-<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="stop__criterion_8h.html">ltr/optimization/stop_criteria/stop_criterion.h</a>&quot;</span>
-<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="solution_8h.html">ltr/optimization/solver/solution.h</a>&quot;</span>
-<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="cross__platform__time_8h.html">ltr/utility/cross_platform_time.h</a>&quot;</span>
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018 <span class="keyword">using</span> std::numeric_limits;
-<a name="l00019"></a>00019 <span class="keyword">using</span> ltr::utility::time;
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="keyword">namespace </span>optimization {
-<a name="l00022"></a>00022 
-<a name="l00027"></a>00027 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00028"></a><a class="code" href="classoptimization_1_1_solver.html">00028</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver</a> {
-<a name="l00029"></a>00029   <span class="keyword">public</span>:
-<a name="l00030"></a>00030     <a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">Solver</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> population_initer,
-<a name="l00031"></a>00031            <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> population_updater,
-<a name="l00032"></a>00032            <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion);
-<a name="l00036"></a>00036     <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00037"></a>00037                    <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>,
-<a name="l00038"></a>00038                    <span class="keywordtype">int</span> population_size);
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040   <span class="keyword">private</span>:
-<a name="l00041"></a><a class="code" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">00041</a>     <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">initer_</a>;
-<a name="l00042"></a><a class="code" href="classoptimization_1_1_solver.html#a312516089d4c0c3d4ecc8bb3202bdbcb">00042</a>     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#a312516089d4c0c3d4ecc8bb3202bdbcb">updater_</a>;
-<a name="l00043"></a><a class="code" href="classoptimization_1_1_solver.html#a4e76ece83aa9ff344fe4fcf4665917f1">00043</a>     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#a4e76ece83aa9ff344fe4fcf4665917f1">stop_criterion_</a>;
-<a name="l00044"></a>00044 };
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00047"></a><a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">00047</a> <a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">Solver&lt;TFunction&gt;::Solver</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> population_initer,
-<a name="l00048"></a>00048                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> population_updater,
-<a name="l00049"></a>00049                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion) :
-<a name="l00050"></a>00050     initer_(population_initer),
-<a name="l00051"></a>00051     updater_(population_updater),
-<a name="l00052"></a>00052     stop_criterion_(stop_criterion)
-<a name="l00053"></a>00053       {  }
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00056"></a><a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">00056</a> <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">Solver&lt;TFunction&gt;::solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00057"></a>00057                                   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>,
-<a name="l00058"></a>00058                                   <span class="keywordtype">int</span> population_size) {
-<a name="l00059"></a>00059   <a class="code" href="classoptimization_1_1_population.html#a6128263117480ac57d80fe39668d63ca">Population::Ptr</a> population = <span class="keyword">new</span> <a class="code" href="gp__scorer__unittest_8cc.html#aa35de4547f062f398ff600ba8fd6b109">Population</a>;
-<a name="l00060"></a>00060   initer_-&gt;populationInit(population_size, *<span class="keyword">set</span>, population.get());
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062   stop_criterion_-&gt;init(population.get());
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064   updater_-&gt;init(population.get(), <span class="keyword">function</span>, <span class="keyword">set</span>);
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066   <span class="keywordtype">int</span> iteration_count = 0;
-<a name="l00067"></a>00067   <span class="keywordtype">int</span> start_time = time();
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069   <span class="keywordflow">while</span> (!stop_criterion_-&gt;isTrue()) {
-<a name="l00070"></a>00070     ++iteration_count;
-<a name="l00071"></a>00071     updater_-&gt;update(population.get());
-<a name="l00072"></a>00072     stop_criterion_-&gt;update(*(population.get()));
-<a name="l00073"></a>00073   }
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075   <span class="keywordtype">int</span> end_time = time();
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077   <span class="keywordtype">double</span> min_value = numeric_limits&lt;double&gt;::max();
-<a name="l00078"></a>00078   Point argmin = Point::Zero(<a class="code" href="classset.html">set</a>-&gt;dimension());
-<a name="l00079"></a>00079 
-<a name="l00080"></a>00080   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;begin();
-<a name="l00081"></a>00081        it != population-&gt;end();
-<a name="l00082"></a>00082        ++it) {
-<a name="l00083"></a>00083     <span class="keywordtype">double</span> cur_value = <span class="keyword">function</span>-&gt;computeValue(it.point());
-<a name="l00084"></a>00084     <span class="keywordflow">if</span> (cur_value &lt; min_value) {
-<a name="l00085"></a>00085       min_value = cur_value;
-<a name="l00086"></a>00086       argmin = it.point();
-<a name="l00087"></a>00087     }
-<a name="l00088"></a>00088   }
-<a name="l00089"></a>00089 
-<a name="l00090"></a>00090   <span class="keywordflow">return</span> <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a>(min_value, argmin, iteration_count,
-<a name="l00091"></a>00091                   (<span class="keywordtype">long</span> <span class="keywordtype">long</span>)(end_time - start_time) * 1000 / CLOCKS_PER_SEC); <span class="comment">// NOLINT</span>
-<a name="l00092"></a>00092 }
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;ctime&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;limits&gt;</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="function_8h.html">ltr/optimization/functions/function.h</a>&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="set_8h.html">ltr/optimization/sets/set.h</a>&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="population__initer_8h.html">ltr/optimization/population_initers/population_initer.h</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="preprocessor">#include &quot;<a class="code" href="population__updater_8h.html">ltr/optimization/population_updaters/population_updater.h</a>&quot;</span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &quot;<a class="code" href="population_8h.html">ltr/optimization/population_info/population.h</a>&quot;</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &quot;<a class="code" href="stop__criterion_8h.html">ltr/optimization/stop_criteria/stop_criterion.h</a>&quot;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &quot;<a class="code" href="solution_8h.html">ltr/optimization/solver/solution.h</a>&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;<a class="code" href="cross__platform__time_8h.html">ltr/utility/cross_platform_time.h</a>&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">using</span> std::numeric_limits;
+<a name="l00020"></a>00020 <span class="keyword">using</span> ltr::utility::time;
+<a name="l00021"></a>00021 
+<a name="l00022"></a>00022 <span class="keyword">namespace </span>optimization {
+<a name="l00023"></a>00023 
+<a name="l00028"></a>00028 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00029"></a><a class="code" href="classoptimization_1_1_solver.html">00029</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver</a> {
+<a name="l00030"></a>00030   <span class="keyword">public</span>:
+<a name="l00031"></a>00031     <a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">Solver</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> population_initer,
+<a name="l00032"></a>00032            <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> population_updater,
+<a name="l00033"></a>00033            <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion);
+<a name="l00037"></a>00037     <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00038"></a>00038                    <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>,
+<a name="l00039"></a>00039                    <span class="keywordtype">int</span> population_size);
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041   <span class="keyword">private</span>:
+<a name="l00042"></a><a class="code" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">00042</a>     <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">initer_</a>;
+<a name="l00043"></a><a class="code" href="classoptimization_1_1_solver.html#a312516089d4c0c3d4ecc8bb3202bdbcb">00043</a>     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#a312516089d4c0c3d4ecc8bb3202bdbcb">updater_</a>;
+<a name="l00044"></a><a class="code" href="classoptimization_1_1_solver.html#a4e76ece83aa9ff344fe4fcf4665917f1">00044</a>     <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#a4e76ece83aa9ff344fe4fcf4665917f1">stop_criterion_</a>;
+<a name="l00045"></a>00045 };
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00048"></a><a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">00048</a> <a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">Solver&lt;TFunction&gt;::Solver</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> population_initer,
+<a name="l00049"></a>00049                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> population_updater,
+<a name="l00050"></a>00050                <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion) :
+<a name="l00051"></a>00051     initer_(population_initer),
+<a name="l00052"></a>00052     updater_(population_updater),
+<a name="l00053"></a>00053     stop_criterion_(stop_criterion)
+<a name="l00054"></a>00054       {  }
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00057"></a><a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">00057</a> <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">Solver&lt;TFunction&gt;::solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00058"></a>00058                                   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>,
+<a name="l00059"></a>00059                                   <span class="keywordtype">int</span> population_size) {
+<a name="l00060"></a>00060   <a class="code" href="classoptimization_1_1_population.html#a6128263117480ac57d80fe39668d63ca">Population::Ptr</a> population = <span class="keyword">new</span> <a class="code" href="gp__scorer__unittest_8cc.html#aa35de4547f062f398ff600ba8fd6b109">Population</a>;
+<a name="l00061"></a>00061   initer_-&gt;populationInit(population_size, *<span class="keyword">set</span>, population.get());
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063   stop_criterion_-&gt;init(population.get());
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065   updater_-&gt;init(population.get(), <span class="keyword">function</span>, <span class="keyword">set</span>);
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067   <span class="keywordtype">int</span> iteration_count = 0;
+<a name="l00068"></a>00068   <span class="keywordtype">int</span> start_time = time();
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070   <span class="keywordflow">while</span> (!stop_criterion_-&gt;isTrue()) {
+<a name="l00071"></a>00071     ++iteration_count;
+<a name="l00072"></a>00072     updater_-&gt;update(population.get());
+<a name="l00073"></a>00073     stop_criterion_-&gt;update(*(population.get()));
+<a name="l00074"></a>00074   }
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076   <span class="keywordtype">int</span> end_time = time();
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078   <span class="keywordtype">double</span> min_value = numeric_limits&lt;double&gt;::max();
+<a name="l00079"></a>00079   Point argmin = Point::Zero(<a class="code" href="classset.html">set</a>-&gt;dimension());
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;begin();
+<a name="l00082"></a>00082        it != population-&gt;end();
+<a name="l00083"></a>00083        ++it) {
+<a name="l00084"></a>00084     <span class="keywordtype">double</span> cur_value = <span class="keyword">function</span>-&gt;computeValue(it.point());
+<a name="l00085"></a>00085     <span class="keywordflow">if</span> (cur_value &lt; min_value) {
+<a name="l00086"></a>00086       min_value = cur_value;
+<a name="l00087"></a>00087       argmin = it.point();
+<a name="l00088"></a>00088     }
+<a name="l00089"></a>00089   }
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091   <span class="keywordflow">return</span> <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a>(min_value, argmin, iteration_count,
+<a name="l00092"></a>00092                   (<span class="keywordtype">long</span> <span class="keywordtype">long</span>)(end_time - start_time) * 1000 / CLOCKS_PER_SEC); <span class="comment">// NOLINT</span>
 <a name="l00093"></a>00093 }
-<a name="l00094"></a>00094 
-<a name="l00095"></a>00095 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVER_SOLVER_H_</span>
-<a name="l00096"></a>00096 <span class="preprocessor"></span>
+<a name="l00094"></a>00094 }
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVER_SOLVER_H_</span>
+<a name="l00097"></a>00097 <span class="preprocessor"></span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 9 2013 16:01:36 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 9 2013 17:18:30 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
