@@ -1,9 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="333,80,677,107"/>
-<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="992,155,1315,181"/>
-<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="701,80,1048,107"/>
-<area shape="rect" href="$and__or__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/and_or_stop_criteria.hpp" alt="" coords="1123,80,1451,107"/>
-<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="5,155,352,181"/>
-<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="376,155,696,181"/>
-<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="720,155,968,181"/>
+<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="553,80,897,107"/>
+<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="1319,155,1641,181"/>
+<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="921,80,1268,107"/>
+<area shape="rect" href="$and__or__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/and_or_stop_criteria.hpp" alt="" coords="1343,80,1671,107"/>
+<area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="948,155,1295,181"/>
+<area shape="rect" href="$artificial__bee__colony_8h.html" title="ltr/optimization/solver/artificial_bee_colony.h" alt="" coords="33,155,308,181"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="332,155,652,181"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="676,155,924,181"/>
+<area shape="rect" href="$artificial__bee__colony__unittest_8cc.html" title="ltr/optimization/solver/artificial_bee_colony_unittest.cc" alt="" coords="5,229,336,256"/>
 </map>

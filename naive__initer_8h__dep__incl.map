@@ -1,6 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" href="$naive__initer_8cc.html" title="ltr/optimization/population_initers/naive_initer.cc" alt="" coords="5,80,301,107"/>
 <area shape="rect" href="$population__initers__unittest_8cc.html" title="ltr/optimization/population_initers/population_initers_unittest.cc" alt="" coords="325,80,709,107"/>
-<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="733,80,1053,107"/>
-<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="1077,80,1325,107"/>
+<area shape="rect" href="$artificial__bee__colony_8h.html" title="ltr/optimization/solver/artificial_bee_colony.h" alt="" coords="733,80,1008,107"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="1032,80,1352,107"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="1376,80,1624,107"/>
+<area shape="rect" href="$artificial__bee__colony__unittest_8cc.html" title="ltr/optimization/solver/artificial_bee_colony_unittest.cc" alt="" coords="705,155,1036,181"/>
 </map>

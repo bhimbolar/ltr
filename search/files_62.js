@@ -12,6 +12,7 @@ var searchData=
   ['bayesian_5fscorer_2ecc',['bayesian_scorer.cc',['../bayesian__scorer_8cc.html',1,'']]],
   ['bayesian_5fscorer_2eh',['bayesian_scorer.h',['../bayesian__scorer_8h.html',1,'']]],
   ['bayesian_5fscorer_5funittest_2ecc',['bayesian_scorer_unittest.cc',['../bayesian__scorer__unittest_8cc.html',1,'']]],
+  ['bee_5fcolony_5fupdater_2eh',['bee_colony_updater.h',['../bee__colony__updater_8h.html',1,'']]],
   ['best_5ffeature_5flearner_2eh',['best_feature_learner.h',['../best__feature__learner_8h.html',1,'']]],
   ['binary_5fclassification_5faccuracy_2eh',['binary_classification_accuracy.h',['../binary__classification__accuracy_8h.html',1,'']]],
   ['binary_5fclassification_5fmargin_2eh',['binary_classification_margin.h',['../binary__classification__margin_8h.html',1,'']]]

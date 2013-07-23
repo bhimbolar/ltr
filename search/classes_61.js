@@ -17,6 +17,7 @@ var searchData=
   ['anycaster_3c_20vector_3c_20resulttype_20_3e_2c_20any_20_3e',['AnyCaster< vector< ResultType >, Any >',['../classltr_1_1utility_1_1_any_caster_3_01vector_3_01_result_type_01_4_00_01_any_01_4.html',1,'ltr::utility']]],
   ['anycaster_3c_20vector_3c_20resulttype_20_3e_2c_20vector_3c_20sourcetype_20_3e_20_3e',['AnyCaster< vector< ResultType >, vector< SourceType > >',['../classltr_1_1utility_1_1_any_caster_3_01vector_3_01_result_type_01_4_00_01vector_3_01_source_type_01_4_01_4.html',1,'ltr::utility']]],
   ['arffparser',['ARFFParser',['../classltr_1_1io__utility_1_1_a_r_f_f_parser.html',1,'ltr::io_utility']]],
+  ['artificialbeecolony',['ArtificialBeeColony',['../classoptimization_1_1_artificial_bee_colony.html',1,'optimization']]],
   ['auc',['AUC',['../classltr_1_1_a_u_c.html',1,'ltr']]],
   ['averagecompositionscorerweightsupdater',['AverageCompositionScorerWeightsUpdater',['../classltr_1_1composition_1_1_average_composition_scorer_weights_updater.html',1,'ltr::composition']]],
   ['averageprecision',['AveragePrecision',['../classltr_1_1_average_precision.html',1,'ltr']]],

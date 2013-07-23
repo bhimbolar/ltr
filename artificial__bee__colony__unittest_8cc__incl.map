@@ -1,0 +1,35 @@
+<map id="G" name="G">
+<area shape="rect" href="$artificial__bee__colony_8h.html" title="ltr/optimization/solver/artificial_bee_colony.h" alt="" coords="2233,80,2508,107"/>
+<area shape="rect" href="$solution_8h.html" title="ltr/optimization/solver/solution.h" alt="" coords="3039,229,3241,256"/>
+<area shape="rect" href="$bee__colony__updater_8h.html" title="ltr/optimization/population_updaters/bee_colony_updater.h" alt="" coords="623,155,980,181"/>
+<area shape="rect" href="$unconstrained__functions_8h.html" title="ltr/optimization/test_problems/unconstrained_functions.h" alt="" coords="3431,229,3777,256"/>
+<area shape="rect" href="$ball__set_8h.html" title="ltr/optimization/sets/ball_set.h" alt="" coords="3265,304,3460,331"/>
+<area shape="rect" href="$solver_8h.html" title="ltr/optimization/solver/solver.h" alt="" coords="2275,155,2467,181"/>
+<area shape="rect" href="$naive__initer_8h.html" title="ltr/optimization/population_initers/naive_initer.h" alt="" coords="2724,229,3015,256"/>
+<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="2897,304,3241,331"/>
+<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="1236,155,1583,181"/>
+<area shape="rect" href="$macros_8h.html" title="ltr/utility/macros.h" alt="" coords="1807,453,1932,480"/>
+<area shape="rect" href="$function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="2335,453,2556,480"/>
+<area shape="rect" href="$set_8h.html" title="ltr/optimization/sets/set.h" alt="" coords="2553,379,2721,405"/>
+<area shape="rect" href="$population__initer_8h.html" title="ltr/optimization/population_initers/population_initer.h" alt="" coords="2300,304,2620,331"/>
+<area shape="rect" href="$population_8h.html" title="ltr/optimization/population_info/population.h" alt="" coords="1089,379,1359,405"/>
+<area shape="rect" href="$population__updater_8h.html" title="ltr/optimization/population_updaters/population_updater.h" alt="" coords="1640,229,1989,256"/>
+<area shape="rect" href="$stop__criterion_8h.html" title="ltr/optimization/stop_criteria/stop_criterion.h" alt="" coords="701,304,976,331"/>
+<area shape="rect" href="$cross__platform__time_8h.html" title="ltr/utility/cross_platform_time.h" alt="" coords="2271,229,2471,256"/>
+<area shape="rect" href="$shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="2133,528,2312,555"/>
+<area shape="rect" href="$_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="1673,603,1940,629"/>
+<area shape="rect" href="$_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="1812,677,1975,704"/>
+<area shape="rect" href="$_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="1999,677,2111,704"/>
+<area shape="rect" href="$_ptr_8h.html" title="Ptr.h" alt="" coords="1053,677,1101,704"/>
+<area shape="rect" href="$_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="1540,677,1631,704"/>
+<area shape="rect" href="$_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="1655,677,1788,704"/>
+<area shape="rect" href="$_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="1759,752,1897,779"/>
+<area shape="rect" href="$aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="1457,528,1601,555"/>
+<area shape="rect" href="$population__info_8hpp.html" title="ltr/optimization/population_info/population_info.hpp" alt="" coords="1253,304,1565,331"/>
+<area shape="rect" href="$random__number__generator_8h.html" title="ltr/utility/random_number_generator.h" alt="" coords="173,229,408,256"/>
+<area shape="rect" href="$numerical_8h.html" title="ltr/utility/numerical.h" alt="" coords="2897,379,3036,405"/>
+<area shape="rect" href="$one__point__stop__criterion_8h.html" title="ltr/optimization/stop_criteria/one_point_stop_criterion.h" alt="" coords="1737,379,2073,405"/>
+<area shape="rect" href="$vote__aggregator_8h.html" title="ltr/optimization/stop_criteria/vote_aggregator.h" alt="" coords="727,379,1015,405"/>
+<area shape="rect" href="$twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="3484,304,3823,331"/>
+<area shape="rect" href="$differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="3111,379,3412,405"/>
+</map>

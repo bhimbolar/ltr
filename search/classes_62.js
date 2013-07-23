@@ -36,6 +36,7 @@ var searchData=
   ['bayesianlearner_3c_20telement_2c_20normalnaivebayesdensitylearner_3c_20telement_20_3e_20_3e',['BayesianLearner< TElement, NormalNaiveBayesDensityLearner< TElement > >',['../classltr_1_1_bayesian_learner.html',1,'ltr']]],
   ['bayesianlearner_3c_20telement_2c_20quadraticdiscriminantdensitylearner_3c_20telement_20_3e_20_3e',['BayesianLearner< TElement, QuadraticDiscriminantDensityLearner< TElement > >',['../classltr_1_1_bayesian_learner.html',1,'ltr']]],
   ['bayesianscorer',['BayesianScorer',['../classltr_1_1_bayesian_scorer.html',1,'ltr']]],
+  ['beecolonyupdater',['BeeColonyUpdater',['../classoptimization_1_1_bee_colony_updater.html',1,'optimization']]],
   ['bestfeaturelearner',['BestFeatureLearner',['../classltr_1_1_best_feature_learner.html',1,'ltr']]],
   ['binaryclassificationaccuracy',['BinaryClassificationAccuracy',['../classltr_1_1_binary_classification_accuracy.html',1,'ltr']]],
   ['binaryclassificationmargin',['BinaryClassificationMargin',['../classltr_1_1_binary_classification_margin.html',1,'ltr']]],
