@@ -1,7 +1,7 @@
 var searchData=
 [
   ['safe_5fdivision_5feps',['SAFE_DIVISION_EPS',['../classltr_1_1gp_1_1_divide.html#a9f5fcc0de3e8a77c3309e3714f102720',1,'ltr::gp::Divide']]],
-  ['sample_5finfo_5f',['sample_info_',['../classoptimization_1_1_population_info.html#adec58a2381760a9232c56deb98d67560',1,'optimization::PopulationInfo']]],
+  ['sample_5finfo_5f',['sample_info_',['../classoptimization_1_1_population_info.html#adec58a2381760a9232c56deb98d67560',1,'optimization::PopulationInfo::sample_info_()'],['../classoptimization_1_1_no_init_population_info.html#a04bfec6bb2a56cbd3380d9239141af5b',1,'optimization::NoInitPopulationInfo::sample_info_()']]],
   ['sampling_5ffraction_5f',['sampling_fraction_',['../classltr_1_1_data_random_sampler.html#ac8d0130d365e2199cfca49cdcf236f01',1,'ltr::DataRandomSampler::sampling_fraction_()'],['../classltr_1_1_feature_random_sampler_learner.html#ad3336c60e0b4b63a10af59af9d39ddfb',1,'ltr::FeatureRandomSamplerLearner::sampling_fraction_()']]],
   ['score_5ffor_5frelevant_5f',['score_for_relevant_',['../classltr_1_1_average_precision.html#a4cf18194ab55221c71018d0820f96850',1,'ltr::AveragePrecision::score_for_relevant_()'],['../classltr_1_1_reciprocal_rank.html#a9302798aa17ea6b39aded265df6d1d0f',1,'ltr::ReciprocalRank::score_for_relevant_()']]],
   ['score_5fvalue_5f',['score_value_',['../classltr_1_1_fake_scorer.html#a4d4d2c00b2def340f27db4ed30ece0f8',1,'ltr::FakeScorer']]],

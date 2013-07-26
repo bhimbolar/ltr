@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc." alt="" coords="5,80,237,107"/>
+<area shape="rect" href="$classoptimization_1_1_no_init_population_info.html" title="Class for store no need init information about population, for example speed, optimum point..." alt="" coords="5,80,269,107"/>
+<area shape="rect" href="$classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc." alt="" coords="293,80,525,107"/>
 </map>

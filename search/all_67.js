@@ -48,7 +48,7 @@ var searchData=
   ['getholdingdatasize',['getHoldingDataSize',['../classltr_1_1utility_1_1_label_statistic_computer.html#aeb8a37f2cf6813e2948cbd6dc0841f45',1,'ltr::utility::LabelStatisticComputer']]],
   ['getid',['getId',['../classltr_1_1_serializable.html#a29d6f52ea16a24699a475580731697b6',1,'ltr::Serializable']]],
   ['getindex',['getIndex',['../classltr_1_1_one_feature_scorer.html#a8db03385e357644cab6096185a95fc2a',1,'ltr::OneFeatureScorer']]],
-  ['getinfobyid',['getInfoById',['../classoptimization_1_1_population_info.html#aca8eb91a937a3790d48000d75b9fa777',1,'optimization::PopulationInfo']]],
+  ['getinfobyid',['getInfoById',['../classoptimization_1_1_population_info.html#aca8eb91a937a3790d48000d75b9fa777',1,'optimization::PopulationInfo::getInfoById()'],['../classoptimization_1_1_no_init_population_info.html#ab49d5665107affcd4389cf23f6e5d901',1,'optimization::NoInitPopulationInfo::getInfoById()']]],
   ['getinstance',['getInstance',['../classltr_1_1utility_1_1_lexical_cast_config.html#a996058409ebfc112c43e2e9b799f120c',1,'ltr::utility::LexicalCastConfig']]],
   ['getlabelscount',['getLabelsCount',['../classltr_1_1utility_1_1_label_statistic_computer.html#a09cf8930e321e6556589a0cb52ba0e6c',1,'ltr::utility::LabelStatisticComputer']]],
   ['getlabelsizebyid',['getLabelSizeById',['../classltr_1_1utility_1_1_label_statistic_computer.html#ad5f70ab8fa5d6f892b4ca1961496c88c',1,'ltr::utility::LabelStatisticComputer']]],

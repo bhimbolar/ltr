@@ -33,6 +33,7 @@ var searchData=
   ['shared_5fptr_3c_20scorer_20_3e',['shared_ptr< Scorer >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20set_20_3e',['shared_ptr< Set >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20telement_20_3e',['shared_ptr< TElement >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
+  ['shared_5fptr_3c_20tinfo_20_3e',['shared_ptr< TInfo >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20vector_3c_20object_20_3e_20_3e',['shared_ptr< vector< Object > >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20voteaggregator_20_3e',['shared_ptr< VoteAggregator >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['sizeoverindex',['SizeOverIndex',['../struct_size_over_index.html',1,'']]],

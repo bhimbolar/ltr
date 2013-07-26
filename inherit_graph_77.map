@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_base_population_info.html" title="optimization::BasePopulationInfo" alt="" coords="5,5,216,32"/>
-<area shape="rect" href="$classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc." alt="" coords="264,5,496,32"/>
+<area shape="rect" href="$classoptimization_1_1_base_population_info.html" title="optimization::BasePopulationInfo" alt="" coords="5,31,216,57"/>
+<area shape="rect" href="$classoptimization_1_1_no_init_population_info.html" title="Class for store no need init information about population, for example speed, optimum point..." alt="" coords="264,5,528,32"/>
+<area shape="rect" href="$classoptimization_1_1_population_info.html" title="Abstract class for store info about population, for example StopCriteria, Updaters, etc." alt="" coords="280,56,512,83"/>
 </map>
