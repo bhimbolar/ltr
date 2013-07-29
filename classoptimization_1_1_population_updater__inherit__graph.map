@@ -1,5 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_bee_colony_updater.html" title="Class for update points from population in the artificial bee colony algorithm." alt="" coords="469,5,757,32"/>
-<area shape="rect" href="$classoptimization_1_1_per_point_updater.html" title="Class for update population via updating all points in population independently." alt="" coords="476,56,751,83"/>
-<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,31,85,57"/>
+<area shape="rect" href="$classoptimization_1_1_bee_colony_updater.html" title="Class for update points from population in the artificial bee colony algorithm." alt="" coords="480,5,768,32"/>
+<area shape="rect" href="$classoptimization_1_1_particle_swarm_updater.html" title="Class for update points from population in the particle swarm optimization algorithm." alt="" coords="469,56,779,83"/>
+<area shape="rect" href="$classoptimization_1_1_per_point_updater.html" title="Class for update population via updating all points in population independently." alt="" coords="487,107,761,133"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,56,85,83"/>
 </map>

@@ -7,5 +7,6 @@ var searchData=
   ['value_5f1_5f',['value_1_',['../classltr_1_1utility_1_1triple.html#a604c372c37788de56c633f9614bdaaea',1,'ltr::utility::triple']]],
   ['value_5f2_5f',['value_2_',['../classltr_1_1utility_1_1triple.html#a32b0878c0f3552aeef8d4a68bbbbe58e',1,'ltr::utility::triple']]],
   ['values_5f',['values_',['../structltr_1_1_one_feature_info.html#af24fced631107e4274495b84f471f4cb',1,'ltr::OneFeatureInfo']]],
+  ['velocity_5f',['velocity_',['../classoptimization_1_1_particle_swarm_updater.html#a6efcd076ca2aec756f44674189ca55b3',1,'optimization::ParticleSwarmUpdater']]],
   ['vertex',['vertex',['../structltr_1_1decision__tree_1_1_vertex_with_data.html#aeafd1347567f801ae768c5afd25bd426',1,'ltr::decision_tree::VertexWithData']]]
 ];

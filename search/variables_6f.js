@@ -15,5 +15,6 @@ var searchData=
   ['olist2',['olist2',['../class_listwise_measures_test.html#ac9dd429d5cbaa8f9c8fbe3139f8a1319',1,'ListwiseMeasuresTest']]],
   ['one_5fpoint_5fstop_5fcriterion_5fsample_5f',['one_point_stop_criterion_sample_',['../classoptimization_1_1_per_point_stop_criterion.html#a6121f6cb804563ddecb5bf1dd3a1fb64',1,'optimization::PerPointStopCriterion']]],
   ['one_5fpoint_5fupdater_5fsample_5f',['one_point_updater_sample_',['../classoptimization_1_1_per_point_updater.html#a2143c9f6d2f406ea1580b1bfb625baeb',1,'optimization::PerPointUpdater']]],
-  ['one_5fpoint_5fupdaters_5finfo_5f',['one_point_updaters_info_',['../classoptimization_1_1_per_point_updater.html#a823f13719aa0326f2a3c95a496f7b254',1,'optimization::PerPointUpdater']]]
+  ['one_5fpoint_5fupdaters_5finfo_5f',['one_point_updaters_info_',['../classoptimization_1_1_per_point_updater.html#a823f13719aa0326f2a3c95a496f7b254',1,'optimization::PerPointUpdater']]],
+  ['optimum_5fpoint_5f',['optimum_point_',['../classoptimization_1_1_particle_swarm_updater.html#a950972b08835d2fa0064dbf93f9b3edd',1,'optimization::ParticleSwarmUpdater']]]
 ];

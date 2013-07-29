@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_artificial_bee_colony.html" title="A class which solves an optimization task given a function using artificial bee colony algorithm..." alt="" coords="5,80,293,107"/>
+<area shape="rect" href="$classoptimization_1_1_artificial_bee_colony.html" title="A class which solves an optimization task given a function using artificial bee colony algorithm..." alt="" coords="295,5,583,32"/>
+<area shape="rect" href="$classoptimization_1_1_particle_swarm_optimization.html" title="A class which solves an optimization task given a function using particle swarm optimization algorith..." alt="" coords="271,56,607,83"/>
 </map>

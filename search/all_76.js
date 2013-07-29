@@ -13,6 +13,7 @@ var searchData=
   ['vectorized_2eh',['vectorized.h',['../vectorized_8h.html',1,'']]],
   ['vectorized_3c_20char_20_3e',['Vectorized< char >',['../classltr_1_1_vectorized.html',1,'ltr']]],
   ['vectorized_5funittest_2ecc',['vectorized_unittest.cc',['../vectorized__unittest_8cc.html',1,'']]],
+  ['velocity_5f',['velocity_',['../classoptimization_1_1_particle_swarm_updater.html#a6efcd076ca2aec756f44674189ca55b3',1,'optimization::ParticleSwarmUpdater']]],
   ['vertex',['Vertex',['../classltr_1_1decision__tree_1_1_vertex.html',1,'ltr::decision_tree']]],
   ['vertex',['vertex',['../structltr_1_1decision__tree_1_1_vertex_with_data.html#aeafd1347567f801ae768c5afd25bd426',1,'ltr::decision_tree::VertexWithData']]],
   ['vertex_2ecc',['vertex.cc',['../vertex_8cc.html',1,'']]],
@@ -24,8 +25,8 @@ var searchData=
   ['vote_5faggregator_2eh',['vote_aggregator.h',['../vote__aggregator_8h.html',1,'']]],
   ['vote_5fpredictions_5faggregator_2ecc',['vote_predictions_aggregator.cc',['../vote__predictions__aggregator_8cc.html',1,'']]],
   ['vote_5fpredictions_5faggregator_2eh',['vote_predictions_aggregator.h',['../vote__predictions__aggregator_8h.html',1,'']]],
-  ['voteaggregator',['VoteAggregator',['../classoptimization_1_1_vote_aggregator.html',1,'optimization']]],
   ['voteaggregator',['VoteAggregator',['../classoptimization_1_1_vote_aggregator.html#a8c2a78ed54a60f1d5bfce6ddc0ced557',1,'optimization::VoteAggregator']]],
+  ['voteaggregator',['VoteAggregator',['../classoptimization_1_1_vote_aggregator.html',1,'optimization']]],
   ['votepredictionsaggregator',['VotePredictionsAggregator',['../classltr_1_1_vote_predictions_aggregator.html',1,'ltr']]],
   ['votepredictionsaggregator',['VotePredictionsAggregator',['../classltr_1_1_vote_predictions_aggregator.html#a17fc56b4dfe9d0ff3071cee0763c10bf',1,'ltr::VotePredictionsAggregator::VotePredictionsAggregator()'],['../classltr_1_1_vote_predictions_aggregator.html#ad98fa6d15a1d45df54ebac0e8948008d',1,'ltr::VotePredictionsAggregator::VotePredictionsAggregator(const ParametersContainer &amp;parameters)']]]
 ];

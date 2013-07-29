@@ -52,6 +52,7 @@ var searchData=
   ['_7eor',['~Or',['../classoptimization_1_1_or.html#a0efc4c49a5b077465fd3c15d4ab4f976',1,'optimization::Or']]],
   ['_7eparameterized',['~Parameterized',['../classltr_1_1_parameterized.html#a6d79b2b7bc3b0fc544e240ea94b45d19',1,'ltr::Parameterized']]],
   ['_7eparser',['~Parser',['../classltr_1_1io__utility_1_1_parser.html#a90753fdde024b2eec1ad5a6c7a16f22f',1,'ltr::io_utility::Parser']]],
+  ['_7eparticleswarmoptimization',['~ParticleSwarmOptimization',['../classoptimization_1_1_particle_swarm_optimization.html#abce0fdd22e91fc0e78747e193a1cf345',1,'optimization::ParticleSwarmOptimization']]],
   ['_7eperpointstopcriterion',['~PerPointStopCriterion',['../classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96',1,'optimization::PerPointStopCriterion']]],
   ['_7eperpointupdater',['~PerPointUpdater',['../classoptimization_1_1_per_point_updater.html#a9f23fdd6f6d8a072e4fad0426f7c036f',1,'optimization::PerPointUpdater']]],
   ['_7eplaceholder',['~PlaceHolder',['../classltr_1_1utility_1_1_any_1_1_place_holder.html#a2fdf4a0844c6b34a8b39732a5ec1a98d',1,'ltr::utility::Any::PlaceHolder']]],

@@ -1,11 +1,13 @@
 <map id="G" name="G">
 <area shape="rect" href="$updaters__unittest_8cc.html" title="ltr/optimization/population_updaters/updaters_unittest.cc" alt="" coords="24,155,371,181"/>
-<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="675,80,1021,107"/>
-<area shape="rect" href="$artificial__bee__colony__unittest_8cc.html" title="ltr/optimization/solver/artificial_bee_colony_unittest.cc" alt="" coords="265,229,596,256"/>
+<area shape="rect" href="$per__point__stop__criterion_8hpp.html" title="ltr/optimization/stop_criteria/per_point_stop_criterion.hpp" alt="" coords="1025,80,1372,107"/>
+<area shape="rect" href="$artificial__bee__colony__unittest_8cc.html" title="ltr/optimization/solver/artificial_bee_colony_unittest.cc" alt="" coords="475,229,805,256"/>
+<area shape="rect" href="$particle__swarm__optimization__unittest_8cc.html" title="ltr/optimization/solver/particle_swarm_optimization_unittest.cc" alt="" coords="1245,229,1624,256"/>
 <area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="395,155,715,181"/>
-<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="1037,155,1285,181"/>
-<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="1309,155,1632,181"/>
-<area shape="rect" href="$test__problems__unittest_8cc.html" title="ltr/optimization/test_problems/test_problems_unittest.cc" alt="" coords="1147,80,1493,107"/>
-<area shape="rect" href="$unconstrained__functions_8cc.html" title="ltr/optimization/test_problems/unconstrained_functions.cc" alt="" coords="1517,80,1872,107"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="1384,155,1632,181"/>
+<area shape="rect" href="$stop__criteria__unittest_8cc.html" title="ltr/optimization/stop_criteria/stop_criteria_unittest.cc" alt="" coords="1656,155,1979,181"/>
+<area shape="rect" href="$test__problems__unittest_8cc.html" title="ltr/optimization/test_problems/test_problems_unittest.cc" alt="" coords="2053,80,2400,107"/>
+<area shape="rect" href="$unconstrained__functions_8cc.html" title="ltr/optimization/test_problems/unconstrained_functions.cc" alt="" coords="2424,80,2779,107"/>
 <area shape="rect" href="$artificial__bee__colony_8h.html" title="ltr/optimization/solver/artificial_bee_colony.h" alt="" coords="739,155,1013,181"/>
+<area shape="rect" href="$particle__swarm__optimization_8h.html" title="ltr/optimization/solver/particle_swarm_optimization.h" alt="" coords="1037,155,1360,181"/>
 </map>

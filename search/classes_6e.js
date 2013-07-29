@@ -9,6 +9,7 @@ var searchData=
   ['nnlearner',['NNLearner',['../classltr_1_1_n_n_learner.html',1,'ltr']]],
   ['nnscorer',['NNScorer',['../classltr_1_1_n_n_scorer.html',1,'ltr']]],
   ['noinitpopulationinfo',['NoInitPopulationInfo',['../classoptimization_1_1_no_init_population_info.html',1,'optimization']]],
+  ['noinitpopulationinfo_3c_20point_20_3e',['NoInitPopulationInfo< Point >',['../classoptimization_1_1_no_init_population_info.html',1,'optimization']]],
   ['nominaltoboolconverter',['NominalToBoolConverter',['../classltr_1_1_nominal_to_bool_converter.html',1,'ltr']]],
   ['nominaltoboolconverterlearner',['NominalToBoolConverterLearner',['../classltr_1_1_nominal_to_bool_converter_learner.html',1,'ltr']]],
   ['nonlineardiscriminant',['NonLinearDiscriminant',['../classltr_1_1_non_linear_discriminant.html',1,'ltr']]],
