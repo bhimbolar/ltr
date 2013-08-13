@@ -18,5 +18,6 @@ var searchData=
   ['creator',['Creator',['../class_factory_1_1_creator.html',1,'Factory']]],
   ['crossoveradjacenttreesstrategy',['CrossoverAdjacentTreesStrategy',['../classltr_1_1gp_1_1_crossover_adjacent_trees_strategy.html',1,'ltr::gp']]],
   ['crossvalidationlaunchinfo',['CrossvalidationLaunchInfo',['../struct_crossvalidation_launch_info.html',1,'']]],
-  ['crossvalidator',['CrossValidator',['../classltr_1_1cv_1_1_cross_validator.html',1,'ltr::cv']]]
+  ['crossvalidator',['CrossValidator',['../classltr_1_1cv_1_1_cross_validator.html',1,'ltr::cv']]],
+  ['cubeset',['CubeSet',['../classoptimization_1_1_cube_set.html',1,'optimization']]]
 ];

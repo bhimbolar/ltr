@@ -18,6 +18,7 @@ var searchData=
   ['shift_5f',['shift_',['../classltr_1_1_linear_converter.html#a388327d1dca7e952c307058a2b47e7e4',1,'ltr::LinearConverter::shift_()'],['../classltr_1_1_per_feature_linear_converter.html#aea6dabf17474fff3f7f61b62e128f28c',1,'ltr::PerFeatureLinearConverter::shift_()'],['../classoptimization_1_1_linear_function.html#a95d367a7115b949996a34b92165e06a2',1,'optimization::LinearFunction::shift_()'],['../classoptimization_1_1_quadratic_function.html#a26c93c148924083030fb6ee2ca30e678',1,'optimization::QuadraticFunction::shift_()'],['../classoptimization_1_1_linear_inequality_set.html#a603194ab3eea9566b15ed38dbebf2bc3',1,'optimization::LinearInequalitySet::shift_()']]],
   ['singular_5fvalues_5f',['singular_values_',['../classltr_1_1_p_c_a_learner.html#a7842cfd901f04cf1f004193319044a23',1,'ltr::PCALearner']]],
   ['size',['size',['../structltr_1_1utility_1_1_dimension_size.html#aa28ff716ca31557c6404621f51c2e734',1,'ltr::utility::DimensionSize']]],
+  ['size_5f',['size_',['../classoptimization_1_1_cube_set.html#a8ff72eb71adb27e43b421f9cec94a22d',1,'optimization::CubeSet']]],
   ['sizeval',['sizeVal',['../struct_size_over_index.html#a397c8cada8056e0e3506c9e6e7ffacf3',1,'SizeOverIndex']]],
   ['solver_5faliases',['solver_aliases',['../classoptimization_1_1_solver_benchmark.html#aba8d25f5f5371f1c73c1cba5210f4d7b',1,'optimization::SolverBenchmark']]],
   ['solvers',['solvers',['../classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c',1,'optimization::SolverBenchmark']]],

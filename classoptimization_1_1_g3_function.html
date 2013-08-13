@@ -115,10 +115,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Class for G1 function in \(\mathbb{R}^n\).  
+<p>Class for G3 function in \(\mathbb{R}^n\).  
  <a href="classoptimization_1_1_g3_function.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="g3__function_8h_source.html">g3_function.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="constrained__functions_8h_source.html">constrained_functions.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for optimization::G3Function:</div>
 <div class="dyncontent">
@@ -138,24 +138,16 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12a9684376cc7ff04cb719f994b269d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a12a9684376cc7ff04cb719f994b269d0">G3Function</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
 <tr class="memitem:a04f90de23f0d38b906d1d805ad7c73c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a04f90de23f0d38b906d1d805ad7c73c0">~G3Function</a> ()</td></tr>
-<tr class="memitem:a94d457cfbb966db974b8fd5555d1f70b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a94d457cfbb966db974b8fd5555d1f70b">value</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:a37ccd549f96e03ced6d884f6ad01c6a9"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a37ccd549f96e03ced6d884f6ad01c6a9">gradient</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:ab35dfb22b53f0ed4980b6d2947800bda"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#ab35dfb22b53f0ed4980b6d2947800bda">hessian</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:a12a9684376cc7ff04cb719f994b269d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a12a9684376cc7ff04cb719f994b269d0">G3Function</a> (int <a class="el" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)</td></tr>
-<tr class="memitem:a04f90de23f0d38b906d1d805ad7c73c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a04f90de23f0d38b906d1d805ad7c73c0">~G3Function</a> ()</td></tr>
 <tr class="memitem:a788e6ada58abccde6451fef1f8e0e3e4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a788e6ada58abccde6451fef1f8e0e3e4">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:abf784ab872f15ac6f84698677f389c09"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#abf784ab872f15ac6f84698677f389c09">computeValueImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
-<tr class="memitem:ab6820978092709f8c6d8eaad7820c1a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#ab6820978092709f8c6d8eaad7820c1a5">computeGradientImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, Vector *<a class="el" href="classoptimization_1_1_g3_function.html#a37ccd549f96e03ced6d884f6ad01c6a9">gradient</a>) const </td></tr>
-<tr class="memitem:a090b1fd597077a68802dc2a8fd0c8747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a090b1fd597077a68802dc2a8fd0c8747">computeHessianImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, Matrix *<a class="el" href="classoptimization_1_1_g3_function.html#ab35dfb22b53f0ed4980b6d2947800bda">hessian</a>) const </td></tr>
+<tr class="memitem:ab6820978092709f8c6d8eaad7820c1a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#ab6820978092709f8c6d8eaad7820c1a5">computeGradientImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, Vector *gradient) const </td></tr>
+<tr class="memitem:a090b1fd597077a68802dc2a8fd0c8747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#a090b1fd597077a68802dc2a8fd0c8747">computeHessianImpl</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, Matrix *hessian) const </td></tr>
 <tr class="memitem:aa58af542776a6a3d9bc67704fd181b3c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_g3_function.html#aa58af542776a6a3d9bc67704fd181b3c">computePartHessian</a> (int first_coordinate, int second_coordinate, const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Class for G1 function in \(\mathbb{R}^n\). </p>
-<p>Class for G3 function in \(\mathbb{R}^n\).</p>
-<p>\(f(x) = (\sqrt{n})^n \prod_{i = 1}^n x_i\)</p>
-<p>Get more info on <a href="http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2613.htm">http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2613.htm</a>.</p>
+<div class="textblock"><p>Class for G3 function in \(\mathbb{R}^n\). </p>
 <p>\(f(x) = (\sqrt{n})^n \prod_{i = 1}^n x_i\).</p>
 <p>Get more info on <a href="http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2613.htm">http://www-optima.amp.i.kyoto-u.ac.jp/member/student/hedar/Hedar_files/TestGO_files/Page2613.htm</a>. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
@@ -175,39 +167,6 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a12a9684376cc7ff04cb719f994b269d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_g3_function.html#a12a9684376cc7ff04cb719f994b269d0">optimization::G3Function::G3Function</a> </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>dimension</em></td><td>)</td>
-          <td><code> [inline, explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a04f90de23f0d38b906d1d805ad7c73c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classoptimization_1_1_g3_function.html#a04f90de23f0d38b906d1d805ad7c73c0">optimization::G3Function::~G3Function</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a12a9684376cc7ff04cb719f994b269d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -375,68 +334,15 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a37ccd549f96e03ced6d884f6ad01c6a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector <a class="el" href="classoptimization_1_1_g3_function.html#a37ccd549f96e03ced6d884f6ad01c6a9">optimization::G3Function::gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab35dfb22b53f0ed4980b6d2947800bda"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Matrix <a class="el" href="classoptimization_1_1_g3_function.html#ab35dfb22b53f0ed4980b6d2947800bda">optimization::G3Function::hessian</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a94d457cfbb966db974b8fd5555d1f70b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double <a class="el" href="classoptimization_1_1_g3_function.html#a94d457cfbb966db974b8fd5555d1f70b">optimization::G3Function::value</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>ltr/optimization/functions/test_functions/constrained/g3_problem/<a class="el" href="g3__function_8h_source.html">g3_function.h</a></li>
 <li>ltr/optimization/test_problems/<a class="el" href="constrained__functions_8h_source.html">constrained_functions.h</a></li>
-<li>ltr/optimization/functions/test_functions/constrained/g3_problem/<a class="el" href="g3__function_8cc.html">g3_function.cc</a></li>
 <li>ltr/optimization/test_problems/<a class="el" href="constrained__functions_8cc.html">constrained_functions.cc</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 29 2013 19:49:21 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2013 19:14:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

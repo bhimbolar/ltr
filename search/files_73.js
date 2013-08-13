@@ -34,7 +34,6 @@ var searchData=
   ['squared_5ferror_2eh',['squared_error.h',['../squared__error_8h.html',1,'']]],
   ['stand_5falone_5fobject_5frepresentation_2ecc',['stand_alone_object_representation.cc',['../stand__alone__object__representation_8cc.html',1,'']]],
   ['stand_5falone_5fobject_5frepresentation_2eh',['stand_alone_object_representation.h',['../stand__alone__object__representation_8h.html',1,'']]],
-  ['stand_5ffunctions_5funittest_2ecc',['stand_functions_unittest.cc',['../stand__functions__unittest_8cc.html',1,'']]],
   ['statistics_5fcalculation_2eh',['statistics_calculation.h',['../statistics__calculation_8h.html',1,'']]],
   ['step_5fsize_5fcalculator_2ehpp',['step_size_calculator.hpp',['../step__size__calculator_8hpp.html',1,'']]],
   ['step_5fsize_5fcalculators_2ehpp',['step_size_calculators.hpp',['../step__size__calculators_8hpp.html',1,'']]],
@@ -45,7 +44,5 @@ var searchData=
   ['string_5futils_2eh',['string_utils.h',['../string__utils_8h.html',1,'']]],
   ['string_5futils_5funittest_2ecc',['string_utils_unittest.cc',['../string__utils__unittest_8cc.html',1,'']]],
   ['sum_5fpredictions_5faggregator_2ecc',['sum_predictions_aggregator.cc',['../sum__predictions__aggregator_8cc.html',1,'']]],
-  ['sum_5fpredictions_5faggregator_2eh',['sum_predictions_aggregator.h',['../sum__predictions__aggregator_8h.html',1,'']]],
-  ['sum_5fsquares_5ffunction_2ecc',['sum_squares_function.cc',['../sum__squares__function_8cc.html',1,'']]],
-  ['sum_5fsquares_5ffunction_2eh',['sum_squares_function.h',['../sum__squares__function_8h.html',1,'']]]
+  ['sum_5fpredictions_5faggregator_2eh',['sum_predictions_aggregator.h',['../sum__predictions__aggregator_8h.html',1,'']]]
 ];

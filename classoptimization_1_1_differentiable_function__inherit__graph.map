@@ -1,14 +1,15 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="603,208,859,235"/>
-<area shape="rect" href="$classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="133,208,283,235"/>
-<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,208,85,235"/>
+<area shape="rect" href="$classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in ." alt="" coords="603,233,859,260"/>
+<area shape="rect" href="$classoptimization_1_1_function.html" title="Abstract class for defining functions in ." alt="" coords="133,233,283,260"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,233,85,260"/>
 <area shape="rect" href="$classoptimization_1_1_easom_function.html" title="Class for Easom function in ." alt="" coords="924,5,1113,32"/>
 <area shape="rect" href="$classoptimization_1_1_g1_function.html" title="Class for G1 function in ." alt="" coords="936,56,1101,83"/>
-<area shape="rect" href="$classoptimization_1_1_g3_function.html" title="Class for G1 function in ." alt="" coords="936,107,1101,133"/>
+<area shape="rect" href="$classoptimization_1_1_g3_function.html" title="Class for G3 function in ." alt="" coords="936,107,1101,133"/>
 <area shape="rect" href="$classoptimization_1_1_griewank_function.html" title="Class for Griewank function in ." alt="" coords="917,157,1120,184"/>
 <area shape="rect" href="$classoptimization_1_1_linear_function.html" title="Class for defining linear functions in ." alt="" coords="927,208,1111,235"/>
 <area shape="rect" href="$classoptimization_1_1_quadratic_function.html" title="Class for quadratic functions in ." alt="" coords="916,259,1121,285"/>
-<area shape="rect" href="$classoptimization_1_1_rosenbrock_function.html" title="Class for Rosenbrock function in ." alt="" coords="909,309,1128,336"/>
-<area shape="rect" href="$classoptimization_1_1_sum_squares_function.html" title="Class for Sum Squares function in . , minimum at ." alt="" coords="907,360,1131,387"/>
-<area shape="rect" href="$classoptimization_1_1_trid_function.html" title="Class for Trid function in . ." alt="" coords="933,411,1104,437"/>
+<area shape="rect" href="$classoptimization_1_1_rastrigin_function.html" title="Class for Rastrigin function in ." alt="" coords="919,309,1119,336"/>
+<area shape="rect" href="$classoptimization_1_1_rosenbrock_function.html" title="Class for Rosenbrock function in ." alt="" coords="909,360,1128,387"/>
+<area shape="rect" href="$classoptimization_1_1_sum_squares_function.html" title="Class for Sum Squares function in ." alt="" coords="907,411,1131,437"/>
+<area shape="rect" href="$classoptimization_1_1_trid_function.html" title="Class for Trid function in ." alt="" coords="933,461,1104,488"/>
 </map>

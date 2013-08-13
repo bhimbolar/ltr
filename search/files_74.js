@@ -11,8 +11,6 @@ var searchData=
   ['tk_5ffold_5fsimple_5fsplitter_5funittest_2ecc',['tk_fold_simple_splitter_unittest.cc',['../tk__fold__simple__splitter__unittest_8cc.html',1,'']]],
   ['tostring_5funittest_2ecc',['tostring_unittest.cc',['../tostring__unittest_8cc.html',1,'']]],
   ['train_5flaunch_5finfo_2eh',['train_launch_info.h',['../train__launch__info_8h.html',1,'']]],
-  ['trid_5ffunction_2ecc',['trid_function.cc',['../trid__function_8cc.html',1,'']]],
-  ['trid_5ffunction_2eh',['trid_function.h',['../trid__function_8h.html',1,'']]],
   ['triple_2eh',['triple.h',['../triple_8h.html',1,'']]],
   ['triple_5funittest_2ecc',['triple_unittest.cc',['../triple__unittest_8cc.html',1,'']]],
   ['true_5fpoint_2eh',['true_point.h',['../true__point_8h.html',1,'']]],

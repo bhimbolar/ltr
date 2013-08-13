@@ -31,5 +31,7 @@ var searchData=
   ['crossvalidation_5flaunch_5finfo_2eh',['crossvalidation_launch_info.h',['../crossvalidation__launch__info_8h.html',1,'']]],
   ['crossvalidation_5ftutorial_2edox',['crossvalidation_tutorial.dox',['../crossvalidation__tutorial_8dox.html',1,'']]],
   ['crossvalidator_2eh',['crossvalidator.h',['../crossvalidator_8h.html',1,'']]],
-  ['crossvalidator_5funittest_2ecc',['crossvalidator_unittest.cc',['../crossvalidator__unittest_8cc.html',1,'']]]
+  ['crossvalidator_5funittest_2ecc',['crossvalidator_unittest.cc',['../crossvalidator__unittest_8cc.html',1,'']]],
+  ['cube_5fset_2ecc',['cube_set.cc',['../cube__set_8cc.html',1,'']]],
+  ['cube_5fset_2eh',['cube_set.h',['../cube__set_8h.html',1,'']]]
 ];

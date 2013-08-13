@@ -1,7 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" href="$g3__set_8h.html" title="ltr/optimization/functions/test_functions/constrained/g3_problem/g3_set.h" alt="" coords="5,80,448,107"/>
-<area shape="rect" href="$sets__unittest_8cc.html" title="ltr/optimization/sets/sets_unittest.cc" alt="" coords="472,80,704,107"/>
-<area shape="rect" href="$sphere__set_8cc.html" title="ltr/optimization/sets/sphere_set.cc" alt="" coords="728,80,949,107"/>
-<area shape="rect" href="$constrained__sets_8h.html" title="ltr/optimization/test_problems/constrained_sets.h" alt="" coords="973,80,1280,107"/>
-<area shape="rect" href="$constrained__sets_8cc.html" title="ltr/optimization/test_problems/constrained_sets.cc" alt="" coords="971,155,1283,181"/>
+<area shape="rect" href="$sets__unittest_8cc.html" title="ltr/optimization/sets/sets_unittest.cc" alt="" coords="5,80,237,107"/>
+<area shape="rect" href="$sphere__set_8cc.html" title="ltr/optimization/sets/sphere_set.cc" alt="" coords="261,80,483,107"/>
+<area shape="rect" href="$constrained__sets_8h.html" title="ltr/optimization/test_problems/constrained_sets.h" alt="" coords="507,80,813,107"/>
+<area shape="rect" href="$constrained__sets_8cc.html" title="ltr/optimization/test_problems/constrained_sets.cc" alt="" coords="504,155,816,181"/>
 </map>

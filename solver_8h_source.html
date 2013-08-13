@@ -131,9 +131,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031     <a class="code" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">Solver</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> population_initer,
 <a name="l00032"></a>00032            <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationUpdater&lt;TFunction&gt;::Ptr</a> population_updater,
 <a name="l00033"></a>00033            <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">StopCriterion&lt;TFunction&gt;::Ptr</a> stop_criterion);
-<a name="l00037"></a>00037     <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00037"></a>00037     <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#aa55a7b2737ab0e56d4f02e5a3403a516">solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
 <a name="l00038"></a>00038                    <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>,
-<a name="l00039"></a>00039                    <span class="keywordtype">int</span> population_size);
+<a name="l00039"></a>00039                    <span class="keywordtype">int</span> population_size) <span class="keyword">const</span>;
 <a name="l00040"></a>00040 
 <a name="l00041"></a>00041   <span class="keyword">private</span>:
 <a name="l00042"></a><a class="code" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">00042</a>     <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">PopulationIniter::Ptr</a> <a class="code" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">initer_</a>;
@@ -151,9 +151,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00054"></a>00054       {  }
 <a name="l00055"></a>00055 
 <a name="l00056"></a>00056 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00057"></a><a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">00057</a> <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#a760168224c1facc1480fbc278fffb996">Solver&lt;TFunction&gt;::solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00057"></a><a class="code" href="classoptimization_1_1_solver.html#aa55a7b2737ab0e56d4f02e5a3403a516">00057</a> <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> <a class="code" href="classoptimization_1_1_solver.html#aa55a7b2737ab0e56d4f02e5a3403a516">Solver&lt;TFunction&gt;::solve</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
 <a name="l00058"></a>00058                                   <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>,
-<a name="l00059"></a>00059                                   <span class="keywordtype">int</span> population_size) {
+<a name="l00059"></a>00059                                   <span class="keywordtype">int</span> population_size)<span class="keyword"> const </span>{
 <a name="l00060"></a>00060   <a class="code" href="classoptimization_1_1_population.html#a6128263117480ac57d80fe39668d63ca">Population::Ptr</a> population = <span class="keyword">new</span> <a class="code" href="gp__scorer__unittest_8cc.html#aa35de4547f062f398ff600ba8fd6b109">Population</a>;
 <a name="l00061"></a>00061   initer_-&gt;populationInit(population_size, *<span class="keyword">set</span>, population.get());
 <a name="l00062"></a>00062 
@@ -191,12 +191,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00094"></a>00094 }
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVER_SOLVER_H_</span>
-<a name="l00097"></a>00097 <span class="preprocessor"></span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 29 2013 19:49:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2013 19:14:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

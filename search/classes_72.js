@@ -1,6 +1,7 @@
 var searchData=
 [
   ['randomizer',['Randomizer',['../classltr_1_1utility_1_1_randomizer.html',1,'ltr::utility']]],
+  ['rastriginfunction',['RastriginFunction',['../classoptimization_1_1_rastrigin_function.html',1,'optimization']]],
   ['reciprocalrank',['ReciprocalRank',['../classltr_1_1_reciprocal_rank.html',1,'ltr']]],
   ['removenominalconverter',['RemoveNominalConverter',['../classltr_1_1_remove_nominal_converter.html',1,'ltr']]],
   ['removenominalconverterlearner',['RemoveNominalConverterLearner',['../classltr_1_1_remove_nominal_converter_learner.html',1,'ltr']]],

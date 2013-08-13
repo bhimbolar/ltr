@@ -10,10 +10,11 @@
 <area shape="rect" href="$direction__calculators_8hpp.html" title="ltr/optimization/population_updaters/direction_calculators.hpp" alt="" coords="2944,155,3317,181"/>
 <area shape="rect" href="$particle__swarm__updater_8h.html" title="ltr/optimization/population_updaters/particle_swarm_updater.h" alt="" coords="3001,80,3380,107"/>
 <area shape="rect" href="$ball__set_8cc.html" title="ltr/optimization/sets/ball_set.cc" alt="" coords="3404,80,3607,107"/>
-<area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="3631,80,3905,107"/>
-<area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="3929,80,4105,107"/>
-<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="4129,80,4260,107"/>
-<area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="4284,80,4527,107"/>
+<area shape="rect" href="$cube__set_8cc.html" title="ltr/optimization/sets/cube_set.cc" alt="" coords="3631,80,3841,107"/>
+<area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="3865,80,4140,107"/>
+<area shape="rect" href="$set_8cc.html" title="ltr/optimization/sets/set.cc" alt="" coords="4164,80,4340,107"/>
+<area shape="rect" href="$indices_8cc.html" title="ltr/utility/indices.cc" alt="" coords="4364,80,4495,107"/>
+<area shape="rect" href="$random__number__generator_8cc.html" title="ltr/utility/random_number_generator.cc" alt="" coords="4519,80,4761,107"/>
 <area shape="rect" href="$tk__fold__simple__splitter__unittest_8cc.html" title="ltr/crossvalidation/tk_fold_simple_splitter_unittest.cc" alt="" coords="5,155,328,181"/>
 <area shape="rect" href="$registration_8h.html" title="ltr_client/registration.h" alt="" coords="352,155,501,181"/>
 <area shape="rect" href="$main_8cc.html" title="ltr_client/main.cc" alt="" coords="367,229,487,256"/>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['easomfunction',['EasomFunction',['../classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d',1,'optimization::EasomFunction::EasomFunction()'],['../classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d',1,'optimization::EasomFunction::EasomFunction()']]],
+  ['easomfunction',['EasomFunction',['../classoptimization_1_1_easom_function.html#a444c33bad0cf1a2dccba778e55d6cd9d',1,'optimization::EasomFunction']]],
   ['eigen_5ffeatures',['eigen_features',['../classltr_1_1_object.html#a6f7619b474ec8e8da135e3523e8764cd',1,'ltr::Object::eigen_features()'],['../classltr_1_1_object.html#a95b941f2a20414f3b6db87cb41a5b2b0',1,'ltr::Object::eigen_features() const ']]],
   ['element_5fbegin',['element_begin',['../classltr_1_1_data_set.html#ab30904d3abf748d9d540dec37ea4e41b',1,'ltr::DataSet::element_begin()'],['../classltr_1_1_data_set.html#a2d3cb27a18b8497a6b2fa575c915cc5c',1,'ltr::DataSet::element_begin() const ']]],
   ['element_5fend',['element_end',['../classltr_1_1_data_set.html#af34203cbfcac23db8f758989a5d8f3f2',1,'ltr::DataSet::element_end()'],['../classltr_1_1_data_set.html#a83722b23c82fcaf5e31695853e5c9ce3',1,'ltr::DataSet::element_end() const ']]],

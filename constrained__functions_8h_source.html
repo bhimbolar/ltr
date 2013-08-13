@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00038"></a>00038   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_g1_function.html#ab7c77d51008ffbaee13231f28f10c6af">computeHessianImpl</a>(<span class="keyword">const</span> Point&amp; point, Matrix* hessian) <span class="keyword">const</span>;
 <a name="l00039"></a>00039 };
 <a name="l00040"></a>00040 
-<a name="l00048"></a>00048 <span class="keyword">class </span>G3Function : <span class="keyword">public</span> TwiceDifferentiableFunction {
+<a name="l00048"></a><a class="code" href="classoptimization_1_1_g3_function.html">00048</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_g3_function.html" title="Class for G3 function in .">G3Function</a> : <span class="keyword">public</span> <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a> {
 <a name="l00049"></a>00049  <span class="keyword">public</span>:
 <a name="l00050"></a><a class="code" href="classoptimization_1_1_g3_function.html#a12a9684376cc7ff04cb719f994b269d0">00050</a>   <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_g3_function.html#a12a9684376cc7ff04cb719f994b269d0">G3Function</a>(<span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_function.html#a8126347b65132a2469e13753f596fa88">dimension</a>)
 <a name="l00051"></a>00051     : <a class="code" href="classoptimization_1_1_twice_differentiable_function.html" title="Abstract class for defining twice differentiable functions in .">TwiceDifferentiableFunction</a>(dimension) {}
@@ -136,8 +136,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00055"></a><a class="code" href="classoptimization_1_1_g3_function.html#a788e6ada58abccde6451fef1f8e0e3e4">00055</a>   <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_g3_function.html#a788e6ada58abccde6451fef1f8e0e3e4">getDefaultAlias</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;G3Function&quot;</span>; }
 <a name="l00056"></a>00056  <span class="keyword">private</span>:
 <a name="l00060"></a>00060   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_g3_function.html#abf784ab872f15ac6f84698677f389c09">computeValueImpl</a>(<span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
-<a name="l00064"></a>00064   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_g3_function.html#ab6820978092709f8c6d8eaad7820c1a5">computeGradientImpl</a>(<span class="keyword">const</span> Point&amp; point, Vector* <a class="code" href="classoptimization_1_1_g3_function.html#a37ccd549f96e03ced6d884f6ad01c6a9">gradient</a>) <span class="keyword">const</span>;
-<a name="l00068"></a>00068   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_g3_function.html#a090b1fd597077a68802dc2a8fd0c8747">computeHessianImpl</a>(<span class="keyword">const</span> Point&amp; point, Matrix* <a class="code" href="classoptimization_1_1_g3_function.html#ab35dfb22b53f0ed4980b6d2947800bda">hessian</a>) <span class="keyword">const</span>;
+<a name="l00064"></a>00064   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_g3_function.html#ab6820978092709f8c6d8eaad7820c1a5">computeGradientImpl</a>(<span class="keyword">const</span> Point&amp; point, Vector* gradient) <span class="keyword">const</span>;
+<a name="l00068"></a>00068   <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_g3_function.html#a090b1fd597077a68802dc2a8fd0c8747">computeHessianImpl</a>(<span class="keyword">const</span> Point&amp; point, Matrix* hessian) <span class="keyword">const</span>;
 <a name="l00072"></a>00072   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_g3_function.html#aa58af542776a6a3d9bc67704fd181b3c">computePartHessian</a>(<span class="keywordtype">int</span> first_coordinate,
 <a name="l00073"></a>00073                             <span class="keywordtype">int</span> second_coordinate,
 <a name="l00074"></a>00074                             <span class="keyword">const</span> Point&amp; point) <span class="keyword">const</span>;
@@ -148,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 29 2013 19:49:17 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2013 19:14:11 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

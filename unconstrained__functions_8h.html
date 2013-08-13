@@ -106,12 +106,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br/>
 <code>#include &quot;<a class="el" href="twice__differentiable__function_8h_source.html">ltr/optimization/functions/twice_differentiable_function.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="macros_8h_source.html">ltr/utility/macros.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for unconstrained_functions.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="unconstrained__functions_8h__incl.png" border="0" usemap="#ltr_2optimization_2test__problems_2unconstrained__functions_8h" alt=""/></div>
 <map name="ltr_2optimization_2test__problems_2unconstrained__functions_8h" id="ltr_2optimization_2test__problems_2unconstrained__functions_8h">
-<area shape="rect" href="twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="132,80,471,107"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="673,304,852,331"/><area shape="rect" href="differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="188,155,489,181"/><area shape="rect" href="_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="629,379,896,405"/><area shape="rect" href="_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="416,453,579,480"/><area shape="rect" href="_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="603,453,715,480"/><area shape="rect" href="_ptr_8h.html" title="Ptr.h" alt="" coords="739,453,787,480"/><area shape="rect" href="_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="811,453,901,480"/><area shape="rect" href="_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="925,453,1059,480"/><area shape="rect" href="_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="363,528,501,555"/><area shape="rect" href="function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="269,229,491,256"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="505,304,649,331"/></map>
+<area shape="rect" href="twice__differentiable__function_8h.html" title="ltr/optimization/functions/twice_differentiable_function.h" alt="" coords="243,80,581,107"/><area shape="rect" href="macros_8h.html" title="ltr/utility/macros.h" alt="" coords="648,229,773,256"/><area shape="rect" href="shared__ptr_8h.html" title="ltr/utility/boost/shared_ptr.h" alt="" coords="621,304,800,331"/><area shape="rect" href="differentiable__function_8h.html" title="ltr/optimization/functions/differentiable_function.h" alt="" coords="261,155,563,181"/><area shape="rect" href="_smart_pointers_8h.html" title="ltr/utility/boost/shared_ptr/SmartPointers.h" alt="" coords="577,379,844,405"/><area shape="rect" href="_thread_synchronization_8h.html" title="ThreadSynchronization.h" alt="" coords="364,453,527,480"/><area shape="rect" href="_ptr_ref_counter_8h.html" title="PtrRefCounter.h" alt="" coords="551,453,663,480"/><area shape="rect" href="_ptr_8h.html" title="Ptr.h" alt="" coords="687,453,735,480"/><area shape="rect" href="_inactive_ptr_8h.html" title="InactivePtr.h" alt="" coords="759,453,849,480"/><area shape="rect" href="_casting_operators_8h.html" title="CastingOperators.h" alt="" coords="873,453,1007,480"/><area shape="rect" href="_quick_mutex_p_o_s_i_x_8h.html" title="QuickMutexPOSIX.h" alt="" coords="311,528,449,555"/><area shape="rect" href="function_8h.html" title="ltr/optimization/functions/function.h" alt="" coords="301,229,523,256"/><area shape="rect" href="aliaser_8h.html" title="ltr/interfaces/aliaser.h" alt="" coords="373,304,517,331"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -132,15 +133,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_rosenbrock_function.html">optimization::RosenbrockFunction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Rosenbrock function in \(\mathbb{R}^n\).  <a href="classoptimization_1_1_rosenbrock_function.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_sum_squares_function.html">optimization::SumSquaresFunction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Sum Squares function in \(\mathbb{R}^n\). \(f(x) = \sum_{i = 1}^{n} i * x_i^2 \), minimum at \( x = (0, \dots, 0), \quad f(x) = 0 \).  <a href="classoptimization_1_1_sum_squares_function.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Sum Squares function in \(\mathbb{R}^n\).  <a href="classoptimization_1_1_sum_squares_function.html#details">More...</a><br/></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_trid_function.html">optimization::TridFunction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Trid function in \(\mathbb{R}^n\). \(f(x) = \sum_{i = 1}^{n} (x_i - 1)^2 - \sum_{i = 2}^n x_i*x_{i-1}\).  <a href="classoptimization_1_1_trid_function.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Trid function in \(\mathbb{R}^n\).  <a href="classoptimization_1_1_trid_function.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_rastrigin_function.html">optimization::RastriginFunction</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for Rastrigin function in \(\mathbb{R}^n\).  <a href="classoptimization_1_1_rastrigin_function.html#details">More...</a><br/></td></tr>
 </table>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 29 2013 19:49:18 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 13 2013 19:14:13 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

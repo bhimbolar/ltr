@@ -55,11 +55,11 @@
 <area shape="rect" href="$dcg_8cc.html" title="ltr/measures/dcg.cc" alt="" coords="13929,80,14065,107"/>
 <area shape="rect" href="$pairwise__measures__unittest_8cc.html" title="ltr/measures/pairwise_measures_unittest.cc" alt="" coords="14089,80,14364,107"/>
 <area shape="rect" href="$metrics__unittest_8cc.html" title="ltr/metrics/metrics_unittest.cc" alt="" coords="14388,80,14583,107"/>
-<area shape="rect" href="$sphere__set_8h.html" title="ltr/optimization/sets/sphere_set.h" alt="" coords="14657,80,14871,107"/>
-<area shape="rect" href="$sets__unittest_8cc.html" title="ltr/optimization/sets/sets_unittest.cc" alt="" coords="14576,155,14808,181"/>
-<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="14895,80,15239,107"/>
-<area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="15263,80,15537,107"/>
-<area shape="rect" href="$polyhedron__set_8cc.html" title="ltr/optimization/sets/polyhedron_set.cc" alt="" coords="15561,80,15807,107"/>
+<area shape="rect" href="$one__point__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/one_point_stop_criteria.hpp" alt="" coords="14607,80,14951,107"/>
+<area shape="rect" href="$linear__inequality__set_8cc.html" title="ltr/optimization/sets/linear_inequality_set.cc" alt="" coords="14975,80,15249,107"/>
+<area shape="rect" href="$polyhedron__set_8cc.html" title="ltr/optimization/sets/polyhedron_set.cc" alt="" coords="15273,80,15519,107"/>
+<area shape="rect" href="$sets__unittest_8cc.html" title="ltr/optimization/sets/sets_unittest.cc" alt="" coords="15512,155,15744,181"/>
+<area shape="rect" href="$sphere__set_8h.html" title="ltr/optimization/sets/sphere_set.h" alt="" coords="15593,80,15807,107"/>
 <area shape="rect" href="$and__or__stop__criteria_8hpp.html" title="ltr/optimization/stop_criteria/and_or_stop_criteria.hpp" alt="" coords="15831,80,16159,107"/>
 <area shape="rect" href="$predictions__aggregators__unittest_8cc.html" title="ltr/predictions_aggregators/predictions_aggregators_unittest.cc" alt="" coords="16183,80,16567,107"/>
 <area shape="rect" href="$linear__composition__scorer__unittest_8cc.html" title="ltr/scorers/linear_composition_scorer_unittest.cc" alt="" coords="16591,80,16892,107"/>
