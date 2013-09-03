@@ -10,6 +10,8 @@ var searchData=
   ['neighbor_5fweighter_5f',['neighbor_weighter_',['../classltr_1_1_n_n_learner.html#ad071772f75c0513386137681faf7fafe',1,'ltr::NNLearner::neighbor_weighter_()'],['../classltr_1_1_n_n_scorer.html#a71b6a1957dbdca6d099a58a1118724a4',1,'ltr::NNScorer::neighbor_weighter_()']]],
   ['neighbour_5fweighter',['NEIGHBOUR_WEIGHTER',['../config__constants_8h.html#a31ee90169f0600e6afbd0e704a09cd53',1,'config_constants.h']]],
   ['neutral_5fobject_5f',['neutral_object_',['../classltr_1_1_nan_to_neutral_converter.html#a9d9ce0f41c3945213c030d2478d9d118',1,'ltr::NanToNeutralConverter']]],
+  ['no_5fupdate_5fcount_5f',['no_update_count_',['../classoptimization_1_1_bee_colony_updater.html#a418f66def01e777e7ebf34ed63d39b49',1,'optimization::BeeColonyUpdater']]],
+  ['no_5fupdate_5flimit_5f',['no_update_limit_',['../classoptimization_1_1_bee_colony_updater.html#a0e076e7b6836d6f551a9808a3c02fb50',1,'optimization::BeeColonyUpdater']]],
   ['num_5fiter',['num_iter',['../classoptimization_1_1_solution.html#aff7b3a1bdf1054a7bb9c72a0c3e5a008',1,'optimization::Solution']]],
   ['number_5fof_5fgenerations_5f',['number_of_generations_',['../classltr_1_1gp_1_1_g_p_learner.html#a1dd9f93051cce94bcd9b7ca9216e2f0c',1,'ltr::gp::GPLearner']]],
   ['number_5fof_5fiterations_5f',['number_of_iterations_',['../classltr_1_1composition_1_1_composition_learner.html#ac3a63f3b5b59cfa3b87db7a908a66b70',1,'ltr::composition::CompositionLearner']]],

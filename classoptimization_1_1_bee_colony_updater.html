@@ -108,7 +108,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a>  </div>
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::BeeColonyUpdater&lt; TFunction &gt; Class Template Reference</div>  </div>
 </div><!--header-->
@@ -130,7 +131,7 @@ Inheritance diagram for optimization::BeeColonyUpdater&lt; TFunction &gt;:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a64d82200b419e985cefa9ee8670b33f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a64d82200b419e985cefa9ee8670b33f1">BeeColonyUpdater</a> ()</td></tr>
+<tr class="memitem:ab742d59d906bba7d011a9aeb04f73c74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#ab742d59d906bba7d011a9aeb04f73c74">BeeColonyUpdater</a> (int no_update_limit)</td></tr>
 <tr class="memitem:add5facbb08fd306d24fc5da8e2491ff3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#add5facbb08fd306d24fc5da8e2491ff3">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population, typename TFunction::Ptr <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
 <tr class="memitem:a8e274c23ba2f840ea9b790f60cc3dcf1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a8e274c23ba2f840ea9b790f60cc3dcf1">update</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population)</td></tr>
 <tr class="memitem:a6c6e082ff4b75da4003f673c74b66051"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a6c6e082ff4b75da4003f673c74b66051">set_function</a> (typename TFunction::Ptr <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>)</td></tr>
@@ -138,7 +139,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af9616b27b1d85c92231713d2377ba5b3"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#af9616b27b1d85c92231713d2377ba5b3">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:ad4eef1b8c66847d60c3cc2703aad60b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#ad4eef1b8c66847d60c3cc2703aad60b7">getRandomNeighbour</a> (const vector&lt; <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &gt; &amp;points, int current_point_index, <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *new_point) const </td></tr>
 <tr class="memitem:a65e60e8c8f0e0083fac780c8c68157d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a65e60e8c8f0e0083fac780c8c68157d5">getRandomDifferent</a> (const vector&lt; <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &gt; &amp;points, int current_point_index, <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *random_point) const </td></tr>
+<tr class="memitem:acea767cdbde72832dc8b544d88a3d032"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#acea767cdbde72832dc8b544d88a3d032">getRandomWithDistribution</a> (const vector&lt; double &gt; &amp;part_sums) const </td></tr>
+<tr class="memitem:a47bbe6410d8a14db609794a7b9f5f9a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a47bbe6410d8a14db609794a7b9f5f9a2">computeFitness</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const </td></tr>
+<tr><td colspan="2"><h2><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a418f66def01e777e7ebf34ed63d39b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_no_init_population_info.html">NoInitPopulationInfo</a>&lt; int &gt;::<a class="el" href="classoptimization_1_1_population_updater.html#a8c09ed1e00a0448bf54e682ef91e7f09">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a418f66def01e777e7ebf34ed63d39b49">no_update_count_</a></td></tr>
+<tr class="memitem:a0e076e7b6836d6f551a9808a3c02fb50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_bee_colony_updater.html#a0e076e7b6836d6f551a9808a3c02fb50">no_update_limit_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TFunction&gt;<br/>
@@ -154,7 +162,7 @@ class optimization::BeeColonyUpdater&lt; TFunction &gt;</h3>
 </dl>
 <dl class="section see"><dt>See also:</dt><dd><a class="el" href="classoptimization_1_1_artificial_bee_colony.html" title="A class which solves an optimization task given a function using artificial bee colony algorithm...">ArtificialBeeColony</a>, <a class="el" href="classoptimization_1_1_population_updater.html" title="Class for update population.">PopulationUpdater</a> </dd></dl>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a64d82200b419e985cefa9ee8670b33f1"></a>
+<a class="anchor" id="ab742d59d906bba7d011a9aeb04f73c74"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -163,7 +171,8 @@ template&lt;typename TFunction &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classoptimization_1_1_bee_colony_updater.html">optimization::BeeColonyUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_bee_colony_updater.html">BeeColonyUpdater</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>no_update_limit</em></td><td>)</td>
           <td><code> [inline, explicit]</code></td>
         </tr>
       </table>
@@ -173,6 +182,26 @@ template&lt;typename TFunction &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a47bbe6410d8a14db609794a7b9f5f9a2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classoptimization_1_1_bee_colony_updater.html">optimization::BeeColonyUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_bee_colony_updater.html#a47bbe6410d8a14db609794a7b9f5f9a2">computeFitness</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Computes fitness of the point which is proportional to the value at this point. </p>
+
+</div>
+</div>
 <a class="anchor" id="af9616b27b1d85c92231713d2377ba5b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -226,6 +255,62 @@ template&lt;typename TFunction &gt; </div>
 </div>
 <div class="memdoc">
 <p>Generates random point from points with index different from current_point_index. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4eef1b8c66847d60c3cc2703aad60b7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_bee_colony_updater.html">optimization::BeeColonyUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_bee_colony_updater.html#ad4eef1b8c66847d60c3cc2703aad60b7">getRandomNeighbour</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>current_point_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *&#160;</td>
+          <td class="paramname"><em>new_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Generates random neighbour point. </p>
+
+</div>
+</div>
+<a class="anchor" id="acea767cdbde72832dc8b544d88a3d032"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classoptimization_1_1_bee_colony_updater.html">optimization::BeeColonyUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_bee_colony_updater.html#acea767cdbde72832dc8b544d88a3d032">getRandomWithDistribution</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>part_sums</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Generates random point from points using distribution defined by part_sums. </p>
 
 </div>
 </div>
@@ -331,6 +416,37 @@ template&lt;typename TFunction &gt; </div>
 
 </div>
 </div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a418f66def01e777e7ebf34ed63d39b49"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_no_init_population_info.html">NoInitPopulationInfo</a>&lt;int&gt;::<a class="el" href="classoptimization_1_1_population_updater.html#a8c09ed1e00a0448bf54e682ef91e7f09">Ptr</a> <a class="el" href="classoptimization_1_1_bee_colony_updater.html">optimization::BeeColonyUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_bee_colony_updater.html#a418f66def01e777e7ebf34ed63d39b49">no_update_count_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e076e7b6836d6f551a9808a3c02fb50"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classoptimization_1_1_bee_colony_updater.html">optimization::BeeColonyUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_bee_colony_updater.html#a0e076e7b6836d6f551a9808a3c02fb50">no_update_limit_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>ltr/optimization/population_updaters/<a class="el" href="bee__colony__updater_8h_source.html">bee_colony_updater.h</a></li>
 </ul>
@@ -338,7 +454,7 @@ template&lt;typename TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 14 2013 14:37:18 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 3 2013 11:40:08 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

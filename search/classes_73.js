@@ -21,6 +21,7 @@ var searchData=
   ['shared_5fptr_3c_20decisiontree_20_3e',['shared_ptr< DecisionTree >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20featureinfo_20_3e',['shared_ptr< FeatureInfo >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20innerrepresentation_20_3e',['shared_ptr< InnerRepresentation >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
+  ['shared_5fptr_3c_20int_20_3e',['shared_ptr< int >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20labelinfo_20_3e',['shared_ptr< LabelInfo >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20ltr_3a_3abasemetric_20_3e',['shared_ptr< ltr::BaseMetric >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
   ['shared_5fptr_3c_20metainfo_20_3e',['shared_ptr< MetaInfo >',['../classltr_1_1utility_1_1shared__ptr.html',1,'ltr::utility']]],
