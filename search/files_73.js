@@ -25,6 +25,7 @@ var searchData=
   ['solution_2eh',['solution.h',['../solution_8h.html',1,'']]],
   ['solver_2eh',['solver.h',['../solver_8h.html',1,'']]],
   ['solver_5fbenchmark_2eh',['solver_benchmark.h',['../solver__benchmark_8h.html',1,'']]],
+  ['solver_5fbenchmark_5ftutorial_2edox',['solver_benchmark_tutorial.dox',['../solver__benchmark__tutorial_8dox.html',1,'']]],
   ['solver_5fbenchmark_5funittest_2ecc',['solver_benchmark_unittest.cc',['../solver__benchmark__unittest_8cc.html',1,'']]],
   ['solver_5funittest_2ecc',['solver_unittest.cc',['../solver__unittest_8cc.html',1,'']]],
   ['sphere_5fset_2ecc',['sphere_set.cc',['../sphere__set_8cc.html',1,'']]],

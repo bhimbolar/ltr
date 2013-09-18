@@ -123,7 +123,7 @@ Inheritance diagram for optimization::Solver&lt; TFunction &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classoptimization_1_1_solver__inherit__graph.png" border="0" usemap="#optimization_1_1_solver_3_01_t_function_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="optimization_1_1_solver_3_01_t_function_01_4_inherit__map" id="optimization_1_1_solver_3_01_t_function_01_4_inherit__map">
-<area shape="rect" href="classoptimization_1_1_artificial_bee_colony.html" title="A class which solves an optimization task given a function using artificial bee colony algorithm..." alt="" coords="295,5,583,32"/><area shape="rect" href="classoptimization_1_1_particle_swarm_optimization.html" title="A class which solves an optimization task given a function using particle swarm optimization algorith..." alt="" coords="271,56,607,83"/></map>
+<area shape="rect" href="classoptimization_1_1_artificial_bee_colony.html" title="A class which solves an optimization task given a function using artificial bee colony algorithm..." alt="" coords="423,5,711,32"/><area shape="rect" href="classoptimization_1_1_particle_swarm_optimization.html" title="A class which solves an optimization task given a function using particle swarm optimization algorith..." alt="" coords="399,56,735,83"/><area shape="rect" href="classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="5,31,85,57"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="classoptimization_1_1_solver-members.html">List of all members.</a></p>
@@ -132,6 +132,7 @@ Inheritance diagram for optimization::Solver&lt; TFunction &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3339c198aa1983f6c2cb804382378f37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver.html#a3339c198aa1983f6c2cb804382378f37">Solver</a> (<a class="el" href="classoptimization_1_1_population_initer.html#a8e89a477d30d57b46f70f334aa3e297c">PopulationIniter::Ptr</a> population_initer, typename <a class="el" href="classoptimization_1_1_population_updater.html">PopulationUpdater</a>&lt; TFunction &gt;::Ptr population_updater, typename <a class="el" href="classoptimization_1_1_stop_criterion.html">StopCriterion</a>&lt; TFunction &gt;::Ptr stop_criterion)</td></tr>
 <tr class="memitem:aa55a7b2737ab0e56d4f02e5a3403a516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_solution.html">Solution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver.html#aa55a7b2737ab0e56d4f02e5a3403a516">solve</a> (typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>, int population_size) const </td></tr>
+<tr class="memitem:ad51f8c6da39cb06a8fa70f4e97ec353c"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver.html#ad51f8c6da39cb06a8fa70f4e97ec353c">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae28ead40a4a3cc2442654845923c383b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_population_initer.html#a8e89a477d30d57b46f70f334aa3e297c">PopulationIniter::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver.html#ae28ead40a4a3cc2442654845923c383b">initer_</a></td></tr>
@@ -180,6 +181,28 @@ template&lt;typename TFunction &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ad51f8c6da39cb06a8fa70f4e97ec353c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual string <a class="el" href="classoptimization_1_1_solver.html">optimization::Solver</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver.html#ad51f8c6da39cb06a8fa70f4e97ec353c">getDefaultAlias</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implements <a class="el" href="classltr_1_1_aliaser.html#ad724414573ec5df2cc00bb5aaa57e9d0">ltr::Aliaser</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_particle_swarm_optimization.html#ae5d0a4483173442427be5c766b6e5f91">optimization::ParticleSwarmOptimization&lt; TFunction &gt;</a>, and <a class="el" href="classoptimization_1_1_artificial_bee_colony.html#aab787d2f94eb8d48d8411ba26b615b65">optimization::ArtificialBeeColony&lt; TFunction &gt;</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa55a7b2737ab0e56d4f02e5a3403a516"></a>
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +292,7 @@ template&lt;typename TFunction&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

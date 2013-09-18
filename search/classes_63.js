@@ -15,6 +15,7 @@ var searchData=
   ['constantstepcalculator',['ConstantStepCalculator',['../classoptimization_1_1_constant_step_calculator.html',1,'optimization']]],
   ['constdatasetelementiterator',['ConstDataSetElementIterator',['../classltr_1_1_const_data_set_element_iterator.html',1,'ltr']]],
   ['constdatasetobjectiterator',['ConstDataSetObjectIterator',['../classltr_1_1_const_data_set_object_iterator.html',1,'ltr']]],
+  ['constfunction',['ConstFunction',['../classoptimization_1_1_const_function.html',1,'optimization']]],
   ['creator',['Creator',['../class_factory_1_1_creator.html',1,'Factory']]],
   ['crossoveradjacenttreesstrategy',['CrossoverAdjacentTreesStrategy',['../classltr_1_1gp_1_1_crossover_adjacent_trees_strategy.html',1,'ltr::gp']]],
   ['crossvalidationlaunchinfo',['CrossvalidationLaunchInfo',['../struct_crossvalidation_launch_info.html',1,'']]],

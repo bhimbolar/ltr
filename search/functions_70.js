@@ -38,6 +38,7 @@ var searchData=
   ['printmultiarray',['printMultiArray',['../multi__vector__print_8h.html#a5a1c67441c4d289d586f86a6cef0d327',1,'multi_vector_print.h']]],
   ['printmultiarrayinner',['printMultiArrayInner',['../multi__vector__print_8h.html#a28a89a3d612b8d12fc130312e57bcceb',1,'multi_vector_print.h']]],
   ['printmultitableinner',['printMultiTableInner',['../classltr_1_1utility_1_1_multi_table.html#a97f940e67d3870727c949bc2c22ebac1',1,'ltr::utility::MultiTable']]],
+  ['project',['project',['../classoptimization_1_1_set.html#af0f47f36c4515029e5f8b6568a8886bf',1,'optimization::Set']]],
   ['projectonfurthestplane',['projectOnFurthestPlane',['../classoptimization_1_1_polyhedron_set.html#a95fba50f3299385ede7b588c5818cede',1,'optimization::PolyhedronSet']]],
   ['ptrrefcounter',['PtrRefCounter',['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a872523fa5ddd635953ad5d5706006b62',1,'ReferenceCountedSmartPointer::PtrRefCounter::PtrRefCounter(void)'],['../class_reference_counted_smart_pointer_1_1_ptr_ref_counter.html#a19df48a3979695ed990ef3a4962519e0',1,'ReferenceCountedSmartPointer::PtrRefCounter::PtrRefCounter(const PtrRefCounter &amp;)']]],
   ['puppyprimitivehandletopserializable',['puppyPrimitiveHandleToPSerializable',['../classltr_1_1gp_1_1_g_p_scorer.html#a26cc7eda8ea1e1c3eb439dadbb702a41',1,'ltr::gp::GPScorer']]],

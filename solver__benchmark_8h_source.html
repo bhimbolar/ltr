@@ -107,10 +107,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00003"></a>00003 <span class="preprocessor">#ifndef LTR_OPTIMIZATION_SOLVER_SOLVER_BENCHMARK_H_</span>
 <a name="l00004"></a>00004 <span class="preprocessor"></span><span class="preprocessor">#define LTR_OPTIMIZATION_SOLVER_SOLVER_BENCHMARK_H_</span>
 <a name="l00005"></a>00005 <span class="preprocessor"></span>
-<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string&gt;</span>
-<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;vector&gt;</span>
-<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;stdexcept&gt;</span>
-<a name="l00009"></a>00009 
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;iostream&gt;</span>  <span class="comment">// NOLINT</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;string&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;vector&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;stdexcept&gt;</span>
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="macros_8h.html">ltr/utility/macros.h</a>&quot;</span>
 <a name="l00012"></a>00012 <span class="preprocessor">#include &quot;<a class="code" href="function_8h.html">ltr/optimization/functions/function.h</a>&quot;</span>
@@ -126,107 +126,187 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00022"></a>00022 <span class="keyword">using</span> std::string;
 <a name="l00023"></a>00023 <span class="keyword">using</span> std::vector;
 <a name="l00024"></a>00024 <span class="keyword">using</span> std::logic_error;
-<a name="l00025"></a>00025 <span class="keyword">using</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">ltr::utility::MultiTable</a>;
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">namespace </span>optimization {
+<a name="l00025"></a>00025 <span class="keyword">using</span> std::stringstream;
+<a name="l00026"></a>00026 <span class="keyword">using</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">ltr::utility::MultiTable</a>;
+<a name="l00027"></a>00027 <span class="keyword">using</span> optimization::Matrix;
 <a name="l00028"></a>00028 
-<a name="l00033"></a>00033 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00034"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html">00034</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_solver_benchmark.html" title="A class to benchmark optimization Solver with different test problems.">SolverBenchmark</a> {
-<a name="l00035"></a>00035   <span class="keyword">public</span>:
-<a name="l00036"></a>00036     <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">SolverBenchmark</a>(<span class="keywordtype">int</span> population_size);
-<a name="l00037"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">00037</a>     <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;string, 2&gt;</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a>;
-<a name="l00038"></a>00038 
-<a name="l00042"></a>00042     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7" title="Remove all solvers and problems from the stand.">clear</a>();
-<a name="l00043"></a>00043     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">addProblem</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>, <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>);
-<a name="l00044"></a>00044     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a7db8b8197265c3dd906907e11ba199f6">addSolver</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver&lt;TFunction&gt;</a> &amp;solver,
-<a name="l00045"></a>00045                    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;alias);
-<a name="l00046"></a>00046 
-<a name="l00053"></a>00053     <a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087" title="Run a benchmark using all solvers and problems specified at the moment.">run</a>() <span class="keyword">const</span>;
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055   <span class="keyword">private</span>:
-<a name="l00056"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a3081de5eaf1e6531296733de790a8f8c">00056</a>     vector&lt;typename TFunction::Ptr&gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3081de5eaf1e6531296733de790a8f8c">functions</a>;
-<a name="l00057"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a3fc66d529c2dfb9a236d030c20034e1f">00057</a>     vector&lt;Set::Ptr&gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3fc66d529c2dfb9a236d030c20034e1f">sets</a>;
-<a name="l00058"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c">00058</a>     vector&lt;Solver&lt;TFunction&gt; &gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c">solvers</a>;
-<a name="l00059"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#aba8d25f5f5371f1c73c1cba5210f4d7b">00059</a>     vector&lt;string&gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#aba8d25f5f5371f1c73c1cba5210f4d7b">solver_aliases</a>;
-<a name="l00060"></a>00060 
-<a name="l00061"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a5e762fc7020c7afd0d1d26454ecc50b4">00061</a>     <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a5e762fc7020c7afd0d1d26454ecc50b4">population_size_</a>;
-<a name="l00062"></a>00062 };
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00065"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">00065</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">SolverBenchmark&lt;TFunction&gt;::SolverBenchmark</a>(<span class="keywordtype">int</span> population_size)
-<a name="l00066"></a>00066   : population_size_(population_size) {
-<a name="l00067"></a>00067 }
-<a name="l00068"></a>00068 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00069"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7">00069</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7" title="Remove all solvers and problems from the stand.">SolverBenchmark&lt;TFunction&gt;::clear</a>() {
-<a name="l00070"></a>00070   functions.clear();
-<a name="l00071"></a>00071   sets.clear();
-<a name="l00072"></a>00072   solvers.clear();
-<a name="l00073"></a>00073   solver_aliases.clear();
-<a name="l00074"></a>00074 }
-<a name="l00075"></a>00075 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00076"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">00076</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">SolverBenchmark&lt;TFunction&gt;::addProblem</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00077"></a>00077                                            <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>) {
-<a name="l00078"></a>00078   functions.push_back(<span class="keyword">function</span>);
-<a name="l00079"></a>00079   sets.push_back(<span class="keyword">set</span>);
-<a name="l00080"></a>00080 }
-<a name="l00081"></a>00081 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00082"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a7db8b8197265c3dd906907e11ba199f6">00082</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a7db8b8197265c3dd906907e11ba199f6">SolverBenchmark&lt;TFunction&gt;::addSolver</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver&lt;TFunction&gt;</a> &amp;solver,
-<a name="l00083"></a>00083                                            <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;alias) {
-<a name="l00084"></a>00084   solvers.push_back(solver);
-<a name="l00085"></a>00085   solver_aliases.push_back(alias);
-<a name="l00086"></a>00086 }
-<a name="l00087"></a>00087 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00088"></a>00088 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">SolverBenchmark&lt;TFunction&gt;::Table</a>
-<a name="l00089"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087">00089</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087" title="Run a benchmark using all solvers and problems specified at the moment.">SolverBenchmark&lt;TFunction&gt;::run</a>()<span class="keyword"> const </span>{
-<a name="l00090"></a>00090   <a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">CHECK_MSG</a>(!functions.empty(), <span class="stringliteral">&quot;No test problems specified for a benchmark&quot;</span>);
-<a name="l00091"></a>00091   <a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">CHECK_MSG</a>(!solvers.empty(), <span class="stringliteral">&quot;No solvers specified for a benchmark&quot;</span>);
-<a name="l00092"></a>00092 
-<a name="l00093"></a>00093   LexicalCastConfig::getInstance().restoreDefaults();
-<a name="l00094"></a>00094 
-<a name="l00095"></a>00095   <span class="keywordtype">int</span> solvers_num = solvers.size();
-<a name="l00096"></a>00096   <span class="keywordtype">int</span> problems_num = functions.size();
+<a name="l00029"></a>00029 <span class="keyword">namespace </span>optimization {
+<a name="l00030"></a>00030 
+<a name="l00035"></a>00035 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00036"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html">00036</a> <span class="keyword">class </span><a class="code" href="classoptimization_1_1_solver_benchmark.html" title="A class to benchmark optimization Solver with different test problems.">SolverBenchmark</a> {
+<a name="l00037"></a>00037   <span class="keyword">public</span>:
+<a name="l00038"></a>00038     <span class="keyword">explicit</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">SolverBenchmark</a>(<span class="keywordtype">int</span> population_size);
+<a name="l00039"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">00039</a>     <span class="keyword">typedef</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">MultiTable&lt;string, 2&gt;</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a>;
+<a name="l00040"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#ae06a1c2d6c8fafebe2e0f25c1d513505">00040</a>     <span class="keyword">typedef</span> Eigen::Matrix&lt;<a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a>, -1, -1&gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#ae06a1c2d6c8fafebe2e0f25c1d513505">MatrixSolution</a>;
+<a name="l00041"></a>00041 
+<a name="l00045"></a>00045     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7" title="Remove all solvers and problems from the stand.">clear</a>();
+<a name="l00046"></a>00046     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">addProblem</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>, <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>);
+<a name="l00047"></a>00047     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#ad615599effb70c92bc035463624770ee">addSolver</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver&lt;TFunction&gt;</a> &amp;solver);
+<a name="l00048"></a>00048 
+<a name="l00055"></a>00055     <a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087" title="Run a benchmark using all solvers and problems specified at the moment.">run</a>() <span class="keyword">const</span>;
+<a name="l00063"></a>00063     <a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a6ff3ca34bdc432ec47ca6452de2e141b">multiRun</a>(<span class="keywordtype">int</span> run_count) <span class="keyword">const</span>;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065   <span class="keyword">private</span>:
+<a name="l00069"></a>00069     <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a2f5d47b2eafbde30fa89a5e983c83aea">initTable</a>(<a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a>* table) <span class="keyword">const</span>;
+<a name="l00073"></a>00073     Matrix <a class="code" href="classoptimization_1_1_solver_benchmark.html#a0b789cfcd9fe2affc98c41744ff2eb6d">mean</a>(<span class="keyword">const</span> vector&lt;Matrix&gt;&amp; matrices) <span class="keyword">const</span>;
+<a name="l00077"></a>00077     Matrix <a class="code" href="classoptimization_1_1_solver_benchmark.html#a7aeb4399db9ad7f3317795f4f031d1e3">standardDeviation</a>(<span class="keyword">const</span> vector&lt;Matrix&gt;&amp; matrices) <span class="keyword">const</span>;
+<a name="l00078"></a>00078 
+<a name="l00079"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a3081de5eaf1e6531296733de790a8f8c">00079</a>     vector&lt;typename TFunction::Ptr&gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3081de5eaf1e6531296733de790a8f8c">functions</a>;
+<a name="l00080"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a3fc66d529c2dfb9a236d030c20034e1f">00080</a>     vector&lt;Set::Ptr&gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3fc66d529c2dfb9a236d030c20034e1f">sets</a>;
+<a name="l00081"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c">00081</a>     vector&lt;Solver&lt;TFunction&gt; &gt; <a class="code" href="classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c">solvers</a>;
+<a name="l00082"></a>00082 
+<a name="l00083"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a5e762fc7020c7afd0d1d26454ecc50b4">00083</a>     <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a5e762fc7020c7afd0d1d26454ecc50b4">population_size_</a>;
+<a name="l00084"></a>00084 };
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00087"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">00087</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">SolverBenchmark&lt;TFunction&gt;::SolverBenchmark</a>(<span class="keywordtype">int</span> population_size)
+<a name="l00088"></a>00088   : population_size_(population_size) {
+<a name="l00089"></a>00089 }
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00092"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7">00092</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7" title="Remove all solvers and problems from the stand.">SolverBenchmark&lt;TFunction&gt;::clear</a>() {
+<a name="l00093"></a>00093   functions.clear();
+<a name="l00094"></a>00094   sets.clear();
+<a name="l00095"></a>00095   solvers.clear();
+<a name="l00096"></a>00096 }
 <a name="l00097"></a>00097 
-<a name="l00098"></a>00098   vector&lt;int&gt; size(2);
-<a name="l00099"></a>00099   size[0] = solvers_num;
-<a name="l00100"></a>00100   size[1] = problems_num;
-<a name="l00101"></a>00101 
-<a name="l00102"></a>00102   <a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a> table(size);
-<a name="l00103"></a>00103 
-<a name="l00104"></a>00104   table.<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8c16f0eeeedc438c80f9b9c52260ba77">setAxisLabel</a>(0, <span class="stringliteral">&quot;Solvers&quot;</span>);
-<a name="l00105"></a>00105   table.<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8c16f0eeeedc438c80f9b9c52260ba77">setAxisLabel</a>(1, <span class="stringliteral">&quot;Problems&quot;</span>);
-<a name="l00106"></a>00106 
-<a name="l00107"></a>00107   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> solver_index = 0; solver_index &lt; solvers_num; ++solver_index) {
-<a name="l00108"></a>00108     table.<a class="code" href="classltr_1_1utility_1_1_multi_table.html#aad8f906e17d987dfa80a6ff8a7056258">setTickLabel</a>(0, solver_index, solver_aliases[solver_index]);
-<a name="l00109"></a>00109   }
-<a name="l00110"></a>00110   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> problem_index = 0; problem_index &lt; problems_num; ++problem_index) {
-<a name="l00111"></a>00111     table.<a class="code" href="classltr_1_1utility_1_1_multi_table.html#aad8f906e17d987dfa80a6ff8a7056258">setTickLabel</a>(1, problem_index,
-<a name="l00112"></a>00112                        <span class="keywordtype">string</span>(<span class="stringliteral">&quot;#&quot;</span>) + lexical_cast&lt;string&gt;(problem_index + 1));
-<a name="l00113"></a>00113   }
-<a name="l00114"></a>00114 
-<a name="l00115"></a>00115   vector&lt;int&gt; multi_index(2);
-<a name="l00116"></a>00116 
-<a name="l00117"></a>00117   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> solver_index = 0; solver_index &lt; solvers_num; ++solver_index) {
-<a name="l00118"></a>00118     multi_index[0] = solver_index;
-<a name="l00119"></a>00119     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> problem_index = 0; problem_index &lt; problems_num; ++problem_index) {
-<a name="l00120"></a>00120       multi_index[1] = problem_index;
-<a name="l00121"></a>00121       <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> solution = solvers[solver_index].solve(functions[problem_index],
-<a name="l00122"></a>00122                                                       sets[problem_index],
-<a name="l00123"></a>00123                                                       population_size_);
-<a name="l00124"></a>00124       table[multi_index] = lexical_cast&lt;string, <span class="keywordtype">double</span>&gt;(solution.<a class="code" href="classoptimization_1_1_solution.html#a343372f38a2f4bb7a2b1bb2191058abc">min_value</a>);
-<a name="l00125"></a>00125     }
-<a name="l00126"></a>00126   }
-<a name="l00127"></a>00127 
-<a name="l00128"></a>00128   <span class="keywordflow">return</span> table;
-<a name="l00129"></a>00129 }
-<a name="l00130"></a>00130 }
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVER_SOLVER_BENCHMARK_H_</span>
-<a name="l00133"></a>00133 <span class="preprocessor"></span>
+<a name="l00098"></a>00098 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00099"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">00099</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">SolverBenchmark&lt;TFunction&gt;::addProblem</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00100"></a>00100                                            <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>) {
+<a name="l00101"></a>00101   functions.push_back(<span class="keyword">function</span>);
+<a name="l00102"></a>00102   sets.push_back(<span class="keyword">set</span>);
+<a name="l00103"></a>00103 }
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00106"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#ad615599effb70c92bc035463624770ee">00106</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#ad615599effb70c92bc035463624770ee">SolverBenchmark&lt;TFunction&gt;::addSolver</a>(<span class="keyword">const</span> <a class="code" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver&lt;TFunction&gt;</a> &amp;solver) {
+<a name="l00107"></a>00107   solvers.push_back(solver);
+<a name="l00108"></a>00108 }
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00111"></a>00111 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">SolverBenchmark&lt;TFunction&gt;::Table</a>
+<a name="l00112"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087">00112</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087" title="Run a benchmark using all solvers and problems specified at the moment.">SolverBenchmark&lt;TFunction&gt;::run</a>()<span class="keyword"> const </span>{
+<a name="l00113"></a>00113   <a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a> table;
+<a name="l00114"></a>00114   initTable(&amp;table);
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116   vector&lt;int&gt; multi_index(2);
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> solver_index = 0; solver_index &lt; solvers.size(); ++solver_index) {
+<a name="l00119"></a>00119     multi_index[0] = solver_index;
+<a name="l00120"></a>00120     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> problem_index = 0;
+<a name="l00121"></a>00121          problem_index &lt; functions.size();
+<a name="l00122"></a>00122          ++problem_index) {
+<a name="l00123"></a>00123       multi_index[1] = problem_index;
+<a name="l00124"></a>00124       <a class="code" href="classoptimization_1_1_solution.html" title="This class contains information about a solution of the optimization task: a minumim value found...">Solution</a> solution = solvers[solver_index].solve(functions[problem_index],
+<a name="l00125"></a>00125                                                       sets[problem_index],
+<a name="l00126"></a>00126                                                       population_size_);
+<a name="l00127"></a>00127       table[multi_index] = lexical_cast&lt;string, <span class="keywordtype">double</span>&gt;(solution.<a class="code" href="classoptimization_1_1_solution.html#a343372f38a2f4bb7a2b1bb2191058abc">min_value</a>);
+<a name="l00128"></a>00128     }
+<a name="l00129"></a>00129   }
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131   <span class="keywordflow">return</span> table;
+<a name="l00132"></a>00132 }
+<a name="l00133"></a>00133 
+<a name="l00134"></a>00134 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00135"></a>00135 <span class="keyword">typename</span> <a class="code" href="classltr_1_1utility_1_1_multi_table.html">SolverBenchmark&lt;TFunction&gt;::Table</a>
+<a name="l00136"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a6ff3ca34bdc432ec47ca6452de2e141b">00136</a> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a6ff3ca34bdc432ec47ca6452de2e141b">SolverBenchmark&lt;TFunction&gt;::multiRun</a>(<span class="keywordtype">int</span> run_count)<span class="keyword"> const </span>{
+<a name="l00137"></a>00137   <a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a> table;
+<a name="l00138"></a>00138   initTable(&amp;table);
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140   vector&lt;int&gt; multi_index(2);
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142   vector&lt;Matrix&gt; solutions;
+<a name="l00143"></a>00143   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> run_index = 0; run_index &lt; run_count; ++run_index) {
+<a name="l00144"></a>00144     Matrix solution(solvers.size(), functions.size());
+<a name="l00145"></a>00145     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> solver_index = 0; solver_index &lt; solvers.size(); ++solver_index) {
+<a name="l00146"></a>00146       <span class="keywordflow">for</span> (<span class="keywordtype">int</span> problem_index = 0;
+<a name="l00147"></a>00147            problem_index &lt; functions.size();
+<a name="l00148"></a>00148            ++problem_index) {
+<a name="l00149"></a>00149         solution(solver_index, problem_index) = solvers[solver_index].solve(
+<a name="l00150"></a>00150             functions[problem_index],
+<a name="l00151"></a>00151             sets[problem_index],
+<a name="l00152"></a>00152             population_size_).min_value;
+<a name="l00153"></a>00153       }
+<a name="l00154"></a>00154     }
+<a name="l00155"></a>00155     solutions.push_back(solution);
+<a name="l00156"></a>00156   }
+<a name="l00157"></a>00157   Matrix mean_matrix = mean(solutions);
+<a name="l00158"></a>00158   Matrix standard_deviation_matrix = standardDeviation(solutions);
+<a name="l00159"></a>00159   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> solver_index = 0; solver_index &lt; solvers.size(); ++solver_index) {
+<a name="l00160"></a>00160     multi_index[0] = solver_index;
+<a name="l00161"></a>00161     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> problem_index = 0;
+<a name="l00162"></a>00162          problem_index &lt; functions.size();
+<a name="l00163"></a>00163          ++problem_index) {
+<a name="l00164"></a>00164       multi_index[1] = problem_index;
+<a name="l00165"></a>00165       <span class="keywordtype">string</span> cell = lexical_cast&lt;<span class="keywordtype">string</span>&gt;(
+<a name="l00166"></a>00166           mean_matrix(solver_index, problem_index));
+<a name="l00167"></a>00167       cell += <span class="stringliteral">&quot;+-&quot;</span>;
+<a name="l00168"></a>00168       cell += lexical_cast&lt;<span class="keywordtype">string</span>&gt;(
+<a name="l00169"></a>00169           standard_deviation_matrix(solver_index, problem_index));
+<a name="l00170"></a>00170       table[multi_index] = cell;
+<a name="l00171"></a>00171     }
+<a name="l00172"></a>00172   }
+<a name="l00173"></a>00173   <span class="keywordflow">return</span> table;
+<a name="l00174"></a>00174 }
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00177"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a2f5d47b2eafbde30fa89a5e983c83aea">00177</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_solver_benchmark.html#a2f5d47b2eafbde30fa89a5e983c83aea">SolverBenchmark&lt;TFunction&gt;::initTable</a>(<a class="code" href="classltr_1_1utility_1_1_multi_table.html">Table</a>* table)<span class="keyword"> const </span>{
+<a name="l00178"></a>00178   <a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">CHECK_MSG</a>(!functions.empty(), <span class="stringliteral">&quot;No test problems specified for a benchmark&quot;</span>);
+<a name="l00179"></a>00179   <a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">CHECK_MSG</a>(!solvers.empty(), <span class="stringliteral">&quot;No solvers specified for a benchmark&quot;</span>);
+<a name="l00180"></a>00180 
+<a name="l00181"></a>00181   <span class="keywordtype">int</span> solvers_count = solvers.size();
+<a name="l00182"></a>00182   <span class="keywordtype">int</span> problems_count = functions.size();
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184   vector&lt;int&gt; size(2);
+<a name="l00185"></a>00185   size[0] = solvers_count;
+<a name="l00186"></a>00186   size[1] = problems_count;
+<a name="l00187"></a>00187 
+<a name="l00188"></a>00188   table-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a5952931e71a71cb64bef6d66748733c0">resize</a>(size);
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190   table-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8c16f0eeeedc438c80f9b9c52260ba77">setAxisLabel</a>(0, <span class="stringliteral">&quot;Solvers&quot;</span>);
+<a name="l00191"></a>00191   table-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#a8c16f0eeeedc438c80f9b9c52260ba77">setAxisLabel</a>(1, <span class="stringliteral">&quot;Problems&quot;</span>);
+<a name="l00192"></a>00192 
+<a name="l00193"></a>00193   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> solver_index = 0; solver_index &lt; solvers_count; ++solver_index) {
+<a name="l00194"></a>00194     table-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#aad8f906e17d987dfa80a6ff8a7056258">setTickLabel</a>(0, solver_index, solvers[solver_index].alias());
+<a name="l00195"></a>00195   }
+<a name="l00196"></a>00196   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> problem_index = 0; problem_index &lt; problems_count; ++problem_index) {
+<a name="l00197"></a>00197     table-&gt;<a class="code" href="classltr_1_1utility_1_1_multi_table.html#aad8f906e17d987dfa80a6ff8a7056258">setTickLabel</a>(1, problem_index,
+<a name="l00198"></a>00198                         <span class="keywordtype">string</span>(<span class="stringliteral">&quot;#&quot;</span>) + lexical_cast&lt;string&gt;(problem_index + 1));
+<a name="l00199"></a>00199   }
+<a name="l00200"></a>00200 }
+<a name="l00201"></a>00201 
+<a name="l00202"></a>00202 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00203"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a0b789cfcd9fe2affc98c41744ff2eb6d">00203</a> Matrix <a class="code" href="classoptimization_1_1_solver_benchmark.html#a0b789cfcd9fe2affc98c41744ff2eb6d">SolverBenchmark&lt;TFunction&gt;::mean</a>(
+<a name="l00204"></a>00204     <span class="keyword">const</span> vector&lt;Matrix&gt;&amp; matrices)<span class="keyword"> const </span>{
+<a name="l00205"></a>00205   Matrix mean_matrix = matrices[0];
+<a name="l00206"></a>00206   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> matrix_index = 1; matrix_index &lt; matrices.size(); ++matrix_index) {
+<a name="l00207"></a>00207     mean_matrix += matrices[matrix_index];
+<a name="l00208"></a>00208   }
+<a name="l00209"></a>00209   mean_matrix /= (double)matrices.size();
+<a name="l00210"></a>00210   <span class="keywordflow">return</span> mean_matrix;
+<a name="l00211"></a>00211 }
+<a name="l00212"></a>00212 
+<a name="l00213"></a>00213 <span class="keyword">template</span> &lt;<span class="keyword">class</span> TFunction&gt;
+<a name="l00214"></a><a class="code" href="classoptimization_1_1_solver_benchmark.html#a7aeb4399db9ad7f3317795f4f031d1e3">00214</a> Matrix <a class="code" href="classoptimization_1_1_solver_benchmark.html#a7aeb4399db9ad7f3317795f4f031d1e3">SolverBenchmark&lt;TFunction&gt;::standardDeviation</a>(
+<a name="l00215"></a>00215     <span class="keyword">const</span> vector&lt;Matrix&gt;&amp; matrices)<span class="keyword"> const </span>{
+<a name="l00216"></a>00216   <a class="code" href="macros_8h.html#ae087de5fa4bf746fbda2b2542a537489">CHECK_MSG</a>(matrices.size() &gt;= 2,
+<a name="l00217"></a>00217             <span class="stringliteral">&quot;Not enough elements to get standard deviation&quot;</span>);
+<a name="l00218"></a>00218   Matrix mean_matrix = mean(matrices);
+<a name="l00219"></a>00219   Matrix variance_matrix = Matrix::Zero(solvers.size(), functions.size());
+<a name="l00220"></a>00220   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> matrix_index = 0; matrix_index &lt; matrices.size(); ++matrix_index) {
+<a name="l00221"></a>00221     Matrix subtraction = mean_matrix - matrices[matrix_index];
+<a name="l00222"></a>00222     variance_matrix += subtraction.cwiseProduct(subtraction);
+<a name="l00223"></a>00223   }
+<a name="l00224"></a>00224   variance_matrix /= (double)matrices.size() - 1.0;
+<a name="l00225"></a>00225   <span class="keywordflow">return</span> variance_matrix.cwiseSqrt();
+<a name="l00226"></a>00226 }
+<a name="l00227"></a>00227 }
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_SOLVER_SOLVER_BENCHMARK_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:47 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

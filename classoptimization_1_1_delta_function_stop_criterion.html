@@ -139,7 +139,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acdb7f1fe69919c7b578c079e6ef776ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#acdb7f1fe69919c7b578c079e6ef776ba">DeltaFunctionStopCriterion</a> (double min_delta=0.01)</td></tr>
 <tr class="memitem:a08494e685c96179b4dee1db698eb57a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a08494e685c96179b4dee1db698eb57a8">~DeltaFunctionStopCriterion</a> ()</td></tr>
-<tr class="memitem:af343e4863a507840afc52f2e075bac39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">init</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point)</td></tr>
+<tr class="memitem:a1aa39078760e7b3edfc60b8eff89ecca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a1aa39078760e7b3edfc60b8eff89ecca">init</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
 <tr class="memitem:a0a28fe4d05e14b9c16eba32c18efad6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a0a28fe4d05e14b9c16eba32c18efad6b">update</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point)</td></tr>
 <tr class="memitem:a4594e707753c939e68d463bf54e86cfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a4594e707753c939e68d463bf54e86cfa">GET_SET</a> (double, current_value)</td></tr>
 <tr class="memitem:af2c65ebf02fd871ded41282ff5120f74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#af2c65ebf02fd871ded41282ff5120f74">GET_SET</a> (double, min_delta)</td></tr>
@@ -320,25 +320,41 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af343e4863a507840afc52f2e075bac39"></a>
+<a class="anchor" id="a1aa39078760e7b3edfc60b8eff89ecca"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html">optimization::DeltaFunctionStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#af343e4863a507840afc52f2e075bac39">init</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html">optimization::DeltaFunctionStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_delta_function_stop_criterion.html#a1aa39078760e7b3edfc60b8eff89ecca">init</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename TFunction::Ptr&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Init data for future test of current point. </p>
 
-<p>Implements <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#af4671c51ae69a7469673edb388083727">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html#a851f6e10fdd518b7e6c13c2c34c14069">optimization::OnePointStopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -402,7 +418,7 @@ template&lt;class TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -138,14 +138,12 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a283de59aaff9b4d9c5c1b8132f04601c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a283de59aaff9b4d9c5c1b8132f04601c">OnePointUpdater</a> ()</td></tr>
 <tr class="memitem:afeee824f30b7b2160ed08cd541a27a9c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#afeee824f30b7b2160ed08cd541a27a9c">~OnePointUpdater</a> ()</td></tr>
-<tr class="memitem:a21d171be541faf1f5db0516677f2614d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a21d171be541faf1f5db0516677f2614d">init</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point)=0</td></tr>
+<tr class="memitem:a89397eb3232f7cdf068e1054fd181e7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a89397eb3232f7cdf068e1054fd181e7b">init</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)=0</td></tr>
 <tr class="memitem:a21e97cf8f1a0de219006ed3734104f08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a21e97cf8f1a0de219006ed3734104f08">update</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *updated_point)=0</td></tr>
 <tr class="memdesc:a21e97cf8f1a0de219006ed3734104f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update point via one of iteration methods.  <a href="#a21e97cf8f1a0de219006ed3734104f08"></a><br/></td></tr>
 <tr class="memitem:a80e48c0af201338430fc0da4b4edd438"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classoptimization_1_1_one_point_updater.html">OnePointUpdater</a><br class="typebreak"/>
 &lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_one_point_updater.html#a5235d18bd077e03286b64959903a81bc">Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a80e48c0af201338430fc0da4b4edd438">clone</a> () const =0</td></tr>
 <tr class="memitem:a267fcae3c66c83788742252e460ae702"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a267fcae3c66c83788742252e460ae702">getDefaultAlias</a> () const </td></tr>
-<tr class="memitem:a251ce33286113160251975756ba083e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a251ce33286113160251975756ba083e1">set_function</a> (typename TFunction::Ptr function)=0</td></tr>
-<tr class="memitem:a66d560ab7188be0462e87b143a70c822"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#a66d560ab7188be0462e87b143a70c822">set_set</a> (<a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> function)=0</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:acc1ad98704c8b8bf8e735695fc03d295"><td class="memItemLeft" align="right" valign="top">TFunction::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_one_point_updater.html#acc1ad98704c8b8bf8e735695fc03d295">function_</a></td></tr>
@@ -262,67 +260,41 @@ template&lt;class TFunction&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a21d171be541faf1f5db0516677f2614d"></a>
+<a class="anchor" id="a89397eb3232f7cdf068e1054fd181e7b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_one_point_updater.html">optimization::OnePointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_one_point_updater.html#a21d171be541faf1f5db0516677f2614d">init</a> </td>
+          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_one_point_updater.html">optimization::OnePointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_one_point_updater.html#a89397eb3232f7cdf068e1054fd181e7b">init</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>point</em></td><td>)</td>
-          <td><code> [pure virtual]</code></td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename TFunction::Ptr&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Init data for future updates of current point. </p>
 
-<p>Implemented in <a class="el" href="classoptimization_1_1_directed_updater.html#a401d7e78dde5bbc61d87c7bc84e345ee">optimization::DirectedUpdater&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a251ce33286113160251975756ba083e1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_one_point_updater.html">optimization::OnePointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_one_point_updater.html#a251ce33286113160251975756ba083e1">set_function</a> </td>
-          <td>(</td>
-          <td class="paramtype">typename TFunction::Ptr&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td><code> [pure virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implemented in <a class="el" href="classoptimization_1_1_directed_updater.html#a3f9bcf318dd7eb215bbb9431d8dd6c26">optimization::DirectedUpdater&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a66d560ab7188be0462e87b143a70c822"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="classoptimization_1_1_one_point_updater.html">optimization::OnePointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_one_point_updater.html#a66d560ab7188be0462e87b143a70c822">set_set</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td><code> [pure virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implemented in <a class="el" href="classoptimization_1_1_directed_updater.html#a44d7d0ffa88a19a2201b43b51a4ea3b0">optimization::DirectedUpdater&lt; TFunction &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classoptimization_1_1_directed_updater.html#a2490ba155d594128ddb355b40434f550">optimization::DirectedUpdater&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -397,7 +369,7 @@ template&lt;class TFunction&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -15,5 +15,7 @@ var searchData=
   ['arff_5foutput_5ftest_5ffile_5fname',['arff_output_test_file_name',['../class_i_o_utility_test.html#a0ba943931ac862f05972f5f0ff679190',1,'IOUtilityTest']]],
   ['argmin',['argmin',['../classoptimization_1_1_solution.html#ab451c3e6e733ae7fcee694e4201b64c0',1,'optimization::Solution']]],
   ['axis_5flabel',['axis_label',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#a13cb394122f6e00c6e080e6368e7841a',1,'ltr::utility::MultiTable::DimensionMetaInfo']]],
+  ['axis_5forder_5f',['axis_order_',['../classltr_1_1utility_1_1_multi_table.html#a3add0fe2956d3c6e980775d76d2bbe3c',1,'ltr::utility::MultiTable']]],
+  ['axis_5forder_5fis_5fset_5f',['axis_order_is_set_',['../classltr_1_1utility_1_1_multi_table.html#afec9647b67cdac54fe6e5f5c1adafce5',1,'ltr::utility::MultiTable']]],
   ['axis_5fticks_5flabels',['axis_ticks_labels',['../structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html#ac8fd51be980f7a725202ebc6f4c49f77',1,'ltr::utility::MultiTable::DimensionMetaInfo']]]
 ];

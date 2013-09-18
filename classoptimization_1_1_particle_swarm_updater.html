@@ -131,10 +131,8 @@ Inheritance diagram for optimization::ParticleSwarmUpdater&lt; TFunction &gt;:</
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ac6d4c96e71bf924ae95d3a8428ab72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a4ac6d4c96e71bf924ae95d3a8428ab72">ParticleSwarmUpdater</a> (int max_iteration, double inertia_weight_min, double inertia_weight_max, double individual_learning_factor, double cooperative_learning_factor)</td></tr>
-<tr class="memitem:aa665895d4a086cece38762ab9b30c6d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#aa665895d4a086cece38762ab9b30c6d7">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population, typename TFunction::Ptr <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
+<tr class="memitem:aa665895d4a086cece38762ab9b30c6d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#aa665895d4a086cece38762ab9b30c6d7">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population, typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
 <tr class="memitem:a5bb2992e68e161e42a741c7fdc66476d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a5bb2992e68e161e42a741c7fdc66476d">update</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population)</td></tr>
-<tr class="memitem:a3a717d94b35b9c4fa4ef9ab76c5fa4b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a3a717d94b35b9c4fa4ef9ab76c5fa4b3">set_function</a> (typename TFunction::Ptr <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>)</td></tr>
-<tr class="memitem:a07d30545967178e68a65e52c8de9a3d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a07d30545967178e68a65e52c8de9a3d9">set_set</a> (<a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
 <tr class="memitem:a29180471d78bf62830c770df33ab8c11"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -265,48 +263,6 @@ template&lt;typename TFunction &gt; </div>
 <p>Init data for future updates of population. </p>
 
 <p>Implements <a class="el" href="classoptimization_1_1_population_updater.html#acb9635f10174e22f39bc440a7b7ace35">optimization::PopulationUpdater&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3a717d94b35b9c4fa4ef9ab76c5fa4b3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_particle_swarm_updater.html">optimization::ParticleSwarmUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a3a717d94b35b9c4fa4ef9ab76c5fa4b3">set_function</a> </td>
-          <td>(</td>
-          <td class="paramtype">typename TFunction::Ptr&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_population_updater.html#aebd33bcc9e6b34dbf32188d7a55716ea">optimization::PopulationUpdater&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a07d30545967178e68a65e52c8de9a3d9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_particle_swarm_updater.html">optimization::ParticleSwarmUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_particle_swarm_updater.html#a07d30545967178e68a65e52c8de9a3d9">set_set</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&#160;</td>
-          <td class="paramname"><em>set</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_population_updater.html#a155bf228bff9f3c8e5dede691df5333f">optimization::PopulationUpdater&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -475,7 +431,7 @@ template&lt;typename TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

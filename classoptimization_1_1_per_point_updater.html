@@ -140,10 +140,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa08131e2c85c16fe55b6cec068abbc1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#aa08131e2c85c16fe55b6cec068abbc1b">PerPointUpdater</a> (typename <a class="el" href="classoptimization_1_1_one_point_updater.html">OnePointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_updater.html#ade1e71a9c9fd3e2d02d287ec94c29d71">Ptr</a> one_point_updater_sample)</td></tr>
 <tr class="memitem:a9f23fdd6f6d8a072e4fad0426f7c036f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#a9f23fdd6f6d8a072e4fad0426f7c036f">~PerPointUpdater</a> ()</td></tr>
-<tr class="memitem:a742b5226591697c87e279e372be3ba13"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#a742b5226591697c87e279e372be3ba13">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population, typename TFunction::Ptr <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
+<tr class="memitem:a742b5226591697c87e279e372be3ba13"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#a742b5226591697c87e279e372be3ba13">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population, typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
 <tr class="memitem:a90074c8f71941f13b69c47d98529dd09"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#a90074c8f71941f13b69c47d98529dd09">update</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population)</td></tr>
-<tr class="memitem:aeb64ac01aa249c28f8eb49dd60f4a832"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#aeb64ac01aa249c28f8eb49dd60f4a832">set_function</a> (typename TFunction::Ptr <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>)</td></tr>
-<tr class="memitem:a246b4b4d55c2fd0e09acecaa5420bd4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#a246b4b4d55c2fd0e09acecaa5420bd4a">set_set</a> (<a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classoptimization_1_1_population_updater.html#a7be0fb6ad3cd25b564034e82075b09bd">function</a>)</td></tr>
 <tr class="memitem:ac48ee1ca9915d72e3b22340783c61261"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_updater.html#ac48ee1ca9915d72e3b22340783c61261">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -293,48 +291,6 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aeb64ac01aa249c28f8eb49dd60f4a832"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_updater.html">optimization::PerPointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_updater.html#aeb64ac01aa249c28f8eb49dd60f4a832">set_function</a> </td>
-          <td>(</td>
-          <td class="paramtype">typename TFunction::Ptr&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_population_updater.html#aebd33bcc9e6b34dbf32188d7a55716ea">optimization::PopulationUpdater&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a246b4b4d55c2fd0e09acecaa5420bd4a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_updater.html">optimization::PerPointUpdater</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_updater.html#a246b4b4d55c2fd0e09acecaa5420bd4a">set_set</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_population_updater.html#a155bf228bff9f3c8e5dede691df5333f">optimization::PopulationUpdater&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a90074c8f71941f13b69c47d98529dd09"></a>
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +353,7 @@ template&lt;class TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -140,6 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d35d1705609e9a5e58dbc35ad33d15a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#a6d35d1705609e9a5e58dbc35ad33d15a">~Set</a> ()</td></tr>
 <tr class="memitem:a0368d87b544d79b02c938c6605dd3d61"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#a0368d87b544d79b02c938c6605dd3d61">isInside</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point) const =0</td></tr>
 <tr class="memitem:a0bf2a13ad2f09cd4802a1abed9aee46a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#a0bf2a13ad2f09cd4802a1abed9aee46a">computeProjection</a> (const <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> &amp;point, <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *projection) const =0</td></tr>
+<tr class="memitem:af0f47f36c4515029e5f8b6568a8886bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#af0f47f36c4515029e5f8b6568a8886bf">project</a> (<a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *point) const </td></tr>
 <tr class="memitem:a9b22f8fd1f82b981d746c11217a7af4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#a9b22f8fd1f82b981d746c11217a7af4a">getBoundaries</a> (<a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *top, <a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *bottom) const =0</td></tr>
 <tr class="memitem:ad8758f29237276d6640de2db5c46f41c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#ad8758f29237276d6640de2db5c46f41c">sampleRandomPointInside</a> (<a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *random_point) const </td></tr>
 <tr class="memitem:a519f1ed79e1d126d51958b580fe40b83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_set.html#a519f1ed79e1d126d51958b580fe40b83">GET</a> (int, dimension)</td></tr>
@@ -165,7 +166,7 @@ Private Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classoptimization_1_1_polyhedron_set.html#ab748f25b9f374020c474b0bb6d38e599">optimization::PolyhedronSet</a>, <a class="el" href="classoptimization_1_1_linear_inequality_set.html#a39cd21ad85d24833673f9bca9ac08b17">optimization::LinearInequalitySet</a>, <a class="el" href="classoptimization_1_1_sphere_set.html#ae8cd7e4104aee302b35498a3ef66d8a0">optimization::SphereSet</a>, and <a class="el" href="classoptimization_1_1_ball_set.html#a2825d3e444eca0a46e04e70a235bbec2">optimization::BallSet</a>.</p>
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_polyhedron_set.html#ab748f25b9f374020c474b0bb6d38e599">optimization::PolyhedronSet</a>, and <a class="el" href="classoptimization_1_1_linear_inequality_set.html#a39cd21ad85d24833673f9bca9ac08b17">optimization::LinearInequalitySet</a>.</p>
 
 </div>
 </div>
@@ -228,7 +229,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Projects given point on this set. </p>
+<p>Computes projection of given point on this set. </p>
 
 <p>Implemented in <a class="el" href="classoptimization_1_1_polyhedron_set.html#a973ebb3127ae51085b4c9291e9463fbb">optimization::PolyhedronSet</a>, <a class="el" href="classoptimization_1_1_linear_inequality_set.html#a34292db18a2569db3ec0596543bf9ea0">optimization::LinearInequalitySet</a>, <a class="el" href="classoptimization_1_1_cube_set.html#a2dd78d442f5dd12e9e34f1124326e806">optimization::CubeSet</a>, <a class="el" href="classoptimization_1_1_sphere_set.html#afed8b3730abc14b5232ec4b959d48b00">optimization::SphereSet</a>, and <a class="el" href="classoptimization_1_1_ball_set.html#aeaac94ba6f2da02fbec25453b3d28aeb">optimization::BallSet</a>.</p>
 
@@ -308,7 +309,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classltr_1_1_aliaser.html#ad724414573ec5df2cc00bb5aaa57e9d0">ltr::Aliaser</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classoptimization_1_1_linear_inequality_set.html#abd20df57e784be38670b479aab1b1bde">optimization::LinearInequalitySet</a>, <a class="el" href="classoptimization_1_1_polyhedron_set.html#ada803c8186e98d60e7f4eb4fd3f02aa6">optimization::PolyhedronSet</a>, <a class="el" href="classoptimization_1_1_sphere_set.html#a4aa60650c22a4c924478d0dece943487">optimization::SphereSet</a>, <a class="el" href="classoptimization_1_1_ball_set.html#a0cf023f9fa21452bd4b732e044e73404">optimization::BallSet</a>, <a class="el" href="classoptimization_1_1_cube_set.html#a7838748286326affbd90188e1e826793">optimization::CubeSet</a>, <a class="el" href="classoptimization_1_1_g3_set.html#aae72b9d157aa10dda586c30a4f108fa0">optimization::G3Set</a>, and <a class="el" href="classoptimization_1_1_g1_set.html#a073c7f66f8fb19d2ba102b9e04882157">optimization::G1Set</a>.</p>
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_linear_inequality_set.html#abd20df57e784be38670b479aab1b1bde">optimization::LinearInequalitySet</a>, <a class="el" href="classoptimization_1_1_sphere_set.html#a4aa60650c22a4c924478d0dece943487">optimization::SphereSet</a>, <a class="el" href="classoptimization_1_1_polyhedron_set.html#ada803c8186e98d60e7f4eb4fd3f02aa6">optimization::PolyhedronSet</a>, <a class="el" href="classoptimization_1_1_ball_set.html#a0cf023f9fa21452bd4b732e044e73404">optimization::BallSet</a>, <a class="el" href="classoptimization_1_1_cube_set.html#a7838748286326affbd90188e1e826793">optimization::CubeSet</a>, <a class="el" href="classoptimization_1_1_g3_set.html#aae72b9d157aa10dda586c30a4f108fa0">optimization::G3Set</a>, and <a class="el" href="classoptimization_1_1_g1_set.html#a073c7f66f8fb19d2ba102b9e04882157">optimization::G1Set</a>.</p>
 
 </div>
 </div>
@@ -350,6 +351,24 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af0f47f36c4515029e5f8b6568a8886bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_set.html#af0f47f36c4515029e5f8b6568a8886bf">optimization::Set::project</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a> *&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Projects given point on this set. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad8758f29237276d6640de2db5c46f41c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +385,7 @@ Private Attributes</h2></td></tr>
 <div class="memdoc">
 <p>Get arbitrary point in given set. </p>
 
-<p>Reimplemented in <a class="el" href="classoptimization_1_1_linear_inequality_set.html#aed42eeeec7b89fcd5571e98c5ed97245">optimization::LinearInequalitySet</a>, <a class="el" href="classoptimization_1_1_polyhedron_set.html#a82b7283a152fa0a990103c4e22dbfd9a">optimization::PolyhedronSet</a>, <a class="el" href="classoptimization_1_1_cube_set.html#a873e491584e9f832fc07e30f3bdfe12a">optimization::CubeSet</a>, <a class="el" href="classoptimization_1_1_sphere_set.html#a14f807dfa8d02bbdc6bd3caed1389381">optimization::SphereSet</a>, and <a class="el" href="classoptimization_1_1_ball_set.html#a7f7be6d494ec2953f5cbcb660e6ab56d">optimization::BallSet</a>.</p>
+<p>Reimplemented in <a class="el" href="classoptimization_1_1_linear_inequality_set.html#aed42eeeec7b89fcd5571e98c5ed97245">optimization::LinearInequalitySet</a>, <a class="el" href="classoptimization_1_1_polyhedron_set.html#a82b7283a152fa0a990103c4e22dbfd9a">optimization::PolyhedronSet</a>, <a class="el" href="classoptimization_1_1_sphere_set.html#a14f807dfa8d02bbdc6bd3caed1389381">optimization::SphereSet</a>, <a class="el" href="classoptimization_1_1_cube_set.html#a873e491584e9f832fc07e30f3bdfe12a">optimization::CubeSet</a>, and <a class="el" href="classoptimization_1_1_ball_set.html#a7f7be6d494ec2953f5cbcb660e6ab56d">optimization::BallSet</a>.</p>
 
 </div>
 </div>
@@ -393,7 +412,7 @@ Private Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

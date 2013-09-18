@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer." alt="" coords="65,5,281,32"/>
+<area shape="rect" href="$classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer." alt="" coords="65,80,281,107"/>
+<area shape="rect" href="$classltr_1_1_aliaser.html" title="Inherit from this class in order to use alias." alt="" coords="133,5,213,32"/>
 </map>

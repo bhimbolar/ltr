@@ -1,4 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" href="$particle__swarm__optimization_8h.html" title="ltr/optimization/solver/particle_swarm_optimization.h" alt="" coords="5,80,328,107"/>
-<area shape="rect" href="$particle__swarm__optimization__unittest_8cc.html" title="ltr/optimization/solver/particle_swarm_optimization_unittest.cc" alt="" coords="76,155,455,181"/>
+<area shape="rect" href="$particle__swarm__optimization_8h.html" title="ltr/optimization/solver/particle_swarm_optimization.h" alt="" coords="232,80,555,107"/>
+<area shape="rect" href="$particle__swarm__optimization__unittest_8cc.html" title="ltr/optimization/solver/particle_swarm_optimization_unittest.cc" alt="" coords="5,155,384,181"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="408,155,728,181"/>
 </map>

@@ -141,6 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7a50da432caa1b921a31d6b47b8fc9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t.html">T</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#ac7a50da432caa1b921a31d6b47b8fc9c">operator[]</a> (const vector&lt; int &gt; &amp;multiIndex)</td></tr>
 <tr class="memitem:a8c16f0eeeedc438c80f9b9c52260ba77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a8c16f0eeeedc438c80f9b9c52260ba77">setAxisLabel</a> (int axis_index, const string &amp;label)</td></tr>
 <tr class="memitem:aad8f906e17d987dfa80a6ff8a7056258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#aad8f906e17d987dfa80a6ff8a7056258">setTickLabel</a> (int axis_index, int tick_index, const string &amp;label)</td></tr>
+<tr class="memitem:a5777f5945baca805ce8a1665bf1eb741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a5777f5945baca805ce8a1665bf1eb741">setAxisOrder</a> (const vector&lt; int &gt; &amp;order)</td></tr>
+<tr class="memitem:a63b830f870e4dcc82136195dfda8f5f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a63b830f870e4dcc82136195dfda8f5f0">unsetAxisOrder</a> ()</td></tr>
 <tr class="memitem:a65e6e345e4dbe25637817a5794fd8dce"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a65e6e345e4dbe25637817a5794fd8dce">toString</a> () const </td></tr>
 <tr class="memitem:a092f1746eb85281b4bed5070e3b462d7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a092f1746eb85281b4bed5070e3b462d7">toHTML</a> () const </td></tr>
 <tr class="memitem:a5952931e71a71cb64bef6d66748733c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a5952931e71a71cb64bef6d66748733c0">resize</a> (const vector&lt; int &gt; &amp;multi_size)</td></tr>
@@ -155,6 +157,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aa32c80ff2af78d6ed7001421c86c7f38"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#aa32c80ff2af78d6ed7001421c86c7f38">convertToText</a> (Format format) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:afec9647b67cdac54fe6e5f5c1adafce5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#afec9647b67cdac54fe6e5f5c1adafce5">axis_order_is_set_</a></td></tr>
+<tr class="memitem:a3add0fe2956d3c6e980775d76d2bbe3c"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a3add0fe2956d3c6e980775d76d2bbe3c">axis_order_</a></td></tr>
 <tr class="memitem:a5d91923e234475efccdbb6ef2b3d814f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classltr_1_1utility_1_1_multi_array.html">MultiArray</a>&lt; <a class="el" href="class_t.html">T</a>, N &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a5d91923e234475efccdbb6ef2b3d814f">table_contents_</a></td></tr>
 <tr class="memitem:a97d9bcfae0194d0eec6eab7abe53ecfc"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structltr_1_1utility_1_1_multi_table_1_1_dimension_meta_info.html">DimensionMetaInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classltr_1_1utility_1_1_multi_table.html#a97d9bcfae0194d0eec6eab7abe53ecfc">table_meta_info_</a></td></tr>
 <tr><td colspan="2"><h2><a name="pri-static-attribs"></a>
@@ -536,6 +540,26 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a5777f5945baca805ce8a1665bf1eb741"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1_multi_table.html">ltr::utility::MultiTable</a>&lt; <a class="el" href="class_t.html">T</a>, N &gt;::<a class="el" href="classltr_1_1utility_1_1_multi_table.html#a5777f5945baca805ce8a1665bf1eb741">setAxisOrder</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>order</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sets order of printing axis. </p>
+
+</div>
+</div>
 <a class="anchor" id="aad8f906e17d987dfa80a6ff8a7056258"></a>
 <div class="memitem">
 <div class="memproto">
@@ -618,7 +642,56 @@ template&lt;typename T , int N&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a63b830f870e4dcc82136195dfda8f5f0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classltr_1_1utility_1_1_multi_table.html">ltr::utility::MultiTable</a>&lt; <a class="el" href="class_t.html">T</a>, N &gt;::<a class="el" href="classltr_1_1utility_1_1_multi_table.html#a63b830f870e4dcc82136195dfda8f5f0">unsetAxisOrder</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sets standard order of printing axis; </p>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a3add0fe2956d3c6e980775d76d2bbe3c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int&gt; <a class="el" href="classltr_1_1utility_1_1_multi_table.html">ltr::utility::MultiTable</a>&lt; <a class="el" href="class_t.html">T</a>, N &gt;::<a class="el" href="classltr_1_1utility_1_1_multi_table.html#a3add0fe2956d3c6e980775d76d2bbe3c">axis_order_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afec9647b67cdac54fe6e5f5c1adafce5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classltr_1_1utility_1_1_multi_table.html">ltr::utility::MultiTable</a>&lt; <a class="el" href="class_t.html">T</a>, N &gt;::<a class="el" href="classltr_1_1utility_1_1_multi_table.html#afec9647b67cdac54fe6e5f5c1adafce5">axis_order_is_set_</a><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6f4acf232ab2c2c14664d3f7ede3e307"></a>
 <div class="memitem">
 <div class="memproto">
@@ -688,7 +761,7 @@ template&lt;typename T, int N&gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:50 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

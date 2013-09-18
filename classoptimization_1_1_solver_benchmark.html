@@ -109,6 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">optimization::SolverBenchmark&lt; TFunction &gt; Class Template Reference</div>  </div>
@@ -125,21 +126,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a171cca4b13a0146edd12e78d30ca67c4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt; string, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a></td></tr>
+<tr class="memitem:ae06a1c2d6c8fafebe2e0f25c1d513505"><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix<br class="typebreak"/>
+&lt; <a class="el" href="classoptimization_1_1_solution.html">Solution</a>,-1,-1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#ae06a1c2d6c8fafebe2e0f25c1d513505">MatrixSolution</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad195306f87aa903c67b644d326ec4171"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#ad195306f87aa903c67b644d326ec4171">SolverBenchmark</a> (int population_size)</td></tr>
 <tr class="memitem:aa4289d2a90d03b1d5f03b823c67909d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#aa4289d2a90d03b1d5f03b823c67909d7">clear</a> ()</td></tr>
 <tr class="memdesc:aa4289d2a90d03b1d5f03b823c67909d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all solvers and problems from the stand.  <a href="#aa4289d2a90d03b1d5f03b823c67909d7"></a><br/></td></tr>
 <tr class="memitem:a3380c25640be6f6150a24101b17b2017"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a3380c25640be6f6150a24101b17b2017">addProblem</a> (typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
-<tr class="memitem:a7db8b8197265c3dd906907e11ba199f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a7db8b8197265c3dd906907e11ba199f6">addSolver</a> (const <a class="el" href="classoptimization_1_1_solver.html">Solver</a>&lt; TFunction &gt; &amp;solver, const string &amp;alias)</td></tr>
+<tr class="memitem:ad615599effb70c92bc035463624770ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#ad615599effb70c92bc035463624770ee">addSolver</a> (const <a class="el" href="classoptimization_1_1_solver.html">Solver</a>&lt; TFunction &gt; &amp;solver)</td></tr>
 <tr class="memitem:a6013b74f5e8eb4fdf801b72c50b1f087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a6013b74f5e8eb4fdf801b72c50b1f087">run</a> () const </td></tr>
 <tr class="memdesc:a6013b74f5e8eb4fdf801b72c50b1f087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a benchmark using all solvers and problems specified at the moment.  <a href="#a6013b74f5e8eb4fdf801b72c50b1f087"></a><br/></td></tr>
+<tr class="memitem:a6ff3ca34bdc432ec47ca6452de2e141b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a6ff3ca34bdc432ec47ca6452de2e141b">multiRun</a> (int run_count) const </td></tr>
+<tr><td colspan="2"><h2><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2f5d47b2eafbde30fa89a5e983c83aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a2f5d47b2eafbde30fa89a5e983c83aea">initTable</a> (<a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a> *table) const </td></tr>
+<tr class="memitem:a0b789cfcd9fe2affc98c41744ff2eb6d"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a0b789cfcd9fe2affc98c41744ff2eb6d">mean</a> (const vector&lt; Matrix &gt; &amp;matrices) const </td></tr>
+<tr class="memitem:a7aeb4399db9ad7f3317795f4f031d1e3"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a7aeb4399db9ad7f3317795f4f031d1e3">standardDeviation</a> (const vector&lt; Matrix &gt; &amp;matrices) const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3081de5eaf1e6531296733de790a8f8c"><td class="memItemLeft" align="right" valign="top">vector&lt; typename TFunction::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a3081de5eaf1e6531296733de790a8f8c">functions</a></td></tr>
 <tr class="memitem:a3fc66d529c2dfb9a236d030c20034e1f"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a3fc66d529c2dfb9a236d030c20034e1f">sets</a></td></tr>
 <tr class="memitem:a03749c49a527cd197475fad190cbd80c"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classoptimization_1_1_solver.html">Solver</a>&lt; TFunction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c">solvers</a></td></tr>
-<tr class="memitem:aba8d25f5f5371f1c73c1cba5210f4d7b"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#aba8d25f5f5371f1c73c1cba5210f4d7b">solver_aliases</a></td></tr>
 <tr class="memitem:a5e762fc7020c7afd0d1d26454ecc50b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a5e762fc7020c7afd0d1d26454ecc50b4">population_size_</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -148,11 +156,26 @@ class optimization::SolverBenchmark&lt; TFunction &gt;</h3>
 
 <p>A class to benchmark optimization <a class="el" href="classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer.">Solver</a> with different test problems. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="ae06a1c2d6c8fafebe2e0f25c1d513505"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Eigen::Matrix&lt;<a class="el" href="classoptimization_1_1_solution.html">Solution</a>, -1, -1&gt; <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#ae06a1c2d6c8fafebe2e0f25c1d513505">MatrixSolution</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a171cca4b13a0146edd12e78d30ca67c4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
+template&lt;typename TFunction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="classltr_1_1utility_1_1_multi_table.html">MultiTable</a>&lt;string, 2&gt; <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a></td>
@@ -213,28 +236,18 @@ template&lt;typename TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7db8b8197265c3dd906907e11ba199f6"></a>
+<a class="anchor" id="ad615599effb70c92bc035463624770ee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a7db8b8197265c3dd906907e11ba199f6">addSolver</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#ad615599effb70c92bc035463624770ee">addSolver</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classoptimization_1_1_solver.html">Solver</a>&lt; TFunction &gt; &amp;&#160;</td>
-          <td class="paramname"><em>solver</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>solver</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>alias</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -262,6 +275,67 @@ template&lt;typename TFunction &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a2f5d47b2eafbde30fa89a5e983c83aea"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a2f5d47b2eafbde30fa89a5e983c83aea">initTable</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a> *&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Sets axis's and tick's label using solvers and problems. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0b789cfcd9fe2affc98c41744ff2eb6d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a0b789cfcd9fe2affc98c41744ff2eb6d">mean</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; Matrix &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrices</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets mean for every cell of the matrix </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ff3ca34bdc432ec47ca6452de2e141b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classoptimization_1_1_solver_benchmark.html">SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a171cca4b13a0146edd12e78d30ca67c4">Table</a> <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a6ff3ca34bdc432ec47ca6452de2e141b">multiRun</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>run_count</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Runs a benchmark several times using all solvers and problems specified at the monemt.</p>
+<dl class="section return"><dt>Returns:</dt><dd>A 2-dimensional table of (mean+-standard deviation) where colums and rows represent problems and solvers respectively. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6013b74f5e8eb4fdf801b72c50b1f087"></a>
 <div class="memitem">
 <div class="memproto">
@@ -283,12 +357,32 @@ template&lt;typename TFunction &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a7aeb4399db9ad7f3317795f4f031d1e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TFunction &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Matrix <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a7aeb4399db9ad7f3317795f4f031d1e3">standardDeviation</a> </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; Matrix &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrices</em></td><td>)</td>
+          <td> const<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Gets stantard deviation for every cell of the matrix. </p>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a3081de5eaf1e6531296733de790a8f8c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
+template&lt;typename TFunction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">vector&lt;typename TFunction::Ptr&gt; <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a3081de5eaf1e6531296733de790a8f8c">functions</a><code> [private]</code></td>
@@ -303,7 +397,7 @@ template&lt;typename TFunction &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
+template&lt;typename TFunction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a5e762fc7020c7afd0d1d26454ecc50b4">population_size_</a><code> [private]</code></td>
@@ -318,25 +412,10 @@ template&lt;typename TFunction &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
+template&lt;typename TFunction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">vector&lt;<a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&gt; <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a3fc66d529c2dfb9a236d030c20034e1f">sets</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aba8d25f5f5371f1c73c1cba5210f4d7b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;string&gt; <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#aba8d25f5f5371f1c73c1cba5210f4d7b">solver_aliases</a><code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -348,7 +427,7 @@ template&lt;typename TFunction &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TFunction &gt; </div>
+template&lt;typename TFunction&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">vector&lt;<a class="el" href="classoptimization_1_1_solver.html">Solver</a>&lt;TFunction&gt; &gt; <a class="el" href="classoptimization_1_1_solver_benchmark.html">optimization::SolverBenchmark</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_solver_benchmark.html#a03749c49a527cd197475fad190cbd80c">solvers</a><code> [private]</code></td>
@@ -366,7 +445,7 @@ template&lt;typename TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

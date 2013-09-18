@@ -1,5 +1,3 @@
 <map id="G" name="G">
-<area shape="rect" href="$classoptimization_1_1_solver.html" title="A class which solves an optimization task given a function. a set, a stop criterion, a population updater and population initer." alt="" coords="5,31,221,57"/>
-<area shape="rect" href="$classoptimization_1_1_artificial_bee_colony.html" title="A class which solves an optimization task given a function using artificial bee colony algorithm..." alt="" coords="295,5,583,32"/>
-<area shape="rect" href="$classoptimization_1_1_particle_swarm_optimization.html" title="A class which solves an optimization task given a function using particle swarm optimization algorith..." alt="" coords="271,56,607,83"/>
+<area shape="rect" href="$classoptimization_1_1_solver_benchmark.html" title="A class to benchmark optimization Solver with different test problems." alt="" coords="7,5,287,32"/>
 </map>

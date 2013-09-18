@@ -138,108 +138,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00045"></a>00045                     <span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
 <a name="l00046"></a>00046                     <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>);
 <a name="l00047"></a>00047   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a5bb2992e68e161e42a741c7fdc66476d">update</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population);
-<a name="l00048"></a>00048   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a3a717d94b35b9c4fa4ef9ab76c5fa4b3">set_function</a>(<span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>);
-<a name="l00049"></a>00049   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a07d30545967178e68a65e52c8de9a3d9">set_set</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>);
-<a name="l00050"></a>00050   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">getDefaultAlias</a>() <span class="keyword">const</span>;
-<a name="l00051"></a>00051  <span class="keyword">private</span>:
-<a name="l00052"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a6efcd076ca2aec756f44674189ca55b3">00052</a>   <a class="code" href="classoptimization_1_1_no_init_population_info.html" title="Class for store no need init information about population, for example speed, optimum point...">NoInitPopulationInfo&lt;Point&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a6efcd076ca2aec756f44674189ca55b3">velocity_</a>, <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a950972b08835d2fa0064dbf93f9b3edd">optimum_point_</a>;
-<a name="l00053"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a32fec309f93b03c8b1921b4f66d73f34">00053</a>   Point <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a32fec309f93b03c8b1921b4f66d73f34">global_optimum_point_</a>;
-<a name="l00054"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a91f86ec113b7fc51cd5af9e7981e6fb2">00054</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a91f86ec113b7fc51cd5af9e7981e6fb2">inertia_weight_min_</a>, <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a0d224971e5a85d5ff756670f985d1c80">inertia_weight_max_</a>;
-<a name="l00055"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a391310bdf47355851ab724bd0a9c9341">00055</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a391310bdf47355851ab724bd0a9c9341">individual_learning_factor_</a>;
-<a name="l00056"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#ae1d5b4f9f3d466b1b243ccd7dbe6e65d">00056</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#ae1d5b4f9f3d466b1b243ccd7dbe6e65d">cooperative_learning_factor_</a>;
-<a name="l00057"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a7b7c9df8c0f49b0d8417d4b8258d1db4">00057</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#afe4c169d83e8a1da1e4f87d7a71554c1">curr_iteration_</a>, <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a7b7c9df8c0f49b0d8417d4b8258d1db4">max_iteration_</a>;
-<a name="l00058"></a>00058 };
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00061"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#aa665895d4a086cece38762ab9b30c6d7">00061</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#aa665895d4a086cece38762ab9b30c6d7">ParticleSwarmUpdater&lt;TFunction&gt;::init</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population,
-<a name="l00062"></a>00062                                        <span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
-<a name="l00063"></a>00063                                        <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>) {
-<a name="l00064"></a>00064   this-&gt;set_set(<span class="keyword">set</span>);
-<a name="l00065"></a>00065   this-&gt;set_function(<span class="keyword">function</span>);
-<a name="l00066"></a>00066   curr_iteration_ = 0;
-<a name="l00067"></a>00067   velocity_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_no_init_population_info.html">NoInitPopulationInfo&lt;Point&gt;</a>(population, <span class="keyword">new</span> <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>(
+<a name="l00048"></a>00048   <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">getDefaultAlias</a>() <span class="keyword">const</span>;
+<a name="l00049"></a>00049  <span class="keyword">private</span>:
+<a name="l00050"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a6efcd076ca2aec756f44674189ca55b3">00050</a>   <a class="code" href="classoptimization_1_1_no_init_population_info.html" title="Class for store no need init information about population, for example speed, optimum point...">NoInitPopulationInfo&lt;Point&gt;::Ptr</a> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a6efcd076ca2aec756f44674189ca55b3">velocity_</a>, <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a950972b08835d2fa0064dbf93f9b3edd">optimum_point_</a>;
+<a name="l00051"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a32fec309f93b03c8b1921b4f66d73f34">00051</a>   Point <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a32fec309f93b03c8b1921b4f66d73f34">global_optimum_point_</a>;
+<a name="l00052"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a91f86ec113b7fc51cd5af9e7981e6fb2">00052</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a91f86ec113b7fc51cd5af9e7981e6fb2">inertia_weight_min_</a>, <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a0d224971e5a85d5ff756670f985d1c80">inertia_weight_max_</a>;
+<a name="l00053"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a391310bdf47355851ab724bd0a9c9341">00053</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a391310bdf47355851ab724bd0a9c9341">individual_learning_factor_</a>;
+<a name="l00054"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#ae1d5b4f9f3d466b1b243ccd7dbe6e65d">00054</a>   <span class="keywordtype">double</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#ae1d5b4f9f3d466b1b243ccd7dbe6e65d">cooperative_learning_factor_</a>;
+<a name="l00055"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a7b7c9df8c0f49b0d8417d4b8258d1db4">00055</a>   <span class="keywordtype">int</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#afe4c169d83e8a1da1e4f87d7a71554c1">curr_iteration_</a>, <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a7b7c9df8c0f49b0d8417d4b8258d1db4">max_iteration_</a>;
+<a name="l00056"></a>00056 };
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00059"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#aa665895d4a086cece38762ab9b30c6d7">00059</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#aa665895d4a086cece38762ab9b30c6d7">ParticleSwarmUpdater&lt;TFunction&gt;::init</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population,
+<a name="l00060"></a>00060                                        <span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>,
+<a name="l00061"></a>00061                                        <a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>) {
+<a name="l00062"></a>00062   this-&gt;set_set(<span class="keyword">set</span>);
+<a name="l00063"></a>00063   this-&gt;set_function(<span class="keyword">function</span>);
+<a name="l00064"></a>00064   curr_iteration_ = 0;
+<a name="l00065"></a>00065   velocity_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_no_init_population_info.html">NoInitPopulationInfo&lt;Point&gt;</a>(population, <span class="keyword">new</span> <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>(
+<a name="l00066"></a>00066       function-&gt;dimension()));
+<a name="l00067"></a>00067   optimum_point_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_no_init_population_info.html">NoInitPopulationInfo&lt;Point&gt;</a>(population, <span class="keyword">new</span> <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>(
 <a name="l00068"></a>00068       function-&gt;dimension()));
-<a name="l00069"></a>00069   optimum_point_ = <span class="keyword">new</span> <a class="code" href="classoptimization_1_1_no_init_population_info.html">NoInitPopulationInfo&lt;Point&gt;</a>(population, <span class="keyword">new</span> <a class="code" href="stop__criteria__unittest_8cc.html#a95576fcb98506e7eb3ef39a11cf39b08">Point</a>(
-<a name="l00070"></a>00070       function-&gt;dimension()));
-<a name="l00071"></a>00071   global_optimum_point_ = population-&gt;<a class="code" href="classoptimization_1_1_no_init_population_info.html#a2bff1957d33b1d6f34827902803c716e">begin</a>().point();
-<a name="l00072"></a>00072   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;<a class="code" href="classoptimization_1_1_no_init_population_info.html#a2bff1957d33b1d6f34827902803c716e">begin</a>();
-<a name="l00073"></a>00073        it != population-&gt;<a class="code" href="classoptimization_1_1_no_init_population_info.html#a731fdabcace560d6c0a2205ce851655e">end</a>();
-<a name="l00074"></a>00074        ++it) {
-<a name="l00075"></a>00075     *optimum_point_-&gt;getInfoById(it.point_id()) = it.point();
-<a name="l00076"></a>00076     *velocity_-&gt;getInfoById(it.point_id()) = Point::Zero(
-<a name="l00077"></a>00077         this-&gt;function_-&gt;dimension());
-<a name="l00078"></a>00078     <span class="keywordtype">double</span> current_point_optimum_value = <span class="keyword">function</span>-&gt;computeValue(it.point());
-<a name="l00079"></a>00079     <span class="keywordtype">double</span> global_optimum_value = <span class="keyword">function</span>-&gt;computeValue(global_optimum_point_);
-<a name="l00080"></a>00080     <span class="keywordflow">if</span> (current_point_optimum_value &lt; global_optimum_value) {
-<a name="l00081"></a>00081       global_optimum_point_ = it.point();
-<a name="l00082"></a>00082     }
-<a name="l00083"></a>00083   }
-<a name="l00084"></a>00084 }
-<a name="l00085"></a>00085 
-<a name="l00086"></a>00086 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00087"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a3a717d94b35b9c4fa4ef9ab76c5fa4b3">00087</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a3a717d94b35b9c4fa4ef9ab76c5fa4b3">ParticleSwarmUpdater&lt;TFunction&gt;::set_function</a>(
-<a name="l00088"></a>00088     <span class="keyword">typename</span> TFunction::Ptr <span class="keyword">function</span>) {
-<a name="l00089"></a>00089   this-&gt;function_ = <span class="keyword">function</span>;
-<a name="l00090"></a>00090 }
-<a name="l00091"></a>00091 
-<a name="l00092"></a>00092 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00093"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a07d30545967178e68a65e52c8de9a3d9">00093</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a07d30545967178e68a65e52c8de9a3d9">ParticleSwarmUpdater&lt;TFunction&gt;::set_set</a>(<a class="code" href="classltr_1_1utility_1_1shared__ptr.html">Set::Ptr</a> <span class="keyword">set</span>) {
-<a name="l00094"></a>00094   this-&gt;set_ = <span class="keyword">set</span>;
-<a name="l00095"></a>00095 }
-<a name="l00096"></a>00096 
-<a name="l00097"></a>00097 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00098"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">00098</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">ParticleSwarmUpdater&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
-<a name="l00099"></a>00099   <span class="keywordflow">return</span> <span class="stringliteral">&quot;ParticleSwarmUpdater&quot;</span>;
-<a name="l00100"></a>00100 }
-<a name="l00101"></a>00101 
-<a name="l00102"></a>00102 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
-<a name="l00103"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a5bb2992e68e161e42a741c7fdc66476d">00103</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a5bb2992e68e161e42a741c7fdc66476d">ParticleSwarmUpdater&lt;TFunction&gt;::update</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population) {
-<a name="l00104"></a>00104   ++curr_iteration_;
-<a name="l00105"></a>00105   <span class="keywordtype">double</span> inertia_weight = inertia_weight_max_ +
-<a name="l00106"></a>00106       (inertia_weight_min_ - inertia_weight_max_) *
-<a name="l00107"></a>00107       curr_iteration_ / max_iteration_;
-<a name="l00108"></a>00108   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
-<a name="l00109"></a>00109        it != population-&gt;<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>();
-<a name="l00110"></a>00110        ++it) {
-<a name="l00111"></a>00111     Point&amp; velocity = *velocity_-&gt;getInfoById(it.point_id());
-<a name="l00112"></a>00112     Point&amp; optimum_point = *optimum_point_-&gt;getInfoById(it.point_id());
-<a name="l00113"></a>00113     velocity =  inertia_weight * velocity +
-<a name="l00114"></a>00114         individual_learning_factor_ * randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf">doubleRand</a>(0, 1) *
-<a name="l00115"></a>00115         (optimum_point - it.point()) +
-<a name="l00116"></a>00116         cooperative_learning_factor_ * randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf">doubleRand</a>(0, 1) *
-<a name="l00117"></a>00117         (global_optimum_point_ - it.point());
-<a name="l00118"></a>00118   }
-<a name="l00119"></a>00119   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
-<a name="l00120"></a>00120        it != population-&gt;<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>();
-<a name="l00121"></a>00121        ++it) {
-<a name="l00122"></a>00122     Point&amp; velocity = *velocity_-&gt;getInfoById(it.point_id());
-<a name="l00123"></a>00123     Point&amp; optimum_point = *optimum_point_-&gt;getInfoById(it.point_id());
-<a name="l00124"></a>00124     Point new_point = it.point() + velocity;
-<a name="l00125"></a>00125     population-&gt;<a class="code" href="classoptimization_1_1_population.html#a54426c048110b794267a1db9daf4ea96">updatePoint</a>(it.point_id(), new_point);
-<a name="l00126"></a>00126     <span class="keywordflow">if</span> (!this-&gt;set_-&gt;isInside(new_point)) {
-<a name="l00127"></a>00127       <span class="keywordflow">continue</span>;
-<a name="l00128"></a>00128     }
-<a name="l00129"></a>00129     <span class="keywordtype">double</span> new_point_value = this-&gt;function_-&gt;computeValue(new_point);
-<a name="l00130"></a>00130     <span class="keywordtype">double</span> current_point_optimum_value = this-&gt;function_-&gt;computeValue(
-<a name="l00131"></a>00131                                              optimum_point);
-<a name="l00132"></a>00132     <span class="keywordtype">double</span> global_optimum_value = this-&gt;function_-&gt;computeValue(
-<a name="l00133"></a>00133                                       global_optimum_point_);
-<a name="l00134"></a>00134     <span class="keywordflow">if</span> (new_point_value &lt; current_point_optimum_value) {
-<a name="l00135"></a>00135       optimum_point = new_point;
-<a name="l00136"></a>00136     }
-<a name="l00137"></a>00137     <span class="keywordflow">if</span> (new_point_value &lt; global_optimum_value) {
-<a name="l00138"></a>00138       global_optimum_point_ = new_point;
-<a name="l00139"></a>00139     }
-<a name="l00140"></a>00140   }
-<a name="l00141"></a>00141 }
-<a name="l00142"></a>00142 }
-<a name="l00143"></a>00143 
-<a name="l00144"></a>00144 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_POPULATION_UPDATERS_PARTICLE_SWARM_UPDATER_H_</span>
+<a name="l00069"></a>00069   global_optimum_point_ = population-&gt;<a class="code" href="classoptimization_1_1_no_init_population_info.html#a2bff1957d33b1d6f34827902803c716e">begin</a>().point();
+<a name="l00070"></a>00070   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;<a class="code" href="classoptimization_1_1_no_init_population_info.html#a2bff1957d33b1d6f34827902803c716e">begin</a>();
+<a name="l00071"></a>00071        it != population-&gt;<a class="code" href="classoptimization_1_1_no_init_population_info.html#a731fdabcace560d6c0a2205ce851655e">end</a>();
+<a name="l00072"></a>00072        ++it) {
+<a name="l00073"></a>00073     *optimum_point_-&gt;getInfoById(it.point_id()) = it.point();
+<a name="l00074"></a>00074     *velocity_-&gt;getInfoById(it.point_id()) = Point::Zero(
+<a name="l00075"></a>00075         this-&gt;function_-&gt;dimension());
+<a name="l00076"></a>00076     <span class="keywordtype">double</span> current_point_optimum_value = <span class="keyword">function</span>-&gt;computeValue(it.point());
+<a name="l00077"></a>00077     <span class="keywordtype">double</span> global_optimum_value = <span class="keyword">function</span>-&gt;computeValue(global_optimum_point_);
+<a name="l00078"></a>00078     <span class="keywordflow">if</span> (current_point_optimum_value &lt; global_optimum_value) {
+<a name="l00079"></a>00079       global_optimum_point_ = it.point();
+<a name="l00080"></a>00080     }
+<a name="l00081"></a>00081   }
+<a name="l00082"></a>00082 }
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00085"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">00085</a> <span class="keywordtype">string</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a29180471d78bf62830c770df33ab8c11">ParticleSwarmUpdater&lt;TFunction&gt;::getDefaultAlias</a>()<span class="keyword"> const </span>{
+<a name="l00086"></a>00086   <span class="keywordflow">return</span> <span class="stringliteral">&quot;ParticleSwarmUpdater&quot;</span>;
+<a name="l00087"></a>00087 }
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;
+<a name="l00090"></a><a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a5bb2992e68e161e42a741c7fdc66476d">00090</a> <span class="keywordtype">void</span> <a class="code" href="classoptimization_1_1_particle_swarm_updater.html#a5bb2992e68e161e42a741c7fdc66476d">ParticleSwarmUpdater&lt;TFunction&gt;::update</a>(<a class="code" href="classoptimization_1_1_population.html" title="Class for population of points.">Population</a>* population) {
+<a name="l00091"></a>00091   ++curr_iteration_;
+<a name="l00092"></a>00092   <span class="keywordtype">double</span> inertia_weight = inertia_weight_max_ +
+<a name="l00093"></a>00093       (inertia_weight_min_ - inertia_weight_max_) *
+<a name="l00094"></a>00094       curr_iteration_ / max_iteration_;
+<a name="l00095"></a>00095   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
+<a name="l00096"></a>00096        it != population-&gt;<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>();
+<a name="l00097"></a>00097        ++it) {
+<a name="l00098"></a>00098     Point&amp; velocity = *velocity_-&gt;getInfoById(it.point_id());
+<a name="l00099"></a>00099     Point&amp; optimum_point = *optimum_point_-&gt;getInfoById(it.point_id());
+<a name="l00100"></a>00100     velocity =  inertia_weight * velocity +
+<a name="l00101"></a>00101         individual_learning_factor_ * randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf">doubleRand</a>(0, 1) *
+<a name="l00102"></a>00102         (optimum_point - it.point()) +
+<a name="l00103"></a>00103         cooperative_learning_factor_ * randomizer.<a class="code" href="classltr_1_1utility_1_1_randomizer.html#a84ad6de32b6f6fe16a95c37468e4abbf">doubleRand</a>(0, 1) *
+<a name="l00104"></a>00104         (global_optimum_point_ - it.point());
+<a name="l00105"></a>00105     this-&gt;set_-&gt;project(&amp;velocity);
+<a name="l00106"></a>00106   }
+<a name="l00107"></a>00107   <span class="keywordflow">for</span> (<a class="code" href="classoptimization_1_1_population.html#a9830fc407400559db7e7783cc10a9394">Population::Iterator</a> it = population-&gt;<a class="code" href="classoptimization_1_1_population.html#a3f4688a47c569410a578adb1a56b00e1">begin</a>();
+<a name="l00108"></a>00108        it != population-&gt;<a class="code" href="classoptimization_1_1_population.html#a480ecfe815394e5ea6fe42c705ddb7f5">end</a>();
+<a name="l00109"></a>00109        ++it) {
+<a name="l00110"></a>00110     Point&amp; velocity = *velocity_-&gt;getInfoById(it.point_id());
+<a name="l00111"></a>00111     Point&amp; optimum_point = *optimum_point_-&gt;getInfoById(it.point_id());
+<a name="l00112"></a>00112     Point new_point = it.point() + velocity;
+<a name="l00113"></a>00113     this-&gt;set_-&gt;project(&amp;new_point);
+<a name="l00114"></a>00114     population-&gt;<a class="code" href="classoptimization_1_1_population.html#a54426c048110b794267a1db9daf4ea96">updatePoint</a>(it.point_id(), new_point);
+<a name="l00115"></a>00115     <span class="keywordtype">double</span> new_point_value = this-&gt;function_-&gt;computeValue(new_point);
+<a name="l00116"></a>00116     <span class="keywordtype">double</span> current_point_optimum_value = this-&gt;function_-&gt;computeValue(
+<a name="l00117"></a>00117                                              optimum_point);
+<a name="l00118"></a>00118     <span class="keywordtype">double</span> global_optimum_value = this-&gt;function_-&gt;computeValue(
+<a name="l00119"></a>00119                                       global_optimum_point_);
+<a name="l00120"></a>00120     <span class="keywordflow">if</span> (new_point_value &lt; current_point_optimum_value) {
+<a name="l00121"></a>00121       optimum_point = new_point;
+<a name="l00122"></a>00122     }
+<a name="l00123"></a>00123     <span class="keywordflow">if</span> (new_point_value &lt; global_optimum_value) {
+<a name="l00124"></a>00124       global_optimum_point_ = new_point;
+<a name="l00125"></a>00125     }
+<a name="l00126"></a>00126   }
+<a name="l00127"></a>00127 }
+<a name="l00128"></a>00128 }
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 <span class="preprocessor">#endif  // LTR_OPTIMIZATION_POPULATION_UPDATERS_PARTICLE_SWARM_UPDATER_H_</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:45 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:47 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

@@ -1,10 +1,11 @@
 <map id="G" name="G">
-<area shape="rect" href="$naive__initer_8cc.html" title="ltr/optimization/population_initers/naive_initer.cc" alt="" coords="5,80,301,107"/>
-<area shape="rect" href="$population__initers__unittest_8cc.html" title="ltr/optimization/population_initers/population_initers_unittest.cc" alt="" coords="325,80,709,107"/>
-<area shape="rect" href="$artificial__bee__colony_8h.html" title="ltr/optimization/solver/artificial_bee_colony.h" alt="" coords="733,80,1008,107"/>
-<area shape="rect" href="$particle__swarm__optimization_8h.html" title="ltr/optimization/solver/particle_swarm_optimization.h" alt="" coords="1032,80,1355,107"/>
-<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="1379,80,1699,107"/>
-<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="1723,80,1971,107"/>
-<area shape="rect" href="$artificial__bee__colony__unittest_8cc.html" title="ltr/optimization/solver/artificial_bee_colony_unittest.cc" alt="" coords="677,155,1008,181"/>
-<area shape="rect" href="$particle__swarm__optimization__unittest_8cc.html" title="ltr/optimization/solver/particle_swarm_optimization_unittest.cc" alt="" coords="1032,155,1411,181"/>
+<area shape="rect" href="$population__info__unittest_8cc.html" title="ltr/optimization/population_info/population_info_unittest.cc" alt="" coords="5,80,360,107"/>
+<area shape="rect" href="$naive__initer_8cc.html" title="ltr/optimization/population_initers/naive_initer.cc" alt="" coords="384,80,680,107"/>
+<area shape="rect" href="$population__initers__unittest_8cc.html" title="ltr/optimization/population_initers/population_initers_unittest.cc" alt="" coords="704,80,1088,107"/>
+<area shape="rect" href="$artificial__bee__colony_8h.html" title="ltr/optimization/solver/artificial_bee_colony.h" alt="" coords="1112,80,1387,107"/>
+<area shape="rect" href="$solver__benchmark__unittest_8cc.html" title="ltr/optimization/solver/solver_benchmark_unittest.cc" alt="" coords="1264,155,1584,181"/>
+<area shape="rect" href="$particle__swarm__optimization_8h.html" title="ltr/optimization/solver/particle_swarm_optimization.h" alt="" coords="1461,80,1784,107"/>
+<area shape="rect" href="$solver__unittest_8cc.html" title="ltr/optimization/solver/solver_unittest.cc" alt="" coords="1808,80,2056,107"/>
+<area shape="rect" href="$artificial__bee__colony__unittest_8cc.html" title="ltr/optimization/solver/artificial_bee_colony_unittest.cc" alt="" coords="909,155,1240,181"/>
+<area shape="rect" href="$particle__swarm__optimization__unittest_8cc.html" title="ltr/optimization/solver/particle_swarm_optimization_unittest.cc" alt="" coords="1608,155,1987,181"/>
 </map>

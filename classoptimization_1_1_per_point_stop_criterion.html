@@ -141,10 +141,9 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7545e3ec6413ab8279694eec59f46ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ad7545e3ec6413ab8279694eec59f46ea">PerPointStopCriterion</a> (typename <a class="el" href="classoptimization_1_1_one_point_stop_criterion.html">OnePointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a33970912c1b36776003316337287af82">Ptr</a> one_point_stop_criterion_sample)</td></tr>
 <tr class="memitem:a604a2147bec781b8814bfc5b1e73be96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a604a2147bec781b8814bfc5b1e73be96">~PerPointStopCriterion</a> ()</td></tr>
-<tr class="memitem:ae9b18a533b8bfd45a966c7c8dc488bee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population)</td></tr>
+<tr class="memitem:acab2712007e03f99731c33def8d94376"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#acab2712007e03f99731c33def8d94376">init</a> (<a class="el" href="classoptimization_1_1_population.html">Population</a> *population, typename TFunction::Ptr function, <a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a> <a class="el" href="classset.html">set</a>)</td></tr>
 <tr class="memitem:ac6ba52c5a1835699bc3f98d7bd03e281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ac6ba52c5a1835699bc3f98d7bd03e281">update</a> (const <a class="el" href="classoptimization_1_1_population.html">Population</a> &amp;population)</td></tr>
 <tr class="memitem:a474401df2d8ad67664b7c120e21d8da9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a474401df2d8ad67664b7c120e21d8da9">isTrue</a> ()</td></tr>
-<tr class="memitem:aab1917ee47108768ae5db2dbdbb3cea4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">set_function</a> (typename TFunction::Ptr <a class="el" href="classoptimization_1_1_stop_criterion.html#a7b7fcaa5d3f8d6518271493d5c718c40">function</a>)</td></tr>
 <tr class="memitem:a51c230e96e145935e9b45a685891ba87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a51c230e96e145935e9b45a685891ba87">GET_SET</a> (double, aggregator_threshold)</td></tr>
 <tr class="memitem:a4f3bbf10a8a377480c7a9b166a4fb097"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#a4f3bbf10a8a377480c7a9b166a4fb097">getDefaultAlias</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
@@ -289,25 +288,41 @@ template&lt;class TFunction &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae9b18a533b8bfd45a966c7c8dc488bee"></a>
+<a class="anchor" id="acab2712007e03f99731c33def8d94376"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class TFunction &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#ae9b18a533b8bfd45a966c7c8dc488bee">init</a> </td>
+          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#acab2712007e03f99731c33def8d94376">init</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classoptimization_1_1_population.html">Population</a> *&#160;</td>
-          <td class="paramname"><em>population</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramname"><em>population</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename TFunction::Ptr&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classoptimization_1_1_set.html#afc1ff46e8e342baf5361ff31db134f14">Set::Ptr</a>&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 <p>Init data for future test of population. </p>
 
-<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a58983c2c4607d609190d9ff187a021aa">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
+<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a299c6296e23415b87956625c1a9e055a">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -330,27 +345,6 @@ template&lt;class TFunction &gt; </div>
 <dl class="section return"><dt>Returns:</dt><dd>True if stopping condition is satisfied for more than given part of points in population. </dd></dl>
 
 <p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a726ee81ef16dc8709775df0cd54a0a29">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aab1917ee47108768ae5db2dbdbb3cea4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TFunction &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classoptimization_1_1_per_point_stop_criterion.html">optimization::PerPointStopCriterion</a>&lt; TFunction &gt;::<a class="el" href="classoptimization_1_1_per_point_stop_criterion.html#aab1917ee47108768ae5db2dbdbb3cea4">set_function</a> </td>
-          <td>(</td>
-          <td class="paramtype">typename TFunction::Ptr&#160;</td>
-          <td class="paramname"><em>function</em></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implements <a class="el" href="classoptimization_1_1_stop_criterion.html#a862b875dc4c89755807eb61f9b904933">optimization::StopCriterion&lt; TFunction &gt;</a>.</p>
 
 </div>
 </div>
@@ -446,7 +440,7 @@ template&lt;class TFunction &gt; </div>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 3 2013 11:50:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 18 2013 19:54:51 for Learning To Rank Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
